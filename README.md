@@ -1,2 +1,2 @@
-# usace_master_data
+# usace-master-data
 Master Data Management for US Army Corps of Engineers
