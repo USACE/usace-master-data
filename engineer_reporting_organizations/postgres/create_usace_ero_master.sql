@@ -1,20 +1,22 @@
 DROP TABLE usace_ero_master;
 CREATE TABLE usace_ero_master(
-  eroc                         VARCHAR(2) CONSTRAINT eroc_pk PRIMARY KEY
-  ,ero_type                    VARCHAR(10)
-  ,parent_eroc                 VARCHAR(2)
-  ,agency_code                 VARCHAR(10)
-  ,agency_symbol               VARCHAR(7)
-  ,engineer_reporting_org_name VARCHAR(100)
-  ,alt_name                    VARCHAR(100)
-  ,ero_shortname               VARCHAR(50)
-  ,ero_formalname              VARCHAR(50)
+  eroc                         character varying(2) CONSTRAINT eroc_pk PRIMARY KEY
+  ,ero_type                    character varying(10)
+  ,parent_eroc                 character varying(2)
+  ,agency_code                 character varying(10)
+  ,agency_symbol               character varying(7)
+  ,engineer_reporting_org_name character varying(100)
+  ,alt_name                    character varying(100)
+  ,ero_shortname               character varying(50)
+  ,ero_formalname              character varying(50)
   ,oconus                      BOOLEAN
-  ,reports_to                  VARCHAR(50)
-  ,hq_eroc                     VARCHAR(2)
-  ,div_eroc                    VARCHAR(2)
-  ,usace_division_code         VARCHAR(10)
-  ,usace_district_code         VARCHAR(5)
+  ,reports_to                  character varying(50)
+  ,hq_eroc                     character varying(2)
+  ,div_eroc                    character varying(2)
+  ,usace_division_code         character varying(10)
+  ,usace_district_code         character varying(5)
+  ,wikidata_id                 character varying(20)
+  ,wikidata_uri                character varying(200)
 );
 
 COMMENT ON COLUMN usace_ero_master.ero_type IS 'The type of US Army Corps of  Engineers (USACE) Engineer Reporting Organization';
@@ -32,3 +34,5 @@ COMMENT ON COLUMN usace_ero_master.hq_eroc IS 'A unique two-digit code for HQUSA
 COMMENT ON COLUMN usace_ero_master.div_eroc IS 'A unique two-digit code for each Division.';
 COMMENT ON COLUMN usace_ero_master.usace_division_code IS 'A unique five-digit code for each Division referenced in SDSFIE.';
 COMMENT ON COLUMN usace_ero_master.usace_district_code IS 'A unique five-digit code for each District referenced in SDSFIE.';
+COMMENT ON COLUMN usace_ero_master.wikidata_id IS 'The unique identifier for USACE organizations from Wikidata.org';
+COMMENT ON COLUMN usace_ero_master.wikidata_uri IS 'The URL for Wikidata corresponding to the USACE organization';

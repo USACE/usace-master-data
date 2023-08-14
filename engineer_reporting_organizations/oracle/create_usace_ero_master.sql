@@ -15,6 +15,8 @@ CREATE TABLE usace_ero_master(
   ,div_eroc                    VARCHAR2(2)
   ,usace_division_code         VARCHAR2(10)
   ,usace_district_code         VARCHAR2(5)
+  ,wikidata_id                 VARCHAR2(20)
+  ,wikidata_uri                VARCHAR2(200)
 );
 
 ALTER TABLE usace_ero_master ADD CONSTRAINT eroc_pk PRIMARY KEY (eroc);
@@ -34,3 +36,5 @@ COMMENT ON COLUMN usace_ero_master.hq_eroc IS 'A unique two-digit code for HQUSA
 COMMENT ON COLUMN usace_ero_master.div_eroc IS 'A unique two-digit code for each Division.';
 COMMENT ON COLUMN usace_ero_master.usace_division_code IS 'A unique five-digit code for each Division referenced in SDSFIE.';
 COMMENT ON COLUMN usace_ero_master.usace_district_code IS 'A unique five-digit code for each District referenced in SDSFIE.';
+COMMENT ON COLUMN usace_ero_master.wikidata_id IS 'The unique identifier for USACE organizations from Wikidata.org';
+COMMENT ON COLUMN usace_ero_master.wikidata_uri IS 'The URL for Wikidata corresponding to the USACE organization';

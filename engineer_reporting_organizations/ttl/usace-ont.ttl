@@ -1,0 +1,449 @@
+# baseURI: https://usace-data.com/ontology/usace-ont
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://xmlns.com/foaf/spec/index.rdf
+# imports: https://www.w3.org/ns/org.ttl
+# prefix: usace-ont
+
+@prefix : <https://usace-data.com/ontology/usace-ont#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix usace-orgs: <https://usace-data.com/data/usace-orgs#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+org:districtOf
+  a owl:ObjectProperty ;
+  rdfs:domain usace-orgs:District ;
+  rdfs:label "district of" ;
+  rdfs:range usace-orgs:Division ;
+  rdfs:subPropertyOf org:unitOf ;
+  owl:inverseOf usace-orgs:hasDistrict ;
+  skos:definition "" ;
+  skos:prefLabel "district of" ;
+.
+<https://usace-data.com/ontology/usace-ont>
+  a owl:Ontology ;
+  dc:contributor "Lauren Rhodes - Image Matters LLC" ;
+  dc:contributor "Sammy Fellah - Image Matters LLC" ;
+  dc:creator "Stephane Fellah - Image Matters LLC" ;
+  dc:description "USACE organization ontology" ;
+  dc:title "USACE organization ontology" ;
+  vann:preferredNamespacePrefix "usace-ont" ;
+  vann:preferredNamespaceUri "https://usace-data.com/ontology/usace-ont#" ;
+  rdfs:comment "USACE organization ontology" ;
+  rdfs:label "USACE organization ontology" ;
+  owl:imports dc: ;
+  owl:imports <http://xmlns.com/foaf/spec/index.rdf> ;
+  owl:imports <https://www.w3.org/ns/org.ttl> ;
+  owl:versionInfo "v0.1" ;
+.
+usace-orgs:AOR
+  a owl:Class ;
+  rdfs:label "AOR" ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "" ;
+  skos:prefLabel "AOR" ;
+.
+usace-orgs:CivilWorksAOR
+  a owl:Class ;
+  rdfs:label "Civil works AOR" ;
+  rdfs:subClassOf usace-orgs:AOR ;
+  skos:definition "" ;
+  skos:prefLabel "Civil works AOR" ;
+.
+usace-orgs:CivilWorksMission
+  a owl:Class ;
+  rdfs:label "Civil works mission" ;
+  rdfs:subClassOf usace-orgs:DistrictMission ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:hasCivilWorksAOR ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:hasRegulatoryAOR ;
+    ] ;
+  skos:definition "" ;
+  skos:prefLabel "Civil works mission" ;
+.
+usace-orgs:CivilWorksMissionType
+  a skos:Concept ;
+  a usace-orgs:MissionType ;
+  rdfs:label "Civil works mission type" ;
+  skos:definition "" ;
+  skos:prefLabel "Civil works mission type" ;
+.
+usace-orgs:District
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "District" ;
+  rdfs:subClassOf usace-orgs:ERO ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:hasMission ;
+    ] ;
+  skos:prefLabel "District" ;
+.
+usace-orgs:DistrictMission
+  a rdfs:Class ;
+  rdfs:label "District mission" ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:missionOf ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:usaceDistrictCode ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:hasAOR ;
+    ] ;
+  skos:definition "" ;
+  skos:prefLabel "District mission" ;
+.
+usace-orgs:Division
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "Division" ;
+  rdfs:subClassOf usace-orgs:ERO ;
+  skos:prefLabel "Division" ;
+.
+usace-orgs:ERO
+  a rdfs:Class ;
+  rdfs:label "ERO" ;
+  rdfs:subClassOf org:OrganizationalUnit ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:agencyCode ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:agencySymbol ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:eroCode ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty org:reportsTo ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty org:subOrganizationOf ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:isOconus ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:wikidataID ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:usaceDivisionCode ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:wikidataURL ;
+    ] ;
+  skos:definition "" ;
+  skos:prefLabel "ERO" ;
+.
+usace-orgs:EnvironmentalMission
+  a rdfs:Class ;
+  rdfs:label "Environmental mission" ;
+  rdfs:subClassOf usace-orgs:DistrictMission ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:hasFudsAOR ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:hasFusrapAOR ;
+    ] ;
+  skos:definition "" ;
+  skos:prefLabel "Environmental mission" ;
+.
+usace-orgs:EnvironmentalMissionType
+  a skos:Concept ;
+  a usace-orgs:MissionType ;
+  rdfs:label "Environmental mission type" ;
+  skos:definition "" ;
+  skos:prefLabel "Environmental mission type" ;
+.
+usace-orgs:FudsAOR
+  a owl:Class ;
+  rdfs:label "Fuds AOR" ;
+  rdfs:subClassOf usace-orgs:AOR ;
+  skos:definition "" ;
+  skos:prefLabel "Fuds AOR" ;
+.
+usace-orgs:FudsMission
+  a rdfs:Class ;
+  rdfs:label "Fuds mission" ;
+  rdfs:subClassOf usace-orgs:DistrictMission ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:hasFudsAOR ;
+    ] ;
+  skos:definition "" ;
+  skos:prefLabel "Fuds mission" ;
+.
+usace-orgs:FusrapAOR
+  a owl:Class ;
+  rdfs:label "Fusrap AOR" ;
+  rdfs:subClassOf usace-orgs:AOR ;
+  skos:definition "" ;
+  skos:prefLabel "Fusrap AOR" ;
+.
+usace-orgs:FusrapMission
+  a rdfs:Class ;
+  rdfs:label "Fusrap mission" ;
+  rdfs:subClassOf usace-orgs:DistrictMission ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:hasFusrapAOR ;
+    ] ;
+  skos:definition "" ;
+  skos:prefLabel "Fusrap mission" ;
+.
+usace-orgs:HQUSACE
+  a rdfs:Class ;
+  rdfs:label "HQUSACE" ;
+  rdfs:subClassOf usace-orgs:ERO ;
+  skos:definition "" ;
+  skos:prefLabel "HQUSACE" ;
+.
+usace-orgs:MilitaryAOR
+  a owl:Class ;
+  rdfs:label "Military AOR" ;
+  rdfs:subClassOf usace-orgs:ERO ;
+  skos:definition "" ;
+  skos:prefLabel "Military AOR" ;
+.
+usace-orgs:MilitaryMission
+  a owl:Class ;
+  rdfs:label "Military mission" ;
+  rdfs:subClassOf usace-orgs:DistrictMission ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty usace-orgs:hasMilitaryAOR ;
+    ] ;
+  skos:definition "" ;
+  skos:prefLabel "Military mission" ;
+.
+usace-orgs:MilitaryMissionType
+  a skos:Concept ;
+  a usace-orgs:MissionType ;
+  rdfs:label "Military mission type" ;
+  skos:definition "" ;
+  skos:prefLabel "Military mission type" ;
+.
+usace-orgs:MissionType
+  a owl:Class ;
+  rdfs:label "Mission type" ;
+  rdfs:subClassOf skos:Concept ;
+  skos:definition "" ;
+  skos:prefLabel "Mission type" ;
+.
+usace-orgs:OtherERO
+  a owl:Class ;
+  rdfs:label "Other ERO" ;
+  rdfs:subClassOf usace-orgs:ERO ;
+  skos:definition "" ;
+  skos:prefLabel "Other ERO" ;
+.
+usace-orgs:Other_EROC
+  a owl:Class ;
+  rdfs:label "Other EROC" ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "" ;
+  skos:prefLabel "Other EROC" ;
+.
+usace-orgs:RegulatoryAOR
+  a owl:Class ;
+  rdfs:label "Regulatory AOR" ;
+  rdfs:subClassOf usace-orgs:AOR ;
+  skos:definition "" ;
+  skos:prefLabel "Regulatory AOR" ;
+.
+usace-orgs:agencyCode
+  a owl:DatatypeProperty ;
+  rdfs:label "agency code" ;
+  rdfs:range xsd:string ;
+  skos:definition "" ;
+  skos:prefLabel "agency code" ;
+.
+usace-orgs:agencySymbol
+  a owl:DatatypeProperty ;
+  rdfs:label "agency symbol" ;
+  skos:definition "" ;
+  skos:prefLabel "agency symbol" ;
+.
+usace-orgs:eroCode
+  a owl:DatatypeProperty ;
+  rdfs:label "ero code" ;
+  rdfs:range xsd:string ;
+  skos:definition "" ;
+  skos:prefLabel "ero code" ;
+.
+usace-orgs:formalName
+  a owl:DatatypeProperty ;
+  rdfs:label "formal name" ;
+  rdfs:range xsd:string ;
+  skos:definition "" ;
+  skos:prefLabel "formal name" ;
+.
+usace-orgs:hasAOR
+  a owl:ObjectProperty ;
+  rdfs:label "has AOR" ;
+  skos:definition "" ;
+  skos:prefLabel "has AOR" ;
+.
+usace-orgs:hasCivilWorksAOR
+  a owl:ObjectProperty ;
+  rdfs:label "has civil works AOR" ;
+  rdfs:range usace-orgs:CivilWorksAOR ;
+  rdfs:subPropertyOf usace-orgs:hasAOR ;
+  skos:definition "" ;
+  skos:prefLabel "has civil works AOR" ;
+.
+usace-orgs:hasDistrict
+  a owl:ObjectProperty ;
+  rdfs:label "has district" ;
+  rdfs:range usace-orgs:District ;
+  rdfs:subPropertyOf org:hasUnit ;
+  skos:definition "" ;
+  skos:prefLabel "has district" ;
+.
+usace-orgs:hasFudsAOR
+  a owl:ObjectProperty ;
+  rdfs:label "has fuds AOR" ;
+  rdfs:range usace-orgs:FudsAOR ;
+  rdfs:subPropertyOf usace-orgs:hasAOR ;
+  skos:definition "" ;
+  skos:prefLabel "has fuds AOR" ;
+.
+usace-orgs:hasFusrapAOR
+  a owl:ObjectProperty ;
+  rdfs:label "has fusrap AOR" ;
+  rdfs:range usace-orgs:FusrapAOR ;
+  rdfs:subPropertyOf usace-orgs:hasAOR ;
+  skos:definition "" ;
+  skos:prefLabel "has fusrap AOR" ;
+.
+usace-orgs:hasMilitaryAOR
+  a owl:ObjectProperty ;
+  rdfs:label "has military AOR" ;
+  rdfs:range usace-orgs:MilitaryAOR ;
+  rdfs:subPropertyOf usace-orgs:hasAOR ;
+  skos:definition "" ;
+  skos:prefLabel "has military AOR" ;
+.
+usace-orgs:hasMission
+  a owl:ObjectProperty ;
+  rdfs:label "has mission" ;
+  skos:definition "" ;
+  skos:prefLabel "has mission" ;
+.
+usace-orgs:hasMissionType
+  a owl:ObjectProperty ;
+  rdfs:label "has mission type" ;
+  skos:definition "" ;
+  skos:prefLabel "has mission type" ;
+.
+usace-orgs:hasRegulatoryAOR
+  a owl:ObjectProperty ;
+  rdfs:label "has regulatory AOR" ;
+  rdfs:range usace-orgs:RegulatoryAOR ;
+  rdfs:subPropertyOf usace-orgs:hasAOR ;
+  skos:definition "" ;
+  skos:prefLabel "has regulatory AOR" ;
+.
+usace-orgs:isOconus
+  a owl:DatatypeProperty ;
+  rdfs:label "is oconus" ;
+  rdfs:range xsd:boolean ;
+  skos:definition "" ;
+  skos:prefLabel "is oconus" ;
+.
+usace-orgs:missionOf
+  a owl:ObjectProperty ;
+  rdfs:domain usace-orgs:DistrictMission ;
+  rdfs:label "mission of" ;
+  rdfs:range usace-orgs:District ;
+  skos:definition "" ;
+  skos:prefLabel "mission of" ;
+.
+usace-orgs:shortName
+  a owl:DatatypeProperty ;
+  rdfs:label "short name" ;
+  rdfs:range xsd:string ;
+  skos:definition "" ;
+  skos:prefLabel "short name" ;
+.
+usace-orgs:subDistrictOf
+  a owl:ObjectProperty ;
+  rdfs:label "sub district of" ;
+  rdfs:subPropertyOf org:hasSubOrganization ;
+  skos:definition "" ;
+  skos:prefLabel "sub district of" ;
+.
+usace-orgs:supportedBy
+  a owl:ObjectProperty ;
+  rdfs:label "supported by" ;
+  skos:definition "" ;
+  skos:prefLabel "supported by" ;
+.
+usace-orgs:usaceDistrictCode
+  a owl:DatatypeProperty ;
+  rdfs:label "usace district code" ;
+  rdfs:range xsd:string ;
+  skos:definition "" ;
+  skos:prefLabel "usace district code" ;
+.
+usace-orgs:wikidataID
+  a owl:DatatypeProperty ;
+  rdfs:label "Wikidata ID" ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "Wikidata ID" ;
+.
+usace-orgs:usaceDivisionCode
+  a owl:DatatypeProperty ;
+  rdfs:label "usace division code" ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "usace division code" ;
+.
+usace-orgs:wikidataURL
+  a owl:ObjectProperty ; ;
+  rdfs:label "Wikidata URL" ;
+  skos:prefLabel "Wikidata URL" ;
+.

@@ -10,9 +10,12 @@
 @prefix usace-orgs: <https://usace-data.com/ontology/usace-orgs#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix usgov-body: <http://www.usa.gov/ont/bodies#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 
-:OPMOccupationsOntology
+:USACEOrganizationOntology
     a rr:TriplesMap ;
 
     rml:logicalSource [
@@ -28,21 +31,21 @@
   rr:predicateObjectMap [
       rr:predicate dct:title;
       rr:objectMap [
-          rr:constant "USACE Orgs - all merged"
+          rr:constant "USACE Engineer Reporting Organization Ontology"
       ]
   ];
 
     rr:predicateObjectMap [
       rr:predicate dct:description;
       rr:objectMap [
-          rr:constant "USACE Orgs"
+          rr:constant "The US Army Corps of Engineers (USACE)  Top Level Organizational Ontology was developed to consistently describe and represent USACE organizational structure using the terms field operating activity, engineer reporting organization, and office symbol in a consistent manner. Additionally, the ontology identifies the geographic area of responsibility for each USACE district and division for each mission area.  Adoption of this ontology by USACE information systems will facilitate system interoperability consistent with USACE data strategy."
       ]
   ];
 
     rr:predicateObjectMap [
       rr:predicate owl:versionInfo;
       rr:objectMap [
-          rr:constant "v1.0"
+          rr:constant "v07.10.2023"
       ]
   ];
 
@@ -63,37 +66,32 @@
     rr:predicateObjectMap [
       rr:predicate dct:created;
       rr:objectMap [
-          rr:constant "2022-06-23";
+          rr:constant "2023-07-10";
           rr:datatype xsd:date
       ]
   ];
 
   rr:predicateObjectMap [
-      rr:predicate dct:contributor;
+      rr:predicate pav:createdBy;
       rr:objectMap [
-        rr:constant "Sammy Fellah, Image Matters LLC";
+        rr:constant "Sofiane Fellah, Image Matters LLC";
       ]
     ];
 
+  rr:predicateObjectMap [
+      rr:predicate pav:contributedBy;
+      rr:objectMap [
+        rr:constant "Lauren Rhodes, Image Matters LLC";
+      ]
+    ];
 
-
+  rr:predicateObjectMap [
+      rr:predicate pav:authoredBy;
+      rr:objectMap [
+        rr:constant "Joel Schlagel, USACE Civil Works";
+      ]
+    ];
 .
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 :EROMapping
   a rr:TriplesMap;
@@ -165,10 +163,19 @@
           rr:datatype xsd:boolean
       ]
   ];
+
   rr:predicateObjectMap [
     rr:predicate org:reportsTo;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{PARENT_EROC}"
+    ]
+  ];
+
+
+  rr:predicateObjectMap [
+    rr:predicate org:reportsTo;
+    rr:objectMap [
+      rr:template "http://www.usa.gov/ont/bodies#{reportsToGovBody}"
     ]
   ];
 
@@ -182,11 +189,41 @@
   rr:predicateObjectMap [
     rr:predicate rdf:type;
     rr:objectMap [
-      rr:template "https://usace-data.com/ontologies/usace-orgs#{ERO_Type}"
+      rr:template "https://usace-data.com/ontology/usace-orgs#{ERO_Type}"
     ]
   ];
 
+  rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [
+      rr:constant org:Organization ;
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate usace-orgs:wikidataID;
+    rr:objectMap [
+          rml:reference "Wikidata_ID";
+          rr:datatype xsd:string;
+      ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate usace-orgs:wikidataURL;
+    rr:objectMap [
+        rml:reference "Wikidata_URI";
+        rr:datatype xsd:string;
+    ]
+  ];
 .
+
+
+
+
+
+
+
+
 
 :EROMappingInverse
   a rr:TriplesMap;
@@ -209,6 +246,9 @@
   ];
 
 .
+
+
+
 
 #############################################################################
 
@@ -341,7 +381,7 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission_1}_Mission";
-    rr:class usace-orgs:DistrictMission, usace-orgs:RegulatoryMission
+    rr:class usace-orgs:CivilWorksMission, usace-orgs:DistrictMission
   ];
 
   rr:predicateObjectMap [
@@ -369,7 +409,7 @@
   rr:predicateObjectMap [
     rr:predicate usace-orgs:usaceDistrictCode ;
     rr:objectMap [
-      rml:reference "USACE_District_Code";
+      rml:reference "USACE_District_Code" ;
     ];
   ];
 
@@ -381,10 +421,10 @@
     ];
   ];
 
-#  rr:predicateObjectMap [
-#    rr:predicate usace-orgs:hasMissionType;
-#    rr:object usace-orgs:RegulatoryMissionType
-#  ];
+ rr:predicateObjectMap [
+   rr:predicate usace-orgs:hasMissionType;
+   rr:object usace-orgs:CivilWorksMissionType ;
+ ];
 
 .
 
@@ -484,7 +524,7 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission_3}_Mission";
-    rr:class usace-orgs:DistrictMission, usace-orgs:FudsMission
+    rr:class usace-orgs:DistrictMission
   ];
 
   rr:predicateObjectMap [
@@ -602,7 +642,7 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission_3}_Mission";
-    rr:class usace-orgs:DistrictMission, usace-orgs:FusrapMission
+    rr:class usace-orgs:DistrictMission
   ];
 
   rr:predicateObjectMap [
@@ -716,14 +756,14 @@
   ] ;
 
   rr:subjectMap [
-    rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission}_Mission";
+    rr:template "https://usace-data.com/data/usace-orgs#{EROC}_Mission";
     rr:class usace-orgs:DistrictMission
   ];
 
   rr:predicateObjectMap [
     rr:predicate rdfs:label, dct:title, skos:prefLabel;
     rr:objectMap [
-      rr:template "{Engineer_Reporting_Organization_Name (ERO)} {District_Mission} Mission";
+      rr:template "{Engineer_Reporting_Organization_Name (ERO)} Mission";
       rr:termType rr:Literal
     ]
   ];
@@ -832,20 +872,20 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
-    rr:class usace-orgs:District
+    rr:class usace-orgs:District, org:Organization
   ];
 
   rr:predicateObjectMap [
     rr:predicate usace-orgs:usaceDistrictCode;
     rr:objectMap [
-	rml:reference "USACE_District_Code";
+	    rml:reference "USACE_District_Code"
     ]
   ];
 
   rr:predicateObjectMap [
     rr:predicate usace-orgs:districtOf;
     rr:objectMap [
-	rr:template "https://usace-data.com/data/usace-orgs#{Div_EROC}";
+	    rr:template "https://usace-data.com/data/usace-orgs#{Div_EROC}"
     ]
   ];
 
@@ -863,7 +903,7 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{Div_EROC}";
-    rr:class usace-orgs:District
+    rr:class usace-orgs:Division, org:Organization
   ];
 
   rr:predicateObjectMap [
@@ -889,7 +929,7 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
-    rr:class usace-orgs:OtherERO
+    rr:class usace-orgs:OtherERO, org:Organization
   ];
 
   rr:predicateObjectMap [
@@ -928,49 +968,50 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{HQ_EROC}";
-    rr:class usace-orgs:OtherERO
+    rr:class usace-orgs:HQUSACE
   ];
 
 
   rr:predicateObjectMap [
     rr:predicate usace-orgs:hasOtherERO;
     rr:objectMap [
-	rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
+	    rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
     ]
   ];
-
-
 
 .
 
-:MilitaryMissionsAll
-  a rr:TriplesMap;
+# MilitaryMissionsAll
+# a rr:TriplesMap;
+# 
+# rml:logicalSource [
+#   rml:source "clean-CW_DistrictMissions.csv";
+#   rml:referenceFormulation ql:CSV
+# ] ;
+# 
+# rr:subjectMap [
+#   rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
+#   rr:class usace-orgs:DistrictMission
+# ];
+# 
+# 
+# rr:predicateObjectMap [
+#   rr:predicate usace-orgs:hasMission;
+#   rr:objectMap [
+# 	  rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission}_Mission";
+#   ]
+# ];
+# 
+# rr:predicateObjectMap [
+#   rr:predicate rdfs:label, dct:title, skos:prefLabel;
+#   rr:objectMap [
+# 	  rml:reference "Engineer_Reporting_Organization_Name (ERO)";
+#   ]
+# ];
+# .
 
-  rml:logicalSource [
-    rml:source "clean-MilitaryDistrictMissions.csv";
-    rml:referenceFormulation ql:CSV
-  ] ;
-
-  rr:subjectMap [
-    rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
-  ];
+ 
 
 
-  rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasMission;
-    rr:objectMap [
-	rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission}_Mission";
-    ]
-  ];
-
-  rr:predicateObjectMap [
-    rr:predicate rdfs:label, dct:title, skos:prefLabel;
-    rr:objectMap [
-	rml:reference "Engineer_Reporting_Organization_Name (ERO)";
-    ]
-  ];
-
-
-.
 
 
