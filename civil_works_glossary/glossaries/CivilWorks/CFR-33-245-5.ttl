@@ -1,0 +1,77 @@
+@prefix CFR-33-245-5: <https://usace-data.com/civil-works/glossary/CFR-33-245-5#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CFR-33-245-5:Abandonment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Abandonment" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-245/section-245.5" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-245-5.yaml#term[Abandonment]" ;
+    skos:definition "means the surrendering of all rights to a vessel (or other obstruction) and its cargo by the owner, or owners if vessel and cargo are separately owned." ;
+    skos:inScheme CFR-33-245-5: ;
+    skos:prefLabel "Abandonment" .
+
+CFR-33-245-5:Hazard_to_navigation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Hazard to navigation" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-245/section-245.5" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-245-5.yaml#term[Hazard to navigation]" ;
+    skos:definition "is an obstruction, usually sunken, that presents sufficient danger to navigation so as to require expeditious, affirmative action such as marking, removal, or redefinition of a designated waterway to provide for navigational safety." ;
+    skos:inScheme CFR-33-245-5: ;
+    skos:prefLabel "Hazard to navigation" .
+
+CFR-33-245-5:Obstruction a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Obstruction" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-245/section-245.5" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-245-5.yaml#term[Obstruction]" ;
+    skos:definition "is anything that restricts, endangers or interferes with navigation." ;
+    skos:inScheme CFR-33-245-5: ;
+    skos:prefLabel "Obstruction" .
+
+CFR-33-245-5:Responsible_party a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Responsible party" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-245/section-245.5" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-245-5.yaml#term[Responsible party]" ;
+    skos:definition "means the owner of a vessel and/or cargo, or an operator or lessee where the operator or lessee has substantial control of the vessel's operation." ;
+    skos:inScheme CFR-33-245-5: ;
+    skos:prefLabel "Responsible party" .
+
+CFR-33-245-5:Vessel a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Vessel" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-245/section-245.5" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-245-5.yaml#term[Vessel]" ;
+    skos:definition "as used in this part includes any ship, boat, barge, raft, or other water craft." ;
+    skos:inScheme CFR-33-245-5: ;
+    skos:prefLabel "Vessel" .
+
+CFR-33-245-5: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Code of Federal Regulations - Title 33, Chapter-II, Part 245, Section-245.5" ;
+    dcterms:created "2024-07-16T04:23:31.452796+00:00"^^xsd:dateTime ;
+    dcterms:description "33-CFR-245.5 Term definitions are applicable throughout part 245" ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Code of Federal Regulations - Title 33, Chapter-II, Part 245, Section-245.5" ;
+    pav:ImportedFrom "glossaries/CivilWorks/CFR-33-245-5.yaml" ;
+    pav:createdOn "2024-07-16T04:23:31.452796+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "33 CFR 245.5 Definitions" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/CFR-33-245-5#" ;
+    skos:hasTopConcept CFR-33-245-5:Abandonment,
+        CFR-33-245-5:Hazard_to_navigation,
+        CFR-33-245-5:Obstruction,
+        CFR-33-245-5:Responsible_party,
+        CFR-33-245-5:Vessel .
+

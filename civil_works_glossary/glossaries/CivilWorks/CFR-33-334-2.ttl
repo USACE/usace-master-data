@@ -1,0 +1,47 @@
+@prefix CFR-33-334-2: <https://usace-data.com/civil-works/glossary/CFR-33-334-2#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CFR-33-334-2:Danger_zone a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Danger zone" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-334/section-334.2" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-334-2.yaml#term[Danger zone]" ;
+    skos:definition "A defined water area (or areas) used for target practice, bombing, rocket firing or other especially hazardous operations, normally for the armed forces. The danger zones may be closed to the public on a full-time or intermittent basis, as stated in the regulations." ;
+    skos:inScheme CFR-33-334-2: ;
+    skos:prefLabel "Danger zone" .
+
+CFR-33-334-2:Restricted_area a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Restricted area" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-334/section-334.2" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-334-2.yaml#term[Restricted area]" ;
+    skos:definition "A defined water area for the purpose of prohibiting or limiting public access to the area. Restricted areas generally provide security for Government property and/or protection to the public from the risks of damage or injury arising from the Government's use of that area." ;
+    skos:inScheme CFR-33-334-2: ;
+    skos:prefLabel "Restricted area" .
+
+CFR-33-334-2: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Code of Federal Regulations - Title 33, Chapter-II, Part 334, Section-334.2" ;
+    dcterms:created "2024-07-16T04:25:22.191764+00:00"^^xsd:dateTime ;
+    dcterms:description "None" ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Code of Federal Regulations - Title 33, Chapter-II, Part 334, Section-334.2" ;
+    pav:ImportedFrom "glossaries/CivilWorks/CFR-33-334-2.yaml" ;
+    pav:createdOn "2024-07-16T04:25:22.191764+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "33 CFR 334.2 Definitions" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/CFR-33-334-2#" ;
+    skos:hasTopConcept CFR-33-334-2:Danger_zone,
+        CFR-33-334-2:Restricted_area .
+

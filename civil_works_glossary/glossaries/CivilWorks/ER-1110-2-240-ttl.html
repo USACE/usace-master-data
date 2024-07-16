@@ -1,0 +1,2662 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Ontospy > https://usace-data.com/civil-works/glossary/ER-1110-2-240#</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <style type="text/css" media="screen">
+
+
+  body {
+	  margin-left: 6em;
+	  margin-right: 12em;
+	  text-align: justify;
+    padding: 2em 1em 2em 70px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  :link { color: #00C; background: transparent }
+  :visited { color: #00C; background: transparent }
+  a:active { color: #C00; background: transparent }
+
+  a:link img, a:visited img { border-style: none } /* no border on img links */
+
+  a:hover {color: white; background: #00C; }
+  a.backlink:hover {color: white; background: grey; }
+  a.greylink:hover {color: white; background: grey; }
+
+  .margintop {
+  	 margin-top: 40px;
+  }
+
+
+  dt, dd { margin-top: 10px; margin-bottom: 0 } /* opera 3.50 */
+  dt { font-weight: bold }
+
+
+  h1, h2, h3, h4, h5, h6 { text-align: left }
+  /* background should be transparent, but WebTV has a bug */
+  h1, h2, h3, h4, h5 { color: #005A9C; background: white }
+  h1.title { font: 200% sans-serif }
+  h1 { font: 170% sans-serif }
+  h2 { font: 140% sans-serif }
+  h3 { font: 120% sans-serif }
+  h4 { font: bold 100% sans-serif }
+  h5 { font: italic 100% sans-serif }
+  h6 { font: small-caps 100% sans-serif }
+
+  .hide { display: none }
+
+
+  pre { margin-left: 2em }
+
+  pre, code { font-family: monospace } /* navigator 4 requires this */
+
+
+  .implementation {
+  	background: aliceblue;
+	padding: 10px;
+	margin-top: 5px;
+  }
+
+  fieldset {
+	  margin-top: 20px;
+	  padding: 13px;
+      text-align: left;
+  }
+
+  legend {
+	  text-transform: uppercase;
+  }
+
+  .entity-div {
+	  margin: 55px 10px 30px 10px;
+  }
+
+  .entity-section {
+	  margin-bottom: 0px;
+  }
+
+
+  a.backlink {
+	  font-size: 80%;
+	  color: grey;
+  }
+
+  a.greylink {
+	  color: grey;
+  }
+
+
+   .implementation_title {
+
+       font-weight: bold;
+       font-size: 100%;
+   }
+
+.section-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+        .tree-container {
+            width: 3000em;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+		.tree {margin: 10px 0px 30px -20px; padding: 0; display: inline-block;}
+
+		.tree ul {
+			padding-top: 20px; position: relative;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		.tree li {
+			float: left; text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*We will use ::before and ::after to draw the connectors*/
+
+		.tree li::before, .tree li::after{
+			content: '';
+			position: absolute; top: 0; right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%; height: 20px;
+		}
+		.tree li::after{
+			right: auto; left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		/*We need to remove left-right connectors from elements without
+		any siblings*/
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		/*Remove space from the top of single children*/
+		.tree li:only-child{ padding-top: 0;}
+
+		/*Remove left connector from first child and
+		right connector from last child*/
+		.tree li:first-child::before, .tree li:last-child::after{
+			border: 0 none;
+		}
+		/*Adding back the vertical connector to the last nodes*/
+		.tree li:last-child::before{
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+			-webkit-border-radius: 0 5px 0 0;
+			-moz-border-radius: 0 5px 0 0;
+		}
+		.tree li:first-child::after{
+			border-radius: 5px 0 0 0;
+			-webkit-border-radius: 5px 0 0 0;
+			-moz-border-radius: 5px 0 0 0;
+		}
+
+		/*Time to add downward connectors from parents*/
+		.tree ul ul::before{
+			content: '';
+			position: absolute; top: 0; left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0; height: 20px;
+		}
+
+		.tree li a{
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #666;
+			font-family: arial, verdana, tahoma;
+			font-size: 11px;
+			display: inline-block;
+
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*Time for some hover effects*/
+		/*We will apply the hover effect the the lineage of the element also*/
+		.tree li a:hover, .tree li a:hover+ul li a {
+			background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+		}
+		/*Connector styles on hover*/
+		.tree li a:hover+ul li::after,
+		.tree li a:hover+ul li::before,
+		.tree li a:hover+ul::before,
+		.tree li a:hover+ul ul::before{
+			border-color:  #94a0b4;
+		}
+
+		/*Thats all. I hope you enjoyed it.
+		Thanks :)*/
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+	
+	
+		
+			<h1 class="title"><a href="" target="_blank">https://usace-data.com/civil-works/glossary/ER-1110-2-240#</a></h1>
+			<h3><p>Engineering Manual 1110-2-240, Water Control Management, defines acronyms and terms commonly used in this report, which describes policies governing water control management activities, the establishment of water control plans by the U.S. Army Corps of Engineers (USACE) at all USACE-owned and USACE-operated reservoirs, locks, dams, and other water control projects. These terms are defined in the glossary section of the report.</p></h3>
+		
+
+	
+		
+		
+
+
+	<p><small>Ontology documentation automatically generated by <a class="greylink" href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> on Tue, 16 Jul 2024 04:27:07</small></p>
+
+
+
+	
+
+
+	<hr class="margintop">
+
+	<h1><a name="toc">&nbsp;</a>Table of Content</h1>
+
+	<ul>
+		<li><a href="#ontologies">Ontologies</a></li>
+		<li><a href="#a-z">A-Z of Terms</a></li>
+		
+		
+		
+		
+		<li><a href="#skosconcepts">SKOS Concepts</a></li>
+		
+	</ul>
+
+
+
+	
+
+	
+
+	<hr class="margintop">
+
+	<h1><a name="ontologies"></a>Ontologies</h1>
+
+		
+
+
+			<fieldset> <legend><h3><a href="https://usace-data.com/civil-works/glossary/ER-1110-2-240#" target="_blank">https://usace-data.com/civil-works/glossary/ER-1110-2-240#</a></h3></legend>
+
+			<h4 style="margin-top: -20px;"><p>Engineering Manual 1110-2-240, Water Control Management, defines acronyms and terms commonly used in this report, which describes policies governing water control management activities, the establishment of water control plans by the U.S. Army Corps of Engineers (USACE) at all USACE-owned and USACE-operated reservoirs, locks, dams, and other water control projects. These terms are defined in the glossary section of the report.</p></h4>
+
+			
+			
+				
+					<dt>dcterms:created</dt>
+				  
+			
+			<dd><p>2024-07-16T04:27:02.906387+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:description</dt>
+				  
+			
+			<dd><p>Engineering Manual 1110-2-240, Water Control Management, defines acronyms and terms commonly used in this report, which describes policies governing water control management activities, the establishment of water control plans by the U.S. Army Corps of Engineers (USACE) at all USACE-owned and USACE-operated reservoirs, locks, dams, and other water control projects. These terms are defined in the glossary section of the report.</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:publisher</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:rights</dt>
+				  
+			
+			<dd><p>MIT</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:title</dt>
+				  
+			
+			<dd><p>Engineering Manual 1110-2-240, Water Control Management</p></dd>
+			
+			
+				</dl>
+					<dt>pav:ImportedFrom</dt>
+				  
+			
+			<dd><p>glossaries/CivilWorks/ER-1110-2-240.yaml</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdOn</dt>
+				  
+			
+			<dd><p>2024-07-16T04:27:02.906387+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdWith</dt>
+				  
+			
+			<dd><p>gloss</p></dd>
+			
+			
+				</dl>
+					<dt>pav:wasInfluencedBy</dt>
+				  
+			
+			<dd><p>ER 1110-2-240 Water Control Management</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.knowledgesmarts.com/ontologies/wov#Glossary</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2002/07/owl#Ontology</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2004/02/skos/core#ConceptScheme</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#Vocabulary</p></dd>
+			
+			
+				</dl>
+					<dt>rdfs:label</dt>
+				  
+			
+			<dd><p>Engineering Manual 1110-2-240, Water Control Management</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Active_storage</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Continuity_of_Operations</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Corps_Water_Management_System</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Dead_storage</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Design_Water_Level</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Deviation</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Drought</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Environmental_Flow</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Flood_surcharge</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Guide_Curve</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Inactive_storage</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Letter_of_Understanding</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Live_storage</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Master_Water_Control_Manual</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Project</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Project_Owner</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Real_Time</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Reregulation</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Reservoir</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Reservoir_Regulation_Schedule</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Reservoir_capacity</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Storage</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Surcharge</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Water_Control_Agreement</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Water_Control_Manual</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Water_Control_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Water_Control_Regulation</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Water_Quality</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#Water_Quality_Management</p></dd>
+			
+			
+				</dl>
+					<dt>vann:preferredNamespaceUri</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-240#</p></dd>
+			
+
+			</fieldset>
+
+		
+
+	
+
+
+
+	
+
+	<hr class="margintop">
+	<h1><a  name="a-z">&nbsp;</a>A-Z of terms</h1>
+
+	<div id="azterms">
+
+	This is a complete alphabetical A-Z index of all terms, by main logical type.
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		<fieldset> <legend>SKOS Concepts (29)</legend>
+			&nbsp;<a href="#ER-1110-2-240:Active_storage">ER-1110-2-240:Active_storage</a>
+			|  <a href="#ER-1110-2-240:Continuity_of_Operations">ER-1110-2-240:Continuity_of_Operations</a>
+			|  <a href="#ER-1110-2-240:Corps_Water_Management_System">ER-1110-2-240:Corps_Water_Management_System</a>
+			|  <a href="#ER-1110-2-240:Dead_storage">ER-1110-2-240:Dead_storage</a>
+			|  <a href="#ER-1110-2-240:Design_Water_Level">ER-1110-2-240:Design_Water_Level</a>
+			|  <a href="#ER-1110-2-240:Deviation">ER-1110-2-240:Deviation</a>
+			|  <a href="#ER-1110-2-240:Drought">ER-1110-2-240:Drought</a>
+			|  <a href="#ER-1110-2-240:Environmental_Flow">ER-1110-2-240:Environmental_Flow</a>
+			|  <a href="#ER-1110-2-240:Flood_surcharge">ER-1110-2-240:Flood_surcharge</a>
+			|  <a href="#ER-1110-2-240:Guide_Curve">ER-1110-2-240:Guide_Curve</a>
+			|  <a href="#ER-1110-2-240:Inactive_storage">ER-1110-2-240:Inactive_storage</a>
+			|  <a href="#ER-1110-2-240:Letter_of_Understanding">ER-1110-2-240:Letter_of_Understanding</a>
+			|  <a href="#ER-1110-2-240:Live_storage">ER-1110-2-240:Live_storage</a>
+			|  <a href="#ER-1110-2-240:Master_Water_Control_Manual">ER-1110-2-240:Master_Water_Control_Manual</a>
+			|  <a href="#ER-1110-2-240:Project">ER-1110-2-240:Project</a>
+			|  <a href="#ER-1110-2-240:Project_Owner">ER-1110-2-240:Project_Owner</a>
+			|  <a href="#ER-1110-2-240:Real_Time">ER-1110-2-240:Real_Time</a>
+			|  <a href="#ER-1110-2-240:Reregulation">ER-1110-2-240:Reregulation</a>
+			|  <a href="#ER-1110-2-240:Reservoir">ER-1110-2-240:Reservoir</a>
+			|  <a href="#ER-1110-2-240:Reservoir_Regulation_Schedule">ER-1110-2-240:Reservoir_Regulation_Schedule</a>
+			|  <a href="#ER-1110-2-240:Reservoir_capacity">ER-1110-2-240:Reservoir_capacity</a>
+			|  <a href="#ER-1110-2-240:Storage">ER-1110-2-240:Storage</a>
+			|  <a href="#ER-1110-2-240:Surcharge">ER-1110-2-240:Surcharge</a>
+			|  <a href="#ER-1110-2-240:Water_Control_Agreement">ER-1110-2-240:Water_Control_Agreement</a>
+			|  <a href="#ER-1110-2-240:Water_Control_Manual">ER-1110-2-240:Water_Control_Manual</a>
+			|  <a href="#ER-1110-2-240:Water_Control_Plan">ER-1110-2-240:Water_Control_Plan</a>
+			|  <a href="#ER-1110-2-240:Water_Control_Regulation">ER-1110-2-240:Water_Control_Regulation</a>
+			|  <a href="#ER-1110-2-240:Water_Quality">ER-1110-2-240:Water_Quality</a>
+			|  <a href="#ER-1110-2-240:Water_Quality_Management">ER-1110-2-240:Water_Quality_Management</a>
+			  
+		</fieldset>
+
+	
+
+	
+
+	</div>
+
+
+
+	
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+	
+
+
+		<hr class="margintop">
+		<h1 class="margintop"><a  name="skosconcepts">&nbsp;</a>SKOS Concepts</h1>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Active_storage" href="#ER-1110-2-240:Active_storage">ER-1110-2-240:Active_storage</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Active_storage</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Active_storage is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The volume of the reservoir that is available for authorized purposes such as power generation, irrigation, flood control, water supply, etc. The bottom elevation is the minimum operating level or the top of inactive storage (where present).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Active_storage a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Active storage&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Active storage]&#34; ;<br>
+    skos:definition &#34;The volume of the reservoir that is available for authorized purposes such as power generation, irrigation, flood control, water supply, etc. The bottom elevation is the minimum operating level or the top of inactive storage (where present).&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Active storage&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Continuity_of_Operations" href="#ER-1110-2-240:Continuity_of_Operations">ER-1110-2-240:Continuity_of_Operations</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Continuity_of_Operations</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Continuity_of_Operations is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Emergency relocation and reconstitution of a USACE activity as a result of either a natural or a man-made (caused) disaster.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Continuity_of_Operations a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Continuity of Operations&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Continuity of Operations]&#34; ;<br>
+    skos:altLabel &#34;[&#39;COOP&#39;]&#34; ;<br>
+    skos:definition &#34;Emergency relocation and reconstitution of a USACE activity as a result of either a natural or a man-made (caused) disaster.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Continuity of Operations&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Corps_Water_Management_System" href="#ER-1110-2-240:Corps_Water_Management_System">ER-1110-2-240:Corps_Water_Management_System</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Corps_Water_Management_System</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Corps_Water_Management_System is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An integrated system of hardware, software, and communication resources supporting the USACE real-time water control mission.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Corps_Water_Management_System a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Corps Water Management System&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Corps Water Management System]&#34; ;<br>
+    skos:altLabel &#34;[&#39;CWMS&#39;]&#34; ;<br>
+    skos:definition &#34;An integrated system of hardware, software, and communication resources supporting the USACE real-time water control mission.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Corps Water Management System&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Dead_storage" href="#ER-1110-2-240:Dead_storage">ER-1110-2-240:Dead_storage</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Dead_storage</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Dead_storage is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The storage that lies below the invert of the lowest outlet and that, therefore, cannot readily be withdrawn from the reservoir.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Dead_storage a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Dead storage&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Dead storage]&#34; ;<br>
+    skos:definition &#34;The storage that lies below the invert of the lowest outlet and that, therefore, cannot readily be withdrawn from the reservoir.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Dead storage&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Design_Water_Level" href="#ER-1110-2-240:Design_Water_Level">ER-1110-2-240:Design_Water_Level</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Design_Water_Level</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Design_Water_Level is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The maximum water elevation including flood surcharge that a dam is designed to withstand.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Design_Water_Level a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Design Water Level&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Design Water Level]&#34; ;<br>
+    skos:definition &#34;The maximum water elevation including flood surcharge that a dam is designed to withstand.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Design Water Level&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Deviation" href="#ER-1110-2-240:Deviation">ER-1110-2-240:Deviation</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Deviation</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Deviation is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An operation that departs from the approved water control plan or manual or operations prescribed by the approved water control plans or manual constitutes a deviation. This could include a planned, unplanned, or emergency deviation. An allowable deviations is a risk-informed and temporary operation consistent with the project authorization, all other applicable laws and policies, and the objectives for system and project operations. A deviation may be made in order to respond to unforeseen circumstances, alleviate temporary problems or realize opportunities to increase project benefits (both direct and incidental) on a temporary basis.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Deviation a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Deviation&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Deviation]&#34; ;<br>
+    skos:definition &#34;An operation that departs from the approved water control plan or manual or operations prescribed by the approved water control plans or manual constitutes a deviation. This could include a planned, unplanned, or emergency deviation. An allowable deviations is a risk-informed and temporary operation consistent with the project authorization, all other applicable laws and policies, and the objectives for system and project operations. A deviation may be made in order to respond to unforeseen circumstances, alleviate temporary problems or realize opportunities to increase project benefits (both direct and incidental) on a temporary basis.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Deviation&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Drought" href="#ER-1110-2-240:Drought">ER-1110-2-240:Drought</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Drought</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Drought is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A deficiency of moisture or lack of storage that results in adverse impacts on people, animals, or vegetation over a sizeable area. Determination of drought conditions, in relation to the conditions of streamflow, is usually based on the most critically severe sequence of lowwater conditions as determined from the historical period of record of streamflow for a particular<br>
+river system. Inasmuch as the period of record of streamflow data varies widely between river<br>
+systems, this criterion does not yield a consistent measure of drought severity. Hydrologic lowflow analysis utilizing historical data may be necessary to yield consistent probabilities of lowwater sequences. </p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Drought a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Drought&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Drought]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;A deficiency of moisture or lack of storage that results in adverse impacts on people, animals, or vegetation over a sizeable area. Determination of drought conditions, in relation to the conditions of streamflow, is usually based on the most critically severe sequence of lowwater conditions as determined from the historical period of record of streamflow for a particular<br>
+river system. Inasmuch as the period of record of streamflow data varies widely between river<br>
+systems, this criterion does not yield a consistent measure of drought severity. Hydrologic lowflow analysis utilizing historical data may be necessary to yield consistent probabilities of lowwater sequences. &#34;&#34;&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Drought&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Environmental_Flow" href="#ER-1110-2-240:Environmental_Flow">ER-1110-2-240:Environmental_Flow</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Environmental_Flow</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Environmental_Flow is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The quality, quantity, and timing of water flows required to maintain the components, functions, processes, and resilience of aquatic ecosystems.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Environmental_Flow a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Environmental Flow&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Environmental Flow]&#34; ;<br>
+    skos:definition &#34;The quality, quantity, and timing of water flows required to maintain the components, functions, processes, and resilience of aquatic ecosystems.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Environmental Flow&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Flood_surcharge" href="#ER-1110-2-240:Flood_surcharge">ER-1110-2-240:Flood_surcharge</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Flood_surcharge</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Flood_surcharge is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The storage volume that may be available between the top of the active storage and the design water level.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Flood_surcharge a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Flood surcharge&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Flood surcharge]&#34; ;<br>
+    skos:definition &#34;The storage volume that may be available between the top of the active storage and the design water level.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Flood surcharge&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Guide_Curve" href="#ER-1110-2-240:Guide_Curve">ER-1110-2-240:Guide_Curve</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Guide_Curve</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Guide_Curve is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The dividing line between part of the reservoir pool that is designated as flood control and that part that is designated as conservation.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Guide_Curve a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Guide Curve&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Guide Curve]&#34; ;<br>
+    skos:definition &#34;The dividing line between part of the reservoir pool that is designated as flood control and that part that is designated as conservation.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Guide Curve&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Inactive_storage" href="#ER-1110-2-240:Inactive_storage">ER-1110-2-240:Inactive_storage</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Inactive_storage</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Inactive_storage is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The storage volume (if any) of a reservoir between the crest of the invert of the lowest outlet and the minimum operating level.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Inactive_storage a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Inactive storage&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Inactive storage]&#34; ;<br>
+    skos:definition &#34;The storage volume (if any) of a reservoir between the crest of the invert of the lowest outlet and the minimum operating level.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Inactive storage&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Letter_of_Understanding" href="#ER-1110-2-240:Letter_of_Understanding">ER-1110-2-240:Letter_of_Understanding</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Letter_of_Understanding</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Letter_of_Understanding is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>As used herein, a statement that consummates this regulation for any given project and defines the general provisions or conditions of the local sponsor or owner, cooperation agreed to in the authorizing legislative document, and the requirements for compliance with Section 7 of the Flood Control Act of 1944, the Federal Power Act, or other special act of Congress. The letter of understanding will be signed by a duly authorized representative of the Chief of Engineers and the project owner. A field working agreement may be substituted for a letter of understanding, provided that the specified minimum requirements of the latter, as stated above, are met.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Letter_of_Understanding a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Letter of Understanding&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Letter of Understanding]&#34; ;<br>
+    skos:definition &#34;As used herein, a statement that consummates this regulation for any given project and defines the general provisions or conditions of the local sponsor or owner, cooperation agreed to in the authorizing legislative document, and the requirements for compliance with Section 7 of the Flood Control Act of 1944, the Federal Power Act, or other special act of Congress. The letter of understanding will be signed by a duly authorized representative of the Chief of Engineers and the project owner. A field working agreement may be substituted for a letter of understanding, provided that the specified minimum requirements of the latter, as stated above, are met.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Letter of Understanding&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Live_storage" href="#ER-1110-2-240:Live_storage">ER-1110-2-240:Live_storage</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Live_storage</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Live_storage is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The sum of the active-and the inactive storage (if any).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Live_storage a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Live storage&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Live storage]&#34; ;<br>
+    skos:definition &#34;The sum of the active-and the inactive storage (if any).&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Live storage&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Master_Water_Control_Manual" href="#ER-1110-2-240:Master_Water_Control_Manual">ER-1110-2-240:Master_Water_Control_Manual</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Master_Water_Control_Manual</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Master_Water_Control_Manual is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A water control manual prepared for a system of projects rather than an individual project. Operation. The physical manipulation of spillway gates, outlet works, or instrumentation associated with projects. Operations prescribed by a water control plan shall include the operational flexibility necessary to accomplish the authorized purposes of the project under foreseeable conditions, according to the approved water control plan or manual. The approved water control plan or manual is a result of intensive study and includes the hydrologic, hydraulic, and reservoir regulation analyses of the historical period of record. These analyses cover a wide range of hydrologic conditions. The water control plan which could include guide curves, physical constraints, and operational constraints is tested against this range of conditions. The resulting simulated operations depict what could be represented as normal, high or low flows and a range of operations to respond to those conditions. Operations within the range contemplated or prescribed by a water control plan reflect the operational flexibility of the water control plan or manual and are not considered deviations.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Master_Water_Control_Manual a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Master Water Control Manual&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Master Water Control Manual]&#34; ;<br>
+    skos:definition &#34;A water control manual prepared for a system of projects rather than an individual project. Operation. The physical manipulation of spillway gates, outlet works, or instrumentation associated with projects. Operations prescribed by a water control plan shall include the operational flexibility necessary to accomplish the authorized purposes of the project under foreseeable conditions, according to the approved water control plan or manual. The approved water control plan or manual is a result of intensive study and includes the hydrologic, hydraulic, and reservoir regulation analyses of the historical period of record. These analyses cover a wide range of hydrologic conditions. The water control plan which could include guide curves, physical constraints, and operational constraints is tested against this range of conditions. The resulting simulated operations depict what could be represented as normal, high or low flows and a range of operations to respond to those conditions. Operations within the range contemplated or prescribed by a water control plan reflect the operational flexibility of the water control plan or manual and are not considered deviations.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Master Water Control Manual&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Project" href="#ER-1110-2-240:Project">ER-1110-2-240:Project</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Project</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Project is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Any water resource impoundment project constructed or modified, including natural lakes, these could include reservoirs, locks, dams and other water control projects</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Project a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Project]&#34; ;<br>
+    skos:definition &#34;Any water resource impoundment project constructed or modified, including natural lakes, these could include reservoirs, locks, dams and other water control projects&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Project&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Project_Owner" href="#ER-1110-2-240:Project_Owner">ER-1110-2-240:Project_Owner</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Project_Owner</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Project_Owner is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The entity responsible for maintenance, physical operation, and safety of the project, and for carrying out the water control plan in the interest of flood control or navigation as prescribed by USACE. Special arrangements may be made by the project owner for &#34;operating agencies&#34; to perform these tasks.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Project_Owner a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project Owner&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Project Owner]&#34; ;<br>
+    skos:definition &#34;The entity responsible for maintenance, physical operation, and safety of the project, and for carrying out the water control plan in the interest of flood control or navigation as prescribed by USACE. Special arrangements may be made by the project owner for \&#34;operating agencies\&#34; to perform these tasks.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Project Owner&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Real_Time" href="#ER-1110-2-240:Real_Time">ER-1110-2-240:Real_Time</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Real_Time</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Real_Time is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>As used herein, real time denotes the processing of current information or data in a sufficiently timely manner to influence a physical response in the system being monitored or controlled. The term includes information on the analyses for and execution of water control decisions for both minor and major flood events and for navigation and low water regulation based on prevailing hydro-meteorological and other conditions and constraints, to achieve<br>
+efficient management of water resource systems.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Real_Time a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Real Time&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Real Time]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;As used herein, real time denotes the processing of current information or data in a sufficiently timely manner to influence a physical response in the system being monitored or controlled. The term includes information on the analyses for and execution of water control decisions for both minor and major flood events and for navigation and low water regulation based on prevailing hydro-meteorological and other conditions and constraints, to achieve<br>
+efficient management of water resource systems.&#34;&#34;&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Real Time&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Reregulation" href="#ER-1110-2-240:Reregulation">ER-1110-2-240:Reregulation</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Reregulation</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Reregulation is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>In a multi-dam system, regulating the dramatic peak flows generated by upstream dams through the measured release of water from the dam farthest downstream.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Reregulation a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Reregulation&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Reregulation]&#34; ;<br>
+    skos:definition &#34;In a multi-dam system, regulating the dramatic peak flows generated by upstream dams through the measured release of water from the dam farthest downstream.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Reregulation&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Reservoir" href="#ER-1110-2-240:Reservoir">ER-1110-2-240:Reservoir</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Reservoir</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Reservoir is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Any dam-and-reservoir project surveyed, planned, and constructed, or to be planned, surveyed, constructed, and operated by the U.S. Army Corps of Engineers, that is intended to contain storage to be jointly managed and operated for multiple purposes under federal law. The terms reservoir and project may comprise a single dam-and-reservoir facility or a system of improvements, depending on how the project is ultimately authorized by Congress, and may include lock and dam projects, if such lock and dam projects contain storage that was authorized by Congress and is managed for multiple purposes in accordance with congressional intent.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Reservoir a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Reservoir&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Reservoir]&#34; ;<br>
+    skos:definition &#34;Any dam-and-reservoir project surveyed, planned, and constructed, or to be planned, surveyed, constructed, and operated by the U.S. Army Corps of Engineers, that is intended to contain storage to be jointly managed and operated for multiple purposes under federal law. The terms reservoir and project may comprise a single dam-and-reservoir facility or a system of improvements, depending on how the project is ultimately authorized by Congress, and may include lock and dam projects, if such lock and dam projects contain storage that was authorized by Congress and is managed for multiple purposes in accordance with congressional intent.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Reservoir&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Reservoir_Regulation_Schedule" href="#ER-1110-2-240:Reservoir_Regulation_Schedule">ER-1110-2-240:Reservoir_Regulation_Schedule</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Reservoir_Regulation_Schedule</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Reservoir_Regulation_Schedule is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A compilation of operating criteria, guidelines, guide curves, and specifications that govern the storage and release functions of a reservoir. In general, schedules indicate limiting rates of reservoir releases required during various seasons of the year to meet all Congressionally authorized purposes of the particular project, acting separately or in combination with other projects in a system. Schedules are usually expressed in the form of graphs and tabulations, supplemented by concise specifications.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Reservoir_Regulation_Schedule a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Reservoir Regulation Schedule&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Reservoir Regulation Schedule]&#34; ;<br>
+    skos:definition &#34;A compilation of operating criteria, guidelines, guide curves, and specifications that govern the storage and release functions of a reservoir. In general, schedules indicate limiting rates of reservoir releases required during various seasons of the year to meet all Congressionally authorized purposes of the particular project, acting separately or in combination with other projects in a system. Schedules are usually expressed in the form of graphs and tabulations, supplemented by concise specifications.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Reservoir Regulation Schedule&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Reservoir_capacity" href="#ER-1110-2-240:Reservoir_capacity">ER-1110-2-240:Reservoir_capacity</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Reservoir_capacity</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Reservoir_capacity is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The sum of the dead and live storage of the reservoir.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Reservoir_capacity a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Reservoir capacity&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Reservoir capacity]&#34; ;<br>
+    skos:definition &#34;The sum of the dead and live storage of the reservoir.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Reservoir capacity&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Storage" href="#ER-1110-2-240:Storage">ER-1110-2-240:Storage</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Storage</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Storage is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The retention of water or delay of runoff either by planned operation, as in a reservoir, or by temporary filling of overflow areas, as in the progression of a flood wave through a natural stream channel.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Storage a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Storage&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Storage]&#34; ;<br>
+    skos:definition &#34;The retention of water or delay of runoff either by planned operation, as in a reservoir, or by temporary filling of overflow areas, as in the progression of a flood wave through a natural stream channel.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Storage&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Surcharge" href="#ER-1110-2-240:Surcharge">ER-1110-2-240:Surcharge</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Surcharge</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Surcharge is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Any storage above the full pool.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Surcharge a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Surcharge&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Surcharge]&#34; ;<br>
+    skos:definition &#34;Any storage above the full pool.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Surcharge&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Water_Control_Agreement" href="#ER-1110-2-240:Water_Control_Agreement">ER-1110-2-240:Water_Control_Agreement</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Water_Control_Agreement</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Water_Control_Agreement is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A compilation of water control criteria, guidelines, diagrams, release<br>
+schedules, guide curves, and specifications that basically govern the use of reservoir storage<br>
+space for flood control or navigation, and other authorized purposes. In general, they indicate<br>
+controlling or release functions of a water control project for these purposes. In general, they<br>
+indicate controlling or limiting rates of discharge and storage space required for flood control or<br>
+navigation, based on the runoff potential during various seasons of the year.<br>
+</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Water_Control_Agreement a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Water Control Agreement&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Water Control Agreement]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;A compilation of water control criteria, guidelines, diagrams, release<br>
+schedules, guide curves, and specifications that basically govern the use of reservoir storage<br>
+space for flood control or navigation, and other authorized purposes. In general, they indicate<br>
+controlling or release functions of a water control project for these purposes. In general, they<br>
+indicate controlling or limiting rates of discharge and storage space required for flood control or<br>
+navigation, based on the runoff potential during various seasons of the year.<br>
+&#34;&#34;&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Water Control Agreement&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Water_Control_Manual" href="#ER-1110-2-240:Water_Control_Manual">ER-1110-2-240:Water_Control_Manual</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Water_Control_Manual</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Water_Control_Manual is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A document that provides guidance and instruction for project personnel and a reference source for others who may be involved with, responsible for, or affected by project regulation. It includes all water control management activities as they relate to hydraulic and hydrologic aspects of the project, such as descriptions of physical components, operating procedures, historical facts, and other pertinent data.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Water_Control_Manual a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Water Control Manual&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Water Control Manual]&#34; ;<br>
+    skos:definition &#34;A document that provides guidance and instruction for project personnel and a reference source for others who may be involved with, responsible for, or affected by project regulation. It includes all water control management activities as they relate to hydraulic and hydrologic aspects of the project, such as descriptions of physical components, operating procedures, historical facts, and other pertinent data.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Water Control Manual&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Water_Control_Plan" href="#ER-1110-2-240:Water_Control_Plan">ER-1110-2-240:Water_Control_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Water_Control_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Water_Control_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A document that includes coordinated regulation schedules for project/system regulation and such additional provisions as may be required to collect, analyze, and disseminate basic data, prepare detailed operating instructions, assure project safety, and carry out regulation of projects in an appropriate manner. For the purpose of this regulation, the term water control plan refers to the plan of regulation for a water resources project in the interest of flood control, navigation, and other authorized purposes.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Water_Control_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Water Control Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Water Control Plan]&#34; ;<br>
+    skos:definition &#34;A document that includes coordinated regulation schedules for project/system regulation and such additional provisions as may be required to collect, analyze, and disseminate basic data, prepare detailed operating instructions, assure project safety, and carry out regulation of projects in an appropriate manner. For the purpose of this regulation, the term water control plan refers to the plan of regulation for a water resources project in the interest of flood control, navigation, and other authorized purposes.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Water Control Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Water_Control_Regulation" href="#ER-1110-2-240:Water_Control_Regulation">ER-1110-2-240:Water_Control_Regulation</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Water_Control_Regulation</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Water_Control_Regulation is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The regulation of water control projects according to regulation schedules in the water control plan and any other criteria in the water control manual. Either (1) water control procedures and decisions that normally are determined by regulating engineers, or (2) provisions governing water control resource management found in legal rules, agreements, contracts, FERC licenses, interstate compacts, and the like.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Water_Control_Regulation a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Water Control Regulation&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Water Control Regulation]&#34; ;<br>
+    skos:definition &#34;The regulation of water control projects according to regulation schedules in the water control plan and any other criteria in the water control manual. Either (1) water control procedures and decisions that normally are determined by regulating engineers, or (2) provisions governing water control resource management found in legal rules, agreements, contracts, FERC licenses, interstate compacts, and the like.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Water Control Regulation&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Water_Quality" href="#ER-1110-2-240:Water_Quality">ER-1110-2-240:Water_Quality</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Water_Quality</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Water_Quality is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The physical, chemical, biological, and radiological characteristics of surface and ground water affecting abiotic and biotic interrelationships.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Water_Quality a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Water Quality&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=70&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Water Quality]&#34; ;<br>
+    skos:definition &#34;The physical, chemical, biological, and radiological characteristics of surface and ground water affecting abiotic and biotic interrelationships.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Water Quality&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-240:Water_Quality_Management" href="#ER-1110-2-240:Water_Quality_Management">ER-1110-2-240:Water_Quality_Management</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-240:Water_Quality_Management</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-240:Water_Quality_Management is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The management of water resources to improve, restore, conserve, and protect the physical, chemical, biological, and radiological quality of the water for natural and human use.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-240: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-240#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-240:Water_Quality_Management a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Water Quality Management&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=70&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-240.yaml#term[Water Quality Management]&#34; ;<br>
+    skos:definition &#34;The management of water resources to improve, restore, conserve, and protect the physical, chemical, biological, and radiological quality of the water for natural and human use.&#34; ;<br>
+    skos:inScheme ER-1110-2-240: ;<br>
+    skos:prefLabel &#34;Water Quality Management&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	<hr>
+	<small>Ontology documentation automatically generated by <a class="greylink"  href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> v2.1.1 on Tue, 16 Jul 2024 04:27:07</small>
+
+
+</body>
+</html>

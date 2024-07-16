@@ -1,0 +1,1104 @@
+about:
+    namespace: https://usace-data.com/civil-works/glossary/EM-1110-1-1005#
+    prefix: EM-1110-1-1005
+    template: glossary
+    title: Engineering Manual 1110-1-1005 Control and Topographic Surveying
+    description: Engineering Manual 1110-1-1005, Control and Topographic Surveying, 
+          defines various acronyms and terms commonly used in this instruction to describe 
+          survey activities, including technical specifications, procedural guidance, and
+          quality control criteria related to site plans as as-built facility mapping.
+          These terms are defined in the glossary section of the manual.
+    source:
+        glossaryReferences: true
+        sourceID: EM 1110-1-1005
+        authoritativeSource: Engineering Manual 1110-1-1005 Control and Topographic Surveying
+        url: https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf
+        linkType: pdf
+        anchor: '480'
+
+terms:
+- label: Absolute GPS
+  altName: [Autonomous GPS]
+  definition: Operation with a single receiver for a desired position. This receiver
+    may be positioned to be stationary over a point. This mode of positioning is the
+    most common military and civil application.
+  anchor: '480'
+- label: Autonomous GPS
+  altName: [Absolute GPS]
+  definition: Operation with a single receiver for a desired position. This receiver
+    may be positioned to be stationary over a point. This mode of positioning is the
+    most common military and civil application.
+  anchor: '480'
+- label: Accuracy
+  definition: The degree to which an estimated (mean) value is compatible with an
+    expected value. Accuracy implies the estimated value is unbiased.
+  anchor: '480'
+- label: Adjustment
+  definition: Adjustment is the process of estimation and minimization of deviations
+    between measurements and a mathematical model.
+  anchor: '480'
+- label: Altimeter
+  definition: An instrument that measures elevation differences usually based on atmospheric
+    pressure measurements
+  anchor: '480'
+- label: Altitude
+  definition: The vertical angle between the horizontal plane of the observer and
+    a directional line to the object.
+  anchor: '480'
+- label: Angle of Depression
+  definition: A negative altitude.
+  anchor: '480'
+- label: Angle of Elevation
+  definition: A positive altitude.
+  anchor: '480'
+- label: Angular Misclosure
+  definition: Difference in the actual and theoretical sum of a series of angles.
+  anchor: '480'
+- label: Archiving
+  definition: Storing of documents and information.
+  anchor: '480'
+- label: Astronomical Latitude
+  definition: Angle between the plumb line and the plane of celestial equator. Also
+    defined as the angle between the plane of the horizon and the axis of rotation
+    of the earth. Astronomical latitude applies only to positions on the earth and
+    is reckoned from the astronomic equator, north and south through 90E. Astronomical
+    latitude is the latitude that results directly from observations of celestial
+    bodies, uncorrected for deflection of the vertical.
+  anchor: '480'
+- label: Astronomical Longitude
+  definition: Arbitrarily chosen angle between the plane of the celestial meridian
+    and the plane of an initial meridian. Astronomical longitude is the longitude
+    that results directly from observations on celestial bodies, uncorrected for deflection
+    of the vertical.
+  anchor: '480'
+- label: Astronomical Triangle
+  definition: 'A spherical triangle formed by arcs of great circles connecting the
+    celestial pole, the zenith and a celestial body. The angles of the astronomical
+    triangles are: at the pole, the hour angle; at the celestial body, the parallactic
+    angle; at the zenith, the azimuth angle. The sides are: pole to zenith, the co-latitude;
+    zenith to celestial body, the zenith distance; and celestial body to pole, the
+    polar distance.'
+  anchor: '480'
+- label: Atmospheric Refraction
+  definition: Refraction of electromagnetic radiation through the atmosphere causing
+    the line-of-sight to deviate from a straight path. Mainly temperature and pressure
+    conditions determine the magnitude and direction of curvature affecting the path
+    of light from a source. Refraction causes the ray to follow a curved path normal
+    the surface gradient.
+  anchor: '481'
+- label: Azimuth
+  definition: The horizontal direction of a line clockwise from a reference plane,
+    usually the meridian. Often called forward azimuth to differentiate from back
+    azimuth.
+  anchor: '481'
+- label: Azimuth Angle
+  definition: The angle less than 180Â° between the plane of the celestial meridian
+    and the vertical plane with the observed object, reckoned from the direction of
+    the elevated pole. In astronomic work, the azimuth angle is the spherical angle
+    at the zenith in the astronomical triangle, which is composed of the pole, the
+    zenith and the star. In geodetic work, it is the horizontal angle between the
+    celestial pole and the observed terrestrial object.
+  anchor: '481'
+- label: Azimuth Closure
+  definition: Difference in arc-seconds of the measured or adjusted azimuth value
+    with the true or published azimuth value.
+  anchor: '481'
+- label: Backsight
+  definition: A sight on a previously established traverse or triangulation station
+    and not the closing sight on the traverse. A reading on a rod held on a point
+    whose elevation has been previously determined.
+  anchor: '481'
+- label: Barometric Leveling
+  definition: Determining differences of elevation from measured differences of atmospheric
+    pressure observed with a barometer. If the elevation of one station above a datum
+    is known, the approximate elevations of other station can be determined by barometric
+    leveling. Barometric leveling is widely used in reconnaissance and exploratory
+    surveys.
+  anchor: '481'
+- label: Baseline
+  definition: Resultant three-dimensional vector between any two stations with respect
+    to a given coordinate system. The primary reference line in a construction system.
+  anchor: '481'
+- label: Base net
+  definition: The primary baseline used for densification of survey stations to form
+    a network.
+  anchor: '481'
+- label: Base Points
+  definition: The beginning points for a traverse that will be used in triangulation
+    or trilateration.
+  anchor: '481'
+- label: Base Control
+  definition: The horizontal and vertical control points and coordinates used to establish
+    a base network. Base control is determined by field surveys and permanently marked
+    or monumented for further surveys.
+  anchor: '481'
+- label: Bearing
+  definition: The direction of a line with respect to the meridian described by degrees,
+    minutes, and seconds within a quadrant of the circle. Bearings are measured clockwise
+    or counterclockwise from north or south, depending on the quadrant.
+  anchor: '481'
+- label: Benchmark
+  definition: A permanent material object, natural or artificial, on a marked point
+    of known elevation.
+  anchor: '482'
+- label: Best Fit
+  definition: To represent a given set of points by a smooth function, curve, or surface
+    which minimizes the deviations of the fit.
+  anchor: '482'
+- label: Bipod
+  definition: A two-legged support structure for an instrument or survey signal at
+    a height convenient for the observer.
+  anchor: '482'
+- label: Bluebook
+  definition: Another term for the "FGCS Input Formats and Specifications of the National
+    Geodetic Data Base".
+  anchor: '482'
+- label: Blunder
+  definition: A mistake or gross error.
+  anchor: '482'
+- label: Bureau International de l'Heure
+  definition: The Bureau was founded in 1919 and its offices since then have been
+    at the Paris Observatory. By an action of the International Astronomical Union,
+    the BIH ceased to exist on 1 January 1988 and a new organization, the International
+    Earth Rotation Service (IERS) was formed to deal with determination of the Earth's
+    rotation.
+  anchor: '482'
+- label: Cadastral Survey
+  definition: Relates to land boundaries and subdivisions, and creates units suitable
+    for transfer or to define the limitations of title. The term cadastral survey
+    is now used to designate the surveys of the public lands of the US, including
+    retracement surveys for identification and resurveys for the restoration of property
+    lines; the term can also be applied properly to corresponding surveys outside
+    the public lands, although such surveys are usually termed land surveys through
+    preference.
+  anchor: '482'
+- label: Calibration
+  definition: Determining the systematic errors in an instrument by comparing measurements
+    with correct values. The correct value is established either by definition or
+    by measurement with a device that has itself been calibrated or of much higher
+    precision.
+  anchor: '482'
+- label: Cartesian Coordinates
+  definition: A system with its origin at the center of the earth and the x and y
+    and z axes in the plane of the equator. Typically, the x-axis passes through the
+    meridian of Greenwich, and the z-axis coincides with the earth's axis of rotation.
+    The three axes are mutually orthogonal and form a right-handed system.
+  anchor: '482'
+- label: Cartesian System
+  definition: A coordinate system consisting of axes intersecting at a common point
+    (origin). The coordinate of a point is the orthogonal distance between that point
+    and the hyperplane determined by all axes. A Cartesian coordinate system has all
+    the axes intersecting at right angles, and the system is called a rectangular.
+  anchor: '482'
+- label: Celestial Equator
+  definition: A great circle on the celestial sphere with equidistant points from
+    the celestial poles. The plane of the earth's equator, if extended, would coincide
+    with that of the celestial equator.
+  anchor: '482'
+- label: Celestial pole
+  definition: A reference point at the point of intersection of an indefinite extension
+    of the earth's axis of rotation and the apparent celestial sphere.
+  anchor: '482'
+- label: Celestial sphere
+  definition: An imaginary sphere of infinite radius with the earth as a center. It
+    rotates from east to west on a prolongation of the earth's axis.
+  anchor: '483'
+- label: Central Meridian
+  definition: A line of constant longitude at the center of a graticule. The central
+    meridian is used as a base for constructing the other lines of the graticule.
+    The meridian is used as the y-axis in computing tables for a State Plane Coordinate
+    system. That line, on a graticule, which represents a meridian and which is an
+    axis of symmetry.
+  anchor: '483'
+- label: Chain
+  definition: Equal to 66 feet or 100 links. The unit of length prescribed by law
+    for the survey of the US public lands. One acre equals 10 square chains.
+  anchor: '483'
+- label: Chained Traverse
+  definition: Observations and measurements performed with tape.
+  anchor: '483'
+- label: Chaining
+  definition: Measuring distances on the ground with a graduated tape or with a chain.
+  anchor: '483'
+- label: Chart Datum
+  definition: Reference surface for soundings on a nautical chart. It is usually taken
+    to correspond to a low water elevation, and its depression below mean sea level
+    is represented by the symbol Zo. Since 1989, chart datum has been implemented
+    to mean lower low water for all marine waters of the US its territories, Commonwealth
+    of Puerto Rico and Trust Territory of the Pacific Islands.
+  anchor: '483'
+- label: Chi-square Testing
+  definition: Non-parametric statistical test used to classify the shape of the distribution
+    of the data.
+  anchor: '483'
+- label: Chronometer
+  definition: A portable timekeeper with compensated balance, capable of showing time
+    with extreme precision and accuracy.
+  anchor: '483'
+- label: Circle Position
+  definition: A prescribed setting (reading) of the horizontal circle of a direction
+    theodolite, to be used for the observation on the initial station of a series
+    of stations that are to be observed.
+  anchor: '483'
+- label: Circuit Closure
+  definition: Difference between measured or adjusted value and the true or published
+    value.
+  anchor: '483'
+- label: Clarke 1866 Ellipsoid
+  definition: The reference ellipsoid used for the NAD 27 horizontal datum. It is
+    a non-geocentric ellipsoid formerly used for mapping in North America.
+  anchor: '483'
+- label: Closed Traverse
+  definition: Starts and ends at the same point or at stations whose positions have
+    been determined by other surveys.
+  anchor: '483'
+- label: Collimation
+  definition: A physical alignment of a survey target or antenna over a mark or to
+    a reference line.
+  anchor: '483'
+- label: Collimation Error
+  definition: The angle between the actual line of sight through an optical instrument
+    and an alignment
+  anchor: '484'
+- label: Compass Rule
+  definition: The correction applied to the departure (or latitude) of any course
+    in a traverse has the same ratio to the total misclosure in departure (or latitude)
+    as the length of the course has to the total length of the traverse.
+  anchor: '484'
+- label: Confidence Level
+  definition: Statistical probability (in percent) based on the standard deviation
+    or standard error associated with the normal probability density function. The
+    confidence level is assigned according to an expansion factor multiplied by the
+    magnitude of one standard error. The expansion factor is based on values found
+    in probability tables at a chosen level of significance.
+  anchor: '484'
+- label: Conformal
+  definition: Map projection that preserves shape.
+  anchor: '484'
+- label: Contour
+  definition: An imaginary line on the ground with all points at the same elevation
+    above or below a specified reference surface.
+  anchor: '484'
+- label: Control
+  definition: Data used in geodesy and cartography to determine the positions and
+    elevations of points on the earth's surface or on a cartographic representation
+    of that surface. A collective term for a system of marks or objects on the earth
+    or on a map or a photograph whose positions or elevation are determined.
+  anchor: '484'
+- label: Control Densification
+  definition: Addition of control throughout a region or network.
+  anchor: '484'
+- label: Control Monuments
+  definition: Existing local control or benchmarks that may consist of any Federal,
+    state, local or private agency points.
+  anchor: '484'
+- label: Control Point
+  definition: A point with assigned coordinates is sometimes used as a synonym for
+    control station. However, a control point need not be realized by a marker on
+    the ground.
+  anchor: '484'
+- label: Control Survey
+  definition: A survey which provides coordinates (horizontal or vertical) of points
+    to which supplementary surveys are adjusted.
+  anchor: '484'
+- label: Control Traverse
+  definition: A survey traverse made to establish control.
+  anchor: '484'
+- label: Conventional Terrestrial Pole (CTP)
+  definition: The origin of the WGS 84 Cartesian system is the earth's center of mass.
+    The Z-axis is parallel to the direction of the CTP for polar motion, as defined
+    by the Bureau of International de l'Heure (BIH), and equal to the rotation axis
+    of the WGS 84 ellipsoid. The X-axis is the intersection of the WGS 84 reference
+    meridian plane and the CTP's equator, the reference meridian being parallel to
+    the zero meridian defined by the BIH and equal to the X-axis of the WGS 84 ellipsoid.
+    The Y-axis completes a righthanded, earth-centered, earth-fixed orthogonal coordinate
+    system, measured in the plane of the CTP equator 90 degrees east of the X-axis
+    and equal to the Y-axis of the WGS 84 ellipsoid.
+  anchor: '484'
+- label: Coordinate Transformation
+  definition: A mathematical process for obtaining a modified set of coordinates through
+    some combination of rotation of coordinate axes at their point of origin, change
+    of scale along coordinate axes, or translation through space
+  anchor: '485'
+- label: CORPSCON
+  altName: [Corps Convert]
+  definition: (Corps Convert) Software package (based on NADCON) capable of performing
+    coordinate transformations between NAD 83 and NAD 27 datums.
+  anchor: '485'
+- label: Crandall Method
+  definition: Traverse misclosure in azimuth or angle is first distributed in equal
+    portions to all the measured angles. The adjusted angles are then held fixed and
+    all remaining coordinate corrections distributed among the distance measurements.
+  anchor: '485'
+- label: Cross sections
+  definition: A survey line run perpendicular to the alignment of a project, channel
+    or structure.
+  anchor: '485'
+- label: Curvature
+  definition: The rate at which a curve deviates from a straight line. The parametric
+    vector described by dt/ds, where t is the vector tangent to a curve and s is the
+    distance along that curve.
+  anchor: '485'
+- label: Datum
+  definition: Any numerical or geometrical quantity or set of such quantities which
+    serve as a reference or base for other quantities.
+  anchor: '485'
+- label: Declination
+  definition: The angle, at the center of the celestial sphere, between the plane
+    of the celestial equator and a line from the center to the point of interest (on
+    a celestial body).
+  anchor: '485'
+- label: Deflection of the Vertical
+  definition: The spatial angular difference between the upward direction of a plumb
+    line and the normal to the reference ellipsoid. Often expressed in two orthogonal
+    components in the meridian and the prime vertical directions.
+  anchor: '485'
+- label: Deflection Traverse
+  definition: Direction of each course measured as an angle from the direction of
+    the preceding course.
+  anchor: '485'
+- label: Deformation Monitoring
+  definition: Observing the movement and condition of structures by describing and
+    modeling its change in shape.
+  anchor: '485'
+- label: Departure
+  definition: The orthogonal projection of a line onto an east-west axis of reference.
+    The departure of a line is the difference of the meridional distances or longitudes
+    of the ends of the line.
+  anchor: '485'
+- label: Differential GPS
+  definition: Process of measuring the differences in coordinates between two receiver
+    points, each of which is simultaneously observing/measuring satellite code ranges
+    and/or carrier phases from the NAVSTAR GPS constellation. Relative positioning
+    with GPS can be performed by a static or kinematic modes.
+  anchor: '485'
+- label: Differential Leveling
+  definition: The process of measuring the difference of elevation between any two
+    points by spirit leveling.
+  anchor: '486'
+- label: Direction
+  definition: 'The angle between a line or plane and an arbitrarily chosen reference
+    line or plane. At a triangulation station, observed horizontal angles are referred
+    to a common reference line and termed horizontal direction. A line, real or imaginary,
+    pointing away from some specified point or locality toward another point. Direction
+    has two meanings: that of a numerical value and that of a pointing line.'
+  anchor: '486'
+- label: Direct Leveling
+  definition: The determination of differences of elevation through a continuous series
+    of short horizontal lines. Vertical distances from these lines to adjacent ground
+    marks are determined by direct observations on graduated rods with a leveling
+    instrument equipped with a spirit level.
+  anchor: '486'
+- label: Distance Angle
+  definition: An angle in a triangle opposite a side used as a base in the solution
+    of the triangle, or a side whose length is to be computed.
+  anchor: '486'
+- label: Dumpy Level
+  definition: The telescope permanently attached to the leveling base, either rigidly
+    to by a hinge that can be manipulated by a micrometer screw.
+  anchor: '486'
+- label: Earth-Centered Ellipsoid
+  definition: Center at the Earth's center of mass and minor semi-axis coincident
+    with the Earth's axis of rotation.
+  anchor: '486'
+- label: Easting
+  definition: The distance eastward (positive) or westward (negative) of a point from
+    a particular meridian taken as reference.
+  anchor: '486'
+- label: Eccentricity
+  definition: The ratio of the distance from the center of an ellipse to its focus
+    on the major semi-axis.
+  anchor: '486'
+- label: Electronic Distance Measurement
+  altName: [ EDM ]
+  definition: Timing or phase comparison of electro-magnetic signal to determine an
+    interferometric distance.
+  anchor: '486'
+- label: Elevation
+  definition: The height of an object above some reference datum.
+  anchor: '486'
+- label: Ellipsoid
+  definition: 'Formed by revolving an ellipse about its minor semi-axis. The most
+    commonly used reference ellipsoids in North America are: Clarke 1866, Geodetic
+    Reference System of 1980 (GRS 80), World Geodetic System of 1972 (WGS 72) and
+    World Geodetic System of 1984 (WGS 84).'
+  anchor: '486'
+- label: Ellipsoid height
+  definition: The magnitude h of a point above or below the reference ellipsoid measured
+    along the normal to the ellipsoid surface.
+  anchor: '486'
+- label: Error
+  definition: The difference between the measured value of a quantity and the theoretical
+    or defined value of that quantity.
+  anchor: '486'
+- label: Error Ellipse
+  definition: An elliptically shaped region with dimensions corresponding to a certain
+    probability at a given confidence level.
+  anchor: '487'
+- label: Error of Closure
+  definition: Difference in the measured and predicted value of the circuit along
+    the perimeter of a geometric figure
+  anchor: '487'
+- label: Finite Element Method
+  definition: Obtaining an approximate solution to a problem for which the governing
+    differential equations and boundary conditions are known. The method divides the
+    region of interest into numerous, interconnected sub-regions (finite elements)
+    over which simple, approximating functions are used to represent the unknown quantities.
+  anchor: '487'
+- label: Fixed Elevation
+  definition: Adopted as a result of tide observations or previous adjustment of spirit
+    leveling, and which is held at its accepted value in any subsequent adjustment.
+  anchor: '487'
+- label: Foresight
+  definition: An observation to the next instrument station. The reading on a rod
+    that is held at a point whose elevation is to be determined.
+  anchor: '487'
+- label: Frequency
+  definition: The number of complete cycles per second existing in any form of wave
+    motion.
+  anchor: '487'
+- label: Geodesic Line
+  definition: Shortest distance between any two points on any mathematically defined
+    surface.
+  anchor: '487'
+- label: Geodesy
+  definition: Determination of the time-varying size and figure of the earth by such
+    direct measurements as triangulation, leveling and gravimetric observations.
+  anchor: '487'
+- label: Geodetic Control
+  definition: Established and adjusted horizontal and/or vertical control in which
+    the shape and size of the earth have been considered in position computations.
+  anchor: '487'
+- label: Geodetic Coordinates
+  definition: Angular latitudinal and longitudinal coordinates defined with respect
+    to a reference ellipsoid.
+  anchor: '487'
+- label: Geodetic Height
+  altName: [Ellipsoid height]
+  definition: See Ellipsoid height.
+  anchor: '487'
+- label: Geodetic Latitude
+  definition: The angle which the normal at a point on the reference ellipsoid makes
+    with the plane of the equator.
+  anchor: '487'
+- label: Geodetic Leveling
+  definition: The observation of the differences in elevation by means of a continuous
+    series of short horizontal lines of sight.
+  anchor: '487'
+- label: Geodetic Longitude
+  definition: The angle subtended at the pole between the plane of the geodetic meridian
+    and the plane of a reference meridian (Greenwich).
+  anchor: '487'
+- label: Geodetic North
+  definition: Direction tangent to a meridian pointing toward the pole defining astronomic
+    north, also called true north.
+  anchor: '488'
+- label: Geodetic Reference System of 1980
+  definition: Reference ellipsoid used to establish the NAD 83 system of geodetic
+    coordinates.
+  anchor: '488'
+- label: Geoid
+  definition: An equipotential surface of the gravity field approximating the earth's
+    surface and corresponding with mean sea level in the oceans and its extension
+    through the continents.
+  anchor: '488'
+- label: Global Positioning System
+  altName: [ GPS ]
+  definition: DoD satellite constellation providing range, time, and position information
+    through a GPS receiver system.
+  anchor: '488'
+- label: Gravimeter
+  definition: Instrument for measuring changes in gravity between two points.
+  anchor: '488'
+- label: Gravity
+  definition: Combined acceleration potential of an object due to gravitation and
+    centrifugal forces.
+  anchor: '488'
+- label: Greenwich Meridian
+  definition: The astronomic meridian through the center of the Airy transit instrument
+    of the Greenwich Observatory, Greenwich, England. By international agreement in
+    1884, the Greenwich meridian was adopted as the meridian from which all longitudes,
+    worldwide, would be calculated.
+  anchor: '488'
+- label: Grid Azimuth
+  definition: The angle in the plane of projection between a straight line and the
+    line (y-axis) in a plane rectangular coordinate system representing the central
+    meridian. While essentially a map-related quantity, a grid azimuth may, by mathematical
+    processes, be transformed into a survey- related or ground-related quantity.
+  anchor: '488'
+- label: Grid Inverse
+  definition: The computation of length and azimuth from coordinates on a grid.
+  anchor: '488'
+- label: Grid Meridian
+  definition: Line parallel to the line representing the central meridian or y-axis
+    of a grid on a map. The map line parallel to the line representing the y-axis
+    or central meridian in a rectangular coordinate system.
+  anchor: '488'
+- label: Gunter's Chain
+  definition: A measuring device once used in land surveying. It was composed of 100
+    metallic links fastened together with rings. The total length of the chain is
+    66 feet. Also called a four-pole chain.
+  anchor: '488'
+- label: Gyrotheodolite
+  definition: A gyroscopic device used to measure azimuth that is built-in or attached
+    to a theodolite.
+  anchor: '488'
+- label: Histogram
+  definition: A graphical representation of relative frequency of an outcome partitioned
+    by class interval. The frequency of occurrence is indicated by the height of a
+    rectangle whose base is proportional to the class interval.
+  anchor: '488'
+- label: Horizontal Control
+  definition: Determines horizontal positions with respect to parallels and meridians
+    or to other lines of reference.
+  anchor: '489'
+- label: Hour Circle
+  definition: Any great circle on the celestial sphere whose plane is perpendicular
+    to the plane of the celestial equator.
+  anchor: '489'
+- label: Index Error
+  definition: A systematic error caused by deviation of an index mark or zero mark
+    on an instrument having a scale or vernier, so that the instrument gives a non-zero
+    reading when it should give a reading of zero. The distance error from the foot
+    of a leveling rod to the nominal origin (theoretical zero) of the scale.
+  anchor: '489'
+- label: Indirect Leveling
+  definition: The determination of differences of elevation from vertical angles and
+    horizontal distances.
+  anchor: '489'
+- label: Interior Angle
+  definition: An angle between adjacent sides of a closed figure and lying on the
+    inside of the figure. The three angles within a triangle are interior angles.
+  anchor: '489'
+- label: International Foot
+  definition: Defined by the ratio 30.48/100 meters.
+  anchor: '489'
+- label: International System of Units
+  altName: [ SI ]
+  definition: A self-consistent system of units adopted by the general Conference
+    on Weights and Measures in 1960 as a modification of the then-existing metric
+    system.
+  anchor: '489'
+- label: Interpolation Method
+  definition: Determination of a intermediate value between given values using a known
+    or assumed rate of change of the values between the given values.
+  anchor: '489'
+- label: Intersection
+  definition: Determining the horizontal position of a point by observations from
+    two or more points of known position. Thus measuring directions or distances that
+    intersect at the station being located. A station whose horizontal position is
+    located by intersection is known as an intersection station.
+  anchor: '489'
+- label: Intervisibility
+  definition: When two stations are visible to each other in a survey net.
+  anchor: '489'
+- label: Invar
+  definition: An alloy of iron containing nickel, and small amounts of chromium to
+    increase hardness, manganese to facilitate drawing, and carbon to raise the elastic
+    limit, and having a very low coefficient of thermal expansion (about 1/25 that
+    of steel).
+  anchor: '489'
+- label: Isogonic Chart
+  definition: A system of isogonic lines, each for a different value of the magnetic
+    declination.
+  anchor: '489'
+- label: Isogonic Line
+  definition: A line drawn on a chart or map and connecting all points representing
+    points on the earth having equal magnetic declination at a given time.
+  anchor: '489'
+- label: Laplace Azimuth
+  definition: A geodetic azimuth derived from an astronomic azimuth by use of the
+    Laplace equation.
+  anchor: '489'
+- label: Laplace Condition
+  definition: Arises from the fact that a deflection of the vertical in the plane
+    of the prime vertical will give a difference between astronomic and geodetic longitude
+    and between astronomic and geodetic azimuth. Conversely, the observed differences
+    between astronomic and geodetic values of the longitude and of the azimuth may
+    both be used to determine the deflection in the plane of the prime vertical.
+  anchor: '490'
+- label: Laplace Equation
+  definition: Expresses the relationship between astronomic and geodetic azimuths
+    in terms of astronomic and geodetic longitudes and geodetic latitude.
+  anchor: '490'
+- label: Laplace Station
+  definition: A triangulation or traverse station at which a Laplace azimuth is determined.
+    At a Laplace station both astronomic longitude and astronomic azimuth are determined.
+  anchor: '490'
+- label: Least Count
+  definition: The finest reading that can be made directly (without estimation) from
+    a vernier or micrometer.
+  anchor: '490'
+- label: Least Squares Adjustment
+  definition: The adjustment of the values of either the measured angles or the measured
+    distances in a traverse using the condition that the sum of the squares of the
+    residuals is a minimum.
+  anchor: '490'
+- label: Level
+  definition: Any device sensitive to the direction of gravity and used to indicate
+    directions perpendicular to that of gravity at a point.
+  anchor: '490'
+- label: Level Datum
+  definition: A level surface to which elevations are referred. The generally adopted
+    level datum for leveling in the US is mean sea level. For local surveys, an arbitrary
+    level datum is often adopted and defined in terms of an assumed elevation for
+    some physical mark.
+  anchor: '490'
+- label: Level Net
+  definition: Lines of spirit leveling connected together to form a system of loops
+    or circuits extending over an area.
+  anchor: '490'
+- label: Line of Sight
+  definition: The line extending from an instrument along which distant objects are
+    seen, when viewed with a telescope or other sighting device.
+  anchor: '490'
+- label: Local Coordinate System
+  definition: Where the coordinate system origin is assigned arbitrary values and
+    is within the region being surveyed and used principally for points within that
+    region.
+  anchor: '490'
+- label: Local Datum
+  definition: Defines a coordinate system that is used only over a region of very
+    limited extent.
+  anchor: '490'
+- label: Loop Traverse
+  definition: A closed traverse that starts and ends at the same station. A pattern
+    of measurements in the field, so that the final measurement is made at the same
+    place as the first measurement.
+  anchor: '491'
+- label: Magnetic Bearing
+  definition: The angle with respect to magnetic north or magnetic south stated as
+    east or west of the magnetic meridian.
+  anchor: '491'
+- label: Magnetic Meridian
+  definition: The vertical plane through the magnetic pole including the direction,
+    at any point, of the horizontal component of the Earth's magnetic field.
+  anchor: '491'
+- label: Major Semi-Axis
+  definition: The line from the center of an ellipse to the extremity of the longest
+    diameter. The term is also used to mean the length of the line.
+  anchor: '491'
+- label: Map
+  definition: A conventional representation, usually on a plane surface and at an
+    established scale, of the physical features (natural, artificial, or both) of
+    a part or whole of the Earth's surface by means of signs and symbols and with
+    the means of orientation indicated.
+  anchor: '491'
+- label: Map Accuracy
+  definition: 'The accuracy with which a map represents. Three types of error commonly
+    occur on maps: errors of representation, which occur because conventional signs
+    must be used to represent natural or man-made features such as forests, buildings
+    and cities; errors of identification, which occur because a non-existent feature
+    is shown or is misidentified; and errors of position, which occur when an object
+    is shown in the wrong position. Errors of position are commonly classified into
+    two types: errors of horizontal location and errors of elevation. A third type,
+    often neglected, is errors of orientation.'
+  anchor: '491'
+- label: Map Scale
+  definition: The ratio of a specified distance on a map to the corresponding distance
+    in the mapped object.
+  anchor: '491'
+- label: Mean Angle
+  definition: Average value of the angles.
+  anchor: '491'
+- label: Mean Lower Low Water
+  altName: [ MLLW ]
+  definition: The average height of all lower low waters recorded over a 19-year period.
+  anchor: '491'
+- label: Mean Sea Level Datum
+  definition: Adopted as a standard datum for heights or elevations. The Sea Level
+    Datum of 1929, the current standard for geodetic leveling in the United States,
+    is based on tidal observations over a number of years at various tide stations
+    along the coasts.
+  anchor: '491'
+- label: Metric Unit
+  definition: Belonging to or derived from the SI system of units.
+  anchor: '491'
+- label: Micrometer
+  definition: In general, any instrument for measuring small distances very accurately.
+    In astronomy and geodesy, a device, for attachment to a telescope or microscope,
+    consisting of a mark moved across the field of view by a screw connected to a
+    graduated drum and vernier. If the mark is a hair-like filament, the micrometer
+    is called a filar micrometer.
+  anchor: '491'
+- label: Minor Semi-Axis
+  definition: The line from the center of an ellipse to the extremity of the shortest
+    diameter. I.e., one of the two shortest lines from the center to the ellipse.
+    The term is also used to mean the length of the line.
+  anchor: '492'
+- label: Misclosure
+  definition: The difference between a computed and measured value.
+  anchor: '492'
+- label: Monument
+  definition: A physical object used as an indication of the position on the ground
+    of a survey station.
+  anchor: '492'
+- label: NADCON
+  definition: The National Geodetic Survey developed the conversion program NADCON
+    (North American Datum Conversion) to convert to and from North American Datum
+    of 1983. The technique used is based on a biharmonic equation classically used
+    to model plate deflections. NADCON works exclusively in geographical coordinates
+    (latitude/longitude).
+  anchor: '492'
+- label: Nadir
+  definition: The point directly beneath the instrument and directly opposite to the
+    zenith or the lowest point.
+  anchor: '492'
+- label: National Geodetic Vertical Datum 1929
+  definition: Formerly adopted as the standard geodetic datum for heights, based on
+    an adjustment holding 26 primary tide stations in North America fixed.
+  anchor: '492'
+- label: National Map Accuracy Standards
+  definition: Specifications of the accuracy required of topographic maps published
+    by the US at various scales.
+  anchor: '492'
+- label: National Tidal Datum Epoch
+  definition: A period of 19 years adopted by the National Ocean Survey as the period
+    over which observations of tides are to be taken and reduced to average values
+    for tidal datums.
+  anchor: '492'
+- label: Network
+  definition: Interconnected system of surveyed points.
+  anchor: '492'
+- label: Non-SI units
+  definition: Units of measurement not associated with International System of Units
+    (SI).
+  anchor: '492'
+- label: North American Datum of 1927
+  definition: Formerly adopted as the standard geodetic datum for horizontal positioning.
+    Based on the Clarke ellipsoid of 1866, the geodetic positions of this system are
+    derived from a readjustment of survey observations throughout North America.
+  anchor: '492'
+- label: North American Datum of 1983
+  definition: Adopted as the standard geodetic datum for horizontal positioning. Based
+    on the Geodetic Reference System of 1980, the geodetic positions of this system
+    are derived from a readjustment of survey observations throughout North America.
+  anchor: '492'
+- label: North American Vertical Datum of 1988
+  definition: Adopted as the standard geodetic datum for heights.
+  anchor: '492'
+- label: Northing
+  definition: A linear distance, in the coordinate system of a map grid, northwards
+    from the east-west line through the origin (or false origin).
+  anchor: '493'
+- label: Open Traverse
+  definition: Begins from a station of known or adopted position, but does not end
+    upon such a station.
+  anchor: '493'
+- label: Optical Micrometer
+  definition: Consists of a prism or lens placed in the path of light entering a telescope
+    and rotatable, by means of a graduated linkage, about a horizontal axis perpendicular
+    to the optical axis of the telescope axis. Also called an optical-mechanical compensator.
+    The device is usually placed in front of the objective of a telescope, but may
+    be placed immediately after it. The parallel-plate optical micrometer is the form
+    usually found in leveling instruments.
+  anchor: '493'
+- label: Optical Plummet
+  definition: A small telescope having a 90Â° bend in its optical axis and attached
+    to an instrument in such a way that the line of sight proceeds horizontally from
+    the eyepiece to a point on the vertical axis of the instrument and from that point
+    vertically downwards. In use, the observer, looking into the plummet, brings a
+    point on the instrument vertically above a specified point (usually a geodetic
+    or other mark) below it.
+  anchor: '493'
+- label: Order of Accuracy
+  definition: 'Defines the general accuracy of the measurements made in a survey.
+    The order of accuracy of surveys are divided into four classes labeled: First
+    Order, Second Order, Third Order and Fourth or lower order.'
+  anchor: '493'
+- label: Origin
+  definition: That point in a coordinate system which has defined initial coordinates
+    and not coordinates determined by measurement. This point is usually given the
+    coordinates (0,0) in a coordinate system in the plane and (0,0,0) in a coordinate
+    system in space.
+  anchor: '493'
+- label: Orthometric Height
+  definition: The elevation H of a point above or below the geoid.
+  anchor: '493'
+- label: Parallax
+  definition: The apparent displacement of the position of a body, with respect to
+    a reference point or system, caused by a shift in the point of observation.
+  anchor: '493'
+- label: Philadelphia Leveling Rod
+  definition: Having a target but with graduations so styled that the rod may also
+    be used as a self-reading leveling rod. Also called a Philadelphia rod. If a length
+    greater than 7 feet is needed, the target is clamped at 7 feet and raised by extending
+    the rod. When the target is used, the rod is read by vernier to 0.001 foot. When
+    the rod is used as a self-reading leveling rod, the rod is read to 0.005 foot.
+  anchor: '493'
+- label: Photogrammetry
+  definition: 'Deducing the physical dimensions of objects from measurements on photographs
+    of the objects. '
+  anchor: '493'
+- label: Picture Point
+  definition: A terrain feature easily identified on an aerial photograph and whose
+    horizontal or vertical position or both have been determined by survey measurements.
+    Picture points are marked on the aerial photographs by the surveyor, and are used
+    by the photomapper.
+  anchor: '493'
+- label: Planetable
+  definition: A field device for plotting the lines of a survey directly from observations.
+    It consists essentially of a drawing board mounted on a tripod, with a leveling
+    device designed as part of the board and tripod.
+  anchor: '494'
+- label: Planimetric Feature
+  definition: Item detailed on a planimetric map.
+  anchor: '494'
+- label: Plumb Line
+  definition: The direction normal to the geopotential field. The continuous curve
+    to which the gradient of gravity is everywhere tangential.
+  anchor: '494'
+- label: Positional Error
+  definition: The amount by which the actual location of a cartographic feature fails
+    to agree with the feature's true position.
+  anchor: '494'
+- label: Post-Processed Real-Time Kinematic GPS
+  definition: GPS carrier phase positioning performed without real-time data link
+    and solution
+  anchor: '494'
+- label: Precision
+  definition: The amount by which a measurement deviates from its mean.
+  anchor: '494'
+- label: Prime Meridian
+  definition: The meridian of longitude 0Â°, used as the origin for measurement of
+    longitude. The meridian of Greenwich, England, is almost universally used for
+    this purpose.
+  anchor: '494'
+- label: Prime Vertical
+  definition: The vertical circle through the east and west points of the horizon.
+    It may be true, magnetic, compass or grid depending upon which east or west points
+    are involved.
+  anchor: '494'
+- label: Project Control
+  definition: Control used for a specific project.
+  anchor: '494'
+- label: Project Datum
+  definition: Datum used for a specific project.
+  anchor: '494'
+- label: Projection
+  definition: A set of functions, or the corresponding geometric constructions, relating
+    points on one surface to points on another surface. A projection requires every
+    point on the first surface to correspond one-to-one to points on the second surface.
+  anchor: '494'
+- label: Quadrangle
+  definition: Consisting of four specified points and the lines or line segments on
+    which they lie. The quadrangle and the quadrilateral differ in that the quadrangle
+    is defined by four specified angle points, the quadrilateral by four specified
+    lines or line-segments.
+  anchor: '494'
+- label: Random Error
+  definition: Randomly distributed deviations from the mean value.
+  anchor: '494'
+- label: Range Pole
+  definition: A simple rod fitted with a sharp-pointed, shoe of steel and usually
+    painted alternately in red and white bands at 1-foot intervals.
+  anchor: '494'
+- label: Readings
+  definition: The observed value obtained by noting and/or recording scales.
+  anchor: '495'
+- label: Real-time
+  definition: An event or measurement reported or recorded at the same time as the
+    event is occurring through the absence of delay in getting, sending and receiving
+    data.
+  anchor: '495'
+- label: Real-Time Kinematic GPS
+  definition: GPS carrier phase processing and positioning in real-time.
+  anchor: '495'
+- label: Reciprocal Leveling
+  definition: Measuring vertical angles or making rod readings from two instrument
+    positions for the purpose of compensating for the effects of refraction.
+  anchor: '495'
+- label: Rectangular Coordinate Systems
+  definition: Coordinates on any system in which the axes of reference intersect at
+    right angles.
+  anchor: '495'
+- label: Redundant Measurements
+  definition: Taking more measurements than are minimally required for a unique solution.
+  anchor: '495'
+- label: Reference Meridian, True
+  definition: Based on the astronomical meridian.
+  anchor: '495'
+- label: Reference Meridian, Magnetic
+  definition: Based on the magnetic pole.
+  anchor: '495'
+- label: Reference Point
+  definition: Used as an origin from which measurements are taken or to which measurements
+    are referred.
+  anchor: '495'
+- label: Refraction
+  definition: The bending of rays by the substance through which the rays pass. The
+    amount and direction of bending are determined by its refractive index.
+  anchor: '495'
+- label: Relative Accuracy
+  definition: Indicated by the dimensions of the relative confidence ellipse between
+    two points. A quantity expressing the effect of random errors on the location
+    of one point or feature with respect to another.
+  anchor: '495'
+- label: Repeating Theodolite
+  definition: Designed so that the sum of successive measurements of an angle can
+    be read directly on the graduated horizontal circle.
+  anchor: '495'
+- label: Resection
+  definition: Determining the location of a point by extending lines of known direction
+    to two other known points.
+  anchor: '495'
+- label: Sexagesimal System
+  definition: Notation by increments of 60. As the division of the circle into 360Â°,
+    each degree into 60 minutes, and each minute into 60 seconds.
+  anchor: '495'
+- label: Set-up
+  definition: In general, the situation in which a surveying instrument is in position
+    at a point from which observations are made.
+  anchor: '495'
+- label: Spheroid
+  definition: Used as a synonym for ellipsoid.
+  anchor: '496'
+- label: Spirit Level
+  definition: A closed glass tube (vial) of circular cross section. Its center line
+    forms a circular arc with precise form and filled with ether or liquid of low
+    viscosity, with enough free space left for a bubble of air or gas.
+  anchor: '496'
+- label: Stadia Constant
+  definition: The sum of the focal length of a telescope and the distance from the
+    vertical axis of the instrument on which the telescope is mounted to the center
+    of the objective lens-system.
+  anchor: '496'
+- label: Stadia Traverse
+  definition: Distances are determined using a stadia rod. A stadia traverse is suited
+    to regions of moderate relief with an adequate network of roads. If done carefully,
+    such a traverse can establish elevations accurate enough for compiling maps with
+    any contour interval now standard.
+  anchor: '496'
+- label: Standard Error
+  definition: The standard deviation of the errors associated with physical measurements
+    of an unknown quantity, or statistical estimates of an unknown quantity or of
+    a random variable.
+  anchor: '496'
+- label: Systematic Error
+  definition: Errors that affect the position (bias) of the mean. Systematic errors
+    are due to unmodeled affects on the measurements that have a constant or systematic
+    value.
+  anchor: '496'
+- label: State Plane Coordinate System
+  altName: [ SPCS ]
+  definition: A planar reference coordinate system used in the United States.
+  anchor: '496'
+- label: Strength of Figure
+  definition: A number relating the precision in positioning with the geometry with
+    which measurements are made.
+  anchor: '496'
+- label: Subtense Bar
+  definition: A bar with two marks at a fixed, known distance apart used for determining
+    the horizontal distance from an observer by means of the measuring the angle subtended
+    at the observer between the marks.
+  anchor: '496'
+- label: Taping
+  definition: Measuring a distance on the using a surveyor's tape.
+  anchor: '496'
+- label: Three-wire Leveling
+  definition: The scale on the leveling rod is read at each of the three lines and
+    the average is used for the final result.
+  anchor: '496'
+- label: Topographic Map
+  definition: A map showing the horizontal and vertical locations of the natural and
+    man-made features represented and the projected elevations of the surroundings.
+  anchor: '496'
+- label: Transformation
+  definition: Converting a position from one coordinate system to another.
+  anchor: '496'
+- label: Transit
+  definition: The apparent passage of a star or other celestial body across a defined
+    line of the celestial sphere.
+  anchor: '496'
+- label: Transit Rule
+  definition: The correction to be applied to the departure (or latitude) of any course
+    has the same ratio to the total misclosure in departure (or latitude) as the departure
+    (latitude) of the course has to the arithmetical sum of all the departures (latitudes)
+    in the traverse. The transit rule is often used when it is believed that the misclosure
+    is caused less by errors in the measured angles than by errors in the measured
+    distances.
+  anchor: '497'
+- label: Transverse Mercator Projection
+  definition: Mercator map projection calculated for a cylinder with axis in the equatorial
+    plane.
+  anchor: '497'
+- label: Traverse
+  definition: A sequence of points along which surveying measurements are made.
+  anchor: '497'
+- label: Triangulation
+  definition: Determination of positions in a network by the measurement of angles
+    between stations.
+  anchor: '497'
+- label: tribrach
+  definition: The three-armed base, of a surveying instrument, in which the foot screws
+    used in leveling the instrument are placed at the ends of the arms. Also called
+    a leveling base or leveling head.
+  anchor: '497'
+- label: Trigonometric heighting
+  definition: The trigonometric determination of differences of elevation from observed
+    vertical angles and measured distances.
+  anchor: '497'
+- label: Trilateration
+  definition: Determination of positions in a network by the measurement of distances
+    between stations using the intersection of two or more distances to a point.
+  anchor: '497'
+- label: Universal Transverse Mercator
+  definition: A worldwide metric military coordinate system.
+  anchor: '497'
+- label: US Coast & Geodetic Survey
+  altName: [ USC&GS, National Ocean Service, NOS ]
+  definition: Now known as National Ocean Service (NOS).
+  anchor: '497'
+- label: US Survey Foot
+  definition: The unit of length defined by 1200/3937 m
+  anchor: '497'
+- label: Variance-Covariance Matrix
+  definition: A matrix whose elements along the main diagonal are called the variances
+    of the corresponding variables; the elements off the main diagonal are called
+    the covariances.
+  anchor: '497'
+- label: Vernier
+  definition: An auxiliary scale used in reading a primary scale. The total length
+    of a given number of divisions on a vernier is equal to the total length of one
+    more or one less than the same number of divisions on the primary scaled.
+  anchor: '497'
+- label: VERTCON
+  altName: [vertical datum conversion]
+  definition: Acronym for vertical datum conversion. VERTCON is the computer software
+    that converts orthometric heights between NGVD 29 to NAVD 88.
+  anchor: '497'
+- label: Vertical Angle
+  definition: An angle in a vertical plane either in elevation or depression from
+    the horizontal.
+  anchor: '497'
+- label: Vertical Circle
+  definition: A graduated scale mounted on an instrument used to measure vertical
+    angles.
+  anchor: '498'
+- label: Vertical Datum
+  definition: Any level surface used as a reference for elevations. Although a level
+    surface is not a plane, the vertical datum is frequently referred to as the datum
+    plane.
+  anchor: '498'
+- label: World Geodetic System of 1984
+  definition: Adopted as the standard geodetic datum for GPS positioning. Based on
+    the World Geodetic System reference ellipsoid.
+  anchor: '498'
+- label: Wye Level
+  definition: Having the telescope and attached spirit level supported in wyes (Y's)
+    in which it can be rotated about its longitudinal axis (collimation axis) and
+    from which it can be lifted and reversed, end for end. Also called a Y-level and
+    wye-type leveling instrument.
+  anchor: '498'
+- label: Zenith
+  definition: The point above the instrument where an extension of a plumb (vertical)
+    line at the observer's position intersects the celestial sphere.
+  anchor: '498'
+- label: Zenith Angle
+  definition: Measured in a positive direction downwards from the observer's zenith
+    to the observed target.
+  anchor: '498'
+- label: Zenith Distance
+  definition: The complement of the altitude, the angular distance from the zenith
+    of the celestial body measured along a vertical circle.
+  anchor: '498'

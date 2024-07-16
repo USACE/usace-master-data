@@ -1,0 +1,1272 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Ontospy > https://usace-data.com/civil-works/glossary/CFR-33-323-2#</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <style type="text/css" media="screen">
+
+
+  body {
+	  margin-left: 6em;
+	  margin-right: 12em;
+	  text-align: justify;
+    padding: 2em 1em 2em 70px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  :link { color: #00C; background: transparent }
+  :visited { color: #00C; background: transparent }
+  a:active { color: #C00; background: transparent }
+
+  a:link img, a:visited img { border-style: none } /* no border on img links */
+
+  a:hover {color: white; background: #00C; }
+  a.backlink:hover {color: white; background: grey; }
+  a.greylink:hover {color: white; background: grey; }
+
+  .margintop {
+  	 margin-top: 40px;
+  }
+
+
+  dt, dd { margin-top: 10px; margin-bottom: 0 } /* opera 3.50 */
+  dt { font-weight: bold }
+
+
+  h1, h2, h3, h4, h5, h6 { text-align: left }
+  /* background should be transparent, but WebTV has a bug */
+  h1, h2, h3, h4, h5 { color: #005A9C; background: white }
+  h1.title { font: 200% sans-serif }
+  h1 { font: 170% sans-serif }
+  h2 { font: 140% sans-serif }
+  h3 { font: 120% sans-serif }
+  h4 { font: bold 100% sans-serif }
+  h5 { font: italic 100% sans-serif }
+  h6 { font: small-caps 100% sans-serif }
+
+  .hide { display: none }
+
+
+  pre { margin-left: 2em }
+
+  pre, code { font-family: monospace } /* navigator 4 requires this */
+
+
+  .implementation {
+  	background: aliceblue;
+	padding: 10px;
+	margin-top: 5px;
+  }
+
+  fieldset {
+	  margin-top: 20px;
+	  padding: 13px;
+      text-align: left;
+  }
+
+  legend {
+	  text-transform: uppercase;
+  }
+
+  .entity-div {
+	  margin: 55px 10px 30px 10px;
+  }
+
+  .entity-section {
+	  margin-bottom: 0px;
+  }
+
+
+  a.backlink {
+	  font-size: 80%;
+	  color: grey;
+  }
+
+  a.greylink {
+	  color: grey;
+  }
+
+
+   .implementation_title {
+
+       font-weight: bold;
+       font-size: 100%;
+   }
+
+.section-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+        .tree-container {
+            width: 3000em;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+		.tree {margin: 10px 0px 30px -20px; padding: 0; display: inline-block;}
+
+		.tree ul {
+			padding-top: 20px; position: relative;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		.tree li {
+			float: left; text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*We will use ::before and ::after to draw the connectors*/
+
+		.tree li::before, .tree li::after{
+			content: '';
+			position: absolute; top: 0; right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%; height: 20px;
+		}
+		.tree li::after{
+			right: auto; left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		/*We need to remove left-right connectors from elements without
+		any siblings*/
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		/*Remove space from the top of single children*/
+		.tree li:only-child{ padding-top: 0;}
+
+		/*Remove left connector from first child and
+		right connector from last child*/
+		.tree li:first-child::before, .tree li:last-child::after{
+			border: 0 none;
+		}
+		/*Adding back the vertical connector to the last nodes*/
+		.tree li:last-child::before{
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+			-webkit-border-radius: 0 5px 0 0;
+			-moz-border-radius: 0 5px 0 0;
+		}
+		.tree li:first-child::after{
+			border-radius: 5px 0 0 0;
+			-webkit-border-radius: 5px 0 0 0;
+			-moz-border-radius: 5px 0 0 0;
+		}
+
+		/*Time to add downward connectors from parents*/
+		.tree ul ul::before{
+			content: '';
+			position: absolute; top: 0; left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0; height: 20px;
+		}
+
+		.tree li a{
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #666;
+			font-family: arial, verdana, tahoma;
+			font-size: 11px;
+			display: inline-block;
+
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*Time for some hover effects*/
+		/*We will apply the hover effect the the lineage of the element also*/
+		.tree li a:hover, .tree li a:hover+ul li a {
+			background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+		}
+		/*Connector styles on hover*/
+		.tree li a:hover+ul li::after,
+		.tree li a:hover+ul li::before,
+		.tree li a:hover+ul::before,
+		.tree li a:hover+ul ul::before{
+			border-color:  #94a0b4;
+		}
+
+		/*Thats all. I hope you enjoyed it.
+		Thanks :)*/
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+	
+	
+		
+			<h1 class="title"><a href="" target="_blank">https://usace-data.com/civil-works/glossary/CFR-33-323-2#</a></h1>
+			<h3><p>None</p></h3>
+		
+
+	
+		
+		
+
+
+	<p><small>Ontology documentation automatically generated by <a class="greylink" href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> on Tue, 16 Jul 2024 04:24:13</small></p>
+
+
+
+	
+
+
+	<hr class="margintop">
+
+	<h1><a name="toc">&nbsp;</a>Table of Content</h1>
+
+	<ul>
+		<li><a href="#ontologies">Ontologies</a></li>
+		<li><a href="#a-z">A-Z of Terms</a></li>
+		
+		
+		
+		
+		<li><a href="#skosconcepts">SKOS Concepts</a></li>
+		
+	</ul>
+
+
+
+	
+
+	
+
+	<hr class="margintop">
+
+	<h1><a name="ontologies"></a>Ontologies</h1>
+
+		
+
+
+			<fieldset> <legend><h3><a href="https://usace-data.com/civil-works/glossary/CFR-33-323-2#" target="_blank">https://usace-data.com/civil-works/glossary/CFR-33-323-2#</a></h3></legend>
+
+			<h4 style="margin-top: -20px;"><p>None</p></h4>
+
+			
+			
+				
+					<dt>dcterms:created</dt>
+				  
+			
+			<dd><p>2024-07-16T04:24:08.498849+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:description</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:publisher</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:rights</dt>
+				  
+			
+			<dd><p>MIT</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:title</dt>
+				  
+			
+			<dd><p>Code of Federal Regulations - Title 33, Chapter-II, Part 323, Section-323.2</p></dd>
+			
+			
+				</dl>
+					<dt>pav:ImportedFrom</dt>
+				  
+			
+			<dd><p>glossaries/CivilWorks/CFR-33-323-2.yaml</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdOn</dt>
+				  
+			
+			<dd><p>2024-07-16T04:24:08.498849+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdWith</dt>
+				  
+			
+			<dd><p>gloss</p></dd>
+			
+			
+				</dl>
+					<dt>pav:wasInfluencedBy</dt>
+				  
+			
+			<dd><p>33 CFR 323.2</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.knowledgesmarts.com/ontologies/wov#Glossary</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2002/07/owl#Ontology</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2004/02/skos/core#ConceptScheme</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#Vocabulary</p></dd>
+			
+			
+				</dl>
+					<dt>rdfs:label</dt>
+				  
+			
+			<dd><p>Code of Federal Regulations - Title 33, Chapter-II, Part 323, Section-323.2</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-323-2#Discharge_of_Dredged_Material</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-323-2#Discharge_of_Fill_Material</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-323-2#Dredged_Material</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-323-2#Fill_Material</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-323-2#General_Permit</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-323-2#Individual_Permit</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-323-2#Lake</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-323-2#Section_404_Authorization</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-323-2#Waters_of_the_United_States</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-323-2#de_minimis</p></dd>
+			
+			
+				</dl>
+					<dt>vann:preferredNamespaceUri</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-323-2#</p></dd>
+			
+
+			</fieldset>
+
+		
+
+	
+
+
+
+	
+
+	<hr class="margintop">
+	<h1><a  name="a-z">&nbsp;</a>A-Z of terms</h1>
+
+	<div id="azterms">
+
+	This is a complete alphabetical A-Z index of all terms, by main logical type.
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		<fieldset> <legend>SKOS Concepts (10)</legend>
+			&nbsp;<a href="#CFR-33-323-2:Discharge_of_Dredged_Material">CFR-33-323-2:Discharge_of_Dredged_Material</a>
+			|  <a href="#CFR-33-323-2:Discharge_of_Fill_Material">CFR-33-323-2:Discharge_of_Fill_Material</a>
+			|  <a href="#CFR-33-323-2:Dredged_Material">CFR-33-323-2:Dredged_Material</a>
+			|  <a href="#CFR-33-323-2:Fill_Material">CFR-33-323-2:Fill_Material</a>
+			|  <a href="#CFR-33-323-2:General_Permit">CFR-33-323-2:General_Permit</a>
+			|  <a href="#CFR-33-323-2:Individual_Permit">CFR-33-323-2:Individual_Permit</a>
+			|  <a href="#CFR-33-323-2:Lake">CFR-33-323-2:Lake</a>
+			|  <a href="#CFR-33-323-2:Section_404_Authorization">CFR-33-323-2:Section_404_Authorization</a>
+			|  <a href="#CFR-33-323-2:Waters_of_the_United_States">CFR-33-323-2:Waters_of_the_United_States</a>
+			|  <a href="#CFR-33-323-2:de_minimis">CFR-33-323-2:de_minimis</a>
+			  
+		</fieldset>
+
+	
+
+	
+
+	</div>
+
+
+
+	
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+	
+
+
+		<hr class="margintop">
+		<h1 class="margintop"><a  name="skosconcepts">&nbsp;</a>SKOS Concepts</h1>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-323-2:Discharge_of_Dredged_Material" href="#CFR-33-323-2:Discharge_of_Dredged_Material">CFR-33-323-2:Discharge_of_Dredged_Material</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-323-2:Discharge_of_Dredged_Material</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-323-2:Discharge_of_Dredged_Material is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Except as provided below below, the term discharge of dredged material means any addition of dredged material into, including redeposit of dredged material other than incidential fallback within, the waters of the United States. The term includes, but is not limited to, the following: <br>
+(i) The addition of dredged material to a specified discharge site located in waters of the United States; <br>
+(ii) The runoff or overflow from a contained land or water disposal area; and <br>
+(iii) Any addition, including redeposit other than incidential fallback, of dredged material, including excavated material, into waters of the United States which is incidental to any activity, including mechanized landclearing, ditching, channelization, or other excavation. <br>
+The term discharge of dredged material does not include the following: <br>
+(i) Discharges of pollutants into waters of the United States resulting from the onshore subsequent processing of dredged material that is extracted for any commercial use (other than fill). These discharges are subject to section 402 of the Clean Water Act even though the extraction and deposit of such material may require a permit from the Corps or applicable State section 404 program. <br>
+(ii) Activities that involve only the cutting or removing of vegetation above the ground (e.g., mowing, rotary cutting, and chainsawing) where the activity neither substantially disturbs the root system nor involves mechanized pushing, dragging, or other similar activities that redeposit excavated soil material. <br>
+(iii) Incidental fallback.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-323-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-323-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-323-2:Discharge_of_Dredged_Material a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Discharge of Dredged Material&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-323/section-323.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-323-2.yaml#term[Discharge of Dredged Material]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;Except as provided below below, the term discharge of dredged material means any addition of dredged material into, including redeposit of dredged material other than incidential fallback within, the waters of the United States. The term includes, but is not limited to, the following: <br>
+(i) The addition of dredged material to a specified discharge site located in waters of the United States; <br>
+(ii) The runoff or overflow from a contained land or water disposal area; and <br>
+(iii) Any addition, including redeposit other than incidential fallback, of dredged material, including excavated material, into waters of the United States which is incidental to any activity, including mechanized landclearing, ditching, channelization, or other excavation. <br>
+The term discharge of dredged material does not include the following: <br>
+(i) Discharges of pollutants into waters of the United States resulting from the onshore subsequent processing of dredged material that is extracted for any commercial use (other than fill). These discharges are subject to section 402 of the Clean Water Act even though the extraction and deposit of such material may require a permit from the Corps or applicable State section 404 program. <br>
+(ii) Activities that involve only the cutting or removing of vegetation above the ground (e.g., mowing, rotary cutting, and chainsawing) where the activity neither substantially disturbs the root system nor involves mechanized pushing, dragging, or other similar activities that redeposit excavated soil material. <br>
+(iii) Incidental fallback.&#34;&#34;&#34; ;<br>
+    skos:inScheme CFR-33-323-2: ;<br>
+    skos:prefLabel &#34;Discharge of Dredged Material&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-323-2:Discharge_of_Fill_Material" href="#CFR-33-323-2:Discharge_of_Fill_Material">CFR-33-323-2:Discharge_of_Fill_Material</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-323-2:Discharge_of_Fill_Material</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-323-2:Discharge_of_Fill_Material is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term discharge of fill material means the addition of fill material into waters of the United States. The term generally includes, without limitation, the following activities: Placement of fill that is necessary for the construction of any structure or infrastructure in a water of the United States; the building of any structure, infrastructure, or impoundment requiring rock, sand, dirt, or other material for its construction; site-development fills for recreational, industrial, commercial, residential, or other uses; causeways or road fills; dams and dikes; artificial islands; property protection and/or reclamation devices such as riprap, groins, seawalls, breakwaters, and revetments; beach nourishment; levees; fill for structures such as sewage treatment facilities, intake and outfall pipes associated with power plants and subaqueous utility lines; placement of fill material for construction or maintenance of any liner, berm, or other infrastructure associated with solid waste landfills; placement of overburden, slurry, or tailings or similar mining-related materials; and artificial reefs. The term does not include plowing, cultivating, seeding and harvesting for the production of food, fiber, and forest products (See Â§ 323.4 for the definition of these terms). See Â§ 323.3(c) concerning the regulation of the placement of pilings in waters of the United States.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-323-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-323-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-323-2:Discharge_of_Fill_Material a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Discharge of Fill Material&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-323/section-323.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-323-2.yaml#term[Discharge of Fill Material]&#34; ;<br>
+    skos:definition &#34;The term discharge of fill material means the addition of fill material into waters of the United States. The term generally includes, without limitation, the following activities: Placement of fill that is necessary for the construction of any structure or infrastructure in a water of the United States; the building of any structure, infrastructure, or impoundment requiring rock, sand, dirt, or other material for its construction; site-development fills for recreational, industrial, commercial, residential, or other uses; causeways or road fills; dams and dikes; artificial islands; property protection and/or reclamation devices such as riprap, groins, seawalls, breakwaters, and revetments; beach nourishment; levees; fill for structures such as sewage treatment facilities, intake and outfall pipes associated with power plants and subaqueous utility lines; placement of fill material for construction or maintenance of any liner, berm, or other infrastructure associated with solid waste landfills; placement of overburden, slurry, or tailings or similar mining-related materials; and artificial reefs. The term does not include plowing, cultivating, seeding and harvesting for the production of food, fiber, and forest products (See Â§ 323.4 for the definition of these terms). See Â§ 323.3(c) concerning the regulation of the placement of pilings in waters of the United States.&#34; ;<br>
+    skos:inScheme CFR-33-323-2: ;<br>
+    skos:prefLabel &#34;Discharge of Fill Material&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-323-2:Dredged_Material" href="#CFR-33-323-2:Dredged_Material">CFR-33-323-2:Dredged_Material</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-323-2:Dredged_Material</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-323-2:Dredged_Material is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term dredged material means material that is excavated or dredged from waters of the United States.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-323-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-323-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-323-2:Dredged_Material a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Dredged Material&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-323/section-323.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-323-2.yaml#term[Dredged Material]&#34; ;<br>
+    skos:definition &#34;The term dredged material means material that is excavated or dredged from waters of the United States.&#34; ;<br>
+    skos:inScheme CFR-33-323-2: ;<br>
+    skos:prefLabel &#34;Dredged Material&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-323-2:Fill_Material" href="#CFR-33-323-2:Fill_Material">CFR-33-323-2:Fill_Material</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-323-2:Fill_Material</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-323-2:Fill_Material is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>the term fill material means material placed in waters of the United States where the material has the effect of: <br>
+(i) Replacing any portion of a water of the United States with dry land; or <br>
+(ii) Changing the bottom elevation of any portion of a water of the United States. <br>
+(2) Examples of such fill material include, but are not limited to: rock, sand, soil, clay, plastics, construction debris, wood chips, overburden from mining or other excavation activities, and materials used to create any structure or infrastructure in the waters of the United States. <br>
+(3) The term fill material does not include trash or garbage.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-323-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-323-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-323-2:Fill_Material a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Fill Material&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-323/section-323.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-323-2.yaml#term[Fill Material]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;the term fill material means material placed in waters of the United States where the material has the effect of: <br>
+(i) Replacing any portion of a water of the United States with dry land; or <br>
+(ii) Changing the bottom elevation of any portion of a water of the United States. <br>
+(2) Examples of such fill material include, but are not limited to: rock, sand, soil, clay, plastics, construction debris, wood chips, overburden from mining or other excavation activities, and materials used to create any structure or infrastructure in the waters of the United States. <br>
+(3) The term fill material does not include trash or garbage.&#34;&#34;&#34; ;<br>
+    skos:inScheme CFR-33-323-2: ;<br>
+    skos:prefLabel &#34;Fill Material&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-323-2:General_Permit" href="#CFR-33-323-2:General_Permit">CFR-33-323-2:General_Permit</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-323-2:General_Permit</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-323-2:General_Permit is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term general permit means a Department of the Army authorization that is issued on a nationwide or regional basis for a category or categories of activities when: <br>
+(1) Those activities are substantially similar in nature and cause only minimal individual and cumulative environmental impacts; or <br>
+(2) The general permit would result in avoiding unnecessary duplication of regulatory control exercised by another Federal, State, or local agency provided it has been determined that the environmental consequences of the action are individually and cumulatively minimal. (See 33 CFR 325.2(e) and 33 CFR part 330.)</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-323-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-323-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-323-2:General_Permit a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;General Permit&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-323/section-323.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-323-2.yaml#term[General Permit]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;The term general permit means a Department of the Army authorization that is issued on a nationwide or regional basis for a category or categories of activities when: <br>
+(1) Those activities are substantially similar in nature and cause only minimal individual and cumulative environmental impacts; or <br>
+(2) The general permit would result in avoiding unnecessary duplication of regulatory control exercised by another Federal, State, or local agency provided it has been determined that the environmental consequences of the action are individually and cumulatively minimal. (See 33 CFR 325.2(e) and 33 CFR part 330.)&#34;&#34;&#34; ;<br>
+    skos:inScheme CFR-33-323-2: ;<br>
+    skos:prefLabel &#34;General Permit&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-323-2:Individual_Permit" href="#CFR-33-323-2:Individual_Permit">CFR-33-323-2:Individual_Permit</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-323-2:Individual_Permit</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-323-2:Individual_Permit is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term individual permit means a Department of the Army authorization that is issued following a case-by-case evaluation of a specific project involving the proposed discharge(s) in accordance with the procedures of this part and 33 CFR part 325 and a determination that the proposed discharge is in the public interest pursuant to 33 CFR part 320.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-323-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-323-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-323-2:Individual_Permit a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Individual Permit&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-323/section-323.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-323-2.yaml#term[Individual Permit]&#34; ;<br>
+    skos:definition &#34;The term individual permit means a Department of the Army authorization that is issued following a case-by-case evaluation of a specific project involving the proposed discharge(s) in accordance with the procedures of this part and 33 CFR part 325 and a determination that the proposed discharge is in the public interest pursuant to 33 CFR part 320.&#34; ;<br>
+    skos:inScheme CFR-33-323-2: ;<br>
+    skos:prefLabel &#34;Individual Permit&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-323-2:Lake" href="#CFR-33-323-2:Lake">CFR-33-323-2:Lake</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-323-2:Lake</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-323-2:Lake is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term lake means a standing body of open water that occurs in a natural depression fed by one or more streams from which a stream may flow, that occurs due to the widening or natural blockage or cutoff of a river or stream, or that occurs in an isolated natural depression that is not a part of a surface river or stream. The term also includes a standing body of open water created by artificially blocking or restricting the flow of a river, stream, or tidal area. As used in this regulation, the term does not include artificial lakes or ponds created by excavating and/or diking dry land to collect and retain water for such purposes as stock watering, irrigation, settling basins, cooling, or rice growing.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-323-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-323-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-323-2:Lake a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Lake&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-323/section-323.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-323-2.yaml#term[Lake]&#34; ;<br>
+    skos:definition &#34;The term lake means a standing body of open water that occurs in a natural depression fed by one or more streams from which a stream may flow, that occurs due to the widening or natural blockage or cutoff of a river or stream, or that occurs in an isolated natural depression that is not a part of a surface river or stream. The term also includes a standing body of open water created by artificially blocking or restricting the flow of a river, stream, or tidal area. As used in this regulation, the term does not include artificial lakes or ponds created by excavating and/or diking dry land to collect and retain water for such purposes as stock watering, irrigation, settling basins, cooling, or rice growing.&#34; ;<br>
+    skos:inScheme CFR-33-323-2: ;<br>
+    skos:prefLabel &#34;Lake&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-323-2:Section_404_Authorization" href="#CFR-33-323-2:Section_404_Authorization">CFR-33-323-2:Section_404_Authorization</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-323-2:Section_404_Authorization</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-323-2:Section_404_Authorization is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Section 404 authorization is not required for the following: <br>
+(i) Any incidental addition, including redeposit, of dredged material associated with any activity that does not have or would not have the effect of destroying or degrading an area of waters of the United States as defined in paragraphs (d)(4) and (d)(5) of this section; however, this exception does not apply to any person preparing to undertake mechanized landclearing, ditching, channelization and other excavation activity in a water of the United States, which would result in a redeposit of dredged material, unless the person demonstrates to the satisfaction of the Corps, or EPA as appropriate, prior to commencing the activity involving the discharge, that the activity would not have the effect of destroying or degrading any area of waters of the United States, as defined in paragraphs (d)(4) and (d)(5) of this section. The person proposing to undertake mechanized landclearing, ditching, channelization or other excavation activity bears the burden of demonstrating that such activity would not destroy or degrade any area of waters of the United States. </p>
+
+<p>(ii) Incidental movement of dredged material occurring during normal dredging operations, defined as dredging for navigation in navigable waters of the United States, as that term is defined in part 329 of this chapter, with proper authorization from the Congress and/or the Corps pursuant to part 322 of this Chapter; however, this exception is not applicable to dredging activities in wetlands, as that term is defined at section 328.3 of this Chapter. </p>
+
+<p>(iii) Certain discharges, such as those associated with normal farming, silviculture, and ranching activities, are not prohibited by or otherwise subject to regulation under section 404. See 33 CFR 323.4 for discharges that do not required permits.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-323-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-323-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-323-2:Section_404_Authorization a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Section 404 Authorization&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-323/section-323.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-323-2.yaml#term[Section 404 Authorization]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;Section 404 authorization is not required for the following: <br>
+(i) Any incidental addition, including redeposit, of dredged material associated with any activity that does not have or would not have the effect of destroying or degrading an area of waters of the United States as defined in paragraphs (d)(4) and (d)(5) of this section; however, this exception does not apply to any person preparing to undertake mechanized landclearing, ditching, channelization and other excavation activity in a water of the United States, which would result in a redeposit of dredged material, unless the person demonstrates to the satisfaction of the Corps, or EPA as appropriate, prior to commencing the activity involving the discharge, that the activity would not have the effect of destroying or degrading any area of waters of the United States, as defined in paragraphs (d)(4) and (d)(5) of this section. The person proposing to undertake mechanized landclearing, ditching, channelization or other excavation activity bears the burden of demonstrating that such activity would not destroy or degrade any area of waters of the United States. </p>
+
+<p>(ii) Incidental movement of dredged material occurring during normal dredging operations, defined as dredging for navigation in navigable waters of the United States, as that term is defined in part 329 of this chapter, with proper authorization from the Congress and/or the Corps pursuant to part 322 of this Chapter; however, this exception is not applicable to dredging activities in wetlands, as that term is defined at section 328.3 of this Chapter. </p>
+
+<p>(iii) Certain discharges, such as those associated with normal farming, silviculture, and ranching activities, are not prohibited by or otherwise subject to regulation under section 404. See 33 CFR 323.4 for discharges that do not required permits.&#34;&#34;&#34; ;<br>
+    skos:inScheme CFR-33-323-2: ;<br>
+    skos:prefLabel &#34;Section 404 Authorization&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-323-2:Waters_of_the_United_States" href="#CFR-33-323-2:Waters_of_the_United_States">CFR-33-323-2:Waters_of_the_United_States</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-323-2:Waters_of_the_United_States</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-323-2:Waters_of_the_United_States is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term waters of the United States and all other terms relating to the geographic scope of jurisdiction are defined at 33 CFR part 328.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-323-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-323-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-323-2:Waters_of_the_United_States a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Waters of the United States&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-323/section-323.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-323-2.yaml#term[Waters of the United States]&#34; ;<br>
+    skos:definition &#34;The term waters of the United States and all other terms relating to the geographic scope of jurisdiction are defined at 33 CFR part 328.&#34; ;<br>
+    skos:inScheme CFR-33-323-2: ;<br>
+    skos:prefLabel &#34;Waters of the United States&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-323-2:de_minimis" href="#CFR-33-323-2:de_minimis">CFR-33-323-2:de_minimis</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-323-2:de_minimis</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-323-2:de_minimis is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>inconsequential</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-323-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-323-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-323-2:de_minimis a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;de minimis&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-323/section-323.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-323-2.yaml#term[de minimis]&#34; ;<br>
+    skos:definition &#34;inconsequential&#34; ;<br>
+    skos:inScheme CFR-33-323-2: ;<br>
+    skos:prefLabel &#34;de minimis&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	<hr>
+	<small>Ontology documentation automatically generated by <a class="greylink"  href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> v2.1.1 on Tue, 16 Jul 2024 04:24:13</small>
+
+
+</body>
+</html>

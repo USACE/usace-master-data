@@ -1,0 +1,47 @@
+@prefix CFR-33-242-4: <https://usace-data.com/civil-works/glossary/CFR-33-242-4#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CFR-33-242-4:Private_persons a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Private persons" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-242/section-242.4" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-242-4.yaml#term[Private persons]" ;
+    skos:definition "means all entities in the private sector, including but not limited to individuals, private institutions, sole proprietorships, partnerships, and corporations." ;
+    skos:inScheme CFR-33-242-4: ;
+    skos:prefLabel "Private persons" .
+
+CFR-33-242-4:Total_cost a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Total cost" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-242/section-242.4" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-242-4.yaml#term[Total cost]" ;
+    skos:definition "means total labor charges which include adjustments for benefits, administrative overhead, and technical indirect costs. These terms are described in the reference in Â§ 242.3 (c)." ;
+    skos:inScheme CFR-33-242-4: ;
+    skos:prefLabel "Total cost" .
+
+CFR-33-242-4: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Code of Federal Regulations - Title 33, Chapter-II, Part 242, Section-242.4" ;
+    dcterms:created "2024-07-16T04:23:23.443914+00:00"^^xsd:dateTime ;
+    dcterms:description "33-CFR-242.4 Term definitions are applicable throughout part 242" ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Code of Federal Regulations - Title 33, Chapter-II, Part 242, Section-242.4" ;
+    pav:ImportedFrom "glossaries/CivilWorks/CFR-33-242-4.yaml" ;
+    pav:createdOn "2024-07-16T04:23:23.443914+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "33 CFR 242.4 Definitions" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/CFR-33-242-4#" ;
+    skos:hasTopConcept CFR-33-242-4:Private_persons,
+        CFR-33-242-4:Total_cost .
+

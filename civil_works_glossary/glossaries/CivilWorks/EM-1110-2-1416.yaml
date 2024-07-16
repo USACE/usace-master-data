@@ -1,0 +1,1072 @@
+about:
+    namespace: https://usace-data.com/civil-works/glossary/EM-1110-2-1416#
+    prefix: EM-1110-2-1416
+    template: glossary
+    title: Engineering Manual 1110-2-1416 River Hydraulics
+    description: River Hydraulics Engineering Manual 1110-2-1416, defines various 
+        acronyms and terms commonly used in this manual to describe conducting river hydraulic investigations. 
+        These terms are defined in the glossary section of the manual.
+    source:
+        authoritativeSource: EM 1110-2-1416 River Hydraulics
+        sourceID: EM-1110-2-1416
+        glossaryReferences: true
+        parentTopic: Hydrology
+        url: https://www.publications.usace.army.mil/Portals/76/Publications/EngineerManuals/EM_1110-2-1416.pdf
+        anchor: '132'
+        linkType: pdf
+
+terms:
+
+- label: Accuracy
+  definition: The difference between the approximate solutions obtained using a numerical
+    model and the exact solution of the governing equations. The degree of conformity
+    of a measure to a standard or true value
+  anchor: '132'
+  parentTopic: Water Control
+- label: Adjustment
+  definition: Variation of the parameters in a model to ensure a close reproduction
+    by the model of a set of prototype conditions.
+  anchor: '132'
+  parentTopic: Water Control
+- label: Aggradation
+  definition: The geologic process by which stream beds, floodplains, and the bottoms
+    of other water bodies are raised in elevation by the deposition of material eroded
+    and transported from other areas. It is the opposite of degradation.
+  anchor: '132'
+  parentTopic: Water Control
+- label: Algorithm
+  definition: A procedure for solving a mathematical problem in a finite number of
+    steps that frequently involves repetition of an operation. A step by step procedure
+    for solving a problem or accomplishing an end. A set of numerical steps or routines
+    to obtain a numerical output from a numerical input.
+  anchor: '132'
+  parentTopic: Water Control
+- label: Alluvial
+  definition: Pertains to alluvium deposited by a stream or flowing water.
+  anchor: '132'
+  parentTopic: Water Control
+- label: Alluvial Channel
+  definition: See Alluvial Stream
+  anchor: '132'
+  parentTopic: Water Control
+- label: Alluvial Deposit
+  definition: Clay, silt, sand, gravel, or other sediment deposited by the action
+    of running or receding water.
+  anchor: '132'
+  parentTopic: Water Control
+- label: Alluvial Fan
+  definition: A conical, or fan, shaped deposit at the base of a mountain range where
+    the mountain stream encounters the lesser slope of the valley floor. The deposits
+    are generally coarse and alluvial fans most often occur in arid and semi-arid
+    regions where streamflow is ephemeral and vegetation cover is sparse.
+  anchor: '132'
+  parentTopic: Water Control
+- label: Alluvial Stream
+  definition: 'A stream whose channel boundary is composed of
+
+    appreciable quantities of the sediments transported by
+
+    the flow, and which generally changes its bed forms as
+
+    the rate of flow changes.'
+  anchor: '132'
+  parentTopic: Water Control
+- label: Alluvium
+  definition: A general term for all detrital deposits resulting directly or indirectly
+    from the sediment transported by (modern) streams; thus including the sediments
+    laid down in river beds, floodplains, lakes, fans, and estuaries.
+  anchor: '132'
+  parentTopic: Water Control
+- label: Alternate Bars
+  definition: Bars formed in a staggered pattern near the banks of channels.
+  anchor: '132'
+  parentTopic: Water Control
+- label: Analytical Model
+  definition: Mathematical model in which the solution of the governing equations
+    is obtained by algebraic analysis.
+  anchor: '132'
+  parentTopic: Water Control
+- label: Anomaly
+  definition: (1) A departure from the expected or normal. (2) A geological feature,
+    esp. in the subsurface, distinguished by geological, geophysical, or geochemical
+    means, which is different from the general surroundings and is often of potential
+    value.
+  anchor: '132'
+  parentTopic: Water Control
+- label: Armoring
+  definition: The process of progressive coarsening of the bed layer by removal of
+    fine particles until it becomes resistant to scour. The coarse layer that remains
+    on the surface is termed the "armor layer." Armoring is a temporary condition;
+    higher flows may destroy an armor layer and it may reform as flows decrease. Or,
+    simply, the formation of a resistant layer of relatively large particles resulting
+    from removal of finer particles by erosion.
+  anchor: '132'
+  parentTopic: Water Control
+- label: Avulsion
+  definition: A rapid change in channel direction and form that occurs during catastrophic,
+    rare, floods.
+  anchor: '132'
+  parentTopic: Water Control
+- label: Backwater Curve
+  definition: Longitudinal profile of the water surface in a stream where the water
+    surface is raised above its normal level by a natural or artificial obstruction.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Bank Migration
+  definition: Lateral or horizontal movement of the banks of a streamcourse.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Bed Forms
+  definition: Irregularities found on the bottom (bed) of a stream that are related
+    to flow characteristics. They are given names such as "dunes," "ripples," and
+    "antidunes." They are related to the transport of sediment and interact with the
+    flow because they change the roughness of the stream bed. An analog to stream
+    bed forms are desert sand dunes (although the physical mechanisms for their creation
+    and movement may be different).
+  anchor: '133'
+  parentTopic: Water Control
+- label: Bed Load
+  definition: Material moving on or near the stream bed by rolling, sliding, and sometimes
+    making brief excursions into the flow a few diameters above the bed, i.e. jumping.
+    The term "saltation" is sometimes used in place of "jumping." Bed load is bed
+    material that moves in continuous contact with the bed; contrast with "suspended
+    load."
+  anchor: '133'
+  parentTopic: Water Control
+- label: Bed Load Discharge
+  definition: The quantity of bed load passing a cross section in a unit of time,
+    i.e. the rate. Usually presented in units of tons per day. May be measured or
+    computed. See Bed Load.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Bed Material
+  definition: The sediment mixture of which the moving bed is composed. In alluvial
+    streams, bed material particles are likely to be moved at any moment or during
+    some future flow condition.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Bed or Hydraulic Sorting
+  definition: See Sorting.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Bed Rock
+  definition: A general term for the rock, usually solid, that underlies soil or other
+    unconsolidated, superficial material.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Bias
+  definition: A systematic error introduced into sampling or testing by selecting
+    or encouraging one outcome or answer over others. Bias can be introduced by setting
+    variables or factors which would result in one outcome.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Boundary Conditions
+  definition: Definition or statement of conditions or phenomena at the boundaries.
+    Water levels, flows, concentrations, etc., that are specified at the boundaries
+    of the area being modeled. A specified tailwater elevation and incoming upstream
+    discharge are typical boundary conditions.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Boundary Effect
+  definition: Consequence of dissimilarities between the model boundary conditions
+    and the conditions occurring in the prototype at the location of the model boundaries.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Boundary Roughness
+  definition: The roughness of the bed and banks of a stream or river. The greater
+    the roughness, the greater the frictional resistance to flows; and, hence, the
+    greater the water surface elevation for any given discharge.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Braided Channel
+  definition: A stream that is characterized by random interconnected channels divided
+    by islands or bars. Bars which divide the stream into separate channels at low
+    flows are often submerged at high flow.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Calibration
+  definition: Adjustment of a model's parameters such as roughness or dispersion
+    coefficients so that it reproduces observed prototype data to acceptable accuracy.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Channel
+  definition: A natural or artificial waterway which periodically or continuously
+    contains moving water.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Channel Stabilization
+  definition: A stable channel is neither progressively aggrading nor degrading, or
+    changing its cross-sectional area through time. It could aggrade or degrade slightly,
+    but over the period of a year, the channel would remain similar in shape and dimensions
+    and position to previous times. Unstable channels are depositing or eroding in
+    response to some exterior conditions. Stabilization techniques consist of bank
+    protection and other measures that work to transform an unstable channel into
+    a stable one.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Characteristics Method
+  definition: Numerical method in which the governing partial differential equations
+    of a mathematical model are transformed into characteristic (ordinary differential)
+    equations.
+  anchor: '133'
+  parentTopic: Water Control
+- label: Coastal Model
+  definition: Model of a coastal area. Often a movable bed model used to reproduce
+    coastal sediment transport.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Cohesive Sediments
+  definition: Sediments whose resistance to initial movement or erosion is affected
+    mostly by cohesive bonds between particles.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Concentration of Sediment
+  definition: The dry weight of sediment per unit volume of watersediment mixture,
+    i.e. mg/l or ppm.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Conceptual Model
+  definition: A simplification of prototype behavior used to illustrate functional
+    relationships.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Confirmation
+  definition: Process in which a model of a specific study area is built and tested
+    to prove that the model design and implementation is adequate and no major phenomenon
+    has been overlooked.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Consistency
+  definition: The property of a numerical solution to a set of partial differential
+    equations that, as time and distance steps are decreased, the difference equations
+    approach the differential equations.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Convergence
+  definition: The state of tending to a unique solution. A given scheme is convergent
+    if an increasingly finer computational grid leads to a more accurate solution.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Conveyance
+  definition: A measure of the flow carrying capacity of a channel section. Flow is
+    directly proportional to conveyance for steady flow. From Manning's equation,
+    the proportionality factor is the square root of the energy slope.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Cross Section
+  definition: Depicts the shape of the channel in which a stream flows. Measured by
+    surveying the stream bed elevation across the stream on a line perpendicular to
+    the flow. Necessary data for the computation of hydraulic and sediment transport
+    information.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Cross-sectional Area
+  definition: The cross-sectional area is the area of a cross section perpendicular
+    to the direction of flow beneath the water surface.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Degradation
+  definition: The geologic process by which stream beds, floodplains, and the bottoms
+    of other water bodies are lowered in elevation by the removal of material from
+    the boundary. It is the opposite of aggradation.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Delta
+  definition: A deposit of sediment formed where moving water (as from a stream at
+    its mouth) is slowed by a body of standing water.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Density
+  definition: "The mass of a substance per unit volume. The Greek letter Ï\x81 is\
+    \ the common symbol."
+  anchor: '134'
+  parentTopic: Water Control
+- label: Density Current
+  definition: A highly turbid mixture of water and very fine grained sediment which
+    flows into and along the bottom of a reservoir because its density is relatively
+    larger than that of the standing water in the reservoir.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Depth of Flow
+  definition: The depth of flow is the vertical distance from the bed of a stream
+    to the water surface.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Deposition
+  definition: The mechanical or chemical processes through which sediments accumulate
+    in a (temporary) resting place. The raising of the stream bed by settlement of
+    moving sediment that may be due to local changes in the flow, or during a single
+    flood event.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Deterministic Model
+  definition: Mathematical model in which the behavior of every variable is completely
+    determined by the governing equations and the initial states of the variables.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Digitization
+  definition: Representation of a continuous process, field, or surface by numerical
+    (digital) values.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Digitize
+  definition: To convert data from map or graphical form to digital form for use by
+    computer programs.
+  anchor: '134'
+  parentTopic: Water Control
+- label: Dimensionless Number
+  definition: 'A physically meaningful ratio of parameters that is dimensionless.
+    These dimensionless ratios are useful in determining scaling laws since a particular
+    dimensionless number must be the same in both model and prototype to achieve similarity.
+    Examples are the common force ratios, such as the Froude and Reynolds
+
+    numbers.'
+  anchor: '134'
+  parentTopic: Water Control
+- label: Discharge
+  definition: The discharge, usually abbreviated as "Q", is the volume of a fluid
+    or solid passing a cross section of a stream per unit time.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Discretization
+  definition: The procedure of representing a continuous variable by discrete values
+    at specified points in space and/or time.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Discretization Error
+  definition: Error introduced by the discrete representation of a continuous variable.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Distorted Model
+  definition: Hydraulic model in which horizontal and vertical scales are different.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Distortion
+  definition: Conscious departure from a scaling law often necessitated by a complex
+    set of prototype and laboratory conditions. The term is most commonly used for
+    geometric distortion in which the vertical and horizontal scales of a hydraulic
+    model are different.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Dominant Discharge
+  definition: A particular magnitude of flow which is sometimes referred to as the
+    "channel forming" discharge. Empirical relations have been developed between "equilibrium"
+    stream width, depth, and slope and the dominant discharge. It has been variously
+    defined as the bank full flow, mean annual discharge, etc.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Drainage Basin
+  altName: [ Watershed ]
+  definition: The area tributary to or draining into a lake, stream, or measuring
+    site. (See WATERSHED.)
+  anchor: '135'
+  parentTopic: Water Control
+- label: Dunes
+  definition: Bed forms with triangular profile that advance downstream due to net
+    deposition of particles on the steep downstream slope. Dunes move downstream at
+    velocities that are small relative to the streamflow velocity.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Dynamic Model
+  definition: A mathematical model of flow in an open channel that solves the complete
+    unsteady flow equations (St. Venant equations for one-dimensional problems).
+  anchor: '135'
+  parentTopic: Water Control
+- label: Empirical Model
+  definition: Representation of a real system by a mathematical description based
+    on experimental or observed data rather than on general physical laws.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Erosion
+  definition: The wearing away of the land surface by detachment and movement of soil
+    and rock fragments through the action of moving water and other geological agents.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Explicit Scheme
+  definition: Scheme in which the governing equations of a numerical model are arranged
+    to update the dependent variables in terms of previously known values only. (Compare
+    with IMPLICIT SCHEME).
+  anchor: '135'
+  parentTopic: Water Control
+- label: Finite Element Method
+  definition: Method of solving the governing equations of a numerical model by dividing
+    the spatial domain into elements in each of which the solution of the governing
+    equations is approximated by some continuous function.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Fixed Bed Model
+  definition: Model in which the bed and side materials are nonerodible; deposition
+    does not occur either.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Floodplain
+  definition: Normally dry land adjacent to a body of water such as a river, stream,
+    lake, or ocean, which is susceptible to inundation by floodwaters.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Flood Routing
+  definition: The process of tracing, by calculation, the course and character of
+    a flood as it progresses through a river reach or a reservoir.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Flow Duration Curve
+  definition: A measure of the range and variability of a stream's flow. The flow
+    duration curve represents the percent of time during which specified flow rates
+    are exceeded at a given location. This is usually presented as a graph of flow
+    rate (discharge) versus percent of time that flows are greater than, or equal
+    to, that flow.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Fluvial
+  definition: (1) Pertaining to streams. (2) Growing or living in streams or ponds.
+    (3) Produced by river action, as a fluvial plain.
+  anchor: '135'
+  parentTopic: Water Control
+- label: Fluvial Sediment
+  definition: Particles derived from rocks or biological materials which are transported
+    by, suspended in, or deposited by streams.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Frequency
+  definition: The number of repetitions of a random process in a certain time period.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Froude Number
+  definition: U/(gÂ·L)Â½ (U = velocity, g = gravity, L = length). A dimensionless
+    number expressing the ratio between the influences of inertia and gravity in a
+    fluid. The Froude number is important wherever the gravity effect is dominating,
+    such as with water waves, flow in open channels, sedimentation in lakes and reservoirs,
+    salt-water intrusions, and the mixing of air masses of different densities.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Froude Number Model (or Gravitational Model)
+  definition: Model designed to emphasize similarity of gravitational and inertial
+    forces (Froude Number), while other forces such as viscous (Reynolds Number) may
+    not be reproduced as accurately. Open channel and coastal models are of this type.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Gaging Station
+  definition: A selected cross section of a stream channel where one or more variables
+    are measured continuously or periodically to record discharge and other parameters.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Geologic Control
+  definition: A local rock formation or clay layer that limits (within the engineering
+    time frame) the vertical and/or lateral movement of a stream at a particular point.
+    Note that artificial controls such as drop structures also exist.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Geology
+  definition: A science that deals with the physical history of the earth, especially
+    as recorded in rocks and landforms.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Geometric Similarity
+  definition: Similarity in form or shape.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Geomorphology
+  definition: The study of landform development under processes associated with running
+    water.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Grid
+  definition: Network of points covering the space or time-space domain of a numerical
+    model. The points may be regularly or irregularly spaced.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Heuristic Model
+  definition: Representation of a real system by a mathematical description based
+    on reasoned, but unproven, argument.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Historic Flows
+  definition: The collection of recorded flow data for a stream during the period
+    of time in which steam gages were in operation.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Hybrid Model
+  definition: Model combining at least two modeling techniques (e.g., physical and
+    numerical) in a closely coupled fashion.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Hydraulic Depth
+  definition: The hydraulic depth is the ratio of cross-sectional area to top width
+    at any given elevation.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Hydraulic Model
+  definition: A physical scale model of a river used for engineering studies.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Hydraulic Radius
+  definition: The hydraulic radius is the ratio of cross-sectional area to wetted
+    perimeter at any given elevation.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Hydraulics
+  definition: The study and computation of the characteristics, e.g. depth (water
+    surface elevation), velocity, and slope of water flowing in a stream or river.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Hydrograph
+  definition: A graph showing, for a given point on a stream or channel, the discharge,
+    water surface elevation, stage, velocity, available power, or other property of
+    water with respect to time.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Hydrology
+  definition: The study of the properties, distribution, and circulation of water
+    on the surface of the land in the soil and in the atmosphere.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Ice Model
+  definition: Model in which formation of ice, ice conditions, or ice forces are simulated.
+  anchor: '136'
+  parentTopic: Water Control
+- label: Implicit Scheme
+  definition: 'Scheme in which the governing equations of a numerical model are arranged
+    to obtain solutions for the dependent variables simultaneously at all grid points
+    corresponding to any one time. The computed values depend not only on known values
+    at a previous time but also on the other unknown neighboring values at the surrounding
+    grid points at the time being calculated.
+
+    (Compare with EXPLICIT SCHEME).'
+  anchor: '136'
+  parentTopic: Water Control
+- label: Impoundment
+  definition: Body of water formed by collecting water, as at a dam.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Initial Conditions
+  definition: The values of water levels, velocities, concentrations, etc., that are
+    specified everywhere in the grid or mesh at the beginning of a model run. For
+    iterative solutions, the initial conditions represent the first estimate of the
+    variables the model is trying to compute.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Kinematic Similarity
+  definition: Similarity of motion.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Linear Model
+  definition: Mathematical model based entirely on linear equations.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Manning's n-Value
+  definition: n is a coefficient of boundary roughness. n accounts for energy loss
+    due to the friction between the bed and the water. In fluvial hydraulics (movable
+    boundary hydraulics), the Manning's n value usually includes the effects of
+    other losses, such as grain roughness of the movable bed, form roughness of the
+    movable bed, bank irregularities, vegetation, bend losses, and junction losses.
+    Contraction and expansion losses are not included in Manning's n, and are typically
+    accounted for separately.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Mathematical Model
+  definition: A model that uses mathematical expressions (i.e., a set of equations,
+    usually based upon fundamental physical principles) to represent a physical process.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Meandering Stream
+  definition: An alluvial stream characterized in planform by a series of pronounced
+    alternating bends. The shape and existence of the bends in a meandering stream
+    are a result of alluvial processes and not determined by the nature of the terrain
+    (geology) through which the stream flows.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Mean Velocity
+  definition: The mean velocity is the discharge divided by the area of water at a
+    cross section.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Mesh
+  definition: The network of computational points (nodes) linked together by finite
+    element connection tables to form a digital representation of the modeled area's
+    geometry.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Model
+  definition: "A representation of a physical process or thing that can be used to
+    predict the process's or thing's behavior or state. Examples: A conceptual
+    model: If I throw a rock harder, it will go faster. A mathematical model: F =
+    ma A hydraulic model: Columbia River physical model."
+  anchor: '137'
+  parentTopic: Water Control
+- label: Movable Bed Model
+  definition: Model in which the river bed and/or side material is erodible and can
+    be transported in a manner similar to the prototype; can be hydraulic or numerical.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Natural Alluvial Channel
+  definition: A movable bed in loose sedimentary materials. A "natural alluvial channel"
+    is an alluvial channel created by nature.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Navigation Model
+  definition: Model to study maneuverability of vessels under currents, waves, wind,
+    etc. for design of navigable waterways.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Network
+  definition: A system of one-dimensional interconnected one-dimensional streams;
+    also used to describe a MESH.
+  anchor: '137'
+  parentTopic: Water Control
+- label: NGVD
+  definition: National Geodetic Vertical Datum, vertical datum plane reference that
+    has replaced mean sea level.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Node
+  definition: The location in a numerical network where computations are performed
+    and/or output is requested.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Nonlinear Model
+  definition: Mathematical model using one or more nonlinear equations.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Numerical Experiments
+  definition: Varying the input data or internal parameters of a numerical model to
+    ascertain the impact on the output of those variations.
+  anchor: '137'
+  parentTopic: Water Control
+- label: Numerical Model
+  definition: 'A numerical model is the representation of a mathematical model as
+    a sequence of instructions (program) for a computer. Given appropriate data, the
+
+    execution of this sequence of instructions yields an
+
+    approximate solution to the set of equations that comprise the mathematical model.'
+  anchor: '137'
+  parentTopic: Water Control
+- label: One-Dimensional Model
+  definition: Model defined with one space coordinate, i.e. variables are averaged
+    over the other two directions (e.g., wave propagation in a narrow channel).
+  anchor: '138'
+  parentTopic: Water Control
+- label: Overbank
+  definition: In a river reach, the area between the bank of the main channel and
+    the limits of the floodplain.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Parameter
+  definition: Any physical property whose value determines the characteristics or
+    behavior of something.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Phasing
+  definition: Phasing refers to the timing of flows from the main stem of the river
+    and its tributaries. The arrival of flows into the main stem from the upper watersheds
+    is a function of the size and characteristics of the watersheds, tributary channels,
+    and storm event.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Physical Model
+  definition: Model using the physical properties and behavior of modeling materials
+    to represent the prototype; a scale model of the prototype.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Planform
+  definition: The shape and size of channel and overbank features as viewed from above.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Point Bar
+  definition: Deposits of sediment that occur on the convex side or inside of channel
+    bends. Their shape may vary with changing flow conditions, but they do not move
+    significantly relative to the bends. However, the general magnitude and location
+    of the bar varies with discharge.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Probabilistic Model
+  altName: [Stochastic Model]
+  definition: Mathematical model in which the behavior of one or more of the variables
+    is either completely or partially subject to probability laws.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Prototype
+  definition: The full-sized structure, system, process, or phenomenon being modeled.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Qualitative
+  definition: A relative assessment of a quantity or amount.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Quantitative
+  definition: An absolute measurement of a quantity or amount.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Quasi-Steady-State Model
+  definition: Model in which time-dependent variables are simulated by a sequence
+    of steady-states.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Quasi-Three-Dimensional Model
+  definition: A combination of two-dimensional models used to simulate variations
+    in three dimensions.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Reach
+  definition: (1) The length of a channel uniform with respect to discharge, depth,
+    area, and slope; e.g., "typical channel reach" or "degrading reach", etc., (2)
+    the length of a stream between two specified gaging stations, control points,
+    or computational points.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Reservoir
+  definition: An impounded body of water or controlled lake where water is collected
+    and stored.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Reynolds Number
+  definition: (UÂ·L)/Î½ - Dimensionless ratio of inertial force to viscous force;
+    the length may represent grain size, depth of flow, or pipe diameter, resulting
+    in different Reynolds Numbers for different purposes. The critical Reynolds Number
+    describes the onset of turbulence. The Reynolds number is defined as velocity
+    multiplied by length divided by kinematic viscosity. It is usually involved wherever
+    viscosity is important, such as in slow movement of fluid in small passages or
+    around small objects.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Ripple
+  definition: Small triangular-shaped bed forms that are similar to dunes but have
+    much smaller heights and lengths of 0.3 m or less. They develop when the Froude
+    number is less than approximately 0.3.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Roundoff Error
+  definition: Cumulative error introduced by rounding of the results from individual
+    arithmetic operations because only a finite number of digits can be retained after
+    each operation of a digital computer.
+  anchor: '138'
+  parentTopic: Water Control
+- label: Routing
+  definition: Technique used to compute the effect of channel storage and conveyance
+    on the shape and movement of a flood wave through a river reach. Also used when
+    describing the movement of sediment volumes through a river system.
+  anchor: '139'
+  parentTopic: Water Control
+- label: Routing Model
+  definition: A model (see Mathematical Model and NUMERICAL Model) for performing
+    flood routing (see Flood Routing).
+  anchor: '139'
+  parentTopic: Water Control
+- label: Runoff
+  definition: Flow that is discharged from an area by stream channels; sometimes subdivided
+    into surface runoff, groundwater runoff, and seepage.
+  anchor: '139'
+  parentTopic: Water Control
+- label: Scale (or Scale Ratio)
+  definition: Ratio of a parameter in a model to the corresponding parameter in the
+    prototype.
+  anchor: '139'
+  parentTopic: Water Control
+- label: Scale Effect
+  definition: Consequence of nonsimilarity between model and prototype resulting from
+    the fact that not all pertinent dimensionless numbers are the same in model and
+    prototype. In a "perfect" model, all pertinent dimensionless numbers are the same
+    in model and prototype. In a "real" model, economics dictates the use of certain
+    materials, e.g., water as a fluid. This means that fluid density and viscosity
+    are not correctly scaled down from prototype to model and, as a consequence, some
+    dimensionless numbers are not the same in model and prototype, resulting in scale
+    effect.
+  anchor: '139'
+  parentTopic: Water Control
+- label: Scaling Laws
+  definition: Conditions that must be satisfied to achieve desired similarity between
+    model and prototype.
+  anchor: '139'
+  parentTopic: Water Control
+- label: Schematization
+  definition: 'Representation of a continuum by discrete elements, e.g., dividing
+    a real river into reaches with constant
+
+    parameters.'
+  anchor: '139'
+  parentTopic: Water Control
+- label: Scheme (Numerical or Computational)
+  definition: Systematic program of action for solving the governing equations of
+    a mathematical model.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Scour
+  definition: The enlargement of a cross section by the removal of boundary material
+    through the action of the fluid in motion.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Sediment
+  definition: (1) Particles derived from rocks or biological materials that have been
+    transported by a fluid. (2) Solid material suspended in or settled from water.
+    A collective term meaning an accumulation of soil, rock, and mineral particles
+    transported or deposited by flowing water.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Sedimentation
+  definition: 'Consists of five fundamental processes: (1) weathering, (2) erosion,
+    (3) transportation, (4) deposition, and (5) diagenesis, or consolidation into
+    rock. Also refers to the gravitational settling of suspended particles that are
+    heavier than water.'
+  anchor: '140'
+  parentTopic: Water Control
+- label: Sediment Sample
+  definition: A quantity of water-sediment mixture or deposited sediment that is collected
+    to characterize some property or properties of the sampled medium.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Sediment Transport Function
+  definition: A formula or algorithm for calculating sediment transport rate given
+    the hydraulics and bed material at a cross section. Most sediment transport functions
+    compute the bed material load capacity. The actual transport may be less than
+    the computed capacity due to armoring, geologic controls, etc. or greater due
+    to fine material (wash load) that originates upstream rather than from the bed.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Sediment Transport Routing
+  definition: The computation of sediment movement for a selected length of stream
+    (reach) for a period of time with varying flows. Application of sediment continuity
+    relations allow the computation of aggradation and deposition as functions of
+    time.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Sediment Yield
+  definition: The total sediment outflow from a drainage basin in a specific period
+    of time. It includes bed load as well as suspended load, and is usually expressed
+    in terms of mass or volume per unit of time.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Semi-Empirical Model
+  definition: Representation of a real system by a mathematical description based
+    on general physical laws but containing coefficients determined from experimental
+    data.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Shear Force
+  definition: The shear force is the shear developed on the wetted area of the channel
+    and it acts in the direction of flow. This force per unit wetted area is called
+    the shear stress.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Shear Stress
+  definition: Frictional force per unit of bed area exerted on the bed by the flowing
+    water. An important factor in the movement of bed material.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Shear Velocity
+  definition: The shear velocity is defined as the square root of the quantity shear
+    stress divided by fluid density.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Similarity
+  altName: [ Similitude ]
+  definition: Correspondence between the behavior of a model and its prototype.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Simulation
+  definition: Reproduction of the prototype behavior using a model.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Simulation Model
+  definition: Mathematical model in which detailed values of the various parameters
+    are computed, usually with respect to both space and time.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Sinuosity
+  definition: A measure of meander "intensity." Computed as the ratio of the length
+    of a stream measured along its thalweg (or centerline) to the length of the valley
+    through which the stream flows.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Sorting
+  definition: The dynamic process by which sediment particles having some particular
+    characteristic (such as similarity of size, shape, or specific gravity) are naturally
+    selected and separated from associated but dissimilar particles by the agents
+    of transportation.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Stability
+  altName: [ Numerical, Computational ]
+  definition: The ability of a scheme to control the propagation or growth of small
+    perturbations introduced in the calculations. A scheme is unstable if it allows
+    the growth of error to eventually obliterate the true solution.
+  anchor: '140'
+  parentTopic: Water Control
+- label: Stable Channel
+  definition: 'A stream channel that does not change in planform or bed profile during
+    a particular period of time. For purposes of this glossary the time period is
+    years to tens
+
+    of years'
+  anchor: '140'
+  parentTopic: Water Control
+- label: Stage
+  definition: The stage is the vertical distance from any selected and defined datum
+    to the water surface.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Stage-Discharge (Rating) Curve
+  definition: Defines a relationship between discharge and water surface elevation
+    at a given location.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Steady State Model
+  definition: Model in which the variables being investigated do not change with time.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Stochastic Model
+  altName: [Probabilistic Model]
+  definition: Mathematical model in which the behavior of one or more of the variables
+    is either completely or partially subject to probability laws.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Stream Bank Erosion
+  definition: The removal of bank material by the force of flowing water and the caving
+    of stream banks.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Stream Discharge
+  altName: [Water Discharge]
+  definition: The volume of flow passing a stream cross section in a unit of time.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Stream Gage
+  definition: A device that measures and records flow characteristics such as water
+    discharge and water surface elevation at a specific location on a stream. Sediment
+    transport measurements are usually made at stream gage sites.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Stream Profile
+  definition: A plot of the elevation of a stream bed versus distance along the stream.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Tailwater
+  definition: The water surface elevation downstream from a structure such as below
+    a dam, weir, or drop structure.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Thalweg
+  definition: The line following the lowest part of a valley, whether under water
+    or not. Usually the line following the deepest part, or middle, of the bed or
+    channel of a river.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Theoretical Model
+  definition: Representation of a real system by a mathematical description.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Three-Dimensional Model
+  definition: Model defined with three space coordinates.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Tidal Model
+  definition: Froude number model in which tidal water levels and current fluctuations
+    are reproduced.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Top Width
+  definition: The width of a stream section at the water surface; it varies with stage
+    in most natural channels.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Tracer Model
+  definition: A fixed-bed model in which patterns of erosion and deposition are estimated
+    by using tracers of bed material or lightweight sediment proxies.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Transect
+  definition: A sample area, cross section, or line chosen as the basis for studying
+    one or more characteristics of a particular assemblage.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Transportation
+  altName: [ Sediment ]
+  definition: The complex processes of moving sediment particles from place to place.
+    The principal transporting agents are flowing water and wind.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Transport Capacity
+  definition: The ability of a stream to transport a given volume or weight of sediment
+    material of a specific size per time for a given flow condition. The units of
+    transport capacity are usually given in tons per day of sediment passing a given
+    cross section for a given flow. Transport capacity for each sediment grain size
+    is the transport potential for that size multiplied by the actual fraction of
+    that size class present in the bed material.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Transport Potential
+  definition: The rate at which a stream could transport sediment of a given grain
+    size for given hydraulic conditions if the bed and banks were composed entirely
+    of material of that size.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Trap Efficiency
+  definition: Proportion of sediment inflow to a stream reach (or reservoir) that
+    is retained within that reach (or reservoir). Computed as inflowing sediment volume
+    minus outflowing sediment volume divided by inflowing sediment volume. Positive
+    values indicate aggradation; negative values, degradation.
+  anchor: '141'
+  parentTopic: Water Control
+- label: Truncation Error
+  definition: 'The error introduced by replacing the derivative terms of a differential
+    equation by finite differences using a Taylor series and then truncating after
+    a certain number
+
+    of terms.'
+  anchor: '141'
+  parentTopic: Water Control
+- label: Turbulence
+  definition: The irregular, random, velocity fluctuations within a flowing fluid.
+  anchor: '142'
+  parentTopic: Water Control
+- label: Two-Dimensional Model
+  definition: Model defined with two space coordinates (i.e., variables are averaged
+    over the third direction).
+  anchor: '142'
+  parentTopic: Water Control
+- label: Unsteady-State Model
+  definition: Model in which the variables being investigated are time dependent.
+  anchor: '142'
+  parentTopic: Water Control
+- label: Validation
+  definition: 'Comparison of model results with a set of prototype data that were
+    not used for verification. Comparison includes: (1) sing a data set very similar
+    to the verification data to determine the validity of the model under conditions
+    for which it was designed; (2) sing a data set quite different from the verification
+    data to determine the validity of the model under conditions for which it was
+    not designed but could possibly be used; and (3) using post-construction prototype
+    data to determine the validity of the predictions based on model results.'
+  anchor: '142'
+  parentTopic: Water Control
+- label: Verification
+  definition: Check of the behavior of a calibrated model against a set of prototype
+    conditions that was not used for calibration.
+  anchor: '142'
+  parentTopic: Water Control
+- label: Water Column
+  definition: An imaginary vertical column of water used as a control volume for computational
+    purposes. Usually the size of a unit area and as deep as the depth of water at
+    that location in the river.
+  anchor: '142'
+  parentTopic: Water Control
+- label: Water Discharge
+  altName: [Stream Discharge]
+  definition: The volume of flow passing a stream cross section in a unit of time.
+  anchor: '142'
+  parentTopic: Water Control
+- label: Watershed
+  definition: A topographically defined area drained by a river/stream or system of
+    connecting rivers/streams such that all outflow is discharged through a single
+    outlet. Also called a drainage area.
+  anchor: '142'
+  parentTopic: Water Control
+- label: Wave Model
+  definition: Froude number model in which gravity waves are reproduced to provide
+    the driving mechanism for currents, impact forces, wave action, sediment transport,
+    etc.
+  anchor: '142'
+  parentTopic: Water Control
+- label: Wetted Perimeter
+  definition: The length of wetted contact between a stream of flowing water and its
+    containing channel, measured in a direction normal to the flow.
+  anchor: '142'
+  parentTopic: Water Control

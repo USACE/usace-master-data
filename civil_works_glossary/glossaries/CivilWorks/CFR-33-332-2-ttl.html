@@ -1,0 +1,3605 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Ontospy > https://usace-data.com/civil-works/glossary/CFR-33-332-2#</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <style type="text/css" media="screen">
+
+
+  body {
+	  margin-left: 6em;
+	  margin-right: 12em;
+	  text-align: justify;
+    padding: 2em 1em 2em 70px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  :link { color: #00C; background: transparent }
+  :visited { color: #00C; background: transparent }
+  a:active { color: #C00; background: transparent }
+
+  a:link img, a:visited img { border-style: none } /* no border on img links */
+
+  a:hover {color: white; background: #00C; }
+  a.backlink:hover {color: white; background: grey; }
+  a.greylink:hover {color: white; background: grey; }
+
+  .margintop {
+  	 margin-top: 40px;
+  }
+
+
+  dt, dd { margin-top: 10px; margin-bottom: 0 } /* opera 3.50 */
+  dt { font-weight: bold }
+
+
+  h1, h2, h3, h4, h5, h6 { text-align: left }
+  /* background should be transparent, but WebTV has a bug */
+  h1, h2, h3, h4, h5 { color: #005A9C; background: white }
+  h1.title { font: 200% sans-serif }
+  h1 { font: 170% sans-serif }
+  h2 { font: 140% sans-serif }
+  h3 { font: 120% sans-serif }
+  h4 { font: bold 100% sans-serif }
+  h5 { font: italic 100% sans-serif }
+  h6 { font: small-caps 100% sans-serif }
+
+  .hide { display: none }
+
+
+  pre { margin-left: 2em }
+
+  pre, code { font-family: monospace } /* navigator 4 requires this */
+
+
+  .implementation {
+  	background: aliceblue;
+	padding: 10px;
+	margin-top: 5px;
+  }
+
+  fieldset {
+	  margin-top: 20px;
+	  padding: 13px;
+      text-align: left;
+  }
+
+  legend {
+	  text-transform: uppercase;
+  }
+
+  .entity-div {
+	  margin: 55px 10px 30px 10px;
+  }
+
+  .entity-section {
+	  margin-bottom: 0px;
+  }
+
+
+  a.backlink {
+	  font-size: 80%;
+	  color: grey;
+  }
+
+  a.greylink {
+	  color: grey;
+  }
+
+
+   .implementation_title {
+
+       font-weight: bold;
+       font-size: 100%;
+   }
+
+.section-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+        .tree-container {
+            width: 3000em;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+		.tree {margin: 10px 0px 30px -20px; padding: 0; display: inline-block;}
+
+		.tree ul {
+			padding-top: 20px; position: relative;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		.tree li {
+			float: left; text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*We will use ::before and ::after to draw the connectors*/
+
+		.tree li::before, .tree li::after{
+			content: '';
+			position: absolute; top: 0; right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%; height: 20px;
+		}
+		.tree li::after{
+			right: auto; left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		/*We need to remove left-right connectors from elements without
+		any siblings*/
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		/*Remove space from the top of single children*/
+		.tree li:only-child{ padding-top: 0;}
+
+		/*Remove left connector from first child and
+		right connector from last child*/
+		.tree li:first-child::before, .tree li:last-child::after{
+			border: 0 none;
+		}
+		/*Adding back the vertical connector to the last nodes*/
+		.tree li:last-child::before{
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+			-webkit-border-radius: 0 5px 0 0;
+			-moz-border-radius: 0 5px 0 0;
+		}
+		.tree li:first-child::after{
+			border-radius: 5px 0 0 0;
+			-webkit-border-radius: 5px 0 0 0;
+			-moz-border-radius: 5px 0 0 0;
+		}
+
+		/*Time to add downward connectors from parents*/
+		.tree ul ul::before{
+			content: '';
+			position: absolute; top: 0; left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0; height: 20px;
+		}
+
+		.tree li a{
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #666;
+			font-family: arial, verdana, tahoma;
+			font-size: 11px;
+			display: inline-block;
+
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*Time for some hover effects*/
+		/*We will apply the hover effect the the lineage of the element also*/
+		.tree li a:hover, .tree li a:hover+ul li a {
+			background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+		}
+		/*Connector styles on hover*/
+		.tree li a:hover+ul li::after,
+		.tree li a:hover+ul li::before,
+		.tree li a:hover+ul::before,
+		.tree li a:hover+ul ul::before{
+			border-color:  #94a0b4;
+		}
+
+		/*Thats all. I hope you enjoyed it.
+		Thanks :)*/
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+	
+	
+		
+			<h1 class="title"><a href="" target="_blank">https://usace-data.com/civil-works/glossary/CFR-33-332-2#</a></h1>
+			<h3><p>None</p></h3>
+		
+
+	
+		
+		
+
+
+	<p><small>Ontology documentation automatically generated by <a class="greylink" href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> on Tue, 16 Jul 2024 04:25:17</small></p>
+
+
+
+	
+
+
+	<hr class="margintop">
+
+	<h1><a name="toc">&nbsp;</a>Table of Content</h1>
+
+	<ul>
+		<li><a href="#ontologies">Ontologies</a></li>
+		<li><a href="#a-z">A-Z of Terms</a></li>
+		
+		
+		
+		
+		<li><a href="#skosconcepts">SKOS Concepts</a></li>
+		
+	</ul>
+
+
+
+	
+
+	
+
+	<hr class="margintop">
+
+	<h1><a name="ontologies"></a>Ontologies</h1>
+
+		
+
+
+			<fieldset> <legend><h3><a href="https://usace-data.com/civil-works/glossary/CFR-33-332-2#" target="_blank">https://usace-data.com/civil-works/glossary/CFR-33-332-2#</a></h3></legend>
+
+			<h4 style="margin-top: -20px;"><p>None</p></h4>
+
+			
+			
+				
+					<dt>dcterms:created</dt>
+				  
+			
+			<dd><p>2024-07-16T04:25:13.276958+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:description</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:publisher</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:rights</dt>
+				  
+			
+			<dd><p>MIT</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:title</dt>
+				  
+			
+			<dd><p>Code of Federal Regulations - Title 33, Chapter-II, Part, Section-332.2</p></dd>
+			
+			
+				</dl>
+					<dt>pav:ImportedFrom</dt>
+				  
+			
+			<dd><p>glossaries/CivilWorks/CFR-33-332-2.yaml</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdOn</dt>
+				  
+			
+			<dd><p>2024-07-16T04:25:13.276958+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdWith</dt>
+				  
+			
+			<dd><p>gloss</p></dd>
+			
+			
+				</dl>
+					<dt>pav:wasInfluencedBy</dt>
+				  
+			
+			<dd><p>33 CFR 332.2 Definitions</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.knowledgesmarts.com/ontologies/wov#Glossary</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2002/07/owl#Ontology</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2004/02/skos/core#ConceptScheme</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#Vocabulary</p></dd>
+			
+			
+				</dl>
+					<dt>rdfs:label</dt>
+				  
+			
+			<dd><p>Code of Federal Regulations - Title 33, Chapter-II, Part, Section-332.2</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Adaptive_management</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Advance_credits</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Buffer</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Compensatory_mitigation</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Compensatory_mitigation_project</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Condition</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Credit</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Days</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Debit</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Enhancement</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Establishment</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Fulfillment_of_advance_credit_sales_of_an_in-lieu_fee_program</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Functional_capacity</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Functions</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Impact</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#In-kind</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#In-lieu_fee_program</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#In-lieu_fee_program_instrument</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Instrument</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Interagency_Review_Team</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Mitigation_bank</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Mitigation_banking_instrument</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Off-site</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#On-site</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Out-of-kind</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Performance_standards</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Permittee-responsible_mitigation</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Preservation</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Re-establishment</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Reference_aquatic_resources</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Rehabilitation</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Release_of_credits</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Restoration</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Riparian_areas</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Service_area</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Services</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Sponsor</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Standard_permit</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Temporal_loss</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Watershed</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Watershed_approach</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#Watershed_plan</p></dd>
+			
+			
+				</dl>
+					<dt>vann:preferredNamespaceUri</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-332-2#</p></dd>
+			
+
+			</fieldset>
+
+		
+
+	
+
+
+
+	
+
+	<hr class="margintop">
+	<h1><a  name="a-z">&nbsp;</a>A-Z of terms</h1>
+
+	<div id="azterms">
+
+	This is a complete alphabetical A-Z index of all terms, by main logical type.
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		<fieldset> <legend>SKOS Concepts (42)</legend>
+			&nbsp;<a href="#CFR-33-332-2:Adaptive_management">CFR-33-332-2:Adaptive_management</a>
+			|  <a href="#CFR-33-332-2:Advance_credits">CFR-33-332-2:Advance_credits</a>
+			|  <a href="#CFR-33-332-2:Buffer">CFR-33-332-2:Buffer</a>
+			|  <a href="#CFR-33-332-2:Compensatory_mitigation">CFR-33-332-2:Compensatory_mitigation</a>
+			|  <a href="#CFR-33-332-2:Compensatory_mitigation_project">CFR-33-332-2:Compensatory_mitigation_project</a>
+			|  <a href="#CFR-33-332-2:Condition">CFR-33-332-2:Condition</a>
+			|  <a href="#CFR-33-332-2:Credit">CFR-33-332-2:Credit</a>
+			|  <a href="#CFR-33-332-2:Days">CFR-33-332-2:Days</a>
+			|  <a href="#CFR-33-332-2:Debit">CFR-33-332-2:Debit</a>
+			|  <a href="#CFR-33-332-2:Enhancement">CFR-33-332-2:Enhancement</a>
+			|  <a href="#CFR-33-332-2:Establishment">CFR-33-332-2:Establishment</a>
+			|  <a href="#CFR-33-332-2:Fulfillment_of_advance_credit_sales_of_an_in-lieu_fee_program">CFR-33-332-2:Fulfillment_of_advance_credit_sales_of_an_in-lieu_fee_program</a>
+			|  <a href="#CFR-33-332-2:Functional_capacity">CFR-33-332-2:Functional_capacity</a>
+			|  <a href="#CFR-33-332-2:Functions">CFR-33-332-2:Functions</a>
+			|  <a href="#CFR-33-332-2:Impact">CFR-33-332-2:Impact</a>
+			|  <a href="#CFR-33-332-2:In-kind">CFR-33-332-2:In-kind</a>
+			|  <a href="#CFR-33-332-2:In-lieu_fee_program">CFR-33-332-2:In-lieu_fee_program</a>
+			|  <a href="#CFR-33-332-2:In-lieu_fee_program_instrument">CFR-33-332-2:In-lieu_fee_program_instrument</a>
+			|  <a href="#CFR-33-332-2:Instrument">CFR-33-332-2:Instrument</a>
+			|  <a href="#CFR-33-332-2:Interagency_Review_Team">CFR-33-332-2:Interagency_Review_Team</a>
+			|  <a href="#CFR-33-332-2:Mitigation_bank">CFR-33-332-2:Mitigation_bank</a>
+			|  <a href="#CFR-33-332-2:Mitigation_banking_instrument">CFR-33-332-2:Mitigation_banking_instrument</a>
+			|  <a href="#CFR-33-332-2:Off-site">CFR-33-332-2:Off-site</a>
+			|  <a href="#CFR-33-332-2:On-site">CFR-33-332-2:On-site</a>
+			|  <a href="#CFR-33-332-2:Out-of-kind">CFR-33-332-2:Out-of-kind</a>
+			|  <a href="#CFR-33-332-2:Performance_standards">CFR-33-332-2:Performance_standards</a>
+			|  <a href="#CFR-33-332-2:Permittee-responsible_mitigation">CFR-33-332-2:Permittee-responsible_mitigation</a>
+			|  <a href="#CFR-33-332-2:Preservation">CFR-33-332-2:Preservation</a>
+			|  <a href="#CFR-33-332-2:Re-establishment">CFR-33-332-2:Re-establishment</a>
+			|  <a href="#CFR-33-332-2:Reference_aquatic_resources">CFR-33-332-2:Reference_aquatic_resources</a>
+			|  <a href="#CFR-33-332-2:Rehabilitation">CFR-33-332-2:Rehabilitation</a>
+			|  <a href="#CFR-33-332-2:Release_of_credits">CFR-33-332-2:Release_of_credits</a>
+			|  <a href="#CFR-33-332-2:Restoration">CFR-33-332-2:Restoration</a>
+			|  <a href="#CFR-33-332-2:Riparian_areas">CFR-33-332-2:Riparian_areas</a>
+			|  <a href="#CFR-33-332-2:Service_area">CFR-33-332-2:Service_area</a>
+			|  <a href="#CFR-33-332-2:Services">CFR-33-332-2:Services</a>
+			|  <a href="#CFR-33-332-2:Sponsor">CFR-33-332-2:Sponsor</a>
+			|  <a href="#CFR-33-332-2:Standard_permit">CFR-33-332-2:Standard_permit</a>
+			|  <a href="#CFR-33-332-2:Temporal_loss">CFR-33-332-2:Temporal_loss</a>
+			|  <a href="#CFR-33-332-2:Watershed">CFR-33-332-2:Watershed</a>
+			|  <a href="#CFR-33-332-2:Watershed_approach">CFR-33-332-2:Watershed_approach</a>
+			|  <a href="#CFR-33-332-2:Watershed_plan">CFR-33-332-2:Watershed_plan</a>
+			  
+		</fieldset>
+
+	
+
+	
+
+	</div>
+
+
+
+	
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+	
+
+
+		<hr class="margintop">
+		<h1 class="margintop"><a  name="skosconcepts">&nbsp;</a>SKOS Concepts</h1>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Adaptive_management" href="#CFR-33-332-2:Adaptive_management">CFR-33-332-2:Adaptive_management</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Adaptive_management</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Adaptive_management is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the development of a management strategy that anticipates likely challenges associated with compensatory mitigation projects and provides for the implementation of actions to address those challenges, as well as unforeseen changes to those projects. It requires consideration of the risk, uncertainty, and dynamic nature of compensatory mitigation projects and guides modification of those projects to optimize performance. It includes the selection of appropriate measures that will ensure that the aquatic resource functions are provided and involves analysis of monitoring results to identify potential problems of a compensatory mitigation project and the identification and implementation of measures to rectify those problems.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Adaptive_management a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Adaptive management&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Adaptive management]&#34; ;<br>
+    skos:definition &#34;means the development of a management strategy that anticipates likely challenges associated with compensatory mitigation projects and provides for the implementation of actions to address those challenges, as well as unforeseen changes to those projects. It requires consideration of the risk, uncertainty, and dynamic nature of compensatory mitigation projects and guides modification of those projects to optimize performance. It includes the selection of appropriate measures that will ensure that the aquatic resource functions are provided and involves analysis of monitoring results to identify potential problems of a compensatory mitigation project and the identification and implementation of measures to rectify those problems.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Adaptive management&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Advance_credits" href="#CFR-33-332-2:Advance_credits">CFR-33-332-2:Advance_credits</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Advance_credits</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Advance_credits is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means any credits of an approved in-lieu fee program that are available for sale prior to being fulfilled in accordance with an approved mitigation project plan. Advance credit sales require an approved in-lieu fee program instrument that meets all applicable requirements including a specific allocation of advance credits, by service area where applicable. The instrument must also contain a schedule for fulfillment of advance credit sales.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Advance_credits a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Advance credits&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Advance credits]&#34; ;<br>
+    skos:definition &#34;means any credits of an approved in-lieu fee program that are available for sale prior to being fulfilled in accordance with an approved mitigation project plan. Advance credit sales require an approved in-lieu fee program instrument that meets all applicable requirements including a specific allocation of advance credits, by service area where applicable. The instrument must also contain a schedule for fulfillment of advance credit sales.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Advance credits&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Buffer" href="#CFR-33-332-2:Buffer">CFR-33-332-2:Buffer</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Buffer</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Buffer is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means an upland, wetland, and/or riparian area that protects and/or enhances aquatic resource functions associated with wetlands, rivers, streams, lakes, marine, and estuarine systems from disturbances associated with adjacent land uses.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Buffer a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Buffer&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Buffer]&#34; ;<br>
+    skos:definition &#34;means an upland, wetland, and/or riparian area that protects and/or enhances aquatic resource functions associated with wetlands, rivers, streams, lakes, marine, and estuarine systems from disturbances associated with adjacent land uses.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Buffer&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Compensatory_mitigation" href="#CFR-33-332-2:Compensatory_mitigation">CFR-33-332-2:Compensatory_mitigation</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Compensatory_mitigation</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Compensatory_mitigation is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the restoration (re-establishment or rehabilitation), establishment (creation), enhancement, and/or in certain circumstances preservation of aquatic resources for the purposes of offsetting unavoidable adverse impacts which remain after all appropriate and practicable avoidance and minimization has been achieved.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Compensatory_mitigation a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Compensatory mitigation&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Compensatory mitigation]&#34; ;<br>
+    skos:definition &#34;means the restoration (re-establishment or rehabilitation), establishment (creation), enhancement, and/or in certain circumstances preservation of aquatic resources for the purposes of offsetting unavoidable adverse impacts which remain after all appropriate and practicable avoidance and minimization has been achieved.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Compensatory mitigation&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Compensatory_mitigation_project" href="#CFR-33-332-2:Compensatory_mitigation_project">CFR-33-332-2:Compensatory_mitigation_project</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Compensatory_mitigation_project</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Compensatory_mitigation_project is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means compensatory mitigation implemented by the permittee as a requirement of a DA permit (i.e., permittee-responsible mitigation), or by a mitigation bank or an in-lieu fee program.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Compensatory_mitigation_project a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Compensatory mitigation project&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Compensatory mitigation project]&#34; ;<br>
+    skos:definition &#34;means compensatory mitigation implemented by the permittee as a requirement of a DA permit (i.e., permittee-responsible mitigation), or by a mitigation bank or an in-lieu fee program.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Compensatory mitigation project&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Condition" href="#CFR-33-332-2:Condition">CFR-33-332-2:Condition</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Condition</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Condition is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the relative ability of an aquatic resource to support and maintain a community of organisms having a species composition, diversity, and functional organization comparable to reference aquatic resources in the region.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Condition a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Condition&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Condition]&#34; ;<br>
+    skos:definition &#34;means the relative ability of an aquatic resource to support and maintain a community of organisms having a species composition, diversity, and functional organization comparable to reference aquatic resources in the region.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Condition&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Credit" href="#CFR-33-332-2:Credit">CFR-33-332-2:Credit</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Credit</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Credit is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a unit of measure (e.g., a functional or areal measure or other suitable metric) representing the accrual or attainment of aquatic functions at a compensatory mitigation site. The measure of aquatic functions is based on the resources restored, established, enhanced, or preserved.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Credit a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Credit&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Credit]&#34; ;<br>
+    skos:definition &#34;means a unit of measure (e.g., a functional or areal measure or other suitable metric) representing the accrual or attainment of aquatic functions at a compensatory mitigation site. The measure of aquatic functions is based on the resources restored, established, enhanced, or preserved.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Credit&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Days" href="#CFR-33-332-2:Days">CFR-33-332-2:Days</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Days</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Days is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Calendar days</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Days a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Days&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Days]&#34; ;<br>
+    skos:definition &#34;Calendar days&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Days&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Debit" href="#CFR-33-332-2:Debit">CFR-33-332-2:Debit</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Debit</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Debit is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a unit of measure (e.g., a functional or areal measure or other suitable metric) representing the loss of aquatic functions at an impact or project site. The measure of aquatic functions is based on the resources impacted by the authorized activity.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Debit a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Debit&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Debit]&#34; ;<br>
+    skos:definition &#34;means a unit of measure (e.g., a functional or areal measure or other suitable metric) representing the loss of aquatic functions at an impact or project site. The measure of aquatic functions is based on the resources impacted by the authorized activity.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Debit&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Enhancement" href="#CFR-33-332-2:Enhancement">CFR-33-332-2:Enhancement</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Enhancement</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Enhancement is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the manipulation of the physical, chemical, or biological characteristics of an aquatic resource to heighten, intensify, or improve a specific aquatic resource function(s). Enhancement results in the gain of selected aquatic resource function(s), but may also lead to a decline in other aquatic resource function(s). Enhancement does not result in a gain in aquatic resource area.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Enhancement a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Enhancement&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Enhancement]&#34; ;<br>
+    skos:definition &#34;means the manipulation of the physical, chemical, or biological characteristics of an aquatic resource to heighten, intensify, or improve a specific aquatic resource function(s). Enhancement results in the gain of selected aquatic resource function(s), but may also lead to a decline in other aquatic resource function(s). Enhancement does not result in a gain in aquatic resource area.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Enhancement&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Establishment" href="#CFR-33-332-2:Establishment">CFR-33-332-2:Establishment</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Establishment</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Establishment is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>(creation) means the manipulation of the physical, chemical, or biological characteristics present to develop an aquatic resource that did not previously exist at an upland site. Establishment results in a gain in aquatic resource area and functions.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Establishment a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Establishment&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Establishment]&#34; ;<br>
+    skos:definition &#34;(creation) means the manipulation of the physical, chemical, or biological characteristics present to develop an aquatic resource that did not previously exist at an upland site. Establishment results in a gain in aquatic resource area and functions.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Establishment&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Fulfillment_of_advance_credit_sales_of_an_in-lieu_fee_program" href="#CFR-33-332-2:Fulfillment_of_advance_credit_sales_of_an_in-lieu_fee_program">CFR-33-332-2:Fulfillment_of_advance_credit_sales_of_an_in-lieu_fee_program</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Fulfillment_of_advance_credit_sales_of_an_in-lieu_fee_program</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Fulfillment_of_advance_credit_sales_of_an_in-lieu_fee_program is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means application of credits released in accordance with a credit release schedule in an approved mitigation project plan to satisfy the mitigation requirements represented by the advance credits. Only after any advance credit sales within a service area have been fulfilled through the application of released credits from an in-lieu fee project (in accordance with the credit release schedule for an approved mitigation project plan), may additional released credits from that project be sold or transferred to permittees. When advance credits are fulfilled, an equal number of new advance credits is restored to the program sponsor for sale or transfer to permit applicants.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Fulfillment_of_advance_credit_sales_of_an_in-lieu_fee_program a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Fulfillment of advance credit sales of an in-lieu fee program&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Fulfillment of advance credit sales of an in-lieu fee program]&#34; ;<br>
+    skos:definition &#34;means application of credits released in accordance with a credit release schedule in an approved mitigation project plan to satisfy the mitigation requirements represented by the advance credits. Only after any advance credit sales within a service area have been fulfilled through the application of released credits from an in-lieu fee project (in accordance with the credit release schedule for an approved mitigation project plan), may additional released credits from that project be sold or transferred to permittees. When advance credits are fulfilled, an equal number of new advance credits is restored to the program sponsor for sale or transfer to permit applicants.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Fulfillment of advance credit sales of an in-lieu fee program&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Functional_capacity" href="#CFR-33-332-2:Functional_capacity">CFR-33-332-2:Functional_capacity</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Functional_capacity</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Functional_capacity is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the degree to which an area of aquatic resource performs a specific function.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Functional_capacity a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Functional capacity&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Functional capacity]&#34; ;<br>
+    skos:definition &#34;means the degree to which an area of aquatic resource performs a specific function.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Functional capacity&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Functions" href="#CFR-33-332-2:Functions">CFR-33-332-2:Functions</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Functions</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Functions is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the physical, chemical, and biological processes that occur in ecosystems.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Functions a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Functions&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Functions]&#34; ;<br>
+    skos:definition &#34;means the physical, chemical, and biological processes that occur in ecosystems.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Functions&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Impact" href="#CFR-33-332-2:Impact">CFR-33-332-2:Impact</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Impact</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Impact is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means adverse effect.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Impact a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Impact&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Impact]&#34; ;<br>
+    skos:definition &#34;means adverse effect.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Impact&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:In-kind" href="#CFR-33-332-2:In-kind">CFR-33-332-2:In-kind</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:In-kind</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:In-kind is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a resource of a similar structural and functional type to the impacted resource.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:In-kind a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;In-kind&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[In-kind]&#34; ;<br>
+    skos:definition &#34;means a resource of a similar structural and functional type to the impacted resource.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;In-kind&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:In-lieu_fee_program" href="#CFR-33-332-2:In-lieu_fee_program">CFR-33-332-2:In-lieu_fee_program</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:In-lieu_fee_program</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:In-lieu_fee_program is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a program involving the restoration, establishment, enhancement, and/or preservation of aquatic resources through funds paid to a governmental or non-profit natural resources management entity to satisfy compensatory mitigation requirements for DA permits. Similar to a mitigation bank, an in-lieu fee program sells compensatory mitigation credits to permittees whose obligation to provide compensatory mitigation is then transferred to the in-lieu program sponsor. However, the rules governing the operation and use of in-lieu fee programs are somewhat different from the rules governing operation and use of mitigation banks. The operation and use of an in-lieu fee program are governed by an in-lieu fee program instrument.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:In-lieu_fee_program a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;In-lieu fee program&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[In-lieu fee program]&#34; ;<br>
+    skos:definition &#34;means a program involving the restoration, establishment, enhancement, and/or preservation of aquatic resources through funds paid to a governmental or non-profit natural resources management entity to satisfy compensatory mitigation requirements for DA permits. Similar to a mitigation bank, an in-lieu fee program sells compensatory mitigation credits to permittees whose obligation to provide compensatory mitigation is then transferred to the in-lieu program sponsor. However, the rules governing the operation and use of in-lieu fee programs are somewhat different from the rules governing operation and use of mitigation banks. The operation and use of an in-lieu fee program are governed by an in-lieu fee program instrument.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;In-lieu fee program&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:In-lieu_fee_program_instrument" href="#CFR-33-332-2:In-lieu_fee_program_instrument">CFR-33-332-2:In-lieu_fee_program_instrument</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:In-lieu_fee_program_instrument</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:In-lieu_fee_program_instrument is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the legal document for the establishment, operation, and use of an in-lieu fee program.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:In-lieu_fee_program_instrument a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;In-lieu fee program instrument&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[In-lieu fee program instrument]&#34; ;<br>
+    skos:definition &#34;means the legal document for the establishment, operation, and use of an in-lieu fee program.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;In-lieu fee program instrument&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Instrument" href="#CFR-33-332-2:Instrument">CFR-33-332-2:Instrument</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Instrument</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Instrument is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means mitigation banking instrument or in-lieu fee program instrument.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Instrument a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Instrument&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Instrument]&#34; ;<br>
+    skos:definition &#34;means mitigation banking instrument or in-lieu fee program instrument.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Instrument&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Interagency_Review_Team" href="#CFR-33-332-2:Interagency_Review_Team">CFR-33-332-2:Interagency_Review_Team</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Interagency_Review_Team</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Interagency_Review_Team is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>(IRT) means an interagency group of federal, tribal, state, and/or local regulatory and resource agency representatives that reviews documentation for, and advises the district engineer on, the establishment and management of a mitigation bank or an in-lieu fee program.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Interagency_Review_Team a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Interagency Review Team&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Interagency Review Team]&#34; ;<br>
+    skos:altLabel &#34;IRT&#34; ;<br>
+    skos:definition &#34;(IRT) means an interagency group of federal, tribal, state, and/or local regulatory and resource agency representatives that reviews documentation for, and advises the district engineer on, the establishment and management of a mitigation bank or an in-lieu fee program.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Interagency Review Team&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Mitigation_bank" href="#CFR-33-332-2:Mitigation_bank">CFR-33-332-2:Mitigation_bank</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Mitigation_bank</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Mitigation_bank is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a site, or suite of sites, where resources (e.g., wetlands, streams, riparian areas) are restored, established, enhanced, and/or preserved for the purpose of providing compensatory mitigation for impacts authorized by DA permits. In general, a mitigation bank sells compensatory mitigation credits to permittees whose obligation to provide compensatory mitigation is then transferred to the mitigation bank sponsor. The operation and use of a mitigation bank are governed by a mitigation banking instrument.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Mitigation_bank a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Mitigation bank&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Mitigation bank]&#34; ;<br>
+    skos:definition &#34;means a site, or suite of sites, where resources (e.g., wetlands, streams, riparian areas) are restored, established, enhanced, and/or preserved for the purpose of providing compensatory mitigation for impacts authorized by DA permits. In general, a mitigation bank sells compensatory mitigation credits to permittees whose obligation to provide compensatory mitigation is then transferred to the mitigation bank sponsor. The operation and use of a mitigation bank are governed by a mitigation banking instrument.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Mitigation bank&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Mitigation_banking_instrument" href="#CFR-33-332-2:Mitigation_banking_instrument">CFR-33-332-2:Mitigation_banking_instrument</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Mitigation_banking_instrument</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Mitigation_banking_instrument is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the legal document for the establishment, operation, and use of a mitigation bank.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Mitigation_banking_instrument a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Mitigation banking instrument&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Mitigation banking instrument]&#34; ;<br>
+    skos:definition &#34;means the legal document for the establishment, operation, and use of a mitigation bank.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Mitigation banking instrument&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Off-site" href="#CFR-33-332-2:Off-site">CFR-33-332-2:Off-site</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Off-site</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Off-site is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means an area that is neither located on the same parcel of land as the impact site, nor on a parcel of land contiguous to the parcel containing the impact site.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Off-site a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Off-site&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Off-site]&#34; ;<br>
+    skos:definition &#34;means an area that is neither located on the same parcel of land as the impact site, nor on a parcel of land contiguous to the parcel containing the impact site.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Off-site&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:On-site" href="#CFR-33-332-2:On-site">CFR-33-332-2:On-site</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:On-site</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:On-site is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means an area located on the same parcel of land as the impact site, or on a parcel of land contiguous to the impact site.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:On-site a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;On-site&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[On-site]&#34; ;<br>
+    skos:definition &#34;means an area located on the same parcel of land as the impact site, or on a parcel of land contiguous to the impact site.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;On-site&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Out-of-kind" href="#CFR-33-332-2:Out-of-kind">CFR-33-332-2:Out-of-kind</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Out-of-kind</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Out-of-kind is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a resource of a different structural and functional type from the impacted resource.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Out-of-kind a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Out-of-kind&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Out-of-kind]&#34; ;<br>
+    skos:definition &#34;means a resource of a different structural and functional type from the impacted resource.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Out-of-kind&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Performance_standards" href="#CFR-33-332-2:Performance_standards">CFR-33-332-2:Performance_standards</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Performance_standards</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Performance_standards is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>are observable or measurable physical (including hydrological), chemical and/or biological attributes that are used to determine if a compensatory mitigation project meets its objectives.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Performance_standards a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Performance standards&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Performance standards]&#34; ;<br>
+    skos:definition &#34;are observable or measurable physical (including hydrological), chemical and/or biological attributes that are used to determine if a compensatory mitigation project meets its objectives.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Performance standards&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Permittee-responsible_mitigation" href="#CFR-33-332-2:Permittee-responsible_mitigation">CFR-33-332-2:Permittee-responsible_mitigation</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Permittee-responsible_mitigation</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Permittee-responsible_mitigation is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means an aquatic resource restoration, establishment, enhancement, and/or preservation activity undertaken by the permittee (or an authorized agent or contractor) to provide compensatory mitigation for which the permittee retains full responsibility.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Permittee-responsible_mitigation a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Permittee-responsible mitigation&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Permittee-responsible mitigation]&#34; ;<br>
+    skos:definition &#34;means an aquatic resource restoration, establishment, enhancement, and/or preservation activity undertaken by the permittee (or an authorized agent or contractor) to provide compensatory mitigation for which the permittee retains full responsibility.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Permittee-responsible mitigation&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Preservation" href="#CFR-33-332-2:Preservation">CFR-33-332-2:Preservation</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Preservation</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Preservation is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the removal of a threat to, or preventing the decline of, aquatic resources by an action in or near those aquatic resources. This term includes activities commonly associated with the protection and maintenance of aquatic resources through the implementation of appropriate legal and physical mechanisms. Preservation does not result in a gain of aquatic resource area or functions.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Preservation a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Preservation&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Preservation]&#34; ;<br>
+    skos:definition &#34;means the removal of a threat to, or preventing the decline of, aquatic resources by an action in or near those aquatic resources. This term includes activities commonly associated with the protection and maintenance of aquatic resources through the implementation of appropriate legal and physical mechanisms. Preservation does not result in a gain of aquatic resource area or functions.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Preservation&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Re-establishment" href="#CFR-33-332-2:Re-establishment">CFR-33-332-2:Re-establishment</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Re-establishment</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Re-establishment is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the manipulation of the physical, chemical, or biological characteristics of a site with the goal of returning natural/historic functions to a former aquatic resource. Re-establishment results in rebuilding a former aquatic resource and results in a gain in aquatic resource area and functions.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Re-establishment a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Re-establishment&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Re-establishment]&#34; ;<br>
+    skos:definition &#34;means the manipulation of the physical, chemical, or biological characteristics of a site with the goal of returning natural/historic functions to a former aquatic resource. Re-establishment results in rebuilding a former aquatic resource and results in a gain in aquatic resource area and functions.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Re-establishment&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Reference_aquatic_resources" href="#CFR-33-332-2:Reference_aquatic_resources">CFR-33-332-2:Reference_aquatic_resources</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Reference_aquatic_resources</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Reference_aquatic_resources is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>are a set of aquatic resources that represent the full range of variability exhibited by a regional class of aquatic resources as a result of natural processes and anthropogenic disturbances.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Reference_aquatic_resources a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Reference aquatic resources&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Reference aquatic resources]&#34; ;<br>
+    skos:definition &#34;are a set of aquatic resources that represent the full range of variability exhibited by a regional class of aquatic resources as a result of natural processes and anthropogenic disturbances.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Reference aquatic resources&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Rehabilitation" href="#CFR-33-332-2:Rehabilitation">CFR-33-332-2:Rehabilitation</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Rehabilitation</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Rehabilitation is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the manipulation of the physical, chemical, or biological characteristics of a site with the goal of repairing natural/historic functions to a degraded aquatic resource. Rehabilitation results in a gain in aquatic resource function, but does not result in a gain in aquatic resource area.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Rehabilitation a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Rehabilitation&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Rehabilitation]&#34; ;<br>
+    skos:definition &#34;means the manipulation of the physical, chemical, or biological characteristics of a site with the goal of repairing natural/historic functions to a degraded aquatic resource. Rehabilitation results in a gain in aquatic resource function, but does not result in a gain in aquatic resource area.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Rehabilitation&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Release_of_credits" href="#CFR-33-332-2:Release_of_credits">CFR-33-332-2:Release_of_credits</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Release_of_credits</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Release_of_credits is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a determination by the district engineer, in consultation with the IRT, that credits associated with an approved mitigation plan are available for sale or transfer, or in the case of an in-lieu fee program, for fulfillment of advance credit sales. A proportion of projected credits for a specific mitigation bank or in-lieu fee project may be released upon approval of the mitigation plan, with additional credits released as milestones specified in the credit release schedule are achieved.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Release_of_credits a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Release of credits&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Release of credits]&#34; ;<br>
+    skos:definition &#34;means a determination by the district engineer, in consultation with the IRT, that credits associated with an approved mitigation plan are available for sale or transfer, or in the case of an in-lieu fee program, for fulfillment of advance credit sales. A proportion of projected credits for a specific mitigation bank or in-lieu fee project may be released upon approval of the mitigation plan, with additional credits released as milestones specified in the credit release schedule are achieved.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Release of credits&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Restoration" href="#CFR-33-332-2:Restoration">CFR-33-332-2:Restoration</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Restoration</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Restoration is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the manipulation of the physical, chemical, or biological characteristics of a site with the goal of returning natural/historic functions to a former or degraded aquatic resource. For the purpose of tracking net gains in aquatic resource area, restoration is divided into two categories: re-establishment and rehabilitation.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Restoration a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Restoration&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Restoration]&#34; ;<br>
+    skos:definition &#34;means the manipulation of the physical, chemical, or biological characteristics of a site with the goal of returning natural/historic functions to a former or degraded aquatic resource. For the purpose of tracking net gains in aquatic resource area, restoration is divided into two categories: re-establishment and rehabilitation.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Restoration&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Riparian_areas" href="#CFR-33-332-2:Riparian_areas">CFR-33-332-2:Riparian_areas</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Riparian_areas</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Riparian_areas is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>are lands adjacent to streams, rivers, lakes, and estuarine-marine shorelines. Riparian areas provide a variety of ecological functions and services and help improve or maintain local water quality.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Riparian_areas a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Riparian areas&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Riparian areas]&#34; ;<br>
+    skos:definition &#34;are lands adjacent to streams, rivers, lakes, and estuarine-marine shorelines. Riparian areas provide a variety of ecological functions and services and help improve or maintain local water quality.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Riparian areas&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Service_area" href="#CFR-33-332-2:Service_area">CFR-33-332-2:Service_area</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Service_area</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Service_area is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the geographic area within which impacts can be mitigated at a specific mitigation bank or an in-lieu fee program, as designated in its instrument.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Service_area a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Service area&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Service area]&#34; ;<br>
+    skos:definition &#34;means the geographic area within which impacts can be mitigated at a specific mitigation bank or an in-lieu fee program, as designated in its instrument.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Service area&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Services" href="#CFR-33-332-2:Services">CFR-33-332-2:Services</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Services</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Services is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>mean the benefits that human populations receive from functions that occur in ecosystems.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Services a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Services&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Services]&#34; ;<br>
+    skos:definition &#34;mean the benefits that human populations receive from functions that occur in ecosystems.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Services&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Sponsor" href="#CFR-33-332-2:Sponsor">CFR-33-332-2:Sponsor</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Sponsor</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Sponsor is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means any public or private entity responsible for establishing, and in most circumstances, operating a mitigation bank or in-lieu fee program.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Sponsor a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Sponsor&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Sponsor]&#34; ;<br>
+    skos:definition &#34;means any public or private entity responsible for establishing, and in most circumstances, operating a mitigation bank or in-lieu fee program.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Sponsor&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Standard_permit" href="#CFR-33-332-2:Standard_permit">CFR-33-332-2:Standard_permit</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Standard_permit</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Standard_permit is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a standard, individual permit issued under the authority of section 404 of the Clean Water Act and/or sections 9 or 10 of the Rivers and Harbors Act of 1899.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Standard_permit a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Standard permit&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Standard permit]&#34; ;<br>
+    skos:definition &#34;means a standard, individual permit issued under the authority of section 404 of the Clean Water Act and/or sections 9 or 10 of the Rivers and Harbors Act of 1899.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Standard permit&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Temporal_loss" href="#CFR-33-332-2:Temporal_loss">CFR-33-332-2:Temporal_loss</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Temporal_loss</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Temporal_loss is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>is the time lag between the loss of aquatic resource functions caused by the permitted impacts and the replacement of aquatic resource functions at the compensatory mitigation site. Higher compensation ratios may be required to compensate for temporal loss. When the compensatory mitigation project is initiated prior to, or concurrent with, the permitted impacts, the district engineer may determine that compensation for temporal loss is not necessary, unless the resource has a long development time.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Temporal_loss a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Temporal loss&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Temporal loss]&#34; ;<br>
+    skos:definition &#34;is the time lag between the loss of aquatic resource functions caused by the permitted impacts and the replacement of aquatic resource functions at the compensatory mitigation site. Higher compensation ratios may be required to compensate for temporal loss. When the compensatory mitigation project is initiated prior to, or concurrent with, the permitted impacts, the district engineer may determine that compensation for temporal loss is not necessary, unless the resource has a long development time.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Temporal loss&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Watershed" href="#CFR-33-332-2:Watershed">CFR-33-332-2:Watershed</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Watershed</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Watershed is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a land area that drains to a common waterway, such as a stream, lake, estuary, wetland, or ultimately the ocean.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Watershed a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Watershed&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Watershed]&#34; ;<br>
+    skos:definition &#34;means a land area that drains to a common waterway, such as a stream, lake, estuary, wetland, or ultimately the ocean.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Watershed&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Watershed_approach" href="#CFR-33-332-2:Watershed_approach">CFR-33-332-2:Watershed_approach</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Watershed_approach</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Watershed_approach is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means an analytical process for making compensatory mitigation decisions that support the sustainability or improvement of aquatic resources in a watershed. It involves consideration of watershed needs, and how locations and types of compensatory mitigation projects address those needs. A landscape perspective is used to identify the types and locations of compensatory mitigation projects that will benefit the watershed and offset losses of aquatic resource functions and services caused by activities authorized by DA permits. The watershed approach may involve consideration of landscape scale, historic and potential aquatic resource conditions, past and projected aquatic resource impacts in the watershed, and terrestrial connections between aquatic resources when determining compensatory mitigation requirements for DA permits.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Watershed_approach a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Watershed approach&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Watershed approach]&#34; ;<br>
+    skos:definition &#34;means an analytical process for making compensatory mitigation decisions that support the sustainability or improvement of aquatic resources in a watershed. It involves consideration of watershed needs, and how locations and types of compensatory mitigation projects address those needs. A landscape perspective is used to identify the types and locations of compensatory mitigation projects that will benefit the watershed and offset losses of aquatic resource functions and services caused by activities authorized by DA permits. The watershed approach may involve consideration of landscape scale, historic and potential aquatic resource conditions, past and projected aquatic resource impacts in the watershed, and terrestrial connections between aquatic resources when determining compensatory mitigation requirements for DA permits.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Watershed approach&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-332-2:Watershed_plan" href="#CFR-33-332-2:Watershed_plan">CFR-33-332-2:Watershed_plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-332-2:Watershed_plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-332-2:Watershed_plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a plan developed by federal, tribal, state, and/or local government agencies or appropriate non-governmental organizations, in consultation with relevant stakeholders, for the specific goal of aquatic resource restoration, establishment, enhancement, and preservation. A watershed plan addresses aquatic resource conditions in the watershed, multiple stakeholder interests, and land uses. Watershed plans may also identify priority sites for aquatic resource restoration and protection. Examples of watershed plans include special area management plans, advance identification programs, and wetland management plans.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-332-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-332-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-332-2:Watershed_plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Watershed plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;33 CFR 332.2 Definitions&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-332-2.yaml#term[Watershed plan]&#34; ;<br>
+    skos:definition &#34;means a plan developed by federal, tribal, state, and/or local government agencies or appropriate non-governmental organizations, in consultation with relevant stakeholders, for the specific goal of aquatic resource restoration, establishment, enhancement, and preservation. A watershed plan addresses aquatic resource conditions in the watershed, multiple stakeholder interests, and land uses. Watershed plans may also identify priority sites for aquatic resource restoration and protection. Examples of watershed plans include special area management plans, advance identification programs, and wetland management plans.&#34; ;<br>
+    skos:inScheme CFR-33-332-2: ;<br>
+    skos:prefLabel &#34;Watershed plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	<hr>
+	<small>Ontology documentation automatically generated by <a class="greylink"  href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> v2.1.1 on Tue, 16 Jul 2024 04:25:17</small>
+
+
+</body>
+</html>

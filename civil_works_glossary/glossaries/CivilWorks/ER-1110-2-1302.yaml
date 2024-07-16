@@ -1,0 +1,270 @@
+about:
+    namespace: https://usace-data.com/civil-works/glossary/ER-1110-2-1302#
+    prefix: ER-1110-2-1302
+    template: glossary
+    title: 'Engineering and Design Civil Works Cost Engineering Regulation No. 1110-2-1302'
+    description: The Civil Works Engineering and Design Report defines various acronyms and terms 
+                 commonly used in this regulation n to describe phases, types, and parts 
+                 of cost products. These terms are defined in the glossary section of the regulation.
+    source:
+        sourceID: ER 1110-2-1302
+        authoritativeSource: 'Engineering and Design Civil Works Cost Engineering RegulationNo. 1110-2-1302 '
+        glossaryReferences: false
+        url: https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf
+        linkType: pdf
+terms:
+- label: Architect-Engineer
+  altName: [A-E]
+  definition: Architectural/engineering firms that provide services such as planning,
+    architecture, engineering, estimating, surveying, and other technical services
+    related to planning, designing, and construction.
+    1110-2-1302.pdf
+  anchor: '71'
+- label: Agency Technical Review
+  altName: [ ATR ]
+  definition: A mandatory effort to improve and ensure the quality and credibility
+    of U.S. Army Corps of Engineers decision and implementation documents by employing
+    an independent review from subject matter experts outside the home district.
+    1110-2-1302.pdf
+  anchor: '71'
+- label: Baseline Cost Estimate
+  altName: [ BCE ]
+  definition: The cost estimate based on constant dollars is used for authorization/appropriation
+    purposes. The congressionally authorized amount becomes the baseline cost estimate
+    and may differ from the total project cost.
+    1110-2-1302.pdf
+  anchor: '71'
+- label: Budget Estimate
+  definition: The budget estimate supports funding requests as well as comparisons
+    made to current available funding. Comparisons to the available funding are also
+    referred to as current working estimates (CWE).
+    1110-2-1302.pdf
+  anchor: '71'
+- label: Continuing Authorities Program
+  altName: [ CAP ]
+  definition: Congress has given the U.S. Army Corps of Engineers the authority to
+    plan, design, and construct certain flood risk management and navigation improvements
+    without specific congressional authorization. The basic objective of this program
+    is to allow the Corps to respond more quickly to problems or needs where the apparent
+    project scope and costs are small. The amount of federal participation is limited
+    by congress, and varies for each individual authority.
+    1110-2-1302.pdf
+  anchor: '71'
+- label: Cost Engineering Dredge Estimating Program
+  altName: [ CEDEP ]
+  definition: A U.S. Army Corps of Engineers program that allows the user to estimate
+    dredging projects using mechanical, pipeline, and hopper dredge plant. The center
+    is established to develop new cost database items that represent the current construction
+    practices and technologies, to maintain and biennially update EP 1110-1-8, Construction
+    Equipment Ownership and Operating Expense Schedule, and to semiannually update
+    EM 1110-2-1304, Civil Works Construction Cost Index System (CWCCIS).
+    1110-2-1302.pdf
+  anchor: '71'
+- label: Civil Works Cost Engineering and Agency Technical Review Mandatory Center
+    of Expertise
+  altName: [Cost MCX]
+  definition: Walla Walla District's Cost Engineering Branch has been established
+    as the Mandatory Center of Cost Engineering for Civil Works Review. The Cost MCX
+    serves a critical role in all Civil Works and Support for Others Program cost
+    support activities for the USACE cost community. The Cost MCX provides the cost
+    community estimating services for the construction features on all projects from
+    the planning phases through construction, maintenance, and rehabilitation of facilities.
+    Walla Walla's diversified cost team strives to provide expert technical support
+    for all customers, both Corps and other governmental agencies.
+    1110-2-1302.pdf
+  anchor: '72'
+- label: Constant Dollar Cost
+  altName: [Price Level]
+  definition: Constant dollar analyses are utilized to determine an equivalent cost
+    in the future or in the past by price indexing using CWCCIS data. Constant dollar
+    cost is the estimated cost BROUGHT TO THE EFFECTIVE PRICE LEVEL. Constant dollar
+    cost at current price levels is the cost estimate used in decision documents and
+    chief's reports. The constant dollar cost does not include inflation to midpoint
+    design and construction.
+    1110-2-1302.pdf
+  anchor: '72'
+- label: Cost and Schedule Risk Analysis
+  altName: [ CSRA ]
+  definition: 'A risk analysis is the process of identifying and measuring the cost
+    and time impacts of project uncertainties on the estimated TPC. The risk analysis
+    results in two main products: Identified risks and contingency dollars to fund
+    risk occurrence.'
+  anchor: '72'
+- label: Civil Works Work Breakdown Structure
+  altName: [CW-WBS]
+  definition: A hierarchical structure that defines tasks that can be completed independently
+    of other tasks, facilitating resource allocation, assignment of responsibilities,
+    and measurement and control of the project.
+    1110-2-1302.pdf
+  anchor: '72'
+- label: Civil Works Construction Cost Index System
+  altName: [ CWCCIS ]
+  definition: Historical and forecasted cost indexes for use in escalating U.S. Army
+    Corps of Engineers civil works project costs.
+    1110-2-1302.pdf
+  anchor: '72'
+- label: Current Working Estimate
+  altName: [ CWE ]
+  definition: An update comparison to the appropriated amount or BCE. Commonly referred
+    to as total project cost, the update reflects the total project scope and estimated
+    cost with current effective date pricing plus spent cost from authorization amount.
+    The CWE reflects the associated project costs in quantities, estimates and supporting
+    databases, duration, and risk at any point in time within the funded project's
+    life.
+    1110-2-1302.pdf
+  anchor: '73'
+- label: DrChecksSM
+  definition: "Design Review and Checking System. Enables an actionable collaboration\
+    \ among the reviewers and design team of capital improvement projects."
+  anchor: '73'
+- label: District Quality Control
+  altName: [ DQC ]
+  definition: All work products and reports, evaluations, and assessments shall undergo
+    necessary and appropriate district quality control/quality assurance.
+    1110-2-1302.pdf
+  anchor: '73'
+- label: Economic Cost
+  definition: Monetary equivalent cost used by the economist in determining the benefit-to-cost
+    ratio (BCR). The economic cost includes all of the opportunity costs, both explicit
+    (out of pocket to realize project benefits) and implicit (noncash), of using the
+    resource and is expressed in average annual equivalent terms. It is also referred
+    to as the constant dollar cost. The economic cost should not be confused with
+    the financial cost and should be clearly and separately described in reports.
+    1110-2-1302.pdf
+  anchor: '73'
+- label: Effective Price Level
+  definition: EPL Date of the point in time of the pricing used in the cost estimate.
+    1110-2-1302.pdf
+  anchor: '73'
+- label: Estimated Cost
+  altName: [Price Level]
+  definition: Initially developed cost estimate which includes contingencies. The
+    effective price level date for estimated cost is usually the date of preparation
+    of the cost estimate.
+    1110-2-1302.pdf
+  anchor: '73'
+- label: Financial Cost
+  definition: Monetary outlay, both federal and non-federal, of constructing a project.
+    It includes design and construction outlays, transfer payments such as replacement
+    housing payments as specified in 42 United States Code 4623 and 4624, and the
+    value of lands, easements, rights-of-way, relocations, and dredged or excavated
+    material disposal areas (LERRD) and work in kind provided by non- federal sponsors.
+    This cost is developed by cost engineering, in close coordination with the economist
+    and other members of the PDT, and is typically presented in the TPCS.
+    1110-2-1302.pdf
+  anchor: '74'
+- label: Independent External Peer Review
+  altName: [ IEPR ]
+  definition: Most independent level of review and is applied in cases that meet certain
+    criteria where the risk and magnitude of the proposed project are such that a
+    critical examination by a qualified team outside of USACE is warranted.
+    1110-2-1302.pdf
+  anchor: '74'
+- label: Independent Government Estimate
+  altName: [ IGE ]
+  definition: Formal, approved cost estimate prepared to support a contract award,
+    which is signed by the chief of cost engineering.
+    1110-2-1302.pdf
+  anchor: '74'
+- label: Microcomputer Aided Cost Estimating System
+  altName: [ MCACES ]
+  definition: Mandatory U.S. Army Corps of Engineers estimating software.
+    1110-2-1302.pdf
+  anchor: '74'
+- label: Independent technical review
+  altName: [ ITR ]
+  definition: A review by a qualified person or team not involved in the day-to-day
+    production of a project/product, for the purpose of confirming the proper application
+    of clearly established criteria, regulations, laws, codes, principles and professional
+    practices. Predecessor to agency technical review on civil works .
+    1110-2-1302.pdf
+  anchor: '74'
+- label: MII
+  definition: MCACES second generation
+    1110-2-1302.pdf
+  anchor: '74'
+- label: National Economic DevelopÂ­ ment
+  altName: [ NED ]
+  definition: In the civil works project planning context, NED analysis can be generally
+    defined as economic benefit-cost analysis for plan formulation, evaluation, and
+    selection that is used to evaluate the federal interest in pursuing a prospective
+    project plan.
+    1110-2-1302.pdf
+  anchor: '74'
+- label: Peer Review
+  definition: The process of subjecting research, assumptions, analyses, and conclusions
+    to the scrutiny of others who are experts in the same field. Peer review requires
+    a community of experts in a given (and often narrowly defined) field, who are
+    qualified and able to perform impartial review.
+    1110-2-1302.pdf
+  anchor: '75'
+- label: Project
+  definition: Each project is a temporary endeavor undertaken to create a unique product,
+    service, or result. Internal services are discrete projects when they are unique
+    and non-recurring (ER 5-1-11).
+    1110-2-1302.pdf
+  anchor: '75'
+- label: Project Delivery Team
+  altName: [ PDT ]
+  definition: An interdisciplinary group formed from the resources of the implementing
+    agencies, which develops the products necessary to deliver the project.
+    1110-2-1302.pdf
+  anchor: '75'
+- label: Project Manager
+  altName: [ PM ]
+  definition: Responsible for the planning, execution, and closing of any project,
+    typically relating to construction.
+    1110-2-1302.pdf
+  anchor: '75'
+- label: Project Management Plan
+  altName: [ PMP ]
+  definition: A formal, approved document used to guide both project execution and
+    project control.
+    1110-2-1302.pdf
+  anchor: '75'
+- label: Project First Cost
+  altName: [Price Level]
+  definition: The cost estimate that will serve as the basis for providing the cost
+    of the project for which authorization is sought. The cost estimate to be used
+    in chief's reports and other decision documents is estimated cost represented
+    at the current price level. The current price level is the current FY based on
+    the submittal date.
+    1110-2-1302.pdf
+  anchor: '75'
+- label: Risk management plan
+  altName: [ RMP ]
+  definition: A document that a project manager prepares to foresee risks, estimate
+    impacts, and define responses to issues.
+    1110-2-1302.pdf
+  anchor: '75'
+- label: Simplified acquisition threshold
+  altName: [ SAT ]
+  definition: As defined in FAR 2.101
+    1110-2-1302.pdf
+  anchor: '75'
+- label: Total Cost Management
+  definition: The effective application of professional and technical expertise to
+    plan and control resources, costs, schedules, and risk. A systematic approach
+    to managing cost throughout the life cycle of any project, product, or service.
+    1110-2-1302.pdf
+  anchor: '75'
+- label: Total Project Cost
+  definition: The constant dollar cost FULLY FUNDED WITH ESCALATION to the estimated
+    midpoint of construction. Total project cost (or total cost of construction of
+    GNFs when discussing navigation projects) is the cost estimate used in project
+    partnership agreements and integral determination reports. Total project cost
+    is the cost estimate provided non-federal sponsors for their use in financial
+    planning as it provides information regarding the overall non-federal cost sharing
+    obligation.
+    1110-2-1302.pdf
+  anchor: '76'
+- label: Total Project Cost Summary
+  altName: [ TPCS ]
+  definition: The required cost estimate document to be submitted with all projects
+    sent for either division or HQUSACE approval. Since it addresses all project features,
+    it is considered a PDT product. Both the PM and chief of the cost engineering
+    office must review, approve, sign, and date all TPCS documents. Real estate estimates
+    included in the TPCS must be reviewed, approved, and the TPCS signed by the chief,
+    or their designee, of the real estate office.
+    1110-2-1302.pdf
+  anchor: '76'

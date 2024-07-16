@@ -1,0 +1,757 @@
+@prefix CECW-1165-2-218: <https://usace-data.com/civil-works/glossary/CECW-1165-2-218#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CECW-1165-2-218:Benefits_%28attributed_to_a_levee_system%29 a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Benefits (attributed to a levee system)" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=103" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Benefits (attributed to a levee system)]" ;
+    skos:definition "A qualitative or quantitative description of the positive contributions the levee system has or can provide to the community in the leveed area. This can include: reduction in potential flood damages to residential structures and businesses; potential for the reduction of loss of life; prevention of damages to community services such as schools, hospitals, water treatment plants and other municipal services; prevention of damages to roadways; and providing critical time for the population to get out of harm's way during a flood event." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Benefits (attributed to a levee system)" .
+
+CECW-1165-2-218:Breach a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Breach" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=103" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Breach]" ;
+    skos:definition "The formation of a gap in the levee system through which water may flow uncontrolled onto the adjacent leveed area. A breach in the levee system may occur prior to or subsequent to overtopping." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Breach" .
+
+CECW-1165-2-218:Community a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Community" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=103" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Community]" ;
+    skos:definition "Any state or area or political subdivision thereof, or any Indian tribe or authorized tribal organization, or Alaska Native village, or authorized native organization that has the authority to adopt and enforce regulations for the areas within its jurisdiction." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Community" .
+
+CECW-1165-2-218:Consequences_of_Flooding a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Consequences of Flooding" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=103" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Consequences of Flooding]" ;
+    skos:altLabel "Consequences" ;
+    skos:definition "The effect, result, or outcome of inundation as reflected in the potential loss of life, economic losses, and adverse environmental impacts." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Consequences of Flooding" .
+
+CECW-1165-2-218:Dam a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Dam" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=103" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Dam]" ;
+    skos:altLabel "Dike" ;
+    skos:definition "An artificial barrier, including appurtenant works, constructed for the purpose of storage, control, or diversion of water." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Dam" .
+
+CECW-1165-2-218:Deliverable a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Deliverable" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=103" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Deliverable]" ;
+    skos:definition "A compilation of products used to relay comprehensive results and recommendations for a levee system." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Deliverable" .
+
+CECW-1165-2-218:Economic_Risk a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Economic Risk" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=103" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Economic Risk]" ;
+    skos:definition "The measure of the probability (or likelihood) of direct and indirect economic losses within a leveed area." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Economic Risk" .
+
+CECW-1165-2-218:Emergency_Action_Plan a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Emergency Action Plan" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=103" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Emergency Action Plan]" ;
+    skos:definition "A formal document that identifies potential emergency conditions at a levee and specifies pre- planned actions to be followed to reduce consequences of the emergency." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Emergency Action Plan" .
+
+CECW-1165-2-218:Environmental_risk a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Environmental risk" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=103" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Environmental risk]" ;
+    skos:definition "Risk associated with the likelihood of direct and indirect impacts on environmental, cultural, and historic resources within the leveed area that cannot be measured in monetary terms." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Environmental risk" .
+
+CECW-1165-2-218:Federally_authorized_and_USACE_operated_or_maintained_levees a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Federally authorized and USACE operated or maintained levees" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=104" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Federally authorized and USACE operated or maintained levees]" ;
+    skos:definition "Congressionally authorized levees that USACE has full or partial responsibility to operate or maintain as well as to rehabilitate and modify, as appropriate, under existing authorities." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Federally authorized and USACE operated or maintained levees" .
+
+CECW-1165-2-218:Federally_authorized_and_locally_operated_and_maintained_levees a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Federally authorized and locally operated and maintained levees" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=104" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Federally authorized and locally operated and maintained levees]" ;
+    skos:definition "Congressionally authorized levees that are operated and maintained by a local public sponsor through a project agreement with USACE. This category includes levees constructed by USACE and those constructed by others and federally authorized." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Federally authorized and locally operated and maintained levees" .
+
+CECW-1165-2-218:Flood a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Flood" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=104" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Flood]" ;
+    skos:definition "An overflow of water that submerges land which is normally dry." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Flood" .
+
+CECW-1165-2-218:Flood_risk a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Flood risk" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=104" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Flood risk]" ;
+    skos:altLabel "residual risk" ;
+    skos:definition "The risk of flooding in a leveed area that remains at any point in time after accounting for the flood risk reduction contributed by the levee system." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Flood risk" .
+
+CECW-1165-2-218:Formal_inspection a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Formal inspection" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=104" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Formal inspection]" ;
+    skos:definition "A pre-scheduled comprehensive levee inspection by a team of subject matter experts led by a professional engineer or professional geologist to: document the condition of a levee; inform levee management activities; include specific considerations, such as testing gates; and serve as a primary source of information related to levee condition and performance for risk assessments. Inspections verify any changed conditions and may capture progress of levee management measures for consideration in subsequent inspections or risk assessments." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Formal inspection" .
+
+CECW-1165-2-218:Hazard a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Hazard" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=104" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Hazard]" ;
+    skos:definition "An event that causes the potential for an adverse consequence." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Hazard" .
+
+CECW-1165-2-218:Incident a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Incident" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=104" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Incident]" ;
+    skos:definition "An event occurring at a levee system that could potentially result in a levee safety issue." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Incident" .
+
+CECW-1165-2-218:Inconclusive_finding a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Inconclusive finding" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=104" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Inconclusive finding]" ;
+    skos:definition "A conclusion that there is insufficient information to determine whether or not a specific criterion of 44 Code of Federal Regulations (CFR) 65.10 for the National Flood Insurance Program has been met as a result of a screening risk assessment or levee inspection." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Inconclusive finding" .
+
+CECW-1165-2-218:Interim_risk_reduction_measure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Interim risk reduction measure" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=104" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Interim risk reduction measure]" ;
+    skos:definition "An action to reduce levee risk while more long-term and comprehensive risk reduction and management solutions are being pursued." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Interim risk reduction measure" .
+
+CECW-1165-2-218:Inundation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Inundation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=104" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Inundation]" ;
+    skos:definition "In the context of this document, this refers to flooding in a leveed area." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Inundation" .
+
+CECW-1165-2-218:Inundation_scenario a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Inundation scenario" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=105" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Inundation scenario]" ;
+    skos:definition """(for a levee system)
+A scenario which could result in flooding in a leveed area. The four inundation scenarios for a levee system are: breach prior to overtopping; overtopping with breach; component malfunction/mis-operation; and overtopping without breach.""" ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Inundation scenario" .
+
+CECW-1165-2-218:Levee a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=105" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee]" ;
+    skos:definition "A man-made barrier along a watercourse with the principle function of excluding flood waters from a limited range of flood events from a portion of the floodplain (referred to as \"leveed area\")." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee" .
+
+CECW-1165-2-218:Levee_Inspection_System a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee Inspection System" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=105" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee Inspection System]" ;
+    skos:definition "The electronic tool used by USACE to document levee inspections." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee Inspection System" .
+
+CECW-1165-2-218:Levee_Safety_Officer a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee Safety Officer" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=105" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee Safety Officer]" ;
+    skos:definition "Person selected by appointment to serve as the lead for levee safety issues, recommendations, and decisions at a particular level in USACE." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee Safety Officer" .
+
+CECW-1165-2-218:Levee_Safety_Program_Manager a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee Safety Program Manager" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=106" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee Safety Program Manager]" ;
+    skos:definition "Person selected by appointment to lead the coordination and implementation of the USACE Levee Safety Program at a particular level in USACE." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee Safety Program Manager" .
+
+CECW-1165-2-218:Levee_Screening_Tool a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee Screening Tool" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=106" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee Screening Tool]" ;
+    skos:definition "The electronic tool used by USACE to complete all screening risk assessments." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee Screening Tool" .
+
+CECW-1165-2-218:Levee_Senior_Oversight_Group a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee Senior Oversight Group" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=106" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee Senior Oversight Group]" ;
+    skos:definition "Consists of USACE staff representing key disciplines in levee safety and provides recommendations to the USACE headquarters Levee Safety Officer and deputy Levee Safety Officer on levee risk characterizations; prioritization of levee federal investments; direction for levee projects with high potential life safety risk; and other levee safety matters." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee Senior Oversight Group" .
+
+CECW-1165-2-218:Levee_accreditation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee accreditation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=105" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee accreditation]" ;
+    skos:definition "The process in which a levee system is evaluated to determine how it will be mapped by the Federal Emergency Management Agency for the purposes of the National Flood Insurance Program." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee accreditation" .
+
+CECW-1165-2-218:Levee_feature a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee feature" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=105" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee feature]" ;
+    skos:definition "A structure that is critical to the functioning of a levee system. Examples include embankments, floodwalls, pipes and associated drainage features, closures, pumping stations, floodways, and designed channels." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee feature" .
+
+CECW-1165-2-218:Levee_risk a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee risk" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=105" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee risk]" ;
+    skos:altLabel "incremental risk" ;
+    skos:definition "The risk of inundation posed by a levee system for the following three inundation scenarios: prior to overtopping; overtopping with breach; and component malfunction/mis-operation." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee risk" .
+
+CECW-1165-2-218:Levee_risk_management_summary a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee risk management summary" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=105" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee risk management summary]" ;
+    skos:definition "An internal tool that details prioritized recommendations for operation, maintenance, repair, replacement, and rehabilitation for each levee system based on best available information related to risk assessments, levee inspections, and past performance." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee risk management summary" .
+
+CECW-1165-2-218:Levee_safety a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee safety" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=105" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee safety]" ;
+    skos:definition "The art, science, and practice of managing flood risks posed by levee systems." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee safety" .
+
+CECW-1165-2-218:Levee_segment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee segment" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=106" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee segment]" ;
+    skos:definition "A levee segment is a discrete portion of a levee system that is operated and maintained by a single entity. A levee segment may be composed of one or more levee features." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee segment" .
+
+CECW-1165-2-218:Levee_sponsor a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee sponsor" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=106" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee sponsor]" ;
+    skos:definition "A public entity that has responsibility for operation and maintenance for all or a certain portion of a levee system. Within this document, levee sponsor refers to entities who operate and maintain federally authorized levees through a project agreement with USACE." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee sponsor" .
+
+CECW-1165-2-218:Levee_system a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee system" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=106" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee system]" ;
+    skos:altLabel "Levee" ;
+    skos:definition "Composed of one or more levee segments and other features that are collectively integral to excluding flood water from the leveed area. The term \"levee segment\" is used to identify a discrete portion of a levee system that is operated and maintained by a single levee sponsor." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee system" .
+
+CECW-1165-2-218:Levee_system_summary a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Levee system summary" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=106" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Levee system summary]" ;
+    skos:definition "Public summary of best available levee information that tells the story of the levee including why it is there, the benefits it provides, the condition and typical performance, areas of concern, people and property who may be affected, and actions to address areas of concern." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Levee system summary" .
+
+CECW-1165-2-218:Leveed_area a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Leveed area" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=106" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Leveed area]" ;
+    skos:definition "The lands from which flood water is excluded by the levee system." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Leveed area" .
+
+CECW-1165-2-218:Life_safety_risk a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Life safety risk" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=106" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Life safety risk]" ;
+    skos:definition "A measure of the probability and severity of loss of life resulting from inundation of a leveed area." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Life safety risk" .
+
+CECW-1165-2-218:Likelihood a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Likelihood" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=106" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Likelihood]" ;
+    skos:altLabel "Probability" ;
+    skos:definition "A measure of the chance, or degree of belief that a particular outcome will occur. A probability provides a quantitative description of the likelihood of occurrence of a particular event. Probability is expressed as a value between 0 (impossible) and 1 (certain). Likelihood can be expressed qualitatively as well (e.g., high, medium, or low)." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Likelihood" .
+
+CECW-1165-2-218:Mitigation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Mitigation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=106" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Mitigation]" ;
+    skos:definition "Actions taken that reduce potential loss of life and property by lessening the impacts of flood." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Mitigation" .
+
+CECW-1165-2-218:National_Flood_Insurance_Program a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "National Flood Insurance Program" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=107" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[National Flood Insurance Program]" ;
+    skos:definition "Administered by the Federal Emergency Management Agency, the National Flood Insurance Program is a voluntary program authorized by Congress to mitigate flood losses through community-enforced building and zoning ordinances and to provide property owners with access to federally-backed flood insurance. As part of the National Flood Insurance Program, the Federal Emergency Management Agency issues Flood Insurance Rate Maps that depict flood hazards and are used by local communities for the purposes of determining flood insurance and floodplain management requirements. The National Flood Insurance Program requires federally regulated lending institutions to ensure that mortgage loans secured for buildings in high flood hazard areas, referred to as Special Flood Hazard Areas, are covered by flood insurance." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "National Flood Insurance Program" .
+
+CECW-1165-2-218:National_Levee_Database a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "National Levee Database" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=107" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[National Levee Database]" ;
+    skos:definition "A congressionally authorized database that contains information on levees in the United States." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "National Levee Database" .
+
+CECW-1165-2-218:National_cadre a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "National cadre" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=107" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[National cadre]" ;
+    skos:definition "An independent multi-disciplinary team trained and approved by the Risk Management Center to provide independent perspective and reviews of risk assessments." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "National cadre" .
+
+CECW-1165-2-218:Negative_finding a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Negative finding" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=107" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Negative finding]" ;
+    skos:definition "A conclusion that there is sufficient information to determine that a specific criterion of 44 Code of Federal Regulations (CFR) 65.10 for the National Flood Insurance Program has not been met as a result of a screening risk assessment or levee inspection." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Negative finding" .
+
+CECW-1165-2-218:No_verdict a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "No verdict" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=107" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[No verdict]" ;
+    skos:definition "An inspection rating and Levee Safety Action Classification assignment given when no access has been obtained to perform an inspection." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "No verdict" .
+
+CECW-1165-2-218:Non-breach_risk a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Non-breach risk" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=107" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Non-breach risk]" ;
+    skos:definition "The risk associated with the scenario when the still-water level and/or associated waves, wind runup, or surge exceeds the top of the levee system, but does not result in a breach of the levee system." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Non-breach risk" .
+
+CECW-1165-2-218:Non-federally_authorized_and_locally_operated_and_maintained_levee a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Non-federally authorized and locally operated and maintained levee" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=107" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Non-federally authorized and locally operated and maintained levee]" ;
+    skos:definition "Levee that is locally constructed, operated, and maintained." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Non-federally authorized and locally operated and maintained levee" .
+
+CECW-1165-2-218:Non-project_segment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Non-project segment" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=107" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Non-project segment]" ;
+    skos:definition "A segment of man-made high ground not part of the federally authorized project which a levee system/segment ties into and whose existence and performance is necessary for excluding flood waters from the leveed area. Some examples of these are roadways, railroads, canals, and other levee embankments. Non-project segments are inventoried, inspected, and assessed if they make up part of the levee alignment and are necessary for the proper functioning of the levee system." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Non-project segment" .
+
+CECW-1165-2-218:Overtopping a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Overtopping" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=108" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Overtopping]" ;
+    skos:definition "A condition that occurs when the elevation of the still-water level and/or associated waves, wind runup, or surge exceeds the top of the levee system. This may or may not result in a breach of the levee system." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Overtopping" .
+
+CECW-1165-2-218:Performance a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Performance" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=108" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Performance]" ;
+    skos:definition "How the levee system has functioned or is anticipated to function during specified hazards." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Performance" .
+
+CECW-1165-2-218:Positive_finding a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Positive finding" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=108" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Positive finding]" ;
+    skos:definition "A conclusion that there is sufficient information to determine that a specific criterion of 44 Code of Federal Regulations (CFR) 65.10 for the National Flood Insurance Program has been met as a result of a screening risk assessment or levee inspection." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Positive finding" .
+
+CECW-1165-2-218:Potential_failure_mode a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Potential failure mode" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=108" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Potential failure mode]" ;
+    skos:definition "A structured way to describe a chain of events that leads to a levee breach." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Potential failure mode" .
+
+CECW-1165-2-218:Preparedness a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Preparedness" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=108" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Preparedness]" ;
+    skos:definition "Actions taken before a possible future flood event, including planning, training, communication, and anticipation of how the levee will perform based on operation and maintenance, inspections, and assessments." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Preparedness" .
+
+CECW-1165-2-218:Program_management_plan a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Program management plan" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=108" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Program management plan]" ;
+    skos:definition "A formal, approved, living document used to define program requirements and expectations, accountability and performance measures, and guidance program execution. These documents can include a ten-year outlook of program activities as well as a strategy for sharing levee information that corresponds with USACE Levee Safety Program activities." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Program management plan" .
+
+CECW-1165-2-218:Project_agreement a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project agreement" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=108" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Project agreement]" ;
+    skos:altLabel "project cooperation",
+        "project partnership agreement" ;
+    skos:definition "Legally binding agreement between the government and a non-federal sponsor (state, municipal government, flood control district, port authority, etc.) for construction or operation and maintenance of a water resources project. It describes the project and the responsibilities of the government and the non-federal sponsor." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Project agreement" .
+
+CECW-1165-2-218:Quantitative_risk_assessment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Quantitative risk assessment" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=108" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Quantitative risk assessment]" ;
+    skos:definition "Uses currently available information but may also involve gathering new information to inform its findings, considers custom failure modes specific to the levee, and results in calculated numeric estimates of risk." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Quantitative risk assessment" .
+
+CECW-1165-2-218:Recovery a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Recovery" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=108" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Recovery]" ;
+    skos:definition "Actions taken after a flood, including those directed toward a return to normalcy." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Recovery" .
+
+CECW-1165-2-218:Resilience a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Resilience" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=108" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Resilience]" ;
+    skos:definition "The ability to avoid, minimize, withstand, and recover from the effects of adversity, whether natural or man-made, under all circumstances of use." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Resilience" .
+
+CECW-1165-2-218:Response a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Response" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=108" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Response]" ;
+    skos:definition "Actions taken during a flood, including those to save lives and prevent damage." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Response" .
+
+CECW-1165-2-218:Risk a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Risk" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=109" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Risk]" ;
+    skos:definition "The measure of the probability (or likelihood) and consequence of uncertain future events." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Risk" .
+
+CECW-1165-2-218:Risk_assessment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Risk assessment" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=109" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Risk assessment]" ;
+    skos:definition "A systematic, evidence-based approach for quantifying and describing the nature, likelihood, and magnitude of risk. Risk assessments are a tool to determine the most likely ways a levee might breach or overtop, how likely those scenarios are to occur, and the potential impacts within a community." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Risk assessment" .
+
+CECW-1165-2-218:Risk_cadre a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Risk cadre" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=109" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Risk cadre]" ;
+    skos:definition "A multidisciplinary team of experts trained in conducting risk assessments." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Risk cadre" .
+
+CECW-1165-2-218:Risk_characterization a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Risk characterization" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=109" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Risk characterization]" ;
+    skos:definition "Description of the levee system in the context of risk by considering the key drivers of likelihood of performance, potential consequences, and sources of uncertainty." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Risk characterization" .
+
+CECW-1165-2-218:Risk_communication a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Risk communication" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=109" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Risk communication]" ;
+    skos:definition "An iterative, open exchange of data, advice, and opinions among individuals, groups, and institutions about levees, the benefits they provide, known risks or areas of concern, and options available to manage that risk." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Risk communication" .
+
+CECW-1165-2-218:Risk_estimate a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Risk estimate" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=109" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Risk estimate]" ;
+    skos:definition "The combination of the probability of inundation of the leveed area and the associated consequences typically portrayed in a risk matrix." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Risk estimate" .
+
+CECW-1165-2-218:Risk_management a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Risk management" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=109" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Risk management]" ;
+    skos:definition "The process of problem finding and initiating action to identify, evaluate, select, implement, monitor, and modify associated risks." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Risk management" .
+
+CECW-1165-2-218:Screening_risk_assessment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Screening risk assessment" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=109" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Screening risk assessment]" ;
+    skos:altLabel "levee screening" ;
+    skos:definition "A simplified risk assessment that relies on existing data, historical performance, engineering judgment, and assumes pre-defined performance modes to quickly characterize levee risk." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Screening risk assessment" .
+
+CECW-1165-2-218:Semi-quantitative_risk_assessment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Semi-quantitative risk assessment" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=109" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Semi-quantitative risk assessment]" ;
+    skos:definition "A risk assessment that uses a combination of limited numerical estimates with qualitative descriptions that result in risk estimates based on orders of magnitude." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Semi-quantitative risk assessment" .
+
+CECW-1165-2-218:Sensitive_information a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Sensitive information" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=109" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Sensitive information]" ;
+    skos:definition "Information that could pose a security risk or aid those intending to do harm to a levee system." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Sensitive information" .
+
+CECW-1165-2-218:Site_visit a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Site visit" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=110" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Site visit]" ;
+    skos:definition "A collaborative activity to observe or verify any changed conditions, provide technical advice and respond to sponsor's questions, or capture progress of levee management measures for consideration in the next inspection or risk assessment." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Site visit" .
+
+CECW-1165-2-218:Special_inspection a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Special inspection" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=110" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Special inspection]" ;
+    skos:definition "Unscheduled inspections conducted as needed due to changed conditions or to document performance." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Special inspection" .
+
+CECW-1165-2-218:Stakeholder%28s%29 a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Stakeholder(s)" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=110" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Stakeholder(s)]" ;
+    skos:definition "An individual or group of individuals who are responsible, interested, and/or affected by a levee system. An individual stakeholder may belong to more than one group of stakeholders." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Stakeholder(s)" .
+
+CECW-1165-2-218:Uncertainty a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Uncertainty" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf#page=110" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml#term[Uncertainty]" ;
+    skos:definition "The deficiency or unsureness in information related to the understanding or knowledge of the risk or components of risk." ;
+    skos:inScheme CECW-1165-2-218: ;
+    skos:prefLabel "Uncertainty" .
+
+CECW-1165-2-218: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Engineering and Design USACE LEVEE SAFETY PROGRAM CECW-CW No. 1165-2-218" ;
+    dcterms:created "2024-07-16T04:22:52.266952+00:00"^^xsd:dateTime ;
+    dcterms:description "The USACE Levee Safety Program (Circular CECW-CW No. 1165-2-218) defines various acronyms and terms commonly used in this circular to describe aspects of levee saftey, including implementation of policies, activities, roles, and responsibilities for federally authorized levees. These terms are defined in the glossary section of the circular." ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Engineering and Design USACE LEVEE SAFETY PROGRAM CECW-CW No. 1165-2-218" ;
+    pav:ImportedFrom "glossaries/CivilWorks/CECW-1165-2-218.yaml" ;
+    pav:createdOn "2024-07-16T04:22:52.266952+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "Engineering and Design USACE LEVEE SAFETY PROGRAM CECW-CW No. 1165-2-218" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/CECW-1165-2-218#" ;
+    skos:hasTopConcept CECW-1165-2-218:Benefits_%28attributed_to_a_levee_system%29,
+        CECW-1165-2-218:Breach,
+        CECW-1165-2-218:Community,
+        CECW-1165-2-218:Consequences_of_Flooding,
+        CECW-1165-2-218:Dam,
+        CECW-1165-2-218:Deliverable,
+        CECW-1165-2-218:Economic_Risk,
+        CECW-1165-2-218:Emergency_Action_Plan,
+        CECW-1165-2-218:Environmental_risk,
+        CECW-1165-2-218:Federally_authorized_and_USACE_operated_or_maintained_levees,
+        CECW-1165-2-218:Federally_authorized_and_locally_operated_and_maintained_levees,
+        CECW-1165-2-218:Flood,
+        CECW-1165-2-218:Flood_risk,
+        CECW-1165-2-218:Formal_inspection,
+        CECW-1165-2-218:Hazard,
+        CECW-1165-2-218:Incident,
+        CECW-1165-2-218:Inconclusive_finding,
+        CECW-1165-2-218:Interim_risk_reduction_measure,
+        CECW-1165-2-218:Inundation,
+        CECW-1165-2-218:Inundation_scenario,
+        CECW-1165-2-218:Levee,
+        CECW-1165-2-218:Levee_Inspection_System,
+        CECW-1165-2-218:Levee_Safety_Officer,
+        CECW-1165-2-218:Levee_Safety_Program_Manager,
+        CECW-1165-2-218:Levee_Screening_Tool,
+        CECW-1165-2-218:Levee_Senior_Oversight_Group,
+        CECW-1165-2-218:Levee_accreditation,
+        CECW-1165-2-218:Levee_feature,
+        CECW-1165-2-218:Levee_risk,
+        CECW-1165-2-218:Levee_risk_management_summary,
+        CECW-1165-2-218:Levee_safety,
+        CECW-1165-2-218:Levee_segment,
+        CECW-1165-2-218:Levee_sponsor,
+        CECW-1165-2-218:Levee_system,
+        CECW-1165-2-218:Levee_system_summary,
+        CECW-1165-2-218:Leveed_area,
+        CECW-1165-2-218:Life_safety_risk,
+        CECW-1165-2-218:Likelihood,
+        CECW-1165-2-218:Mitigation,
+        CECW-1165-2-218:National_Flood_Insurance_Program,
+        CECW-1165-2-218:National_Levee_Database,
+        CECW-1165-2-218:National_cadre,
+        CECW-1165-2-218:Negative_finding,
+        CECW-1165-2-218:No_verdict,
+        CECW-1165-2-218:Non-breach_risk,
+        CECW-1165-2-218:Non-federally_authorized_and_locally_operated_and_maintained_levee,
+        CECW-1165-2-218:Non-project_segment,
+        CECW-1165-2-218:Overtopping,
+        CECW-1165-2-218:Performance,
+        CECW-1165-2-218:Positive_finding,
+        CECW-1165-2-218:Potential_failure_mode,
+        CECW-1165-2-218:Preparedness,
+        CECW-1165-2-218:Program_management_plan,
+        CECW-1165-2-218:Project_agreement,
+        CECW-1165-2-218:Quantitative_risk_assessment,
+        CECW-1165-2-218:Recovery,
+        CECW-1165-2-218:Resilience,
+        CECW-1165-2-218:Response,
+        CECW-1165-2-218:Risk,
+        CECW-1165-2-218:Risk_assessment,
+        CECW-1165-2-218:Risk_cadre,
+        CECW-1165-2-218:Risk_characterization,
+        CECW-1165-2-218:Risk_communication,
+        CECW-1165-2-218:Risk_estimate,
+        CECW-1165-2-218:Risk_management,
+        CECW-1165-2-218:Screening_risk_assessment,
+        CECW-1165-2-218:Semi-quantitative_risk_assessment,
+        CECW-1165-2-218:Sensitive_information,
+        CECW-1165-2-218:Site_visit,
+        CECW-1165-2-218:Special_inspection,
+        CECW-1165-2-218:Stakeholder%28s%29,
+        CECW-1165-2-218:Uncertainty .
+

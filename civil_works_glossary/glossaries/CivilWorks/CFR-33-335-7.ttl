@@ -1,0 +1,97 @@
+@prefix CFR-33-335-7: <https://usace-data.com/civil-works/glossary/CFR-33-335-7#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CFR-33-335-7:Beach_nourishment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Beach nourishment" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-335/section-335.7" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-335-7.yaml#term[Beach nourishment]" ;
+    skos:definition "means the discharge of dredged or fill material for the purpose of replenishing an eroded beach or placing sediments in the littoral transport process." ;
+    skos:inScheme CFR-33-335-7: ;
+    skos:prefLabel "Beach nourishment" .
+
+CFR-33-335-7:Emergency a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Emergency" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-335/section-335.7" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-335-7.yaml#term[Emergency]" ;
+    skos:definition "means a situation which would result in an unacceptable hazard to life or navigation, a significant loss of property, or an immediate and unforeseen significant economic hardship if corrective action is not taken within a time period less than the normal time needed under standard procedures." ;
+    skos:inScheme CFR-33-335-7: ;
+    skos:prefLabel "Emergency" .
+
+CFR-33-335-7:Federal_standard a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Federal standard" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-335/section-335.7" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-335-7.yaml#term[Federal standard]" ;
+    skos:definition "means the dredged material disposal alternative or alternatives identified by the Corps which represent the least costly alternatives consistent with sound engineering practices and meeting the environmental standards established by the 404(b)(1) evaluation process or ocean dumping criteria." ;
+    skos:inScheme CFR-33-335-7: ;
+    skos:prefLabel "Federal standard" .
+
+CFR-33-335-7:Navigable_waters_of_the_U a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Navigable waters of the U" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-335/section-335.7" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-335-7.yaml#term[Navigable waters of the U]" ;
+    skos:definition "S. means those waters of the U.S. that are subject to the ebb and flow of the tide shoreward to the mean high water mark, and/or are presently used, have been used in the past, or may be susceptible to use with or without reasonable improvement to transport interstate or foreign commerce. A more complete definition is provided in 33 CFR part 329. For the purpose of this regulation, the term also includes the confines of Federal navigation approach channels extending into ocean waters beyond the territorial sea which are used for interstate or foreign commerce." ;
+    skos:inScheme CFR-33-335-7: ;
+    skos:prefLabel "Navigable waters of the U" .
+
+CFR-33-335-7:Practicable a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Practicable" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-335/section-335.7" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-335-7.yaml#term[Practicable]" ;
+    skos:definition "means available and capable of being done after taking into consideration cost, existing technology, and logistics in light of overall project purposes." ;
+    skos:inScheme CFR-33-335-7: ;
+    skos:prefLabel "Practicable" .
+
+CFR-33-335-7:Statement_of_Findings a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Statement of Findings" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-335/section-335.7" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-335-7.yaml#term[Statement of Findings]" ;
+    skos:definition "(SOF) means a comprehensive summary compliance document signed by the district engineer after completion of appropriate environmental documentation and public involvement." ;
+    skos:inScheme CFR-33-335-7: ;
+    skos:prefLabel "Statement of Findings" .
+
+CFR-33-335-7:Territorial_sea a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Territorial sea" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-335/section-335.7" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-335-7.yaml#term[Territorial sea]" ;
+    skos:definition "means the belt of the seas measured from the line of ordinary low water along that portion of the coast which is in direct contact with the open sea and the line marking the seaward limit of inland waters, extending seaward a distance of three miles as described in the convention on the territorial sea and contiguous zone, 15 U.S.T. 1606." ;
+    skos:inScheme CFR-33-335-7: ;
+    skos:prefLabel "Territorial sea" .
+
+CFR-33-335-7: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Code of Federal Regulations - Title 33, Chapter-II, Part 335, Section-335.7" ;
+    dcterms:created "2024-07-16T04:25:30.365276+00:00"^^xsd:dateTime ;
+    dcterms:description "None" ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Code of Federal Regulations - Title 33, Chapter-II, Part 335, Section-335.7" ;
+    pav:ImportedFrom "glossaries/CivilWorks/CFR-33-335-7.yaml" ;
+    pav:createdOn "2024-07-16T04:25:30.365276+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "33 CFR 335.7 Definitions" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/CFR-33-335-7#" ;
+    skos:hasTopConcept CFR-33-335-7:Beach_nourishment,
+        CFR-33-335-7:Emergency,
+        CFR-33-335-7:Federal_standard,
+        CFR-33-335-7:Navigable_waters_of_the_U,
+        CFR-33-335-7:Practicable,
+        CFR-33-335-7:Statement_of_Findings,
+        CFR-33-335-7:Territorial_sea .
+

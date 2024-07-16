@@ -1,0 +1,3111 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Ontospy > https://usace-data.com/civil-works/glossary/ER-1110-2-1302#</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <style type="text/css" media="screen">
+
+
+  body {
+	  margin-left: 6em;
+	  margin-right: 12em;
+	  text-align: justify;
+    padding: 2em 1em 2em 70px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  :link { color: #00C; background: transparent }
+  :visited { color: #00C; background: transparent }
+  a:active { color: #C00; background: transparent }
+
+  a:link img, a:visited img { border-style: none } /* no border on img links */
+
+  a:hover {color: white; background: #00C; }
+  a.backlink:hover {color: white; background: grey; }
+  a.greylink:hover {color: white; background: grey; }
+
+  .margintop {
+  	 margin-top: 40px;
+  }
+
+
+  dt, dd { margin-top: 10px; margin-bottom: 0 } /* opera 3.50 */
+  dt { font-weight: bold }
+
+
+  h1, h2, h3, h4, h5, h6 { text-align: left }
+  /* background should be transparent, but WebTV has a bug */
+  h1, h2, h3, h4, h5 { color: #005A9C; background: white }
+  h1.title { font: 200% sans-serif }
+  h1 { font: 170% sans-serif }
+  h2 { font: 140% sans-serif }
+  h3 { font: 120% sans-serif }
+  h4 { font: bold 100% sans-serif }
+  h5 { font: italic 100% sans-serif }
+  h6 { font: small-caps 100% sans-serif }
+
+  .hide { display: none }
+
+
+  pre { margin-left: 2em }
+
+  pre, code { font-family: monospace } /* navigator 4 requires this */
+
+
+  .implementation {
+  	background: aliceblue;
+	padding: 10px;
+	margin-top: 5px;
+  }
+
+  fieldset {
+	  margin-top: 20px;
+	  padding: 13px;
+      text-align: left;
+  }
+
+  legend {
+	  text-transform: uppercase;
+  }
+
+  .entity-div {
+	  margin: 55px 10px 30px 10px;
+  }
+
+  .entity-section {
+	  margin-bottom: 0px;
+  }
+
+
+  a.backlink {
+	  font-size: 80%;
+	  color: grey;
+  }
+
+  a.greylink {
+	  color: grey;
+  }
+
+
+   .implementation_title {
+
+       font-weight: bold;
+       font-size: 100%;
+   }
+
+.section-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+        .tree-container {
+            width: 3000em;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+		.tree {margin: 10px 0px 30px -20px; padding: 0; display: inline-block;}
+
+		.tree ul {
+			padding-top: 20px; position: relative;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		.tree li {
+			float: left; text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*We will use ::before and ::after to draw the connectors*/
+
+		.tree li::before, .tree li::after{
+			content: '';
+			position: absolute; top: 0; right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%; height: 20px;
+		}
+		.tree li::after{
+			right: auto; left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		/*We need to remove left-right connectors from elements without
+		any siblings*/
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		/*Remove space from the top of single children*/
+		.tree li:only-child{ padding-top: 0;}
+
+		/*Remove left connector from first child and
+		right connector from last child*/
+		.tree li:first-child::before, .tree li:last-child::after{
+			border: 0 none;
+		}
+		/*Adding back the vertical connector to the last nodes*/
+		.tree li:last-child::before{
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+			-webkit-border-radius: 0 5px 0 0;
+			-moz-border-radius: 0 5px 0 0;
+		}
+		.tree li:first-child::after{
+			border-radius: 5px 0 0 0;
+			-webkit-border-radius: 5px 0 0 0;
+			-moz-border-radius: 5px 0 0 0;
+		}
+
+		/*Time to add downward connectors from parents*/
+		.tree ul ul::before{
+			content: '';
+			position: absolute; top: 0; left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0; height: 20px;
+		}
+
+		.tree li a{
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #666;
+			font-family: arial, verdana, tahoma;
+			font-size: 11px;
+			display: inline-block;
+
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*Time for some hover effects*/
+		/*We will apply the hover effect the the lineage of the element also*/
+		.tree li a:hover, .tree li a:hover+ul li a {
+			background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+		}
+		/*Connector styles on hover*/
+		.tree li a:hover+ul li::after,
+		.tree li a:hover+ul li::before,
+		.tree li a:hover+ul::before,
+		.tree li a:hover+ul ul::before{
+			border-color:  #94a0b4;
+		}
+
+		/*Thats all. I hope you enjoyed it.
+		Thanks :)*/
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+	
+	
+		
+			<h1 class="title"><a href="" target="_blank">https://usace-data.com/civil-works/glossary/ER-1110-2-1302#</a></h1>
+			<h3><p>The Civil Works Engineering and Design Report defines various acronyms and terms commonly used in this regulation n to describe phases, types, and parts of cost products. These terms are defined in the glossary section of the regulation.</p></h3>
+		
+
+	
+		
+		
+
+
+	<p><small>Ontology documentation automatically generated by <a class="greylink" href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> on Tue, 16 Jul 2024 04:26:57</small></p>
+
+
+
+	
+
+
+	<hr class="margintop">
+
+	<h1><a name="toc">&nbsp;</a>Table of Content</h1>
+
+	<ul>
+		<li><a href="#ontologies">Ontologies</a></li>
+		<li><a href="#a-z">A-Z of Terms</a></li>
+		
+		
+		
+		
+		<li><a href="#skosconcepts">SKOS Concepts</a></li>
+		
+	</ul>
+
+
+
+	
+
+	
+
+	<hr class="margintop">
+
+	<h1><a name="ontologies"></a>Ontologies</h1>
+
+		
+
+
+			<fieldset> <legend><h3><a href="https://usace-data.com/civil-works/glossary/ER-1110-2-1302#" target="_blank">https://usace-data.com/civil-works/glossary/ER-1110-2-1302#</a></h3></legend>
+
+			<h4 style="margin-top: -20px;"><p>The Civil Works Engineering and Design Report defines various acronyms and terms commonly used in this regulation n to describe phases, types, and parts of cost products. These terms are defined in the glossary section of the regulation.</p></h4>
+
+			
+			
+				
+					<dt>dcterms:created</dt>
+				  
+			
+			<dd><p>2024-07-16T04:26:52.994309+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:description</dt>
+				  
+			
+			<dd><p>The Civil Works Engineering and Design Report defines various acronyms and terms commonly used in this regulation n to describe phases, types, and parts of cost products. These terms are defined in the glossary section of the regulation.</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:publisher</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:rights</dt>
+				  
+			
+			<dd><p>MIT</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:title</dt>
+				  
+			
+			<dd><p>Engineering and Design Civil Works Cost Engineering Regulation No. 1110-2-1302</p></dd>
+			
+			
+				</dl>
+					<dt>pav:ImportedFrom</dt>
+				  
+			
+			<dd><p>glossaries/CivilWorks/ER-1110-2-1302.yaml</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdOn</dt>
+				  
+			
+			<dd><p>2024-07-16T04:26:52.994309+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdWith</dt>
+				  
+			
+			<dd><p>gloss</p></dd>
+			
+			
+				</dl>
+					<dt>pav:wasInfluencedBy</dt>
+				  
+			
+			<dd><p>Engineering and Design Civil Works Cost Engineering RegulationNo. 1110-2-1302 </p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.knowledgesmarts.com/ontologies/wov#Glossary</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2002/07/owl#Ontology</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2004/02/skos/core#ConceptScheme</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#Vocabulary</p></dd>
+			
+			
+				</dl>
+					<dt>rdfs:label</dt>
+				  
+			
+			<dd><p>Engineering and Design Civil Works Cost Engineering Regulation No. 1110-2-1302</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Agency_Technical_Review</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Architect-Engineer</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Baseline_Cost_Estimate</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Budget_Estimate</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Civil_Works_Construction_Cost_Index_System</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Civil_Works_Cost_Engineering_and_Agency_Technical_Review_Mandatory_Center_of_Expertise</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Civil_Works_Work_Breakdown_Structure</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Constant_Dollar_Cost</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Continuing_Authorities_Program</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Cost_Engineering_Dredge_Estimating_Program</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Cost_and_Schedule_Risk_Analysis</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Current_Working_Estimate</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#District_Quality_Control</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#DrChecksSM</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Economic_Cost</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Effective_Price_Level</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Estimated_Cost</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Financial_Cost</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Independent_External_Peer_Review</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Independent_Government_Estimate</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Independent_technical_review</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#MII</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Microcomputer_Aided_Cost_Estimating_System</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#National_Economic_Develop%C3%82%C2%AD_ment</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Peer_Review</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Project</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Project_Delivery_Team</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Project_First_Cost</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Project_Management_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Project_Manager</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Risk_management_plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Simplified_acquisition_threshold</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Total_Cost_Management</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Total_Project_Cost</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#Total_Project_Cost_Summary</p></dd>
+			
+			
+				</dl>
+					<dt>vann:preferredNamespaceUri</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-1110-2-1302#</p></dd>
+			
+
+			</fieldset>
+
+		
+
+	
+
+
+
+	
+
+	<hr class="margintop">
+	<h1><a  name="a-z">&nbsp;</a>A-Z of terms</h1>
+
+	<div id="azterms">
+
+	This is a complete alphabetical A-Z index of all terms, by main logical type.
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		<fieldset> <legend>SKOS Concepts (35)</legend>
+			&nbsp;<a href="#ER-1110-2-1302:Agency_Technical_Review">ER-1110-2-1302:Agency_Technical_Review</a>
+			|  <a href="#ER-1110-2-1302:Architect-Engineer">ER-1110-2-1302:Architect-Engineer</a>
+			|  <a href="#ER-1110-2-1302:Baseline_Cost_Estimate">ER-1110-2-1302:Baseline_Cost_Estimate</a>
+			|  <a href="#ER-1110-2-1302:Budget_Estimate">ER-1110-2-1302:Budget_Estimate</a>
+			|  <a href="#ER-1110-2-1302:Civil_Works_Construction_Cost_Index_System">ER-1110-2-1302:Civil_Works_Construction_Cost_Index_System</a>
+			|  <a href="#ER-1110-2-1302:Civil_Works_Cost_Engineering_and_Agency_Technical_Review_Mandatory_Center_of_Expertise">ER-1110-2-1302:Civil_Works_Cost_Engineering_and_Agency_Technical_Review_Mandatory_Center_of_Expertise</a>
+			|  <a href="#ER-1110-2-1302:Civil_Works_Work_Breakdown_Structure">ER-1110-2-1302:Civil_Works_Work_Breakdown_Structure</a>
+			|  <a href="#ER-1110-2-1302:Constant_Dollar_Cost">ER-1110-2-1302:Constant_Dollar_Cost</a>
+			|  <a href="#ER-1110-2-1302:Continuing_Authorities_Program">ER-1110-2-1302:Continuing_Authorities_Program</a>
+			|  <a href="#ER-1110-2-1302:Cost_Engineering_Dredge_Estimating_Program">ER-1110-2-1302:Cost_Engineering_Dredge_Estimating_Program</a>
+			|  <a href="#ER-1110-2-1302:Cost_and_Schedule_Risk_Analysis">ER-1110-2-1302:Cost_and_Schedule_Risk_Analysis</a>
+			|  <a href="#ER-1110-2-1302:Current_Working_Estimate">ER-1110-2-1302:Current_Working_Estimate</a>
+			|  <a href="#ER-1110-2-1302:District_Quality_Control">ER-1110-2-1302:District_Quality_Control</a>
+			|  <a href="#ER-1110-2-1302:DrChecksSM">ER-1110-2-1302:DrChecksSM</a>
+			|  <a href="#ER-1110-2-1302:Economic_Cost">ER-1110-2-1302:Economic_Cost</a>
+			|  <a href="#ER-1110-2-1302:Effective_Price_Level">ER-1110-2-1302:Effective_Price_Level</a>
+			|  <a href="#ER-1110-2-1302:Estimated_Cost">ER-1110-2-1302:Estimated_Cost</a>
+			|  <a href="#ER-1110-2-1302:Financial_Cost">ER-1110-2-1302:Financial_Cost</a>
+			|  <a href="#ER-1110-2-1302:Independent_External_Peer_Review">ER-1110-2-1302:Independent_External_Peer_Review</a>
+			|  <a href="#ER-1110-2-1302:Independent_Government_Estimate">ER-1110-2-1302:Independent_Government_Estimate</a>
+			|  <a href="#ER-1110-2-1302:Independent_technical_review">ER-1110-2-1302:Independent_technical_review</a>
+			|  <a href="#ER-1110-2-1302:MII">ER-1110-2-1302:MII</a>
+			|  <a href="#ER-1110-2-1302:Microcomputer_Aided_Cost_Estimating_System">ER-1110-2-1302:Microcomputer_Aided_Cost_Estimating_System</a>
+			|  <a href="#ER-1110-2-1302:National_Economic_Develop%C3%82%C2%AD_ment">ER-1110-2-1302:National_Economic_Develop%C3%82%C2%AD_ment</a>
+			|  <a href="#ER-1110-2-1302:Peer_Review">ER-1110-2-1302:Peer_Review</a>
+			|  <a href="#ER-1110-2-1302:Project">ER-1110-2-1302:Project</a>
+			|  <a href="#ER-1110-2-1302:Project_Delivery_Team">ER-1110-2-1302:Project_Delivery_Team</a>
+			|  <a href="#ER-1110-2-1302:Project_First_Cost">ER-1110-2-1302:Project_First_Cost</a>
+			|  <a href="#ER-1110-2-1302:Project_Management_Plan">ER-1110-2-1302:Project_Management_Plan</a>
+			|  <a href="#ER-1110-2-1302:Project_Manager">ER-1110-2-1302:Project_Manager</a>
+			|  <a href="#ER-1110-2-1302:Risk_management_plan">ER-1110-2-1302:Risk_management_plan</a>
+			|  <a href="#ER-1110-2-1302:Simplified_acquisition_threshold">ER-1110-2-1302:Simplified_acquisition_threshold</a>
+			|  <a href="#ER-1110-2-1302:Total_Cost_Management">ER-1110-2-1302:Total_Cost_Management</a>
+			|  <a href="#ER-1110-2-1302:Total_Project_Cost">ER-1110-2-1302:Total_Project_Cost</a>
+			|  <a href="#ER-1110-2-1302:Total_Project_Cost_Summary">ER-1110-2-1302:Total_Project_Cost_Summary</a>
+			  
+		</fieldset>
+
+	
+
+	
+
+	</div>
+
+
+
+	
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+	
+
+
+		<hr class="margintop">
+		<h1 class="margintop"><a  name="skosconcepts">&nbsp;</a>SKOS Concepts</h1>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Agency_Technical_Review" href="#ER-1110-2-1302:Agency_Technical_Review">ER-1110-2-1302:Agency_Technical_Review</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Agency_Technical_Review</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Agency_Technical_Review is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A mandatory effort to improve and ensure the quality and credibility of U.S. Army Corps of Engineers decision and implementation documents by employing an independent review from subject matter experts outside the home district. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Agency_Technical_Review a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Agency Technical Review&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=71&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Agency Technical Review]&#34; ;<br>
+    skos:altLabel &#34;ATR&#34; ;<br>
+    skos:definition &#34;A mandatory effort to improve and ensure the quality and credibility of U.S. Army Corps of Engineers decision and implementation documents by employing an independent review from subject matter experts outside the home district. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Agency Technical Review&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Architect-Engineer" href="#ER-1110-2-1302:Architect-Engineer">ER-1110-2-1302:Architect-Engineer</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Architect-Engineer</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Architect-Engineer is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Architectural/engineering firms that provide services such as planning, architecture, engineering, estimating, surveying, and other technical services related to planning, designing, and construction. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Architect-Engineer a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Architect-Engineer&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=71&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Architect-Engineer]&#34; ;<br>
+    skos:altLabel &#34;A-E&#34; ;<br>
+    skos:definition &#34;Architectural/engineering firms that provide services such as planning, architecture, engineering, estimating, surveying, and other technical services related to planning, designing, and construction. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Architect-Engineer&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Baseline_Cost_Estimate" href="#ER-1110-2-1302:Baseline_Cost_Estimate">ER-1110-2-1302:Baseline_Cost_Estimate</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Baseline_Cost_Estimate</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Baseline_Cost_Estimate is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The cost estimate based on constant dollars is used for authorization/appropriation purposes. The congressionally authorized amount becomes the baseline cost estimate and may differ from the total project cost. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Baseline_Cost_Estimate a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Baseline Cost Estimate&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=71&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Baseline Cost Estimate]&#34; ;<br>
+    skos:altLabel &#34;BCE&#34; ;<br>
+    skos:definition &#34;The cost estimate based on constant dollars is used for authorization/appropriation purposes. The congressionally authorized amount becomes the baseline cost estimate and may differ from the total project cost. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Baseline Cost Estimate&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Budget_Estimate" href="#ER-1110-2-1302:Budget_Estimate">ER-1110-2-1302:Budget_Estimate</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Budget_Estimate</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Budget_Estimate is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The budget estimate supports funding requests as well as comparisons made to current available funding. Comparisons to the available funding are also referred to as current working estimates (CWE). 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Budget_Estimate a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Budget Estimate&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=71&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Budget Estimate]&#34; ;<br>
+    skos:definition &#34;The budget estimate supports funding requests as well as comparisons made to current available funding. Comparisons to the available funding are also referred to as current working estimates (CWE). 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Budget Estimate&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Civil_Works_Construction_Cost_Index_System" href="#ER-1110-2-1302:Civil_Works_Construction_Cost_Index_System">ER-1110-2-1302:Civil_Works_Construction_Cost_Index_System</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Civil_Works_Construction_Cost_Index_System</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Civil_Works_Construction_Cost_Index_System is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Historical and forecasted cost indexes for use in escalating U.S. Army Corps of Engineers civil works project costs. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Civil_Works_Construction_Cost_Index_System a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Civil Works Construction Cost Index System&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=72&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Civil Works Construction Cost Index System]&#34; ;<br>
+    skos:altLabel &#34;CWCCIS&#34; ;<br>
+    skos:definition &#34;Historical and forecasted cost indexes for use in escalating U.S. Army Corps of Engineers civil works project costs. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Civil Works Construction Cost Index System&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Civil_Works_Cost_Engineering_and_Agency_Technical_Review_Mandatory_Center_of_Expertise" href="#ER-1110-2-1302:Civil_Works_Cost_Engineering_and_Agency_Technical_Review_Mandatory_Center_of_Expertise">ER-1110-2-1302:Civil_Works_Cost_Engineering_and_Agency_Technical_Review_Mandatory_Center_of_Expertise</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Civil_Works_Cost_Engineering_and_Agency_Technical_Review_Mandatory_Center_of_Expertise</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Civil_Works_Cost_Engineering_and_Agency_Technical_Review_Mandatory_Center_of_Expertise is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Walla Walla District&#39;s Cost Engineering Branch has been established as the Mandatory Center of Cost Engineering for Civil Works Review. The Cost MCX serves a critical role in all Civil Works and Support for Others Program cost support activities for the USACE cost community. The Cost MCX provides the cost community estimating services for the construction features on all projects from the planning phases through construction, maintenance, and rehabilitation of facilities. Walla Walla&#39;s diversified cost team strives to provide expert technical support for all customers, both Corps and other governmental agencies. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Civil_Works_Cost_Engineering_and_Agency_Technical_Review_Mandatory_Center_of_Expertise a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Civil Works Cost Engineering and Agency Technical Review Mandatory Center of Expertise&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=72&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Civil Works Cost Engineering and Agency Technical Review Mandatory Center of Expertise]&#34; ;<br>
+    skos:altLabel &#34;Cost MCX&#34; ;<br>
+    skos:definition &#34;Walla Walla District&#39;s Cost Engineering Branch has been established as the Mandatory Center of Cost Engineering for Civil Works Review. The Cost MCX serves a critical role in all Civil Works and Support for Others Program cost support activities for the USACE cost community. The Cost MCX provides the cost community estimating services for the construction features on all projects from the planning phases through construction, maintenance, and rehabilitation of facilities. Walla Walla&#39;s diversified cost team strives to provide expert technical support for all customers, both Corps and other governmental agencies. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Civil Works Cost Engineering and Agency Technical Review Mandatory Center of Expertise&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Civil_Works_Work_Breakdown_Structure" href="#ER-1110-2-1302:Civil_Works_Work_Breakdown_Structure">ER-1110-2-1302:Civil_Works_Work_Breakdown_Structure</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Civil_Works_Work_Breakdown_Structure</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Civil_Works_Work_Breakdown_Structure is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A hierarchical structure that defines tasks that can be completed independently of other tasks, facilitating resource allocation, assignment of responsibilities, and measurement and control of the project. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Civil_Works_Work_Breakdown_Structure a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Civil Works Work Breakdown Structure&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=72&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Civil Works Work Breakdown Structure]&#34; ;<br>
+    skos:altLabel &#34;CW-WBS&#34; ;<br>
+    skos:definition &#34;A hierarchical structure that defines tasks that can be completed independently of other tasks, facilitating resource allocation, assignment of responsibilities, and measurement and control of the project. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Civil Works Work Breakdown Structure&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Constant_Dollar_Cost" href="#ER-1110-2-1302:Constant_Dollar_Cost">ER-1110-2-1302:Constant_Dollar_Cost</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Constant_Dollar_Cost</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Constant_Dollar_Cost is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Constant dollar analyses are utilized to determine an equivalent cost in the future or in the past by price indexing using CWCCIS data. Constant dollar cost is the estimated cost BROUGHT TO THE EFFECTIVE PRICE LEVEL. Constant dollar cost at current price levels is the cost estimate used in decision documents and chief&#39;s reports. The constant dollar cost does not include inflation to midpoint design and construction. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Constant_Dollar_Cost a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Constant Dollar Cost&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=72&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Constant Dollar Cost]&#34; ;<br>
+    skos:altLabel &#34;Price Level&#34; ;<br>
+    skos:definition &#34;Constant dollar analyses are utilized to determine an equivalent cost in the future or in the past by price indexing using CWCCIS data. Constant dollar cost is the estimated cost BROUGHT TO THE EFFECTIVE PRICE LEVEL. Constant dollar cost at current price levels is the cost estimate used in decision documents and chief&#39;s reports. The constant dollar cost does not include inflation to midpoint design and construction. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Constant Dollar Cost&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Continuing_Authorities_Program" href="#ER-1110-2-1302:Continuing_Authorities_Program">ER-1110-2-1302:Continuing_Authorities_Program</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Continuing_Authorities_Program</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Continuing_Authorities_Program is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Congress has given the U.S. Army Corps of Engineers the authority to plan, design, and construct certain flood risk management and navigation improvements without specific congressional authorization. The basic objective of this program is to allow the Corps to respond more quickly to problems or needs where the apparent project scope and costs are small. The amount of federal participation is limited by congress, and varies for each individual authority. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Continuing_Authorities_Program a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Continuing Authorities Program&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=71&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Continuing Authorities Program]&#34; ;<br>
+    skos:altLabel &#34;CAP&#34; ;<br>
+    skos:definition &#34;Congress has given the U.S. Army Corps of Engineers the authority to plan, design, and construct certain flood risk management and navigation improvements without specific congressional authorization. The basic objective of this program is to allow the Corps to respond more quickly to problems or needs where the apparent project scope and costs are small. The amount of federal participation is limited by congress, and varies for each individual authority. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Continuing Authorities Program&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Cost_Engineering_Dredge_Estimating_Program" href="#ER-1110-2-1302:Cost_Engineering_Dredge_Estimating_Program">ER-1110-2-1302:Cost_Engineering_Dredge_Estimating_Program</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Cost_Engineering_Dredge_Estimating_Program</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Cost_Engineering_Dredge_Estimating_Program is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A U.S. Army Corps of Engineers program that allows the user to estimate dredging projects using mechanical, pipeline, and hopper dredge plant. The center is established to develop new cost database items that represent the current construction practices and technologies, to maintain and biennially update EP 1110-1-8, Construction Equipment Ownership and Operating Expense Schedule, and to semiannually update EM 1110-2-1304, Civil Works Construction Cost Index System (CWCCIS). 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Cost_Engineering_Dredge_Estimating_Program a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Cost Engineering Dredge Estimating Program&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=71&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Cost Engineering Dredge Estimating Program]&#34; ;<br>
+    skos:altLabel &#34;CEDEP&#34; ;<br>
+    skos:definition &#34;A U.S. Army Corps of Engineers program that allows the user to estimate dredging projects using mechanical, pipeline, and hopper dredge plant. The center is established to develop new cost database items that represent the current construction practices and technologies, to maintain and biennially update EP 1110-1-8, Construction Equipment Ownership and Operating Expense Schedule, and to semiannually update EM 1110-2-1304, Civil Works Construction Cost Index System (CWCCIS). 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Cost Engineering Dredge Estimating Program&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Cost_and_Schedule_Risk_Analysis" href="#ER-1110-2-1302:Cost_and_Schedule_Risk_Analysis">ER-1110-2-1302:Cost_and_Schedule_Risk_Analysis</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Cost_and_Schedule_Risk_Analysis</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Cost_and_Schedule_Risk_Analysis is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A risk analysis is the process of identifying and measuring the cost and time impacts of project uncertainties on the estimated TPC. The risk analysis results in two main products: Identified risks and contingency dollars to fund risk occurrence.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Cost_and_Schedule_Risk_Analysis a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Cost and Schedule Risk Analysis&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=72&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Cost and Schedule Risk Analysis]&#34; ;<br>
+    skos:altLabel &#34;CSRA&#34; ;<br>
+    skos:definition &#34;A risk analysis is the process of identifying and measuring the cost and time impacts of project uncertainties on the estimated TPC. The risk analysis results in two main products: Identified risks and contingency dollars to fund risk occurrence.&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Cost and Schedule Risk Analysis&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Current_Working_Estimate" href="#ER-1110-2-1302:Current_Working_Estimate">ER-1110-2-1302:Current_Working_Estimate</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Current_Working_Estimate</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Current_Working_Estimate is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An update comparison to the appropriated amount or BCE. Commonly referred to as total project cost, the update reflects the total project scope and estimated cost with current effective date pricing plus spent cost from authorization amount. The CWE reflects the associated project costs in quantities, estimates and supporting databases, duration, and risk at any point in time within the funded project&#39;s life. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Current_Working_Estimate a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Current Working Estimate&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=73&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Current Working Estimate]&#34; ;<br>
+    skos:altLabel &#34;CWE&#34; ;<br>
+    skos:definition &#34;An update comparison to the appropriated amount or BCE. Commonly referred to as total project cost, the update reflects the total project scope and estimated cost with current effective date pricing plus spent cost from authorization amount. The CWE reflects the associated project costs in quantities, estimates and supporting databases, duration, and risk at any point in time within the funded project&#39;s life. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Current Working Estimate&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:District_Quality_Control" href="#ER-1110-2-1302:District_Quality_Control">ER-1110-2-1302:District_Quality_Control</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:District_Quality_Control</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:District_Quality_Control is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>All work products and reports, evaluations, and assessments shall undergo necessary and appropriate district quality control/quality assurance. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:District_Quality_Control a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;District Quality Control&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=73&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[District Quality Control]&#34; ;<br>
+    skos:altLabel &#34;DQC&#34; ;<br>
+    skos:definition &#34;All work products and reports, evaluations, and assessments shall undergo necessary and appropriate district quality control/quality assurance. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;District Quality Control&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:DrChecksSM" href="#ER-1110-2-1302:DrChecksSM">ER-1110-2-1302:DrChecksSM</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:DrChecksSM</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:DrChecksSM is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Design Review and Checking System. Enables an actionable collaboration among the reviewers and design team of capital improvement projects.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:DrChecksSM a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;DrChecksSM&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=73&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[DrChecksSM]&#34; ;<br>
+    skos:definition &#34;Design Review and Checking System. Enables an actionable collaboration among the reviewers and design team of capital improvement projects.&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;DrChecksSM&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Economic_Cost" href="#ER-1110-2-1302:Economic_Cost">ER-1110-2-1302:Economic_Cost</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Economic_Cost</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Economic_Cost is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Monetary equivalent cost used by the economist in determining the benefit-to-cost ratio (BCR). The economic cost includes all of the opportunity costs, both explicit (out of pocket to realize project benefits) and implicit (noncash), of using the resource and is expressed in average annual equivalent terms. It is also referred to as the constant dollar cost. The economic cost should not be confused with the financial cost and should be clearly and separately described in reports. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Economic_Cost a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Economic Cost&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=73&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Economic Cost]&#34; ;<br>
+    skos:definition &#34;Monetary equivalent cost used by the economist in determining the benefit-to-cost ratio (BCR). The economic cost includes all of the opportunity costs, both explicit (out of pocket to realize project benefits) and implicit (noncash), of using the resource and is expressed in average annual equivalent terms. It is also referred to as the constant dollar cost. The economic cost should not be confused with the financial cost and should be clearly and separately described in reports. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Economic Cost&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Effective_Price_Level" href="#ER-1110-2-1302:Effective_Price_Level">ER-1110-2-1302:Effective_Price_Level</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Effective_Price_Level</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Effective_Price_Level is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>EPL Date of the point in time of the pricing used in the cost estimate. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Effective_Price_Level a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Effective Price Level&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=73&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Effective Price Level]&#34; ;<br>
+    skos:definition &#34;EPL Date of the point in time of the pricing used in the cost estimate. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Effective Price Level&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Estimated_Cost" href="#ER-1110-2-1302:Estimated_Cost">ER-1110-2-1302:Estimated_Cost</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Estimated_Cost</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Estimated_Cost is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Initially developed cost estimate which includes contingencies. The effective price level date for estimated cost is usually the date of preparation of the cost estimate. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Estimated_Cost a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Estimated Cost&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=73&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Estimated Cost]&#34; ;<br>
+    skos:altLabel &#34;Price Level&#34; ;<br>
+    skos:definition &#34;Initially developed cost estimate which includes contingencies. The effective price level date for estimated cost is usually the date of preparation of the cost estimate. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Estimated Cost&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Financial_Cost" href="#ER-1110-2-1302:Financial_Cost">ER-1110-2-1302:Financial_Cost</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Financial_Cost</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Financial_Cost is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Monetary outlay, both federal and non-federal, of constructing a project. It includes design and construction outlays, transfer payments such as replacement housing payments as specified in 42 United States Code 4623 and 4624, and the value of lands, easements, rights-of-way, relocations, and dredged or excavated material disposal areas (LERRD) and work in kind provided by non- federal sponsors. This cost is developed by cost engineering, in close coordination with the economist and other members of the PDT, and is typically presented in the TPCS. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Financial_Cost a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Financial Cost&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Financial Cost]&#34; ;<br>
+    skos:definition &#34;Monetary outlay, both federal and non-federal, of constructing a project. It includes design and construction outlays, transfer payments such as replacement housing payments as specified in 42 United States Code 4623 and 4624, and the value of lands, easements, rights-of-way, relocations, and dredged or excavated material disposal areas (LERRD) and work in kind provided by non- federal sponsors. This cost is developed by cost engineering, in close coordination with the economist and other members of the PDT, and is typically presented in the TPCS. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Financial Cost&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Independent_External_Peer_Review" href="#ER-1110-2-1302:Independent_External_Peer_Review">ER-1110-2-1302:Independent_External_Peer_Review</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Independent_External_Peer_Review</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Independent_External_Peer_Review is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Most independent level of review and is applied in cases that meet certain criteria where the risk and magnitude of the proposed project are such that a critical examination by a qualified team outside of USACE is warranted. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Independent_External_Peer_Review a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Independent External Peer Review&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Independent External Peer Review]&#34; ;<br>
+    skos:altLabel &#34;IEPR&#34; ;<br>
+    skos:definition &#34;Most independent level of review and is applied in cases that meet certain criteria where the risk and magnitude of the proposed project are such that a critical examination by a qualified team outside of USACE is warranted. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Independent External Peer Review&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Independent_Government_Estimate" href="#ER-1110-2-1302:Independent_Government_Estimate">ER-1110-2-1302:Independent_Government_Estimate</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Independent_Government_Estimate</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Independent_Government_Estimate is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Formal, approved cost estimate prepared to support a contract award, which is signed by the chief of cost engineering. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Independent_Government_Estimate a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Independent Government Estimate&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Independent Government Estimate]&#34; ;<br>
+    skos:altLabel &#34;IGE&#34; ;<br>
+    skos:definition &#34;Formal, approved cost estimate prepared to support a contract award, which is signed by the chief of cost engineering. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Independent Government Estimate&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Independent_technical_review" href="#ER-1110-2-1302:Independent_technical_review">ER-1110-2-1302:Independent_technical_review</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Independent_technical_review</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Independent_technical_review is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A review by a qualified person or team not involved in the day-to-day production of a project/product, for the purpose of confirming the proper application of clearly established criteria, regulations, laws, codes, principles and professional practices. Predecessor to agency technical review on civil works . 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Independent_technical_review a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Independent technical review&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Independent technical review]&#34; ;<br>
+    skos:altLabel &#34;ITR&#34; ;<br>
+    skos:definition &#34;A review by a qualified person or team not involved in the day-to-day production of a project/product, for the purpose of confirming the proper application of clearly established criteria, regulations, laws, codes, principles and professional practices. Predecessor to agency technical review on civil works . 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Independent technical review&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:MII" href="#ER-1110-2-1302:MII">ER-1110-2-1302:MII</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:MII</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:MII is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>MCACES second generation 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:MII a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;MII&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[MII]&#34; ;<br>
+    skos:definition &#34;MCACES second generation 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;MII&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Microcomputer_Aided_Cost_Estimating_System" href="#ER-1110-2-1302:Microcomputer_Aided_Cost_Estimating_System">ER-1110-2-1302:Microcomputer_Aided_Cost_Estimating_System</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Microcomputer_Aided_Cost_Estimating_System</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Microcomputer_Aided_Cost_Estimating_System is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Mandatory U.S. Army Corps of Engineers estimating software. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Microcomputer_Aided_Cost_Estimating_System a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Microcomputer Aided Cost Estimating System&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Microcomputer Aided Cost Estimating System]&#34; ;<br>
+    skos:altLabel &#34;MCACES&#34; ;<br>
+    skos:definition &#34;Mandatory U.S. Army Corps of Engineers estimating software. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Microcomputer Aided Cost Estimating System&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:National_Economic_Develop%C3%82%C2%AD_ment" href="#ER-1110-2-1302:National_Economic_Develop%C3%82%C2%AD_ment">ER-1110-2-1302:National_Economic_Develop%C3%82%C2%AD_ment</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:National_Economic_Develop%C3%82%C2%AD_ment</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:National_Economic_Develop%C3%82%C2%AD_ment is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>In the civil works project planning context, NED analysis can be generally defined as economic benefit-cost analysis for plan formulation, evaluation, and selection that is used to evaluate the federal interest in pursuing a prospective project plan. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:National_Economic_Develop%C3%82%C2%AD_ment a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;National Economic DevelopÂ­ ment&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[National Economic DevelopÂ­ ment]&#34; ;<br>
+    skos:altLabel &#34;NED&#34; ;<br>
+    skos:definition &#34;In the civil works project planning context, NED analysis can be generally defined as economic benefit-cost analysis for plan formulation, evaluation, and selection that is used to evaluate the federal interest in pursuing a prospective project plan. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;National Economic DevelopÂ­ ment&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Peer_Review" href="#ER-1110-2-1302:Peer_Review">ER-1110-2-1302:Peer_Review</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Peer_Review</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Peer_Review is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The process of subjecting research, assumptions, analyses, and conclusions to the scrutiny of others who are experts in the same field. Peer review requires a community of experts in a given (and often narrowly defined) field, who are qualified and able to perform impartial review. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Peer_Review a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Peer Review&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Peer Review]&#34; ;<br>
+    skos:definition &#34;The process of subjecting research, assumptions, analyses, and conclusions to the scrutiny of others who are experts in the same field. Peer review requires a community of experts in a given (and often narrowly defined) field, who are qualified and able to perform impartial review. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Peer Review&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Project" href="#ER-1110-2-1302:Project">ER-1110-2-1302:Project</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Project</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Project is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Each project is a temporary endeavor undertaken to create a unique product, service, or result. Internal services are discrete projects when they are unique and non-recurring (ER 5-1-11). 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Project a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Project]&#34; ;<br>
+    skos:definition &#34;Each project is a temporary endeavor undertaken to create a unique product, service, or result. Internal services are discrete projects when they are unique and non-recurring (ER 5-1-11). 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Project&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Project_Delivery_Team" href="#ER-1110-2-1302:Project_Delivery_Team">ER-1110-2-1302:Project_Delivery_Team</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Project_Delivery_Team</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Project_Delivery_Team is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An interdisciplinary group formed from the resources of the implementing agencies, which develops the products necessary to deliver the project. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Project_Delivery_Team a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project Delivery Team&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Project Delivery Team]&#34; ;<br>
+    skos:altLabel &#34;PDT&#34; ;<br>
+    skos:definition &#34;An interdisciplinary group formed from the resources of the implementing agencies, which develops the products necessary to deliver the project. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Project Delivery Team&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Project_First_Cost" href="#ER-1110-2-1302:Project_First_Cost">ER-1110-2-1302:Project_First_Cost</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Project_First_Cost</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Project_First_Cost is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The cost estimate that will serve as the basis for providing the cost of the project for which authorization is sought. The cost estimate to be used in chief&#39;s reports and other decision documents is estimated cost represented at the current price level. The current price level is the current FY based on the submittal date. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Project_First_Cost a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project First Cost&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Project First Cost]&#34; ;<br>
+    skos:altLabel &#34;Price Level&#34; ;<br>
+    skos:definition &#34;The cost estimate that will serve as the basis for providing the cost of the project for which authorization is sought. The cost estimate to be used in chief&#39;s reports and other decision documents is estimated cost represented at the current price level. The current price level is the current FY based on the submittal date. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Project First Cost&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Project_Management_Plan" href="#ER-1110-2-1302:Project_Management_Plan">ER-1110-2-1302:Project_Management_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Project_Management_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Project_Management_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A formal, approved document used to guide both project execution and project control. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Project_Management_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project Management Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Project Management Plan]&#34; ;<br>
+    skos:altLabel &#34;PMP&#34; ;<br>
+    skos:definition &#34;A formal, approved document used to guide both project execution and project control. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Project Management Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Project_Manager" href="#ER-1110-2-1302:Project_Manager">ER-1110-2-1302:Project_Manager</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Project_Manager</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Project_Manager is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Responsible for the planning, execution, and closing of any project, typically relating to construction. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Project_Manager a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project Manager&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Project Manager]&#34; ;<br>
+    skos:altLabel &#34;PM&#34; ;<br>
+    skos:definition &#34;Responsible for the planning, execution, and closing of any project, typically relating to construction. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Project Manager&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Risk_management_plan" href="#ER-1110-2-1302:Risk_management_plan">ER-1110-2-1302:Risk_management_plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Risk_management_plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Risk_management_plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A document that a project manager prepares to foresee risks, estimate impacts, and define responses to issues. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Risk_management_plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Risk management plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Risk management plan]&#34; ;<br>
+    skos:altLabel &#34;RMP&#34; ;<br>
+    skos:definition &#34;A document that a project manager prepares to foresee risks, estimate impacts, and define responses to issues. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Risk management plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Simplified_acquisition_threshold" href="#ER-1110-2-1302:Simplified_acquisition_threshold">ER-1110-2-1302:Simplified_acquisition_threshold</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Simplified_acquisition_threshold</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Simplified_acquisition_threshold is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>As defined in FAR 2.101 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Simplified_acquisition_threshold a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Simplified acquisition threshold&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Simplified acquisition threshold]&#34; ;<br>
+    skos:altLabel &#34;SAT&#34; ;<br>
+    skos:definition &#34;As defined in FAR 2.101 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Simplified acquisition threshold&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Total_Cost_Management" href="#ER-1110-2-1302:Total_Cost_Management">ER-1110-2-1302:Total_Cost_Management</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Total_Cost_Management</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Total_Cost_Management is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The effective application of professional and technical expertise to plan and control resources, costs, schedules, and risk. A systematic approach to managing cost throughout the life cycle of any project, product, or service. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Total_Cost_Management a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Total Cost Management&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Total Cost Management]&#34; ;<br>
+    skos:definition &#34;The effective application of professional and technical expertise to plan and control resources, costs, schedules, and risk. A systematic approach to managing cost throughout the life cycle of any project, product, or service. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Total Cost Management&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Total_Project_Cost" href="#ER-1110-2-1302:Total_Project_Cost">ER-1110-2-1302:Total_Project_Cost</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Total_Project_Cost</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Total_Project_Cost is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The constant dollar cost FULLY FUNDED WITH ESCALATION to the estimated midpoint of construction. Total project cost (or total cost of construction of GNFs when discussing navigation projects) is the cost estimate used in project partnership agreements and integral determination reports. Total project cost is the cost estimate provided non-federal sponsors for their use in financial planning as it provides information regarding the overall non-federal cost sharing obligation. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Total_Project_Cost a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Total Project Cost&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=76&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Total Project Cost]&#34; ;<br>
+    skos:definition &#34;The constant dollar cost FULLY FUNDED WITH ESCALATION to the estimated midpoint of construction. Total project cost (or total cost of construction of GNFs when discussing navigation projects) is the cost estimate used in project partnership agreements and integral determination reports. Total project cost is the cost estimate provided non-federal sponsors for their use in financial planning as it provides information regarding the overall non-federal cost sharing obligation. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Total Project Cost&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-1110-2-1302:Total_Project_Cost_Summary" href="#ER-1110-2-1302:Total_Project_Cost_Summary">ER-1110-2-1302:Total_Project_Cost_Summary</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-1110-2-1302:Total_Project_Cost_Summary</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-1110-2-1302:Total_Project_Cost_Summary is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The required cost estimate document to be submitted with all projects sent for either division or HQUSACE approval. Since it addresses all project features, it is considered a PDT product. Both the PM and chief of the cost engineering office must review, approve, sign, and date all TPCS documents. Real estate estimates included in the TPCS must be reviewed, approved, and the TPCS signed by the chief, or their designee, of the real estate office. 1110-2-1302.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-1110-2-1302: &lt;https://usace-data.com/civil-works/glossary/ER-1110-2-1302#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-1110-2-1302:Total_Project_Cost_Summary a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Total Project Cost Summary&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=76&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Total Project Cost Summary]&#34; ;<br>
+    skos:altLabel &#34;TPCS&#34; ;<br>
+    skos:definition &#34;The required cost estimate document to be submitted with all projects sent for either division or HQUSACE approval. Since it addresses all project features, it is considered a PDT product. Both the PM and chief of the cost engineering office must review, approve, sign, and date all TPCS documents. Real estate estimates included in the TPCS must be reviewed, approved, and the TPCS signed by the chief, or their designee, of the real estate office. 1110-2-1302.pdf&#34; ;<br>
+    skos:inScheme ER-1110-2-1302: ;<br>
+    skos:prefLabel &#34;Total Project Cost Summary&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	<hr>
+	<small>Ontology documentation automatically generated by <a class="greylink"  href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> v2.1.1 on Tue, 16 Jul 2024 04:26:57</small>
+
+
+</body>
+</html>

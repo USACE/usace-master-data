@@ -1,0 +1,27 @@
+about:
+    namespace: https://usace-data.com/civil-works/glossary/CFR-33-324-2#
+    prefix: CFR-33-324-2
+    template: glossary
+    title:  Code of Federal Regulations - Title 33, Chapter-II, Part 324, Section-324.2
+    source:
+        linkType: cfr
+        sourceID: CFR-33-324-2
+        authoritativeSource: 33 CFR 324.2 Definitions
+        glossaryReferences: true
+        url:  https://www.ecfr.gov/current/title-33/chapter-II/part-324/section-324.2
+terms:
+- label: Dredged Material
+  definition: The term dredged material means any material excavated or dredged from
+    navigable waters of the United States.
+  anchor: '1'
+- label: Ocean Waters
+  definition: 'The term ocean waters means those waters of the open seas lying seaward
+    of the base line from which the territorial sea is measured, as provided for in
+    the Convention on the Territorial Sea and the Contiguous Zone (15 UST 1606: TIAS
+    5639).'
+  anchor: '1'
+- label: Transport
+  altName: [ Transportation ]
+  definition: The term transport or transportation refers to the conveyance and related
+    handling of dredged material by a vessel or other vehicle.
+  anchor: '1'

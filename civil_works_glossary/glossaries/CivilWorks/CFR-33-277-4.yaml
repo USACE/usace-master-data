@@ -1,0 +1,39 @@
+about:
+    namespace: https://usace-data.com/civil-works/glossary/CFR-33-277-4#
+    prefix: CFR-33-277-4
+    template: glossary
+    title: Code of Federal Regulations - Title 33, Chapter-II, Part 277, Section-277.4
+    description: "33-CFR-277.4 Term definitions are applicable throughout part 277"    
+    source:
+        linkType: cfr
+        sourceID: CFR-33-277-4
+        authoritativeSource: 33 CFR 277.4
+        glossaryReferences: true
+        url: 
+terms:
+- label: Alteration
+  definition: The term alteration includes changes of any kind, reconstruction, or
+    removal in whole or in part.
+  anchor: '1'
+- label: Bridge
+  definition: The term bridge means a lawful bridge over navigable waters of the United
+    States, including approaches, fenders, and appurtenances thereto, which is used
+    and operated for the purpose of carrying railroad traffic, or both railroad and
+    highway traffic, or if a State, county, municipality, or other political subdivision
+    is the owner or joint owner thereof, which is used and operated for the purpose
+    of carrying highway traffic.
+  anchor: '1'
+- label: Bridge owner
+  definition: Bridge owner means any State, county, municipality, or other political
+    subdivision, or any corporation, association, partnership, or individual owning,
+    or jointly owning, any bridge, and, when any bridge shall be in the possession
+    or under the control of any trustee, receiver, trustee in bankruptcy, or lessee,
+    such term shall include both the owner of the legal title and the person or the
+    entity in possession or control of such bridge.
+  anchor: '1'
+- label: Navigable waters
+  definition: Navigable waters of the United States means those waterbodies, except
+    the territorial seas, which are subject to the ebb and flow of the tide, or are
+    presently, or have been in the past, or may be in the future susceptible for use
+    for purposes of interstate or foreign commerce.
+  anchor: '1'

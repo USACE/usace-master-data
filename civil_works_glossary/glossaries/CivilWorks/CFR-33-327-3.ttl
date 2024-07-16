@@ -1,0 +1,57 @@
+@prefix CFR-33-327-3: <https://usace-data.com/civil-works/glossary/CFR-33-327-3#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CFR-33-327-3:Federal_project a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Federal project" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-327/section-327.3" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-327-3.yaml#term[Federal project]" ;
+    skos:definition "means a Corps of Engineers project (work or activity of any nature for any purpose which is to be performed by the Chief of Engineers pursuant to Congressional authorizations) involving the discharge of dredged or fill material into waters of the United States or the transportation of dredged material for the purpose of dumping it in ocean waters subject to section 404 of the Clean Water Act, or section 103 of the MPRSA." ;
+    skos:inScheme CFR-33-327-3: ;
+    skos:prefLabel "Federal project" .
+
+CFR-33-327-3:Permit_action a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Permit action" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-327/section-327.3" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-327-3.yaml#term[Permit action]" ;
+    skos:definition "as used herein means the evaluation of and decision on an application for a DA permit pursuant to sections 9 or 10 of the Rivers and Harbors Act of 1899, section 404 of the Clean Water Act, or section 103 of the MPRSA, as amended, or the modification, suspension or revocation of any DA permit (see 33 CFR 325.7)." ;
+    skos:inScheme CFR-33-327-3: ;
+    skos:prefLabel "Permit action" .
+
+CFR-33-327-3:Public_hearing a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Public hearing" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-327/section-327.3" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-327-3.yaml#term[Public hearing]" ;
+    skos:definition "means a public proceeding conducted for the purpose of acquiring information or evidence which will be considered in evaluating a proposed DA permit action, or Federal project, and which affords the public an opportunity to present their views, opinions, and information on such permit actions or Federal projects." ;
+    skos:inScheme CFR-33-327-3: ;
+    skos:prefLabel "Public hearing" .
+
+CFR-33-327-3: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Code of Federal Regulations - Title 33, Chapter-II, Part 327, Section-327.3" ;
+    dcterms:created "2024-07-16T04:24:28.200219+00:00"^^xsd:dateTime ;
+    dcterms:description "None" ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Code of Federal Regulations - Title 33, Chapter-II, Part 327, Section-327.3" ;
+    pav:ImportedFrom "glossaries/CivilWorks/CFR-33-327-3.yaml" ;
+    pav:createdOn "2024-07-16T04:24:28.200219+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "33 CFR 327.3 Definitions" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/CFR-33-327-3#" ;
+    skos:hasTopConcept CFR-33-327-3:Federal_project,
+        CFR-33-327-3:Permit_action,
+        CFR-33-327-3:Public_hearing .
+

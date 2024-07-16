@@ -1,0 +1,215 @@
+about:
+    namespace: https://usace-data.com/civil-works/glossary/DoDI-4165.14#
+    prefix: DoDI-4165.14
+    title: DoDI 4165.14
+    description: DoD Instruction 4165.14, Real Property Inventory and Reporting
+          various acronyms and terms commonly used in this regulation to describe 
+          policy, responsibility assignments, and real property reporting procedures within the DoD.
+          These terms are defined in the glossary section of the instruction.
+    source:
+        linkType: pdf
+        glossaryReferences: true
+        sourceID: DoDI 4165-14
+        authoritativeSource: DoDI 4165.14
+        url: https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf
+terms:
+- label: Accountable Property System of Record
+  altName: [ APSR ]
+  definition: 'The business system or application used to account for and maintain
+    accountability of DoD government property. Each MILDEP and WHS uses their own
+    business system or application for this purpose. '
+  anchor: '15'
+- label: Building
+  definition: 'A roofed and floored facility enclosed by exterior walls and consisting
+    of one or more levels that is suitable for single or multiple functions and that
+    protects human beings and their properties from direct harsh effects of weather
+    such as rain, wind, sun, etc. '
+  anchor: '15'
+- label: Category Code
+  altName: [ CATCODE ]
+  definition: 'The most detailed level of classification for real property. Denotes
+    a specific real property type and function in accordance with the current version
+    of the RPCS and each MILDEP’s specific documentation. '
+  anchor: '15'
+- label: Civil Works
+  definition: 'Tasks undertaken by the Directorate of Civil Works, U.S. Army Corps
+    of Engineers that include emergency response and water resource development activities
+    including flood risk management, navigation, recreation, infrastructure, and environmental
+    stewardship. '
+  anchor: '15'
+- label: Data Analytics and Integration Support
+  altName: [ DAIS ]
+  definition: Data warehouse for real property data provided by the DoD Component
+    APSRs.
+  anchor: '15'
+- label: Disposal
+  definition: Any authorized method (e.g., demolition, non-DoD transfer) of permanently
+    divesting the DoD of accountability for, and control of, an RPA in which the United
+    States holds a legal interest.
+  anchor: '15'
+- label: Enterprise
+  definition: Defined in DoDD 8115.01
+  anchor: '15'
+- label: Facility Analysis Category
+  altName: [ FAC ]
+  definition: A grouping of RPAs that have a common UM and equivalent cost based on
+    the UM. Included in this equivalent cost are costs associated with real property
+    construction, maintenance, sustainment, and repair. Within the DoD, a FAC is represented
+    by a four- digit numerical code, as found in DoDI 4165.03 and the current version
+    of the RPCS.
+  anchor: '15'
+- label: Facility
+  definition: A building, structure, or linear structure that is constructed on or
+    in the land that includes in the basic record for the facility such things as
+    landscaping, HVAC equipment, utility connections, stairs, ramps, passageways,
+    and other RPIE that facilitates the use of and is inclusive/intrinsic to the facility
+    itself.
+  anchor: '15'
+- label: Forecast
+  definition: A prediction of future RPAs, including acquisitions, transfers, and
+    disposals, to support the DoD mission.
+  anchor: '16'
+- label: Facilities Sustainment Model
+  definition: 'A model used to determine aggregate funding levels for sustainment.
+    Projects annual facility sustainment costs for the DoD facilities inventory. '
+  anchor: '16'
+- label: Future Years Defense Program
+  altName: [ FYDP ]
+  definition: Program and financial plan for the DoD, as approved by the Secretary
+    of Defense.
+  anchor: '16'
+- label: Geospatial Feature
+  definition: 'A digital representation of the location and spatial extent of an RPA
+    structured according to IGI&S standards and intended for direct use in a geographic
+    information system. Real property geospatial features have a point, line, or polygon
+    geometry. The representation must include a coordinate reference system, as defined
+    in the International Organization for Standardization 19111:2019.  '
+  anchor: '16'
+- label: Historic Status
+  definition: The status of a facility with respect to the National Register of Historic
+    Places or listed on the World Heritage List or the host nation equivalent of the
+    U.S. National Register of Historic Places.
+  anchor: '16'
+- label: Host Installation
+  definition: The Military Service or WHS holding real property accountability for
+    a defined location.
+  anchor: '16'
+- label: Installation
+  definition: A base, camp, post, station, yard, center, homeport facility for any
+    ship, or other activity under the jurisdiction of the DoD, including any leased
+    facility, which is located within any of the States, the District of Columbia,
+    the Commonwealth of Puerto Rico, American Samoa, the Virgin Islands, the Commonwealth
+    of the Northern Mariana Islands, or Guam. This term does not include any facility
+    used primarily for civil works, rivers and harbors projects, or flood control
+    projects. In the case of an activity in a foreign country, an installation is
+    any property under the operational control of the Secretary of a MILDEP or the
+    Secretary of Defense, without regard to the duration of operational control. For
+    real property accountability, an installation must consist of one or more real
+    property sites.
+  anchor: '16'
+- label: Interest
+  definition: The type and extent of legally enforceable right to possess or use property,
+    including an easement to pass over an adjacent parcel, mineral rights, outright
+    title, or a possibility of acquiring title should a specified event occur. DoD
+    real property interest types are defined in the RPIM.
+  anchor: '16'
+- label: Internal Control
+  definition: "An integral component of an organization’s management that provides\
+    \ reasonable assurance that the following objectives are being achieved:\nEffectiveness\
+    \ and efficiency of operations.\nReliability of financial reporting.\nCompliance\
+    \ with applicable laws and regulations. \nSynonymous with management control,\
+    \ helps government program managers achieve desired results through effective\
+    \ stewardship of public resource."
+  anchor: '17'
+- label: International Organization for Standardization
+  definition: 'An independent, non-governmental international organization with a
+    membership of 167 national standards bodies that brings together experts to share
+    knowledge and develop voluntary, consensus-based, market relevant international
+    standards that support innovation and provide solutions to global challenges. '
+  anchor: '17'
+- label: Land
+  definition: A portion of the Earth’s surface distinguishable by boundaries. Land
+    must be accountable by parcel.
+  anchor: '17'
+- label: Land Parcel
+  definition: An RPA identified as a specific area of land having a unique acquisition
+    document and a legal description of its boundaries and whose perimeter is delineated
+    by a cadastral survey, as recorded in the land records of the government entity
+    having appropriate jurisdiction.
+  anchor: '17'
+- label: Linear Structure
+  definition: A facility whose function requires that it traverse land (e.g., runway,
+    road, rail line, pipeline, fence, pavement, electrical distribution line) or is
+    otherwise managed or reported by a linear UM at the CATCODE level.
+  anchor: '17'
+- label: Predominant Current Use
+  definition: The primary use of an RPA based on the largest quantity of usage for
+    an activity or function as described by the appropriate FAC or CATCODE.
+  anchor: '17'
+- label: Real Property
+  definition: Land and improvements to land (e.g., buildings, structures, and linear
+    structures (see facility)).
+  anchor: '17'
+- label: Real Property Accountable Officer
+  altName: [ RPAO ]
+  definition: An individual (government employee) who, based on their training, knowledge,
+    and experience in real property management, accountability, and control procedures,
+    is appointed by proper authority to be responsible for the establishment of records
+    and maintenance of physical accountability for the real property charged to the
+    accountable area or installation.
+  anchor: '18'
+- label: Real Property Categorization System
+  altName: [ RPCS ]
+  definition: 'A hierarchical scheme of real property types and functions that serves
+    as the framework for identifying, categorizing, and analyzing the DoD’s inventory
+    of land and facilities around the world. An updated table of FAC and CATCODES
+    is published at least annually in accordance with DoDI 4165.03. '
+  anchor: '18'
+- label: Real Property Inventory
+  altName: [ RPI ]
+  definition: A detailed record (listing, system) of real property lands, buildings,
+    structures, and linear structures to which DoD holds a legal interest on behalf
+    of the United States.
+  anchor: '18'
+- label: Real Property Installed Equipment
+  altName: [ RPIE ]
+  definition: An item of equipment that is affixed and built into a facility as an
+    integral part of that facility. To qualify as RPIE, the equipment must be necessary
+    to make the facility complete, and if removed, would destroy, or severely reduce
+    the designed usefulness and operation of the facility. RPIE costs are included
+    as a funded initial construction or renovation cost. RPIE may be accounted for
+    as a real property equipment asset record, but not as a separate facility record
+    in the RPI. RPIE includes such items as control systems, heating, cooling, electrical,
+    and emergency lighting.
+  anchor: '18'
+- label: Real Property Information Model
+  altName: [ RPIM ]
+  definition: 'The DoD information model that details enterprise data elements and
+    associated information such as definitions, business rules, pick lists, and metadata
+    to provide a standard set of data across DoD for RPAs. '
+  anchor: '18'
+- label: Real Property Site Unique Identifier
+  altName: [ RPSUID ]
+  definition: A unique non-intelligent code used to permanently identify real property
+    sites. A real property site is a specific geographic location that has individual
+    land parcels or facilities assigned to it.
+  anchor: '18'
+- label: Real Property Unique Identifier
+  altName: [ RPUID ]
+  definition: A unique non-intelligent code used to permanently identify an RPA.
+  anchor: '18'
+- label: Site
+  definition: 'Physical (geographic) location that contains RPAs in which a MILDEP
+    or WHS, on behalf of the United States, has a legal interest and maintains physical,
+    legal, and financial accountability. Each site is assigned to a single installation.
+    A site may exist in one of three forms: Land only, where there are no facilities
+    present and where the land consists of either a single land parcel or two or more
+    contiguous land parcels. Facility or facilities only, where the underlying land
+    is neither owned nor controlled by the government. A stand-alone facility can
+    be a site. Land, and all the facilities thereon, where the land consists of either
+    a single land parcel or two or more contiguous land parcels. '
+  anchor: '19'
+- label: Structure
+  definition: A facility, other than a building or linear structure, that is constructed
+    on or in the land.
+  anchor: '19'

@@ -1,0 +1,34 @@
+about:
+    namespace: https://usace-data.com/civil-works/glossary/CFR-33-245-5#
+    prefix: CFR-33-245-5
+    template: glossary
+    title:  Code of Federal Regulations - Title 33, Chapter-II, Part 245, Section-245.5
+    description: "33-CFR-245.5 Term definitions are applicable throughout part 245"
+    source:
+        linkType: cfr
+        sourceID: CFR-33-245-5
+        authoritativeSource: 33 CFR 245.5 Definitions
+        glossaryReferences: true
+        url: https://www.ecfr.gov/current/title-33/chapter-II/part-245/section-245.5
+terms:
+
+- label: Abandonment
+  definition: means the surrendering of all rights to a vessel (or other obstruction)
+    and its cargo by the owner, or owners if vessel and cargo are separately owned.
+  anchor: '1'
+- label: Hazard to navigation
+  definition: is an obstruction, usually sunken, that presents sufficient danger to
+    navigation so as to require expeditious, affirmative action such as marking, removal,
+    or redefinition of a designated waterway to provide for navigational safety.
+  anchor: '1'
+- label: Obstruction
+  definition: is anything that restricts, endangers or interferes with navigation.
+  anchor: '1'
+- label: Responsible party
+  definition: means the owner of a vessel and/or cargo, or an operator or lessee where
+    the operator or lessee has substantial control of the vessel's operation.
+  anchor: '1'
+- label: Vessel
+  definition: as used in this part includes any ship, boat, barge, raft, or other
+    water craft.
+  anchor: '1'

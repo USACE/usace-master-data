@@ -1,0 +1,207 @@
+@prefix DoDI-5015.02: <https://usace-data.com/civil-works/glossary/DoDI-5015.02#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+DoDI-5015.02:administrative_records a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "administrative records" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[administrative records]" ;
+    skos:definition "Those records created by all DoD organizations, regardless of organizational level, in performing common functions that support the organization’s mission activities, but do not directly document the performance of mission functions. Administrative records relate to activities such as budget and finance, human resources, medical, equipment and supplies, facilities, public and congressional relations, contracting, and similar administrative housekeeping or facilitative functions common to most agencies" ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "administrative records" .
+
+DoDI-5015.02:campaign a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "campaign" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[campaign]" ;
+    skos:definition "A series of related major operations aimed at achieving strategic and operational objectives within a given time and space." ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "campaign" .
+
+DoDI-5015.02:contingency_operation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "contingency operation" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[contingency operation]" ;
+    skos:definition "A military operation that is either designated by the Secretary of Defense asa contingency operation or becomes a contingency operation as a matter of law pursuant to chapter1 of Title 10, United States Code (Reference (x)). contractor Any person who enters into a contract with the USG for the production of material or forthe performance of services for national defense. DoDpersonnel. Military and civilian employees of the DoD. EIS An information system that contains and provides access to electronic federal records, electronicmessages, and other information." ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "contingency operation" .
+
+DoDI-5015.02:electronic_messages a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "electronic messages" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[electronic messages]" ;
+    skos:definition "E-mail and other types of electronic messages that people use to communicate This includes, but is not limited to, messages created by chat, text, and e-mail systems" ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "electronic messages" .
+
+DoDI-5015.02:electronic_messaging_account._Any_account_that_sends_or_receives_electronic_messages a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "electronic messaging account. Any account that sends or receives electronic messages" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[electronic messaging account. Any account that sends or receives electronic messages]" ;
+    skos:definition "electronicrecords. Any information that is recorded in a form that only a computer can process andthat satisfies the definition of a federal record pursuant to chapter 31 of Reference (d), also knownas the “Federal Records Act.” The term includes both record content and associated metadatathat the agency determines is required to meet agency business needs." ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "electronic messaging account. Any account that sends or receives electronic messages" .
+
+DoDI-5015.02:essential_records_%28formerly_vital_records%29 a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "essential records (formerly vital records)" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[essential records (formerly vital records)]" ;
+    skos:definition "Records an agency needs to meet operational responsibilitiesduring national security emergencies or other emergency conditions (emergency operatingrecords) or to protect the legal and financial rights of the USG and those affected by USGactivities." ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "essential records (formerly vital records)" .
+
+DoDI-5015.02:essential_records_program a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "essential records program" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[essential records program]" ;
+    skos:definition "The policies, plans, and procedures the agency develops and implements - and the resources needed - to identify, use, and protect essential records. This is a programelement of an agency's emergency management function. ITservice. Engagement of the time and effort of a service provider, through the use of IT, whoseprimary purpose is to perform an identifiable task, or tasks, rather than provide an end itemof supply." ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "essential records program" .
+
+DoDI-5015.02:intellectual_capital a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "intellectual capital" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[intellectual capital]" ;
+    skos:definition "Intellectual capital is the value associated with the knowledge, applied experience organizational technology, synergistic interface (corporate-private-public collaboration, and professional skills that provide an organization with relevance within the DoD" ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "intellectual capital" .
+
+DoDI-5015.02:interoperable a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "interoperable" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[interoperable]" ;
+    skos:definition "The condition achieved among communications-electronics systems or items of communicationselectronics equipment when information or services can be exchanged directly andsatisfactorily between them and their users. DoDI5015.02, February 24, 2015 Change1, 08/17/2017 13 GLOSSARY" ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "interoperable" .
+
+DoDI-5015.02:metadata a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "metadata" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[metadata]" ;
+    skos:definition "Information describing the characteristics of data; data or information about data; or descriptiveinformation about an entity's data, data activities, systems, and holdings. For example discovery metadata is a type of metadata that allows data assets to be found using enterprisesearch capabilities." ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "metadata" .
+
+DoDI-5015.02:non-record_materials a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "non-record materials" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[non-record materials]" ;
+    skos:definition "Federally owned informational materials that do not meet the statutory definitionof records in accordance with section 3301 of Reference (d), or that have been excludedfrom coverage by the definition. Excluded materials are extra copies of documents keptonly for reference, stocks of publications and processed documents, and library or museum materialsintended solely for reference or exhibit." ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "non-record materials" .
+
+DoDI-5015.02:operation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "operation" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[operation]" ;
+    skos:definition "A military action or the carrying out of a strategic, operational, tactical, service, training or administrative military mission." ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "operation" .
+
+DoDI-5015.02:operational_records a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "operational records" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[operational records]" ;
+    skos:definition "Records and information in any medium (paper or electronic) created or receivedduring the planning or execution of campaigns and contingency operations within a CCMDs AO. Records generated as result of operational level actions such as fragmentary orders situation reports, military intelligence summaries, etc., are considered operational" ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "operational records" .
+
+DoDI-5015.02:personal_files_%28also_called_personal_papers%29 a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "personal files (also called personal papers)" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[personal files (also called personal papers)]" ;
+    skos:definition "Documentary materials belonging to an individual thatare not used to conduct agency business. Personal files are excluded from the definition of federalrecords and are not owned by the USG. record All recorded information, regardless of form or characteristics, made or received by a federalagency under federal law or in connection with the transaction of public business and preservedor appropriate for preservation by that agency or its legitimate successor as evidence ofthe organization, functions, policies, decisions, procedures, operations, or other activities of theUSG or because of the informational value of the data in them (in accordance with section 3301 of Reference (c)). A DoD record also includes operational logistics, analysis, support, and othermaterials created or received by the DoD Components in training, contingency, and wartimeoperations as well as in all routine and peacetime business." ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "personal files (also called personal papers)" .
+
+DoDI-5015.02:recorded_information a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "recorded information" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[recorded information]" ;
+    skos:definition "All traditional forms of records, regardless of physical form or characteristics including information created, manipulated, communicated, or stored in digital or electronicform." ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "recorded information" .
+
+DoDI-5015.02:recordkeeping_system a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "recordkeeping system" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[recordkeeping system]" ;
+    skos:definition "Manual or electronic system that captures, organizes, and categorizes recordsto facilitate their preservation, retrieval, use, and disposition. recordsmanagement. The planning, controlling, directing, organizing, training, promoting, and othermanagerial activities involved with respect to records creation, records maintenance and use and records disposition in order to achieve adequate and proper documentation of the policiesand transactions of the Federal Government and effective and economical management ofagency operations." ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "recordkeeping system" .
+
+DoDI-5015.02:records a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "records" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[records]" ;
+    skos:definition "Information dealing with internal administrative matters or any other record whose creationis solely required through a Service regulation is not considered operational records for thispurpose. See administrative records." ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "records" .
+
+DoDI-5015.02:unstructured_electronic_records a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "unstructured electronic records" ;
+    dcterms:bibliographicCitation "DoD Instruction Records Management Program" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml#term[unstructured electronic records]" ;
+    skos:definition "Records created using office automation applications, such as email and other messaging applications, word processing, or presentation software" ;
+    skos:inScheme DoDI-5015.02: ;
+    skos:prefLabel "unstructured electronic records" .
+
+DoDI-5015.02: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "DoDI-5015.02 Instruction Records Management Program" ;
+    dcterms:created "2024-07-16T04:25:57.862986+00:00"^^xsd:dateTime ;
+    dcterms:description "DoD Instruction 5015.02, Records Management Program, defines various acronyms and terms commonly used in this instruction to describe policy, responsibility assignments, and records management  procedures within the DoD. These terms are defined in the glossary section of the instruction." ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "DoDI-5015.02 Instruction Records Management Program" ;
+    pav:ImportedFrom "glossaries/CivilWorks/DoDI-5015-02.yaml" ;
+    pav:createdOn "2024-07-16T04:25:57.862986+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "DoD Instruction Records Management Program" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/DoDI-5015.02#" ;
+    skos:hasTopConcept DoDI-5015.02:administrative_records,
+        DoDI-5015.02:campaign,
+        DoDI-5015.02:contingency_operation,
+        DoDI-5015.02:electronic_messages,
+        DoDI-5015.02:electronic_messaging_account._Any_account_that_sends_or_receives_electronic_messages,
+        DoDI-5015.02:essential_records_%28formerly_vital_records%29,
+        DoDI-5015.02:essential_records_program,
+        DoDI-5015.02:intellectual_capital,
+        DoDI-5015.02:interoperable,
+        DoDI-5015.02:metadata,
+        DoDI-5015.02:non-record_materials,
+        DoDI-5015.02:operation,
+        DoDI-5015.02:operational_records,
+        DoDI-5015.02:personal_files_%28also_called_personal_papers%29,
+        DoDI-5015.02:recorded_information,
+        DoDI-5015.02:recordkeeping_system,
+        DoDI-5015.02:records,
+        DoDI-5015.02:unstructured_electronic_records .
+

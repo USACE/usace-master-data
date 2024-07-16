@@ -1,0 +1,3032 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Ontospy > https://usace-data.com/civil-works/glossary/ER-5-1-11#</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <style type="text/css" media="screen">
+
+
+  body {
+	  margin-left: 6em;
+	  margin-right: 12em;
+	  text-align: justify;
+    padding: 2em 1em 2em 70px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  :link { color: #00C; background: transparent }
+  :visited { color: #00C; background: transparent }
+  a:active { color: #C00; background: transparent }
+
+  a:link img, a:visited img { border-style: none } /* no border on img links */
+
+  a:hover {color: white; background: #00C; }
+  a.backlink:hover {color: white; background: grey; }
+  a.greylink:hover {color: white; background: grey; }
+
+  .margintop {
+  	 margin-top: 40px;
+  }
+
+
+  dt, dd { margin-top: 10px; margin-bottom: 0 } /* opera 3.50 */
+  dt { font-weight: bold }
+
+
+  h1, h2, h3, h4, h5, h6 { text-align: left }
+  /* background should be transparent, but WebTV has a bug */
+  h1, h2, h3, h4, h5 { color: #005A9C; background: white }
+  h1.title { font: 200% sans-serif }
+  h1 { font: 170% sans-serif }
+  h2 { font: 140% sans-serif }
+  h3 { font: 120% sans-serif }
+  h4 { font: bold 100% sans-serif }
+  h5 { font: italic 100% sans-serif }
+  h6 { font: small-caps 100% sans-serif }
+
+  .hide { display: none }
+
+
+  pre { margin-left: 2em }
+
+  pre, code { font-family: monospace } /* navigator 4 requires this */
+
+
+  .implementation {
+  	background: aliceblue;
+	padding: 10px;
+	margin-top: 5px;
+  }
+
+  fieldset {
+	  margin-top: 20px;
+	  padding: 13px;
+      text-align: left;
+  }
+
+  legend {
+	  text-transform: uppercase;
+  }
+
+  .entity-div {
+	  margin: 55px 10px 30px 10px;
+  }
+
+  .entity-section {
+	  margin-bottom: 0px;
+  }
+
+
+  a.backlink {
+	  font-size: 80%;
+	  color: grey;
+  }
+
+  a.greylink {
+	  color: grey;
+  }
+
+
+   .implementation_title {
+
+       font-weight: bold;
+       font-size: 100%;
+   }
+
+.section-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+        .tree-container {
+            width: 3000em;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+		.tree {margin: 10px 0px 30px -20px; padding: 0; display: inline-block;}
+
+		.tree ul {
+			padding-top: 20px; position: relative;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		.tree li {
+			float: left; text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*We will use ::before and ::after to draw the connectors*/
+
+		.tree li::before, .tree li::after{
+			content: '';
+			position: absolute; top: 0; right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%; height: 20px;
+		}
+		.tree li::after{
+			right: auto; left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		/*We need to remove left-right connectors from elements without
+		any siblings*/
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		/*Remove space from the top of single children*/
+		.tree li:only-child{ padding-top: 0;}
+
+		/*Remove left connector from first child and
+		right connector from last child*/
+		.tree li:first-child::before, .tree li:last-child::after{
+			border: 0 none;
+		}
+		/*Adding back the vertical connector to the last nodes*/
+		.tree li:last-child::before{
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+			-webkit-border-radius: 0 5px 0 0;
+			-moz-border-radius: 0 5px 0 0;
+		}
+		.tree li:first-child::after{
+			border-radius: 5px 0 0 0;
+			-webkit-border-radius: 5px 0 0 0;
+			-moz-border-radius: 5px 0 0 0;
+		}
+
+		/*Time to add downward connectors from parents*/
+		.tree ul ul::before{
+			content: '';
+			position: absolute; top: 0; left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0; height: 20px;
+		}
+
+		.tree li a{
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #666;
+			font-family: arial, verdana, tahoma;
+			font-size: 11px;
+			display: inline-block;
+
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*Time for some hover effects*/
+		/*We will apply the hover effect the the lineage of the element also*/
+		.tree li a:hover, .tree li a:hover+ul li a {
+			background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+		}
+		/*Connector styles on hover*/
+		.tree li a:hover+ul li::after,
+		.tree li a:hover+ul li::before,
+		.tree li a:hover+ul::before,
+		.tree li a:hover+ul ul::before{
+			border-color:  #94a0b4;
+		}
+
+		/*Thats all. I hope you enjoyed it.
+		Thanks :)*/
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+	
+	
+		
+			<h1 class="title"><a href="" target="_blank">https://usace-data.com/civil-works/glossary/ER-5-1-11#</a></h1>
+			<h3><p>USACE Business Process Engineering Report 5-1-11, defines various acronyms and terms commonly used in this report to describe policy and doctrine used to accomplish business processes across the U.S. Army Corps of Engineers (USACE). These terms are defined in the glossary section of the regulation.</p></h3>
+		
+
+	
+		
+		
+
+
+	<p><small>Ontology documentation automatically generated by <a class="greylink" href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> on Tue, 16 Jul 2024 04:27:27</small></p>
+
+
+
+	
+
+
+	<hr class="margintop">
+
+	<h1><a name="toc">&nbsp;</a>Table of Content</h1>
+
+	<ul>
+		<li><a href="#ontologies">Ontologies</a></li>
+		<li><a href="#a-z">A-Z of Terms</a></li>
+		
+		
+		
+		
+		<li><a href="#skosconcepts">SKOS Concepts</a></li>
+		
+	</ul>
+
+
+
+	
+
+	
+
+	<hr class="margintop">
+
+	<h1><a name="ontologies"></a>Ontologies</h1>
+
+		
+
+
+			<fieldset> <legend><h3><a href="https://usace-data.com/civil-works/glossary/ER-5-1-11#" target="_blank">https://usace-data.com/civil-works/glossary/ER-5-1-11#</a></h3></legend>
+
+			<h4 style="margin-top: -20px;"><p>USACE Business Process Engineering Report 5-1-11, defines various acronyms and terms commonly used in this report to describe policy and doctrine used to accomplish business processes across the U.S. Army Corps of Engineers (USACE). These terms are defined in the glossary section of the regulation.</p></h4>
+
+			
+			
+				
+					<dt>dcterms:created</dt>
+				  
+			
+			<dd><p>2024-07-16T04:27:22.900695+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:description</dt>
+				  
+			
+			<dd><p>USACE Business Process Engineering Report 5-1-11, defines various acronyms and terms commonly used in this report to describe policy and doctrine used to accomplish business processes across the U.S. Army Corps of Engineers (USACE). These terms are defined in the glossary section of the regulation.</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:publisher</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:rights</dt>
+				  
+			
+			<dd><p>MIT</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:title</dt>
+				  
+			
+			<dd><p>Engineering Report 5-1-11 USACE Business Process</p></dd>
+			
+			
+				</dl>
+					<dt>pav:ImportedFrom</dt>
+				  
+			
+			<dd><p>glossaries/CivilWorks/ER-5-1-11.yaml</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdOn</dt>
+				  
+			
+			<dd><p>2024-07-16T04:27:22.900695+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdWith</dt>
+				  
+			
+			<dd><p>gloss</p></dd>
+			
+			
+				</dl>
+					<dt>pav:wasInfluencedBy</dt>
+				  
+			
+			<dd><p>Engineering Report 5-1-11 USACE Business Process</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.knowledgesmarts.com/ontologies/wov#Glossary</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2002/07/owl#Ontology</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2004/02/skos/core#ConceptScheme</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#Vocabulary</p></dd>
+			
+			
+				</dl>
+					<dt>rdfs:label</dt>
+				  
+			
+			<dd><p>Engineering Report 5-1-11 USACE Business Process</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Automated_Information_Systems</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Community_of_Practice</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Corporate_Board</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Deputy_for_Programs_and_Project_Management</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#District_Support_Teams</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Empowerment</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Field_Operating_Activities</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Functional_Organization</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Matrix_Team</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Mega_Projects</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Operations</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Operations_Project_Managers</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Process</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Program</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Program_Management</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Program_Management_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Program_Manager</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Project</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Project_Delivery_Business_Process</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Project_Delivery_Team</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Project_Management</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Project_Management_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Project_Manager</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Quality</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Quality_Assurance</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Quality_Control</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Regional_Business_Center</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Regional_Integration_Team</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Resource_Provider</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Stakeholder</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Technical_Lead</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Vertical_Team</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Virtual_Team</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#Work</p></dd>
+			
+			
+				</dl>
+					<dt>vann:preferredNamespaceUri</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/ER-5-1-11#</p></dd>
+			
+
+			</fieldset>
+
+		
+
+	
+
+
+
+	
+
+	<hr class="margintop">
+	<h1><a  name="a-z">&nbsp;</a>A-Z of terms</h1>
+
+	<div id="azterms">
+
+	This is a complete alphabetical A-Z index of all terms, by main logical type.
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		<fieldset> <legend>SKOS Concepts (34)</legend>
+			&nbsp;<a href="#ER-5-1-11:Automated_Information_Systems">ER-5-1-11:Automated_Information_Systems</a>
+			|  <a href="#ER-5-1-11:Community_of_Practice">ER-5-1-11:Community_of_Practice</a>
+			|  <a href="#ER-5-1-11:Corporate_Board">ER-5-1-11:Corporate_Board</a>
+			|  <a href="#ER-5-1-11:Deputy_for_Programs_and_Project_Management">ER-5-1-11:Deputy_for_Programs_and_Project_Management</a>
+			|  <a href="#ER-5-1-11:District_Support_Teams">ER-5-1-11:District_Support_Teams</a>
+			|  <a href="#ER-5-1-11:Empowerment">ER-5-1-11:Empowerment</a>
+			|  <a href="#ER-5-1-11:Field_Operating_Activities">ER-5-1-11:Field_Operating_Activities</a>
+			|  <a href="#ER-5-1-11:Functional_Organization">ER-5-1-11:Functional_Organization</a>
+			|  <a href="#ER-5-1-11:Matrix_Team">ER-5-1-11:Matrix_Team</a>
+			|  <a href="#ER-5-1-11:Mega_Projects">ER-5-1-11:Mega_Projects</a>
+			|  <a href="#ER-5-1-11:Operations">ER-5-1-11:Operations</a>
+			|  <a href="#ER-5-1-11:Operations_Project_Managers">ER-5-1-11:Operations_Project_Managers</a>
+			|  <a href="#ER-5-1-11:Process">ER-5-1-11:Process</a>
+			|  <a href="#ER-5-1-11:Program">ER-5-1-11:Program</a>
+			|  <a href="#ER-5-1-11:Program_Management">ER-5-1-11:Program_Management</a>
+			|  <a href="#ER-5-1-11:Program_Management_Plan">ER-5-1-11:Program_Management_Plan</a>
+			|  <a href="#ER-5-1-11:Program_Manager">ER-5-1-11:Program_Manager</a>
+			|  <a href="#ER-5-1-11:Project">ER-5-1-11:Project</a>
+			|  <a href="#ER-5-1-11:Project_Delivery_Business_Process">ER-5-1-11:Project_Delivery_Business_Process</a>
+			|  <a href="#ER-5-1-11:Project_Delivery_Team">ER-5-1-11:Project_Delivery_Team</a>
+			|  <a href="#ER-5-1-11:Project_Management">ER-5-1-11:Project_Management</a>
+			|  <a href="#ER-5-1-11:Project_Management_Plan">ER-5-1-11:Project_Management_Plan</a>
+			|  <a href="#ER-5-1-11:Project_Manager">ER-5-1-11:Project_Manager</a>
+			|  <a href="#ER-5-1-11:Quality">ER-5-1-11:Quality</a>
+			|  <a href="#ER-5-1-11:Quality_Assurance">ER-5-1-11:Quality_Assurance</a>
+			|  <a href="#ER-5-1-11:Quality_Control">ER-5-1-11:Quality_Control</a>
+			|  <a href="#ER-5-1-11:Regional_Business_Center">ER-5-1-11:Regional_Business_Center</a>
+			|  <a href="#ER-5-1-11:Regional_Integration_Team">ER-5-1-11:Regional_Integration_Team</a>
+			|  <a href="#ER-5-1-11:Resource_Provider">ER-5-1-11:Resource_Provider</a>
+			|  <a href="#ER-5-1-11:Stakeholder">ER-5-1-11:Stakeholder</a>
+			|  <a href="#ER-5-1-11:Technical_Lead">ER-5-1-11:Technical_Lead</a>
+			|  <a href="#ER-5-1-11:Vertical_Team">ER-5-1-11:Vertical_Team</a>
+			|  <a href="#ER-5-1-11:Virtual_Team">ER-5-1-11:Virtual_Team</a>
+			|  <a href="#ER-5-1-11:Work">ER-5-1-11:Work</a>
+			  
+		</fieldset>
+
+	
+
+	
+
+	</div>
+
+
+
+	
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+	
+
+
+		<hr class="margintop">
+		<h1 class="margintop"><a  name="skosconcepts">&nbsp;</a>SKOS Concepts</h1>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Automated_Information_Systems" href="#ER-5-1-11:Automated_Information_Systems">ER-5-1-11:Automated_Information_Systems</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Automated_Information_Systems</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Automated_Information_Systems is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A combination of computer hardware and software, telecommunications information technology, personnel, and other resources that collect, record, process, store, communicate, retrieve, and display information.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Automated_Information_Systems a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Automated Information Systems&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Automated Information Systems]&#34; ;<br>
+    skos:altLabel &#34;AIS&#34; ;<br>
+    skos:definition &#34;A combination of computer hardware and software, telecommunications information technology, personnel, and other resources that collect, record, process, store, communicate, retrieve, and display information.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Automated Information Systems&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Community_of_Practice" href="#ER-5-1-11:Community_of_Practice">ER-5-1-11:Community_of_Practice</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Community_of_Practice</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Community_of_Practice is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A group of people who regularly interact to collectively learn, solve problems, build skills and competencies, and develop best practices around a shared concern, goal, mission, set of problems, or work practice. More information on the various communities of practice in USACE is available from their respective websites.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Community_of_Practice a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Community of Practice&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Community of Practice]&#34; ;<br>
+    skos:altLabel &#34;CoP&#34; ;<br>
+    skos:definition &#34;A group of people who regularly interact to collectively learn, solve problems, build skills and competencies, and develop best practices around a shared concern, goal, mission, set of problems, or work practice. More information on the various communities of practice in USACE is available from their respective websites.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Community of Practice&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Corporate_Board" href="#ER-5-1-11:Corporate_Board">ER-5-1-11:Corporate_Board</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Corporate_Board</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Corporate_Board is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A group of District or Center leaders who make resource decisions based upon what is best for the mission, while considering impacts to all stakeholders.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Corporate_Board a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Corporate Board&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Corporate Board]&#34; ;<br>
+    skos:altLabel &#34;CB&#34; ;<br>
+    skos:definition &#34;A group of District or Center leaders who make resource decisions based upon what is best for the mission, while considering impacts to all stakeholders.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Corporate Board&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Deputy_for_Programs_and_Project_Management" href="#ER-5-1-11:Deputy_for_Programs_and_Project_Management">ER-5-1-11:Deputy_for_Programs_and_Project_Management</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Deputy_for_Programs_and_Project_Management</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Deputy_for_Programs_and_Project_Management is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The civilian deputy to the District Commander. DPM as used in this regulation includes Center positions such as Deputy for Programs and Technical Management and Deputy for Programs and Project Management/Project Delivery Team. The DPM is authorized to accept and/or reject work by PDBP Process 1000, titled work acceptance.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Deputy_for_Programs_and_Project_Management a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Deputy for Programs and Project Management&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Deputy for Programs and Project Management]&#34; ;<br>
+    skos:altLabel &#34;DPM&#34; ;<br>
+    skos:definition &#34;The civilian deputy to the District Commander. DPM as used in this regulation includes Center positions such as Deputy for Programs and Technical Management and Deputy for Programs and Project Management/Project Delivery Team. The DPM is authorized to accept and/or reject work by PDBP Process 1000, titled work acceptance.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Deputy for Programs and Project Management&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:District_Support_Teams" href="#ER-5-1-11:District_Support_Teams">ER-5-1-11:District_Support_Teams</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:District_Support_Teams</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:District_Support_Teams is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Cross-functional teams at MSC that facilitate resolution of issues and champion district causes.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:District_Support_Teams a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;District Support Teams&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[District Support Teams]&#34; ;<br>
+    skos:altLabel &#34;DST&#34; ;<br>
+    skos:definition &#34;Cross-functional teams at MSC that facilitate resolution of issues and champion district causes.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;District Support Teams&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Empowerment" href="#ER-5-1-11:Empowerment">ER-5-1-11:Empowerment</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Empowerment</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Empowerment is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Authority to exercise judgment and take action, with concomitant responsibility for resultant positive or negative consequences.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Empowerment a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Empowerment&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Empowerment]&#34; ;<br>
+    skos:definition &#34;Authority to exercise judgment and take action, with concomitant responsibility for resultant positive or negative consequences.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Empowerment&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Field_Operating_Activities" href="#ER-5-1-11:Field_Operating_Activities">ER-5-1-11:Field_Operating_Activities</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Field_Operating_Activities</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Field_Operating_Activities is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Districts, Centers or Laboratories are referred to as FOAs in this ER. Major Subordinate Commands (MSCs) are Division offices.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Field_Operating_Activities a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Field Operating Activities&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Field Operating Activities]&#34; ;<br>
+    skos:altLabel &#34;FOAs&#34; ;<br>
+    skos:definition &#34;Districts, Centers or Laboratories are referred to as FOAs in this ER. Major Subordinate Commands (MSCs) are Division offices.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Field Operating Activities&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Functional_Organization" href="#ER-5-1-11:Functional_Organization">ER-5-1-11:Functional_Organization</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Functional_Organization</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Functional_Organization is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Organization structure in which staff are grouped by technical specialty.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Functional_Organization a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Functional Organization&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Functional Organization]&#34; ;<br>
+    skos:definition &#34;Organization structure in which staff are grouped by technical specialty.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Functional Organization&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Matrix_Team" href="#ER-5-1-11:Matrix_Team">ER-5-1-11:Matrix_Team</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Matrix_Team</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Matrix_Team is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Group of people working across organization boundaries for a common purpose.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Matrix_Team a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Matrix Team&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Matrix Team]&#34; ;<br>
+    skos:definition &#34;Group of people working across organization boundaries for a common purpose.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Matrix Team&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Mega_Projects" href="#ER-5-1-11:Mega_Projects">ER-5-1-11:Mega_Projects</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Mega_Projects</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Mega_Projects is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Projects with specific attributes (cost, time, risk, national significance, uniqueness and overlapping dependencies) named by HQUSACE Civil Works and Military Programs Directors in a yearly ECB. Mega projects require enhanced management controls.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Mega_Projects a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Mega Projects&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Mega Projects]&#34; ;<br>
+    skos:definition &#34;Projects with specific attributes (cost, time, risk, national significance, uniqueness and overlapping dependencies) named by HQUSACE Civil Works and Military Programs Directors in a yearly ECB. Mega projects require enhanced management controls.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Mega Projects&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Operations" href="#ER-5-1-11:Operations">ER-5-1-11:Operations</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Operations</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Operations is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>a.) The ongoing execution of activities that produces the same product or provides a continuous or repetitive service. The objective of ongoing operations is to sustain something (business, facility).<br>
+b.) Within USACE, the organization that operates and maintains facilities and services that provide river and harbor navigation, flood damage reduction, water supply, hydroelectric power, recreation, environmental and fish and wildlife sustainment, restoration and protection. Its Regulatory mission protects the Nation&#39;s waterways and wetlands; and it undertakes disaster relief and recovery work through its Emergency Management/Readiness function.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Operations a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Operations&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Operations]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;a.) The ongoing execution of activities that produces the same product or provides a continuous or repetitive service. The objective of ongoing operations is to sustain something (business, facility).<br>
+b.) Within USACE, the organization that operates and maintains facilities and services that provide river and harbor navigation, flood damage reduction, water supply, hydroelectric power, recreation, environmental and fish and wildlife sustainment, restoration and protection. Its Regulatory mission protects the Nation&#39;s waterways and wetlands; and it undertakes disaster relief and recovery work through its Emergency Management/Readiness function.&#34;&#34;&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Operations&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Operations_Project_Managers" href="#ER-5-1-11:Operations_Project_Managers">ER-5-1-11:Operations_Project_Managers</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Operations_Project_Managers</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Operations_Project_Managers is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Managers responsible for the overall O&amp;M of one or more multi-purpose water resource development sites, leading teams that execute the projects or recurring work activities at these sites.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Operations_Project_Managers a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Operations Project Managers&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Operations Project Managers]&#34; ;<br>
+    skos:altLabel &#34;OPM&#34; ;<br>
+    skos:definition &#34;Managers responsible for the overall O&amp;M of one or more multi-purpose water resource development sites, leading teams that execute the projects or recurring work activities at these sites.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Operations Project Managers&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Process" href="#ER-5-1-11:Process">ER-5-1-11:Process</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Process</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Process is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A series of actions, tasks, or procedures with a common objective to achieve an end or result.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Process a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Process&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Process]&#34; ;<br>
+    skos:definition &#34;A series of actions, tasks, or procedures with a common objective to achieve an end or result.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Process&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Program" href="#ER-5-1-11:Program">ER-5-1-11:Program</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Program</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Program is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A collection of related projects, services, routine administrative and recurring operational processes, or some mixture of these, which are managed in a coordinated way to obtain benefits and control not available from managing them individually.1 Programs may be categorized by funding source (type), stakeholder, similarity of scope, or other common criteria for which resources are allocated and collectively managed.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Program a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Program&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Program]&#34; ;<br>
+    skos:definition &#34;A collection of related projects, services, routine administrative and recurring operational processes, or some mixture of these, which are managed in a coordinated way to obtain benefits and control not available from managing them individually.1 Programs may be categorized by funding source (type), stakeholder, similarity of scope, or other common criteria for which resources are allocated and collectively managed.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Program&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Program_Management" href="#ER-5-1-11:Program_Management">ER-5-1-11:Program_Management</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Program_Management</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Program_Management is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The centralized, coordinated management of programs within available resources, in line with applicable laws, policies, and regulations, to achieve strategic benefits and objectives.2 Under program management, programs, projects and non-project activities are aggregated for oversight and direction by the organization&#39;s senior leadership.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Program_Management a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Program Management&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Program Management]&#34; ;<br>
+    skos:definition &#34;The centralized, coordinated management of programs within available resources, in line with applicable laws, policies, and regulations, to achieve strategic benefits and objectives.2 Under program management, programs, projects and non-project activities are aggregated for oversight and direction by the organization&#39;s senior leadership.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Program Management&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Program_Management_Plan" href="#ER-5-1-11:Program_Management_Plan">ER-5-1-11:Program_Management_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Program_Management_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Program_Management_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A formal, approved, living document used to define program requirements and expectations, including accountability and performance measurements, and guide program execution and control. The PgMP is the &#39;umbrella&#39; process for completion of project planning phase. This process is performed after the work has been accepted and the Project Manager assigned.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Program_Management_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Program Management Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Program Management Plan]&#34; ;<br>
+    skos:altLabel &#34;PgMP&#34; ;<br>
+    skos:definition &#34;A formal, approved, living document used to define program requirements and expectations, including accountability and performance measurements, and guide program execution and control. The PgMP is the &#39;umbrella&#39; process for completion of project planning phase. This process is performed after the work has been accepted and the Project Manager assigned.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Program Management Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Program_Manager" href="#ER-5-1-11:Program_Manager">ER-5-1-11:Program_Manager</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Program_Manager</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Program_Manager is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Assigned to manage unique stakeholder requirements for a set of related projects, services, or activities. Program managers include Operations Project Managers responsible for the overall O&amp;M of one or more multi-purpose water resource development sites, leading teams that execute the projects or recurring work activities at these sites.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Program_Manager a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Program Manager&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Program Manager]&#34; ;<br>
+    skos:altLabel &#34;PgM&#34; ;<br>
+    skos:definition &#34;Assigned to manage unique stakeholder requirements for a set of related projects, services, or activities. Program managers include Operations Project Managers responsible for the overall O&amp;M of one or more multi-purpose water resource development sites, leading teams that execute the projects or recurring work activities at these sites.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Program Manager&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Project" href="#ER-5-1-11:Project">ER-5-1-11:Project</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Project</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Project is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A temporary endeavor undertaken to create a unique product, service, or result.3 Internal services are discrete projects when they are unique and non-recurring.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Project a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Project]&#34; ;<br>
+    skos:definition &#34;A temporary endeavor undertaken to create a unique product, service, or result.3 Internal services are discrete projects when they are unique and non-recurring.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Project&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Project_Delivery_Business_Process" href="#ER-5-1-11:Project_Delivery_Business_Process">ER-5-1-11:Project_Delivery_Business_Process</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Project_Delivery_Business_Process</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Project_Delivery_Business_Process is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A fundamental subset of the USACE business process used to deliver quality projects. It reflects the USACE corporate commitment to provide stakeholder service that is inclusive, seamless, flexible, effective, and efficient. It embodies communication, leadership, systematic and coordinated management, teamwork, partnering, effective balancing of competing demands, and primary accountability for the life cycle of a project.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Project_Delivery_Business_Process a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project Delivery Business Process&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Project Delivery Business Process]&#34; ;<br>
+    skos:altLabel &#34;PDBP&#34; ;<br>
+    skos:definition &#34;A fundamental subset of the USACE business process used to deliver quality projects. It reflects the USACE corporate commitment to provide stakeholder service that is inclusive, seamless, flexible, effective, and efficient. It embodies communication, leadership, systematic and coordinated management, teamwork, partnering, effective balancing of competing demands, and primary accountability for the life cycle of a project.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Project Delivery Business Process&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Project_Delivery_Team" href="#ER-5-1-11:Project_Delivery_Team">ER-5-1-11:Project_Delivery_Team</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Project_Delivery_Team</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Project_Delivery_Team is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The PDT is a cross-functional matrixed team that includes all the necessary functional and support personnel with the requisite skills and expertise, from the District, Divisions, Centers of Expertise and/or labs, in order to deliver the project.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Project_Delivery_Team a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project Delivery Team&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Project Delivery Team]&#34; ;<br>
+    skos:altLabel &#34;PDT&#34; ;<br>
+    skos:definition &#34;The PDT is a cross-functional matrixed team that includes all the necessary functional and support personnel with the requisite skills and expertise, from the District, Divisions, Centers of Expertise and/or labs, in order to deliver the project.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Project Delivery Team&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Project_Management" href="#ER-5-1-11:Project_Management">ER-5-1-11:Project_Management</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Project_Management</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Project_Management is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The application of knowledge, skills, tools, and techniques to project activities in order to meet project requirements.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Project_Management a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project Management&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Project Management]&#34; ;<br>
+    skos:definition &#34;The application of knowledge, skills, tools, and techniques to project activities in order to meet project requirements.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Project Management&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Project_Management_Plan" href="#ER-5-1-11:Project_Management_Plan">ER-5-1-11:Project_Management_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Project_Management_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Project_Management_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A formal, approved, living document used to define requirements and expected outcomes and guide project execution and control. The PMP is the &#39;umbrella&#39; process for completion of project planning phase; it is performed after the work has been accepted and the Project Manager assigned. The primary uses of the PMP are to facilitate communication among participants, assign responsibilities, define assumptions, and document decisions to establish baseline plans for scope, cost, schedule and quality objectives against which performance can be measured, and to adjust these plans as actuals dictate. The PMP is developed by the project delivery team, including the stakeholder. The approval of the PMP should be delegated to the lowest appropriate supervisory level in order to maintain a minimal level of management control.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Project_Management_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project Management Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Project Management Plan]&#34; ;<br>
+    skos:altLabel &#34;PMP&#34; ;<br>
+    skos:definition &#34;A formal, approved, living document used to define requirements and expected outcomes and guide project execution and control. The PMP is the &#39;umbrella&#39; process for completion of project planning phase; it is performed after the work has been accepted and the Project Manager assigned. The primary uses of the PMP are to facilitate communication among participants, assign responsibilities, define assumptions, and document decisions to establish baseline plans for scope, cost, schedule and quality objectives against which performance can be measured, and to adjust these plans as actuals dictate. The PMP is developed by the project delivery team, including the stakeholder. The approval of the PMP should be delegated to the lowest appropriate supervisory level in order to maintain a minimal level of management control.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Project Management Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Project_Manager" href="#ER-5-1-11:Project_Manager">ER-5-1-11:Project_Manager</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Project_Manager</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Project_Manager is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Assigned to achieve the project objectives, the person who manages scope, schedule, budget and quality while leading a project delivery team (PDT.) Project managers may be assigned to any organizational or geographic element.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Project_Manager a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project Manager&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Project Manager]&#34; ;<br>
+    skos:altLabel &#34;PM&#34; ;<br>
+    skos:definition &#34;Assigned to achieve the project objectives, the person who manages scope, schedule, budget and quality while leading a project delivery team (PDT.) Project managers may be assigned to any organizational or geographic element.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Project Manager&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Quality" href="#ER-5-1-11:Quality">ER-5-1-11:Quality</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Quality</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Quality is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The degree to which a set of inherent characteristics fulfills requirements.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Quality a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Quality&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Quality]&#34; ;<br>
+    skos:definition &#34;The degree to which a set of inherent characteristics fulfills requirements.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Quality&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Quality_Assurance" href="#ER-5-1-11:Quality_Assurance">ER-5-1-11:Quality_Assurance</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Quality_Assurance</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Quality_Assurance is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>That part of quality management focused on providing confidence that quality requirements of a project, product, service, or process will be fulfilled. QA includes those processes employed to ensure that QC activities are being accomplished in line with planned activities and that those QC activities are effective in producing a product that meets the desired end quality.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Quality_Assurance a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Quality Assurance&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Quality Assurance]&#34; ;<br>
+    skos:altLabel &#34;QA&#34; ;<br>
+    skos:definition &#34;That part of quality management focused on providing confidence that quality requirements of a project, product, service, or process will be fulfilled. QA includes those processes employed to ensure that QC activities are being accomplished in line with planned activities and that those QC activities are effective in producing a product that meets the desired end quality.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Quality Assurance&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Quality_Control" href="#ER-5-1-11:Quality_Control">ER-5-1-11:Quality_Control</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Quality_Control</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Quality_Control is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>That part of quality management focused on fulfilling quality requirements of a project, product, service, or process. It includes those processes used to ensure performance meets agreed upon stakeholder requirements that are consistent with law, regulations, policies, sound technical criteria, schedules, and budget.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Quality_Control a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Quality Control&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Quality Control]&#34; ;<br>
+    skos:altLabel &#34;QC&#34; ;<br>
+    skos:definition &#34;That part of quality management focused on fulfilling quality requirements of a project, product, service, or process. It includes those processes used to ensure performance meets agreed upon stakeholder requirements that are consistent with law, regulations, policies, sound technical criteria, schedules, and budget.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Quality Control&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Regional_Business_Center" href="#ER-5-1-11:Regional_Business_Center">ER-5-1-11:Regional_Business_Center</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Regional_Business_Center</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Regional_Business_Center is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An MSC and its districts acting together as a regional business entity. This vertical and lateral integration of organizational capabilities, resource sharing, technical expertise, project management, and project delivery broadens and enhances the range of services and quality within the region.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Regional_Business_Center a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Regional Business Center&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Regional Business Center]&#34; ;<br>
+    skos:altLabel &#34;RBC&#34; ;<br>
+    skos:definition &#34;An MSC and its districts acting together as a regional business entity. This vertical and lateral integration of organizational capabilities, resource sharing, technical expertise, project management, and project delivery broadens and enhances the range of services and quality within the region.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Regional Business Center&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Regional_Integration_Team" href="#ER-5-1-11:Regional_Integration_Team">ER-5-1-11:Regional_Integration_Team</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Regional_Integration_Team</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Regional_Integration_Team is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Cross-functional teams at HQUSACE that facilitate resolution of issues and champion RBC causes.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Regional_Integration_Team a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Regional Integration Team&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Regional Integration Team]&#34; ;<br>
+    skos:altLabel &#34;RIT&#34; ;<br>
+    skos:definition &#34;Cross-functional teams at HQUSACE that facilitate resolution of issues and champion RBC causes.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Regional Integration Team&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Resource_Provider" href="#ER-5-1-11:Resource_Provider">ER-5-1-11:Resource_Provider</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Resource_Provider</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Resource_Provider is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A functional chief responsible for mentoring, training of PDT members, assigning work, balancing workload and resolving resource and priority conflicts on an ongoing basis.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Resource_Provider a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Resource Provider&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Resource Provider]&#34; ;<br>
+    skos:definition &#34;A functional chief responsible for mentoring, training of PDT members, assigning work, balancing workload and resolving resource and priority conflicts on an ongoing basis.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Resource Provider&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Stakeholder" href="#ER-5-1-11:Stakeholder">ER-5-1-11:Stakeholder</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Stakeholder</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Stakeholder is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Stakeholder as used in this regulation may be a number of people/organizations. In general, the stakeholder is any individual or organization for which USACE delivers projects, or services to meet specific needs. Stakeholders may be either external or internal to USACE. For example, Engineering Branch should consider the PM a stakeholder when they are performing design preparation or design review activities. Contracting Branch should consider the PM a stakeholder when they are reviewing or executing the contract acquisition activities.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Stakeholder a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Stakeholder&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Stakeholder]&#34; ;<br>
+    skos:definition &#34;Stakeholder as used in this regulation may be a number of people/organizations. In general, the stakeholder is any individual or organization for which USACE delivers projects, or services to meet specific needs. Stakeholders may be either external or internal to USACE. For example, Engineering Branch should consider the PM a stakeholder when they are performing design preparation or design review activities. Contracting Branch should consider the PM a stakeholder when they are reviewing or executing the contract acquisition activities.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Stakeholder&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Technical_Lead" href="#ER-5-1-11:Technical_Lead">ER-5-1-11:Technical_Lead</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Technical_Lead</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Technical_Lead is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Designated PDT member responsible for ensuring technical quality is achieved. Role may be filled by a design manager, discipline lead, or senior technical team member and assigned by the district division that is responsible for technical deliverables. Must be involved in all project decisions that affect quality management processes. For projects that require professional engineering services, the technical lead must possess an active professional registration (e.g. P.E., R.A., P.L.A., P.G.), unless waived by the division chief responsible for Engineering.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Technical_Lead a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Technical Lead&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Technical Lead]&#34; ;<br>
+    skos:altLabel &#34;TL&#34; ;<br>
+    skos:definition &#34;Designated PDT member responsible for ensuring technical quality is achieved. Role may be filled by a design manager, discipline lead, or senior technical team member and assigned by the district division that is responsible for technical deliverables. Must be involved in all project decisions that affect quality management processes. For projects that require professional engineering services, the technical lead must possess an active professional registration (e.g. P.E., R.A., P.L.A., P.G.), unless waived by the division chief responsible for Engineering.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Technical Lead&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Vertical_Team" href="#ER-5-1-11:Vertical_Team">ER-5-1-11:Vertical_Team</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Vertical_Team</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Vertical_Team is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Team that is composed of personnel from different command levels in the organization, i.e. MSCs and/or HQ.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Vertical_Team a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Vertical Team&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Vertical Team]&#34; ;<br>
+    skos:definition &#34;Team that is composed of personnel from different command levels in the organization, i.e. MSCs and/or HQ.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Vertical Team&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Virtual_Team" href="#ER-5-1-11:Virtual_Team">ER-5-1-11:Virtual_Team</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Virtual_Team</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Virtual_Team is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Team working across geographic or organizational boundaries without physical co-location.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Virtual_Team a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Virtual Team&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Virtual Team]&#34; ;<br>
+    skos:definition &#34;Team working across geographic or organizational boundaries without physical co-location.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Virtual Team&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="ER-5-1-11:Work" href="#ER-5-1-11:Work">ER-5-1-11:Work</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">ER-5-1-11:Work</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> ER-5-1-11:Work is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Sustained physical or mental effort or activity directed toward the production or accomplishment of something. Work of a business can generally be categorized as either projects or operations, although there may be some overlap.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix ER-5-1-11: &lt;https://usace-data.com/civil-works/glossary/ER-5-1-11#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>ER-5-1-11:Work a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Work&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/ER-5-1-11.yaml#term[Work]&#34; ;<br>
+    skos:definition &#34;Sustained physical or mental effort or activity directed toward the production or accomplishment of something. Work of a business can generally be categorized as either projects or operations, although there may be some overlap.&#34; ;<br>
+    skos:inScheme ER-5-1-11: ;<br>
+    skos:prefLabel &#34;Work&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	<hr>
+	<small>Ontology documentation automatically generated by <a class="greylink"  href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> v2.1.1 on Tue, 16 Jul 2024 04:27:27</small>
+
+
+</body>
+</html>

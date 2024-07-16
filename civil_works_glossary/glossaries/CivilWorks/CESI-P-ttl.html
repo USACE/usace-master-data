@@ -1,0 +1,3772 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Ontospy > https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <style type="text/css" media="screen">
+
+
+  body {
+	  margin-left: 6em;
+	  margin-right: 12em;
+	  text-align: justify;
+    padding: 2em 1em 2em 70px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  :link { color: #00C; background: transparent }
+  :visited { color: #00C; background: transparent }
+  a:active { color: #C00; background: transparent }
+
+  a:link img, a:visited img { border-style: none } /* no border on img links */
+
+  a:hover {color: white; background: #00C; }
+  a.backlink:hover {color: white; background: grey; }
+  a.greylink:hover {color: white; background: grey; }
+
+  .margintop {
+  	 margin-top: 40px;
+  }
+
+
+  dt, dd { margin-top: 10px; margin-bottom: 0 } /* opera 3.50 */
+  dt { font-weight: bold }
+
+
+  h1, h2, h3, h4, h5, h6 { text-align: left }
+  /* background should be transparent, but WebTV has a bug */
+  h1, h2, h3, h4, h5 { color: #005A9C; background: white }
+  h1.title { font: 200% sans-serif }
+  h1 { font: 170% sans-serif }
+  h2 { font: 140% sans-serif }
+  h3 { font: 120% sans-serif }
+  h4 { font: bold 100% sans-serif }
+  h5 { font: italic 100% sans-serif }
+  h6 { font: small-caps 100% sans-serif }
+
+  .hide { display: none }
+
+
+  pre { margin-left: 2em }
+
+  pre, code { font-family: monospace } /* navigator 4 requires this */
+
+
+  .implementation {
+  	background: aliceblue;
+	padding: 10px;
+	margin-top: 5px;
+  }
+
+  fieldset {
+	  margin-top: 20px;
+	  padding: 13px;
+      text-align: left;
+  }
+
+  legend {
+	  text-transform: uppercase;
+  }
+
+  .entity-div {
+	  margin: 55px 10px 30px 10px;
+  }
+
+  .entity-section {
+	  margin-bottom: 0px;
+  }
+
+
+  a.backlink {
+	  font-size: 80%;
+	  color: grey;
+  }
+
+  a.greylink {
+	  color: grey;
+  }
+
+
+   .implementation_title {
+
+       font-weight: bold;
+       font-size: 100%;
+   }
+
+.section-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+        .tree-container {
+            width: 3000em;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+		.tree {margin: 10px 0px 30px -20px; padding: 0; display: inline-block;}
+
+		.tree ul {
+			padding-top: 20px; position: relative;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		.tree li {
+			float: left; text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*We will use ::before and ::after to draw the connectors*/
+
+		.tree li::before, .tree li::after{
+			content: '';
+			position: absolute; top: 0; right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%; height: 20px;
+		}
+		.tree li::after{
+			right: auto; left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		/*We need to remove left-right connectors from elements without
+		any siblings*/
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		/*Remove space from the top of single children*/
+		.tree li:only-child{ padding-top: 0;}
+
+		/*Remove left connector from first child and
+		right connector from last child*/
+		.tree li:first-child::before, .tree li:last-child::after{
+			border: 0 none;
+		}
+		/*Adding back the vertical connector to the last nodes*/
+		.tree li:last-child::before{
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+			-webkit-border-radius: 0 5px 0 0;
+			-moz-border-radius: 0 5px 0 0;
+		}
+		.tree li:first-child::after{
+			border-radius: 5px 0 0 0;
+			-webkit-border-radius: 5px 0 0 0;
+			-moz-border-radius: 5px 0 0 0;
+		}
+
+		/*Time to add downward connectors from parents*/
+		.tree ul ul::before{
+			content: '';
+			position: absolute; top: 0; left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0; height: 20px;
+		}
+
+		.tree li a{
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #666;
+			font-family: arial, verdana, tahoma;
+			font-size: 11px;
+			display: inline-block;
+
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*Time for some hover effects*/
+		/*We will apply the hover effect the the lineage of the element also*/
+		.tree li a:hover, .tree li a:hover+ul li a {
+			background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+		}
+		/*Connector styles on hover*/
+		.tree li a:hover+ul li::after,
+		.tree li a:hover+ul li::before,
+		.tree li a:hover+ul::before,
+		.tree li a:hover+ul ul::before{
+			border-color:  #94a0b4;
+		}
+
+		/*Thats all. I hope you enjoyed it.
+		Thanks :)*/
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+	
+	
+		
+			<h1 class="title"><a href="" target="_blank">https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#</a></h1>
+			<h3><p>The USACE Strategic Management Regulations (CESI-P No. 5-5-15) defines various acronyms and terms commonly used in this regulation to describe strategic processes, terms, policy and concept of operations, associated activities, and alignment with formal responsibilities for planning, programming, budgeting, execution and control, compliance, mandates, directives, circulars, and other guidance. These terms are defined in the glossary section of the regulation.</p></h3>
+		
+
+	
+		
+		
+
+
+	<p><small>Ontology documentation automatically generated by <a class="greylink" href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> on Tue, 16 Jul 2024 04:23:03</small></p>
+
+
+
+	
+
+
+	<hr class="margintop">
+
+	<h1><a name="toc">&nbsp;</a>Table of Content</h1>
+
+	<ul>
+		<li><a href="#ontologies">Ontologies</a></li>
+		<li><a href="#a-z">A-Z of Terms</a></li>
+		
+		
+		
+		
+		<li><a href="#skosconcepts">SKOS Concepts</a></li>
+		
+	</ul>
+
+
+
+	
+
+	
+
+	<hr class="margintop">
+
+	<h1><a name="ontologies"></a>Ontologies</h1>
+
+		
+
+
+			<fieldset> <legend><h3><a href="https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#" target="_blank">https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#</a></h3></legend>
+
+			<h4 style="margin-top: -20px;"><p>The USACE Strategic Management Regulations (CESI-P No. 5-5-15) defines various acronyms and terms commonly used in this regulation to describe strategic processes, terms, policy and concept of operations, associated activities, and alignment with formal responsibilities for planning, programming, budgeting, execution and control, compliance, mandates, directives, circulars, and other guidance. These terms are defined in the glossary section of the regulation.</p></h4>
+
+			
+			
+				
+					<dt>dcterms:created</dt>
+				  
+			
+			<dd><p>2024-07-16T04:22:59.561506+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:description</dt>
+				  
+			
+			<dd><p>The USACE Strategic Management Regulations (CESI-P No. 5-5-15) defines various acronyms and terms commonly used in this regulation to describe strategic processes, terms, policy and concept of operations, associated activities, and alignment with formal responsibilities for planning, programming, budgeting, execution and control, compliance, mandates, directives, circulars, and other guidance. These terms are defined in the glossary section of the regulation.</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:publisher</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:rights</dt>
+				  
+			
+			<dd><p>MIT</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:title</dt>
+				  
+			
+			<dd><p>U.S. ARMY CORPS OF ENGINEERS STRATEGIC MANAGEMENT CESI-P No. 5-5-15</p></dd>
+			
+			
+				</dl>
+					<dt>pav:ImportedFrom</dt>
+				  
+			
+			<dd><p>glossaries/CivilWorks/CESI-P.yaml</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdOn</dt>
+				  
+			
+			<dd><p>2024-07-16T04:22:59.561506+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdWith</dt>
+				  
+			
+			<dd><p>gloss</p></dd>
+			
+			
+				</dl>
+					<dt>pav:wasInfluencedBy</dt>
+				  
+			
+			<dd><p>USACE STRATEGIC MANAGEMENT CESI-P No. 5-5-15</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.knowledgesmarts.com/ontologies/wov#Glossary</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2002/07/owl#Ontology</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2004/02/skos/core#ConceptScheme</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#Vocabulary</p></dd>
+			
+			
+				</dl>
+					<dt>rdfs:label</dt>
+				  
+			
+			<dd><p>U.S. ARMY CORPS OF ENGINEERS STRATEGIC MANAGEMENT CESI-P No. 5-5-15</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Action</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Agency_Mission_Statement</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Army_Campaign_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Business_Line</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Chief_Financial_Officer%27s_Act_of_1990</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Civil_Works_Program_Five-Year_Development_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Clinger-Cohen_Act_of_1996</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#District_Operations_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Federal_Financial_Management_Improvement_Act_%28FFMIA%29_of_1996</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Fragmentary_Order</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Goal</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Government_Management_and_Reform_Act_of_1994</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Government_Performance_Results_Act_of_1993</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#HQ_Staff_Implementation_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Impact</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Individual_Performance_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#MSC_Implementation_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#MSC_Implementation_Planning_Working_Group</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Management%27s_Discussion_and_Analysis</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Military_Programs_Performance_Report</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Mission_Statement</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#National_Defense_Strategy</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#National_Military_Strategy</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#National_Security_Strategy</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Objectives</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Operation_Order</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Outcome_Measure</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Performance_Goal</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Performance_Measures</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Performance_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Program_Area</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Program_Area_Performance_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Program_Area_Strategic_Plans</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Program_Assessment%2FEvaluation</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Program_Objective_Memorandum</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Project_Management_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Purpose</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Staff_Area</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Strategic_Direction_Statement</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Strategic_Vision_Statement</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Target</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#USACE_Campaign_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#USACE_Performance_Plan</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#Values</p></dd>
+			
+			
+				</dl>
+					<dt>vann:preferredNamespaceUri</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#</p></dd>
+			
+
+			</fieldset>
+
+		
+
+	
+
+
+
+	
+
+	<hr class="margintop">
+	<h1><a  name="a-z">&nbsp;</a>A-Z of terms</h1>
+
+	<div id="azterms">
+
+	This is a complete alphabetical A-Z index of all terms, by main logical type.
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		<fieldset> <legend>SKOS Concepts (44)</legend>
+			&nbsp;<a href="#CESI-P-5-5-15:Action">CESI-P-5-5-15:Action</a>
+			|  <a href="#CESI-P-5-5-15:Agency_Mission_Statement">CESI-P-5-5-15:Agency_Mission_Statement</a>
+			|  <a href="#CESI-P-5-5-15:Army_Campaign_Plan">CESI-P-5-5-15:Army_Campaign_Plan</a>
+			|  <a href="#CESI-P-5-5-15:Business_Line">CESI-P-5-5-15:Business_Line</a>
+			|  <a href="#CESI-P-5-5-15:Chief_Financial_Officer%27s_Act_of_1990">CESI-P-5-5-15:Chief_Financial_Officer%27s_Act_of_1990</a>
+			|  <a href="#CESI-P-5-5-15:Civil_Works_Program_Five-Year_Development_Plan">CESI-P-5-5-15:Civil_Works_Program_Five-Year_Development_Plan</a>
+			|  <a href="#CESI-P-5-5-15:Clinger-Cohen_Act_of_1996">CESI-P-5-5-15:Clinger-Cohen_Act_of_1996</a>
+			|  <a href="#CESI-P-5-5-15:District_Operations_Plan">CESI-P-5-5-15:District_Operations_Plan</a>
+			|  <a href="#CESI-P-5-5-15:Federal_Financial_Management_Improvement_Act_%28FFMIA%29_of_1996">CESI-P-5-5-15:Federal_Financial_Management_Improvement_Act_%28FFMIA%29_of_1996</a>
+			|  <a href="#CESI-P-5-5-15:Fragmentary_Order">CESI-P-5-5-15:Fragmentary_Order</a>
+			|  <a href="#CESI-P-5-5-15:Goal">CESI-P-5-5-15:Goal</a>
+			|  <a href="#CESI-P-5-5-15:Government_Management_and_Reform_Act_of_1994">CESI-P-5-5-15:Government_Management_and_Reform_Act_of_1994</a>
+			|  <a href="#CESI-P-5-5-15:Government_Performance_Results_Act_of_1993">CESI-P-5-5-15:Government_Performance_Results_Act_of_1993</a>
+			|  <a href="#CESI-P-5-5-15:HQ_Staff_Implementation_Plan">CESI-P-5-5-15:HQ_Staff_Implementation_Plan</a>
+			|  <a href="#CESI-P-5-5-15:Impact">CESI-P-5-5-15:Impact</a>
+			|  <a href="#CESI-P-5-5-15:Individual_Performance_Plan">CESI-P-5-5-15:Individual_Performance_Plan</a>
+			|  <a href="#CESI-P-5-5-15:MSC_Implementation_Plan">CESI-P-5-5-15:MSC_Implementation_Plan</a>
+			|  <a href="#CESI-P-5-5-15:MSC_Implementation_Planning_Working_Group">CESI-P-5-5-15:MSC_Implementation_Planning_Working_Group</a>
+			|  <a href="#CESI-P-5-5-15:Management%27s_Discussion_and_Analysis">CESI-P-5-5-15:Management%27s_Discussion_and_Analysis</a>
+			|  <a href="#CESI-P-5-5-15:Military_Programs_Performance_Report">CESI-P-5-5-15:Military_Programs_Performance_Report</a>
+			|  <a href="#CESI-P-5-5-15:Mission_Statement">CESI-P-5-5-15:Mission_Statement</a>
+			|  <a href="#CESI-P-5-5-15:National_Defense_Strategy">CESI-P-5-5-15:National_Defense_Strategy</a>
+			|  <a href="#CESI-P-5-5-15:National_Military_Strategy">CESI-P-5-5-15:National_Military_Strategy</a>
+			|  <a href="#CESI-P-5-5-15:National_Security_Strategy">CESI-P-5-5-15:National_Security_Strategy</a>
+			|  <a href="#CESI-P-5-5-15:Objectives">CESI-P-5-5-15:Objectives</a>
+			|  <a href="#CESI-P-5-5-15:Operation_Order">CESI-P-5-5-15:Operation_Order</a>
+			|  <a href="#CESI-P-5-5-15:Outcome_Measure">CESI-P-5-5-15:Outcome_Measure</a>
+			|  <a href="#CESI-P-5-5-15:Performance_Goal">CESI-P-5-5-15:Performance_Goal</a>
+			|  <a href="#CESI-P-5-5-15:Performance_Measures">CESI-P-5-5-15:Performance_Measures</a>
+			|  <a href="#CESI-P-5-5-15:Performance_Plan">CESI-P-5-5-15:Performance_Plan</a>
+			|  <a href="#CESI-P-5-5-15:Program_Area">CESI-P-5-5-15:Program_Area</a>
+			|  <a href="#CESI-P-5-5-15:Program_Area_Performance_Plan">CESI-P-5-5-15:Program_Area_Performance_Plan</a>
+			|  <a href="#CESI-P-5-5-15:Program_Area_Strategic_Plans">CESI-P-5-5-15:Program_Area_Strategic_Plans</a>
+			|  <a href="#CESI-P-5-5-15:Program_Assessment%2FEvaluation">CESI-P-5-5-15:Program_Assessment%2FEvaluation</a>
+			|  <a href="#CESI-P-5-5-15:Program_Objective_Memorandum">CESI-P-5-5-15:Program_Objective_Memorandum</a>
+			|  <a href="#CESI-P-5-5-15:Project_Management_Plan">CESI-P-5-5-15:Project_Management_Plan</a>
+			|  <a href="#CESI-P-5-5-15:Purpose">CESI-P-5-5-15:Purpose</a>
+			|  <a href="#CESI-P-5-5-15:Staff_Area">CESI-P-5-5-15:Staff_Area</a>
+			|  <a href="#CESI-P-5-5-15:Strategic_Direction_Statement">CESI-P-5-5-15:Strategic_Direction_Statement</a>
+			|  <a href="#CESI-P-5-5-15:Strategic_Vision_Statement">CESI-P-5-5-15:Strategic_Vision_Statement</a>
+			|  <a href="#CESI-P-5-5-15:Target">CESI-P-5-5-15:Target</a>
+			|  <a href="#CESI-P-5-5-15:USACE_Campaign_Plan">CESI-P-5-5-15:USACE_Campaign_Plan</a>
+			|  <a href="#CESI-P-5-5-15:USACE_Performance_Plan">CESI-P-5-5-15:USACE_Performance_Plan</a>
+			|  <a href="#CESI-P-5-5-15:Values">CESI-P-5-5-15:Values</a>
+			  
+		</fieldset>
+
+	
+
+	
+
+	</div>
+
+
+
+	
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+	
+
+
+		<hr class="margintop">
+		<h1 class="margintop"><a  name="skosconcepts">&nbsp;</a>SKOS Concepts</h1>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Action" href="#CESI-P-5-5-15:Action">CESI-P-5-5-15:Action</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Action</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Action is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The process or state of getting something done through an act or deed.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Action a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Action&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Action]&#34; ;<br>
+    skos:definition &#34;The process or state of getting something done through an act or deed.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Action&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Agency_Mission_Statement" href="#CESI-P-5-5-15:Agency_Mission_Statement">CESI-P-5-5-15:Agency_Mission_Statement</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Agency_Mission_Statement</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Agency_Mission_Statement is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A mission statement is brief, defining the basic purpose of the agency, and corresponds directly with the agency&#39;s core programs and activities. An agency&#39;s program goals should flow from the mission statement. http://www.whitehouse.gov/omb/circulars/a11/current_year/s210.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Agency_Mission_Statement a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Agency Mission Statement&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Agency Mission Statement]&#34; ;<br>
+    skos:definition &#34;A mission statement is brief, defining the basic purpose of the agency, and corresponds directly with the agency&#39;s core programs and activities. An agency&#39;s program goals should flow from the mission statement. http://www.whitehouse.gov/omb/circulars/a11/current_year/s210.pdf&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Agency Mission Statement&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Army_Campaign_Plan" href="#CESI-P-5-5-15:Army_Campaign_Plan">CESI-P-5-5-15:Army_Campaign_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Army_Campaign_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Army_Campaign_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A joint operation plan for a series of related major operations aimed at achieving strategic or operational objectives within a given time and space. See also campaign; campaign planning (JCS Pub 1-2, JP 5-0).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Army_Campaign_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Army Campaign Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Army Campaign Plan]&#34; ;<br>
+    skos:definition &#34;A joint operation plan for a series of related major operations aimed at achieving strategic or operational objectives within a given time and space. See also campaign; campaign planning (JCS Pub 1-2, JP 5-0).&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Army Campaign Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Business_Line" href="#CESI-P-5-5-15:Business_Line">CESI-P-5-5-15:Business_Line</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Business_Line</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Business_Line is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>USACE assigns mission areas as specific lines of business &#39;“ i.e., business programs. These programs provide a framework for planning, programming, budgeting execution and control to generate public benefits. These business programs and activities are no longer managed in isolation or confined in scope, but instead are interconnected. Business line managers run the business programs. For example, the Civil Works mission includes eight lines of business: navigation, flood risk management, environment, hydropower, regulatory, recreation, emergency management, and water storage for water supply. The military mission includes five lines of business: major construction, installation support, real estate, contingency operations, environmental, and interagency and international affairs.&#39;</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Business_Line a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Business Line&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Business Line]&#34; ;<br>
+    skos:altLabel &#34;Business Program&#34; ;<br>
+    skos:definition &#34;USACE assigns mission areas as specific lines of business &#39;“ i.e., business programs. These programs provide a framework for planning, programming, budgeting execution and control to generate public benefits. These business programs and activities are no longer managed in isolation or confined in scope, but instead are interconnected. Business line managers run the business programs. For example, the Civil Works mission includes eight lines of business: navigation, flood risk management, environment, hydropower, regulatory, recreation, emergency management, and water storage for water supply. The military mission includes five lines of business: major construction, installation support, real estate, contingency operations, environmental, and interagency and international affairs.&#39;&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Business Line&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Chief_Financial_Officer%27s_Act_of_1990" href="#CESI-P-5-5-15:Chief_Financial_Officer%27s_Act_of_1990">CESI-P-5-5-15:Chief_Financial_Officer%27s_Act_of_1990</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Chief_Financial_Officer%27s_Act_of_1990</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Chief_Financial_Officer%27s_Act_of_1990 is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The Chief Financial Officer&#39;s Act of 1990 (Public Law 101-576) establishes expectations for agencies to develop and deploy modern financial management systems to routinely produce accurate, reliable, and timely program cost information; and to develop results-oriented reports on the government&#39;s financial condition. Enacted November 15, 1990, this act was directed at correcting long-standing shortcomings in financial systems, internal controls, and the use of assets. The principal provisions of the Act include establishing CFO organizations in the Office of Management and Budget (OMB) and each agency; improving accounting, reporting, and auditing practices; improving financial systems; and improving asset management policies. The act establishes a centralized financial management structure within OMB and in major departments and agencies. It strengthens financial management internal controls by requiring (a) preparation of five-year financial management systems improvement plans, both government-wide and in the 23 agencies covered by the act; (b) preparation of financial statements and audits of selected activities of agencies to hold agency heads accountable for their operations; and (c) annual reporting to the President and Congress on the status of general and financial management in the federal government. The act also lays out a strategy for producing audited financial statements. In addition, the act mandates the establishment of a government-wide CFO Council to support the CFO Act by providing a forum for achieving consensus on financial management policies and priorities. http://govinfo.library.unt.edu/npr/library/misc/cfo.html</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Chief_Financial_Officer%27s_Act_of_1990 a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Chief Financial Officer&#39;s Act of 1990&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Chief Financial Officer&#39;s Act of 1990]&#34; ;<br>
+    skos:definition &#34;The Chief Financial Officer&#39;s Act of 1990 (Public Law 101-576) establishes expectations for agencies to develop and deploy modern financial management systems to routinely produce accurate, reliable, and timely program cost information; and to develop results-oriented reports on the government&#39;s financial condition. Enacted November 15, 1990, this act was directed at correcting long-standing shortcomings in financial systems, internal controls, and the use of assets. The principal provisions of the Act include establishing CFO organizations in the Office of Management and Budget (OMB) and each agency; improving accounting, reporting, and auditing practices; improving financial systems; and improving asset management policies. The act establishes a centralized financial management structure within OMB and in major departments and agencies. It strengthens financial management internal controls by requiring (a) preparation of five-year financial management systems improvement plans, both government-wide and in the 23 agencies covered by the act; (b) preparation of financial statements and audits of selected activities of agencies to hold agency heads accountable for their operations; and (c) annual reporting to the President and Congress on the status of general and financial management in the federal government. The act also lays out a strategy for producing audited financial statements. In addition, the act mandates the establishment of a government-wide CFO Council to support the CFO Act by providing a forum for achieving consensus on financial management policies and priorities. http://govinfo.library.unt.edu/npr/library/misc/cfo.html&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Chief Financial Officer&#39;s Act of 1990&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Civil_Works_Program_Five-Year_Development_Plan" href="#CESI-P-5-5-15:Civil_Works_Program_Five-Year_Development_Plan">CESI-P-5-5-15:Civil_Works_Program_Five-Year_Development_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Civil_Works_Program_Five-Year_Development_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Civil_Works_Program_Five-Year_Development_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>This plan presents projections of discretionary budget authority (funding) for the Army Civil Works program for Fiscal Years five years post-budget. These are estimates and are usually presented based on two scenarios for overall funding. One is a base plan scenario, constrained by beginning with the budget level of the president and growing at OMB formula-driven funding levels over the five-year period, holding the mix of accounts at the same percentage as the budget over the period. These are OMB estimated account data for the out-years and do not represent the President&#39;s proposed levels for these individual agencies, accounts, or programs. The enhanced plan scenario begins with the expected appropriations prior to the budget year (FY-1), and grows for projected changes in the Gross Domestic Product (GDP) price index. Within the overall funding amount provided under the enhanced plan, the percentage allocation of funding among accounts, that is, the funding mix, is permitted to vary from the base budget mix. For each plan, subsequent year&#39;s budget requests will be made in the future and therefore the out-year numbers with each plan represent placeholders, pending decisions in future years.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Civil_Works_Program_Five-Year_Development_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Civil Works Program Five-Year Development Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Civil Works Program Five-Year Development Plan]&#34; ;<br>
+    skos:altLabel &#34;FYDP&#34; ;<br>
+    skos:definition &#34;This plan presents projections of discretionary budget authority (funding) for the Army Civil Works program for Fiscal Years five years post-budget. These are estimates and are usually presented based on two scenarios for overall funding. One is a base plan scenario, constrained by beginning with the budget level of the president and growing at OMB formula-driven funding levels over the five-year period, holding the mix of accounts at the same percentage as the budget over the period. These are OMB estimated account data for the out-years and do not represent the President&#39;s proposed levels for these individual agencies, accounts, or programs. The enhanced plan scenario begins with the expected appropriations prior to the budget year (FY-1), and grows for projected changes in the Gross Domestic Product (GDP) price index. Within the overall funding amount provided under the enhanced plan, the percentage allocation of funding among accounts, that is, the funding mix, is permitted to vary from the base budget mix. For each plan, subsequent year&#39;s budget requests will be made in the future and therefore the out-year numbers with each plan represent placeholders, pending decisions in future years.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Civil Works Program Five-Year Development Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Clinger-Cohen_Act_of_1996" href="#CESI-P-5-5-15:Clinger-Cohen_Act_of_1996">CESI-P-5-5-15:Clinger-Cohen_Act_of_1996</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Clinger-Cohen_Act_of_1996</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Clinger-Cohen_Act_of_1996 is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The Clinger-Cohen Act of 1996 (formerly the Information Technology Management Act of 1995) (Public Law 104-106) repeals Section 111 of the Federal Property and Administrative Services Act of 1949 (40 USC 759), often referred to as the Brooks Act, which gave the General Services Administration (GSA) exclusive authority to acquire computer resources for all of the federal government. Clinger-Cohen assigns overall responsibility for the acquisition and management of information technology (IT) in the federal government to the Director, Office of Management and Budget (OMB). It also gives authority to acquire IT resources to the head of each executive agency and makes them responsible for effectively managing their IT investments. Among other provisions, the act requires agencies to (a) base decisions about IT investments on quantitative and qualitative factors associated with the costs, benefits, and risks of those investments; (b) use performance data to demonstrate how well the IT expenditures support improvements to agency program; and (c) appoint CIOs to carry out the IT management provisions of the act and the broader information resources management requirements of the Paperwork Reduction Act. The Act also encourages agencies to evaluate and adopt best management and acquisition practices used by private- and public-sector organizations. The focus of this Act is on requiring agencies to develop and maintain an integrated, systems architecture. Such a cohesive architecture can help (1) ensure an agency invests only in integrated, enterprise-wide business solutions and (2) move resources away from non-value added legacy business systems and nonintegrated system development efforts.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Clinger-Cohen_Act_of_1996 a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Clinger-Cohen Act of 1996&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=67&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Clinger-Cohen Act of 1996]&#34; ;<br>
+    skos:definition &#34;The Clinger-Cohen Act of 1996 (formerly the Information Technology Management Act of 1995) (Public Law 104-106) repeals Section 111 of the Federal Property and Administrative Services Act of 1949 (40 USC 759), often referred to as the Brooks Act, which gave the General Services Administration (GSA) exclusive authority to acquire computer resources for all of the federal government. Clinger-Cohen assigns overall responsibility for the acquisition and management of information technology (IT) in the federal government to the Director, Office of Management and Budget (OMB). It also gives authority to acquire IT resources to the head of each executive agency and makes them responsible for effectively managing their IT investments. Among other provisions, the act requires agencies to (a) base decisions about IT investments on quantitative and qualitative factors associated with the costs, benefits, and risks of those investments; (b) use performance data to demonstrate how well the IT expenditures support improvements to agency program; and (c) appoint CIOs to carry out the IT management provisions of the act and the broader information resources management requirements of the Paperwork Reduction Act. The Act also encourages agencies to evaluate and adopt best management and acquisition practices used by private- and public-sector organizations. The focus of this Act is on requiring agencies to develop and maintain an integrated, systems architecture. Such a cohesive architecture can help (1) ensure an agency invests only in integrated, enterprise-wide business solutions and (2) move resources away from non-value added legacy business systems and nonintegrated system development efforts.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Clinger-Cohen Act of 1996&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:District_Operations_Plan" href="#CESI-P-5-5-15:District_Operations_Plan">CESI-P-5-5-15:District_Operations_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:District_Operations_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:District_Operations_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The District Operations Plan executes the projects/programs to accomplish the objective stated by the MSC in the MSC IPlan. The execution has a three-five year outlook of projects/programs. The type of execution is direct, linear and sequential. While the focus of the plan is on time, cost, quality control, mission completion, project/program milestone and workforce issues, it also addresses other measures of performance called for in the MSC IPlan that demonstrates efficiency and effectiveness (USACE Campaign Plan, 14 March 1997).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:District_Operations_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;District Operations Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=68&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[District Operations Plan]&#34; ;<br>
+    skos:definition &#34;The District Operations Plan executes the projects/programs to accomplish the objective stated by the MSC in the MSC IPlan. The execution has a three-five year outlook of projects/programs. The type of execution is direct, linear and sequential. While the focus of the plan is on time, cost, quality control, mission completion, project/program milestone and workforce issues, it also addresses other measures of performance called for in the MSC IPlan that demonstrates efficiency and effectiveness (USACE Campaign Plan, 14 March 1997).&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;District Operations Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Federal_Financial_Management_Improvement_Act_%28FFMIA%29_of_1996" href="#CESI-P-5-5-15:Federal_Financial_Management_Improvement_Act_%28FFMIA%29_of_1996">CESI-P-5-5-15:Federal_Financial_Management_Improvement_Act_%28FFMIA%29_of_1996</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Federal_Financial_Management_Improvement_Act_%28FFMIA%29_of_1996</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Federal_Financial_Management_Improvement_Act_%28FFMIA%29_of_1996 is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The Federal Financial Management Improvement Act (Public Law 104-208) requires agencies to adopt standards for financial management and reporting systems that will ensure an adequate level of financial accountability and timeliness and consistency of financial information reported. Agency CFOs are responsible for ensuring agency financial systems comply with standards published by OMB.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Federal_Financial_Management_Improvement_Act_%28FFMIA%29_of_1996 a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Federal Financial Management Improvement Act (FFMIA) of 1996&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Federal Financial Management Improvement Act (FFMIA) of 1996]&#34; ;<br>
+    skos:definition &#34;The Federal Financial Management Improvement Act (Public Law 104-208) requires agencies to adopt standards for financial management and reporting systems that will ensure an adequate level of financial accountability and timeliness and consistency of financial information reported. Agency CFOs are responsible for ensuring agency financial systems comply with standards published by OMB.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Federal Financial Management Improvement Act (FFMIA) of 1996&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Fragmentary_Order" href="#CESI-P-5-5-15:Fragmentary_Order">CESI-P-5-5-15:Fragmentary_Order</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Fragmentary_Order</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Fragmentary_Order is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An abbreviated form of an operation order issued as needed after an operation order to change or modify that order or to execute a branch or sequel to that order. Also called FRAGORD and FRAGO (JCS Pub 1-2, JP 5-0).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Fragmentary_Order a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Fragmentary Order&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Fragmentary Order]&#34; ;<br>
+    skos:definition &#34;An abbreviated form of an operation order issued as needed after an operation order to change or modify that order or to execute a branch or sequel to that order. Also called FRAGORD and FRAGO (JCS Pub 1-2, JP 5-0).&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Fragmentary Order&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Goal" href="#CESI-P-5-5-15:Goal">CESI-P-5-5-15:Goal</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Goal</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Goal is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A goal is a statement of aim or purpose included in a strategic plan (required by GPRA). In the campaign plan and the performance plan, strategic goals are used to group multiple programs. Each program goal should relate to and in the aggregate be sufficient to influence the strategic goals or objectives and their performance measures. A performance goal is comprised of a performance measure with targets and timeframes.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Goal a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Goal&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Goal]&#34; ;<br>
+    skos:definition &#34;A goal is a statement of aim or purpose included in a strategic plan (required by GPRA). In the campaign plan and the performance plan, strategic goals are used to group multiple programs. Each program goal should relate to and in the aggregate be sufficient to influence the strategic goals or objectives and their performance measures. A performance goal is comprised of a performance measure with targets and timeframes.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Goal&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Government_Management_and_Reform_Act_of_1994" href="#CESI-P-5-5-15:Government_Management_and_Reform_Act_of_1994">CESI-P-5-5-15:Government_Management_and_Reform_Act_of_1994</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Government_Management_and_Reform_Act_of_1994</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Government_Management_and_Reform_Act_of_1994 is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>This Act provides a more effective, efficient, and responsible government. This mandate&#39;s statutory requirements for reports to Congress, the use of electronic funds transfers for payments, the establishment of a franchise fund in each of the four executive agencies, and the submission of annual audited financial statements to the Director of the Office of Management and Budget (OMB). http://www.whitehouse.gov/omb/financial/fin_report.html</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Government_Management_and_Reform_Act_of_1994 a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Government Management and Reform Act of 1994&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Government Management and Reform Act of 1994]&#34; ;<br>
+    skos:altLabel &#34;GMRA&#34;,<br>
+        &#34;Public Law 103-356&#34; ;<br>
+    skos:definition &#34;This Act provides a more effective, efficient, and responsible government. This mandate&#39;s statutory requirements for reports to Congress, the use of electronic funds transfers for payments, the establishment of a franchise fund in each of the four executive agencies, and the submission of annual audited financial statements to the Director of the Office of Management and Budget (OMB). http://www.whitehouse.gov/omb/financial/fin_report.html&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Government Management and Reform Act of 1994&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Government_Performance_Results_Act_of_1993" href="#CESI-P-5-5-15:Government_Performance_Results_Act_of_1993">CESI-P-5-5-15:Government_Performance_Results_Act_of_1993</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Government_Performance_Results_Act_of_1993</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Government_Performance_Results_Act_of_1993 is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>In 1993, Congress passed and the President signed into law a bipartisan initiative designed to fundamentally change the way government works. Known as the GPRA or Results Act for short, this law dramatically changes the federal government&#39;&#39;s budgeting and policymaking mechanisms. The act shifts managerial emphasis to actual program execution and comparison of results with desired outcomes. This legislation promotes a focus on results, service, quality, and customer satisfaction. The GPRA has become the primary legislative framework through which agencies are required to set strategic goals, measure performance, and report on the degree to which goals are met. The act requires the development of multi-year strategic plans based on long-term goals and annual performance plans with specific indicators to measure performance. The act also creates a process for agencies to use to measure their annual financial and program performance by identifying four key performance indicators: output, outcome, efficiency, and effectiveness. Such objective measurement means that funding decisions are based on program effectiveness rather than supposition, ultimately providing Congress with better information for allocating resources.&#39;</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Government_Performance_Results_Act_of_1993 a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Government Performance Results Act of 1993&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Government Performance Results Act of 1993]&#34; ;<br>
+    skos:definition &#34;In 1993, Congress passed and the President signed into law a bipartisan initiative designed to fundamentally change the way government works. Known as the GPRA or Results Act for short, this law dramatically changes the federal government&#39;&#39;s budgeting and policymaking mechanisms. The act shifts managerial emphasis to actual program execution and comparison of results with desired outcomes. This legislation promotes a focus on results, service, quality, and customer satisfaction. The GPRA has become the primary legislative framework through which agencies are required to set strategic goals, measure performance, and report on the degree to which goals are met. The act requires the development of multi-year strategic plans based on long-term goals and annual performance plans with specific indicators to measure performance. The act also creates a process for agencies to use to measure their annual financial and program performance by identifying four key performance indicators: output, outcome, efficiency, and effectiveness. Such objective measurement means that funding decisions are based on program effectiveness rather than supposition, ultimately providing Congress with better information for allocating resources.&#39;&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Government Performance Results Act of 1993&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:HQ_Staff_Implementation_Plan" href="#CESI-P-5-5-15:HQ_Staff_Implementation_Plan">CESI-P-5-5-15:HQ_Staff_Implementation_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:HQ_Staff_Implementation_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:HQ_Staff_Implementation_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>HQ staff directors and chiefs formulate HQ Staff IPlans, when necessary and appropriate, to implement Program Area actions in support of the Campaign Plan, improve management and accountability, and respond to new strategic direction and/or strategic vision. Staff IPlans establish the overall purpose and strategic direction of the functional area support activities, including goals, objectives and performance metrics or indicators. The Command Council must receive presentations and concur with Staff IPlans, followed by the commander&#39;s approval. The plans are updated, reviewed, and approved again as required by the commander.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:HQ_Staff_Implementation_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;HQ Staff Implementation Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=69&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[HQ Staff Implementation Plan]&#34; ;<br>
+    skos:altLabel &#34;IPlan&#34;,<br>
+        &#34;MSC implementation plan&#34;,<br>
+        &#34;Staff Area Implementation Plan&#34;,<br>
+        &#34;Staff Implementation Plan/Staff IPlan&#34; ;<br>
+    skos:definition &#34;HQ staff directors and chiefs formulate HQ Staff IPlans, when necessary and appropriate, to implement Program Area actions in support of the Campaign Plan, improve management and accountability, and respond to new strategic direction and/or strategic vision. Staff IPlans establish the overall purpose and strategic direction of the functional area support activities, including goals, objectives and performance metrics or indicators. The Command Council must receive presentations and concur with Staff IPlans, followed by the commander&#39;s approval. The plans are updated, reviewed, and approved again as required by the commander.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;HQ Staff Implementation Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Impact" href="#CESI-P-5-5-15:Impact">CESI-P-5-5-15:Impact</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Impact</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Impact is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An impact measure is a measure of the direct or indirect effects or consequences resulting from achieving program goals. An impact assessment is the comparison of actual program outcomes with estimates of the outcomes that would have occurred in the absence of the program; for example, by comparing the outcome for a randomly selected group receiving an agency service to a randomly selected group not receiving the service. The measurement of impact is generally done through special comparison-type studies and not simply by using data regularly collected through program information systems. Impact indicators are useful for understanding the eventual effects of government programs. OMB guidance for GPRA implementation discusses impact indicators, but GPRA itself does not. An input measure is a measure of what an agency or manager has available to carry out the program or activity to achieve an output or outcome. These can include employees, funding, equipment or facilities, supplies on hand, goods or services received, and work processes or rules. Services from a resource base (e.g., staff expertise and time) are defined as inputs to a program. Increments to a resource base (e.g., newly trained personnel) are defined as outputs or outcomes. (A program output or outcome could be negative; for example, net depletion of a resource base). </p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Impact a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Impact&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=70&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Impact]&#34; ;<br>
+    skos:altLabel &#34;Measures&#34;,<br>
+        &#34;Outcome Measure&#34; ;<br>
+    skos:definition &#34;An impact measure is a measure of the direct or indirect effects or consequences resulting from achieving program goals. An impact assessment is the comparison of actual program outcomes with estimates of the outcomes that would have occurred in the absence of the program; for example, by comparing the outcome for a randomly selected group receiving an agency service to a randomly selected group not receiving the service. The measurement of impact is generally done through special comparison-type studies and not simply by using data regularly collected through program information systems. Impact indicators are useful for understanding the eventual effects of government programs. OMB guidance for GPRA implementation discusses impact indicators, but GPRA itself does not. An input measure is a measure of what an agency or manager has available to carry out the program or activity to achieve an output or outcome. These can include employees, funding, equipment or facilities, supplies on hand, goods or services received, and work processes or rules. Services from a resource base (e.g., staff expertise and time) are defined as inputs to a program. Increments to a resource base (e.g., newly trained personnel) are defined as outputs or outcomes. (A program output or outcome could be negative; for example, net depletion of a resource base). &#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Impact&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Individual_Performance_Plan" href="#CESI-P-5-5-15:Individual_Performance_Plan">CESI-P-5-5-15:Individual_Performance_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Individual_Performance_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Individual_Performance_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>All employees, including managers and executives, are to operate under individual performance plans developed in coordination with their supervisors. These performance plans are to be specific, measurable (both in terms of quantity and quality), aligned, relevant/realistic and timed. When addressing alignment, the plan should directly link to the USACE Campaign Plan, Program Area Strategic Plans and Implementation Plans (and to Army and Defense goals and objectives to the extent possible). Each employee should be able to see how his or her work directly supports the organization&#39;s achievement of the USACE Campaign Plan goals and objectives.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Individual_Performance_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Individual Performance Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=70&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Individual Performance Plan]&#34; ;<br>
+    skos:definition &#34;All employees, including managers and executives, are to operate under individual performance plans developed in coordination with their supervisors. These performance plans are to be specific, measurable (both in terms of quantity and quality), aligned, relevant/realistic and timed. When addressing alignment, the plan should directly link to the USACE Campaign Plan, Program Area Strategic Plans and Implementation Plans (and to Army and Defense goals and objectives to the extent possible). Each employee should be able to see how his or her work directly supports the organization&#39;s achievement of the USACE Campaign Plan goals and objectives.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Individual Performance Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:MSC_Implementation_Plan" href="#CESI-P-5-5-15:MSC_Implementation_Plan">CESI-P-5-5-15:MSC_Implementation_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:MSC_Implementation_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:MSC_Implementation_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The MSC IPlans contain the key implementation actions that are linked to funding requirements, measures and targets in support of the Campaign Plan and Program Area Strategic and Performance Plans. The work to be performed in developing the MSC IPlan is done by the MSC Implementation Planning Working Group.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:MSC_Implementation_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;MSC Implementation Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=70&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[MSC Implementation Plan]&#34; ;<br>
+    skos:definition &#34;The MSC IPlans contain the key implementation actions that are linked to funding requirements, measures and targets in support of the Campaign Plan and Program Area Strategic and Performance Plans. The work to be performed in developing the MSC IPlan is done by the MSC Implementation Planning Working Group.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;MSC Implementation Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:MSC_Implementation_Planning_Working_Group" href="#CESI-P-5-5-15:MSC_Implementation_Planning_Working_Group">CESI-P-5-5-15:MSC_Implementation_Planning_Working_Group</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:MSC_Implementation_Planning_Working_Group</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:MSC_Implementation_Planning_Working_Group is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The MSC Implementation Planning Working Group consists of staff members from the MSC staff from the Regional Business Directorate and/or Regional Programs Directorate. Members of this working group collaboratively develop the MSC IPlan. The MSC IPlan develops a detailed set of implementation actions from the HQ IPlans, Program Area Strategic Plan and USACE Campaign Plan.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:MSC_Implementation_Planning_Working_Group a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;MSC Implementation Planning Working Group&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=71&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[MSC Implementation Planning Working Group]&#34; ;<br>
+    skos:definition &#34;The MSC Implementation Planning Working Group consists of staff members from the MSC staff from the Regional Business Directorate and/or Regional Programs Directorate. Members of this working group collaboratively develop the MSC IPlan. The MSC IPlan develops a detailed set of implementation actions from the HQ IPlans, Program Area Strategic Plan and USACE Campaign Plan.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;MSC Implementation Planning Working Group&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Management%27s_Discussion_and_Analysis" href="#CESI-P-5-5-15:Management%27s_Discussion_and_Analysis">CESI-P-5-5-15:Management%27s_Discussion_and_Analysis</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Management%27s_Discussion_and_Analysis</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Management%27s_Discussion_and_Analysis is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The MD&amp;A of the must be concise, easy to read and utilize visual references to present summary information. The MD&amp;A should include a table/ chart displaying historical performance trend data for the entity&#39;s strategic goals, and selected key performance measures associated with those goals should be included in the MD&amp;A. Agencies should present performance information that facilitates analysis of trends over time and provides the most comprehensive picture of a program&#39;s performance history. Performance trend data should provide the Congress, the public and other stakeholders with sufficient information on how a program is progressing compared to its past achievements and shortfalls.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Management%27s_Discussion_and_Analysis a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Management&#39;s Discussion and Analysis&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=70&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Management&#39;s Discussion and Analysis]&#34; ;<br>
+    skos:altLabel &#34;Civil Works Management Discussion and Analysis&#34;,<br>
+        &#34;MD&amp;A&#34; ;<br>
+    skos:definition &#34;The MD&amp;A of the must be concise, easy to read and utilize visual references to present summary information. The MD&amp;A should include a table/ chart displaying historical performance trend data for the entity&#39;s strategic goals, and selected key performance measures associated with those goals should be included in the MD&amp;A. Agencies should present performance information that facilitates analysis of trends over time and provides the most comprehensive picture of a program&#39;s performance history. Performance trend data should provide the Congress, the public and other stakeholders with sufficient information on how a program is progressing compared to its past achievements and shortfalls.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Management&#39;s Discussion and Analysis&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Military_Programs_Performance_Report" href="#CESI-P-5-5-15:Military_Programs_Performance_Report">CESI-P-5-5-15:Military_Programs_Performance_Report</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Military_Programs_Performance_Report</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Military_Programs_Performance_Report is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>For the Military Programs, the Department of the Army incorporates the financial and performance information to be more meaningful and transparent to the public in the Army&#39;s Annual Financial Statement.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Military_Programs_Performance_Report a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Military Programs Performance Report&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=70&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Military Programs Performance Report]&#34; ;<br>
+    skos:definition &#34;For the Military Programs, the Department of the Army incorporates the financial and performance information to be more meaningful and transparent to the public in the Army&#39;s Annual Financial Statement.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Military Programs Performance Report&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Mission_Statement" href="#CESI-P-5-5-15:Mission_Statement">CESI-P-5-5-15:Mission_Statement</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Mission_Statement</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Mission_Statement is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A mission statement is a brief statement of purpose of the organization (program area, functional area or command) that answers the following questions: What do we do? For whom do we do it? Why do we do it? See Agency Mission Statement.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Mission_Statement a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Mission Statement&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=70&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Mission Statement]&#34; ;<br>
+    skos:definition &#34;A mission statement is a brief statement of purpose of the organization (program area, functional area or command) that answers the following questions: What do we do? For whom do we do it? Why do we do it? See Agency Mission Statement.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Mission Statement&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:National_Defense_Strategy" href="#CESI-P-5-5-15:National_Defense_Strategy">CESI-P-5-5-15:National_Defense_Strategy</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:National_Defense_Strategy</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:National_Defense_Strategy is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The National Defense Strategy is a strategy paper that is prepared every four years and which &#34;provides the policy basis on which the armed services plan their research, development and acquisitions of weapons systems.&#39; The thrust of this document by DoD is to implement the President&#39;s commitment that has been articulated in the National Security Strategy. This document outlines the Nation&#39;s approach to dealing with challenges that the Nation is likely to confront, not just those that the Nation is best prepared to meet.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:National_Defense_Strategy a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;National Defense Strategy&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=71&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[National Defense Strategy]&#34; ;<br>
+    skos:definition &#34;The National Defense Strategy is a strategy paper that is prepared every four years and which \&#34;provides the policy basis on which the armed services plan their research, development and acquisitions of weapons systems.&#39; The thrust of this document by DoD is to implement the President&#39;s commitment that has been articulated in the National Security Strategy. This document outlines the Nation&#39;s approach to dealing with challenges that the Nation is likely to confront, not just those that the Nation is best prepared to meet.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;National Defense Strategy&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:National_Military_Strategy" href="#CESI-P-5-5-15:National_Military_Strategy">CESI-P-5-5-15:National_Military_Strategy</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:National_Military_Strategy</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:National_Military_Strategy is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The National Military Strategy (NMS) is issued by the Chairman of the Joint Chiefs of Staff as a deliverable to the Secretary of Defense briefly outlining the strategic aims of the armed services. The chief source of guidance for the NMS is the National Security Strategy document. The NMS Report must provide a description of the strategic environment and the opportunities and challenges that affect United States national interests and United States national security. The Report must describe the most significant regional threats to US national interests and security as well as the international threats posed by terrorism, weapons of mass destruction, and asymmetric challenges. After describing the security environment in which military forces will operate, the NMS Report must specify the &#39;ends&#39;, &#39;ways&#39;, and &#39;means&#39; of the strategy. US national military objectives are the &#39;ends&#39;, describing what the Armed Forces are expected to accomplish. The NMS report describes the relationship of those objectives to the strategic environment, regional, and international threats. Strategic and operational concepts are the &#39;ways&#39; of the strategy and describe how the Armed Forces conduct military operations to accomplish the specified military objectives. Finally, the NMS report must describe the adequacy of capabilities -- the &#39;means&#39;-- required to achieve objectives within an acceptable level of military and strategic risk.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:National_Military_Strategy a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;National Military Strategy&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=71&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[National Military Strategy]&#34; ;<br>
+    skos:altLabel &#34;NMS&#34; ;<br>
+    skos:definition &#34;The National Military Strategy (NMS) is issued by the Chairman of the Joint Chiefs of Staff as a deliverable to the Secretary of Defense briefly outlining the strategic aims of the armed services. The chief source of guidance for the NMS is the National Security Strategy document. The NMS Report must provide a description of the strategic environment and the opportunities and challenges that affect United States national interests and United States national security. The Report must describe the most significant regional threats to US national interests and security as well as the international threats posed by terrorism, weapons of mass destruction, and asymmetric challenges. After describing the security environment in which military forces will operate, the NMS Report must specify the &#39;ends&#39;, &#39;ways&#39;, and &#39;means&#39; of the strategy. US national military objectives are the &#39;ends&#39;, describing what the Armed Forces are expected to accomplish. The NMS report describes the relationship of those objectives to the strategic environment, regional, and international threats. Strategic and operational concepts are the &#39;ways&#39; of the strategy and describe how the Armed Forces conduct military operations to accomplish the specified military objectives. Finally, the NMS report must describe the adequacy of capabilities -- the &#39;means&#39;-- required to achieve objectives within an acceptable level of military and strategic risk.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;National Military Strategy&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:National_Security_Strategy" href="#CESI-P-5-5-15:National_Security_Strategy">CESI-P-5-5-15:National_Security_Strategy</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:National_Security_Strategy</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:National_Security_Strategy is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The National Security Strategy is a document prepared periodically by the executive branch for Congress which outlines the major security concerns of the Nation and how the administration plans to deal with them. The document is purposefully general in content (contrast with the National Military Strategy) and its implementation relies on elaborating guidance provided in supporting documents (including the NMS).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:National_Security_Strategy a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;National Security Strategy&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=71&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[National Security Strategy]&#34; ;<br>
+    skos:definition &#34;The National Security Strategy is a document prepared periodically by the executive branch for Congress which outlines the major security concerns of the Nation and how the administration plans to deal with them. The document is purposefully general in content (contrast with the National Military Strategy) and its implementation relies on elaborating guidance provided in supporting documents (including the NMS).&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;National Security Strategy&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Objectives" href="#CESI-P-5-5-15:Objectives">CESI-P-5-5-15:Objectives</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Objectives</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Objectives is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An objective is a specific, measurable target for accomplishing a goal which (a) describes a specific accomplishment; (b) focuses on a result to be achieved; (c) forms the foundation of strategies and actions; and (d) will be accomplished within the three-to-five year time period. An objective is a target level of performance over time expressed that is specific, measurable, attainable, realistic and tangible against which actual achievement can be compared.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Objectives a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Objectives&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=72&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Objectives]&#34; ;<br>
+    skos:definition &#34;An objective is a specific, measurable target for accomplishing a goal which (a) describes a specific accomplishment; (b) focuses on a result to be achieved; (c) forms the foundation of strategies and actions; and (d) will be accomplished within the three-to-five year time period. An objective is a target level of performance over time expressed that is specific, measurable, attainable, realistic and tangible against which actual achievement can be compared.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Objectives&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Operation_Order" href="#CESI-P-5-5-15:Operation_Order">CESI-P-5-5-15:Operation_Order</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Operation_Order</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Operation_Order is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A directive issued by a commander to subordinate commanders for the purpose of effecting the coordinated execution of an operation. An OPLAN becomes an OPORD when the commander sets an execution time. Also called OPORD (JSC Pub 1-2).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Operation_Order a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Operation Order&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=72&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Operation Order]&#34; ;<br>
+    skos:altLabel &#34;OPORD&#34; ;<br>
+    skos:definition &#34;A directive issued by a commander to subordinate commanders for the purpose of effecting the coordinated execution of an operation. An OPLAN becomes an OPORD when the commander sets an execution time. Also called OPORD (JSC Pub 1-2).&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Operation Order&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Outcome_Measure" href="#CESI-P-5-5-15:Outcome_Measure">CESI-P-5-5-15:Outcome_Measure</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Outcome_Measure</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Outcome_Measure is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Outcomes describe the intended result of carrying out a program or activity. They define an event or condition that is external to the program or activity and that is of direct importance to the intended beneficiaries and/or the public. For a tornado warning system, outcomes could be the number of lives saved and the property damage averted. While performance measures must distinguish between outcomes and outputs, there must be a reasonable connection between them, with the outputs supporting (i.e., leading to) outcomes in a logical fashion.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Outcome_Measure a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Outcome Measure&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=72&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Outcome Measure]&#34; ;<br>
+    skos:definition &#34;Outcomes describe the intended result of carrying out a program or activity. They define an event or condition that is external to the program or activity and that is of direct importance to the intended beneficiaries and/or the public. For a tornado warning system, outcomes could be the number of lives saved and the property damage averted. While performance measures must distinguish between outcomes and outputs, there must be a reasonable connection between them, with the outputs supporting (i.e., leading to) outcomes in a logical fashion.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Outcome Measure&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Performance_Goal" href="#CESI-P-5-5-15:Performance_Goal">CESI-P-5-5-15:Performance_Goal</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Performance_Goal</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Performance_Goal is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A performance goal is a target level of performance expressed as a tangible, measurable, objective against which actual achievement can be compared, including a goal expressed as a quantitative standard, value, or rate. The framers of the Government Performance Results Act of 1993 recognized that in rare instances it may not be feasible to measure the results of a federal program quantitatively. If an agency, in consultation with the Director of Office of Management and Budget, determines that it is not feasible to express performance goals for a particular program in an objective, quantifiable, measurable form, the Director of Office of Management and Budget may authorize an alternative form. Even with the alternative form, Government Performance Results Act of 1993 seeks clear statement of a program&#39;s goals and clear standards for identifying progress in meeting the goals. There may be several performance goals for any general goal in a strategic plan.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Performance_Goal a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Performance Goal&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=72&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Performance Goal]&#34; ;<br>
+    skos:definition &#34;A performance goal is a target level of performance expressed as a tangible, measurable, objective against which actual achievement can be compared, including a goal expressed as a quantitative standard, value, or rate. The framers of the Government Performance Results Act of 1993 recognized that in rare instances it may not be feasible to measure the results of a federal program quantitatively. If an agency, in consultation with the Director of Office of Management and Budget, determines that it is not feasible to express performance goals for a particular program in an objective, quantifiable, measurable form, the Director of Office of Management and Budget may authorize an alternative form. Even with the alternative form, Government Performance Results Act of 1993 seeks clear statement of a program&#39;s goals and clear standards for identifying progress in meeting the goals. There may be several performance goals for any general goal in a strategic plan.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Performance Goal&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Performance_Measures" href="#CESI-P-5-5-15:Performance_Measures">CESI-P-5-5-15:Performance_Measures</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Performance_Measures</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Performance_Measures is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>For most performance goals, a number of performance indicators should be developed -- preferably a range of related performance indicators (such as quantity, quality, timeliness, cost, and outcome) so that managers can balance priorities among competing subÂ­ goals. A performance measure is a particular value or characteristic used to indicate the program&#39;s output or outcome in relation to program goals. Under GPRA, an output measure is a tabulation, calculation, or recording of activity or effort and can be expressed in a quantitative or qualitative manner. Although the text of GPRA does not specify a distinction between outputs and activities, an important purpose of the Act is to focus attention beyond effort or activity in order to assess outputs and outcomes. Thus, OMB guidance differentiates between outputs (e.g., graduates) and production activities (e.g., teaching). An outcome measure is an assessment of the results of a program compared to its intended purpose.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Performance_Measures a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Performance Measures&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=72&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Performance Measures]&#34; ;<br>
+    skos:definition &#34;For most performance goals, a number of performance indicators should be developed -- preferably a range of related performance indicators (such as quantity, quality, timeliness, cost, and outcome) so that managers can balance priorities among competing subÂ­ goals. A performance measure is a particular value or characteristic used to indicate the program&#39;s output or outcome in relation to program goals. Under GPRA, an output measure is a tabulation, calculation, or recording of activity or effort and can be expressed in a quantitative or qualitative manner. Although the text of GPRA does not specify a distinction between outputs and activities, an important purpose of the Act is to focus attention beyond effort or activity in order to assess outputs and outcomes. Thus, OMB guidance differentiates between outputs (e.g., graduates) and production activities (e.g., teaching). An outcome measure is an assessment of the results of a program compared to its intended purpose.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Performance Measures&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Performance_Plan" href="#CESI-P-5-5-15:Performance_Plan">CESI-P-5-5-15:Performance_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Performance_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Performance_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A performance plan links measurable goals to budget during a fiscal year. The goals should reflect a level of accomplishment commensurate with the resources requested and subsequently funded. This plan includes performance goals for each set of activities, a summary of the resources necessary to reach those goals, performance indicators that will be used to measure performance in the future, and identification of how the measured values will be verified. Performance Plans are developed by the HQ program area. The program area performance plans are integrated into the USACE Performance Plan.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Performance_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Performance Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=73&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Performance Plan]&#34; ;<br>
+    skos:definition &#34;A performance plan links measurable goals to budget during a fiscal year. The goals should reflect a level of accomplishment commensurate with the resources requested and subsequently funded. This plan includes performance goals for each set of activities, a summary of the resources necessary to reach those goals, performance indicators that will be used to measure performance in the future, and identification of how the measured values will be verified. Performance Plans are developed by the HQ program area. The program area performance plans are integrated into the USACE Performance Plan.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Performance Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Program_Area" href="#CESI-P-5-5-15:Program_Area">CESI-P-5-5-15:Program_Area</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Program_Area</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Program_Area is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The program areas include Civil Works, Military Programs, and Research and Development. The program areas are mission-focused within USACE. These key mission areas receive authorizations from higher bodies that come from the Congress and Department of the Army. Activities of the program areas transcend multiple lines of business. While these program areas carry out specified missions in accordance with directives and mandates, the functional areas provide support to the missions.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Program_Area a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Program Area&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=73&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Program Area]&#34; ;<br>
+    skos:altLabel &#34;Mission Area&#34; ;<br>
+    skos:definition &#34;The program areas include Civil Works, Military Programs, and Research and Development. The program areas are mission-focused within USACE. These key mission areas receive authorizations from higher bodies that come from the Congress and Department of the Army. Activities of the program areas transcend multiple lines of business. While these program areas carry out specified missions in accordance with directives and mandates, the functional areas provide support to the missions.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Program Area&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Program_Area_Performance_Plan" href="#CESI-P-5-5-15:Program_Area_Performance_Plan">CESI-P-5-5-15:Program_Area_Performance_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Program_Area_Performance_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Program_Area_Performance_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>GPRA requires the submission of Program Area Performance Plans annually by every agency, following the transmittal to Congress of the President&#39;s budget. This plan links the program area&#39;s operations to its long-term goals. The program area performance plan is developed by each program area and submitted to the respective chain of command for approval. In the case of Civil Works, the Annual Performance Plan is submitted to the Office of the Assistant Secretary of the Army (Civil Works) for approval and is forwarded to the Office of Management and Budget. In the case of Military Programs, the Annual Performance Plan goes from the program area to USACE Commander. http://www.whitehouse.gov/omb/circulars/a11/current_year/s220.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Program_Area_Performance_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Program Area Performance Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=73&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Program Area Performance Plan]&#34; ;<br>
+    skos:altLabel &#34;Civil Works Program Performance Plan&#34;,<br>
+        &#34;Military Programs Performance Plan&#34; ;<br>
+    skos:definition &#34;GPRA requires the submission of Program Area Performance Plans annually by every agency, following the transmittal to Congress of the President&#39;s budget. This plan links the program area&#39;s operations to its long-term goals. The program area performance plan is developed by each program area and submitted to the respective chain of command for approval. In the case of Civil Works, the Annual Performance Plan is submitted to the Office of the Assistant Secretary of the Army (Civil Works) for approval and is forwarded to the Office of Management and Budget. In the case of Military Programs, the Annual Performance Plan goes from the program area to USACE Commander. http://www.whitehouse.gov/omb/circulars/a11/current_year/s220.pdf&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Program Area Performance Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Program_Area_Strategic_Plans" href="#CESI-P-5-5-15:Program_Area_Strategic_Plans">CESI-P-5-5-15:Program_Area_Strategic_Plans</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Program_Area_Strategic_Plans</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Program_Area_Strategic_Plans is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The program area strategic plans contain the program area mission statement, program area strategic direction and goals and objectives that it needs to achieve. This plan also identifies specific strategies and performance measures for the program area. The plan is required to identify unpredictable elements that might affect the program. The program area strategic plans will elaborate on their respective mission. The program area strategic plans are to be created by the program director. To ensure that the program area strategic plan remains current, this plan is reviewed and updated, at least every three years. http://www.whitehouse.gov/omb/circulars/a11/current_year/s210.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Program_Area_Strategic_Plans a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Program Area Strategic Plans&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=73&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Program Area Strategic Plans]&#34; ;<br>
+    skos:altLabel &#34;Civil Works Program Strategic Plan&#34;,<br>
+        &#34;Military Programs Strategic Plan&#34; ;<br>
+    skos:definition &#34;The program area strategic plans contain the program area mission statement, program area strategic direction and goals and objectives that it needs to achieve. This plan also identifies specific strategies and performance measures for the program area. The plan is required to identify unpredictable elements that might affect the program. The program area strategic plans will elaborate on their respective mission. The program area strategic plans are to be created by the program director. To ensure that the program area strategic plan remains current, this plan is reviewed and updated, at least every three years. http://www.whitehouse.gov/omb/circulars/a11/current_year/s210.pdf&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Program Area Strategic Plans&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Program_Assessment%2FEvaluation" href="#CESI-P-5-5-15:Program_Assessment%2FEvaluation">CESI-P-5-5-15:Program_Assessment%2FEvaluation</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Program_Assessment%2FEvaluation</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Program_Assessment%2FEvaluation is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A program evaluation is an assessment, through objective measurement and systematic analysis, of the manner and extent to which Federal programs achieve intended objectives. A program evaluation can also track unintended effects. http://www.whitehouse.gov/omb/circulars/a11/current_year/s200.pdf</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Program_Assessment%2FEvaluation a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Program Assessment/Evaluation&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=73&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Program Assessment/Evaluation]&#34; ;<br>
+    skos:definition &#34;A program evaluation is an assessment, through objective measurement and systematic analysis, of the manner and extent to which Federal programs achieve intended objectives. A program evaluation can also track unintended effects. http://www.whitehouse.gov/omb/circulars/a11/current_year/s200.pdf&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Program Assessment/Evaluation&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Program_Objective_Memorandum" href="#CESI-P-5-5-15:Program_Objective_Memorandum">CESI-P-5-5-15:Program_Objective_Memorandum</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Program_Objective_Memorandum</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Program_Objective_Memorandum is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The Program Objective Memorandum (POM) is the primary document used by the military services to submit programming proposals. The POM includes an analysis of missions, objectives, alternative methods to accomplish objectives, and allocation of resources. With the implementation of a two-year budget cycle, a new document&#39;”the Program Change Proposal (PCP)&#39;”was introduced into the budgeting process to address urgent matters that need action during the off-budget year. The Military Services and Defense agencies use POM in the even-numbered on-budget years to develop proposed programs consistent with the Joint Programming Guidance (JPG) and to submit proposed programming. In addition to the current budget year, the POM is a seven-year plan that is organized within program categories, such as conventional forces or special operations; and by type of resource, such as funding or manpower. POM is reviewed by program review teams comprising members from the military departments, Joint Chiefs of Staff (JCS), defense agencies, and OSD staff. The results of this review are presented to the Senior Level Review Group (SLRG) for discussion. In addition, the Joint Chiefs conduct a concurrent checks-and-balances review of POM, focusing on the balance and capabilities of the proposed forces levels. Both reviews are presented to the Secretary of Defense prior to his/her decisions in the Program Decision Memoranda (PDM).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Program_Objective_Memorandum a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Program Objective Memorandum&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=73&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Program Objective Memorandum]&#34; ;<br>
+    skos:definition &#34;The Program Objective Memorandum (POM) is the primary document used by the military services to submit programming proposals. The POM includes an analysis of missions, objectives, alternative methods to accomplish objectives, and allocation of resources. With the implementation of a two-year budget cycle, a new document&#39;”the Program Change Proposal (PCP)&#39;”was introduced into the budgeting process to address urgent matters that need action during the off-budget year. The Military Services and Defense agencies use POM in the even-numbered on-budget years to develop proposed programs consistent with the Joint Programming Guidance (JPG) and to submit proposed programming. In addition to the current budget year, the POM is a seven-year plan that is organized within program categories, such as conventional forces or special operations; and by type of resource, such as funding or manpower. POM is reviewed by program review teams comprising members from the military departments, Joint Chiefs of Staff (JCS), defense agencies, and OSD staff. The results of this review are presented to the Senior Level Review Group (SLRG) for discussion. In addition, the Joint Chiefs conduct a concurrent checks-and-balances review of POM, focusing on the balance and capabilities of the proposed forces levels. Both reviews are presented to the Secretary of Defense prior to his/her decisions in the Program Decision Memoranda (PDM).&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Program Objective Memorandum&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Project_Management_Plan" href="#CESI-P-5-5-15:Project_Management_Plan">CESI-P-5-5-15:Project_Management_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Project_Management_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Project_Management_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>See ER 5-1-11, U.S. Army Corps of Engineers Business Process, 01 Nov. 2006.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Project_Management_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Project Management Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=74&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Project Management Plan]&#34; ;<br>
+    skos:definition &#34;See ER 5-1-11, U.S. Army Corps of Engineers Business Process, 01 Nov. 2006.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Project Management Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Purpose" href="#CESI-P-5-5-15:Purpose">CESI-P-5-5-15:Purpose</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Purpose</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Purpose is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The purpose statement defines the agency&#39;s mission and corresponds directly with the agency&#39;s core programs and activities. An agency&#39;s program goals should flow from the mission statement.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Purpose a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Purpose&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=74&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Purpose]&#34; ;<br>
+    skos:altLabel &#34;Agency Mission Statement&#34; ;<br>
+    skos:definition &#34;The purpose statement defines the agency&#39;s mission and corresponds directly with the agency&#39;s core programs and activities. An agency&#39;s program goals should flow from the mission statement.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Purpose&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Staff_Area" href="#CESI-P-5-5-15:Staff_Area">CESI-P-5-5-15:Staff_Area</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Staff_Area</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Staff_Area is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The functional areas are those Staff Areas that are Directorate and/or Separate Offices located in the HQs and MSCs (Divisions/Centers/Districts) and are responsible for supporting the key mission areas and/or their business programs. Their primary role is to support the missions of the command. In this case, the HQs staff areas include Directorate of Human Resources, Directorate of Resource Management, Directorate of Corporate Information, Directorate of Contracting, Safety and Occupational Health Office and Public Affairs Office. This same definition is applicable for functional areas in the MSC (divisions, centers and districts).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Staff_Area a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Staff Area&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=74&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Staff Area]&#34; ;<br>
+    skos:definition &#34;The functional areas are those Staff Areas that are Directorate and/or Separate Offices located in the HQs and MSCs (Divisions/Centers/Districts) and are responsible for supporting the key mission areas and/or their business programs. Their primary role is to support the missions of the command. In this case, the HQs staff areas include Directorate of Human Resources, Directorate of Resource Management, Directorate of Corporate Information, Directorate of Contracting, Safety and Occupational Health Office and Public Affairs Office. This same definition is applicable for functional areas in the MSC (divisions, centers and districts).&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Staff Area&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Strategic_Direction_Statement" href="#CESI-P-5-5-15:Strategic_Direction_Statement">CESI-P-5-5-15:Strategic_Direction_Statement</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Strategic_Direction_Statement</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Strategic_Direction_Statement is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A strategic direction statement addresses the mission area&#39;s product and market scope, the supporting capabilities, how public value is created, and how the mission areas differentiates itself from other providers. The strategic direction statement is formulated by the various programs. The functional areas strategic direction statement must support of the program/mission area strategic direction statement and goals.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Strategic_Direction_Statement a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Strategic Direction Statement&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=74&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Strategic Direction Statement]&#34; ;<br>
+    skos:definition &#34;A strategic direction statement addresses the mission area&#39;s product and market scope, the supporting capabilities, how public value is created, and how the mission areas differentiates itself from other providers. The strategic direction statement is formulated by the various programs. The functional areas strategic direction statement must support of the program/mission area strategic direction statement and goals.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Strategic Direction Statement&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Strategic_Vision_Statement" href="#CESI-P-5-5-15:Strategic_Vision_Statement">CESI-P-5-5-15:Strategic_Vision_Statement</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Strategic_Vision_Statement</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Strategic_Vision_Statement is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A strategic vision statement is a compelling, conceptual image of the desired future that answers the question &#39;what do we want to be?&#39; and is: (a) inspiring and challenges everyone to achieve that future and (b) brief, memorable, and idealistic. The strategic vision statement may be additionally supplemented with the command&#39;s intent and statement of purpose, answering the question &#39;why do we exist?&#39; It also contains the core values and beliefs that is a set of guiding principles and tenants for the command. There is one strategic vision statement and strategic intent for the command that is expressed by the commander.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Strategic_Vision_Statement a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Strategic Vision Statement&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=74&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Strategic Vision Statement]&#34; ;<br>
+    skos:definition &#34;A strategic vision statement is a compelling, conceptual image of the desired future that answers the question &#39;what do we want to be?&#39; and is: (a) inspiring and challenges everyone to achieve that future and (b) brief, memorable, and idealistic. The strategic vision statement may be additionally supplemented with the command&#39;s intent and statement of purpose, answering the question &#39;why do we exist?&#39; It also contains the core values and beliefs that is a set of guiding principles and tenants for the command. There is one strategic vision statement and strategic intent for the command that is expressed by the commander.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Strategic Vision Statement&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Target" href="#CESI-P-5-5-15:Target">CESI-P-5-5-15:Target</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Target</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Target is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Quantifiable or otherwise measurable characteristic that tells us how well or what level a program aspires to perform.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Target a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Target&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Target]&#34; ;<br>
+    skos:definition &#34;Quantifiable or otherwise measurable characteristic that tells us how well or what level a program aspires to perform.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Target&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:USACE_Campaign_Plan" href="#CESI-P-5-5-15:USACE_Campaign_Plan">CESI-P-5-5-15:USACE_Campaign_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:USACE_Campaign_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:USACE_Campaign_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The USACE Campaign Plan articulates the command&#39;s vision and intent, mission, goals, and objectives as well as the command&#39;s strategies for achieving them. The Campaign Plan aligns with the strategic plans of USACE programs through a synthesis activity. In doing so, this plan gives a single and unified vision statement and thrust to the work for all USACE organizations and its employees. Strategic planning is a continuous process. The Campaign Plan is fully reviewed and updated every three or four years. Interim adjustments may be made, as needed, sometime in parallel with the various strategic plans, implementation plans and associated performance plans.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:USACE_Campaign_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;USACE Campaign Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[USACE Campaign Plan]&#34; ;<br>
+    skos:definition &#34;The USACE Campaign Plan articulates the command&#39;s vision and intent, mission, goals, and objectives as well as the command&#39;s strategies for achieving them. The Campaign Plan aligns with the strategic plans of USACE programs through a synthesis activity. In doing so, this plan gives a single and unified vision statement and thrust to the work for all USACE organizations and its employees. Strategic planning is a continuous process. The Campaign Plan is fully reviewed and updated every three or four years. Interim adjustments may be made, as needed, sometime in parallel with the various strategic plans, implementation plans and associated performance plans.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;USACE Campaign Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:USACE_Performance_Plan" href="#CESI-P-5-5-15:USACE_Performance_Plan">CESI-P-5-5-15:USACE_Performance_Plan</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:USACE_Performance_Plan</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:USACE_Performance_Plan is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>This document aligns command goals, objectives, strategies and metrics and budget to ensure performance-based budgeting. This document is to be developed and issued at a later date.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:USACE_Performance_Plan a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;USACE Performance Plan&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[USACE Performance Plan]&#34; ;<br>
+    skos:definition &#34;This document aligns command goals, objectives, strategies and metrics and budget to ensure performance-based budgeting. This document is to be developed and issued at a later date.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;USACE Performance Plan&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CESI-P-5-5-15:Values" href="#CESI-P-5-5-15:Values">CESI-P-5-5-15:Values</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CESI-P-5-5-15:Values</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CESI-P-5-5-15:Values is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Values are attitudes about the worth or importance of people, concepts, or things. Values influence behavior because people use them to decide between alternatives. Values, attitudes, behaviors and beliefs are cornerstones of who people are and how they do things. They form the basis of how people see themselves as individuals, how they see others, and how they interpret the world in general.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CESI-P-5-5-15: &lt;https://usace-data.com/civil-works/glossary/CESI-P-5-5-15#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CESI-P-5-5-15:Values a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Values&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_5-1-15.pdf#page=75&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CESI-P.yaml#term[Values]&#34; ;<br>
+    skos:definition &#34;Values are attitudes about the worth or importance of people, concepts, or things. Values influence behavior because people use them to decide between alternatives. Values, attitudes, behaviors and beliefs are cornerstones of who people are and how they do things. They form the basis of how people see themselves as individuals, how they see others, and how they interpret the world in general.&#34; ;<br>
+    skos:inScheme CESI-P-5-5-15: ;<br>
+    skos:prefLabel &#34;Values&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	<hr>
+	<small>Ontology documentation automatically generated by <a class="greylink"  href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> v2.1.1 on Tue, 16 Jul 2024 04:23:03</small>
+
+
+</body>
+</html>

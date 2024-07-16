@@ -1,0 +1,20 @@
+about:
+    namespace: https://usace-data.com/civil-works/glossary/CFR-33-329-4#
+    prefix: CFR-33-329-4
+    template: glossary
+    title:  Code of Federal Regulations - Title 33, Chapter-II, Part 329, Section-329.4
+    source:
+        linkType: cfr
+        sourceID: CFR-33-329-4
+        authoritativeSource: 33 CFR 329.4 Definitions
+        glossaryReferences: true
+        url: https://www.ecfr.gov/current/title-33/chapter-II/part-329/section-329.4
+terms:
+- label: Navigable Waters
+  definition: Navigable waters of the United States are those waters that are subject
+    to the ebb and flow of the tide and/or are presently used, or have been used in
+    the past, or may be susceptible for use to transport interstate or foreign commerce.
+    A determination of navigability, once made, applies laterally over the entire
+    surface of the waterbody, and is not extinguished by later actions or events which
+    impede or destroy navigable capacity.
+  anchor: '1'

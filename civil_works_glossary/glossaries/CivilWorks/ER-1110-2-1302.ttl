@@ -1,0 +1,402 @@
+@prefix ER-1110-2-1302: <https://usace-data.com/civil-works/glossary/ER-1110-2-1302#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ER-1110-2-1302:Agency_Technical_Review a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Agency Technical Review" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=71" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Agency Technical Review]" ;
+    skos:altLabel "ATR" ;
+    skos:definition "A mandatory effort to improve and ensure the quality and credibility of U.S. Army Corps of Engineers decision and implementation documents by employing an independent review from subject matter experts outside the home district. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Agency Technical Review" .
+
+ER-1110-2-1302:Architect-Engineer a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Architect-Engineer" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=71" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Architect-Engineer]" ;
+    skos:altLabel "A-E" ;
+    skos:definition "Architectural/engineering firms that provide services such as planning, architecture, engineering, estimating, surveying, and other technical services related to planning, designing, and construction. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Architect-Engineer" .
+
+ER-1110-2-1302:Baseline_Cost_Estimate a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Baseline Cost Estimate" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=71" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Baseline Cost Estimate]" ;
+    skos:altLabel "BCE" ;
+    skos:definition "The cost estimate based on constant dollars is used for authorization/appropriation purposes. The congressionally authorized amount becomes the baseline cost estimate and may differ from the total project cost. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Baseline Cost Estimate" .
+
+ER-1110-2-1302:Budget_Estimate a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Budget Estimate" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=71" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Budget Estimate]" ;
+    skos:definition "The budget estimate supports funding requests as well as comparisons made to current available funding. Comparisons to the available funding are also referred to as current working estimates (CWE). 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Budget Estimate" .
+
+ER-1110-2-1302:Civil_Works_Construction_Cost_Index_System a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Civil Works Construction Cost Index System" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=72" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Civil Works Construction Cost Index System]" ;
+    skos:altLabel "CWCCIS" ;
+    skos:definition "Historical and forecasted cost indexes for use in escalating U.S. Army Corps of Engineers civil works project costs. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Civil Works Construction Cost Index System" .
+
+ER-1110-2-1302:Civil_Works_Cost_Engineering_and_Agency_Technical_Review_Mandatory_Center_of_Expertise a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Civil Works Cost Engineering and Agency Technical Review Mandatory Center of Expertise" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=72" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Civil Works Cost Engineering and Agency Technical Review Mandatory Center of Expertise]" ;
+    skos:altLabel "Cost MCX" ;
+    skos:definition "Walla Walla District's Cost Engineering Branch has been established as the Mandatory Center of Cost Engineering for Civil Works Review. The Cost MCX serves a critical role in all Civil Works and Support for Others Program cost support activities for the USACE cost community. The Cost MCX provides the cost community estimating services for the construction features on all projects from the planning phases through construction, maintenance, and rehabilitation of facilities. Walla Walla's diversified cost team strives to provide expert technical support for all customers, both Corps and other governmental agencies. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Civil Works Cost Engineering and Agency Technical Review Mandatory Center of Expertise" .
+
+ER-1110-2-1302:Civil_Works_Work_Breakdown_Structure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Civil Works Work Breakdown Structure" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=72" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Civil Works Work Breakdown Structure]" ;
+    skos:altLabel "CW-WBS" ;
+    skos:definition "A hierarchical structure that defines tasks that can be completed independently of other tasks, facilitating resource allocation, assignment of responsibilities, and measurement and control of the project. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Civil Works Work Breakdown Structure" .
+
+ER-1110-2-1302:Constant_Dollar_Cost a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Constant Dollar Cost" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=72" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Constant Dollar Cost]" ;
+    skos:altLabel "Price Level" ;
+    skos:definition "Constant dollar analyses are utilized to determine an equivalent cost in the future or in the past by price indexing using CWCCIS data. Constant dollar cost is the estimated cost BROUGHT TO THE EFFECTIVE PRICE LEVEL. Constant dollar cost at current price levels is the cost estimate used in decision documents and chief's reports. The constant dollar cost does not include inflation to midpoint design and construction. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Constant Dollar Cost" .
+
+ER-1110-2-1302:Continuing_Authorities_Program a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Continuing Authorities Program" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=71" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Continuing Authorities Program]" ;
+    skos:altLabel "CAP" ;
+    skos:definition "Congress has given the U.S. Army Corps of Engineers the authority to plan, design, and construct certain flood risk management and navigation improvements without specific congressional authorization. The basic objective of this program is to allow the Corps to respond more quickly to problems or needs where the apparent project scope and costs are small. The amount of federal participation is limited by congress, and varies for each individual authority. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Continuing Authorities Program" .
+
+ER-1110-2-1302:Cost_Engineering_Dredge_Estimating_Program a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Cost Engineering Dredge Estimating Program" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=71" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Cost Engineering Dredge Estimating Program]" ;
+    skos:altLabel "CEDEP" ;
+    skos:definition "A U.S. Army Corps of Engineers program that allows the user to estimate dredging projects using mechanical, pipeline, and hopper dredge plant. The center is established to develop new cost database items that represent the current construction practices and technologies, to maintain and biennially update EP 1110-1-8, Construction Equipment Ownership and Operating Expense Schedule, and to semiannually update EM 1110-2-1304, Civil Works Construction Cost Index System (CWCCIS). 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Cost Engineering Dredge Estimating Program" .
+
+ER-1110-2-1302:Cost_and_Schedule_Risk_Analysis a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Cost and Schedule Risk Analysis" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=72" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Cost and Schedule Risk Analysis]" ;
+    skos:altLabel "CSRA" ;
+    skos:definition "A risk analysis is the process of identifying and measuring the cost and time impacts of project uncertainties on the estimated TPC. The risk analysis results in two main products: Identified risks and contingency dollars to fund risk occurrence." ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Cost and Schedule Risk Analysis" .
+
+ER-1110-2-1302:Current_Working_Estimate a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Current Working Estimate" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=73" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Current Working Estimate]" ;
+    skos:altLabel "CWE" ;
+    skos:definition "An update comparison to the appropriated amount or BCE. Commonly referred to as total project cost, the update reflects the total project scope and estimated cost with current effective date pricing plus spent cost from authorization amount. The CWE reflects the associated project costs in quantities, estimates and supporting databases, duration, and risk at any point in time within the funded project's life. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Current Working Estimate" .
+
+ER-1110-2-1302:District_Quality_Control a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "District Quality Control" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=73" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[District Quality Control]" ;
+    skos:altLabel "DQC" ;
+    skos:definition "All work products and reports, evaluations, and assessments shall undergo necessary and appropriate district quality control/quality assurance. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "District Quality Control" .
+
+ER-1110-2-1302:DrChecksSM a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "DrChecksSM" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=73" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[DrChecksSM]" ;
+    skos:definition "Design Review and Checking System. Enables an actionable collaboration among the reviewers and design team of capital improvement projects." ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "DrChecksSM" .
+
+ER-1110-2-1302:Economic_Cost a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Economic Cost" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=73" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Economic Cost]" ;
+    skos:definition "Monetary equivalent cost used by the economist in determining the benefit-to-cost ratio (BCR). The economic cost includes all of the opportunity costs, both explicit (out of pocket to realize project benefits) and implicit (noncash), of using the resource and is expressed in average annual equivalent terms. It is also referred to as the constant dollar cost. The economic cost should not be confused with the financial cost and should be clearly and separately described in reports. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Economic Cost" .
+
+ER-1110-2-1302:Effective_Price_Level a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Effective Price Level" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=73" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Effective Price Level]" ;
+    skos:definition "EPL Date of the point in time of the pricing used in the cost estimate. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Effective Price Level" .
+
+ER-1110-2-1302:Estimated_Cost a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Estimated Cost" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=73" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Estimated Cost]" ;
+    skos:altLabel "Price Level" ;
+    skos:definition "Initially developed cost estimate which includes contingencies. The effective price level date for estimated cost is usually the date of preparation of the cost estimate. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Estimated Cost" .
+
+ER-1110-2-1302:Financial_Cost a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Financial Cost" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Financial Cost]" ;
+    skos:definition "Monetary outlay, both federal and non-federal, of constructing a project. It includes design and construction outlays, transfer payments such as replacement housing payments as specified in 42 United States Code 4623 and 4624, and the value of lands, easements, rights-of-way, relocations, and dredged or excavated material disposal areas (LERRD) and work in kind provided by non- federal sponsors. This cost is developed by cost engineering, in close coordination with the economist and other members of the PDT, and is typically presented in the TPCS. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Financial Cost" .
+
+ER-1110-2-1302:Independent_External_Peer_Review a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Independent External Peer Review" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Independent External Peer Review]" ;
+    skos:altLabel "IEPR" ;
+    skos:definition "Most independent level of review and is applied in cases that meet certain criteria where the risk and magnitude of the proposed project are such that a critical examination by a qualified team outside of USACE is warranted. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Independent External Peer Review" .
+
+ER-1110-2-1302:Independent_Government_Estimate a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Independent Government Estimate" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Independent Government Estimate]" ;
+    skos:altLabel "IGE" ;
+    skos:definition "Formal, approved cost estimate prepared to support a contract award, which is signed by the chief of cost engineering. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Independent Government Estimate" .
+
+ER-1110-2-1302:Independent_technical_review a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Independent technical review" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Independent technical review]" ;
+    skos:altLabel "ITR" ;
+    skos:definition "A review by a qualified person or team not involved in the day-to-day production of a project/product, for the purpose of confirming the proper application of clearly established criteria, regulations, laws, codes, principles and professional practices. Predecessor to agency technical review on civil works . 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Independent technical review" .
+
+ER-1110-2-1302:MII a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "MII" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[MII]" ;
+    skos:definition "MCACES second generation 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "MII" .
+
+ER-1110-2-1302:Microcomputer_Aided_Cost_Estimating_System a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Microcomputer Aided Cost Estimating System" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Microcomputer Aided Cost Estimating System]" ;
+    skos:altLabel "MCACES" ;
+    skos:definition "Mandatory U.S. Army Corps of Engineers estimating software. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Microcomputer Aided Cost Estimating System" .
+
+ER-1110-2-1302:National_Economic_Develop%C3%82%C2%AD_ment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "National Economic DevelopÂ­ ment" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=74" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[National Economic DevelopÂ­ ment]" ;
+    skos:altLabel "NED" ;
+    skos:definition "In the civil works project planning context, NED analysis can be generally defined as economic benefit-cost analysis for plan formulation, evaluation, and selection that is used to evaluate the federal interest in pursuing a prospective project plan. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "National Economic DevelopÂ­ ment" .
+
+ER-1110-2-1302:Peer_Review a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Peer Review" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Peer Review]" ;
+    skos:definition "The process of subjecting research, assumptions, analyses, and conclusions to the scrutiny of others who are experts in the same field. Peer review requires a community of experts in a given (and often narrowly defined) field, who are qualified and able to perform impartial review. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Peer Review" .
+
+ER-1110-2-1302:Project a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Project]" ;
+    skos:definition "Each project is a temporary endeavor undertaken to create a unique product, service, or result. Internal services are discrete projects when they are unique and non-recurring (ER 5-1-11). 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Project" .
+
+ER-1110-2-1302:Project_Delivery_Team a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project Delivery Team" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Project Delivery Team]" ;
+    skos:altLabel "PDT" ;
+    skos:definition "An interdisciplinary group formed from the resources of the implementing agencies, which develops the products necessary to deliver the project. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Project Delivery Team" .
+
+ER-1110-2-1302:Project_First_Cost a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project First Cost" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Project First Cost]" ;
+    skos:altLabel "Price Level" ;
+    skos:definition "The cost estimate that will serve as the basis for providing the cost of the project for which authorization is sought. The cost estimate to be used in chief's reports and other decision documents is estimated cost represented at the current price level. The current price level is the current FY based on the submittal date. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Project First Cost" .
+
+ER-1110-2-1302:Project_Management_Plan a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project Management Plan" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Project Management Plan]" ;
+    skos:altLabel "PMP" ;
+    skos:definition "A formal, approved document used to guide both project execution and project control. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Project Management Plan" .
+
+ER-1110-2-1302:Project_Manager a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project Manager" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Project Manager]" ;
+    skos:altLabel "PM" ;
+    skos:definition "Responsible for the planning, execution, and closing of any project, typically relating to construction. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Project Manager" .
+
+ER-1110-2-1302:Risk_management_plan a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Risk management plan" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Risk management plan]" ;
+    skos:altLabel "RMP" ;
+    skos:definition "A document that a project manager prepares to foresee risks, estimate impacts, and define responses to issues. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Risk management plan" .
+
+ER-1110-2-1302:Simplified_acquisition_threshold a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Simplified acquisition threshold" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Simplified acquisition threshold]" ;
+    skos:altLabel "SAT" ;
+    skos:definition "As defined in FAR 2.101 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Simplified acquisition threshold" .
+
+ER-1110-2-1302:Total_Cost_Management a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Total Cost Management" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=75" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Total Cost Management]" ;
+    skos:definition "The effective application of professional and technical expertise to plan and control resources, costs, schedules, and risk. A systematic approach to managing cost throughout the life cycle of any project, product, or service. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Total Cost Management" .
+
+ER-1110-2-1302:Total_Project_Cost a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Total Project Cost" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=76" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Total Project Cost]" ;
+    skos:definition "The constant dollar cost FULLY FUNDED WITH ESCALATION to the estimated midpoint of construction. Total project cost (or total cost of construction of GNFs when discussing navigation projects) is the cost estimate used in project partnership agreements and integral determination reports. Total project cost is the cost estimate provided non-federal sponsors for their use in financial planning as it provides information regarding the overall non-federal cost sharing obligation. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Total Project Cost" .
+
+ER-1110-2-1302:Total_Project_Cost_Summary a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Total Project Cost Summary" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerRegulations/er_1110-2-1302.pdf#page=76" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml#term[Total Project Cost Summary]" ;
+    skos:altLabel "TPCS" ;
+    skos:definition "The required cost estimate document to be submitted with all projects sent for either division or HQUSACE approval. Since it addresses all project features, it is considered a PDT product. Both the PM and chief of the cost engineering office must review, approve, sign, and date all TPCS documents. Real estate estimates included in the TPCS must be reviewed, approved, and the TPCS signed by the chief, or their designee, of the real estate office. 1110-2-1302.pdf" ;
+    skos:inScheme ER-1110-2-1302: ;
+    skos:prefLabel "Total Project Cost Summary" .
+
+ER-1110-2-1302: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Engineering and Design Civil Works Cost Engineering Regulation No. 1110-2-1302" ;
+    dcterms:created "2024-07-16T04:26:52.994309+00:00"^^xsd:dateTime ;
+    dcterms:description "The Civil Works Engineering and Design Report defines various acronyms and terms commonly used in this regulation n to describe phases, types, and parts of cost products. These terms are defined in the glossary section of the regulation." ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Engineering and Design Civil Works Cost Engineering Regulation No. 1110-2-1302" ;
+    pav:ImportedFrom "glossaries/CivilWorks/ER-1110-2-1302.yaml" ;
+    pav:createdOn "2024-07-16T04:26:52.994309+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "Engineering and Design Civil Works Cost Engineering RegulationNo. 1110-2-1302 " ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/ER-1110-2-1302#" ;
+    skos:hasTopConcept ER-1110-2-1302:Agency_Technical_Review,
+        ER-1110-2-1302:Architect-Engineer,
+        ER-1110-2-1302:Baseline_Cost_Estimate,
+        ER-1110-2-1302:Budget_Estimate,
+        ER-1110-2-1302:Civil_Works_Construction_Cost_Index_System,
+        ER-1110-2-1302:Civil_Works_Cost_Engineering_and_Agency_Technical_Review_Mandatory_Center_of_Expertise,
+        ER-1110-2-1302:Civil_Works_Work_Breakdown_Structure,
+        ER-1110-2-1302:Constant_Dollar_Cost,
+        ER-1110-2-1302:Continuing_Authorities_Program,
+        ER-1110-2-1302:Cost_Engineering_Dredge_Estimating_Program,
+        ER-1110-2-1302:Cost_and_Schedule_Risk_Analysis,
+        ER-1110-2-1302:Current_Working_Estimate,
+        ER-1110-2-1302:District_Quality_Control,
+        ER-1110-2-1302:DrChecksSM,
+        ER-1110-2-1302:Economic_Cost,
+        ER-1110-2-1302:Effective_Price_Level,
+        ER-1110-2-1302:Estimated_Cost,
+        ER-1110-2-1302:Financial_Cost,
+        ER-1110-2-1302:Independent_External_Peer_Review,
+        ER-1110-2-1302:Independent_Government_Estimate,
+        ER-1110-2-1302:Independent_technical_review,
+        ER-1110-2-1302:MII,
+        ER-1110-2-1302:Microcomputer_Aided_Cost_Estimating_System,
+        ER-1110-2-1302:National_Economic_Develop%C3%82%C2%AD_ment,
+        ER-1110-2-1302:Peer_Review,
+        ER-1110-2-1302:Project,
+        ER-1110-2-1302:Project_Delivery_Team,
+        ER-1110-2-1302:Project_First_Cost,
+        ER-1110-2-1302:Project_Management_Plan,
+        ER-1110-2-1302:Project_Manager,
+        ER-1110-2-1302:Risk_management_plan,
+        ER-1110-2-1302:Simplified_acquisition_threshold,
+        ER-1110-2-1302:Total_Cost_Management,
+        ER-1110-2-1302:Total_Project_Cost,
+        ER-1110-2-1302:Total_Project_Cost_Summary .
+

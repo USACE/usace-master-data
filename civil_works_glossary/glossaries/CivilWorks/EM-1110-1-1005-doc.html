@@ -1,0 +1,6074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 10px auto;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #e6e6e6;
+            height: 100vh;
+            width: 100px;
+            overflow-y: auto;
+            position: sticky;
+            top: 0;
+        }
+        .content {
+            flex: 3;
+            padding: 20px;
+        }
+        .about, .source, .term, .abbreviation {
+            margin: 5px;
+        }
+        .about h2, .source h2, .term h2, .abbreviation h2 {
+            color: #005a9c;
+            margin-top: 10px;
+        }
+        a {
+            color: #005a9c;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }       
+    </style>
+    <title>Engineering Manual 1110-1-1005 Control and Topographic Surveying</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Terms">Terms</a></li>
+                
+                    <li><a href="#Absolute GPS">Absolute GPS</a></li>
+                
+                    <li><a href="#Autonomous GPS">Autonomous GPS</a></li>
+                
+                    <li><a href="#Accuracy">Accuracy</a></li>
+                
+                    <li><a href="#Adjustment">Adjustment</a></li>
+                
+                    <li><a href="#Altimeter">Altimeter</a></li>
+                
+                    <li><a href="#Altitude">Altitude</a></li>
+                
+                    <li><a href="#Angle of Depression">Angle of Depression</a></li>
+                
+                    <li><a href="#Angle of Elevation">Angle of Elevation</a></li>
+                
+                    <li><a href="#Angular Misclosure">Angular Misclosure</a></li>
+                
+                    <li><a href="#Archiving">Archiving</a></li>
+                
+                    <li><a href="#Astronomical Latitude">Astronomical Latitude</a></li>
+                
+                    <li><a href="#Astronomical Longitude">Astronomical Longitude</a></li>
+                
+                    <li><a href="#Astronomical Triangle">Astronomical Triangle</a></li>
+                
+                    <li><a href="#Atmospheric Refraction">Atmospheric Refraction</a></li>
+                
+                    <li><a href="#Azimuth">Azimuth</a></li>
+                
+                    <li><a href="#Azimuth Angle">Azimuth Angle</a></li>
+                
+                    <li><a href="#Azimuth Closure">Azimuth Closure</a></li>
+                
+                    <li><a href="#Backsight">Backsight</a></li>
+                
+                    <li><a href="#Barometric Leveling">Barometric Leveling</a></li>
+                
+                    <li><a href="#Baseline">Baseline</a></li>
+                
+                    <li><a href="#Base net">Base net</a></li>
+                
+                    <li><a href="#Base Points">Base Points</a></li>
+                
+                    <li><a href="#Base Control">Base Control</a></li>
+                
+                    <li><a href="#Bearing">Bearing</a></li>
+                
+                    <li><a href="#Benchmark">Benchmark</a></li>
+                
+                    <li><a href="#Best Fit">Best Fit</a></li>
+                
+                    <li><a href="#Bipod">Bipod</a></li>
+                
+                    <li><a href="#Bluebook">Bluebook</a></li>
+                
+                    <li><a href="#Blunder">Blunder</a></li>
+                
+                    <li><a href="#Bureau International de l&#39;Heure">Bureau International de l&#39;Heure</a></li>
+                
+                    <li><a href="#Cadastral Survey">Cadastral Survey</a></li>
+                
+                    <li><a href="#Calibration">Calibration</a></li>
+                
+                    <li><a href="#Cartesian Coordinates">Cartesian Coordinates</a></li>
+                
+                    <li><a href="#Cartesian System">Cartesian System</a></li>
+                
+                    <li><a href="#Celestial Equator">Celestial Equator</a></li>
+                
+                    <li><a href="#Celestial pole">Celestial pole</a></li>
+                
+                    <li><a href="#Celestial sphere">Celestial sphere</a></li>
+                
+                    <li><a href="#Central Meridian">Central Meridian</a></li>
+                
+                    <li><a href="#Chain">Chain</a></li>
+                
+                    <li><a href="#Chained Traverse">Chained Traverse</a></li>
+                
+                    <li><a href="#Chaining">Chaining</a></li>
+                
+                    <li><a href="#Chart Datum">Chart Datum</a></li>
+                
+                    <li><a href="#Chi-square Testing">Chi-square Testing</a></li>
+                
+                    <li><a href="#Chronometer">Chronometer</a></li>
+                
+                    <li><a href="#Circle Position">Circle Position</a></li>
+                
+                    <li><a href="#Circuit Closure">Circuit Closure</a></li>
+                
+                    <li><a href="#Clarke 1866 Ellipsoid">Clarke 1866 Ellipsoid</a></li>
+                
+                    <li><a href="#Closed Traverse">Closed Traverse</a></li>
+                
+                    <li><a href="#Collimation">Collimation</a></li>
+                
+                    <li><a href="#Collimation Error">Collimation Error</a></li>
+                
+                    <li><a href="#Compass Rule">Compass Rule</a></li>
+                
+                    <li><a href="#Confidence Level">Confidence Level</a></li>
+                
+                    <li><a href="#Conformal">Conformal</a></li>
+                
+                    <li><a href="#Contour">Contour</a></li>
+                
+                    <li><a href="#Control">Control</a></li>
+                
+                    <li><a href="#Control Densification">Control Densification</a></li>
+                
+                    <li><a href="#Control Monuments">Control Monuments</a></li>
+                
+                    <li><a href="#Control Point">Control Point</a></li>
+                
+                    <li><a href="#Control Survey">Control Survey</a></li>
+                
+                    <li><a href="#Control Traverse">Control Traverse</a></li>
+                
+                    <li><a href="#Conventional Terrestrial Pole (CTP)">Conventional Terrestrial Pole (CTP)</a></li>
+                
+                    <li><a href="#Coordinate Transformation">Coordinate Transformation</a></li>
+                
+                    <li><a href="#CORPSCON">CORPSCON</a></li>
+                
+                    <li><a href="#Crandall Method">Crandall Method</a></li>
+                
+                    <li><a href="#Cross sections">Cross sections</a></li>
+                
+                    <li><a href="#Curvature">Curvature</a></li>
+                
+                    <li><a href="#Datum">Datum</a></li>
+                
+                    <li><a href="#Declination">Declination</a></li>
+                
+                    <li><a href="#Deflection of the Vertical">Deflection of the Vertical</a></li>
+                
+                    <li><a href="#Deflection Traverse">Deflection Traverse</a></li>
+                
+                    <li><a href="#Deformation Monitoring">Deformation Monitoring</a></li>
+                
+                    <li><a href="#Departure">Departure</a></li>
+                
+                    <li><a href="#Differential GPS">Differential GPS</a></li>
+                
+                    <li><a href="#Differential Leveling">Differential Leveling</a></li>
+                
+                    <li><a href="#Direction">Direction</a></li>
+                
+                    <li><a href="#Direct Leveling">Direct Leveling</a></li>
+                
+                    <li><a href="#Distance Angle">Distance Angle</a></li>
+                
+                    <li><a href="#Dumpy Level">Dumpy Level</a></li>
+                
+                    <li><a href="#Earth-Centered Ellipsoid">Earth-Centered Ellipsoid</a></li>
+                
+                    <li><a href="#Easting">Easting</a></li>
+                
+                    <li><a href="#Eccentricity">Eccentricity</a></li>
+                
+                    <li><a href="#Electronic Distance Measurement">Electronic Distance Measurement</a></li>
+                
+                    <li><a href="#Elevation">Elevation</a></li>
+                
+                    <li><a href="#Ellipsoid">Ellipsoid</a></li>
+                
+                    <li><a href="#Ellipsoid height">Ellipsoid height</a></li>
+                
+                    <li><a href="#Error">Error</a></li>
+                
+                    <li><a href="#Error Ellipse">Error Ellipse</a></li>
+                
+                    <li><a href="#Error of Closure">Error of Closure</a></li>
+                
+                    <li><a href="#Finite Element Method">Finite Element Method</a></li>
+                
+                    <li><a href="#Fixed Elevation">Fixed Elevation</a></li>
+                
+                    <li><a href="#Foresight">Foresight</a></li>
+                
+                    <li><a href="#Frequency">Frequency</a></li>
+                
+                    <li><a href="#Geodesic Line">Geodesic Line</a></li>
+                
+                    <li><a href="#Geodesy">Geodesy</a></li>
+                
+                    <li><a href="#Geodetic Control">Geodetic Control</a></li>
+                
+                    <li><a href="#Geodetic Coordinates">Geodetic Coordinates</a></li>
+                
+                    <li><a href="#Geodetic Height">Geodetic Height</a></li>
+                
+                    <li><a href="#Geodetic Latitude">Geodetic Latitude</a></li>
+                
+                    <li><a href="#Geodetic Leveling">Geodetic Leveling</a></li>
+                
+                    <li><a href="#Geodetic Longitude">Geodetic Longitude</a></li>
+                
+                    <li><a href="#Geodetic North">Geodetic North</a></li>
+                
+                    <li><a href="#Geodetic Reference System of 1980">Geodetic Reference System of 1980</a></li>
+                
+                    <li><a href="#Geoid">Geoid</a></li>
+                
+                    <li><a href="#Global Positioning System">Global Positioning System</a></li>
+                
+                    <li><a href="#Gravimeter">Gravimeter</a></li>
+                
+                    <li><a href="#Gravity">Gravity</a></li>
+                
+                    <li><a href="#Greenwich Meridian">Greenwich Meridian</a></li>
+                
+                    <li><a href="#Grid Azimuth">Grid Azimuth</a></li>
+                
+                    <li><a href="#Grid Inverse">Grid Inverse</a></li>
+                
+                    <li><a href="#Grid Meridian">Grid Meridian</a></li>
+                
+                    <li><a href="#Gunter&#39;s Chain">Gunter&#39;s Chain</a></li>
+                
+                    <li><a href="#Gyrotheodolite">Gyrotheodolite</a></li>
+                
+                    <li><a href="#Histogram">Histogram</a></li>
+                
+                    <li><a href="#Horizontal Control">Horizontal Control</a></li>
+                
+                    <li><a href="#Hour Circle">Hour Circle</a></li>
+                
+                    <li><a href="#Index Error">Index Error</a></li>
+                
+                    <li><a href="#Indirect Leveling">Indirect Leveling</a></li>
+                
+                    <li><a href="#Interior Angle">Interior Angle</a></li>
+                
+                    <li><a href="#International Foot">International Foot</a></li>
+                
+                    <li><a href="#International System of Units">International System of Units</a></li>
+                
+                    <li><a href="#Interpolation Method">Interpolation Method</a></li>
+                
+                    <li><a href="#Intersection">Intersection</a></li>
+                
+                    <li><a href="#Intervisibility">Intervisibility</a></li>
+                
+                    <li><a href="#Invar">Invar</a></li>
+                
+                    <li><a href="#Isogonic Chart">Isogonic Chart</a></li>
+                
+                    <li><a href="#Isogonic Line">Isogonic Line</a></li>
+                
+                    <li><a href="#Laplace Azimuth">Laplace Azimuth</a></li>
+                
+                    <li><a href="#Laplace Condition">Laplace Condition</a></li>
+                
+                    <li><a href="#Laplace Equation">Laplace Equation</a></li>
+                
+                    <li><a href="#Laplace Station">Laplace Station</a></li>
+                
+                    <li><a href="#Least Count">Least Count</a></li>
+                
+                    <li><a href="#Least Squares Adjustment">Least Squares Adjustment</a></li>
+                
+                    <li><a href="#Level">Level</a></li>
+                
+                    <li><a href="#Level Datum">Level Datum</a></li>
+                
+                    <li><a href="#Level Net">Level Net</a></li>
+                
+                    <li><a href="#Line of Sight">Line of Sight</a></li>
+                
+                    <li><a href="#Local Coordinate System">Local Coordinate System</a></li>
+                
+                    <li><a href="#Local Datum">Local Datum</a></li>
+                
+                    <li><a href="#Loop Traverse">Loop Traverse</a></li>
+                
+                    <li><a href="#Magnetic Bearing">Magnetic Bearing</a></li>
+                
+                    <li><a href="#Magnetic Meridian">Magnetic Meridian</a></li>
+                
+                    <li><a href="#Major Semi-Axis">Major Semi-Axis</a></li>
+                
+                    <li><a href="#Map">Map</a></li>
+                
+                    <li><a href="#Map Accuracy">Map Accuracy</a></li>
+                
+                    <li><a href="#Map Scale">Map Scale</a></li>
+                
+                    <li><a href="#Mean Angle">Mean Angle</a></li>
+                
+                    <li><a href="#Mean Lower Low Water">Mean Lower Low Water</a></li>
+                
+                    <li><a href="#Mean Sea Level Datum">Mean Sea Level Datum</a></li>
+                
+                    <li><a href="#Metric Unit">Metric Unit</a></li>
+                
+                    <li><a href="#Micrometer">Micrometer</a></li>
+                
+                    <li><a href="#Minor Semi-Axis">Minor Semi-Axis</a></li>
+                
+                    <li><a href="#Misclosure">Misclosure</a></li>
+                
+                    <li><a href="#Monument">Monument</a></li>
+                
+                    <li><a href="#NADCON">NADCON</a></li>
+                
+                    <li><a href="#Nadir">Nadir</a></li>
+                
+                    <li><a href="#National Geodetic Vertical Datum 1929">National Geodetic Vertical Datum 1929</a></li>
+                
+                    <li><a href="#National Map Accuracy Standards">National Map Accuracy Standards</a></li>
+                
+                    <li><a href="#National Tidal Datum Epoch">National Tidal Datum Epoch</a></li>
+                
+                    <li><a href="#Network">Network</a></li>
+                
+                    <li><a href="#Non-SI units">Non-SI units</a></li>
+                
+                    <li><a href="#North American Datum of 1927">North American Datum of 1927</a></li>
+                
+                    <li><a href="#North American Datum of 1983">North American Datum of 1983</a></li>
+                
+                    <li><a href="#North American Vertical Datum of 1988">North American Vertical Datum of 1988</a></li>
+                
+                    <li><a href="#Northing">Northing</a></li>
+                
+                    <li><a href="#Open Traverse">Open Traverse</a></li>
+                
+                    <li><a href="#Optical Micrometer">Optical Micrometer</a></li>
+                
+                    <li><a href="#Optical Plummet">Optical Plummet</a></li>
+                
+                    <li><a href="#Order of Accuracy">Order of Accuracy</a></li>
+                
+                    <li><a href="#Origin">Origin</a></li>
+                
+                    <li><a href="#Orthometric Height">Orthometric Height</a></li>
+                
+                    <li><a href="#Parallax">Parallax</a></li>
+                
+                    <li><a href="#Philadelphia Leveling Rod">Philadelphia Leveling Rod</a></li>
+                
+                    <li><a href="#Photogrammetry">Photogrammetry</a></li>
+                
+                    <li><a href="#Picture Point">Picture Point</a></li>
+                
+                    <li><a href="#Planetable">Planetable</a></li>
+                
+                    <li><a href="#Planimetric Feature">Planimetric Feature</a></li>
+                
+                    <li><a href="#Plumb Line">Plumb Line</a></li>
+                
+                    <li><a href="#Positional Error">Positional Error</a></li>
+                
+                    <li><a href="#Post-Processed Real-Time Kinematic GPS">Post-Processed Real-Time Kinematic GPS</a></li>
+                
+                    <li><a href="#Precision">Precision</a></li>
+                
+                    <li><a href="#Prime Meridian">Prime Meridian</a></li>
+                
+                    <li><a href="#Prime Vertical">Prime Vertical</a></li>
+                
+                    <li><a href="#Project Control">Project Control</a></li>
+                
+                    <li><a href="#Project Datum">Project Datum</a></li>
+                
+                    <li><a href="#Projection">Projection</a></li>
+                
+                    <li><a href="#Quadrangle">Quadrangle</a></li>
+                
+                    <li><a href="#Random Error">Random Error</a></li>
+                
+                    <li><a href="#Range Pole">Range Pole</a></li>
+                
+                    <li><a href="#Readings">Readings</a></li>
+                
+                    <li><a href="#Real-time">Real-time</a></li>
+                
+                    <li><a href="#Real-Time Kinematic GPS">Real-Time Kinematic GPS</a></li>
+                
+                    <li><a href="#Reciprocal Leveling">Reciprocal Leveling</a></li>
+                
+                    <li><a href="#Rectangular Coordinate Systems">Rectangular Coordinate Systems</a></li>
+                
+                    <li><a href="#Redundant Measurements">Redundant Measurements</a></li>
+                
+                    <li><a href="#Reference Meridian, True">Reference Meridian, True</a></li>
+                
+                    <li><a href="#Reference Meridian, Magnetic">Reference Meridian, Magnetic</a></li>
+                
+                    <li><a href="#Reference Point">Reference Point</a></li>
+                
+                    <li><a href="#Refraction">Refraction</a></li>
+                
+                    <li><a href="#Relative Accuracy">Relative Accuracy</a></li>
+                
+                    <li><a href="#Repeating Theodolite">Repeating Theodolite</a></li>
+                
+                    <li><a href="#Resection">Resection</a></li>
+                
+                    <li><a href="#Sexagesimal System">Sexagesimal System</a></li>
+                
+                    <li><a href="#Set-up">Set-up</a></li>
+                
+                    <li><a href="#Spheroid">Spheroid</a></li>
+                
+                    <li><a href="#Spirit Level">Spirit Level</a></li>
+                
+                    <li><a href="#Stadia Constant">Stadia Constant</a></li>
+                
+                    <li><a href="#Stadia Traverse">Stadia Traverse</a></li>
+                
+                    <li><a href="#Standard Error">Standard Error</a></li>
+                
+                    <li><a href="#Systematic Error">Systematic Error</a></li>
+                
+                    <li><a href="#State Plane Coordinate System">State Plane Coordinate System</a></li>
+                
+                    <li><a href="#Strength of Figure">Strength of Figure</a></li>
+                
+                    <li><a href="#Subtense Bar">Subtense Bar</a></li>
+                
+                    <li><a href="#Taping">Taping</a></li>
+                
+                    <li><a href="#Three-wire Leveling">Three-wire Leveling</a></li>
+                
+                    <li><a href="#Topographic Map">Topographic Map</a></li>
+                
+                    <li><a href="#Transformation">Transformation</a></li>
+                
+                    <li><a href="#Transit">Transit</a></li>
+                
+                    <li><a href="#Transit Rule">Transit Rule</a></li>
+                
+                    <li><a href="#Transverse Mercator Projection">Transverse Mercator Projection</a></li>
+                
+                    <li><a href="#Traverse">Traverse</a></li>
+                
+                    <li><a href="#Triangulation">Triangulation</a></li>
+                
+                    <li><a href="#tribrach">tribrach</a></li>
+                
+                    <li><a href="#Trigonometric heighting">Trigonometric heighting</a></li>
+                
+                    <li><a href="#Trilateration">Trilateration</a></li>
+                
+                    <li><a href="#Universal Transverse Mercator">Universal Transverse Mercator</a></li>
+                
+                    <li><a href="#US Coast &amp; Geodetic Survey">US Coast &amp; Geodetic Survey</a></li>
+                
+                    <li><a href="#US Survey Foot">US Survey Foot</a></li>
+                
+                    <li><a href="#Variance-Covariance Matrix">Variance-Covariance Matrix</a></li>
+                
+                    <li><a href="#Vernier">Vernier</a></li>
+                
+                    <li><a href="#VERTCON">VERTCON</a></li>
+                
+                    <li><a href="#Vertical Angle">Vertical Angle</a></li>
+                
+                    <li><a href="#Vertical Circle">Vertical Circle</a></li>
+                
+                    <li><a href="#Vertical Datum">Vertical Datum</a></li>
+                
+                    <li><a href="#World Geodetic System of 1984">World Geodetic System of 1984</a></li>
+                
+                    <li><a href="#Wye Level">Wye Level</a></li>
+                
+                    <li><a href="#Zenith">Zenith</a></li>
+                
+                    <li><a href="#Zenith Angle">Zenith Angle</a></li>
+                
+                    <li><a href="#Zenith Distance">Zenith Distance</a></li>
+                
+                <li><a href="#abbreviations">Abbreviations</a></li>
+                
+                </ul>
+        </div>
+        <div class="content">
+            <h1>Engineering Manual 1110-1-1005 Control and Topographic Surveying</h1>
+            <div id="about" class="about">
+                <h2>About</h2>
+                <p><strong>publisher:</strong> </p>
+                <p><strong>namespace:</strong> https://usace-data.com/civil-works/glossary/EM-1110-1-1005#</p>
+                <p><strong>prefix:</strong> EM-1110-1-1005</p>
+
+                
+                    <p><strong>template:</strong> glossary</p>
+                
+                <h2><strong>Source</h2>
+                <p2><strong>authoritativeSource:</strong> Engineering Manual 1110-1-1005 Control and Topographic Surveying</p>
+                <p2><strong>description:</strong> </p>
+                <p2><strong>sourceID:</strong> EM 1110-1-1005</p>
+                
+                    <p><strong>url:</strong> <a href="https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf">https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf</a></p>
+                
+
+                
+                    <p><strong>anchor:</strong> 480</p>
+                
+
+                
+                    <p><strong>linkType:</strong> pdf</p>
+                                    
+                
+                
+                
+                
+                    <p><strong>glossaryReferences:</strong> True</p>
+                
+            </div>
+
+            <h2>Terms</h2>
+            
+                <div id="Absolute GPS" class="term">
+                    <h2>Absolute GPS</h2>
+                    <p>Operation with a single receiver for a desired position. This receiver may be positioned to be stationary over a point. This mode of positioning is the most common military and civil application.</p>
+
+                    
+
+                    
+
+                    
+                        <p><strong>altName:</strong> [&#39;Autonomous GPS&#39;]</p>
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Autonomous GPS" class="term">
+                    <h2>Autonomous GPS</h2>
+                    <p>Operation with a single receiver for a desired position. This receiver may be positioned to be stationary over a point. This mode of positioning is the most common military and civil application.</p>
+
+                    
+
+                    
+
+                    
+                        <p><strong>altName:</strong> [&#39;Absolute GPS&#39;]</p>
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Accuracy" class="term">
+                    <h2>Accuracy</h2>
+                    <p>The degree to which an estimated (mean) value is compatible with an expected value. Accuracy implies the estimated value is unbiased.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Adjustment" class="term">
+                    <h2>Adjustment</h2>
+                    <p>Adjustment is the process of estimation and minimization of deviations between measurements and a mathematical model.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Altimeter" class="term">
+                    <h2>Altimeter</h2>
+                    <p>An instrument that measures elevation differences usually based on atmospheric pressure measurements</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Altitude" class="term">
+                    <h2>Altitude</h2>
+                    <p>The vertical angle between the horizontal plane of the observer and a directional line to the object.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Angle of Depression" class="term">
+                    <h2>Angle of Depression</h2>
+                    <p>A negative altitude.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Angle of Elevation" class="term">
+                    <h2>Angle of Elevation</h2>
+                    <p>A positive altitude.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Angular Misclosure" class="term">
+                    <h2>Angular Misclosure</h2>
+                    <p>Difference in the actual and theoretical sum of a series of angles.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Archiving" class="term">
+                    <h2>Archiving</h2>
+                    <p>Storing of documents and information.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Astronomical Latitude" class="term">
+                    <h2>Astronomical Latitude</h2>
+                    <p>Angle between the plumb line and the plane of celestial equator. Also defined as the angle between the plane of the horizon and the axis of rotation of the earth. Astronomical latitude applies only to positions on the earth and is reckoned from the astronomic equator, north and south through 90E. Astronomical latitude is the latitude that results directly from observations of celestial bodies, uncorrected for deflection of the vertical.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Astronomical Longitude" class="term">
+                    <h2>Astronomical Longitude</h2>
+                    <p>Arbitrarily chosen angle between the plane of the celestial meridian and the plane of an initial meridian. Astronomical longitude is the longitude that results directly from observations on celestial bodies, uncorrected for deflection of the vertical.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Astronomical Triangle" class="term">
+                    <h2>Astronomical Triangle</h2>
+                    <p>A spherical triangle formed by arcs of great circles connecting the celestial pole, the zenith and a celestial body. The angles of the astronomical triangles are: at the pole, the hour angle; at the celestial body, the parallactic angle; at the zenith, the azimuth angle. The sides are: pole to zenith, the co-latitude; zenith to celestial body, the zenith distance; and celestial body to pole, the polar distance.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 480</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Atmospheric Refraction" class="term">
+                    <h2>Atmospheric Refraction</h2>
+                    <p>Refraction of electromagnetic radiation through the atmosphere causing the line-of-sight to deviate from a straight path. Mainly temperature and pressure conditions determine the magnitude and direction of curvature affecting the path of light from a source. Refraction causes the ray to follow a curved path normal the surface gradient.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 481</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Azimuth" class="term">
+                    <h2>Azimuth</h2>
+                    <p>The horizontal direction of a line clockwise from a reference plane, usually the meridian. Often called forward azimuth to differentiate from back azimuth.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 481</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Azimuth Angle" class="term">
+                    <h2>Azimuth Angle</h2>
+                    <p>The angle less than 180Â° between the plane of the celestial meridian and the vertical plane with the observed object, reckoned from the direction of the elevated pole. In astronomic work, the azimuth angle is the spherical angle at the zenith in the astronomical triangle, which is composed of the pole, the zenith and the star. In geodetic work, it is the horizontal angle between the celestial pole and the observed terrestrial object.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 481</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Azimuth Closure" class="term">
+                    <h2>Azimuth Closure</h2>
+                    <p>Difference in arc-seconds of the measured or adjusted azimuth value with the true or published azimuth value.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 481</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Backsight" class="term">
+                    <h2>Backsight</h2>
+                    <p>A sight on a previously established traverse or triangulation station and not the closing sight on the traverse. A reading on a rod held on a point whose elevation has been previously determined.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 481</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Barometric Leveling" class="term">
+                    <h2>Barometric Leveling</h2>
+                    <p>Determining differences of elevation from measured differences of atmospheric pressure observed with a barometer. If the elevation of one station above a datum is known, the approximate elevations of other station can be determined by barometric leveling. Barometric leveling is widely used in reconnaissance and exploratory surveys.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 481</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Baseline" class="term">
+                    <h2>Baseline</h2>
+                    <p>Resultant three-dimensional vector between any two stations with respect to a given coordinate system. The primary reference line in a construction system.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 481</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Base net" class="term">
+                    <h2>Base net</h2>
+                    <p>The primary baseline used for densification of survey stations to form a network.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 481</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Base Points" class="term">
+                    <h2>Base Points</h2>
+                    <p>The beginning points for a traverse that will be used in triangulation or trilateration.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 481</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Base Control" class="term">
+                    <h2>Base Control</h2>
+                    <p>The horizontal and vertical control points and coordinates used to establish a base network. Base control is determined by field surveys and permanently marked or monumented for further surveys.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 481</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Bearing" class="term">
+                    <h2>Bearing</h2>
+                    <p>The direction of a line with respect to the meridian described by degrees, minutes, and seconds within a quadrant of the circle. Bearings are measured clockwise or counterclockwise from north or south, depending on the quadrant.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 481</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Benchmark" class="term">
+                    <h2>Benchmark</h2>
+                    <p>A permanent material object, natural or artificial, on a marked point of known elevation.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 482</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Best Fit" class="term">
+                    <h2>Best Fit</h2>
+                    <p>To represent a given set of points by a smooth function, curve, or surface which minimizes the deviations of the fit.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 482</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Bipod" class="term">
+                    <h2>Bipod</h2>
+                    <p>A two-legged support structure for an instrument or survey signal at a height convenient for the observer.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 482</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Bluebook" class="term">
+                    <h2>Bluebook</h2>
+                    <p>Another term for the &#34;FGCS Input Formats and Specifications of the National Geodetic Data Base&#34;.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 482</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Blunder" class="term">
+                    <h2>Blunder</h2>
+                    <p>A mistake or gross error.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 482</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Bureau International de l&#39;Heure" class="term">
+                    <h2>Bureau International de l&#39;Heure</h2>
+                    <p>The Bureau was founded in 1919 and its offices since then have been at the Paris Observatory. By an action of the International Astronomical Union, the BIH ceased to exist on 1 January 1988 and a new organization, the International Earth Rotation Service (IERS) was formed to deal with determination of the Earth&#39;s rotation.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 482</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Cadastral Survey" class="term">
+                    <h2>Cadastral Survey</h2>
+                    <p>Relates to land boundaries and subdivisions, and creates units suitable for transfer or to define the limitations of title. The term cadastral survey is now used to designate the surveys of the public lands of the US, including retracement surveys for identification and resurveys for the restoration of property lines; the term can also be applied properly to corresponding surveys outside the public lands, although such surveys are usually termed land surveys through preference.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 482</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Calibration" class="term">
+                    <h2>Calibration</h2>
+                    <p>Determining the systematic errors in an instrument by comparing measurements with correct values. The correct value is established either by definition or by measurement with a device that has itself been calibrated or of much higher precision.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 482</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Cartesian Coordinates" class="term">
+                    <h2>Cartesian Coordinates</h2>
+                    <p>A system with its origin at the center of the earth and the x and y and z axes in the plane of the equator. Typically, the x-axis passes through the meridian of Greenwich, and the z-axis coincides with the earth&#39;s axis of rotation. The three axes are mutually orthogonal and form a right-handed system.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 482</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Cartesian System" class="term">
+                    <h2>Cartesian System</h2>
+                    <p>A coordinate system consisting of axes intersecting at a common point (origin). The coordinate of a point is the orthogonal distance between that point and the hyperplane determined by all axes. A Cartesian coordinate system has all the axes intersecting at right angles, and the system is called a rectangular.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 482</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Celestial Equator" class="term">
+                    <h2>Celestial Equator</h2>
+                    <p>A great circle on the celestial sphere with equidistant points from the celestial poles. The plane of the earth&#39;s equator, if extended, would coincide with that of the celestial equator.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 482</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Celestial pole" class="term">
+                    <h2>Celestial pole</h2>
+                    <p>A reference point at the point of intersection of an indefinite extension of the earth&#39;s axis of rotation and the apparent celestial sphere.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 482</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Celestial sphere" class="term">
+                    <h2>Celestial sphere</h2>
+                    <p>An imaginary sphere of infinite radius with the earth as a center. It rotates from east to west on a prolongation of the earth&#39;s axis.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Central Meridian" class="term">
+                    <h2>Central Meridian</h2>
+                    <p>A line of constant longitude at the center of a graticule. The central meridian is used as a base for constructing the other lines of the graticule. The meridian is used as the y-axis in computing tables for a State Plane Coordinate system. That line, on a graticule, which represents a meridian and which is an axis of symmetry.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Chain" class="term">
+                    <h2>Chain</h2>
+                    <p>Equal to 66 feet or 100 links. The unit of length prescribed by law for the survey of the US public lands. One acre equals 10 square chains.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Chained Traverse" class="term">
+                    <h2>Chained Traverse</h2>
+                    <p>Observations and measurements performed with tape.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Chaining" class="term">
+                    <h2>Chaining</h2>
+                    <p>Measuring distances on the ground with a graduated tape or with a chain.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Chart Datum" class="term">
+                    <h2>Chart Datum</h2>
+                    <p>Reference surface for soundings on a nautical chart. It is usually taken to correspond to a low water elevation, and its depression below mean sea level is represented by the symbol Zo. Since 1989, chart datum has been implemented to mean lower low water for all marine waters of the US its territories, Commonwealth of Puerto Rico and Trust Territory of the Pacific Islands.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Chi-square Testing" class="term">
+                    <h2>Chi-square Testing</h2>
+                    <p>Non-parametric statistical test used to classify the shape of the distribution of the data.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Chronometer" class="term">
+                    <h2>Chronometer</h2>
+                    <p>A portable timekeeper with compensated balance, capable of showing time with extreme precision and accuracy.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Circle Position" class="term">
+                    <h2>Circle Position</h2>
+                    <p>A prescribed setting (reading) of the horizontal circle of a direction theodolite, to be used for the observation on the initial station of a series of stations that are to be observed.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Circuit Closure" class="term">
+                    <h2>Circuit Closure</h2>
+                    <p>Difference between measured or adjusted value and the true or published value.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Clarke 1866 Ellipsoid" class="term">
+                    <h2>Clarke 1866 Ellipsoid</h2>
+                    <p>The reference ellipsoid used for the NAD 27 horizontal datum. It is a non-geocentric ellipsoid formerly used for mapping in North America.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Closed Traverse" class="term">
+                    <h2>Closed Traverse</h2>
+                    <p>Starts and ends at the same point or at stations whose positions have been determined by other surveys.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Collimation" class="term">
+                    <h2>Collimation</h2>
+                    <p>A physical alignment of a survey target or antenna over a mark or to a reference line.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 483</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Collimation Error" class="term">
+                    <h2>Collimation Error</h2>
+                    <p>The angle between the actual line of sight through an optical instrument and an alignment</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 484</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Compass Rule" class="term">
+                    <h2>Compass Rule</h2>
+                    <p>The correction applied to the departure (or latitude) of any course in a traverse has the same ratio to the total misclosure in departure (or latitude) as the length of the course has to the total length of the traverse.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 484</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Confidence Level" class="term">
+                    <h2>Confidence Level</h2>
+                    <p>Statistical probability (in percent) based on the standard deviation or standard error associated with the normal probability density function. The confidence level is assigned according to an expansion factor multiplied by the magnitude of one standard error. The expansion factor is based on values found in probability tables at a chosen level of significance.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 484</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Conformal" class="term">
+                    <h2>Conformal</h2>
+                    <p>Map projection that preserves shape.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 484</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Contour" class="term">
+                    <h2>Contour</h2>
+                    <p>An imaginary line on the ground with all points at the same elevation above or below a specified reference surface.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 484</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Control" class="term">
+                    <h2>Control</h2>
+                    <p>Data used in geodesy and cartography to determine the positions and elevations of points on the earth&#39;s surface or on a cartographic representation of that surface. A collective term for a system of marks or objects on the earth or on a map or a photograph whose positions or elevation are determined.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 484</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Control Densification" class="term">
+                    <h2>Control Densification</h2>
+                    <p>Addition of control throughout a region or network.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 484</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Control Monuments" class="term">
+                    <h2>Control Monuments</h2>
+                    <p>Existing local control or benchmarks that may consist of any Federal, state, local or private agency points.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 484</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Control Point" class="term">
+                    <h2>Control Point</h2>
+                    <p>A point with assigned coordinates is sometimes used as a synonym for control station. However, a control point need not be realized by a marker on the ground.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 484</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Control Survey" class="term">
+                    <h2>Control Survey</h2>
+                    <p>A survey which provides coordinates (horizontal or vertical) of points to which supplementary surveys are adjusted.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 484</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Control Traverse" class="term">
+                    <h2>Control Traverse</h2>
+                    <p>A survey traverse made to establish control.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 484</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Conventional Terrestrial Pole (CTP)" class="term">
+                    <h2>Conventional Terrestrial Pole (CTP)</h2>
+                    <p>The origin of the WGS 84 Cartesian system is the earth&#39;s center of mass. The Z-axis is parallel to the direction of the CTP for polar motion, as defined by the Bureau of International de l&#39;Heure (BIH), and equal to the rotation axis of the WGS 84 ellipsoid. The X-axis is the intersection of the WGS 84 reference meridian plane and the CTP&#39;s equator, the reference meridian being parallel to the zero meridian defined by the BIH and equal to the X-axis of the WGS 84 ellipsoid. The Y-axis completes a righthanded, earth-centered, earth-fixed orthogonal coordinate system, measured in the plane of the CTP equator 90 degrees east of the X-axis and equal to the Y-axis of the WGS 84 ellipsoid.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 484</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Coordinate Transformation" class="term">
+                    <h2>Coordinate Transformation</h2>
+                    <p>A mathematical process for obtaining a modified set of coordinates through some combination of rotation of coordinate axes at their point of origin, change of scale along coordinate axes, or translation through space</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 485</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="CORPSCON" class="term">
+                    <h2>CORPSCON</h2>
+                    <p>(Corps Convert) Software package (based on NADCON) capable of performing coordinate transformations between NAD 83 and NAD 27 datums.</p>
+
+                    
+
+                    
+
+                    
+                        <p><strong>altName:</strong> [&#39;Corps Convert&#39;]</p>
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 485</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Crandall Method" class="term">
+                    <h2>Crandall Method</h2>
+                    <p>Traverse misclosure in azimuth or angle is first distributed in equal portions to all the measured angles. The adjusted angles are then held fixed and all remaining coordinate corrections distributed among the distance measurements.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 485</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Cross sections" class="term">
+                    <h2>Cross sections</h2>
+                    <p>A survey line run perpendicular to the alignment of a project, channel or structure.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 485</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Curvature" class="term">
+                    <h2>Curvature</h2>
+                    <p>The rate at which a curve deviates from a straight line. The parametric vector described by dt/ds, where t is the vector tangent to a curve and s is the distance along that curve.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 485</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Datum" class="term">
+                    <h2>Datum</h2>
+                    <p>Any numerical or geometrical quantity or set of such quantities which serve as a reference or base for other quantities.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 485</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Declination" class="term">
+                    <h2>Declination</h2>
+                    <p>The angle, at the center of the celestial sphere, between the plane of the celestial equator and a line from the center to the point of interest (on a celestial body).</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 485</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Deflection of the Vertical" class="term">
+                    <h2>Deflection of the Vertical</h2>
+                    <p>The spatial angular difference between the upward direction of a plumb line and the normal to the reference ellipsoid. Often expressed in two orthogonal components in the meridian and the prime vertical directions.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 485</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Deflection Traverse" class="term">
+                    <h2>Deflection Traverse</h2>
+                    <p>Direction of each course measured as an angle from the direction of the preceding course.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 485</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Deformation Monitoring" class="term">
+                    <h2>Deformation Monitoring</h2>
+                    <p>Observing the movement and condition of structures by describing and modeling its change in shape.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 485</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Departure" class="term">
+                    <h2>Departure</h2>
+                    <p>The orthogonal projection of a line onto an east-west axis of reference. The departure of a line is the difference of the meridional distances or longitudes of the ends of the line.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 485</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Differential GPS" class="term">
+                    <h2>Differential GPS</h2>
+                    <p>Process of measuring the differences in coordinates between two receiver points, each of which is simultaneously observing/measuring satellite code ranges and/or carrier phases from the NAVSTAR GPS constellation. Relative positioning with GPS can be performed by a static or kinematic modes.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 485</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Differential Leveling" class="term">
+                    <h2>Differential Leveling</h2>
+                    <p>The process of measuring the difference of elevation between any two points by spirit leveling.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Direction" class="term">
+                    <h2>Direction</h2>
+                    <p>The angle between a line or plane and an arbitrarily chosen reference line or plane. At a triangulation station, observed horizontal angles are referred to a common reference line and termed horizontal direction. A line, real or imaginary, pointing away from some specified point or locality toward another point. Direction has two meanings: that of a numerical value and that of a pointing line.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Direct Leveling" class="term">
+                    <h2>Direct Leveling</h2>
+                    <p>The determination of differences of elevation through a continuous series of short horizontal lines. Vertical distances from these lines to adjacent ground marks are determined by direct observations on graduated rods with a leveling instrument equipped with a spirit level.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Distance Angle" class="term">
+                    <h2>Distance Angle</h2>
+                    <p>An angle in a triangle opposite a side used as a base in the solution of the triangle, or a side whose length is to be computed.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Dumpy Level" class="term">
+                    <h2>Dumpy Level</h2>
+                    <p>The telescope permanently attached to the leveling base, either rigidly to by a hinge that can be manipulated by a micrometer screw.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Earth-Centered Ellipsoid" class="term">
+                    <h2>Earth-Centered Ellipsoid</h2>
+                    <p>Center at the Earth&#39;s center of mass and minor semi-axis coincident with the Earth&#39;s axis of rotation.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Easting" class="term">
+                    <h2>Easting</h2>
+                    <p>The distance eastward (positive) or westward (negative) of a point from a particular meridian taken as reference.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Eccentricity" class="term">
+                    <h2>Eccentricity</h2>
+                    <p>The ratio of the distance from the center of an ellipse to its focus on the major semi-axis.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Electronic Distance Measurement" class="term">
+                    <h2>Electronic Distance Measurement</h2>
+                    <p>Timing or phase comparison of electro-magnetic signal to determine an interferometric distance.</p>
+
+                    
+
+                    
+
+                    
+                        <p><strong>altName:</strong> [&#39;EDM&#39;]</p>
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Elevation" class="term">
+                    <h2>Elevation</h2>
+                    <p>The height of an object above some reference datum.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Ellipsoid" class="term">
+                    <h2>Ellipsoid</h2>
+                    <p>Formed by revolving an ellipse about its minor semi-axis. The most commonly used reference ellipsoids in North America are: Clarke 1866, Geodetic Reference System of 1980 (GRS 80), World Geodetic System of 1972 (WGS 72) and World Geodetic System of 1984 (WGS 84).</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Ellipsoid height" class="term">
+                    <h2>Ellipsoid height</h2>
+                    <p>The magnitude h of a point above or below the reference ellipsoid measured along the normal to the ellipsoid surface.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Error" class="term">
+                    <h2>Error</h2>
+                    <p>The difference between the measured value of a quantity and the theoretical or defined value of that quantity.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 486</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Error Ellipse" class="term">
+                    <h2>Error Ellipse</h2>
+                    <p>An elliptically shaped region with dimensions corresponding to a certain probability at a given confidence level.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Error of Closure" class="term">
+                    <h2>Error of Closure</h2>
+                    <p>Difference in the measured and predicted value of the circuit along the perimeter of a geometric figure</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Finite Element Method" class="term">
+                    <h2>Finite Element Method</h2>
+                    <p>Obtaining an approximate solution to a problem for which the governing differential equations and boundary conditions are known. The method divides the region of interest into numerous, interconnected sub-regions (finite elements) over which simple, approximating functions are used to represent the unknown quantities.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Fixed Elevation" class="term">
+                    <h2>Fixed Elevation</h2>
+                    <p>Adopted as a result of tide observations or previous adjustment of spirit leveling, and which is held at its accepted value in any subsequent adjustment.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Foresight" class="term">
+                    <h2>Foresight</h2>
+                    <p>An observation to the next instrument station. The reading on a rod that is held at a point whose elevation is to be determined.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Frequency" class="term">
+                    <h2>Frequency</h2>
+                    <p>The number of complete cycles per second existing in any form of wave motion.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Geodesic Line" class="term">
+                    <h2>Geodesic Line</h2>
+                    <p>Shortest distance between any two points on any mathematically defined surface.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Geodesy" class="term">
+                    <h2>Geodesy</h2>
+                    <p>Determination of the time-varying size and figure of the earth by such direct measurements as triangulation, leveling and gravimetric observations.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Geodetic Control" class="term">
+                    <h2>Geodetic Control</h2>
+                    <p>Established and adjusted horizontal and/or vertical control in which the shape and size of the earth have been considered in position computations.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Geodetic Coordinates" class="term">
+                    <h2>Geodetic Coordinates</h2>
+                    <p>Angular latitudinal and longitudinal coordinates defined with respect to a reference ellipsoid.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Geodetic Height" class="term">
+                    <h2>Geodetic Height</h2>
+                    <p>See Ellipsoid height.</p>
+
+                    
+
+                    
+
+                    
+                        <p><strong>altName:</strong> [&#39;Ellipsoid height&#39;]</p>
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Geodetic Latitude" class="term">
+                    <h2>Geodetic Latitude</h2>
+                    <p>The angle which the normal at a point on the reference ellipsoid makes with the plane of the equator.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Geodetic Leveling" class="term">
+                    <h2>Geodetic Leveling</h2>
+                    <p>The observation of the differences in elevation by means of a continuous series of short horizontal lines of sight.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Geodetic Longitude" class="term">
+                    <h2>Geodetic Longitude</h2>
+                    <p>The angle subtended at the pole between the plane of the geodetic meridian and the plane of a reference meridian (Greenwich).</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 487</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Geodetic North" class="term">
+                    <h2>Geodetic North</h2>
+                    <p>Direction tangent to a meridian pointing toward the pole defining astronomic north, also called true north.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Geodetic Reference System of 1980" class="term">
+                    <h2>Geodetic Reference System of 1980</h2>
+                    <p>Reference ellipsoid used to establish the NAD 83 system of geodetic coordinates.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Geoid" class="term">
+                    <h2>Geoid</h2>
+                    <p>An equipotential surface of the gravity field approximating the earth&#39;s surface and corresponding with mean sea level in the oceans and its extension through the continents.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Global Positioning System" class="term">
+                    <h2>Global Positioning System</h2>
+                    <p>DoD satellite constellation providing range, time, and position information through a GPS receiver system.</p>
+
+                    
+
+                    
+
+                    
+                        <p><strong>altName:</strong> [&#39;GPS&#39;]</p>
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Gravimeter" class="term">
+                    <h2>Gravimeter</h2>
+                    <p>Instrument for measuring changes in gravity between two points.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Gravity" class="term">
+                    <h2>Gravity</h2>
+                    <p>Combined acceleration potential of an object due to gravitation and centrifugal forces.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Greenwich Meridian" class="term">
+                    <h2>Greenwich Meridian</h2>
+                    <p>The astronomic meridian through the center of the Airy transit instrument of the Greenwich Observatory, Greenwich, England. By international agreement in 1884, the Greenwich meridian was adopted as the meridian from which all longitudes, worldwide, would be calculated.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Grid Azimuth" class="term">
+                    <h2>Grid Azimuth</h2>
+                    <p>The angle in the plane of projection between a straight line and the line (y-axis) in a plane rectangular coordinate system representing the central meridian. While essentially a map-related quantity, a grid azimuth may, by mathematical processes, be transformed into a survey- related or ground-related quantity.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Grid Inverse" class="term">
+                    <h2>Grid Inverse</h2>
+                    <p>The computation of length and azimuth from coordinates on a grid.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Grid Meridian" class="term">
+                    <h2>Grid Meridian</h2>
+                    <p>Line parallel to the line representing the central meridian or y-axis of a grid on a map. The map line parallel to the line representing the y-axis or central meridian in a rectangular coordinate system.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Gunter&#39;s Chain" class="term">
+                    <h2>Gunter&#39;s Chain</h2>
+                    <p>A measuring device once used in land surveying. It was composed of 100 metallic links fastened together with rings. The total length of the chain is 66 feet. Also called a four-pole chain.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Gyrotheodolite" class="term">
+                    <h2>Gyrotheodolite</h2>
+                    <p>A gyroscopic device used to measure azimuth that is built-in or attached to a theodolite.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Histogram" class="term">
+                    <h2>Histogram</h2>
+                    <p>A graphical representation of relative frequency of an outcome partitioned by class interval. The frequency of occurrence is indicated by the height of a rectangle whose base is proportional to the class interval.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 488</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Horizontal Control" class="term">
+                    <h2>Horizontal Control</h2>
+                    <p>Determines horizontal positions with respect to parallels and meridians or to other lines of reference.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Hour Circle" class="term">
+                    <h2>Hour Circle</h2>
+                    <p>Any great circle on the celestial sphere whose plane is perpendicular to the plane of the celestial equator.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Index Error" class="term">
+                    <h2>Index Error</h2>
+                    <p>A systematic error caused by deviation of an index mark or zero mark on an instrument having a scale or vernier, so that the instrument gives a non-zero reading when it should give a reading of zero. The distance error from the foot of a leveling rod to the nominal origin (theoretical zero) of the scale.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Indirect Leveling" class="term">
+                    <h2>Indirect Leveling</h2>
+                    <p>The determination of differences of elevation from vertical angles and horizontal distances.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Interior Angle" class="term">
+                    <h2>Interior Angle</h2>
+                    <p>An angle between adjacent sides of a closed figure and lying on the inside of the figure. The three angles within a triangle are interior angles.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="International Foot" class="term">
+                    <h2>International Foot</h2>
+                    <p>Defined by the ratio 30.48/100 meters.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="International System of Units" class="term">
+                    <h2>International System of Units</h2>
+                    <p>A self-consistent system of units adopted by the general Conference on Weights and Measures in 1960 as a modification of the then-existing metric system.</p>
+
+                    
+
+                    
+
+                    
+                        <p><strong>altName:</strong> [&#39;SI&#39;]</p>
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Interpolation Method" class="term">
+                    <h2>Interpolation Method</h2>
+                    <p>Determination of a intermediate value between given values using a known or assumed rate of change of the values between the given values.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Intersection" class="term">
+                    <h2>Intersection</h2>
+                    <p>Determining the horizontal position of a point by observations from two or more points of known position. Thus measuring directions or distances that intersect at the station being located. A station whose horizontal position is located by intersection is known as an intersection station.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Intervisibility" class="term">
+                    <h2>Intervisibility</h2>
+                    <p>When two stations are visible to each other in a survey net.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Invar" class="term">
+                    <h2>Invar</h2>
+                    <p>An alloy of iron containing nickel, and small amounts of chromium to increase hardness, manganese to facilitate drawing, and carbon to raise the elastic limit, and having a very low coefficient of thermal expansion (about 1/25 that of steel).</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Isogonic Chart" class="term">
+                    <h2>Isogonic Chart</h2>
+                    <p>A system of isogonic lines, each for a different value of the magnetic declination.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Isogonic Line" class="term">
+                    <h2>Isogonic Line</h2>
+                    <p>A line drawn on a chart or map and connecting all points representing points on the earth having equal magnetic declination at a given time.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Laplace Azimuth" class="term">
+                    <h2>Laplace Azimuth</h2>
+                    <p>A geodetic azimuth derived from an astronomic azimuth by use of the Laplace equation.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 489</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Laplace Condition" class="term">
+                    <h2>Laplace Condition</h2>
+                    <p>Arises from the fact that a deflection of the vertical in the plane of the prime vertical will give a difference between astronomic and geodetic longitude and between astronomic and geodetic azimuth. Conversely, the observed differences between astronomic and geodetic values of the longitude and of the azimuth may both be used to determine the deflection in the plane of the prime vertical.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 490</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Laplace Equation" class="term">
+                    <h2>Laplace Equation</h2>
+                    <p>Expresses the relationship between astronomic and geodetic azimuths in terms of astronomic and geodetic longitudes and geodetic latitude.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 490</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Laplace Station" class="term">
+                    <h2>Laplace Station</h2>
+                    <p>A triangulation or traverse station at which a Laplace azimuth is determined. At a Laplace station both astronomic longitude and astronomic azimuth are determined.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 490</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Least Count" class="term">
+                    <h2>Least Count</h2>
+                    <p>The finest reading that can be made directly (without estimation) from a vernier or micrometer.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 490</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Least Squares Adjustment" class="term">
+                    <h2>Least Squares Adjustment</h2>
+                    <p>The adjustment of the values of either the measured angles or the measured distances in a traverse using the condition that the sum of the squares of the residuals is a minimum.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 490</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Level" class="term">
+                    <h2>Level</h2>
+                    <p>Any device sensitive to the direction of gravity and used to indicate directions perpendicular to that of gravity at a point.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 490</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Level Datum" class="term">
+                    <h2>Level Datum</h2>
+                    <p>A level surface to which elevations are referred. The generally adopted level datum for leveling in the US is mean sea level. For local surveys, an arbitrary level datum is often adopted and defined in terms of an assumed elevation for some physical mark.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 490</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Level Net" class="term">
+                    <h2>Level Net</h2>
+                    <p>Lines of spirit leveling connected together to form a system of loops or circuits extending over an area.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 490</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Line of Sight" class="term">
+                    <h2>Line of Sight</h2>
+                    <p>The line extending from an instrument along which distant objects are seen, when viewed with a telescope or other sighting device.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 490</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Local Coordinate System" class="term">
+                    <h2>Local Coordinate System</h2>
+                    <p>Where the coordinate system origin is assigned arbitrary values and is within the region being surveyed and used principally for points within that region.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 490</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Local Datum" class="term">
+                    <h2>Local Datum</h2>
+                    <p>Defines a coordinate system that is used only over a region of very limited extent.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 490</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Loop Traverse" class="term">
+                    <h2>Loop Traverse</h2>
+                    <p>A closed traverse that starts and ends at the same station. A pattern of measurements in the field, so that the final measurement is made at the same place as the first measurement.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 491</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Magnetic Bearing" class="term">
+                    <h2>Magnetic Bearing</h2>
+                    <p>The angle with respect to magnetic north or magnetic south stated as east or west of the magnetic meridian.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 491</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Magnetic Meridian" class="term">
+                    <h2>Magnetic Meridian</h2>
+                    <p>The vertical plane through the magnetic pole including the direction, at any point, of the horizontal component of the Earth&#39;s magnetic field.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 491</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Major Semi-Axis" class="term">
+                    <h2>Major Semi-Axis</h2>
+                    <p>The line from the center of an ellipse to the extremity of the longest diameter. The term is also used to mean the length of the line.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 491</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Map" class="term">
+                    <h2>Map</h2>
+                    <p>A conventional representation, usually on a plane surface and at an established scale, of the physical features (natural, artificial, or both) of a part or whole of the Earth&#39;s surface by means of signs and symbols and with the means of orientation indicated.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 491</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Map Accuracy" class="term">
+                    <h2>Map Accuracy</h2>
+                    <p>The accuracy with which a map represents. Three types of error commonly occur on maps: errors of representation, which occur because conventional signs must be used to represent natural or man-made features such as forests, buildings and cities; errors of identification, which occur because a non-existent feature is shown or is misidentified; and errors of position, which occur when an object is shown in the wrong position. Errors of position are commonly classified into two types: errors of horizontal location and errors of elevation. A third type, often neglected, is errors of orientation.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 491</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Map Scale" class="term">
+                    <h2>Map Scale</h2>
+                    <p>The ratio of a specified distance on a map to the corresponding distance in the mapped object.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 491</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Mean Angle" class="term">
+                    <h2>Mean Angle</h2>
+                    <p>Average value of the angles.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 491</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Mean Lower Low Water" class="term">
+                    <h2>Mean Lower Low Water</h2>
+                    <p>The average height of all lower low waters recorded over a 19-year period.</p>
+
+                    
+
+                    
+
+                    
+                        <p><strong>altName:</strong> [&#39;MLLW&#39;]</p>
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 491</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Mean Sea Level Datum" class="term">
+                    <h2>Mean Sea Level Datum</h2>
+                    <p>Adopted as a standard datum for heights or elevations. The Sea Level Datum of 1929, the current standard for geodetic leveling in the United States, is based on tidal observations over a number of years at various tide stations along the coasts.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 491</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Metric Unit" class="term">
+                    <h2>Metric Unit</h2>
+                    <p>Belonging to or derived from the SI system of units.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 491</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Micrometer" class="term">
+                    <h2>Micrometer</h2>
+                    <p>In general, any instrument for measuring small distances very accurately. In astronomy and geodesy, a device, for attachment to a telescope or microscope, consisting of a mark moved across the field of view by a screw connected to a graduated drum and vernier. If the mark is a hair-like filament, the micrometer is called a filar micrometer.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 491</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Minor Semi-Axis" class="term">
+                    <h2>Minor Semi-Axis</h2>
+                    <p>The line from the center of an ellipse to the extremity of the shortest diameter. I.e., one of the two shortest lines from the center to the ellipse. The term is also used to mean the length of the line.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Misclosure" class="term">
+                    <h2>Misclosure</h2>
+                    <p>The difference between a computed and measured value.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Monument" class="term">
+                    <h2>Monument</h2>
+                    <p>A physical object used as an indication of the position on the ground of a survey station.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="NADCON" class="term">
+                    <h2>NADCON</h2>
+                    <p>The National Geodetic Survey developed the conversion program NADCON (North American Datum Conversion) to convert to and from North American Datum of 1983. The technique used is based on a biharmonic equation classically used to model plate deflections. NADCON works exclusively in geographical coordinates (latitude/longitude).</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Nadir" class="term">
+                    <h2>Nadir</h2>
+                    <p>The point directly beneath the instrument and directly opposite to the zenith or the lowest point.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="National Geodetic Vertical Datum 1929" class="term">
+                    <h2>National Geodetic Vertical Datum 1929</h2>
+                    <p>Formerly adopted as the standard geodetic datum for heights, based on an adjustment holding 26 primary tide stations in North America fixed.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="National Map Accuracy Standards" class="term">
+                    <h2>National Map Accuracy Standards</h2>
+                    <p>Specifications of the accuracy required of topographic maps published by the US at various scales.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="National Tidal Datum Epoch" class="term">
+                    <h2>National Tidal Datum Epoch</h2>
+                    <p>A period of 19 years adopted by the National Ocean Survey as the period over which observations of tides are to be taken and reduced to average values for tidal datums.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Network" class="term">
+                    <h2>Network</h2>
+                    <p>Interconnected system of surveyed points.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Non-SI units" class="term">
+                    <h2>Non-SI units</h2>
+                    <p>Units of measurement not associated with International System of Units (SI).</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="North American Datum of 1927" class="term">
+                    <h2>North American Datum of 1927</h2>
+                    <p>Formerly adopted as the standard geodetic datum for horizontal positioning. Based on the Clarke ellipsoid of 1866, the geodetic positions of this system are derived from a readjustment of survey observations throughout North America.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="North American Datum of 1983" class="term">
+                    <h2>North American Datum of 1983</h2>
+                    <p>Adopted as the standard geodetic datum for horizontal positioning. Based on the Geodetic Reference System of 1980, the geodetic positions of this system are derived from a readjustment of survey observations throughout North America.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="North American Vertical Datum of 1988" class="term">
+                    <h2>North American Vertical Datum of 1988</h2>
+                    <p>Adopted as the standard geodetic datum for heights.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 492</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Northing" class="term">
+                    <h2>Northing</h2>
+                    <p>A linear distance, in the coordinate system of a map grid, northwards from the east-west line through the origin (or false origin).</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 493</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Open Traverse" class="term">
+                    <h2>Open Traverse</h2>
+                    <p>Begins from a station of known or adopted position, but does not end upon such a station.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 493</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Optical Micrometer" class="term">
+                    <h2>Optical Micrometer</h2>
+                    <p>Consists of a prism or lens placed in the path of light entering a telescope and rotatable, by means of a graduated linkage, about a horizontal axis perpendicular to the optical axis of the telescope axis. Also called an optical-mechanical compensator. The device is usually placed in front of the objective of a telescope, but may be placed immediately after it. The parallel-plate optical micrometer is the form usually found in leveling instruments.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 493</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Optical Plummet" class="term">
+                    <h2>Optical Plummet</h2>
+                    <p>A small telescope having a 90Â° bend in its optical axis and attached to an instrument in such a way that the line of sight proceeds horizontally from the eyepiece to a point on the vertical axis of the instrument and from that point vertically downwards. In use, the observer, looking into the plummet, brings a point on the instrument vertically above a specified point (usually a geodetic or other mark) below it.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 493</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Order of Accuracy" class="term">
+                    <h2>Order of Accuracy</h2>
+                    <p>Defines the general accuracy of the measurements made in a survey. The order of accuracy of surveys are divided into four classes labeled: First Order, Second Order, Third Order and Fourth or lower order.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 493</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Origin" class="term">
+                    <h2>Origin</h2>
+                    <p>That point in a coordinate system which has defined initial coordinates and not coordinates determined by measurement. This point is usually given the coordinates (0,0) in a coordinate system in the plane and (0,0,0) in a coordinate system in space.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 493</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Orthometric Height" class="term">
+                    <h2>Orthometric Height</h2>
+                    <p>The elevation H of a point above or below the geoid.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 493</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Parallax" class="term">
+                    <h2>Parallax</h2>
+                    <p>The apparent displacement of the position of a body, with respect to a reference point or system, caused by a shift in the point of observation.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 493</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Philadelphia Leveling Rod" class="term">
+                    <h2>Philadelphia Leveling Rod</h2>
+                    <p>Having a target but with graduations so styled that the rod may also be used as a self-reading leveling rod. Also called a Philadelphia rod. If a length greater than 7 feet is needed, the target is clamped at 7 feet and raised by extending the rod. When the target is used, the rod is read by vernier to 0.001 foot. When the rod is used as a self-reading leveling rod, the rod is read to 0.005 foot.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 493</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Photogrammetry" class="term">
+                    <h2>Photogrammetry</h2>
+                    <p>Deducing the physical dimensions of objects from measurements on photographs of the objects. </p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 493</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Picture Point" class="term">
+                    <h2>Picture Point</h2>
+                    <p>A terrain feature easily identified on an aerial photograph and whose horizontal or vertical position or both have been determined by survey measurements. Picture points are marked on the aerial photographs by the surveyor, and are used by the photomapper.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 493</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Planetable" class="term">
+                    <h2>Planetable</h2>
+                    <p>A field device for plotting the lines of a survey directly from observations. It consists essentially of a drawing board mounted on a tripod, with a leveling device designed as part of the board and tripod.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Planimetric Feature" class="term">
+                    <h2>Planimetric Feature</h2>
+                    <p>Item detailed on a planimetric map.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Plumb Line" class="term">
+                    <h2>Plumb Line</h2>
+                    <p>The direction normal to the geopotential field. The continuous curve to which the gradient of gravity is everywhere tangential.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Positional Error" class="term">
+                    <h2>Positional Error</h2>
+                    <p>The amount by which the actual location of a cartographic feature fails to agree with the feature&#39;s true position.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Post-Processed Real-Time Kinematic GPS" class="term">
+                    <h2>Post-Processed Real-Time Kinematic GPS</h2>
+                    <p>GPS carrier phase positioning performed without real-time data link and solution</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Precision" class="term">
+                    <h2>Precision</h2>
+                    <p>The amount by which a measurement deviates from its mean.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Prime Meridian" class="term">
+                    <h2>Prime Meridian</h2>
+                    <p>The meridian of longitude 0Â°, used as the origin for measurement of longitude. The meridian of Greenwich, England, is almost universally used for this purpose.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Prime Vertical" class="term">
+                    <h2>Prime Vertical</h2>
+                    <p>The vertical circle through the east and west points of the horizon. It may be true, magnetic, compass or grid depending upon which east or west points are involved.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Project Control" class="term">
+                    <h2>Project Control</h2>
+                    <p>Control used for a specific project.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Project Datum" class="term">
+                    <h2>Project Datum</h2>
+                    <p>Datum used for a specific project.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Projection" class="term">
+                    <h2>Projection</h2>
+                    <p>A set of functions, or the corresponding geometric constructions, relating points on one surface to points on another surface. A projection requires every point on the first surface to correspond one-to-one to points on the second surface.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Quadrangle" class="term">
+                    <h2>Quadrangle</h2>
+                    <p>Consisting of four specified points and the lines or line segments on which they lie. The quadrangle and the quadrilateral differ in that the quadrangle is defined by four specified angle points, the quadrilateral by four specified lines or line-segments.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Random Error" class="term">
+                    <h2>Random Error</h2>
+                    <p>Randomly distributed deviations from the mean value.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Range Pole" class="term">
+                    <h2>Range Pole</h2>
+                    <p>A simple rod fitted with a sharp-pointed, shoe of steel and usually painted alternately in red and white bands at 1-foot intervals.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 494</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Readings" class="term">
+                    <h2>Readings</h2>
+                    <p>The observed value obtained by noting and/or recording scales.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Real-time" class="term">
+                    <h2>Real-time</h2>
+                    <p>An event or measurement reported or recorded at the same time as the event is occurring through the absence of delay in getting, sending and receiving data.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Real-Time Kinematic GPS" class="term">
+                    <h2>Real-Time Kinematic GPS</h2>
+                    <p>GPS carrier phase processing and positioning in real-time.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Reciprocal Leveling" class="term">
+                    <h2>Reciprocal Leveling</h2>
+                    <p>Measuring vertical angles or making rod readings from two instrument positions for the purpose of compensating for the effects of refraction.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Rectangular Coordinate Systems" class="term">
+                    <h2>Rectangular Coordinate Systems</h2>
+                    <p>Coordinates on any system in which the axes of reference intersect at right angles.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Redundant Measurements" class="term">
+                    <h2>Redundant Measurements</h2>
+                    <p>Taking more measurements than are minimally required for a unique solution.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Reference Meridian, True" class="term">
+                    <h2>Reference Meridian, True</h2>
+                    <p>Based on the astronomical meridian.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Reference Meridian, Magnetic" class="term">
+                    <h2>Reference Meridian, Magnetic</h2>
+                    <p>Based on the magnetic pole.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Reference Point" class="term">
+                    <h2>Reference Point</h2>
+                    <p>Used as an origin from which measurements are taken or to which measurements are referred.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Refraction" class="term">
+                    <h2>Refraction</h2>
+                    <p>The bending of rays by the substance through which the rays pass. The amount and direction of bending are determined by its refractive index.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Relative Accuracy" class="term">
+                    <h2>Relative Accuracy</h2>
+                    <p>Indicated by the dimensions of the relative confidence ellipse between two points. A quantity expressing the effect of random errors on the location of one point or feature with respect to another.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Repeating Theodolite" class="term">
+                    <h2>Repeating Theodolite</h2>
+                    <p>Designed so that the sum of successive measurements of an angle can be read directly on the graduated horizontal circle.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Resection" class="term">
+                    <h2>Resection</h2>
+                    <p>Determining the location of a point by extending lines of known direction to two other known points.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Sexagesimal System" class="term">
+                    <h2>Sexagesimal System</h2>
+                    <p>Notation by increments of 60. As the division of the circle into 360Â°, each degree into 60 minutes, and each minute into 60 seconds.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Set-up" class="term">
+                    <h2>Set-up</h2>
+                    <p>In general, the situation in which a surveying instrument is in position at a point from which observations are made.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 495</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Spheroid" class="term">
+                    <h2>Spheroid</h2>
+                    <p>Used as a synonym for ellipsoid.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Spirit Level" class="term">
+                    <h2>Spirit Level</h2>
+                    <p>A closed glass tube (vial) of circular cross section. Its center line forms a circular arc with precise form and filled with ether or liquid of low viscosity, with enough free space left for a bubble of air or gas.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Stadia Constant" class="term">
+                    <h2>Stadia Constant</h2>
+                    <p>The sum of the focal length of a telescope and the distance from the vertical axis of the instrument on which the telescope is mounted to the center of the objective lens-system.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Stadia Traverse" class="term">
+                    <h2>Stadia Traverse</h2>
+                    <p>Distances are determined using a stadia rod. A stadia traverse is suited to regions of moderate relief with an adequate network of roads. If done carefully, such a traverse can establish elevations accurate enough for compiling maps with any contour interval now standard.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Standard Error" class="term">
+                    <h2>Standard Error</h2>
+                    <p>The standard deviation of the errors associated with physical measurements of an unknown quantity, or statistical estimates of an unknown quantity or of a random variable.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Systematic Error" class="term">
+                    <h2>Systematic Error</h2>
+                    <p>Errors that affect the position (bias) of the mean. Systematic errors are due to unmodeled affects on the measurements that have a constant or systematic value.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="State Plane Coordinate System" class="term">
+                    <h2>State Plane Coordinate System</h2>
+                    <p>A planar reference coordinate system used in the United States.</p>
+
+                    
+
+                    
+
+                    
+                        <p><strong>altName:</strong> [&#39;SPCS&#39;]</p>
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Strength of Figure" class="term">
+                    <h2>Strength of Figure</h2>
+                    <p>A number relating the precision in positioning with the geometry with which measurements are made.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Subtense Bar" class="term">
+                    <h2>Subtense Bar</h2>
+                    <p>A bar with two marks at a fixed, known distance apart used for determining the horizontal distance from an observer by means of the measuring the angle subtended at the observer between the marks.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Taping" class="term">
+                    <h2>Taping</h2>
+                    <p>Measuring a distance on the using a surveyor&#39;s tape.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Three-wire Leveling" class="term">
+                    <h2>Three-wire Leveling</h2>
+                    <p>The scale on the leveling rod is read at each of the three lines and the average is used for the final result.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Topographic Map" class="term">
+                    <h2>Topographic Map</h2>
+                    <p>A map showing the horizontal and vertical locations of the natural and man-made features represented and the projected elevations of the surroundings.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Transformation" class="term">
+                    <h2>Transformation</h2>
+                    <p>Converting a position from one coordinate system to another.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Transit" class="term">
+                    <h2>Transit</h2>
+                    <p>The apparent passage of a star or other celestial body across a defined line of the celestial sphere.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 496</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Transit Rule" class="term">
+                    <h2>Transit Rule</h2>
+                    <p>The correction to be applied to the departure (or latitude) of any course has the same ratio to the total misclosure in departure (or latitude) as the departure (latitude) of the course has to the arithmetical sum of all the departures (latitudes) in the traverse. The transit rule is often used when it is believed that the misclosure is caused less by errors in the measured angles than by errors in the measured distances.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Transverse Mercator Projection" class="term">
+                    <h2>Transverse Mercator Projection</h2>
+                    <p>Mercator map projection calculated for a cylinder with axis in the equatorial plane.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Traverse" class="term">
+                    <h2>Traverse</h2>
+                    <p>A sequence of points along which surveying measurements are made.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Triangulation" class="term">
+                    <h2>Triangulation</h2>
+                    <p>Determination of positions in a network by the measurement of angles between stations.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="tribrach" class="term">
+                    <h2>tribrach</h2>
+                    <p>The three-armed base, of a surveying instrument, in which the foot screws used in leveling the instrument are placed at the ends of the arms. Also called a leveling base or leveling head.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Trigonometric heighting" class="term">
+                    <h2>Trigonometric heighting</h2>
+                    <p>The trigonometric determination of differences of elevation from observed vertical angles and measured distances.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Trilateration" class="term">
+                    <h2>Trilateration</h2>
+                    <p>Determination of positions in a network by the measurement of distances between stations using the intersection of two or more distances to a point.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Universal Transverse Mercator" class="term">
+                    <h2>Universal Transverse Mercator</h2>
+                    <p>A worldwide metric military coordinate system.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="US Coast &amp; Geodetic Survey" class="term">
+                    <h2>US Coast &amp; Geodetic Survey</h2>
+                    <p>Now known as National Ocean Service (NOS).</p>
+
+                    
+
+                    
+
+                    
+                        <p><strong>altName:</strong> [&#39;USC&amp;GS&#39;, &#39;National Ocean Service&#39;, &#39;NOS&#39;]</p>
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="US Survey Foot" class="term">
+                    <h2>US Survey Foot</h2>
+                    <p>The unit of length defined by 1200/3937 m</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Variance-Covariance Matrix" class="term">
+                    <h2>Variance-Covariance Matrix</h2>
+                    <p>A matrix whose elements along the main diagonal are called the variances of the corresponding variables; the elements off the main diagonal are called the covariances.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Vernier" class="term">
+                    <h2>Vernier</h2>
+                    <p>An auxiliary scale used in reading a primary scale. The total length of a given number of divisions on a vernier is equal to the total length of one more or one less than the same number of divisions on the primary scaled.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="VERTCON" class="term">
+                    <h2>VERTCON</h2>
+                    <p>Acronym for vertical datum conversion. VERTCON is the computer software that converts orthometric heights between NGVD 29 to NAVD 88.</p>
+
+                    
+
+                    
+
+                    
+                        <p><strong>altName:</strong> [&#39;vertical datum conversion&#39;]</p>
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Vertical Angle" class="term">
+                    <h2>Vertical Angle</h2>
+                    <p>An angle in a vertical plane either in elevation or depression from the horizontal.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 497</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Vertical Circle" class="term">
+                    <h2>Vertical Circle</h2>
+                    <p>A graduated scale mounted on an instrument used to measure vertical angles.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 498</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Vertical Datum" class="term">
+                    <h2>Vertical Datum</h2>
+                    <p>Any level surface used as a reference for elevations. Although a level surface is not a plane, the vertical datum is frequently referred to as the datum plane.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 498</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="World Geodetic System of 1984" class="term">
+                    <h2>World Geodetic System of 1984</h2>
+                    <p>Adopted as the standard geodetic datum for GPS positioning. Based on the World Geodetic System reference ellipsoid.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 498</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Wye Level" class="term">
+                    <h2>Wye Level</h2>
+                    <p>Having the telescope and attached spirit level supported in wyes (Y&#39;s) in which it can be rotated about its longitudinal axis (collimation axis) and from which it can be lifted and reversed, end for end. Also called a Y-level and wye-type leveling instrument.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 498</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Zenith" class="term">
+                    <h2>Zenith</h2>
+                    <p>The point above the instrument where an extension of a plumb (vertical) line at the observer&#39;s position intersects the celestial sphere.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 498</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Zenith Angle" class="term">
+                    <h2>Zenith Angle</h2>
+                    <p>Measured in a positive direction downwards from the observer&#39;s zenith to the observed target.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 498</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+                <div id="Zenith Distance" class="term">
+                    <h2>Zenith Distance</h2>
+                    <p>The complement of the altitude, the angular distance from the zenith of the celestial body measured along a vertical circle.</p>
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                        <p><strong>anchor:</strong> 498</p>
+                    
+
+                    
+
+                    
+                </div>
+            
+
+            <h2>Abbreviations</h2>
+            
+        </div>
+    </div>
+</body>
+</html>

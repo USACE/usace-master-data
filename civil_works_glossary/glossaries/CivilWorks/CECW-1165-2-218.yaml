@@ -1,0 +1,456 @@
+about:
+    namespace: https://usace-data.com/civil-works/glossary/CECW-1165-2-218#
+    prefix: CECW-1165-2-218
+    template: glossary
+    title: Engineering and Design USACE LEVEE SAFETY PROGRAM CECW-CW No. 1165-2-218
+    description: The USACE Levee Safety Program (Circular CECW-CW No. 1165-2-218) defines various 
+       acronyms and terms commonly used in this circular to describe aspects of levee saftey, 
+       including implementation of policies, activities, roles, and responsibilities for federally
+       authorized levees. These terms are defined in the glossary section of the circular.
+    source:
+        sourceID: CECW-1165-2-218
+        authoritativeSource: Engineering and Design USACE LEVEE SAFETY PROGRAM CECW-CW No. 1165-2-218
+        parentTopic: Levee
+        glossaryReferences: true
+        url: https://www.publications.usace.army.mil/Portals/76/Users/182/86/2486/EC%201165-2-218.pdf
+        anchor: '103'
+        linkType: pdf
+terms:
+- label: 'Benefits (attributed to a levee system)'
+  definition: "A qualitative or quantitative description\
+    \ of the positive contributions the levee system has or can provide to the community\
+    \ in the leveed area. This can include: reduction in potential flood damages to\
+    \ residential structures and businesses; potential for the reduction of loss of\
+    \ life; prevention of damages to community services such as schools, hospitals,\
+    \ water treatment plants and other municipal services; prevention of damages to\
+    \ roadways; and providing critical time for the population to get out of harm's\
+    \ way during a flood event."
+  anchor: '103'
+  parentTopic: Levee
+- label: Breach
+  definition: The formation of a gap in the levee system through which water may flow
+    uncontrolled onto the adjacent leveed area. A breach in the levee system may occur
+    prior to or subsequent to overtopping.
+  anchor: '103'
+  parentTopic: Levee
+- label: Community
+  definition: Any state or area or political subdivision thereof, or any Indian tribe
+    or authorized tribal organization, or Alaska Native village, or authorized native
+    organization that has the authority to adopt and enforce regulations for the areas
+    within its jurisdiction.
+  anchor: '103'
+  parentTopic: Levee
+- label: Consequences of Flooding
+  altName: [ Consequences ]
+  definition: The effect, result, or outcome of inundation as reflected in the potential
+    loss of life, economic losses, and adverse environmental impacts.
+  anchor: '103'
+  parentTopic: Levee
+- label: Dam
+  altName: [ Dike ]
+  definition: An artificial barrier, including appurtenant works, constructed for
+    the purpose of storage, control, or diversion of water.
+  anchor: '103'
+  parentTopic: Levee
+- label: Deliverable
+  definition: A compilation of products used to relay comprehensive results and recommendations
+    for a levee system.
+  anchor: '103'
+  parentTopic: Levee
+- label: Economic Risk
+  definition: The measure of the probability (or likelihood) of direct and indirect
+    economic losses within a leveed area.
+  anchor: '103'
+  parentTopic: Levee
+- label: Emergency Action Plan
+  definition: A formal document that identifies potential emergency conditions at
+    a levee and specifies pre- planned actions to be followed to reduce consequences
+    of the emergency.
+  anchor: '103'
+  parentTopic: Levee
+- label: Environmental risk
+  definition: Risk associated with the likelihood of direct and indirect impacts on
+    environmental, cultural, and historic resources within the leveed area that cannot
+    be measured in monetary terms.
+  anchor: '103'
+  parentTopic: Levee
+- label: Federally authorized and locally operated and maintained levees
+  definition: Congressionally authorized levees that are operated and maintained by
+    a local public sponsor through a project agreement with USACE. This category includes
+    levees constructed by USACE and those constructed by others and federally authorized.
+  anchor: '104'
+  parentTopic: Levee
+- label: Federally authorized and USACE operated or maintained levees
+  definition: Congressionally authorized levees that USACE has full or partial responsibility
+    to operate or maintain as well as to rehabilitate and modify, as appropriate,
+    under existing authorities.
+  anchor: '104'
+  parentTopic: Levee
+- label: Flood
+  definition: An overflow of water that submerges land which is normally dry.
+  anchor: '104'
+  parentTopic: Levee
+- label: Flood risk
+  altName: [residual risk]
+  definition: The risk of flooding in a leveed area that remains at any point in time
+    after accounting for the flood risk reduction contributed by the levee system.
+  anchor: '104'
+  parentTopic: Levee
+- label: Formal inspection
+  definition: 'A pre-scheduled comprehensive levee inspection by a team of subject
+    matter experts led by a professional engineer or professional geologist to: document
+    the condition of a levee; inform levee management activities; include specific
+    considerations, such as testing gates; and serve as a primary source of information
+    related to levee condition and performance for risk assessments. Inspections verify
+    any changed conditions and may capture progress of levee management measures for
+    consideration in subsequent inspections or risk assessments.'
+  anchor: '104'
+  parentTopic: Levee
+- label: Hazard
+  definition: An event that causes the potential for an adverse consequence.
+  anchor: '104'
+  parentTopic: Levee
+- label: Incident
+  definition: An event occurring at a levee system that could potentially result in
+    a levee safety issue.
+  anchor: '104'
+  parentTopic: Levee
+- label: Inconclusive finding
+  definition: A conclusion that there is insufficient information to determine whether
+    or not a specific criterion of 44 Code of Federal Regulations (CFR) 65.10 for
+    the National Flood Insurance Program has been met as a result of a screening risk
+    assessment or levee inspection.
+  anchor: '104'
+  parentTopic: Levee
+- label: Interim risk reduction measure
+  definition: An action to reduce levee risk while more long-term and comprehensive
+    risk reduction and management solutions are being pursued.
+  anchor: '104'
+  parentTopic: Levee
+- label: Inundation
+  definition: In the context of this document, this refers to flooding in a leveed
+    area.
+  anchor: '104'
+  parentTopic: Levee
+- label: Inundation scenario
+  definition: '(for a levee system)
+
+    A scenario which could result in flooding in a leveed area. The four inundation
+    scenarios for a levee system are: breach prior to overtopping; overtopping with
+    breach; component malfunction/mis-operation; and overtopping without breach.'
+  anchor: '105'
+  parentTopic: Levee
+- label: Levee
+  definition: A man-made barrier along a watercourse with the principle function of
+    excluding flood waters from a limited range of flood events from a portion of
+    the floodplain (referred to as "leveed area").
+  anchor: '105'
+  parentTopic: Levee
+- label: Levee accreditation
+  definition: The process in which a levee system is evaluated to determine how it
+    will be mapped by the Federal Emergency Management Agency for the purposes of
+    the National Flood Insurance Program.
+  anchor: '105'
+  parentTopic: Levee
+- label: Levee feature
+  definition: A structure that is critical to the functioning of a levee system. Examples
+    include embankments, floodwalls, pipes and associated drainage features, closures,
+    pumping stations, floodways, and designed channels.
+  anchor: '105'
+  parentTopic: Levee
+- label: Levee Inspection System
+  definition: The electronic tool used by USACE to document levee inspections.
+  anchor: '105'
+  parentTopic: Levee
+- label: Levee risk
+  altName: [incremental risk]
+  definition: 'The risk of inundation posed by a levee system for the following three
+    inundation scenarios: prior to overtopping; overtopping with breach; and component
+    malfunction/mis-operation.'
+  anchor: '105'
+  parentTopic: Levee
+- label: Levee risk management summary
+  definition: An internal tool that details prioritized recommendations for operation,
+    maintenance, repair, replacement, and rehabilitation for each levee system based
+    on best available information related to risk assessments, levee inspections,
+    and past performance.
+  anchor: '105'
+  parentTopic: Levee
+- label: Levee safety
+  definition: The art, science, and practice of managing flood risks posed by levee
+    systems.
+  anchor: '105'
+  parentTopic: Levee
+- label: Levee Safety Officer
+  definition: Person selected by appointment to serve as the lead for levee safety
+    issues, recommendations, and decisions at a particular level in USACE.
+  anchor: '105'
+  parentTopic: Levee
+- label: Levee Safety Program Manager
+  definition: Person selected by appointment to lead the coordination and implementation
+    of the USACE Levee Safety Program at a particular level in USACE.
+  anchor: '106'
+  parentTopic: Levee
+- label: Levee Screening Tool
+  definition: The electronic tool used by USACE to complete all screening risk assessments.
+  anchor: '106'
+  parentTopic: Levee
+- label: Levee segment
+  definition: A levee segment is a discrete portion of a levee system that is operated
+    and maintained by a single entity. A levee segment may be composed of one or more
+    levee features.
+  anchor: '106'
+  parentTopic: Levee
+- label: Levee Senior Oversight Group
+  definition: Consists of USACE staff representing key disciplines in levee safety
+    and provides recommendations to the USACE headquarters Levee Safety Officer and
+    deputy Levee Safety Officer on levee risk characterizations; prioritization of
+    levee federal investments; direction for levee projects with high potential life
+    safety risk; and other levee safety matters.
+  anchor: '106'
+  parentTopic: Levee
+- label: Levee sponsor
+  definition: A public entity that has responsibility for operation and maintenance
+    for all or a certain portion of a levee system. Within this document, levee sponsor
+    refers to entities who operate and maintain federally authorized levees through
+    a project agreement with USACE.
+  anchor: '106'
+  parentTopic: Levee
+- label: Levee system
+  altName: [ Levee ]
+  definition: Composed of one or more levee segments and other features that are collectively
+    integral to excluding flood water from the leveed area. The term "levee segment"
+    is used to identify a discrete portion of a levee system that is operated and
+    maintained by a single levee sponsor.
+  anchor: '106'
+  parentTopic: Levee
+- label: Levee system summary
+  definition: Public summary of best available levee information that tells the story
+    of the levee including why it is there, the benefits it provides, the condition
+    and typical performance, areas of concern, people and property who may be affected,
+    and actions to address areas of concern.
+  anchor: '106'
+  parentTopic: Levee
+- label: Leveed area
+  definition: The lands from which flood water is excluded by the levee system.
+  anchor: '106'
+  parentTopic: Levee
+- label: Life safety risk
+  definition: A measure of the probability and severity of loss of life resulting
+    from inundation of a leveed area.
+  anchor: '106'
+  parentTopic: Levee
+- label: Likelihood
+  altName: [ Probability ]
+  definition: A measure of the chance, or degree of belief that a particular outcome
+    will occur. A probability provides a quantitative description of the likelihood
+    of occurrence of a particular event. Probability is expressed as a value between
+    0 (impossible) and 1 (certain). Likelihood can be expressed qualitatively as well
+    (e.g., high, medium, or low).
+  anchor: '106'
+  parentTopic: Levee
+- label: Mitigation
+  definition: Actions taken that reduce potential loss of life and property by lessening
+    the impacts of flood.
+  anchor: '106'
+  parentTopic: Levee
+- label: National cadre
+  definition: An independent multi-disciplinary team trained and approved by the Risk
+    Management Center to provide independent perspective and reviews of risk assessments.
+  anchor: '107'
+  parentTopic: Levee
+- label: National Flood Insurance Program
+  definition: Administered by the Federal Emergency Management Agency, the National
+    Flood Insurance Program is a voluntary program authorized by Congress to mitigate
+    flood losses through community-enforced building and zoning ordinances and to
+    provide property owners with access to federally-backed flood insurance. As part
+    of the National Flood Insurance Program, the Federal Emergency Management Agency
+    issues Flood Insurance Rate Maps that depict flood hazards and are used by local
+    communities for the purposes of determining flood insurance and floodplain management
+    requirements. The National Flood Insurance Program requires federally regulated
+    lending institutions to ensure that mortgage loans secured for buildings in high
+    flood hazard areas, referred to as Special Flood Hazard Areas, are covered by
+    flood insurance.
+  anchor: '107'
+  parentTopic: Levee
+- label: National Levee Database
+  definition: A congressionally authorized database that contains information on levees
+    in the United States.
+  anchor: '107'
+  parentTopic: Levee
+- label: Negative finding
+  definition: A conclusion that there is sufficient information to determine that
+    a specific criterion of 44 Code of Federal Regulations (CFR) 65.10 for the National
+    Flood Insurance Program has not been met as a result of a screening risk assessment
+    or levee inspection.
+  anchor: '107'
+  parentTopic: Levee
+- label: No verdict
+  definition: An inspection rating and Levee Safety Action Classification assignment
+    given when no access has been obtained to perform an inspection.
+  anchor: '107'
+  parentTopic: Levee
+- label: Non-breach risk
+  definition: The risk associated with the scenario when the still-water level and/or
+    associated waves, wind runup, or surge exceeds the top of the levee system, but
+    does not result in a breach of the levee system.
+  anchor: '107'
+  parentTopic: Levee
+- label: Non-federally authorized and locally operated and maintained levee
+  definition: Levee that is locally constructed, operated, and maintained.
+  anchor: '107'
+  parentTopic: Levee
+- label: Non-project segment
+  definition: A segment of man-made high ground not part of the federally authorized
+    project which a levee system/segment ties into and whose existence and performance
+    is necessary for excluding flood waters from the leveed area. Some examples of
+    these are roadways, railroads, canals, and other levee embankments. Non-project
+    segments are inventoried, inspected, and assessed if they make up part of the
+    levee alignment and are necessary for the proper functioning of the levee system.
+  anchor: '107'
+  parentTopic: Levee
+- label: Overtopping
+  definition: A condition that occurs when the elevation of the still-water level
+    and/or associated waves, wind runup, or surge exceeds the top of the levee system.
+    This may or may not result in a breach of the levee system.
+  anchor: '108'
+  parentTopic: Levee
+- label: Performance
+  definition: How the levee system has functioned or is anticipated to function during
+    specified hazards.
+  anchor: '108'
+  parentTopic: Levee
+- label: Positive finding
+  definition: A conclusion that there is sufficient information to determine that
+    a specific criterion of 44 Code of Federal Regulations (CFR) 65.10 for the National
+    Flood Insurance Program has been met as a result of a screening risk assessment
+    or levee inspection.
+  anchor: '108'
+  parentTopic: Levee
+- label: Potential failure mode
+  definition: A structured way to describe a chain of events that leads to a levee
+    breach.
+  anchor: '108'
+  parentTopic: Levee
+- label: Preparedness
+  definition: Actions taken before a possible future flood event, including planning,
+    training, communication, and anticipation of how the levee will perform based
+    on operation and maintenance, inspections, and assessments.
+  anchor: '108'
+  parentTopic: Levee
+- label: Program management plan
+  definition: A formal, approved, living document used to define program requirements
+    and expectations, accountability and performance measures, and guidance program
+    execution. These documents can include a ten-year outlook of program activities
+    as well as a strategy for sharing levee information that corresponds with USACE
+    Levee Safety Program activities.
+  anchor: '108'
+  parentTopic: Levee
+- label: Project agreement
+  altName: [ project cooperation, project partnership agreement ]
+  definition: Legally binding agreement between the government and a non-federal sponsor
+    (state, municipal government, flood control district, port authority, etc.) for
+    construction or operation and maintenance of a water resources project. It describes
+    the project and the responsibilities of the government and the non-federal sponsor.
+  anchor: '108'
+  parentTopic: Levee
+- label: Quantitative risk assessment
+  definition: Uses currently available information but may also involve gathering
+    new information to inform its findings, considers custom failure modes specific
+    to the levee, and results in calculated numeric estimates of risk.
+  anchor: '108'
+  parentTopic: Levee
+- label: Recovery
+  definition: Actions taken after a flood, including those directed toward a return
+    to normalcy.
+  anchor: '108'
+  parentTopic: Levee
+- label: Resilience
+  definition: The ability to avoid, minimize, withstand, and recover from the effects
+    of adversity, whether natural or man-made, under all circumstances of use.
+  anchor: '108'
+  parentTopic: Levee
+- label: Response
+  definition: Actions taken during a flood, including those to save lives and prevent
+    damage.
+  anchor: '108'
+  parentTopic: Levee
+- label: Risk
+  definition: The measure of the probability (or likelihood) and consequence of uncertain
+    future events.
+  anchor: '109'
+  parentTopic: Levee
+- label: Risk assessment
+  definition: A systematic, evidence-based approach for quantifying and describing
+    the nature, likelihood, and magnitude of risk. Risk assessments are a tool to
+    determine the most likely ways a levee might breach or overtop, how likely those
+    scenarios are to occur, and the potential impacts within a community.
+  anchor: '109'
+  parentTopic: Levee
+- label: Risk cadre
+  definition: A multidisciplinary team of experts trained in conducting risk assessments.
+  anchor: '109'
+  parentTopic: Levee
+- label: Risk characterization
+  definition: Description of the levee system in the context of risk by considering
+    the key drivers of likelihood of performance, potential consequences, and sources
+    of uncertainty.
+  anchor: '109'
+  parentTopic: Levee
+- label: Risk communication
+  definition: An iterative, open exchange of data, advice, and opinions among individuals,
+    groups, and institutions about levees, the benefits they provide, known risks
+    or areas of concern, and options available to manage that risk.
+  anchor: '109'
+  parentTopic: Levee
+- label: Risk estimate
+  definition: The combination of the probability of inundation of the leveed area
+    and the associated consequences typically portrayed in a risk matrix.
+  anchor: '109'
+  parentTopic: Levee
+- label: Risk management
+  definition: The process of problem finding and initiating action to identify, evaluate,
+    select, implement, monitor, and modify associated risks.
+  anchor: '109'
+  parentTopic: Levee
+- label: Screening risk assessment
+  altName: [levee screening]
+  definition: A simplified risk assessment that relies on existing data, historical
+    performance, engineering judgment, and assumes pre-defined performance modes to
+    quickly characterize levee risk.
+  anchor: '109'
+  parentTopic: Levee
+- label: Semi-quantitative risk assessment
+  definition: A risk assessment that uses a combination of limited numerical estimates
+    with qualitative descriptions that result in risk estimates based on orders of
+    magnitude.
+  anchor: '109'
+  parentTopic: Levee
+- label: Sensitive information
+  definition: Information that could pose a security risk or aid those intending to
+    do harm to a levee system.
+  anchor: '109'
+  parentTopic: Levee
+- label: Site visit
+  definition: "A collaborative activity to observe or verify any changed conditions,
+    provide technical advice and respond to sponsor's questions, or capture progress
+    of levee management measures for consideration in the next inspection or risk
+    assessment."
+  anchor: '110'
+  parentTopic: Levee
+- label: Special inspection
+  definition: Unscheduled inspections conducted as needed due to changed conditions
+    or to document performance.
+  anchor: '110'
+  parentTopic: Levee
+- label: Stakeholder(s)
+  definition: An individual or group of individuals who are responsible, interested,
+    and/or affected by a levee system. An individual stakeholder may belong to more
+    than one group of stakeholders.
+  anchor: '110'
+  parentTopic: Levee
+- label: Uncertainty
+  definition: The deficiency or unsureness in information related to the understanding
+    or knowledge of the risk or components of risk.
+  anchor: '110'
+  parentTopic: Levee

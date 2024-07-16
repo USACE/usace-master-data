@@ -1,0 +1,386 @@
+@prefix ER-5-1-11: <https://usace-data.com/civil-works/glossary/ER-5-1-11#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ER-5-1-11:Automated_Information_Systems a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Automated Information Systems" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Automated Information Systems]" ;
+    skos:altLabel "AIS" ;
+    skos:definition "A combination of computer hardware and software, telecommunications information technology, personnel, and other resources that collect, record, process, store, communicate, retrieve, and display information." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Automated Information Systems" .
+
+ER-5-1-11:Community_of_Practice a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Community of Practice" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Community of Practice]" ;
+    skos:altLabel "CoP" ;
+    skos:definition "A group of people who regularly interact to collectively learn, solve problems, build skills and competencies, and develop best practices around a shared concern, goal, mission, set of problems, or work practice. More information on the various communities of practice in USACE is available from their respective websites." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Community of Practice" .
+
+ER-5-1-11:Corporate_Board a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Corporate Board" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Corporate Board]" ;
+    skos:altLabel "CB" ;
+    skos:definition "A group of District or Center leaders who make resource decisions based upon what is best for the mission, while considering impacts to all stakeholders." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Corporate Board" .
+
+ER-5-1-11:Deputy_for_Programs_and_Project_Management a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Deputy for Programs and Project Management" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Deputy for Programs and Project Management]" ;
+    skos:altLabel "DPM" ;
+    skos:definition "The civilian deputy to the District Commander. DPM as used in this regulation includes Center positions such as Deputy for Programs and Technical Management and Deputy for Programs and Project Management/Project Delivery Team. The DPM is authorized to accept and/or reject work by PDBP Process 1000, titled work acceptance." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Deputy for Programs and Project Management" .
+
+ER-5-1-11:District_Support_Teams a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "District Support Teams" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[District Support Teams]" ;
+    skos:altLabel "DST" ;
+    skos:definition "Cross-functional teams at MSC that facilitate resolution of issues and champion district causes." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "District Support Teams" .
+
+ER-5-1-11:Empowerment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Empowerment" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Empowerment]" ;
+    skos:definition "Authority to exercise judgment and take action, with concomitant responsibility for resultant positive or negative consequences." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Empowerment" .
+
+ER-5-1-11:Field_Operating_Activities a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Field Operating Activities" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Field Operating Activities]" ;
+    skos:altLabel "FOAs" ;
+    skos:definition "Districts, Centers or Laboratories are referred to as FOAs in this ER. Major Subordinate Commands (MSCs) are Division offices." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Field Operating Activities" .
+
+ER-5-1-11:Functional_Organization a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Functional Organization" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Functional Organization]" ;
+    skos:definition "Organization structure in which staff are grouped by technical specialty." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Functional Organization" .
+
+ER-5-1-11:Matrix_Team a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Matrix Team" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Matrix Team]" ;
+    skos:definition "Group of people working across organization boundaries for a common purpose." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Matrix Team" .
+
+ER-5-1-11:Mega_Projects a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Mega Projects" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=20" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Mega Projects]" ;
+    skos:definition "Projects with specific attributes (cost, time, risk, national significance, uniqueness and overlapping dependencies) named by HQUSACE Civil Works and Military Programs Directors in a yearly ECB. Mega projects require enhanced management controls." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Mega Projects" .
+
+ER-5-1-11:Operations a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Operations" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Operations]" ;
+    skos:definition """a.) The ongoing execution of activities that produces the same product or provides a continuous or repetitive service. The objective of ongoing operations is to sustain something (business, facility).
+b.) Within USACE, the organization that operates and maintains facilities and services that provide river and harbor navigation, flood damage reduction, water supply, hydroelectric power, recreation, environmental and fish and wildlife sustainment, restoration and protection. Its Regulatory mission protects the Nation's waterways and wetlands; and it undertakes disaster relief and recovery work through its Emergency Management/Readiness function.""" ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Operations" .
+
+ER-5-1-11:Operations_Project_Managers a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Operations Project Managers" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Operations Project Managers]" ;
+    skos:altLabel "OPM" ;
+    skos:definition "Managers responsible for the overall O&M of one or more multi-purpose water resource development sites, leading teams that execute the projects or recurring work activities at these sites." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Operations Project Managers" .
+
+ER-5-1-11:Process a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Process" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Process]" ;
+    skos:definition "A series of actions, tasks, or procedures with a common objective to achieve an end or result." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Process" .
+
+ER-5-1-11:Program a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Program" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Program]" ;
+    skos:definition "A collection of related projects, services, routine administrative and recurring operational processes, or some mixture of these, which are managed in a coordinated way to obtain benefits and control not available from managing them individually.1 Programs may be categorized by funding source (type), stakeholder, similarity of scope, or other common criteria for which resources are allocated and collectively managed." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Program" .
+
+ER-5-1-11:Program_Management a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Program Management" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Program Management]" ;
+    skos:definition "The centralized, coordinated management of programs within available resources, in line with applicable laws, policies, and regulations, to achieve strategic benefits and objectives.2 Under program management, programs, projects and non-project activities are aggregated for oversight and direction by the organization's senior leadership." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Program Management" .
+
+ER-5-1-11:Program_Management_Plan a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Program Management Plan" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Program Management Plan]" ;
+    skos:altLabel "PgMP" ;
+    skos:definition "A formal, approved, living document used to define program requirements and expectations, including accountability and performance measurements, and guide program execution and control. The PgMP is the 'umbrella' process for completion of project planning phase. This process is performed after the work has been accepted and the Project Manager assigned." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Program Management Plan" .
+
+ER-5-1-11:Program_Manager a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Program Manager" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=21" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Program Manager]" ;
+    skos:altLabel "PgM" ;
+    skos:definition "Assigned to manage unique stakeholder requirements for a set of related projects, services, or activities. Program managers include Operations Project Managers responsible for the overall O&M of one or more multi-purpose water resource development sites, leading teams that execute the projects or recurring work activities at these sites." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Program Manager" .
+
+ER-5-1-11:Project a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Project]" ;
+    skos:definition "A temporary endeavor undertaken to create a unique product, service, or result.3 Internal services are discrete projects when they are unique and non-recurring." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Project" .
+
+ER-5-1-11:Project_Delivery_Business_Process a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project Delivery Business Process" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Project Delivery Business Process]" ;
+    skos:altLabel "PDBP" ;
+    skos:definition "A fundamental subset of the USACE business process used to deliver quality projects. It reflects the USACE corporate commitment to provide stakeholder service that is inclusive, seamless, flexible, effective, and efficient. It embodies communication, leadership, systematic and coordinated management, teamwork, partnering, effective balancing of competing demands, and primary accountability for the life cycle of a project." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Project Delivery Business Process" .
+
+ER-5-1-11:Project_Delivery_Team a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project Delivery Team" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Project Delivery Team]" ;
+    skos:altLabel "PDT" ;
+    skos:definition "The PDT is a cross-functional matrixed team that includes all the necessary functional and support personnel with the requisite skills and expertise, from the District, Divisions, Centers of Expertise and/or labs, in order to deliver the project." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Project Delivery Team" .
+
+ER-5-1-11:Project_Management a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project Management" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Project Management]" ;
+    skos:definition "The application of knowledge, skills, tools, and techniques to project activities in order to meet project requirements." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Project Management" .
+
+ER-5-1-11:Project_Management_Plan a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project Management Plan" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Project Management Plan]" ;
+    skos:altLabel "PMP" ;
+    skos:definition "A formal, approved, living document used to define requirements and expected outcomes and guide project execution and control. The PMP is the 'umbrella' process for completion of project planning phase; it is performed after the work has been accepted and the Project Manager assigned. The primary uses of the PMP are to facilitate communication among participants, assign responsibilities, define assumptions, and document decisions to establish baseline plans for scope, cost, schedule and quality objectives against which performance can be measured, and to adjust these plans as actuals dictate. The PMP is developed by the project delivery team, including the stakeholder. The approval of the PMP should be delegated to the lowest appropriate supervisory level in order to maintain a minimal level of management control." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Project Management Plan" .
+
+ER-5-1-11:Project_Manager a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project Manager" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Project Manager]" ;
+    skos:altLabel "PM" ;
+    skos:definition "Assigned to achieve the project objectives, the person who manages scope, schedule, budget and quality while leading a project delivery team (PDT.) Project managers may be assigned to any organizational or geographic element." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Project Manager" .
+
+ER-5-1-11:Quality a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Quality" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Quality]" ;
+    skos:definition "The degree to which a set of inherent characteristics fulfills requirements." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Quality" .
+
+ER-5-1-11:Quality_Assurance a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Quality Assurance" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=22" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Quality Assurance]" ;
+    skos:altLabel "QA" ;
+    skos:definition "That part of quality management focused on providing confidence that quality requirements of a project, product, service, or process will be fulfilled. QA includes those processes employed to ensure that QC activities are being accomplished in line with planned activities and that those QC activities are effective in producing a product that meets the desired end quality." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Quality Assurance" .
+
+ER-5-1-11:Quality_Control a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Quality Control" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Quality Control]" ;
+    skos:altLabel "QC" ;
+    skos:definition "That part of quality management focused on fulfilling quality requirements of a project, product, service, or process. It includes those processes used to ensure performance meets agreed upon stakeholder requirements that are consistent with law, regulations, policies, sound technical criteria, schedules, and budget." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Quality Control" .
+
+ER-5-1-11:Regional_Business_Center a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Regional Business Center" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Regional Business Center]" ;
+    skos:altLabel "RBC" ;
+    skos:definition "An MSC and its districts acting together as a regional business entity. This vertical and lateral integration of organizational capabilities, resource sharing, technical expertise, project management, and project delivery broadens and enhances the range of services and quality within the region." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Regional Business Center" .
+
+ER-5-1-11:Regional_Integration_Team a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Regional Integration Team" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Regional Integration Team]" ;
+    skos:altLabel "RIT" ;
+    skos:definition "Cross-functional teams at HQUSACE that facilitate resolution of issues and champion RBC causes." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Regional Integration Team" .
+
+ER-5-1-11:Resource_Provider a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Resource Provider" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Resource Provider]" ;
+    skos:definition "A functional chief responsible for mentoring, training of PDT members, assigning work, balancing workload and resolving resource and priority conflicts on an ongoing basis." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Resource Provider" .
+
+ER-5-1-11:Stakeholder a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Stakeholder" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Stakeholder]" ;
+    skos:definition "Stakeholder as used in this regulation may be a number of people/organizations. In general, the stakeholder is any individual or organization for which USACE delivers projects, or services to meet specific needs. Stakeholders may be either external or internal to USACE. For example, Engineering Branch should consider the PM a stakeholder when they are performing design preparation or design review activities. Contracting Branch should consider the PM a stakeholder when they are reviewing or executing the contract acquisition activities." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Stakeholder" .
+
+ER-5-1-11:Technical_Lead a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Technical Lead" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Technical Lead]" ;
+    skos:altLabel "TL" ;
+    skos:definition "Designated PDT member responsible for ensuring technical quality is achieved. Role may be filled by a design manager, discipline lead, or senior technical team member and assigned by the district division that is responsible for technical deliverables. Must be involved in all project decisions that affect quality management processes. For projects that require professional engineering services, the technical lead must possess an active professional registration (e.g. P.E., R.A., P.L.A., P.G.), unless waived by the division chief responsible for Engineering." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Technical Lead" .
+
+ER-5-1-11:Vertical_Team a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Vertical Team" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Vertical Team]" ;
+    skos:definition "Team that is composed of personnel from different command levels in the organization, i.e. MSCs and/or HQ." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Vertical Team" .
+
+ER-5-1-11:Virtual_Team a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Virtual Team" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Virtual Team]" ;
+    skos:definition "Team working across geographic or organizational boundaries without physical co-location." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Virtual Team" .
+
+ER-5-1-11:Work a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Work" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf#page=23" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-5-1-11.yaml#term[Work]" ;
+    skos:definition "Sustained physical or mental effort or activity directed toward the production or accomplishment of something. Work of a business can generally be categorized as either projects or operations, although there may be some overlap." ;
+    skos:inScheme ER-5-1-11: ;
+    skos:prefLabel "Work" .
+
+ER-5-1-11: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Engineering Report 5-1-11 USACE Business Process" ;
+    dcterms:created "2024-07-16T04:27:22.900695+00:00"^^xsd:dateTime ;
+    dcterms:description "USACE Business Process Engineering Report 5-1-11, defines various acronyms and terms commonly used in this report to describe policy and doctrine used to accomplish business processes across the U.S. Army Corps of Engineers (USACE). These terms are defined in the glossary section of the regulation." ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Engineering Report 5-1-11 USACE Business Process" ;
+    pav:ImportedFrom "glossaries/CivilWorks/ER-5-1-11.yaml" ;
+    pav:createdOn "2024-07-16T04:27:22.900695+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "Engineering Report 5-1-11 USACE Business Process" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/ER-5-1-11#" ;
+    skos:hasTopConcept ER-5-1-11:Automated_Information_Systems,
+        ER-5-1-11:Community_of_Practice,
+        ER-5-1-11:Corporate_Board,
+        ER-5-1-11:Deputy_for_Programs_and_Project_Management,
+        ER-5-1-11:District_Support_Teams,
+        ER-5-1-11:Empowerment,
+        ER-5-1-11:Field_Operating_Activities,
+        ER-5-1-11:Functional_Organization,
+        ER-5-1-11:Matrix_Team,
+        ER-5-1-11:Mega_Projects,
+        ER-5-1-11:Operations,
+        ER-5-1-11:Operations_Project_Managers,
+        ER-5-1-11:Process,
+        ER-5-1-11:Program,
+        ER-5-1-11:Program_Management,
+        ER-5-1-11:Program_Management_Plan,
+        ER-5-1-11:Program_Manager,
+        ER-5-1-11:Project,
+        ER-5-1-11:Project_Delivery_Business_Process,
+        ER-5-1-11:Project_Delivery_Team,
+        ER-5-1-11:Project_Management,
+        ER-5-1-11:Project_Management_Plan,
+        ER-5-1-11:Project_Manager,
+        ER-5-1-11:Quality,
+        ER-5-1-11:Quality_Assurance,
+        ER-5-1-11:Quality_Control,
+        ER-5-1-11:Regional_Business_Center,
+        ER-5-1-11:Regional_Integration_Team,
+        ER-5-1-11:Resource_Provider,
+        ER-5-1-11:Stakeholder,
+        ER-5-1-11:Technical_Lead,
+        ER-5-1-11:Vertical_Team,
+        ER-5-1-11:Virtual_Team,
+        ER-5-1-11:Work .
+

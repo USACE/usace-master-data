@@ -1,0 +1,328 @@
+@prefix ER-1110-2-240: <https://usace-data.com/civil-works/glossary/ER-1110-2-240#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ER-1110-2-240:Active_storage a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Active storage" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Active storage]" ;
+    skos:definition "The volume of the reservoir that is available for authorized purposes such as power generation, irrigation, flood control, water supply, etc. The bottom elevation is the minimum operating level or the top of inactive storage (where present)." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Active storage" .
+
+ER-1110-2-240:Continuity_of_Operations a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Continuity of Operations" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Continuity of Operations]" ;
+    skos:altLabel "['COOP']" ;
+    skos:definition "Emergency relocation and reconstitution of a USACE activity as a result of either a natural or a man-made (caused) disaster." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Continuity of Operations" .
+
+ER-1110-2-240:Corps_Water_Management_System a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Corps Water Management System" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Corps Water Management System]" ;
+    skos:altLabel "['CWMS']" ;
+    skos:definition "An integrated system of hardware, software, and communication resources supporting the USACE real-time water control mission." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Corps Water Management System" .
+
+ER-1110-2-240:Dead_storage a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Dead storage" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Dead storage]" ;
+    skos:definition "The storage that lies below the invert of the lowest outlet and that, therefore, cannot readily be withdrawn from the reservoir." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Dead storage" .
+
+ER-1110-2-240:Design_Water_Level a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Design Water Level" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Design Water Level]" ;
+    skos:definition "The maximum water elevation including flood surcharge that a dam is designed to withstand." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Design Water Level" .
+
+ER-1110-2-240:Deviation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Deviation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Deviation]" ;
+    skos:definition "An operation that departs from the approved water control plan or manual or operations prescribed by the approved water control plans or manual constitutes a deviation. This could include a planned, unplanned, or emergency deviation. An allowable deviations is a risk-informed and temporary operation consistent with the project authorization, all other applicable laws and policies, and the objectives for system and project operations. A deviation may be made in order to respond to unforeseen circumstances, alleviate temporary problems or realize opportunities to increase project benefits (both direct and incidental) on a temporary basis." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Deviation" .
+
+ER-1110-2-240:Drought a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Drought" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Drought]" ;
+    skos:definition """A deficiency of moisture or lack of storage that results in adverse impacts on people, animals, or vegetation over a sizeable area. Determination of drought conditions, in relation to the conditions of streamflow, is usually based on the most critically severe sequence of lowwater conditions as determined from the historical period of record of streamflow for a particular
+river system. Inasmuch as the period of record of streamflow data varies widely between river
+systems, this criterion does not yield a consistent measure of drought severity. Hydrologic lowflow analysis utilizing historical data may be necessary to yield consistent probabilities of lowwater sequences. """ ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Drought" .
+
+ER-1110-2-240:Environmental_Flow a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Environmental Flow" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Environmental Flow]" ;
+    skos:definition "The quality, quantity, and timing of water flows required to maintain the components, functions, processes, and resilience of aquatic ecosystems." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Environmental Flow" .
+
+ER-1110-2-240:Flood_surcharge a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Flood surcharge" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Flood surcharge]" ;
+    skos:definition "The storage volume that may be available between the top of the active storage and the design water level." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Flood surcharge" .
+
+ER-1110-2-240:Guide_Curve a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Guide Curve" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Guide Curve]" ;
+    skos:definition "The dividing line between part of the reservoir pool that is designated as flood control and that part that is designated as conservation." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Guide Curve" .
+
+ER-1110-2-240:Inactive_storage a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Inactive storage" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Inactive storage]" ;
+    skos:definition "The storage volume (if any) of a reservoir between the crest of the invert of the lowest outlet and the minimum operating level." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Inactive storage" .
+
+ER-1110-2-240:Letter_of_Understanding a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Letter of Understanding" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Letter of Understanding]" ;
+    skos:definition "As used herein, a statement that consummates this regulation for any given project and defines the general provisions or conditions of the local sponsor or owner, cooperation agreed to in the authorizing legislative document, and the requirements for compliance with Section 7 of the Flood Control Act of 1944, the Federal Power Act, or other special act of Congress. The letter of understanding will be signed by a duly authorized representative of the Chief of Engineers and the project owner. A field working agreement may be substituted for a letter of understanding, provided that the specified minimum requirements of the latter, as stated above, are met." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Letter of Understanding" .
+
+ER-1110-2-240:Live_storage a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Live storage" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Live storage]" ;
+    skos:definition "The sum of the active-and the inactive storage (if any)." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Live storage" .
+
+ER-1110-2-240:Master_Water_Control_Manual a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Master Water Control Manual" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Master Water Control Manual]" ;
+    skos:definition "A water control manual prepared for a system of projects rather than an individual project. Operation. The physical manipulation of spillway gates, outlet works, or instrumentation associated with projects. Operations prescribed by a water control plan shall include the operational flexibility necessary to accomplish the authorized purposes of the project under foreseeable conditions, according to the approved water control plan or manual. The approved water control plan or manual is a result of intensive study and includes the hydrologic, hydraulic, and reservoir regulation analyses of the historical period of record. These analyses cover a wide range of hydrologic conditions. The water control plan which could include guide curves, physical constraints, and operational constraints is tested against this range of conditions. The resulting simulated operations depict what could be represented as normal, high or low flows and a range of operations to respond to those conditions. Operations within the range contemplated or prescribed by a water control plan reflect the operational flexibility of the water control plan or manual and are not considered deviations." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Master Water Control Manual" .
+
+ER-1110-2-240:Project a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Project]" ;
+    skos:definition "Any water resource impoundment project constructed or modified, including natural lakes, these could include reservoirs, locks, dams and other water control projects" ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Project" .
+
+ER-1110-2-240:Project_Owner a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project Owner" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Project Owner]" ;
+    skos:definition "The entity responsible for maintenance, physical operation, and safety of the project, and for carrying out the water control plan in the interest of flood control or navigation as prescribed by USACE. Special arrangements may be made by the project owner for \"operating agencies\" to perform these tasks." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Project Owner" .
+
+ER-1110-2-240:Real_Time a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Real Time" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=68" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Real Time]" ;
+    skos:definition """As used herein, real time denotes the processing of current information or data in a sufficiently timely manner to influence a physical response in the system being monitored or controlled. The term includes information on the analyses for and execution of water control decisions for both minor and major flood events and for navigation and low water regulation based on prevailing hydro-meteorological and other conditions and constraints, to achieve
+efficient management of water resource systems.""" ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Real Time" .
+
+ER-1110-2-240:Reregulation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Reregulation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Reregulation]" ;
+    skos:definition "In a multi-dam system, regulating the dramatic peak flows generated by upstream dams through the measured release of water from the dam farthest downstream." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Reregulation" .
+
+ER-1110-2-240:Reservoir a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Reservoir" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Reservoir]" ;
+    skos:definition "Any dam-and-reservoir project surveyed, planned, and constructed, or to be planned, surveyed, constructed, and operated by the U.S. Army Corps of Engineers, that is intended to contain storage to be jointly managed and operated for multiple purposes under federal law. The terms reservoir and project may comprise a single dam-and-reservoir facility or a system of improvements, depending on how the project is ultimately authorized by Congress, and may include lock and dam projects, if such lock and dam projects contain storage that was authorized by Congress and is managed for multiple purposes in accordance with congressional intent." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Reservoir" .
+
+ER-1110-2-240:Reservoir_Regulation_Schedule a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Reservoir Regulation Schedule" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Reservoir Regulation Schedule]" ;
+    skos:definition "A compilation of operating criteria, guidelines, guide curves, and specifications that govern the storage and release functions of a reservoir. In general, schedules indicate limiting rates of reservoir releases required during various seasons of the year to meet all Congressionally authorized purposes of the particular project, acting separately or in combination with other projects in a system. Schedules are usually expressed in the form of graphs and tabulations, supplemented by concise specifications." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Reservoir Regulation Schedule" .
+
+ER-1110-2-240:Reservoir_capacity a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Reservoir capacity" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Reservoir capacity]" ;
+    skos:definition "The sum of the dead and live storage of the reservoir." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Reservoir capacity" .
+
+ER-1110-2-240:Storage a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Storage" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=67" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Storage]" ;
+    skos:definition "The retention of water or delay of runoff either by planned operation, as in a reservoir, or by temporary filling of overflow areas, as in the progression of a flood wave through a natural stream channel." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Storage" .
+
+ER-1110-2-240:Surcharge a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Surcharge" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Surcharge]" ;
+    skos:definition "Any storage above the full pool." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Surcharge" .
+
+ER-1110-2-240:Water_Control_Agreement a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Water Control Agreement" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Water Control Agreement]" ;
+    skos:definition """A compilation of water control criteria, guidelines, diagrams, release
+schedules, guide curves, and specifications that basically govern the use of reservoir storage
+space for flood control or navigation, and other authorized purposes. In general, they indicate
+controlling or release functions of a water control project for these purposes. In general, they
+indicate controlling or limiting rates of discharge and storage space required for flood control or
+navigation, based on the runoff potential during various seasons of the year.
+""" ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Water Control Agreement" .
+
+ER-1110-2-240:Water_Control_Manual a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Water Control Manual" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Water Control Manual]" ;
+    skos:definition "A document that provides guidance and instruction for project personnel and a reference source for others who may be involved with, responsible for, or affected by project regulation. It includes all water control management activities as they relate to hydraulic and hydrologic aspects of the project, such as descriptions of physical components, operating procedures, historical facts, and other pertinent data." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Water Control Manual" .
+
+ER-1110-2-240:Water_Control_Plan a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Water Control Plan" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Water Control Plan]" ;
+    skos:definition "A document that includes coordinated regulation schedules for project/system regulation and such additional provisions as may be required to collect, analyze, and disseminate basic data, prepare detailed operating instructions, assure project safety, and carry out regulation of projects in an appropriate manner. For the purpose of this regulation, the term water control plan refers to the plan of regulation for a water resources project in the interest of flood control, navigation, and other authorized purposes." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Water Control Plan" .
+
+ER-1110-2-240:Water_Control_Regulation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Water Control Regulation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=69" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Water Control Regulation]" ;
+    skos:definition "The regulation of water control projects according to regulation schedules in the water control plan and any other criteria in the water control manual. Either (1) water control procedures and decisions that normally are determined by regulating engineers, or (2) provisions governing water control resource management found in legal rules, agreements, contracts, FERC licenses, interstate compacts, and the like." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Water Control Regulation" .
+
+ER-1110-2-240:Water_Quality a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Water Quality" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=70" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Water Quality]" ;
+    skos:definition "The physical, chemical, biological, and radiological characteristics of surface and ground water affecting abiotic and biotic interrelationships." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Water Quality" .
+
+ER-1110-2-240:Water_Quality_Management a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Water Quality Management" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineerregulations/er_1110-2-240.pdf#page=70" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml#term[Water Quality Management]" ;
+    skos:definition "The management of water resources to improve, restore, conserve, and protect the physical, chemical, biological, and radiological quality of the water for natural and human use." ;
+    skos:inScheme ER-1110-2-240: ;
+    skos:prefLabel "Water Quality Management" .
+
+ER-1110-2-240: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Engineering Manual 1110-2-240, Water Control Management" ;
+    dcterms:created "2024-07-16T04:27:02.906387+00:00"^^xsd:dateTime ;
+    dcterms:description "Engineering Manual 1110-2-240, Water Control Management, defines acronyms and terms commonly used in this report, which describes policies governing water control management activities, the establishment of water control plans by the U.S. Army Corps of Engineers (USACE) at all USACE-owned and USACE-operated reservoirs, locks, dams, and other water control projects. These terms are defined in the glossary section of the report." ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Engineering Manual 1110-2-240, Water Control Management" ;
+    pav:ImportedFrom "glossaries/CivilWorks/ER-1110-2-240.yaml" ;
+    pav:createdOn "2024-07-16T04:27:02.906387+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "ER 1110-2-240 Water Control Management" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/ER-1110-2-240#" ;
+    skos:hasTopConcept ER-1110-2-240:Active_storage,
+        ER-1110-2-240:Continuity_of_Operations,
+        ER-1110-2-240:Corps_Water_Management_System,
+        ER-1110-2-240:Dead_storage,
+        ER-1110-2-240:Design_Water_Level,
+        ER-1110-2-240:Deviation,
+        ER-1110-2-240:Drought,
+        ER-1110-2-240:Environmental_Flow,
+        ER-1110-2-240:Flood_surcharge,
+        ER-1110-2-240:Guide_Curve,
+        ER-1110-2-240:Inactive_storage,
+        ER-1110-2-240:Letter_of_Understanding,
+        ER-1110-2-240:Live_storage,
+        ER-1110-2-240:Master_Water_Control_Manual,
+        ER-1110-2-240:Project,
+        ER-1110-2-240:Project_Owner,
+        ER-1110-2-240:Real_Time,
+        ER-1110-2-240:Reregulation,
+        ER-1110-2-240:Reservoir,
+        ER-1110-2-240:Reservoir_Regulation_Schedule,
+        ER-1110-2-240:Reservoir_capacity,
+        ER-1110-2-240:Storage,
+        ER-1110-2-240:Surcharge,
+        ER-1110-2-240:Water_Control_Agreement,
+        ER-1110-2-240:Water_Control_Manual,
+        ER-1110-2-240:Water_Control_Plan,
+        ER-1110-2-240:Water_Control_Regulation,
+        ER-1110-2-240:Water_Quality,
+        ER-1110-2-240:Water_Quality_Management .
+

@@ -1,0 +1,23 @@
+about:
+    namespace: https://usace-data.com/civil-works/glossary/CFR-33-242-4#
+    prefix: CFR-33-242-4
+    template: glossary
+    title:  Code of Federal Regulations - Title 33, Chapter-II, Part 242, Section-242.4
+    description: "33-CFR-242.4 Term definitions are applicable throughout part 242"
+    source:
+        linkType: cfr
+        sourceID: CFR-33-242-4
+        authoritativeSource: 33 CFR 242.4 Definitions
+        glossaryReferences: true
+        url: https://www.ecfr.gov/current/title-33/chapter-II/part-242/section-242.4
+terms:
+- label: Private persons
+  definition: means all entities in the private sector, including but not limited
+    to individuals, private institutions, sole proprietorships, partnerships, and
+    corporations.
+  anchor: '1'
+- label: Total cost
+  definition: means total labor charges which include adjustments for benefits, administrative
+    overhead, and technical indirect costs. These terms are described in the reference
+    in Â§ 242.3 (c).
+  anchor: '1'

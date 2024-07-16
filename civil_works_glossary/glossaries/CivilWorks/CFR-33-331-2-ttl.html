@@ -1,0 +1,1760 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Ontospy > https://usace-data.com/civil-works/glossary/CFR-33-331-2#</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <style type="text/css" media="screen">
+
+
+  body {
+	  margin-left: 6em;
+	  margin-right: 12em;
+	  text-align: justify;
+    padding: 2em 1em 2em 70px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  :link { color: #00C; background: transparent }
+  :visited { color: #00C; background: transparent }
+  a:active { color: #C00; background: transparent }
+
+  a:link img, a:visited img { border-style: none } /* no border on img links */
+
+  a:hover {color: white; background: #00C; }
+  a.backlink:hover {color: white; background: grey; }
+  a.greylink:hover {color: white; background: grey; }
+
+  .margintop {
+  	 margin-top: 40px;
+  }
+
+
+  dt, dd { margin-top: 10px; margin-bottom: 0 } /* opera 3.50 */
+  dt { font-weight: bold }
+
+
+  h1, h2, h3, h4, h5, h6 { text-align: left }
+  /* background should be transparent, but WebTV has a bug */
+  h1, h2, h3, h4, h5 { color: #005A9C; background: white }
+  h1.title { font: 200% sans-serif }
+  h1 { font: 170% sans-serif }
+  h2 { font: 140% sans-serif }
+  h3 { font: 120% sans-serif }
+  h4 { font: bold 100% sans-serif }
+  h5 { font: italic 100% sans-serif }
+  h6 { font: small-caps 100% sans-serif }
+
+  .hide { display: none }
+
+
+  pre { margin-left: 2em }
+
+  pre, code { font-family: monospace } /* navigator 4 requires this */
+
+
+  .implementation {
+  	background: aliceblue;
+	padding: 10px;
+	margin-top: 5px;
+  }
+
+  fieldset {
+	  margin-top: 20px;
+	  padding: 13px;
+      text-align: left;
+  }
+
+  legend {
+	  text-transform: uppercase;
+  }
+
+  .entity-div {
+	  margin: 55px 10px 30px 10px;
+  }
+
+  .entity-section {
+	  margin-bottom: 0px;
+  }
+
+
+  a.backlink {
+	  font-size: 80%;
+	  color: grey;
+  }
+
+  a.greylink {
+	  color: grey;
+  }
+
+
+   .implementation_title {
+
+       font-weight: bold;
+       font-size: 100%;
+   }
+
+.section-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+        .tree-container {
+            width: 3000em;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+		.tree {margin: 10px 0px 30px -20px; padding: 0; display: inline-block;}
+
+		.tree ul {
+			padding-top: 20px; position: relative;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		.tree li {
+			float: left; text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*We will use ::before and ::after to draw the connectors*/
+
+		.tree li::before, .tree li::after{
+			content: '';
+			position: absolute; top: 0; right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%; height: 20px;
+		}
+		.tree li::after{
+			right: auto; left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		/*We need to remove left-right connectors from elements without
+		any siblings*/
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		/*Remove space from the top of single children*/
+		.tree li:only-child{ padding-top: 0;}
+
+		/*Remove left connector from first child and
+		right connector from last child*/
+		.tree li:first-child::before, .tree li:last-child::after{
+			border: 0 none;
+		}
+		/*Adding back the vertical connector to the last nodes*/
+		.tree li:last-child::before{
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+			-webkit-border-radius: 0 5px 0 0;
+			-moz-border-radius: 0 5px 0 0;
+		}
+		.tree li:first-child::after{
+			border-radius: 5px 0 0 0;
+			-webkit-border-radius: 5px 0 0 0;
+			-moz-border-radius: 5px 0 0 0;
+		}
+
+		/*Time to add downward connectors from parents*/
+		.tree ul ul::before{
+			content: '';
+			position: absolute; top: 0; left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0; height: 20px;
+		}
+
+		.tree li a{
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #666;
+			font-family: arial, verdana, tahoma;
+			font-size: 11px;
+			display: inline-block;
+
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*Time for some hover effects*/
+		/*We will apply the hover effect the the lineage of the element also*/
+		.tree li a:hover, .tree li a:hover+ul li a {
+			background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+		}
+		/*Connector styles on hover*/
+		.tree li a:hover+ul li::after,
+		.tree li a:hover+ul li::before,
+		.tree li a:hover+ul::before,
+		.tree li a:hover+ul ul::before{
+			border-color:  #94a0b4;
+		}
+
+		/*Thats all. I hope you enjoyed it.
+		Thanks :)*/
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+	
+	
+		
+			<h1 class="title"><a href="" target="_blank">https://usace-data.com/civil-works/glossary/CFR-33-331-2#</a></h1>
+			<h3><p>None</p></h3>
+		
+
+	
+		
+		
+
+
+	<p><small>Ontology documentation automatically generated by <a class="greylink" href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> on Tue, 16 Jul 2024 04:25:08</small></p>
+
+
+
+	
+
+
+	<hr class="margintop">
+
+	<h1><a name="toc">&nbsp;</a>Table of Content</h1>
+
+	<ul>
+		<li><a href="#ontologies">Ontologies</a></li>
+		<li><a href="#a-z">A-Z of Terms</a></li>
+		
+		
+		
+		
+		<li><a href="#skosconcepts">SKOS Concepts</a></li>
+		
+	</ul>
+
+
+
+	
+
+	
+
+	<hr class="margintop">
+
+	<h1><a name="ontologies"></a>Ontologies</h1>
+
+		
+
+
+			<fieldset> <legend><h3><a href="https://usace-data.com/civil-works/glossary/CFR-33-331-2#" target="_blank">https://usace-data.com/civil-works/glossary/CFR-33-331-2#</a></h3></legend>
+
+			<h4 style="margin-top: -20px;"><p>None</p></h4>
+
+			
+			
+				
+					<dt>dcterms:created</dt>
+				  
+			
+			<dd><p>2024-07-16T04:25:04.903171+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:description</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:publisher</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:rights</dt>
+				  
+			
+			<dd><p>MIT</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:title</dt>
+				  
+			
+			<dd><p>Code of Federal Regulations - Title 33, Chapter-II, Part 331, Section-331.2</p></dd>
+			
+			
+				</dl>
+					<dt>pav:ImportedFrom</dt>
+				  
+			
+			<dd><p>glossaries/CivilWorks/CFR-33-331-2.yaml</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdOn</dt>
+				  
+			
+			<dd><p>2024-07-16T04:25:04.903171+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdWith</dt>
+				  
+			
+			<dd><p>gloss</p></dd>
+			
+			
+				</dl>
+					<dt>pav:wasInfluencedBy</dt>
+				  
+			
+			<dd><p>33 CFR 331.2 Definitions</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.knowledgesmarts.com/ontologies/wov#Glossary</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2002/07/owl#Ontology</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2004/02/skos/core#ConceptScheme</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#Vocabulary</p></dd>
+			
+			
+				</dl>
+					<dt>rdfs:label</dt>
+				  
+			
+			<dd><p>Code of Federal Regulations - Title 33, Chapter-II, Part 331, Section-331.2</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Affected_party</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Agent%28s%29</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Appealable_action</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Appellant</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Approved_jurisdictional_determination</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Basis_of_jurisdictional_determination</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Declined_permit</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Denial_determination</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Jurisdictional_determination</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Notification_of_Appeal_Process</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Notification_of_Applicant_Options</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Permit_denial</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Preliminary_Jurisdictional_Determinations</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Proffered_permit</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Request_for_appeal</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Review_officer</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#Tolling_agreement</p></dd>
+			
+			
+				</dl>
+					<dt>vann:preferredNamespaceUri</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-331-2#</p></dd>
+			
+
+			</fieldset>
+
+		
+
+	
+
+
+
+	
+
+	<hr class="margintop">
+	<h1><a  name="a-z">&nbsp;</a>A-Z of terms</h1>
+
+	<div id="azterms">
+
+	This is a complete alphabetical A-Z index of all terms, by main logical type.
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		<fieldset> <legend>SKOS Concepts (17)</legend>
+			&nbsp;<a href="#CFR-33-331-2:Affected_party">CFR-33-331-2:Affected_party</a>
+			|  <a href="#CFR-33-331-2:Agent%28s%29">CFR-33-331-2:Agent%28s%29</a>
+			|  <a href="#CFR-33-331-2:Appealable_action">CFR-33-331-2:Appealable_action</a>
+			|  <a href="#CFR-33-331-2:Appellant">CFR-33-331-2:Appellant</a>
+			|  <a href="#CFR-33-331-2:Approved_jurisdictional_determination">CFR-33-331-2:Approved_jurisdictional_determination</a>
+			|  <a href="#CFR-33-331-2:Basis_of_jurisdictional_determination">CFR-33-331-2:Basis_of_jurisdictional_determination</a>
+			|  <a href="#CFR-33-331-2:Declined_permit">CFR-33-331-2:Declined_permit</a>
+			|  <a href="#CFR-33-331-2:Denial_determination">CFR-33-331-2:Denial_determination</a>
+			|  <a href="#CFR-33-331-2:Jurisdictional_determination">CFR-33-331-2:Jurisdictional_determination</a>
+			|  <a href="#CFR-33-331-2:Notification_of_Appeal_Process">CFR-33-331-2:Notification_of_Appeal_Process</a>
+			|  <a href="#CFR-33-331-2:Notification_of_Applicant_Options">CFR-33-331-2:Notification_of_Applicant_Options</a>
+			|  <a href="#CFR-33-331-2:Permit_denial">CFR-33-331-2:Permit_denial</a>
+			|  <a href="#CFR-33-331-2:Preliminary_Jurisdictional_Determinations">CFR-33-331-2:Preliminary_Jurisdictional_Determinations</a>
+			|  <a href="#CFR-33-331-2:Proffered_permit">CFR-33-331-2:Proffered_permit</a>
+			|  <a href="#CFR-33-331-2:Request_for_appeal">CFR-33-331-2:Request_for_appeal</a>
+			|  <a href="#CFR-33-331-2:Review_officer">CFR-33-331-2:Review_officer</a>
+			|  <a href="#CFR-33-331-2:Tolling_agreement">CFR-33-331-2:Tolling_agreement</a>
+			  
+		</fieldset>
+
+	
+
+	
+
+	</div>
+
+
+
+	
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+	
+
+
+		<hr class="margintop">
+		<h1 class="margintop"><a  name="skosconcepts">&nbsp;</a>SKOS Concepts</h1>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Affected_party" href="#CFR-33-331-2:Affected_party">CFR-33-331-2:Affected_party</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Affected_party</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Affected_party is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a permit applicant, landowner, a lease, easement or option holder (i.e., an individual who has an identifiable and substantial legal interest in the property) who has received an approved JD, permit denial, or has declined a proffered individual permit.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Affected_party a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Affected party&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Affected party]&#34; ;<br>
+    skos:definition &#34;means a permit applicant, landowner, a lease, easement or option holder (i.e., an individual who has an identifiable and substantial legal interest in the property) who has received an approved JD, permit denial, or has declined a proffered individual permit.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Affected party&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Agent%28s%29" href="#CFR-33-331-2:Agent%28s%29">CFR-33-331-2:Agent%28s%29</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Agent%28s%29</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Agent%28s%29 is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the affected party&#39;s business partner, attorney, consultant, engineer, planner, or any individual with legal authority to represent the appellant&#39;s interests.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Agent%28s%29 a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Agent(s)&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Agent(s)]&#34; ;<br>
+    skos:definition &#34;means the affected party&#39;s business partner, attorney, consultant, engineer, planner, or any individual with legal authority to represent the appellant&#39;s interests.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Agent(s)&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Appealable_action" href="#CFR-33-331-2:Appealable_action">CFR-33-331-2:Appealable_action</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Appealable_action</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Appealable_action is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means an approved JD, a permit denial, or a declined permit, as these terms are defined in this section.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Appealable_action a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Appealable action&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Appealable action]&#34; ;<br>
+    skos:definition &#34;means an approved JD, a permit denial, or a declined permit, as these terms are defined in this section.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Appealable action&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Appellant" href="#CFR-33-331-2:Appellant">CFR-33-331-2:Appellant</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Appellant</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Appellant is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means an affected party who has filed an appeal of an approved JD, a permit denial or declined permit under the criteria and procedures of this part.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Appellant a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Appellant&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Appellant]&#34; ;<br>
+    skos:definition &#34;means an affected party who has filed an appeal of an approved JD, a permit denial or declined permit under the criteria and procedures of this part.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Appellant&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Approved_jurisdictional_determination" href="#CFR-33-331-2:Approved_jurisdictional_determination">CFR-33-331-2:Approved_jurisdictional_determination</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Approved_jurisdictional_determination</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Approved_jurisdictional_determination is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a Corps document stating the presence or absence of waters of the United States on a parcel or a written statement and map identifying the limits of waters of the United States on a parcel. Approved JDs are clearly designated appealable actions and will include a basis of JD with the document.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Approved_jurisdictional_determination a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Approved jurisdictional determination&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Approved jurisdictional determination]&#34; ;<br>
+    skos:definition &#34;means a Corps document stating the presence or absence of waters of the United States on a parcel or a written statement and map identifying the limits of waters of the United States on a parcel. Approved JDs are clearly designated appealable actions and will include a basis of JD with the document.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Approved jurisdictional determination&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Basis_of_jurisdictional_determination" href="#CFR-33-331-2:Basis_of_jurisdictional_determination">CFR-33-331-2:Basis_of_jurisdictional_determination</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Basis_of_jurisdictional_determination</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Basis_of_jurisdictional_determination is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>is a summary of the indicators that support the Corps approved JD. Indicators supporting the Corps approved JD can include, but are not limited to: indicators of wetland hydrology, hydric soils, and hydrophytic plant communities; indicators of ordinary high water marks, high tide lines, or mean high water marks; indicators of adjacency to navigable or interstate waters; indicators that the wetland or waterbody is of part of a tributary system; or indicators of linkages between isolated water bodies and interstate or foreign commerce.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Basis_of_jurisdictional_determination a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Basis of jurisdictional determination&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Basis of jurisdictional determination]&#34; ;<br>
+    skos:definition &#34;is a summary of the indicators that support the Corps approved JD. Indicators supporting the Corps approved JD can include, but are not limited to: indicators of wetland hydrology, hydric soils, and hydrophytic plant communities; indicators of ordinary high water marks, high tide lines, or mean high water marks; indicators of adjacency to navigable or interstate waters; indicators that the wetland or waterbody is of part of a tributary system; or indicators of linkages between isolated water bodies and interstate or foreign commerce.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Basis of jurisdictional determination&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Declined_permit" href="#CFR-33-331-2:Declined_permit">CFR-33-331-2:Declined_permit</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Declined_permit</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Declined_permit is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a proffered individual permit, including a letter of permission, that an applicant has refused to accept, because he has objections to the terms and special conditions therein. A declined permit can also be an individual permit that the applicant originally accepted, but where such permit was subsequently modified by the district engineer, pursuant to 33 CFR 325.7, in such a manner that the resulting permit contains terms and special conditions that lead the applicant to decline the modified permit, provided that the applicant has not started work in waters of the United States authorized by such permit. Where an applicant declines a permit (either initial or modified), the applicant does not have a valid permit to conduct regulated activities in waters of the United States, and must not begin construction of the work requiring a Corps permit unless and until the applicant receives and accepts a valid Corps permit.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Declined_permit a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Declined permit&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Declined permit]&#34; ;<br>
+    skos:definition &#34;means a proffered individual permit, including a letter of permission, that an applicant has refused to accept, because he has objections to the terms and special conditions therein. A declined permit can also be an individual permit that the applicant originally accepted, but where such permit was subsequently modified by the district engineer, pursuant to 33 CFR 325.7, in such a manner that the resulting permit contains terms and special conditions that lead the applicant to decline the modified permit, provided that the applicant has not started work in waters of the United States authorized by such permit. Where an applicant declines a permit (either initial or modified), the applicant does not have a valid permit to conduct regulated activities in waters of the United States, and must not begin construction of the work requiring a Corps permit unless and until the applicant receives and accepts a valid Corps permit.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Declined permit&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Denial_determination" href="#CFR-33-331-2:Denial_determination">CFR-33-331-2:Denial_determination</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Denial_determination</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Denial_determination is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a letter from the district engineer detailing the reasons a permit was denied with prejudice. The decision document for the project will be attached to the denial determination in all cases.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Denial_determination a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Denial determination&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Denial determination]&#34; ;<br>
+    skos:definition &#34;means a letter from the district engineer detailing the reasons a permit was denied with prejudice. The decision document for the project will be attached to the denial determination in all cases.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Denial determination&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Jurisdictional_determination" href="#CFR-33-331-2:Jurisdictional_determination">CFR-33-331-2:Jurisdictional_determination</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Jurisdictional_determination</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Jurisdictional_determination is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>(JD) means a written Corps determination that a wetland and/or waterbody is subject to regulatory jurisdiction under Section 404 of the Clean Water Act (33 U.S.C. 1344) or a written determination that a waterbody is subject to regulatory jurisdiction under Section 9 or 10 of the Rivers and Harbors Act of 1899 (33 U.S.C. 401 et seq.). Additionally, the term includes a written reverification of expired JDs and a written reverification of JDs where new information has become available that may affect the previously written determination. For example, such geographic JDs may include, but are not limited to, one or more of the following determinations: the presence or absence of wetlands; the location(s) of the wetland boundary, ordinary high water mark, mean high water mark, and/or high tide line; interstate commerce nexus for isolated waters; and adjacency of wetlands to other waters of the United States. All JDs will be in writing and will be identified as either preliminary or approved. JDs do not include determinations that a particular activity requires a DA permit.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Jurisdictional_determination a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Jurisdictional determination&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Jurisdictional determination]&#34; ;<br>
+    skos:altLabel &#34;JD&#34; ;<br>
+    skos:definition &#34;(JD) means a written Corps determination that a wetland and/or waterbody is subject to regulatory jurisdiction under Section 404 of the Clean Water Act (33 U.S.C. 1344) or a written determination that a waterbody is subject to regulatory jurisdiction under Section 9 or 10 of the Rivers and Harbors Act of 1899 (33 U.S.C. 401 et seq.). Additionally, the term includes a written reverification of expired JDs and a written reverification of JDs where new information has become available that may affect the previously written determination. For example, such geographic JDs may include, but are not limited to, one or more of the following determinations: the presence or absence of wetlands; the location(s) of the wetland boundary, ordinary high water mark, mean high water mark, and/or high tide line; interstate commerce nexus for isolated waters; and adjacency of wetlands to other waters of the United States. All JDs will be in writing and will be identified as either preliminary or approved. JDs do not include determinations that a particular activity requires a DA permit.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Jurisdictional determination&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Notification_of_Appeal_Process" href="#CFR-33-331-2:Notification_of_Appeal_Process">CFR-33-331-2:Notification_of_Appeal_Process</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Notification_of_Appeal_Process</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Notification_of_Appeal_Process is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>(NAP) means a fact sheet that explains the criteria and procedures of the administrative appeal process. Every approved JD, permit denial, and every proffered individual permit returned for reconsideration after review by the district engineer in accordance with Â§ 331.6(b) will have an NAP form attached.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Notification_of_Appeal_Process a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Notification of Appeal Process&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Notification of Appeal Process]&#34; ;<br>
+    skos:altLabel &#34;NAP&#34; ;<br>
+    skos:definition &#34;(NAP) means a fact sheet that explains the criteria and procedures of the administrative appeal process. Every approved JD, permit denial, and every proffered individual permit returned for reconsideration after review by the district engineer in accordance with Â§ 331.6(b) will have an NAP form attached.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Notification of Appeal Process&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Notification_of_Applicant_Options" href="#CFR-33-331-2:Notification_of_Applicant_Options">CFR-33-331-2:Notification_of_Applicant_Options</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Notification_of_Applicant_Options</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Notification_of_Applicant_Options is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>(NAO) means a fact sheet explaining an applicant&#39;s options with a proffered individual permit under the administrative appeal process.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Notification_of_Applicant_Options a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Notification of Applicant Options&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Notification of Applicant Options]&#34; ;<br>
+    skos:altLabel &#34;NAO&#34; ;<br>
+    skos:definition &#34;(NAO) means a fact sheet explaining an applicant&#39;s options with a proffered individual permit under the administrative appeal process.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Notification of Applicant Options&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Permit_denial" href="#CFR-33-331-2:Permit_denial">CFR-33-331-2:Permit_denial</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Permit_denial</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Permit_denial is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a written denial with prejudice (see 33 CFR 320.4(j)) of an individual permit application as defined in 33 CFR 325.5(b).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Permit_denial a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Permit denial&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Permit denial]&#34; ;<br>
+    skos:definition &#34;means a written denial with prejudice (see 33 CFR 320.4(j)) of an individual permit application as defined in 33 CFR 325.5(b).&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Permit denial&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Preliminary_Jurisdictional_Determinations" href="#CFR-33-331-2:Preliminary_Jurisdictional_Determinations">CFR-33-331-2:Preliminary_Jurisdictional_Determinations</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Preliminary_Jurisdictional_Determinations</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Preliminary_Jurisdictional_Determinations is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Preliminary JDs are written indications that there may be waters of the United States on a parcel or indications of the approximate location(s) of waters of the United States on a parcel. Preliminary JDs are advisory in nature and may not be appealed. Preliminary JDs include compliance orders that have an implicit JD, but no approved JD.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Preliminary_Jurisdictional_Determinations a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Preliminary Jurisdictional Determinations&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Preliminary Jurisdictional Determinations]&#34; ;<br>
+    skos:altLabel &#34;Preliminary JDs&#34; ;<br>
+    skos:definition &#34;Preliminary JDs are written indications that there may be waters of the United States on a parcel or indications of the approximate location(s) of waters of the United States on a parcel. Preliminary JDs are advisory in nature and may not be appealed. Preliminary JDs include compliance orders that have an implicit JD, but no approved JD.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Preliminary Jurisdictional Determinations&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Proffered_permit" href="#CFR-33-331-2:Proffered_permit">CFR-33-331-2:Proffered_permit</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Proffered_permit</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Proffered_permit is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means a permit that is sent to an applicant that is in the proper format for the applicant to sign (for a standard permit) or accept (for a letter of permission). The term initial proffered permit as used in this part refers to the first time a permit is sent to the applicant. The initial proffered permit is not an appealable action. However, the applicant may object to the terms or conditions of the initial proffered permit and, if so, a second reconsidered permit will be sent to the applicant. The term proffered permit as used in this part refers to the second permit that is sent to the applicant. Such proffered permit is an appealable action.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Proffered_permit a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Proffered permit&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Proffered permit]&#34; ;<br>
+    skos:definition &#34;means a permit that is sent to an applicant that is in the proper format for the applicant to sign (for a standard permit) or accept (for a letter of permission). The term initial proffered permit as used in this part refers to the first time a permit is sent to the applicant. The initial proffered permit is not an appealable action. However, the applicant may object to the terms or conditions of the initial proffered permit and, if so, a second reconsidered permit will be sent to the applicant. The term proffered permit as used in this part refers to the second permit that is sent to the applicant. Such proffered permit is an appealable action.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Proffered permit&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Request_for_appeal" href="#CFR-33-331-2:Request_for_appeal">CFR-33-331-2:Request_for_appeal</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Request_for_appeal</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Request_for_appeal is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>(RFA) means the affected party&#39;s official request to initiate the appeal process. The RFA must include the name of the affected party, the Corps file number of the approved JD, denied permit, or declined permit, the reason(s) for the appeal, and any supporting data and information. No new information may be submitted. A grant of right of entry for the Corps to the project site is a condition of the RFA to allow the RO to clarify elements of the record or to conduct field tests or sampling for purposes directly related to the appeal. A standard RFA form will be provided to the affected party with the NAP form. For appeals of decisions related to unauthorized activities a signed tolling agreement, as required by 33 CFR 326.3(e)(1)(v), must be included with the RFA, unless a signed tolling agreement has previously been furnished to the Corps district office. The affected party initiates the administrative appeal process by providing an acceptable RFA to the appropriate Corps of Engineers division office. An acceptable RFA contains all the required information and provides reasons for appeal that meets the criteria identified in Â§ 331.5.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Request_for_appeal a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Request for appeal&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Request for appeal]&#34; ;<br>
+    skos:altLabel &#34;RFA&#34; ;<br>
+    skos:definition &#34;(RFA) means the affected party&#39;s official request to initiate the appeal process. The RFA must include the name of the affected party, the Corps file number of the approved JD, denied permit, or declined permit, the reason(s) for the appeal, and any supporting data and information. No new information may be submitted. A grant of right of entry for the Corps to the project site is a condition of the RFA to allow the RO to clarify elements of the record or to conduct field tests or sampling for purposes directly related to the appeal. A standard RFA form will be provided to the affected party with the NAP form. For appeals of decisions related to unauthorized activities a signed tolling agreement, as required by 33 CFR 326.3(e)(1)(v), must be included with the RFA, unless a signed tolling agreement has previously been furnished to the Corps district office. The affected party initiates the administrative appeal process by providing an acceptable RFA to the appropriate Corps of Engineers division office. An acceptable RFA contains all the required information and provides reasons for appeal that meets the criteria identified in Â§ 331.5.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Request for appeal&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Review_officer" href="#CFR-33-331-2:Review_officer">CFR-33-331-2:Review_officer</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Review_officer</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Review_officer is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>(RO) means the Corps official responsible for assisting the division engineer or higher authority responsible for rendering the final decision on the merits of an appeal.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Review_officer a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Review officer&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Review officer]&#34; ;<br>
+    skos:altLabel &#34;RO&#34; ;<br>
+    skos:definition &#34;(RO) means the Corps official responsible for assisting the division engineer or higher authority responsible for rendering the final decision on the merits of an appeal.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Review officer&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-331-2:Tolling_agreement" href="#CFR-33-331-2:Tolling_agreement">CFR-33-331-2:Tolling_agreement</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-331-2:Tolling_agreement</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-331-2:Tolling_agreement is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>refers to a document signed by any person who appeals an approved JD associated with an unauthorized activity or applies for an after-the-fact (ATF) permit, where the application is accepted and evaluated by the Corps. The agreement states that the affected party agrees to have the statute of limitations regarding any violation associated with that approved JD or application tolled or temporarily set aside until one year after the final Corps decision, as defined at Â§ 331.10. No ATF permit application or administrative appeal associated with an unauthorized activity will be accepted until a tolling agreement is furnished to the district engineer.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-331-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-331-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-331-2:Tolling_agreement a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Tolling agreement&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-331/section-331.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-331-2.yaml#term[Tolling agreement]&#34; ;<br>
+    skos:definition &#34;refers to a document signed by any person who appeals an approved JD associated with an unauthorized activity or applies for an after-the-fact (ATF) permit, where the application is accepted and evaluated by the Corps. The agreement states that the affected party agrees to have the statute of limitations regarding any violation associated with that approved JD or application tolled or temporarily set aside until one year after the final Corps decision, as defined at Â§ 331.10. No ATF permit application or administrative appeal associated with an unauthorized activity will be accepted until a tolling agreement is furnished to the district engineer.&#34; ;<br>
+    skos:inScheme CFR-33-331-2: ;<br>
+    skos:prefLabel &#34;Tolling agreement&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	<hr>
+	<small>Ontology documentation automatically generated by <a class="greylink"  href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> v2.1.1 on Tue, 16 Jul 2024 04:25:08</small>
+
+
+</body>
+</html>

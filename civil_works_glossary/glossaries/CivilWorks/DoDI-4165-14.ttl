@@ -1,0 +1,373 @@
+@prefix DoDI-4165.14: <https://usace-data.com/civil-works/glossary/DoDI-4165.14#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+DoDI-4165.14:Accountable_Property_System_of_Record a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Accountable Property System of Record" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Accountable Property System of Record]" ;
+    skos:altLabel "APSR" ;
+    skos:definition "The business system or application used to account for and maintain accountability of DoD government property. Each MILDEP and WHS uses their own business system or application for this purpose. " ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Accountable Property System of Record" .
+
+DoDI-4165.14:Building a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Building" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Building]" ;
+    skos:definition "A roofed and floored facility enclosed by exterior walls and consisting of one or more levels that is suitable for single or multiple functions and that protects human beings and their properties from direct harsh effects of weather such as rain, wind, sun, etc. " ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Building" .
+
+DoDI-4165.14:Category_Code a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Category Code" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Category Code]" ;
+    skos:altLabel "CATCODE" ;
+    skos:definition "The most detailed level of classification for real property. Denotes a specific real property type and function in accordance with the current version of the RPCS and each MILDEP’s specific documentation. " ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Category Code" .
+
+DoDI-4165.14:Civil_Works a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Civil Works" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Civil Works]" ;
+    skos:definition "Tasks undertaken by the Directorate of Civil Works, U.S. Army Corps of Engineers that include emergency response and water resource development activities including flood risk management, navigation, recreation, infrastructure, and environmental stewardship. " ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Civil Works" .
+
+DoDI-4165.14:Data_Analytics_and_Integration_Support a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Data Analytics and Integration Support" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Data Analytics and Integration Support]" ;
+    skos:altLabel "DAIS" ;
+    skos:definition "Data warehouse for real property data provided by the DoD Component APSRs." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Data Analytics and Integration Support" .
+
+DoDI-4165.14:Disposal a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Disposal" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Disposal]" ;
+    skos:definition "Any authorized method (e.g., demolition, non-DoD transfer) of permanently divesting the DoD of accountability for, and control of, an RPA in which the United States holds a legal interest." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Disposal" .
+
+DoDI-4165.14:Enterprise a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Enterprise" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Enterprise]" ;
+    skos:definition "Defined in DoDD 8115.01" ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Enterprise" .
+
+DoDI-4165.14:Facilities_Sustainment_Model a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Facilities Sustainment Model" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Facilities Sustainment Model]" ;
+    skos:definition "A model used to determine aggregate funding levels for sustainment. Projects annual facility sustainment costs for the DoD facilities inventory. " ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Facilities Sustainment Model" .
+
+DoDI-4165.14:Facility a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Facility" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Facility]" ;
+    skos:definition "A building, structure, or linear structure that is constructed on or in the land that includes in the basic record for the facility such things as landscaping, HVAC equipment, utility connections, stairs, ramps, passageways, and other RPIE that facilitates the use of and is inclusive/intrinsic to the facility itself." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Facility" .
+
+DoDI-4165.14:Facility_Analysis_Category a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Facility Analysis Category" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Facility Analysis Category]" ;
+    skos:altLabel "FAC" ;
+    skos:definition "A grouping of RPAs that have a common UM and equivalent cost based on the UM. Included in this equivalent cost are costs associated with real property construction, maintenance, sustainment, and repair. Within the DoD, a FAC is represented by a four- digit numerical code, as found in DoDI 4165.03 and the current version of the RPCS." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Facility Analysis Category" .
+
+DoDI-4165.14:Forecast a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Forecast" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Forecast]" ;
+    skos:definition "A prediction of future RPAs, including acquisitions, transfers, and disposals, to support the DoD mission." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Forecast" .
+
+DoDI-4165.14:Future_Years_Defense_Program a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Future Years Defense Program" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Future Years Defense Program]" ;
+    skos:altLabel "FYDP" ;
+    skos:definition "Program and financial plan for the DoD, as approved by the Secretary of Defense." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Future Years Defense Program" .
+
+DoDI-4165.14:Geospatial_Feature a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Geospatial Feature" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Geospatial Feature]" ;
+    skos:definition "A digital representation of the location and spatial extent of an RPA structured according to IGI&S standards and intended for direct use in a geographic information system. Real property geospatial features have a point, line, or polygon geometry. The representation must include a coordinate reference system, as defined in the International Organization for Standardization 19111:2019.  " ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Geospatial Feature" .
+
+DoDI-4165.14:Historic_Status a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Historic Status" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Historic Status]" ;
+    skos:definition "The status of a facility with respect to the National Register of Historic Places or listed on the World Heritage List or the host nation equivalent of the U.S. National Register of Historic Places." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Historic Status" .
+
+DoDI-4165.14:Host_Installation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Host Installation" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Host Installation]" ;
+    skos:definition "The Military Service or WHS holding real property accountability for a defined location." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Host Installation" .
+
+DoDI-4165.14:Installation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Installation" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Installation]" ;
+    skos:definition "A base, camp, post, station, yard, center, homeport facility for any ship, or other activity under the jurisdiction of the DoD, including any leased facility, which is located within any of the States, the District of Columbia, the Commonwealth of Puerto Rico, American Samoa, the Virgin Islands, the Commonwealth of the Northern Mariana Islands, or Guam. This term does not include any facility used primarily for civil works, rivers and harbors projects, or flood control projects. In the case of an activity in a foreign country, an installation is any property under the operational control of the Secretary of a MILDEP or the Secretary of Defense, without regard to the duration of operational control. For real property accountability, an installation must consist of one or more real property sites." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Installation" .
+
+DoDI-4165.14:Interest a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Interest" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Interest]" ;
+    skos:definition "The type and extent of legally enforceable right to possess or use property, including an easement to pass over an adjacent parcel, mineral rights, outright title, or a possibility of acquiring title should a specified event occur. DoD real property interest types are defined in the RPIM." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Interest" .
+
+DoDI-4165.14:Internal_Control a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Internal Control" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Internal Control]" ;
+    skos:definition """An integral component of an organization’s management that provides reasonable assurance that the following objectives are being achieved:
+Effectiveness and efficiency of operations.
+Reliability of financial reporting.
+Compliance with applicable laws and regulations. 
+Synonymous with management control, helps government program managers achieve desired results through effective stewardship of public resource.""" ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Internal Control" .
+
+DoDI-4165.14:International_Organization_for_Standardization a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "International Organization for Standardization" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[International Organization for Standardization]" ;
+    skos:definition "An independent, non-governmental international organization with a membership of 167 national standards bodies that brings together experts to share knowledge and develop voluntary, consensus-based, market relevant international standards that support innovation and provide solutions to global challenges. " ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "International Organization for Standardization" .
+
+DoDI-4165.14:Land a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Land" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Land]" ;
+    skos:definition "A portion of the Earth’s surface distinguishable by boundaries. Land must be accountable by parcel." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Land" .
+
+DoDI-4165.14:Land_Parcel a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Land Parcel" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Land Parcel]" ;
+    skos:definition "An RPA identified as a specific area of land having a unique acquisition document and a legal description of its boundaries and whose perimeter is delineated by a cadastral survey, as recorded in the land records of the government entity having appropriate jurisdiction." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Land Parcel" .
+
+DoDI-4165.14:Linear_Structure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Linear Structure" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Linear Structure]" ;
+    skos:definition "A facility whose function requires that it traverse land (e.g., runway, road, rail line, pipeline, fence, pavement, electrical distribution line) or is otherwise managed or reported by a linear UM at the CATCODE level." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Linear Structure" .
+
+DoDI-4165.14:Predominant_Current_Use a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Predominant Current Use" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Predominant Current Use]" ;
+    skos:definition "The primary use of an RPA based on the largest quantity of usage for an activity or function as described by the appropriate FAC or CATCODE." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Predominant Current Use" .
+
+DoDI-4165.14:Real_Property a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Real Property" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property]" ;
+    skos:definition "Land and improvements to land (e.g., buildings, structures, and linear structures (see facility))." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Real Property" .
+
+DoDI-4165.14:Real_Property_Accountable_Officer a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Real Property Accountable Officer" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Accountable Officer]" ;
+    skos:altLabel "RPAO" ;
+    skos:definition "An individual (government employee) who, based on their training, knowledge, and experience in real property management, accountability, and control procedures, is appointed by proper authority to be responsible for the establishment of records and maintenance of physical accountability for the real property charged to the accountable area or installation." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Real Property Accountable Officer" .
+
+DoDI-4165.14:Real_Property_Categorization_System a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Real Property Categorization System" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Categorization System]" ;
+    skos:altLabel "RPCS" ;
+    skos:definition "A hierarchical scheme of real property types and functions that serves as the framework for identifying, categorizing, and analyzing the DoD’s inventory of land and facilities around the world. An updated table of FAC and CATCODES is published at least annually in accordance with DoDI 4165.03. " ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Real Property Categorization System" .
+
+DoDI-4165.14:Real_Property_Information_Model a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Real Property Information Model" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Information Model]" ;
+    skos:altLabel "RPIM" ;
+    skos:definition "The DoD information model that details enterprise data elements and associated information such as definitions, business rules, pick lists, and metadata to provide a standard set of data across DoD for RPAs. " ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Real Property Information Model" .
+
+DoDI-4165.14:Real_Property_Installed_Equipment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Real Property Installed Equipment" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Installed Equipment]" ;
+    skos:altLabel "RPIE" ;
+    skos:definition "An item of equipment that is affixed and built into a facility as an integral part of that facility. To qualify as RPIE, the equipment must be necessary to make the facility complete, and if removed, would destroy, or severely reduce the designed usefulness and operation of the facility. RPIE costs are included as a funded initial construction or renovation cost. RPIE may be accounted for as a real property equipment asset record, but not as a separate facility record in the RPI. RPIE includes such items as control systems, heating, cooling, electrical, and emergency lighting." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Real Property Installed Equipment" .
+
+DoDI-4165.14:Real_Property_Inventory a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Real Property Inventory" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Inventory]" ;
+    skos:altLabel "RPI" ;
+    skos:definition "A detailed record (listing, system) of real property lands, buildings, structures, and linear structures to which DoD holds a legal interest on behalf of the United States." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Real Property Inventory" .
+
+DoDI-4165.14:Real_Property_Site_Unique_Identifier a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Real Property Site Unique Identifier" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Site Unique Identifier]" ;
+    skos:altLabel "RPSUID" ;
+    skos:definition "A unique non-intelligent code used to permanently identify real property sites. A real property site is a specific geographic location that has individual land parcels or facilities assigned to it." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Real Property Site Unique Identifier" .
+
+DoDI-4165.14:Real_Property_Unique_Identifier a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Real Property Unique Identifier" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Unique Identifier]" ;
+    skos:altLabel "RPUID" ;
+    skos:definition "A unique non-intelligent code used to permanently identify an RPA." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Real Property Unique Identifier" .
+
+DoDI-4165.14:Site a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Site" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=19" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Site]" ;
+    skos:definition "Physical (geographic) location that contains RPAs in which a MILDEP or WHS, on behalf of the United States, has a legal interest and maintains physical, legal, and financial accountability. Each site is assigned to a single installation. A site may exist in one of three forms: Land only, where there are no facilities present and where the land consists of either a single land parcel or two or more contiguous land parcels. Facility or facilities only, where the underlying land is neither owned nor controlled by the government. A stand-alone facility can be a site. Land, and all the facilities thereon, where the land consists of either a single land parcel or two or more contiguous land parcels. " ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Site" .
+
+DoDI-4165.14:Structure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Structure" ;
+    dcterms:bibliographicCitation "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=19" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml#term[Structure]" ;
+    skos:definition "A facility, other than a building or linear structure, that is constructed on or in the land." ;
+    skos:inScheme DoDI-4165.14: ;
+    skos:prefLabel "Structure" .
+
+DoDI-4165.14: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "DoDI 4165.14" ;
+    dcterms:created "2024-07-16T04:25:38.657576+00:00"^^xsd:dateTime ;
+    dcterms:description "DoD Instruction 4165.14, Real Property Inventory and Reporting various acronyms and terms commonly used in this regulation to describe policy, responsibility assignments, and real property reporting procedures within the DoD. These terms are defined in the glossary section of the instruction." ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "DoDI 4165.14" ;
+    pav:ImportedFrom "glossaries/CivilWorks/DoDI-4165-14.yaml" ;
+    pav:createdOn "2024-07-16T04:25:38.657576+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "DoDI 4165.14" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/DoDI-4165.14#" ;
+    skos:hasTopConcept DoDI-4165.14:Accountable_Property_System_of_Record,
+        DoDI-4165.14:Building,
+        DoDI-4165.14:Category_Code,
+        DoDI-4165.14:Civil_Works,
+        DoDI-4165.14:Data_Analytics_and_Integration_Support,
+        DoDI-4165.14:Disposal,
+        DoDI-4165.14:Enterprise,
+        DoDI-4165.14:Facilities_Sustainment_Model,
+        DoDI-4165.14:Facility,
+        DoDI-4165.14:Facility_Analysis_Category,
+        DoDI-4165.14:Forecast,
+        DoDI-4165.14:Future_Years_Defense_Program,
+        DoDI-4165.14:Geospatial_Feature,
+        DoDI-4165.14:Historic_Status,
+        DoDI-4165.14:Host_Installation,
+        DoDI-4165.14:Installation,
+        DoDI-4165.14:Interest,
+        DoDI-4165.14:Internal_Control,
+        DoDI-4165.14:International_Organization_for_Standardization,
+        DoDI-4165.14:Land,
+        DoDI-4165.14:Land_Parcel,
+        DoDI-4165.14:Linear_Structure,
+        DoDI-4165.14:Predominant_Current_Use,
+        DoDI-4165.14:Real_Property,
+        DoDI-4165.14:Real_Property_Accountable_Officer,
+        DoDI-4165.14:Real_Property_Categorization_System,
+        DoDI-4165.14:Real_Property_Information_Model,
+        DoDI-4165.14:Real_Property_Installed_Equipment,
+        DoDI-4165.14:Real_Property_Inventory,
+        DoDI-4165.14:Real_Property_Site_Unique_Identifier,
+        DoDI-4165.14:Real_Property_Unique_Identifier,
+        DoDI-4165.14:Site,
+        DoDI-4165.14:Structure .
+

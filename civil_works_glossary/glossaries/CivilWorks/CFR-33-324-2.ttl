@@ -1,0 +1,58 @@
+@prefix CFR-33-324-2: <https://usace-data.com/civil-works/glossary/CFR-33-324-2#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CFR-33-324-2:Dredged_Material a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Dredged Material" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-324/section-324.2" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-324-2.yaml#term[Dredged Material]" ;
+    skos:definition "The term dredged material means any material excavated or dredged from navigable waters of the United States." ;
+    skos:inScheme CFR-33-324-2: ;
+    skos:prefLabel "Dredged Material" .
+
+CFR-33-324-2:Ocean_Waters a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Ocean Waters" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-324/section-324.2" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-324-2.yaml#term[Ocean Waters]" ;
+    skos:definition "The term ocean waters means those waters of the open seas lying seaward of the base line from which the territorial sea is measured, as provided for in the Convention on the Territorial Sea and the Contiguous Zone (15 UST 1606: TIAS 5639)." ;
+    skos:inScheme CFR-33-324-2: ;
+    skos:prefLabel "Ocean Waters" .
+
+CFR-33-324-2:Transport a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Transport" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-324/section-324.2" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-324-2.yaml#term[Transport]" ;
+    skos:altLabel "Transportation" ;
+    skos:definition "The term transport or transportation refers to the conveyance and related handling of dredged material by a vessel or other vehicle." ;
+    skos:inScheme CFR-33-324-2: ;
+    skos:prefLabel "Transport" .
+
+CFR-33-324-2: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Code of Federal Regulations - Title 33, Chapter-II, Part 324, Section-324.2" ;
+    dcterms:created "2024-07-16T04:24:18.062863+00:00"^^xsd:dateTime ;
+    dcterms:description "None" ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Code of Federal Regulations - Title 33, Chapter-II, Part 324, Section-324.2" ;
+    pav:ImportedFrom "glossaries/CivilWorks/CFR-33-324-2.yaml" ;
+    pav:createdOn "2024-07-16T04:24:18.062863+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "33 CFR 324.2 Definitions" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/CFR-33-324-2#" ;
+    skos:hasTopConcept CFR-33-324-2:Dredged_Material,
+        CFR-33-324-2:Ocean_Waters,
+        CFR-33-324-2:Transport .
+

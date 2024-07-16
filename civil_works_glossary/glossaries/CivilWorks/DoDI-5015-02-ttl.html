@@ -1,0 +1,1828 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Ontospy > https://usace-data.com/civil-works/glossary/DoDI-5015.02#</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <style type="text/css" media="screen">
+
+
+  body {
+	  margin-left: 6em;
+	  margin-right: 12em;
+	  text-align: justify;
+    padding: 2em 1em 2em 70px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  :link { color: #00C; background: transparent }
+  :visited { color: #00C; background: transparent }
+  a:active { color: #C00; background: transparent }
+
+  a:link img, a:visited img { border-style: none } /* no border on img links */
+
+  a:hover {color: white; background: #00C; }
+  a.backlink:hover {color: white; background: grey; }
+  a.greylink:hover {color: white; background: grey; }
+
+  .margintop {
+  	 margin-top: 40px;
+  }
+
+
+  dt, dd { margin-top: 10px; margin-bottom: 0 } /* opera 3.50 */
+  dt { font-weight: bold }
+
+
+  h1, h2, h3, h4, h5, h6 { text-align: left }
+  /* background should be transparent, but WebTV has a bug */
+  h1, h2, h3, h4, h5 { color: #005A9C; background: white }
+  h1.title { font: 200% sans-serif }
+  h1 { font: 170% sans-serif }
+  h2 { font: 140% sans-serif }
+  h3 { font: 120% sans-serif }
+  h4 { font: bold 100% sans-serif }
+  h5 { font: italic 100% sans-serif }
+  h6 { font: small-caps 100% sans-serif }
+
+  .hide { display: none }
+
+
+  pre { margin-left: 2em }
+
+  pre, code { font-family: monospace } /* navigator 4 requires this */
+
+
+  .implementation {
+  	background: aliceblue;
+	padding: 10px;
+	margin-top: 5px;
+  }
+
+  fieldset {
+	  margin-top: 20px;
+	  padding: 13px;
+      text-align: left;
+  }
+
+  legend {
+	  text-transform: uppercase;
+  }
+
+  .entity-div {
+	  margin: 55px 10px 30px 10px;
+  }
+
+  .entity-section {
+	  margin-bottom: 0px;
+  }
+
+
+  a.backlink {
+	  font-size: 80%;
+	  color: grey;
+  }
+
+  a.greylink {
+	  color: grey;
+  }
+
+
+   .implementation_title {
+
+       font-weight: bold;
+       font-size: 100%;
+   }
+
+.section-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+        .tree-container {
+            width: 3000em;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+		.tree {margin: 10px 0px 30px -20px; padding: 0; display: inline-block;}
+
+		.tree ul {
+			padding-top: 20px; position: relative;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		.tree li {
+			float: left; text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*We will use ::before and ::after to draw the connectors*/
+
+		.tree li::before, .tree li::after{
+			content: '';
+			position: absolute; top: 0; right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%; height: 20px;
+		}
+		.tree li::after{
+			right: auto; left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		/*We need to remove left-right connectors from elements without
+		any siblings*/
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		/*Remove space from the top of single children*/
+		.tree li:only-child{ padding-top: 0;}
+
+		/*Remove left connector from first child and
+		right connector from last child*/
+		.tree li:first-child::before, .tree li:last-child::after{
+			border: 0 none;
+		}
+		/*Adding back the vertical connector to the last nodes*/
+		.tree li:last-child::before{
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+			-webkit-border-radius: 0 5px 0 0;
+			-moz-border-radius: 0 5px 0 0;
+		}
+		.tree li:first-child::after{
+			border-radius: 5px 0 0 0;
+			-webkit-border-radius: 5px 0 0 0;
+			-moz-border-radius: 5px 0 0 0;
+		}
+
+		/*Time to add downward connectors from parents*/
+		.tree ul ul::before{
+			content: '';
+			position: absolute; top: 0; left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0; height: 20px;
+		}
+
+		.tree li a{
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #666;
+			font-family: arial, verdana, tahoma;
+			font-size: 11px;
+			display: inline-block;
+
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*Time for some hover effects*/
+		/*We will apply the hover effect the the lineage of the element also*/
+		.tree li a:hover, .tree li a:hover+ul li a {
+			background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+		}
+		/*Connector styles on hover*/
+		.tree li a:hover+ul li::after,
+		.tree li a:hover+ul li::before,
+		.tree li a:hover+ul::before,
+		.tree li a:hover+ul ul::before{
+			border-color:  #94a0b4;
+		}
+
+		/*Thats all. I hope you enjoyed it.
+		Thanks :)*/
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+	
+	
+		
+			<h1 class="title"><a href="" target="_blank">https://usace-data.com/civil-works/glossary/DoDI-5015.02#</a></h1>
+			<h3><p>DoD Instruction 5015.02, Records Management Program, defines various acronyms and terms commonly used in this instruction to describe policy, responsibility assignments, and records management  procedures within the DoD. These terms are defined in the glossary section of the instruction.</p></h3>
+		
+
+	
+		
+		
+
+
+	<p><small>Ontology documentation automatically generated by <a class="greylink" href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> on Tue, 16 Jul 2024 04:26:04</small></p>
+
+
+
+	
+
+
+	<hr class="margintop">
+
+	<h1><a name="toc">&nbsp;</a>Table of Content</h1>
+
+	<ul>
+		<li><a href="#ontologies">Ontologies</a></li>
+		<li><a href="#a-z">A-Z of Terms</a></li>
+		
+		
+		
+		
+		<li><a href="#skosconcepts">SKOS Concepts</a></li>
+		
+	</ul>
+
+
+
+	
+
+	
+
+	<hr class="margintop">
+
+	<h1><a name="ontologies"></a>Ontologies</h1>
+
+		
+
+
+			<fieldset> <legend><h3><a href="https://usace-data.com/civil-works/glossary/DoDI-5015.02#" target="_blank">https://usace-data.com/civil-works/glossary/DoDI-5015.02#</a></h3></legend>
+
+			<h4 style="margin-top: -20px;"><p>DoD Instruction 5015.02, Records Management Program, defines various acronyms and terms commonly used in this instruction to describe policy, responsibility assignments, and records management  procedures within the DoD. These terms are defined in the glossary section of the instruction.</p></h4>
+
+			
+			
+				
+					<dt>dcterms:created</dt>
+				  
+			
+			<dd><p>2024-07-16T04:25:57.862986+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:description</dt>
+				  
+			
+			<dd><p>DoD Instruction 5015.02, Records Management Program, defines various acronyms and terms commonly used in this instruction to describe policy, responsibility assignments, and records management  procedures within the DoD. These terms are defined in the glossary section of the instruction.</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:publisher</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:rights</dt>
+				  
+			
+			<dd><p>MIT</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:title</dt>
+				  
+			
+			<dd><p>DoDI-5015.02 Instruction Records Management Program</p></dd>
+			
+			
+				</dl>
+					<dt>pav:ImportedFrom</dt>
+				  
+			
+			<dd><p>glossaries/CivilWorks/DoDI-5015-02.yaml</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdOn</dt>
+				  
+			
+			<dd><p>2024-07-16T04:25:57.862986+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdWith</dt>
+				  
+			
+			<dd><p>gloss</p></dd>
+			
+			
+				</dl>
+					<dt>pav:wasInfluencedBy</dt>
+				  
+			
+			<dd><p>DoD Instruction Records Management Program</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.knowledgesmarts.com/ontologies/wov#Glossary</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2002/07/owl#Ontology</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2004/02/skos/core#ConceptScheme</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#Vocabulary</p></dd>
+			
+			
+				</dl>
+					<dt>rdfs:label</dt>
+				  
+			
+			<dd><p>DoDI-5015.02 Instruction Records Management Program</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#administrative_records</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#campaign</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#contingency_operation</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#electronic_messages</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#electronic_messaging_account._Any_account_that_sends_or_receives_electronic_messages</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#essential_records_%28formerly_vital_records%29</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#essential_records_program</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#intellectual_capital</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#interoperable</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#metadata</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#non-record_materials</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#operation</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#operational_records</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#personal_files_%28also_called_personal_papers%29</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#recorded_information</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#recordkeeping_system</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#records</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#unstructured_electronic_records</p></dd>
+			
+			
+				</dl>
+					<dt>vann:preferredNamespaceUri</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-5015.02#</p></dd>
+			
+
+			</fieldset>
+
+		
+
+	
+
+
+
+	
+
+	<hr class="margintop">
+	<h1><a  name="a-z">&nbsp;</a>A-Z of terms</h1>
+
+	<div id="azterms">
+
+	This is a complete alphabetical A-Z index of all terms, by main logical type.
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		<fieldset> <legend>SKOS Concepts (18)</legend>
+			&nbsp;<a href="#DoDI-5015.02:administrative_records">DoDI-5015.02:administrative_records</a>
+			|  <a href="#DoDI-5015.02:campaign">DoDI-5015.02:campaign</a>
+			|  <a href="#DoDI-5015.02:contingency_operation">DoDI-5015.02:contingency_operation</a>
+			|  <a href="#DoDI-5015.02:electronic_messages">DoDI-5015.02:electronic_messages</a>
+			|  <a href="#DoDI-5015.02:electronic_messaging_account._Any_account_that_sends_or_receives_electronic_messages">DoDI-5015.02:electronic_messaging_account._Any_account_that_sends_or_receives_electronic_messages</a>
+			|  <a href="#DoDI-5015.02:essential_records_%28formerly_vital_records%29">DoDI-5015.02:essential_records_%28formerly_vital_records%29</a>
+			|  <a href="#DoDI-5015.02:essential_records_program">DoDI-5015.02:essential_records_program</a>
+			|  <a href="#DoDI-5015.02:intellectual_capital">DoDI-5015.02:intellectual_capital</a>
+			|  <a href="#DoDI-5015.02:interoperable">DoDI-5015.02:interoperable</a>
+			|  <a href="#DoDI-5015.02:metadata">DoDI-5015.02:metadata</a>
+			|  <a href="#DoDI-5015.02:non-record_materials">DoDI-5015.02:non-record_materials</a>
+			|  <a href="#DoDI-5015.02:operation">DoDI-5015.02:operation</a>
+			|  <a href="#DoDI-5015.02:operational_records">DoDI-5015.02:operational_records</a>
+			|  <a href="#DoDI-5015.02:personal_files_%28also_called_personal_papers%29">DoDI-5015.02:personal_files_%28also_called_personal_papers%29</a>
+			|  <a href="#DoDI-5015.02:recorded_information">DoDI-5015.02:recorded_information</a>
+			|  <a href="#DoDI-5015.02:recordkeeping_system">DoDI-5015.02:recordkeeping_system</a>
+			|  <a href="#DoDI-5015.02:records">DoDI-5015.02:records</a>
+			|  <a href="#DoDI-5015.02:unstructured_electronic_records">DoDI-5015.02:unstructured_electronic_records</a>
+			  
+		</fieldset>
+
+	
+
+	
+
+	</div>
+
+
+
+	
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+	
+
+
+		<hr class="margintop">
+		<h1 class="margintop"><a  name="skosconcepts">&nbsp;</a>SKOS Concepts</h1>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:administrative_records" href="#DoDI-5015.02:administrative_records">DoDI-5015.02:administrative_records</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:administrative_records</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:administrative_records is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Those records created by all DoD organizations, regardless of organizational level, in performing common functions that support the organization’s mission activities, but do not directly document the performance of mission functions. Administrative records relate to activities such as budget and finance, human resources, medical, equipment and supplies, facilities, public and congressional relations, contracting, and similar administrative housekeeping or facilitative functions common to most agencies</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:administrative_records a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;administrative records&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[administrative records]&#34; ;<br>
+    skos:definition &#34;Those records created by all DoD organizations, regardless of organizational level, in performing common functions that support the organization’s mission activities, but do not directly document the performance of mission functions. Administrative records relate to activities such as budget and finance, human resources, medical, equipment and supplies, facilities, public and congressional relations, contracting, and similar administrative housekeeping or facilitative functions common to most agencies&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;administrative records&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:campaign" href="#DoDI-5015.02:campaign">DoDI-5015.02:campaign</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:campaign</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:campaign is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A series of related major operations aimed at achieving strategic and operational objectives within a given time and space.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:campaign a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;campaign&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[campaign]&#34; ;<br>
+    skos:definition &#34;A series of related major operations aimed at achieving strategic and operational objectives within a given time and space.&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;campaign&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:contingency_operation" href="#DoDI-5015.02:contingency_operation">DoDI-5015.02:contingency_operation</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:contingency_operation</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:contingency_operation is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A military operation that is either designated by the Secretary of Defense asa contingency operation or becomes a contingency operation as a matter of law pursuant to chapter1 of Title 10, United States Code (Reference (x)). contractor Any person who enters into a contract with the USG for the production of material or forthe performance of services for national defense. DoDpersonnel. Military and civilian employees of the DoD. EIS An information system that contains and provides access to electronic federal records, electronicmessages, and other information.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:contingency_operation a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;contingency operation&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[contingency operation]&#34; ;<br>
+    skos:definition &#34;A military operation that is either designated by the Secretary of Defense asa contingency operation or becomes a contingency operation as a matter of law pursuant to chapter1 of Title 10, United States Code (Reference (x)). contractor Any person who enters into a contract with the USG for the production of material or forthe performance of services for national defense. DoDpersonnel. Military and civilian employees of the DoD. EIS An information system that contains and provides access to electronic federal records, electronicmessages, and other information.&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;contingency operation&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:electronic_messages" href="#DoDI-5015.02:electronic_messages">DoDI-5015.02:electronic_messages</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:electronic_messages</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:electronic_messages is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>E-mail and other types of electronic messages that people use to communicate This includes, but is not limited to, messages created by chat, text, and e-mail systems</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:electronic_messages a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;electronic messages&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[electronic messages]&#34; ;<br>
+    skos:definition &#34;E-mail and other types of electronic messages that people use to communicate This includes, but is not limited to, messages created by chat, text, and e-mail systems&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;electronic messages&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:electronic_messaging_account._Any_account_that_sends_or_receives_electronic_messages" href="#DoDI-5015.02:electronic_messaging_account._Any_account_that_sends_or_receives_electronic_messages">DoDI-5015.02:electronic_messaging_account._Any_account_that_sends_or_receives_electronic_messages</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:electronic_messaging_account._Any_account_that_sends_or_receives_electronic_messages</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:electronic_messaging_account._Any_account_that_sends_or_receives_electronic_messages is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>electronicrecords. Any information that is recorded in a form that only a computer can process andthat satisfies the definition of a federal record pursuant to chapter 31 of Reference (d), also knownas the “Federal Records Act.” The term includes both record content and associated metadatathat the agency determines is required to meet agency business needs.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:electronic_messaging_account._Any_account_that_sends_or_receives_electronic_messages a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;electronic messaging account. Any account that sends or receives electronic messages&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[electronic messaging account. Any account that sends or receives electronic messages]&#34; ;<br>
+    skos:definition &#34;electronicrecords. Any information that is recorded in a form that only a computer can process andthat satisfies the definition of a federal record pursuant to chapter 31 of Reference (d), also knownas the “Federal Records Act.” The term includes both record content and associated metadatathat the agency determines is required to meet agency business needs.&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;electronic messaging account. Any account that sends or receives electronic messages&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:essential_records_%28formerly_vital_records%29" href="#DoDI-5015.02:essential_records_%28formerly_vital_records%29">DoDI-5015.02:essential_records_%28formerly_vital_records%29</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:essential_records_%28formerly_vital_records%29</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:essential_records_%28formerly_vital_records%29 is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Records an agency needs to meet operational responsibilitiesduring national security emergencies or other emergency conditions (emergency operatingrecords) or to protect the legal and financial rights of the USG and those affected by USGactivities.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:essential_records_%28formerly_vital_records%29 a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;essential records (formerly vital records)&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[essential records (formerly vital records)]&#34; ;<br>
+    skos:definition &#34;Records an agency needs to meet operational responsibilitiesduring national security emergencies or other emergency conditions (emergency operatingrecords) or to protect the legal and financial rights of the USG and those affected by USGactivities.&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;essential records (formerly vital records)&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:essential_records_program" href="#DoDI-5015.02:essential_records_program">DoDI-5015.02:essential_records_program</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:essential_records_program</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:essential_records_program is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The policies, plans, and procedures the agency develops and implements - and the resources needed - to identify, use, and protect essential records. This is a programelement of an agency&#39;s emergency management function. ITservice. Engagement of the time and effort of a service provider, through the use of IT, whoseprimary purpose is to perform an identifiable task, or tasks, rather than provide an end itemof supply.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:essential_records_program a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;essential records program&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[essential records program]&#34; ;<br>
+    skos:definition &#34;The policies, plans, and procedures the agency develops and implements - and the resources needed - to identify, use, and protect essential records. This is a programelement of an agency&#39;s emergency management function. ITservice. Engagement of the time and effort of a service provider, through the use of IT, whoseprimary purpose is to perform an identifiable task, or tasks, rather than provide an end itemof supply.&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;essential records program&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:intellectual_capital" href="#DoDI-5015.02:intellectual_capital">DoDI-5015.02:intellectual_capital</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:intellectual_capital</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:intellectual_capital is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Intellectual capital is the value associated with the knowledge, applied experience organizational technology, synergistic interface (corporate-private-public collaboration, and professional skills that provide an organization with relevance within the DoD</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:intellectual_capital a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;intellectual capital&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[intellectual capital]&#34; ;<br>
+    skos:definition &#34;Intellectual capital is the value associated with the knowledge, applied experience organizational technology, synergistic interface (corporate-private-public collaboration, and professional skills that provide an organization with relevance within the DoD&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;intellectual capital&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:interoperable" href="#DoDI-5015.02:interoperable">DoDI-5015.02:interoperable</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:interoperable</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:interoperable is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The condition achieved among communications-electronics systems or items of communicationselectronics equipment when information or services can be exchanged directly andsatisfactorily between them and their users. DoDI5015.02, February 24, 2015 Change1, 08/17/2017 13 GLOSSARY</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:interoperable a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;interoperable&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[interoperable]&#34; ;<br>
+    skos:definition &#34;The condition achieved among communications-electronics systems or items of communicationselectronics equipment when information or services can be exchanged directly andsatisfactorily between them and their users. DoDI5015.02, February 24, 2015 Change1, 08/17/2017 13 GLOSSARY&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;interoperable&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:metadata" href="#DoDI-5015.02:metadata">DoDI-5015.02:metadata</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:metadata</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:metadata is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Information describing the characteristics of data; data or information about data; or descriptiveinformation about an entity&#39;s data, data activities, systems, and holdings. For example discovery metadata is a type of metadata that allows data assets to be found using enterprisesearch capabilities.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:metadata a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;metadata&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[metadata]&#34; ;<br>
+    skos:definition &#34;Information describing the characteristics of data; data or information about data; or descriptiveinformation about an entity&#39;s data, data activities, systems, and holdings. For example discovery metadata is a type of metadata that allows data assets to be found using enterprisesearch capabilities.&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;metadata&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:non-record_materials" href="#DoDI-5015.02:non-record_materials">DoDI-5015.02:non-record_materials</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:non-record_materials</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:non-record_materials is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Federally owned informational materials that do not meet the statutory definitionof records in accordance with section 3301 of Reference (d), or that have been excludedfrom coverage by the definition. Excluded materials are extra copies of documents keptonly for reference, stocks of publications and processed documents, and library or museum materialsintended solely for reference or exhibit.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:non-record_materials a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;non-record materials&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[non-record materials]&#34; ;<br>
+    skos:definition &#34;Federally owned informational materials that do not meet the statutory definitionof records in accordance with section 3301 of Reference (d), or that have been excludedfrom coverage by the definition. Excluded materials are extra copies of documents keptonly for reference, stocks of publications and processed documents, and library or museum materialsintended solely for reference or exhibit.&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;non-record materials&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:operation" href="#DoDI-5015.02:operation">DoDI-5015.02:operation</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:operation</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:operation is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A military action or the carrying out of a strategic, operational, tactical, service, training or administrative military mission.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:operation a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;operation&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[operation]&#34; ;<br>
+    skos:definition &#34;A military action or the carrying out of a strategic, operational, tactical, service, training or administrative military mission.&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;operation&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:operational_records" href="#DoDI-5015.02:operational_records">DoDI-5015.02:operational_records</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:operational_records</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:operational_records is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Records and information in any medium (paper or electronic) created or receivedduring the planning or execution of campaigns and contingency operations within a CCMDs AO. Records generated as result of operational level actions such as fragmentary orders situation reports, military intelligence summaries, etc., are considered operational</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:operational_records a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;operational records&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[operational records]&#34; ;<br>
+    skos:definition &#34;Records and information in any medium (paper or electronic) created or receivedduring the planning or execution of campaigns and contingency operations within a CCMDs AO. Records generated as result of operational level actions such as fragmentary orders situation reports, military intelligence summaries, etc., are considered operational&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;operational records&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:personal_files_%28also_called_personal_papers%29" href="#DoDI-5015.02:personal_files_%28also_called_personal_papers%29">DoDI-5015.02:personal_files_%28also_called_personal_papers%29</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:personal_files_%28also_called_personal_papers%29</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:personal_files_%28also_called_personal_papers%29 is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Documentary materials belonging to an individual thatare not used to conduct agency business. Personal files are excluded from the definition of federalrecords and are not owned by the USG. record All recorded information, regardless of form or characteristics, made or received by a federalagency under federal law or in connection with the transaction of public business and preservedor appropriate for preservation by that agency or its legitimate successor as evidence ofthe organization, functions, policies, decisions, procedures, operations, or other activities of theUSG or because of the informational value of the data in them (in accordance with section 3301 of Reference (c)). A DoD record also includes operational logistics, analysis, support, and othermaterials created or received by the DoD Components in training, contingency, and wartimeoperations as well as in all routine and peacetime business.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:personal_files_%28also_called_personal_papers%29 a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;personal files (also called personal papers)&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[personal files (also called personal papers)]&#34; ;<br>
+    skos:definition &#34;Documentary materials belonging to an individual thatare not used to conduct agency business. Personal files are excluded from the definition of federalrecords and are not owned by the USG. record All recorded information, regardless of form or characteristics, made or received by a federalagency under federal law or in connection with the transaction of public business and preservedor appropriate for preservation by that agency or its legitimate successor as evidence ofthe organization, functions, policies, decisions, procedures, operations, or other activities of theUSG or because of the informational value of the data in them (in accordance with section 3301 of Reference (c)). A DoD record also includes operational logistics, analysis, support, and othermaterials created or received by the DoD Components in training, contingency, and wartimeoperations as well as in all routine and peacetime business.&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;personal files (also called personal papers)&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:recorded_information" href="#DoDI-5015.02:recorded_information">DoDI-5015.02:recorded_information</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:recorded_information</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:recorded_information is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>All traditional forms of records, regardless of physical form or characteristics including information created, manipulated, communicated, or stored in digital or electronicform.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:recorded_information a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;recorded information&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[recorded information]&#34; ;<br>
+    skos:definition &#34;All traditional forms of records, regardless of physical form or characteristics including information created, manipulated, communicated, or stored in digital or electronicform.&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;recorded information&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:recordkeeping_system" href="#DoDI-5015.02:recordkeeping_system">DoDI-5015.02:recordkeeping_system</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:recordkeeping_system</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:recordkeeping_system is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Manual or electronic system that captures, organizes, and categorizes recordsto facilitate their preservation, retrieval, use, and disposition. recordsmanagement. The planning, controlling, directing, organizing, training, promoting, and othermanagerial activities involved with respect to records creation, records maintenance and use and records disposition in order to achieve adequate and proper documentation of the policiesand transactions of the Federal Government and effective and economical management ofagency operations.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:recordkeeping_system a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;recordkeeping system&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[recordkeeping system]&#34; ;<br>
+    skos:definition &#34;Manual or electronic system that captures, organizes, and categorizes recordsto facilitate their preservation, retrieval, use, and disposition. recordsmanagement. The planning, controlling, directing, organizing, training, promoting, and othermanagerial activities involved with respect to records creation, records maintenance and use and records disposition in order to achieve adequate and proper documentation of the policiesand transactions of the Federal Government and effective and economical management ofagency operations.&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;recordkeeping system&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:records" href="#DoDI-5015.02:records">DoDI-5015.02:records</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:records</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:records is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Information dealing with internal administrative matters or any other record whose creationis solely required through a Service regulation is not considered operational records for thispurpose. See administrative records.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:records a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;records&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[records]&#34; ;<br>
+    skos:definition &#34;Information dealing with internal administrative matters or any other record whose creationis solely required through a Service regulation is not considered operational records for thispurpose. See administrative records.&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;records&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-5015.02:unstructured_electronic_records" href="#DoDI-5015.02:unstructured_electronic_records">DoDI-5015.02:unstructured_electronic_records</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-5015.02:unstructured_electronic_records</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-5015.02:unstructured_electronic_records is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Records created using office automation applications, such as email and other messaging applications, word processing, or presentation software</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-5015.02: &lt;https://usace-data.com/civil-works/glossary/DoDI-5015.02#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-5015.02:unstructured_electronic_records a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;unstructured electronic records&#34; ;<br>
+    dcterms:bibliographicCitation &#34;DoD Instruction Records Management Program&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-5015-02.yaml#term[unstructured electronic records]&#34; ;<br>
+    skos:definition &#34;Records created using office automation applications, such as email and other messaging applications, word processing, or presentation software&#34; ;<br>
+    skos:inScheme DoDI-5015.02: ;<br>
+    skos:prefLabel &#34;unstructured electronic records&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	<hr>
+	<small>Ontology documentation automatically generated by <a class="greylink"  href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> v2.1.1 on Tue, 16 Jul 2024 04:26:04</small>
+
+
+</body>
+</html>

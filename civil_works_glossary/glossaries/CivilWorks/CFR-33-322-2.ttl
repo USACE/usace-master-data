@@ -1,0 +1,99 @@
+@prefix CFR-33-322-2: <https://usace-data.com/civil-works/glossary/CFR-33-322-2#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CFR-33-322-2:Artificial_Reef a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Artificial Reef" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-322/section-322.2" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-322-2.yaml#term[Artificial Reef]" ;
+    skos:definition "The term artificial reef means a structure which is constructed or placed in the navigable waters of the United States or in the waters overlying the outer continental shelf for the purpose of enhancing fishery resources and commercial and recreational fishing opportunities. The term does not include activities or structures such as wing deflectors, bank stabilization, grade stabilization structures, or low flow key ways, all of which may be useful to enhance fisheries resources." ;
+    skos:inScheme CFR-33-322-2: ;
+    skos:prefLabel "Artificial Reef" .
+
+CFR-33-322-2:General_Permit a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "General Permit" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-322/section-322.2" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-322-2.yaml#term[General Permit]" ;
+    skos:definition """The term general permit means a DA authorization that is issued on a nationwide or regional basis for a category or categories of activities when: 
+(1) Those activities are substantially similar in nature and cause only minimal individual and cumulative environmental impacts; or 
+(2) The general permit would result in avoiding unnecessary duplication of the regulatory control exercised by another Federal, state, or local agency provided it has been determined that the environmental consequences of the action are individually and cumulatively minimal. (See 33 CFR 325.2(e) and 33 CFR part 330.)""" ;
+    skos:inScheme CFR-33-322-2: ;
+    skos:prefLabel "General Permit" .
+
+CFR-33-322-2:Individual_Permit a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Individual Permit" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-322/section-322.2" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-322-2.yaml#term[Individual Permit]" ;
+    skos:definition "The term individual permit means a DA authorization that is issued following a case-by-case evaluation of a specific structure or work in accordance with the procedures of this regulation and 33 CFR part 325, and a determination that the proposed structure or work is in the public interest pursuant to 33 CFR part 320." ;
+    skos:inScheme CFR-33-322-2: ;
+    skos:prefLabel "Individual Permit" .
+
+CFR-33-322-2:Letter_of_Permission a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Letter of Permission" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-322/section-322.2" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-322-2.yaml#term[Letter of Permission]" ;
+    skos:definition "The term letter of permission means a type of individual permit issued in accordance with the abbreviated procedures of 33 CFR 325.2(e)." ;
+    skos:inScheme CFR-33-322-2: ;
+    skos:prefLabel "Letter of Permission" .
+
+CFR-33-322-2:Navigable_Waters a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Navigable Waters" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-322/section-322.2" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-322-2.yaml#term[Navigable Waters]" ;
+    skos:definition "The term navigable waters of the United States and all other terms relating to the geographic scope of jurisdiction are defined at 33 CFR part 329. Generally, they are those waters of the United States that are subject to the ebb and flow of the tide shoreward to the mean high water mark, and/or are presently used, or have been used in the past, or may be susceptible to use to transport interstate or foreign commerce." ;
+    skos:inScheme CFR-33-322-2: ;
+    skos:prefLabel "Navigable Waters" .
+
+CFR-33-322-2:Structure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Structure" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-322/section-322.2" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-322-2.yaml#term[Structure]" ;
+    skos:definition "The term structure shall include, without limitation, any pier, boat dock, boat ramp, wharf, dolphin, weir, boom, breakwater, bulkhead, revetment, riprap, jetty, artificial island, artificial reef, permanent mooring structure, power transmission line, permanently moored floating vessel, piling, aid to navigation, or any other obstacle or obstruction." ;
+    skos:inScheme CFR-33-322-2: ;
+    skos:prefLabel "Structure" .
+
+CFR-33-322-2:Work a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Work" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-322/section-322.2" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-322-2.yaml#term[Work]" ;
+    skos:definition "The term work shall include, without limitation, any dredging or disposal of dredged material, excavation, filling, or other modification of a navigable water of the United States." ;
+    skos:inScheme CFR-33-322-2: ;
+    skos:prefLabel "Work" .
+
+CFR-33-322-2: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Code of Federal Regulations - Title 33, Chapter-II, Part 322, Section-322.2" ;
+    dcterms:created "2024-07-16T04:23:59.255820+00:00"^^xsd:dateTime ;
+    dcterms:description "33-CFR-322.2 Term definitions are applicable throughout part 322" ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Code of Federal Regulations - Title 33, Chapter-II, Part 322, Section-322.2" ;
+    pav:ImportedFrom "glossaries/CivilWorks/CFR-33-322-2.yaml" ;
+    pav:createdOn "2024-07-16T04:23:59.255820+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "33 CFR 322.2" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/CFR-33-322-2#" ;
+    skos:hasTopConcept CFR-33-322-2:Artificial_Reef,
+        CFR-33-322-2:General_Permit,
+        CFR-33-322-2:Individual_Permit,
+        CFR-33-322-2:Letter_of_Permission,
+        CFR-33-322-2:Navigable_Waters,
+        CFR-33-322-2:Structure,
+        CFR-33-322-2:Work .
+

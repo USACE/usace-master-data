@@ -1,0 +1,235 @@
+about:
+    namespace: https://usace-data.com/civil-works/glossary/ER-5-1-11#
+    prefix: ER-5-1-11
+    template: glossary
+    title: Engineering Report 5-1-11 USACE Business Process
+    description: USACE Business Process Engineering Report 5-1-11, defines various 
+        acronyms and terms commonly used in this report to describe policy and doctrine 
+        used to accomplish business processes across the U.S. Army Corps of Engineers (USACE).         
+        These terms are defined in the glossary section of the regulation.
+    source:
+        sourceID: ER-5-1-11
+        authoritativeSource: Engineering Report 5-1-11 USACE Business Process
+        glossaryReferences: true
+        url: https://www.publications.usace.army.mil/Portals/76/er_5-1-11.pdf
+        linkType: pdf
+        anchor: 20
+terms:
+
+- label: Automated Information Systems
+  altName: [ AIS ]
+  definition: A combination of computer hardware and software, telecommunications
+    information technology, personnel, and other resources that collect, record, process,
+    store, communicate, retrieve, and display information.
+  anchor: '20'
+- label: Community of Practice
+  altName: [ CoP ]
+  definition: A group of people who regularly interact to collectively learn, solve
+    problems, build skills and competencies, and develop best practices around a shared
+    concern, goal, mission, set of problems, or work practice. More information on
+    the various communities of practice in USACE is available from their respective
+    websites.
+  anchor: '20'
+- label: Corporate Board
+  altName: [ CB ]
+  definition: A group of District or Center leaders who make resource decisions based
+    upon what is best for the mission, while considering impacts to all stakeholders.
+  anchor: '20'
+- label: Deputy for Programs and Project Management
+  altName: [ DPM ]
+  definition: The civilian deputy to the District Commander. DPM as used in this regulation
+    includes Center positions such as Deputy for Programs and Technical Management
+    and Deputy for Programs and Project Management/Project Delivery Team. The DPM
+    is authorized to accept and/or reject work by PDBP Process 1000, titled work acceptance.
+  anchor: '20'
+- label: District Support Teams
+  altName: [ DST ]
+  definition: Cross-functional teams at MSC that facilitate resolution of issues and
+    champion district causes.
+  anchor: '20'
+- label: Empowerment
+  definition: Authority to exercise judgment and take action, with concomitant responsibility
+    for resultant positive or negative consequences.
+  anchor: '20'
+- label: Field Operating Activities
+  altName: [ FOAs ]
+  definition: Districts, Centers or Laboratories are referred to as FOAs in this ER.
+    Major Subordinate Commands (MSCs) are Division offices.
+  anchor: '20'
+- label: Functional Organization
+  definition: Organization structure in which staff are grouped by technical specialty.
+  anchor: '20'
+- label: Mega Projects
+  definition: Projects with specific attributes (cost, time, risk, national significance,
+    uniqueness and overlapping dependencies) named by HQUSACE Civil Works and Military
+    Programs Directors in a yearly ECB. Mega projects require enhanced management
+    controls.
+  anchor: '20'
+- label: Matrix Team
+  definition: Group of people working across organization boundaries for a common
+    purpose.
+  anchor: '20'
+- label: Operations
+  definition: 'a.) The ongoing execution of activities that produces the same product
+    or provides a continuous or repetitive service. The objective of ongoing operations
+    is to sustain something (business, facility).
+
+    b.) Within USACE, the organization that operates and maintains facilities and
+    services that provide river and harbor navigation, flood damage reduction, water
+    supply, hydroelectric power, recreation, environmental and fish and wildlife sustainment,
+    restoration and protection. Its Regulatory mission protects the Nation''s waterways
+    and wetlands; and it undertakes disaster relief and recovery work through its
+    Emergency Management/Readiness function.'
+  anchor: '21'
+- label: Operations Project Managers
+  altName: [ OPM ]
+  definition: Managers responsible for the overall O&M of one or more multi-purpose
+    water resource development sites, leading teams that execute the projects or recurring
+    work activities at these sites.
+  anchor: '21'
+- label: Process
+  definition: A series of actions, tasks, or procedures with a common objective to
+    achieve an end or result.
+  anchor: '21'
+- label: Program
+  definition: A collection of related projects, services, routine administrative and
+    recurring operational processes, or some mixture of these, which are managed in
+    a coordinated way to obtain benefits and control not available from managing them
+    individually.1 Programs may be categorized by funding source (type), stakeholder,
+    similarity of scope, or other common criteria for which resources are allocated
+    and collectively managed.
+  anchor: '21'
+- label: Program Management
+  definition: The centralized, coordinated management of programs within available
+    resources, in line with applicable laws, policies, and regulations, to achieve
+    strategic benefits and objectives.2 Under program management, programs, projects
+    and non-project activities are aggregated for oversight and direction by the organization's
+    senior leadership.
+  anchor: '21'
+- label: Program Manager
+  altName: [ PgM ]
+  definition: Assigned to manage unique stakeholder requirements for a set of related
+    projects, services, or activities. Program managers include Operations Project
+    Managers responsible for the overall O&M of one or more multi-purpose water resource
+    development sites, leading teams that execute the projects or recurring work activities
+    at these sites.
+  anchor: '21'
+- label: Program Management Plan
+  altName: [ PgMP ]
+  definition: A formal, approved, living document used to define program requirements
+    and expectations, including accountability and performance measurements, and guide
+    program execution and control. The PgMP is the 'umbrella' process for completion
+    of project planning phase. This process is performed after the work has been accepted
+    and the Project Manager assigned.
+  anchor: '21'
+- label: Project
+  definition: A temporary endeavor undertaken to create a unique product, service,
+    or result.3 Internal services are discrete projects when they are unique and non-recurring.
+  anchor: '22'
+- label: Project Delivery Team
+  altName: [ PDT ]
+  definition: The PDT is a cross-functional matrixed team that includes all the necessary
+    functional and support personnel with the requisite skills and expertise, from
+    the District, Divisions, Centers of Expertise and/or labs, in order to deliver
+    the project.
+  anchor: '22'
+- label: Project Management
+  definition: The application of knowledge, skills, tools, and techniques to project
+    activities in order to meet project requirements.
+  anchor: '22'
+- label: Project Manager
+  altName: [ PM ]
+  definition: Assigned to achieve the project objectives, the person who manages scope,
+    schedule, budget and quality while leading a project delivery team (PDT.) Project
+    managers may be assigned to any organizational or geographic element.
+  anchor: '22'
+- label: Project Delivery Business Process
+  altName: [ PDBP ]
+  definition: "A fundamental subset of the USACE business process used to deliver\
+    \ quality projects. It reflects the USACE corporate commitment to provide stakeholder\
+    \ service that is inclusive, seamless, flexible, effective, and efficient.\
+    \ It embodies communication, leadership, systematic and coordinated management,\
+    \ teamwork, partnering, effective balancing of competing demands, and primary\
+    \ accountability for the life cycle of a project."
+  anchor: '22'
+- label: Project Management Plan
+  altName: [ PMP ]
+  definition: A formal, approved, living document used to define requirements and
+    expected outcomes and guide project execution and control. The PMP is the 'umbrella'
+    process for completion of project planning phase; it is performed after the work
+    has been accepted and the Project Manager assigned. The primary uses of the PMP
+    are to facilitate communication among participants, assign responsibilities, define
+    assumptions, and document decisions to establish baseline plans for scope, cost,
+    schedule and quality objectives against which performance can be measured, and
+    to adjust these plans as actuals dictate. The PMP is developed by the project
+    delivery team, including the stakeholder. The approval of the PMP should be delegated
+    to the lowest appropriate supervisory level in order to maintain a minimal level
+    of management control.
+  anchor: '22'
+- label: Quality
+  definition: The degree to which a set of inherent characteristics fulfills requirements.
+  anchor: '22'
+- label: Quality Assurance
+  altName: [ QA ]
+  definition: That part of quality management focused on providing confidence that
+    quality requirements of a project, product, service, or process will be fulfilled.
+    QA includes those processes employed to ensure that QC activities are being accomplished
+    in line with planned activities and that those QC activities are effective in
+    producing a product that meets the desired end quality.
+  anchor: '22'
+- label: Quality Control
+  altName: [ QC ]
+  definition: That part of quality management focused on fulfilling quality requirements
+    of a project, product, service, or process. It includes those processes used to
+    ensure performance meets agreed upon stakeholder requirements that are consistent
+    with law, regulations, policies, sound technical criteria, schedules, and budget.
+  anchor: '23'
+- label: Resource Provider
+  definition: A functional chief responsible for mentoring, training of PDT members,
+    assigning work, balancing workload and resolving resource and priority conflicts
+    on an ongoing basis.
+  anchor: '23'
+- label: Regional Business Center
+  altName: [ RBC ]
+  definition: An MSC and its districts acting together as a regional business entity.
+    This vertical and lateral integration of organizational capabilities, resource
+    sharing, technical expertise, project management, and project delivery broadens
+    and enhances the range of services and quality within the region.
+  anchor: '23'
+- label: Regional Integration Team
+  altName: [ RIT ]
+  definition: Cross-functional teams at HQUSACE that facilitate resolution of issues
+    and champion RBC causes.
+  anchor: '23'
+- label: Stakeholder
+  definition: Stakeholder as used in this regulation may be a number of people/organizations.
+    In general, the stakeholder is any individual or organization for which USACE
+    delivers projects, or services to meet specific needs. Stakeholders may be either
+    external or internal to USACE. For example, Engineering Branch should consider
+    the PM a stakeholder when they are performing design preparation or design review
+    activities. Contracting Branch should consider the PM a stakeholder when they
+    are reviewing or executing the contract acquisition activities.
+  anchor: '23'
+- label: Technical Lead
+  altName: [ TL ]
+  definition: Designated PDT member responsible for ensuring technical quality is
+    achieved. Role may be filled by a design manager, discipline lead, or senior technical
+    team member and assigned by the district division that is responsible for technical
+    deliverables. Must be involved in all project decisions that affect quality management
+    processes. For projects that require professional engineering services, the technical
+    lead must possess an active professional registration (e.g. P.E., R.A., P.L.A.,
+    P.G.), unless waived by the division chief responsible for Engineering.
+  anchor: '23'
+- label: Vertical Team
+  definition: Team that is composed of personnel from different command levels in
+    the organization, i.e. MSCs and/or HQ.
+  anchor: '23'
+- label: Virtual Team
+  definition: Team working across geographic or organizational boundaries without
+    physical co-location.
+  anchor: '23'
+- label: Work
+  definition: Sustained physical or mental effort or activity directed toward the
+    production or accomplishment of something. Work of a business can generally be
+    categorized as either projects or operations, although there may be some overlap.
+  anchor: '23'

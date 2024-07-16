@@ -1,0 +1,37 @@
+@prefix CFR-33-329-4: <https://usace-data.com/civil-works/glossary/CFR-33-329-4#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CFR-33-329-4: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Code of Federal Regulations - Title 33, Chapter-II, Part 329, Section-329.4" ;
+    dcterms:created "2024-07-16T04:24:48.339372+00:00"^^xsd:dateTime ;
+    dcterms:description "None" ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Code of Federal Regulations - Title 33, Chapter-II, Part 329, Section-329.4" ;
+    pav:ImportedFrom "glossaries/CivilWorks/CFR-33-329-4.yaml" ;
+    pav:createdOn "2024-07-16T04:24:48.339372+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "33 CFR 329.4 Definitions" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/CFR-33-329-4#" ;
+    skos:hasTopConcept CFR-33-329-4:Navigable_Waters .
+
+CFR-33-329-4:Navigable_Waters a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Navigable Waters" ;
+    dcterms:bibliographicCitation "https://www.ecfr.gov/current/title-33/chapter-II/part-329/section-329.4" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/CFR-33-329-4.yaml#term[Navigable Waters]" ;
+    skos:definition "Navigable waters of the United States are those waters that are subject to the ebb and flow of the tide and/or are presently used, or have been used in the past, or may be susceptible for use to transport interstate or foreign commerce. A determination of navigability, once made, applies laterally over the entire surface of the waterbody, and is not extinguished by later actions or events which impede or destroy navigable capacity." ;
+    skos:inScheme CFR-33-329-4: ;
+    skos:prefLabel "Navigable Waters" .
+

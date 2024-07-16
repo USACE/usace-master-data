@@ -1,0 +1,24 @@
+about:
+    namespace: https://usace-data.com/civil-works/glossary/CFR-33-334-2#
+    prefix: CFR-33-334-2
+    template: glossary
+    title:  Code of Federal Regulations - Title 33, Chapter-II, Part 334, Section-334.2
+    source:
+        linkType: cfr
+        sourceID: CFR-33-334-2
+        authoritativeSource: 33 CFR 334.2 Definitions
+        glossaryReferences: true
+        url: https://www.ecfr.gov/current/title-33/chapter-II/part-334/section-334.2
+terms:
+- label: Danger zone
+  definition: A defined water area (or areas) used for target practice, bombing, rocket
+    firing or other especially hazardous operations, normally for the armed forces.
+    The danger zones may be closed to the public on a full-time or intermittent basis,
+    as stated in the regulations.
+  anchor: '1'
+- label: Restricted area
+  definition: A defined water area for the purpose of prohibiting or limiting public
+    access to the area. Restricted areas generally provide security for Government
+    property and/or protection to the public from the risks of damage or injury arising
+    from the Government's use of that area.
+  anchor: '1'

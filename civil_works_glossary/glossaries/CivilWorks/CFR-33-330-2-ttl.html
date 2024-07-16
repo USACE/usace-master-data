@@ -1,0 +1,1166 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Ontospy > https://usace-data.com/civil-works/glossary/CFR-33-330-2#</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <style type="text/css" media="screen">
+
+
+  body {
+	  margin-left: 6em;
+	  margin-right: 12em;
+	  text-align: justify;
+    padding: 2em 1em 2em 70px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  :link { color: #00C; background: transparent }
+  :visited { color: #00C; background: transparent }
+  a:active { color: #C00; background: transparent }
+
+  a:link img, a:visited img { border-style: none } /* no border on img links */
+
+  a:hover {color: white; background: #00C; }
+  a.backlink:hover {color: white; background: grey; }
+  a.greylink:hover {color: white; background: grey; }
+
+  .margintop {
+  	 margin-top: 40px;
+  }
+
+
+  dt, dd { margin-top: 10px; margin-bottom: 0 } /* opera 3.50 */
+  dt { font-weight: bold }
+
+
+  h1, h2, h3, h4, h5, h6 { text-align: left }
+  /* background should be transparent, but WebTV has a bug */
+  h1, h2, h3, h4, h5 { color: #005A9C; background: white }
+  h1.title { font: 200% sans-serif }
+  h1 { font: 170% sans-serif }
+  h2 { font: 140% sans-serif }
+  h3 { font: 120% sans-serif }
+  h4 { font: bold 100% sans-serif }
+  h5 { font: italic 100% sans-serif }
+  h6 { font: small-caps 100% sans-serif }
+
+  .hide { display: none }
+
+
+  pre { margin-left: 2em }
+
+  pre, code { font-family: monospace } /* navigator 4 requires this */
+
+
+  .implementation {
+  	background: aliceblue;
+	padding: 10px;
+	margin-top: 5px;
+  }
+
+  fieldset {
+	  margin-top: 20px;
+	  padding: 13px;
+      text-align: left;
+  }
+
+  legend {
+	  text-transform: uppercase;
+  }
+
+  .entity-div {
+	  margin: 55px 10px 30px 10px;
+  }
+
+  .entity-section {
+	  margin-bottom: 0px;
+  }
+
+
+  a.backlink {
+	  font-size: 80%;
+	  color: grey;
+  }
+
+  a.greylink {
+	  color: grey;
+  }
+
+
+   .implementation_title {
+
+       font-weight: bold;
+       font-size: 100%;
+   }
+
+.section-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+        .tree-container {
+            width: 3000em;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+		.tree {margin: 10px 0px 30px -20px; padding: 0; display: inline-block;}
+
+		.tree ul {
+			padding-top: 20px; position: relative;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		.tree li {
+			float: left; text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*We will use ::before and ::after to draw the connectors*/
+
+		.tree li::before, .tree li::after{
+			content: '';
+			position: absolute; top: 0; right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%; height: 20px;
+		}
+		.tree li::after{
+			right: auto; left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		/*We need to remove left-right connectors from elements without
+		any siblings*/
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		/*Remove space from the top of single children*/
+		.tree li:only-child{ padding-top: 0;}
+
+		/*Remove left connector from first child and
+		right connector from last child*/
+		.tree li:first-child::before, .tree li:last-child::after{
+			border: 0 none;
+		}
+		/*Adding back the vertical connector to the last nodes*/
+		.tree li:last-child::before{
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+			-webkit-border-radius: 0 5px 0 0;
+			-moz-border-radius: 0 5px 0 0;
+		}
+		.tree li:first-child::after{
+			border-radius: 5px 0 0 0;
+			-webkit-border-radius: 5px 0 0 0;
+			-moz-border-radius: 5px 0 0 0;
+		}
+
+		/*Time to add downward connectors from parents*/
+		.tree ul ul::before{
+			content: '';
+			position: absolute; top: 0; left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0; height: 20px;
+		}
+
+		.tree li a{
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #666;
+			font-family: arial, verdana, tahoma;
+			font-size: 11px;
+			display: inline-block;
+
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*Time for some hover effects*/
+		/*We will apply the hover effect the the lineage of the element also*/
+		.tree li a:hover, .tree li a:hover+ul li a {
+			background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+		}
+		/*Connector styles on hover*/
+		.tree li a:hover+ul li::after,
+		.tree li a:hover+ul li::before,
+		.tree li a:hover+ul::before,
+		.tree li a:hover+ul ul::before{
+			border-color:  #94a0b4;
+		}
+
+		/*Thats all. I hope you enjoyed it.
+		Thanks :)*/
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+	
+	
+		
+			<h1 class="title"><a href="" target="_blank">https://usace-data.com/civil-works/glossary/CFR-33-330-2#</a></h1>
+			<h3><p>None</p></h3>
+		
+
+	
+		
+		
+
+
+	<p><small>Ontology documentation automatically generated by <a class="greylink" href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> on Tue, 16 Jul 2024 04:25:00</small></p>
+
+
+
+	
+
+
+	<hr class="margintop">
+
+	<h1><a name="toc">&nbsp;</a>Table of Content</h1>
+
+	<ul>
+		<li><a href="#ontologies">Ontologies</a></li>
+		<li><a href="#a-z">A-Z of Terms</a></li>
+		
+		
+		
+		
+		<li><a href="#skosconcepts">SKOS Concepts</a></li>
+		
+	</ul>
+
+
+
+	
+
+	
+
+	<hr class="margintop">
+
+	<h1><a name="ontologies"></a>Ontologies</h1>
+
+		
+
+
+			<fieldset> <legend><h3><a href="https://usace-data.com/civil-works/glossary/CFR-33-330-2#" target="_blank">https://usace-data.com/civil-works/glossary/CFR-33-330-2#</a></h3></legend>
+
+			<h4 style="margin-top: -20px;"><p>None</p></h4>
+
+			
+			
+				
+					<dt>dcterms:created</dt>
+				  
+			
+			<dd><p>2024-07-16T04:24:56.768521+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:description</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:publisher</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:rights</dt>
+				  
+			
+			<dd><p>MIT</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:title</dt>
+				  
+			
+			<dd><p>Code of Federal Regulations - Title 33, Chapter-II, Part 330, Section-330.2</p></dd>
+			
+			
+				</dl>
+					<dt>pav:ImportedFrom</dt>
+				  
+			
+			<dd><p>glossaries/CivilWorks/CFR-33-330-2.yaml</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdOn</dt>
+				  
+			
+			<dd><p>2024-07-16T04:24:56.768521+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdWith</dt>
+				  
+			
+			<dd><p>gloss</p></dd>
+			
+			
+				</dl>
+					<dt>pav:wasInfluencedBy</dt>
+				  
+			
+			<dd><p>33 CFR 330.2 Definitions</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.knowledgesmarts.com/ontologies/wov#Glossary</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2002/07/owl#Ontology</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2004/02/skos/core#ConceptScheme</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#Vocabulary</p></dd>
+			
+			
+				</dl>
+					<dt>rdfs:label</dt>
+				  
+			
+			<dd><p>Code of Federal Regulations - Title 33, Chapter-II, Part 330, Section-330.2</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-330-2#Authorization</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-330-2#Discretionary_authority</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-330-2#Filled_area</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-330-2#Headwaters</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-330-2#Isolated_waters</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-330-2#Nationwide_Permit</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-330-2#Single_and_complete_project</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-330-2#Special_aquatic_sites</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-330-2#Terms_and_conditions</p></dd>
+			
+			
+				</dl>
+					<dt>vann:preferredNamespaceUri</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-330-2#</p></dd>
+			
+
+			</fieldset>
+
+		
+
+	
+
+
+
+	
+
+	<hr class="margintop">
+	<h1><a  name="a-z">&nbsp;</a>A-Z of terms</h1>
+
+	<div id="azterms">
+
+	This is a complete alphabetical A-Z index of all terms, by main logical type.
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		<fieldset> <legend>SKOS Concepts (9)</legend>
+			&nbsp;<a href="#CFR-33-330-2:Authorization">CFR-33-330-2:Authorization</a>
+			|  <a href="#CFR-33-330-2:Discretionary_authority">CFR-33-330-2:Discretionary_authority</a>
+			|  <a href="#CFR-33-330-2:Filled_area">CFR-33-330-2:Filled_area</a>
+			|  <a href="#CFR-33-330-2:Headwaters">CFR-33-330-2:Headwaters</a>
+			|  <a href="#CFR-33-330-2:Isolated_waters">CFR-33-330-2:Isolated_waters</a>
+			|  <a href="#CFR-33-330-2:Nationwide_Permit">CFR-33-330-2:Nationwide_Permit</a>
+			|  <a href="#CFR-33-330-2:Single_and_complete_project">CFR-33-330-2:Single_and_complete_project</a>
+			|  <a href="#CFR-33-330-2:Special_aquatic_sites">CFR-33-330-2:Special_aquatic_sites</a>
+			|  <a href="#CFR-33-330-2:Terms_and_conditions">CFR-33-330-2:Terms_and_conditions</a>
+			  
+		</fieldset>
+
+	
+
+	
+
+	</div>
+
+
+
+	
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+	
+
+
+		<hr class="margintop">
+		<h1 class="margintop"><a  name="skosconcepts">&nbsp;</a>SKOS Concepts</h1>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-330-2:Authorization" href="#CFR-33-330-2:Authorization">CFR-33-330-2:Authorization</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-330-2:Authorization</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-330-2:Authorization is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means that specific activities that qualify for an NWP may proceed, provided that the terms and conditions of the NWP are met. After determining that the activity complies with all applicable terms and conditions, the prospective permittee may assume an authorization under an NWP. This assumption is subject to the DE&#39;s authority to determine if an activity complies with the terms and conditions of an NWP. If requested by the permittee in writing, the DE will verify in writing that the permittee&#39;s proposed activity complies with the terms and conditions of the NWP. A written verification may contain activity-specific conditions and regional conditions which a permittee must satisfy for the authorization to be valid.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-330-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-330-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-330-2:Authorization a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Authorization&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-330/section-330.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-330-2.yaml#term[Authorization]&#34; ;<br>
+    skos:definition &#34;means that specific activities that qualify for an NWP may proceed, provided that the terms and conditions of the NWP are met. After determining that the activity complies with all applicable terms and conditions, the prospective permittee may assume an authorization under an NWP. This assumption is subject to the DE&#39;s authority to determine if an activity complies with the terms and conditions of an NWP. If requested by the permittee in writing, the DE will verify in writing that the permittee&#39;s proposed activity complies with the terms and conditions of the NWP. A written verification may contain activity-specific conditions and regional conditions which a permittee must satisfy for the authorization to be valid.&#34; ;<br>
+    skos:inScheme CFR-33-330-2: ;<br>
+    skos:prefLabel &#34;Authorization&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-330-2:Discretionary_authority" href="#CFR-33-330-2:Discretionary_authority">CFR-33-330-2:Discretionary_authority</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-330-2:Discretionary_authority</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-330-2:Discretionary_authority is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the authority described in Â§Â§ 330.1(d) and 330.4(e) which the Chief of Engineers delegates to division or district engineers to modify an NWP authorization by adding conditions, to suspend an NWP authorization, or to revoke an NWP authorization and thus require individual permit authorization.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-330-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-330-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-330-2:Discretionary_authority a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Discretionary authority&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-330/section-330.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-330-2.yaml#term[Discretionary authority]&#34; ;<br>
+    skos:definition &#34;means the authority described in Â§Â§ 330.1(d) and 330.4(e) which the Chief of Engineers delegates to division or district engineers to modify an NWP authorization by adding conditions, to suspend an NWP authorization, or to revoke an NWP authorization and thus require individual permit authorization.&#34; ;<br>
+    skos:inScheme CFR-33-330-2: ;<br>
+    skos:prefLabel &#34;Discretionary authority&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-330-2:Filled_area" href="#CFR-33-330-2:Filled_area">CFR-33-330-2:Filled_area</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-330-2:Filled_area</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-330-2:Filled_area is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the area within jurisdictional waters which is eliminated or covered as a direct result of the discharge (i.e., the area actually covered by the discharged material). It does not include areas excavated nor areas impacted as an indirect effect of the fill.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-330-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-330-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-330-2:Filled_area a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Filled area&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-330/section-330.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-330-2.yaml#term[Filled area]&#34; ;<br>
+    skos:definition &#34;means the area within jurisdictional waters which is eliminated or covered as a direct result of the discharge (i.e., the area actually covered by the discharged material). It does not include areas excavated nor areas impacted as an indirect effect of the fill.&#34; ;<br>
+    skos:inScheme CFR-33-330-2: ;<br>
+    skos:prefLabel &#34;Filled area&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-330-2:Headwaters" href="#CFR-33-330-2:Headwaters">CFR-33-330-2:Headwaters</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-330-2:Headwaters</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-330-2:Headwaters is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means non-tidal rivers, streams, and their lakes and impoundments, including adjacent wetlands, that are part of a surface tributary system to an interstate or navigable water of the United States upstream of the point on the river or stream at which the average annual flow is less than five cubic feet per second. The DE may estimate this point from available data by using the mean annual area precipitation, area drainage basin maps, and the average runoff coefficient, or by similar means. For streams that are dry for long periods of the year, DEs may establish the point where headwaters begin as that point on the stream where a flow of five cubic feet per second is equaled or exceeded 50 percent of the time.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-330-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-330-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-330-2:Headwaters a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Headwaters&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-330/section-330.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-330-2.yaml#term[Headwaters]&#34; ;<br>
+    skos:definition &#34;means non-tidal rivers, streams, and their lakes and impoundments, including adjacent wetlands, that are part of a surface tributary system to an interstate or navigable water of the United States upstream of the point on the river or stream at which the average annual flow is less than five cubic feet per second. The DE may estimate this point from available data by using the mean annual area precipitation, area drainage basin maps, and the average runoff coefficient, or by similar means. For streams that are dry for long periods of the year, DEs may establish the point where headwaters begin as that point on the stream where a flow of five cubic feet per second is equaled or exceeded 50 percent of the time.&#34; ;<br>
+    skos:inScheme CFR-33-330-2: ;<br>
+    skos:prefLabel &#34;Headwaters&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-330-2:Isolated_waters" href="#CFR-33-330-2:Isolated_waters">CFR-33-330-2:Isolated_waters</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-330-2:Isolated_waters</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-330-2:Isolated_waters is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means those non-tidal waters of the United States that are: <br>
+(1) Not part of a surface tributary system to interstate or navigable waters of the United States; and <br>
+(2) Not adjacent to such tributary waterbodies.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-330-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-330-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-330-2:Isolated_waters a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Isolated waters&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-330/section-330.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-330-2.yaml#term[Isolated waters]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;means those non-tidal waters of the United States that are: <br>
+(1) Not part of a surface tributary system to interstate or navigable waters of the United States; and <br>
+(2) Not adjacent to such tributary waterbodies.&#34;&#34;&#34; ;<br>
+    skos:inScheme CFR-33-330-2: ;<br>
+    skos:prefLabel &#34;Isolated waters&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-330-2:Nationwide_Permit" href="#CFR-33-330-2:Nationwide_Permit">CFR-33-330-2:Nationwide_Permit</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-330-2:Nationwide_Permit</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-330-2:Nationwide_Permit is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Nationwide  permit refers to a type of general permit which authorizes activities on a nationwide basis unless specifically limited. (Another type of general permit is a regional permit which is issued by division or district engineers on a regional basis in accordance with 33 CFR part 325). (See 33 CFR 322.2(f) and 323.2(h) for the definition of a general permit.)</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-330-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-330-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-330-2:Nationwide_Permit a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Nationwide Permit&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-330/section-330.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-330-2.yaml#term[Nationwide Permit]&#34; ;<br>
+    skos:definition &#34;Nationwide  permit refers to a type of general permit which authorizes activities on a nationwide basis unless specifically limited. (Another type of general permit is a regional permit which is issued by division or district engineers on a regional basis in accordance with 33 CFR part 325). (See 33 CFR 322.2(f) and 323.2(h) for the definition of a general permit.)&#34; ;<br>
+    skos:inScheme CFR-33-330-2: ;<br>
+    skos:prefLabel &#34;Nationwide Permit&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-330-2:Single_and_complete_project" href="#CFR-33-330-2:Single_and_complete_project">CFR-33-330-2:Single_and_complete_project</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-330-2:Single_and_complete_project</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-330-2:Single_and_complete_project is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means the total project proposed or accomplished by one owner/developer or partnership or other association of owners/developers. For example, if construction of a residential development affects several different areas of a headwater or isolated water, or several different headwaters or isolated waters, the cumulative total of all filled areas should be the basis for deciding whether or not the project will be covered by an NWP. For linear projects, the single and complete project (i.e., single and complete crossing) will apply to each crossing of a separate water of the United States (i.e., single waterbody) at that location; except that for linear projects crossing a single waterbody several times at separate and distant locations, each crossing is considered a single and complete project. However, individual channels in a braided stream or river, or individual arms of a large, irregularly-shaped wetland or lake, etc., are not separate waterbodies.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-330-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-330-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-330-2:Single_and_complete_project a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Single and complete project&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-330/section-330.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-330-2.yaml#term[Single and complete project]&#34; ;<br>
+    skos:definition &#34;means the total project proposed or accomplished by one owner/developer or partnership or other association of owners/developers. For example, if construction of a residential development affects several different areas of a headwater or isolated water, or several different headwaters or isolated waters, the cumulative total of all filled areas should be the basis for deciding whether or not the project will be covered by an NWP. For linear projects, the single and complete project (i.e., single and complete crossing) will apply to each crossing of a separate water of the United States (i.e., single waterbody) at that location; except that for linear projects crossing a single waterbody several times at separate and distant locations, each crossing is considered a single and complete project. However, individual channels in a braided stream or river, or individual arms of a large, irregularly-shaped wetland or lake, etc., are not separate waterbodies.&#34; ;<br>
+    skos:inScheme CFR-33-330-2: ;<br>
+    skos:prefLabel &#34;Single and complete project&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-330-2:Special_aquatic_sites" href="#CFR-33-330-2:Special_aquatic_sites">CFR-33-330-2:Special_aquatic_sites</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-330-2:Special_aquatic_sites</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-330-2:Special_aquatic_sites is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>means wetlands, mudflats, vegetated shallows, coral reefs, riffle and pool complexes, sanctuaries, and refuges as defined at 40 CFR 230.40 through 230.45.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-330-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-330-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-330-2:Special_aquatic_sites a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Special aquatic sites&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-330/section-330.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-330-2.yaml#term[Special aquatic sites]&#34; ;<br>
+    skos:definition &#34;means wetlands, mudflats, vegetated shallows, coral reefs, riffle and pool complexes, sanctuaries, and refuges as defined at 40 CFR 230.40 through 230.45.&#34; ;<br>
+    skos:inScheme CFR-33-330-2: ;<br>
+    skos:prefLabel &#34;Special aquatic sites&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-330-2:Terms_and_conditions" href="#CFR-33-330-2:Terms_and_conditions">CFR-33-330-2:Terms_and_conditions</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-330-2:Terms_and_conditions</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-330-2:Terms_and_conditions is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The terms of an NWP are the limitations and provisions included in the description of the NWP itself. The conditions of NWPs are additional provisions which place restrictions or limitations on all of the NWPs. These are published with the NWPs. Other conditions may be imposed by district or division engineers on a geographic, category-of-activity, or activity-specific basis (See 33 CFR 330.4(e)).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-330-2: &lt;https://usace-data.com/civil-works/glossary/CFR-33-330-2#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-330-2:Terms_and_conditions a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Terms and conditions&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-330/section-330.2&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-330-2.yaml#term[Terms and conditions]&#34; ;<br>
+    skos:definition &#34;The terms of an NWP are the limitations and provisions included in the description of the NWP itself. The conditions of NWPs are additional provisions which place restrictions or limitations on all of the NWPs. These are published with the NWPs. Other conditions may be imposed by district or division engineers on a geographic, category-of-activity, or activity-specific basis (See 33 CFR 330.4(e)).&#34; ;<br>
+    skos:inScheme CFR-33-330-2: ;<br>
+    skos:prefLabel &#34;Terms and conditions&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	<hr>
+	<small>Ontology documentation automatically generated by <a class="greylink"  href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> v2.1.1 on Tue, 16 Jul 2024 04:25:00</small>
+
+
+</body>
+</html>

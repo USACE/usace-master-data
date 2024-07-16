@@ -1,0 +1,2420 @@
+@prefix EM-1110-1-1005: <https://usace-data.com/civil-works/glossary/EM-1110-1-1005#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#> .
+@prefix wov: <http://www.knowledgesmarts.com/ontologies/wov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+EM-1110-1-1005:Absolute_GPS a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Absolute GPS" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Absolute GPS]" ;
+    skos:altLabel "Autonomous GPS" ;
+    skos:definition "Operation with a single receiver for a desired position. This receiver may be positioned to be stationary over a point. This mode of positioning is the most common military and civil application." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Absolute GPS" .
+
+EM-1110-1-1005:Accuracy a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Accuracy" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Accuracy]" ;
+    skos:definition "The degree to which an estimated (mean) value is compatible with an expected value. Accuracy implies the estimated value is unbiased." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Accuracy" .
+
+EM-1110-1-1005:Adjustment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Adjustment" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Adjustment]" ;
+    skos:definition "Adjustment is the process of estimation and minimization of deviations between measurements and a mathematical model." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Adjustment" .
+
+EM-1110-1-1005:Altimeter a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Altimeter" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Altimeter]" ;
+    skos:definition "An instrument that measures elevation differences usually based on atmospheric pressure measurements" ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Altimeter" .
+
+EM-1110-1-1005:Altitude a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Altitude" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Altitude]" ;
+    skos:definition "The vertical angle between the horizontal plane of the observer and a directional line to the object." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Altitude" .
+
+EM-1110-1-1005:Angle_of_Depression a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Angle of Depression" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Angle of Depression]" ;
+    skos:definition "A negative altitude." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Angle of Depression" .
+
+EM-1110-1-1005:Angle_of_Elevation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Angle of Elevation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Angle of Elevation]" ;
+    skos:definition "A positive altitude." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Angle of Elevation" .
+
+EM-1110-1-1005:Angular_Misclosure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Angular Misclosure" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Angular Misclosure]" ;
+    skos:definition "Difference in the actual and theoretical sum of a series of angles." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Angular Misclosure" .
+
+EM-1110-1-1005:Archiving a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Archiving" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Archiving]" ;
+    skos:definition "Storing of documents and information." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Archiving" .
+
+EM-1110-1-1005:Astronomical_Latitude a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Astronomical Latitude" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Astronomical Latitude]" ;
+    skos:definition "Angle between the plumb line and the plane of celestial equator. Also defined as the angle between the plane of the horizon and the axis of rotation of the earth. Astronomical latitude applies only to positions on the earth and is reckoned from the astronomic equator, north and south through 90E. Astronomical latitude is the latitude that results directly from observations of celestial bodies, uncorrected for deflection of the vertical." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Astronomical Latitude" .
+
+EM-1110-1-1005:Astronomical_Longitude a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Astronomical Longitude" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Astronomical Longitude]" ;
+    skos:definition "Arbitrarily chosen angle between the plane of the celestial meridian and the plane of an initial meridian. Astronomical longitude is the longitude that results directly from observations on celestial bodies, uncorrected for deflection of the vertical." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Astronomical Longitude" .
+
+EM-1110-1-1005:Astronomical_Triangle a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Astronomical Triangle" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Astronomical Triangle]" ;
+    skos:definition "A spherical triangle formed by arcs of great circles connecting the celestial pole, the zenith and a celestial body. The angles of the astronomical triangles are: at the pole, the hour angle; at the celestial body, the parallactic angle; at the zenith, the azimuth angle. The sides are: pole to zenith, the co-latitude; zenith to celestial body, the zenith distance; and celestial body to pole, the polar distance." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Astronomical Triangle" .
+
+EM-1110-1-1005:Atmospheric_Refraction a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Atmospheric Refraction" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=481" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Atmospheric Refraction]" ;
+    skos:definition "Refraction of electromagnetic radiation through the atmosphere causing the line-of-sight to deviate from a straight path. Mainly temperature and pressure conditions determine the magnitude and direction of curvature affecting the path of light from a source. Refraction causes the ray to follow a curved path normal the surface gradient." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Atmospheric Refraction" .
+
+EM-1110-1-1005:Autonomous_GPS a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Autonomous GPS" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=480" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Autonomous GPS]" ;
+    skos:altLabel "Absolute GPS" ;
+    skos:definition "Operation with a single receiver for a desired position. This receiver may be positioned to be stationary over a point. This mode of positioning is the most common military and civil application." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Autonomous GPS" .
+
+EM-1110-1-1005:Azimuth a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Azimuth" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=481" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Azimuth]" ;
+    skos:definition "The horizontal direction of a line clockwise from a reference plane, usually the meridian. Often called forward azimuth to differentiate from back azimuth." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Azimuth" .
+
+EM-1110-1-1005:Azimuth_Angle a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Azimuth Angle" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=481" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Azimuth Angle]" ;
+    skos:definition "The angle less than 180Â° between the plane of the celestial meridian and the vertical plane with the observed object, reckoned from the direction of the elevated pole. In astronomic work, the azimuth angle is the spherical angle at the zenith in the astronomical triangle, which is composed of the pole, the zenith and the star. In geodetic work, it is the horizontal angle between the celestial pole and the observed terrestrial object." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Azimuth Angle" .
+
+EM-1110-1-1005:Azimuth_Closure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Azimuth Closure" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=481" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Azimuth Closure]" ;
+    skos:definition "Difference in arc-seconds of the measured or adjusted azimuth value with the true or published azimuth value." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Azimuth Closure" .
+
+EM-1110-1-1005:Backsight a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Backsight" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=481" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Backsight]" ;
+    skos:definition "A sight on a previously established traverse or triangulation station and not the closing sight on the traverse. A reading on a rod held on a point whose elevation has been previously determined." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Backsight" .
+
+EM-1110-1-1005:Barometric_Leveling a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Barometric Leveling" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=481" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Barometric Leveling]" ;
+    skos:definition "Determining differences of elevation from measured differences of atmospheric pressure observed with a barometer. If the elevation of one station above a datum is known, the approximate elevations of other station can be determined by barometric leveling. Barometric leveling is widely used in reconnaissance and exploratory surveys." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Barometric Leveling" .
+
+EM-1110-1-1005:Base_Control a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Base Control" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=481" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Base Control]" ;
+    skos:definition "The horizontal and vertical control points and coordinates used to establish a base network. Base control is determined by field surveys and permanently marked or monumented for further surveys." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Base Control" .
+
+EM-1110-1-1005:Base_Points a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Base Points" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=481" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Base Points]" ;
+    skos:definition "The beginning points for a traverse that will be used in triangulation or trilateration." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Base Points" .
+
+EM-1110-1-1005:Base_net a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Base net" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=481" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Base net]" ;
+    skos:definition "The primary baseline used for densification of survey stations to form a network." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Base net" .
+
+EM-1110-1-1005:Baseline a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Baseline" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=481" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Baseline]" ;
+    skos:definition "Resultant three-dimensional vector between any two stations with respect to a given coordinate system. The primary reference line in a construction system." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Baseline" .
+
+EM-1110-1-1005:Bearing a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Bearing" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=481" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Bearing]" ;
+    skos:definition "The direction of a line with respect to the meridian described by degrees, minutes, and seconds within a quadrant of the circle. Bearings are measured clockwise or counterclockwise from north or south, depending on the quadrant." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Bearing" .
+
+EM-1110-1-1005:Benchmark a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Benchmark" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=482" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Benchmark]" ;
+    skos:definition "A permanent material object, natural or artificial, on a marked point of known elevation." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Benchmark" .
+
+EM-1110-1-1005:Best_Fit a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Best Fit" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=482" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Best Fit]" ;
+    skos:definition "To represent a given set of points by a smooth function, curve, or surface which minimizes the deviations of the fit." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Best Fit" .
+
+EM-1110-1-1005:Bipod a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Bipod" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=482" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Bipod]" ;
+    skos:definition "A two-legged support structure for an instrument or survey signal at a height convenient for the observer." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Bipod" .
+
+EM-1110-1-1005:Bluebook a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Bluebook" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=482" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Bluebook]" ;
+    skos:definition "Another term for the \"FGCS Input Formats and Specifications of the National Geodetic Data Base\"." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Bluebook" .
+
+EM-1110-1-1005:Blunder a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Blunder" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=482" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Blunder]" ;
+    skos:definition "A mistake or gross error." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Blunder" .
+
+EM-1110-1-1005:Bureau_International_de_l%27Heure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Bureau International de l'Heure" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=482" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Bureau International de l'Heure]" ;
+    skos:definition "The Bureau was founded in 1919 and its offices since then have been at the Paris Observatory. By an action of the International Astronomical Union, the BIH ceased to exist on 1 January 1988 and a new organization, the International Earth Rotation Service (IERS) was formed to deal with determination of the Earth's rotation." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Bureau International de l'Heure" .
+
+EM-1110-1-1005:CORPSCON a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "CORPSCON" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=485" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[CORPSCON]" ;
+    skos:altLabel "Corps Convert" ;
+    skos:definition "(Corps Convert) Software package (based on NADCON) capable of performing coordinate transformations between NAD 83 and NAD 27 datums." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "CORPSCON" .
+
+EM-1110-1-1005:Cadastral_Survey a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Cadastral Survey" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=482" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Cadastral Survey]" ;
+    skos:definition "Relates to land boundaries and subdivisions, and creates units suitable for transfer or to define the limitations of title. The term cadastral survey is now used to designate the surveys of the public lands of the US, including retracement surveys for identification and resurveys for the restoration of property lines; the term can also be applied properly to corresponding surveys outside the public lands, although such surveys are usually termed land surveys through preference." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Cadastral Survey" .
+
+EM-1110-1-1005:Calibration a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Calibration" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=482" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Calibration]" ;
+    skos:definition "Determining the systematic errors in an instrument by comparing measurements with correct values. The correct value is established either by definition or by measurement with a device that has itself been calibrated or of much higher precision." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Calibration" .
+
+EM-1110-1-1005:Cartesian_Coordinates a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Cartesian Coordinates" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=482" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Cartesian Coordinates]" ;
+    skos:definition "A system with its origin at the center of the earth and the x and y and z axes in the plane of the equator. Typically, the x-axis passes through the meridian of Greenwich, and the z-axis coincides with the earth's axis of rotation. The three axes are mutually orthogonal and form a right-handed system." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Cartesian Coordinates" .
+
+EM-1110-1-1005:Cartesian_System a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Cartesian System" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=482" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Cartesian System]" ;
+    skos:definition "A coordinate system consisting of axes intersecting at a common point (origin). The coordinate of a point is the orthogonal distance between that point and the hyperplane determined by all axes. A Cartesian coordinate system has all the axes intersecting at right angles, and the system is called a rectangular." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Cartesian System" .
+
+EM-1110-1-1005:Celestial_Equator a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Celestial Equator" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=482" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Celestial Equator]" ;
+    skos:definition "A great circle on the celestial sphere with equidistant points from the celestial poles. The plane of the earth's equator, if extended, would coincide with that of the celestial equator." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Celestial Equator" .
+
+EM-1110-1-1005:Celestial_pole a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Celestial pole" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=482" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Celestial pole]" ;
+    skos:definition "A reference point at the point of intersection of an indefinite extension of the earth's axis of rotation and the apparent celestial sphere." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Celestial pole" .
+
+EM-1110-1-1005:Celestial_sphere a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Celestial sphere" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Celestial sphere]" ;
+    skos:definition "An imaginary sphere of infinite radius with the earth as a center. It rotates from east to west on a prolongation of the earth's axis." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Celestial sphere" .
+
+EM-1110-1-1005:Central_Meridian a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Central Meridian" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Central Meridian]" ;
+    skos:definition "A line of constant longitude at the center of a graticule. The central meridian is used as a base for constructing the other lines of the graticule. The meridian is used as the y-axis in computing tables for a State Plane Coordinate system. That line, on a graticule, which represents a meridian and which is an axis of symmetry." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Central Meridian" .
+
+EM-1110-1-1005:Chain a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Chain" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Chain]" ;
+    skos:definition "Equal to 66 feet or 100 links. The unit of length prescribed by law for the survey of the US public lands. One acre equals 10 square chains." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Chain" .
+
+EM-1110-1-1005:Chained_Traverse a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Chained Traverse" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Chained Traverse]" ;
+    skos:definition "Observations and measurements performed with tape." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Chained Traverse" .
+
+EM-1110-1-1005:Chaining a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Chaining" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Chaining]" ;
+    skos:definition "Measuring distances on the ground with a graduated tape or with a chain." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Chaining" .
+
+EM-1110-1-1005:Chart_Datum a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Chart Datum" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Chart Datum]" ;
+    skos:definition "Reference surface for soundings on a nautical chart. It is usually taken to correspond to a low water elevation, and its depression below mean sea level is represented by the symbol Zo. Since 1989, chart datum has been implemented to mean lower low water for all marine waters of the US its territories, Commonwealth of Puerto Rico and Trust Territory of the Pacific Islands." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Chart Datum" .
+
+EM-1110-1-1005:Chi-square_Testing a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Chi-square Testing" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Chi-square Testing]" ;
+    skos:definition "Non-parametric statistical test used to classify the shape of the distribution of the data." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Chi-square Testing" .
+
+EM-1110-1-1005:Chronometer a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Chronometer" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Chronometer]" ;
+    skos:definition "A portable timekeeper with compensated balance, capable of showing time with extreme precision and accuracy." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Chronometer" .
+
+EM-1110-1-1005:Circle_Position a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Circle Position" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Circle Position]" ;
+    skos:definition "A prescribed setting (reading) of the horizontal circle of a direction theodolite, to be used for the observation on the initial station of a series of stations that are to be observed." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Circle Position" .
+
+EM-1110-1-1005:Circuit_Closure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Circuit Closure" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Circuit Closure]" ;
+    skos:definition "Difference between measured or adjusted value and the true or published value." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Circuit Closure" .
+
+EM-1110-1-1005:Clarke_1866_Ellipsoid a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Clarke 1866 Ellipsoid" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Clarke 1866 Ellipsoid]" ;
+    skos:definition "The reference ellipsoid used for the NAD 27 horizontal datum. It is a non-geocentric ellipsoid formerly used for mapping in North America." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Clarke 1866 Ellipsoid" .
+
+EM-1110-1-1005:Closed_Traverse a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Closed Traverse" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Closed Traverse]" ;
+    skos:definition "Starts and ends at the same point or at stations whose positions have been determined by other surveys." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Closed Traverse" .
+
+EM-1110-1-1005:Collimation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Collimation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=483" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Collimation]" ;
+    skos:definition "A physical alignment of a survey target or antenna over a mark or to a reference line." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Collimation" .
+
+EM-1110-1-1005:Collimation_Error a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Collimation Error" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=484" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Collimation Error]" ;
+    skos:definition "The angle between the actual line of sight through an optical instrument and an alignment" ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Collimation Error" .
+
+EM-1110-1-1005:Compass_Rule a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Compass Rule" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=484" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Compass Rule]" ;
+    skos:definition "The correction applied to the departure (or latitude) of any course in a traverse has the same ratio to the total misclosure in departure (or latitude) as the length of the course has to the total length of the traverse." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Compass Rule" .
+
+EM-1110-1-1005:Confidence_Level a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Confidence Level" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=484" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Confidence Level]" ;
+    skos:definition "Statistical probability (in percent) based on the standard deviation or standard error associated with the normal probability density function. The confidence level is assigned according to an expansion factor multiplied by the magnitude of one standard error. The expansion factor is based on values found in probability tables at a chosen level of significance." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Confidence Level" .
+
+EM-1110-1-1005:Conformal a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Conformal" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=484" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Conformal]" ;
+    skos:definition "Map projection that preserves shape." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Conformal" .
+
+EM-1110-1-1005:Contour a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Contour" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=484" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Contour]" ;
+    skos:definition "An imaginary line on the ground with all points at the same elevation above or below a specified reference surface." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Contour" .
+
+EM-1110-1-1005:Control a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Control" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=484" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Control]" ;
+    skos:definition "Data used in geodesy and cartography to determine the positions and elevations of points on the earth's surface or on a cartographic representation of that surface. A collective term for a system of marks or objects on the earth or on a map or a photograph whose positions or elevation are determined." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Control" .
+
+EM-1110-1-1005:Control_Densification a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Control Densification" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=484" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Control Densification]" ;
+    skos:definition "Addition of control throughout a region or network." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Control Densification" .
+
+EM-1110-1-1005:Control_Monuments a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Control Monuments" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=484" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Control Monuments]" ;
+    skos:definition "Existing local control or benchmarks that may consist of any Federal, state, local or private agency points." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Control Monuments" .
+
+EM-1110-1-1005:Control_Point a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Control Point" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=484" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Control Point]" ;
+    skos:definition "A point with assigned coordinates is sometimes used as a synonym for control station. However, a control point need not be realized by a marker on the ground." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Control Point" .
+
+EM-1110-1-1005:Control_Survey a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Control Survey" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=484" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Control Survey]" ;
+    skos:definition "A survey which provides coordinates (horizontal or vertical) of points to which supplementary surveys are adjusted." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Control Survey" .
+
+EM-1110-1-1005:Control_Traverse a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Control Traverse" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=484" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Control Traverse]" ;
+    skos:definition "A survey traverse made to establish control." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Control Traverse" .
+
+EM-1110-1-1005:Conventional_Terrestrial_Pole_%28CTP%29 a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Conventional Terrestrial Pole (CTP)" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=484" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Conventional Terrestrial Pole (CTP)]" ;
+    skos:definition "The origin of the WGS 84 Cartesian system is the earth's center of mass. The Z-axis is parallel to the direction of the CTP for polar motion, as defined by the Bureau of International de l'Heure (BIH), and equal to the rotation axis of the WGS 84 ellipsoid. The X-axis is the intersection of the WGS 84 reference meridian plane and the CTP's equator, the reference meridian being parallel to the zero meridian defined by the BIH and equal to the X-axis of the WGS 84 ellipsoid. The Y-axis completes a righthanded, earth-centered, earth-fixed orthogonal coordinate system, measured in the plane of the CTP equator 90 degrees east of the X-axis and equal to the Y-axis of the WGS 84 ellipsoid." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Conventional Terrestrial Pole (CTP)" .
+
+EM-1110-1-1005:Coordinate_Transformation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Coordinate Transformation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=485" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Coordinate Transformation]" ;
+    skos:definition "A mathematical process for obtaining a modified set of coordinates through some combination of rotation of coordinate axes at their point of origin, change of scale along coordinate axes, or translation through space" ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Coordinate Transformation" .
+
+EM-1110-1-1005:Crandall_Method a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Crandall Method" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=485" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Crandall Method]" ;
+    skos:definition "Traverse misclosure in azimuth or angle is first distributed in equal portions to all the measured angles. The adjusted angles are then held fixed and all remaining coordinate corrections distributed among the distance measurements." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Crandall Method" .
+
+EM-1110-1-1005:Cross_sections a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Cross sections" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=485" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Cross sections]" ;
+    skos:definition "A survey line run perpendicular to the alignment of a project, channel or structure." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Cross sections" .
+
+EM-1110-1-1005:Curvature a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Curvature" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=485" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Curvature]" ;
+    skos:definition "The rate at which a curve deviates from a straight line. The parametric vector described by dt/ds, where t is the vector tangent to a curve and s is the distance along that curve." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Curvature" .
+
+EM-1110-1-1005:Datum a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Datum" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=485" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Datum]" ;
+    skos:definition "Any numerical or geometrical quantity or set of such quantities which serve as a reference or base for other quantities." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Datum" .
+
+EM-1110-1-1005:Declination a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Declination" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=485" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Declination]" ;
+    skos:definition "The angle, at the center of the celestial sphere, between the plane of the celestial equator and a line from the center to the point of interest (on a celestial body)." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Declination" .
+
+EM-1110-1-1005:Deflection_Traverse a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Deflection Traverse" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=485" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Deflection Traverse]" ;
+    skos:definition "Direction of each course measured as an angle from the direction of the preceding course." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Deflection Traverse" .
+
+EM-1110-1-1005:Deflection_of_the_Vertical a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Deflection of the Vertical" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=485" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Deflection of the Vertical]" ;
+    skos:definition "The spatial angular difference between the upward direction of a plumb line and the normal to the reference ellipsoid. Often expressed in two orthogonal components in the meridian and the prime vertical directions." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Deflection of the Vertical" .
+
+EM-1110-1-1005:Deformation_Monitoring a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Deformation Monitoring" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=485" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Deformation Monitoring]" ;
+    skos:definition "Observing the movement and condition of structures by describing and modeling its change in shape." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Deformation Monitoring" .
+
+EM-1110-1-1005:Departure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Departure" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=485" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Departure]" ;
+    skos:definition "The orthogonal projection of a line onto an east-west axis of reference. The departure of a line is the difference of the meridional distances or longitudes of the ends of the line." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Departure" .
+
+EM-1110-1-1005:Differential_GPS a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Differential GPS" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=485" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Differential GPS]" ;
+    skos:definition "Process of measuring the differences in coordinates between two receiver points, each of which is simultaneously observing/measuring satellite code ranges and/or carrier phases from the NAVSTAR GPS constellation. Relative positioning with GPS can be performed by a static or kinematic modes." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Differential GPS" .
+
+EM-1110-1-1005:Differential_Leveling a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Differential Leveling" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Differential Leveling]" ;
+    skos:definition "The process of measuring the difference of elevation between any two points by spirit leveling." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Differential Leveling" .
+
+EM-1110-1-1005:Direct_Leveling a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Direct Leveling" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Direct Leveling]" ;
+    skos:definition "The determination of differences of elevation through a continuous series of short horizontal lines. Vertical distances from these lines to adjacent ground marks are determined by direct observations on graduated rods with a leveling instrument equipped with a spirit level." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Direct Leveling" .
+
+EM-1110-1-1005:Direction a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Direction" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Direction]" ;
+    skos:definition "The angle between a line or plane and an arbitrarily chosen reference line or plane. At a triangulation station, observed horizontal angles are referred to a common reference line and termed horizontal direction. A line, real or imaginary, pointing away from some specified point or locality toward another point. Direction has two meanings: that of a numerical value and that of a pointing line." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Direction" .
+
+EM-1110-1-1005:Distance_Angle a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Distance Angle" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Distance Angle]" ;
+    skos:definition "An angle in a triangle opposite a side used as a base in the solution of the triangle, or a side whose length is to be computed." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Distance Angle" .
+
+EM-1110-1-1005:Dumpy_Level a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Dumpy Level" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Dumpy Level]" ;
+    skos:definition "The telescope permanently attached to the leveling base, either rigidly to by a hinge that can be manipulated by a micrometer screw." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Dumpy Level" .
+
+EM-1110-1-1005:Earth-Centered_Ellipsoid a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Earth-Centered Ellipsoid" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Earth-Centered Ellipsoid]" ;
+    skos:definition "Center at the Earth's center of mass and minor semi-axis coincident with the Earth's axis of rotation." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Earth-Centered Ellipsoid" .
+
+EM-1110-1-1005:Easting a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Easting" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Easting]" ;
+    skos:definition "The distance eastward (positive) or westward (negative) of a point from a particular meridian taken as reference." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Easting" .
+
+EM-1110-1-1005:Eccentricity a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Eccentricity" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Eccentricity]" ;
+    skos:definition "The ratio of the distance from the center of an ellipse to its focus on the major semi-axis." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Eccentricity" .
+
+EM-1110-1-1005:Electronic_Distance_Measurement a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Electronic Distance Measurement" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Electronic Distance Measurement]" ;
+    skos:altLabel "EDM" ;
+    skos:definition "Timing or phase comparison of electro-magnetic signal to determine an interferometric distance." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Electronic Distance Measurement" .
+
+EM-1110-1-1005:Elevation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Elevation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Elevation]" ;
+    skos:definition "The height of an object above some reference datum." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Elevation" .
+
+EM-1110-1-1005:Ellipsoid a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Ellipsoid" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Ellipsoid]" ;
+    skos:definition "Formed by revolving an ellipse about its minor semi-axis. The most commonly used reference ellipsoids in North America are: Clarke 1866, Geodetic Reference System of 1980 (GRS 80), World Geodetic System of 1972 (WGS 72) and World Geodetic System of 1984 (WGS 84)." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Ellipsoid" .
+
+EM-1110-1-1005:Ellipsoid_height a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Ellipsoid height" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Ellipsoid height]" ;
+    skos:definition "The magnitude h of a point above or below the reference ellipsoid measured along the normal to the ellipsoid surface." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Ellipsoid height" .
+
+EM-1110-1-1005:Error a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Error" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=486" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Error]" ;
+    skos:definition "The difference between the measured value of a quantity and the theoretical or defined value of that quantity." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Error" .
+
+EM-1110-1-1005:Error_Ellipse a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Error Ellipse" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Error Ellipse]" ;
+    skos:definition "An elliptically shaped region with dimensions corresponding to a certain probability at a given confidence level." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Error Ellipse" .
+
+EM-1110-1-1005:Error_of_Closure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Error of Closure" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Error of Closure]" ;
+    skos:definition "Difference in the measured and predicted value of the circuit along the perimeter of a geometric figure" ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Error of Closure" .
+
+EM-1110-1-1005:Finite_Element_Method a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Finite Element Method" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Finite Element Method]" ;
+    skos:definition "Obtaining an approximate solution to a problem for which the governing differential equations and boundary conditions are known. The method divides the region of interest into numerous, interconnected sub-regions (finite elements) over which simple, approximating functions are used to represent the unknown quantities." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Finite Element Method" .
+
+EM-1110-1-1005:Fixed_Elevation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Fixed Elevation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Fixed Elevation]" ;
+    skos:definition "Adopted as a result of tide observations or previous adjustment of spirit leveling, and which is held at its accepted value in any subsequent adjustment." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Fixed Elevation" .
+
+EM-1110-1-1005:Foresight a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Foresight" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Foresight]" ;
+    skos:definition "An observation to the next instrument station. The reading on a rod that is held at a point whose elevation is to be determined." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Foresight" .
+
+EM-1110-1-1005:Frequency a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Frequency" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Frequency]" ;
+    skos:definition "The number of complete cycles per second existing in any form of wave motion." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Frequency" .
+
+EM-1110-1-1005:Geodesic_Line a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Geodesic Line" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Geodesic Line]" ;
+    skos:definition "Shortest distance between any two points on any mathematically defined surface." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Geodesic Line" .
+
+EM-1110-1-1005:Geodesy a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Geodesy" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Geodesy]" ;
+    skos:definition "Determination of the time-varying size and figure of the earth by such direct measurements as triangulation, leveling and gravimetric observations." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Geodesy" .
+
+EM-1110-1-1005:Geodetic_Control a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Geodetic Control" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Geodetic Control]" ;
+    skos:definition "Established and adjusted horizontal and/or vertical control in which the shape and size of the earth have been considered in position computations." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Geodetic Control" .
+
+EM-1110-1-1005:Geodetic_Coordinates a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Geodetic Coordinates" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Geodetic Coordinates]" ;
+    skos:definition "Angular latitudinal and longitudinal coordinates defined with respect to a reference ellipsoid." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Geodetic Coordinates" .
+
+EM-1110-1-1005:Geodetic_Height a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Geodetic Height" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Geodetic Height]" ;
+    skos:altLabel "Ellipsoid height" ;
+    skos:definition "See Ellipsoid height." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Geodetic Height" .
+
+EM-1110-1-1005:Geodetic_Latitude a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Geodetic Latitude" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Geodetic Latitude]" ;
+    skos:definition "The angle which the normal at a point on the reference ellipsoid makes with the plane of the equator." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Geodetic Latitude" .
+
+EM-1110-1-1005:Geodetic_Leveling a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Geodetic Leveling" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Geodetic Leveling]" ;
+    skos:definition "The observation of the differences in elevation by means of a continuous series of short horizontal lines of sight." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Geodetic Leveling" .
+
+EM-1110-1-1005:Geodetic_Longitude a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Geodetic Longitude" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=487" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Geodetic Longitude]" ;
+    skos:definition "The angle subtended at the pole between the plane of the geodetic meridian and the plane of a reference meridian (Greenwich)." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Geodetic Longitude" .
+
+EM-1110-1-1005:Geodetic_North a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Geodetic North" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Geodetic North]" ;
+    skos:definition "Direction tangent to a meridian pointing toward the pole defining astronomic north, also called true north." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Geodetic North" .
+
+EM-1110-1-1005:Geodetic_Reference_System_of_1980 a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Geodetic Reference System of 1980" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Geodetic Reference System of 1980]" ;
+    skos:definition "Reference ellipsoid used to establish the NAD 83 system of geodetic coordinates." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Geodetic Reference System of 1980" .
+
+EM-1110-1-1005:Geoid a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Geoid" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Geoid]" ;
+    skos:definition "An equipotential surface of the gravity field approximating the earth's surface and corresponding with mean sea level in the oceans and its extension through the continents." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Geoid" .
+
+EM-1110-1-1005:Global_Positioning_System a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Global Positioning System" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Global Positioning System]" ;
+    skos:altLabel "GPS" ;
+    skos:definition "DoD satellite constellation providing range, time, and position information through a GPS receiver system." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Global Positioning System" .
+
+EM-1110-1-1005:Gravimeter a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Gravimeter" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Gravimeter]" ;
+    skos:definition "Instrument for measuring changes in gravity between two points." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Gravimeter" .
+
+EM-1110-1-1005:Gravity a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Gravity" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Gravity]" ;
+    skos:definition "Combined acceleration potential of an object due to gravitation and centrifugal forces." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Gravity" .
+
+EM-1110-1-1005:Greenwich_Meridian a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Greenwich Meridian" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Greenwich Meridian]" ;
+    skos:definition "The astronomic meridian through the center of the Airy transit instrument of the Greenwich Observatory, Greenwich, England. By international agreement in 1884, the Greenwich meridian was adopted as the meridian from which all longitudes, worldwide, would be calculated." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Greenwich Meridian" .
+
+EM-1110-1-1005:Grid_Azimuth a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Grid Azimuth" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Grid Azimuth]" ;
+    skos:definition "The angle in the plane of projection between a straight line and the line (y-axis) in a plane rectangular coordinate system representing the central meridian. While essentially a map-related quantity, a grid azimuth may, by mathematical processes, be transformed into a survey- related or ground-related quantity." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Grid Azimuth" .
+
+EM-1110-1-1005:Grid_Inverse a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Grid Inverse" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Grid Inverse]" ;
+    skos:definition "The computation of length and azimuth from coordinates on a grid." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Grid Inverse" .
+
+EM-1110-1-1005:Grid_Meridian a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Grid Meridian" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Grid Meridian]" ;
+    skos:definition "Line parallel to the line representing the central meridian or y-axis of a grid on a map. The map line parallel to the line representing the y-axis or central meridian in a rectangular coordinate system." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Grid Meridian" .
+
+EM-1110-1-1005:Gunter%27s_Chain a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Gunter's Chain" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Gunter's Chain]" ;
+    skos:definition "A measuring device once used in land surveying. It was composed of 100 metallic links fastened together with rings. The total length of the chain is 66 feet. Also called a four-pole chain." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Gunter's Chain" .
+
+EM-1110-1-1005:Gyrotheodolite a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Gyrotheodolite" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Gyrotheodolite]" ;
+    skos:definition "A gyroscopic device used to measure azimuth that is built-in or attached to a theodolite." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Gyrotheodolite" .
+
+EM-1110-1-1005:Histogram a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Histogram" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=488" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Histogram]" ;
+    skos:definition "A graphical representation of relative frequency of an outcome partitioned by class interval. The frequency of occurrence is indicated by the height of a rectangle whose base is proportional to the class interval." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Histogram" .
+
+EM-1110-1-1005:Horizontal_Control a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Horizontal Control" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Horizontal Control]" ;
+    skos:definition "Determines horizontal positions with respect to parallels and meridians or to other lines of reference." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Horizontal Control" .
+
+EM-1110-1-1005:Hour_Circle a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Hour Circle" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Hour Circle]" ;
+    skos:definition "Any great circle on the celestial sphere whose plane is perpendicular to the plane of the celestial equator." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Hour Circle" .
+
+EM-1110-1-1005:Index_Error a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Index Error" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Index Error]" ;
+    skos:definition "A systematic error caused by deviation of an index mark or zero mark on an instrument having a scale or vernier, so that the instrument gives a non-zero reading when it should give a reading of zero. The distance error from the foot of a leveling rod to the nominal origin (theoretical zero) of the scale." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Index Error" .
+
+EM-1110-1-1005:Indirect_Leveling a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Indirect Leveling" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Indirect Leveling]" ;
+    skos:definition "The determination of differences of elevation from vertical angles and horizontal distances." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Indirect Leveling" .
+
+EM-1110-1-1005:Interior_Angle a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Interior Angle" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Interior Angle]" ;
+    skos:definition "An angle between adjacent sides of a closed figure and lying on the inside of the figure. The three angles within a triangle are interior angles." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Interior Angle" .
+
+EM-1110-1-1005:International_Foot a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "International Foot" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[International Foot]" ;
+    skos:definition "Defined by the ratio 30.48/100 meters." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "International Foot" .
+
+EM-1110-1-1005:International_System_of_Units a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "International System of Units" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[International System of Units]" ;
+    skos:altLabel "SI" ;
+    skos:definition "A self-consistent system of units adopted by the general Conference on Weights and Measures in 1960 as a modification of the then-existing metric system." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "International System of Units" .
+
+EM-1110-1-1005:Interpolation_Method a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Interpolation Method" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Interpolation Method]" ;
+    skos:definition "Determination of a intermediate value between given values using a known or assumed rate of change of the values between the given values." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Interpolation Method" .
+
+EM-1110-1-1005:Intersection a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Intersection" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Intersection]" ;
+    skos:definition "Determining the horizontal position of a point by observations from two or more points of known position. Thus measuring directions or distances that intersect at the station being located. A station whose horizontal position is located by intersection is known as an intersection station." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Intersection" .
+
+EM-1110-1-1005:Intervisibility a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Intervisibility" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Intervisibility]" ;
+    skos:definition "When two stations are visible to each other in a survey net." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Intervisibility" .
+
+EM-1110-1-1005:Invar a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Invar" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Invar]" ;
+    skos:definition "An alloy of iron containing nickel, and small amounts of chromium to increase hardness, manganese to facilitate drawing, and carbon to raise the elastic limit, and having a very low coefficient of thermal expansion (about 1/25 that of steel)." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Invar" .
+
+EM-1110-1-1005:Isogonic_Chart a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Isogonic Chart" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Isogonic Chart]" ;
+    skos:definition "A system of isogonic lines, each for a different value of the magnetic declination." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Isogonic Chart" .
+
+EM-1110-1-1005:Isogonic_Line a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Isogonic Line" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Isogonic Line]" ;
+    skos:definition "A line drawn on a chart or map and connecting all points representing points on the earth having equal magnetic declination at a given time." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Isogonic Line" .
+
+EM-1110-1-1005:Laplace_Azimuth a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Laplace Azimuth" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=489" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Laplace Azimuth]" ;
+    skos:definition "A geodetic azimuth derived from an astronomic azimuth by use of the Laplace equation." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Laplace Azimuth" .
+
+EM-1110-1-1005:Laplace_Condition a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Laplace Condition" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=490" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Laplace Condition]" ;
+    skos:definition "Arises from the fact that a deflection of the vertical in the plane of the prime vertical will give a difference between astronomic and geodetic longitude and between astronomic and geodetic azimuth. Conversely, the observed differences between astronomic and geodetic values of the longitude and of the azimuth may both be used to determine the deflection in the plane of the prime vertical." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Laplace Condition" .
+
+EM-1110-1-1005:Laplace_Equation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Laplace Equation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=490" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Laplace Equation]" ;
+    skos:definition "Expresses the relationship between astronomic and geodetic azimuths in terms of astronomic and geodetic longitudes and geodetic latitude." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Laplace Equation" .
+
+EM-1110-1-1005:Laplace_Station a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Laplace Station" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=490" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Laplace Station]" ;
+    skos:definition "A triangulation or traverse station at which a Laplace azimuth is determined. At a Laplace station both astronomic longitude and astronomic azimuth are determined." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Laplace Station" .
+
+EM-1110-1-1005:Least_Count a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Least Count" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=490" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Least Count]" ;
+    skos:definition "The finest reading that can be made directly (without estimation) from a vernier or micrometer." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Least Count" .
+
+EM-1110-1-1005:Least_Squares_Adjustment a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Least Squares Adjustment" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=490" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Least Squares Adjustment]" ;
+    skos:definition "The adjustment of the values of either the measured angles or the measured distances in a traverse using the condition that the sum of the squares of the residuals is a minimum." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Least Squares Adjustment" .
+
+EM-1110-1-1005:Level a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Level" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=490" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Level]" ;
+    skos:definition "Any device sensitive to the direction of gravity and used to indicate directions perpendicular to that of gravity at a point." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Level" .
+
+EM-1110-1-1005:Level_Datum a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Level Datum" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=490" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Level Datum]" ;
+    skos:definition "A level surface to which elevations are referred. The generally adopted level datum for leveling in the US is mean sea level. For local surveys, an arbitrary level datum is often adopted and defined in terms of an assumed elevation for some physical mark." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Level Datum" .
+
+EM-1110-1-1005:Level_Net a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Level Net" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=490" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Level Net]" ;
+    skos:definition "Lines of spirit leveling connected together to form a system of loops or circuits extending over an area." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Level Net" .
+
+EM-1110-1-1005:Line_of_Sight a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Line of Sight" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=490" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Line of Sight]" ;
+    skos:definition "The line extending from an instrument along which distant objects are seen, when viewed with a telescope or other sighting device." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Line of Sight" .
+
+EM-1110-1-1005:Local_Coordinate_System a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Local Coordinate System" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=490" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Local Coordinate System]" ;
+    skos:definition "Where the coordinate system origin is assigned arbitrary values and is within the region being surveyed and used principally for points within that region." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Local Coordinate System" .
+
+EM-1110-1-1005:Local_Datum a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Local Datum" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=490" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Local Datum]" ;
+    skos:definition "Defines a coordinate system that is used only over a region of very limited extent." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Local Datum" .
+
+EM-1110-1-1005:Loop_Traverse a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Loop Traverse" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=491" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Loop Traverse]" ;
+    skos:definition "A closed traverse that starts and ends at the same station. A pattern of measurements in the field, so that the final measurement is made at the same place as the first measurement." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Loop Traverse" .
+
+EM-1110-1-1005:Magnetic_Bearing a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Magnetic Bearing" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=491" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Magnetic Bearing]" ;
+    skos:definition "The angle with respect to magnetic north or magnetic south stated as east or west of the magnetic meridian." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Magnetic Bearing" .
+
+EM-1110-1-1005:Magnetic_Meridian a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Magnetic Meridian" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=491" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Magnetic Meridian]" ;
+    skos:definition "The vertical plane through the magnetic pole including the direction, at any point, of the horizontal component of the Earth's magnetic field." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Magnetic Meridian" .
+
+EM-1110-1-1005:Major_Semi-Axis a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Major Semi-Axis" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=491" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Major Semi-Axis]" ;
+    skos:definition "The line from the center of an ellipse to the extremity of the longest diameter. The term is also used to mean the length of the line." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Major Semi-Axis" .
+
+EM-1110-1-1005:Map a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Map" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=491" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Map]" ;
+    skos:definition "A conventional representation, usually on a plane surface and at an established scale, of the physical features (natural, artificial, or both) of a part or whole of the Earth's surface by means of signs and symbols and with the means of orientation indicated." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Map" .
+
+EM-1110-1-1005:Map_Accuracy a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Map Accuracy" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=491" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Map Accuracy]" ;
+    skos:definition "The accuracy with which a map represents. Three types of error commonly occur on maps: errors of representation, which occur because conventional signs must be used to represent natural or man-made features such as forests, buildings and cities; errors of identification, which occur because a non-existent feature is shown or is misidentified; and errors of position, which occur when an object is shown in the wrong position. Errors of position are commonly classified into two types: errors of horizontal location and errors of elevation. A third type, often neglected, is errors of orientation." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Map Accuracy" .
+
+EM-1110-1-1005:Map_Scale a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Map Scale" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=491" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Map Scale]" ;
+    skos:definition "The ratio of a specified distance on a map to the corresponding distance in the mapped object." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Map Scale" .
+
+EM-1110-1-1005:Mean_Angle a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Mean Angle" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=491" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Mean Angle]" ;
+    skos:definition "Average value of the angles." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Mean Angle" .
+
+EM-1110-1-1005:Mean_Lower_Low_Water a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Mean Lower Low Water" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=491" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Mean Lower Low Water]" ;
+    skos:altLabel "MLLW" ;
+    skos:definition "The average height of all lower low waters recorded over a 19-year period." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Mean Lower Low Water" .
+
+EM-1110-1-1005:Mean_Sea_Level_Datum a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Mean Sea Level Datum" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=491" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Mean Sea Level Datum]" ;
+    skos:definition "Adopted as a standard datum for heights or elevations. The Sea Level Datum of 1929, the current standard for geodetic leveling in the United States, is based on tidal observations over a number of years at various tide stations along the coasts." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Mean Sea Level Datum" .
+
+EM-1110-1-1005:Metric_Unit a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Metric Unit" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=491" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Metric Unit]" ;
+    skos:definition "Belonging to or derived from the SI system of units." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Metric Unit" .
+
+EM-1110-1-1005:Micrometer a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Micrometer" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=491" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Micrometer]" ;
+    skos:definition "In general, any instrument for measuring small distances very accurately. In astronomy and geodesy, a device, for attachment to a telescope or microscope, consisting of a mark moved across the field of view by a screw connected to a graduated drum and vernier. If the mark is a hair-like filament, the micrometer is called a filar micrometer." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Micrometer" .
+
+EM-1110-1-1005:Minor_Semi-Axis a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Minor Semi-Axis" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Minor Semi-Axis]" ;
+    skos:definition "The line from the center of an ellipse to the extremity of the shortest diameter. I.e., one of the two shortest lines from the center to the ellipse. The term is also used to mean the length of the line." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Minor Semi-Axis" .
+
+EM-1110-1-1005:Misclosure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Misclosure" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Misclosure]" ;
+    skos:definition "The difference between a computed and measured value." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Misclosure" .
+
+EM-1110-1-1005:Monument a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Monument" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Monument]" ;
+    skos:definition "A physical object used as an indication of the position on the ground of a survey station." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Monument" .
+
+EM-1110-1-1005:NADCON a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "NADCON" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[NADCON]" ;
+    skos:definition "The National Geodetic Survey developed the conversion program NADCON (North American Datum Conversion) to convert to and from North American Datum of 1983. The technique used is based on a biharmonic equation classically used to model plate deflections. NADCON works exclusively in geographical coordinates (latitude/longitude)." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "NADCON" .
+
+EM-1110-1-1005:Nadir a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Nadir" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Nadir]" ;
+    skos:definition "The point directly beneath the instrument and directly opposite to the zenith or the lowest point." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Nadir" .
+
+EM-1110-1-1005:National_Geodetic_Vertical_Datum_1929 a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "National Geodetic Vertical Datum 1929" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[National Geodetic Vertical Datum 1929]" ;
+    skos:definition "Formerly adopted as the standard geodetic datum for heights, based on an adjustment holding 26 primary tide stations in North America fixed." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "National Geodetic Vertical Datum 1929" .
+
+EM-1110-1-1005:National_Map_Accuracy_Standards a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "National Map Accuracy Standards" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[National Map Accuracy Standards]" ;
+    skos:definition "Specifications of the accuracy required of topographic maps published by the US at various scales." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "National Map Accuracy Standards" .
+
+EM-1110-1-1005:National_Tidal_Datum_Epoch a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "National Tidal Datum Epoch" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[National Tidal Datum Epoch]" ;
+    skos:definition "A period of 19 years adopted by the National Ocean Survey as the period over which observations of tides are to be taken and reduced to average values for tidal datums." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "National Tidal Datum Epoch" .
+
+EM-1110-1-1005:Network a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Network" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Network]" ;
+    skos:definition "Interconnected system of surveyed points." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Network" .
+
+EM-1110-1-1005:Non-SI_units a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Non-SI units" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Non-SI units]" ;
+    skos:definition "Units of measurement not associated with International System of Units (SI)." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Non-SI units" .
+
+EM-1110-1-1005:North_American_Datum_of_1927 a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "North American Datum of 1927" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[North American Datum of 1927]" ;
+    skos:definition "Formerly adopted as the standard geodetic datum for horizontal positioning. Based on the Clarke ellipsoid of 1866, the geodetic positions of this system are derived from a readjustment of survey observations throughout North America." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "North American Datum of 1927" .
+
+EM-1110-1-1005:North_American_Datum_of_1983 a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "North American Datum of 1983" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[North American Datum of 1983]" ;
+    skos:definition "Adopted as the standard geodetic datum for horizontal positioning. Based on the Geodetic Reference System of 1980, the geodetic positions of this system are derived from a readjustment of survey observations throughout North America." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "North American Datum of 1983" .
+
+EM-1110-1-1005:North_American_Vertical_Datum_of_1988 a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "North American Vertical Datum of 1988" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=492" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[North American Vertical Datum of 1988]" ;
+    skos:definition "Adopted as the standard geodetic datum for heights." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "North American Vertical Datum of 1988" .
+
+EM-1110-1-1005:Northing a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Northing" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=493" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Northing]" ;
+    skos:definition "A linear distance, in the coordinate system of a map grid, northwards from the east-west line through the origin (or false origin)." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Northing" .
+
+EM-1110-1-1005:Open_Traverse a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Open Traverse" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=493" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Open Traverse]" ;
+    skos:definition "Begins from a station of known or adopted position, but does not end upon such a station." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Open Traverse" .
+
+EM-1110-1-1005:Optical_Micrometer a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Optical Micrometer" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=493" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Optical Micrometer]" ;
+    skos:definition "Consists of a prism or lens placed in the path of light entering a telescope and rotatable, by means of a graduated linkage, about a horizontal axis perpendicular to the optical axis of the telescope axis. Also called an optical-mechanical compensator. The device is usually placed in front of the objective of a telescope, but may be placed immediately after it. The parallel-plate optical micrometer is the form usually found in leveling instruments." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Optical Micrometer" .
+
+EM-1110-1-1005:Optical_Plummet a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Optical Plummet" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=493" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Optical Plummet]" ;
+    skos:definition "A small telescope having a 90Â° bend in its optical axis and attached to an instrument in such a way that the line of sight proceeds horizontally from the eyepiece to a point on the vertical axis of the instrument and from that point vertically downwards. In use, the observer, looking into the plummet, brings a point on the instrument vertically above a specified point (usually a geodetic or other mark) below it." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Optical Plummet" .
+
+EM-1110-1-1005:Order_of_Accuracy a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Order of Accuracy" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=493" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Order of Accuracy]" ;
+    skos:definition "Defines the general accuracy of the measurements made in a survey. The order of accuracy of surveys are divided into four classes labeled: First Order, Second Order, Third Order and Fourth or lower order." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Order of Accuracy" .
+
+EM-1110-1-1005:Origin a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Origin" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=493" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Origin]" ;
+    skos:definition "That point in a coordinate system which has defined initial coordinates and not coordinates determined by measurement. This point is usually given the coordinates (0,0) in a coordinate system in the plane and (0,0,0) in a coordinate system in space." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Origin" .
+
+EM-1110-1-1005:Orthometric_Height a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Orthometric Height" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=493" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Orthometric Height]" ;
+    skos:definition "The elevation H of a point above or below the geoid." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Orthometric Height" .
+
+EM-1110-1-1005:Parallax a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Parallax" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=493" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Parallax]" ;
+    skos:definition "The apparent displacement of the position of a body, with respect to a reference point or system, caused by a shift in the point of observation." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Parallax" .
+
+EM-1110-1-1005:Philadelphia_Leveling_Rod a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Philadelphia Leveling Rod" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=493" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Philadelphia Leveling Rod]" ;
+    skos:definition "Having a target but with graduations so styled that the rod may also be used as a self-reading leveling rod. Also called a Philadelphia rod. If a length greater than 7 feet is needed, the target is clamped at 7 feet and raised by extending the rod. When the target is used, the rod is read by vernier to 0.001 foot. When the rod is used as a self-reading leveling rod, the rod is read to 0.005 foot." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Philadelphia Leveling Rod" .
+
+EM-1110-1-1005:Photogrammetry a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Photogrammetry" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=493" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Photogrammetry]" ;
+    skos:definition "Deducing the physical dimensions of objects from measurements on photographs of the objects. " ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Photogrammetry" .
+
+EM-1110-1-1005:Picture_Point a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Picture Point" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=493" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Picture Point]" ;
+    skos:definition "A terrain feature easily identified on an aerial photograph and whose horizontal or vertical position or both have been determined by survey measurements. Picture points are marked on the aerial photographs by the surveyor, and are used by the photomapper." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Picture Point" .
+
+EM-1110-1-1005:Planetable a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Planetable" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Planetable]" ;
+    skos:definition "A field device for plotting the lines of a survey directly from observations. It consists essentially of a drawing board mounted on a tripod, with a leveling device designed as part of the board and tripod." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Planetable" .
+
+EM-1110-1-1005:Planimetric_Feature a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Planimetric Feature" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Planimetric Feature]" ;
+    skos:definition "Item detailed on a planimetric map." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Planimetric Feature" .
+
+EM-1110-1-1005:Plumb_Line a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Plumb Line" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Plumb Line]" ;
+    skos:definition "The direction normal to the geopotential field. The continuous curve to which the gradient of gravity is everywhere tangential." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Plumb Line" .
+
+EM-1110-1-1005:Positional_Error a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Positional Error" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Positional Error]" ;
+    skos:definition "The amount by which the actual location of a cartographic feature fails to agree with the feature's true position." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Positional Error" .
+
+EM-1110-1-1005:Post-Processed_Real-Time_Kinematic_GPS a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Post-Processed Real-Time Kinematic GPS" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Post-Processed Real-Time Kinematic GPS]" ;
+    skos:definition "GPS carrier phase positioning performed without real-time data link and solution" ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Post-Processed Real-Time Kinematic GPS" .
+
+EM-1110-1-1005:Precision a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Precision" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Precision]" ;
+    skos:definition "The amount by which a measurement deviates from its mean." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Precision" .
+
+EM-1110-1-1005:Prime_Meridian a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Prime Meridian" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Prime Meridian]" ;
+    skos:definition "The meridian of longitude 0Â°, used as the origin for measurement of longitude. The meridian of Greenwich, England, is almost universally used for this purpose." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Prime Meridian" .
+
+EM-1110-1-1005:Prime_Vertical a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Prime Vertical" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Prime Vertical]" ;
+    skos:definition "The vertical circle through the east and west points of the horizon. It may be true, magnetic, compass or grid depending upon which east or west points are involved." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Prime Vertical" .
+
+EM-1110-1-1005:Project_Control a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project Control" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Project Control]" ;
+    skos:definition "Control used for a specific project." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Project Control" .
+
+EM-1110-1-1005:Project_Datum a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Project Datum" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Project Datum]" ;
+    skos:definition "Datum used for a specific project." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Project Datum" .
+
+EM-1110-1-1005:Projection a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Projection" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Projection]" ;
+    skos:definition "A set of functions, or the corresponding geometric constructions, relating points on one surface to points on another surface. A projection requires every point on the first surface to correspond one-to-one to points on the second surface." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Projection" .
+
+EM-1110-1-1005:Quadrangle a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Quadrangle" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Quadrangle]" ;
+    skos:definition "Consisting of four specified points and the lines or line segments on which they lie. The quadrangle and the quadrilateral differ in that the quadrangle is defined by four specified angle points, the quadrilateral by four specified lines or line-segments." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Quadrangle" .
+
+EM-1110-1-1005:Random_Error a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Random Error" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Random Error]" ;
+    skos:definition "Randomly distributed deviations from the mean value." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Random Error" .
+
+EM-1110-1-1005:Range_Pole a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Range Pole" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=494" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Range Pole]" ;
+    skos:definition "A simple rod fitted with a sharp-pointed, shoe of steel and usually painted alternately in red and white bands at 1-foot intervals." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Range Pole" .
+
+EM-1110-1-1005:Readings a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Readings" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Readings]" ;
+    skos:definition "The observed value obtained by noting and/or recording scales." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Readings" .
+
+EM-1110-1-1005:Real-Time_Kinematic_GPS a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Real-Time Kinematic GPS" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Real-Time Kinematic GPS]" ;
+    skos:definition "GPS carrier phase processing and positioning in real-time." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Real-Time Kinematic GPS" .
+
+EM-1110-1-1005:Real-time a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Real-time" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Real-time]" ;
+    skos:definition "An event or measurement reported or recorded at the same time as the event is occurring through the absence of delay in getting, sending and receiving data." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Real-time" .
+
+EM-1110-1-1005:Reciprocal_Leveling a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Reciprocal Leveling" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Reciprocal Leveling]" ;
+    skos:definition "Measuring vertical angles or making rod readings from two instrument positions for the purpose of compensating for the effects of refraction." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Reciprocal Leveling" .
+
+EM-1110-1-1005:Rectangular_Coordinate_Systems a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Rectangular Coordinate Systems" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Rectangular Coordinate Systems]" ;
+    skos:definition "Coordinates on any system in which the axes of reference intersect at right angles." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Rectangular Coordinate Systems" .
+
+EM-1110-1-1005:Redundant_Measurements a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Redundant Measurements" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Redundant Measurements]" ;
+    skos:definition "Taking more measurements than are minimally required for a unique solution." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Redundant Measurements" .
+
+<https://usace-data.com/civil-works/glossary/EM-1110-1-1005#Reference_Meridian,_Magnetic> a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Reference Meridian, Magnetic" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Reference Meridian, Magnetic]" ;
+    skos:definition "Based on the magnetic pole." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Reference Meridian, Magnetic" .
+
+<https://usace-data.com/civil-works/glossary/EM-1110-1-1005#Reference_Meridian,_True> a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Reference Meridian, True" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Reference Meridian, True]" ;
+    skos:definition "Based on the astronomical meridian." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Reference Meridian, True" .
+
+EM-1110-1-1005:Reference_Point a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Reference Point" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Reference Point]" ;
+    skos:definition "Used as an origin from which measurements are taken or to which measurements are referred." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Reference Point" .
+
+EM-1110-1-1005:Refraction a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Refraction" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Refraction]" ;
+    skos:definition "The bending of rays by the substance through which the rays pass. The amount and direction of bending are determined by its refractive index." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Refraction" .
+
+EM-1110-1-1005:Relative_Accuracy a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Relative Accuracy" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Relative Accuracy]" ;
+    skos:definition "Indicated by the dimensions of the relative confidence ellipse between two points. A quantity expressing the effect of random errors on the location of one point or feature with respect to another." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Relative Accuracy" .
+
+EM-1110-1-1005:Repeating_Theodolite a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Repeating Theodolite" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Repeating Theodolite]" ;
+    skos:definition "Designed so that the sum of successive measurements of an angle can be read directly on the graduated horizontal circle." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Repeating Theodolite" .
+
+EM-1110-1-1005:Resection a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Resection" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Resection]" ;
+    skos:definition "Determining the location of a point by extending lines of known direction to two other known points." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Resection" .
+
+EM-1110-1-1005:Set-up a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Set-up" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Set-up]" ;
+    skos:definition "In general, the situation in which a surveying instrument is in position at a point from which observations are made." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Set-up" .
+
+EM-1110-1-1005:Sexagesimal_System a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Sexagesimal System" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=495" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Sexagesimal System]" ;
+    skos:definition "Notation by increments of 60. As the division of the circle into 360Â°, each degree into 60 minutes, and each minute into 60 seconds." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Sexagesimal System" .
+
+EM-1110-1-1005:Spheroid a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Spheroid" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Spheroid]" ;
+    skos:definition "Used as a synonym for ellipsoid." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Spheroid" .
+
+EM-1110-1-1005:Spirit_Level a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Spirit Level" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Spirit Level]" ;
+    skos:definition "A closed glass tube (vial) of circular cross section. Its center line forms a circular arc with precise form and filled with ether or liquid of low viscosity, with enough free space left for a bubble of air or gas." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Spirit Level" .
+
+EM-1110-1-1005:Stadia_Constant a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Stadia Constant" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Stadia Constant]" ;
+    skos:definition "The sum of the focal length of a telescope and the distance from the vertical axis of the instrument on which the telescope is mounted to the center of the objective lens-system." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Stadia Constant" .
+
+EM-1110-1-1005:Stadia_Traverse a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Stadia Traverse" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Stadia Traverse]" ;
+    skos:definition "Distances are determined using a stadia rod. A stadia traverse is suited to regions of moderate relief with an adequate network of roads. If done carefully, such a traverse can establish elevations accurate enough for compiling maps with any contour interval now standard." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Stadia Traverse" .
+
+EM-1110-1-1005:Standard_Error a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Standard Error" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Standard Error]" ;
+    skos:definition "The standard deviation of the errors associated with physical measurements of an unknown quantity, or statistical estimates of an unknown quantity or of a random variable." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Standard Error" .
+
+EM-1110-1-1005:State_Plane_Coordinate_System a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "State Plane Coordinate System" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[State Plane Coordinate System]" ;
+    skos:altLabel "SPCS" ;
+    skos:definition "A planar reference coordinate system used in the United States." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "State Plane Coordinate System" .
+
+EM-1110-1-1005:Strength_of_Figure a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Strength of Figure" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Strength of Figure]" ;
+    skos:definition "A number relating the precision in positioning with the geometry with which measurements are made." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Strength of Figure" .
+
+EM-1110-1-1005:Subtense_Bar a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Subtense Bar" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Subtense Bar]" ;
+    skos:definition "A bar with two marks at a fixed, known distance apart used for determining the horizontal distance from an observer by means of the measuring the angle subtended at the observer between the marks." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Subtense Bar" .
+
+EM-1110-1-1005:Systematic_Error a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Systematic Error" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Systematic Error]" ;
+    skos:definition "Errors that affect the position (bias) of the mean. Systematic errors are due to unmodeled affects on the measurements that have a constant or systematic value." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Systematic Error" .
+
+EM-1110-1-1005:Taping a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Taping" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Taping]" ;
+    skos:definition "Measuring a distance on the using a surveyor's tape." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Taping" .
+
+EM-1110-1-1005:Three-wire_Leveling a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Three-wire Leveling" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Three-wire Leveling]" ;
+    skos:definition "The scale on the leveling rod is read at each of the three lines and the average is used for the final result." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Three-wire Leveling" .
+
+EM-1110-1-1005:Topographic_Map a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Topographic Map" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Topographic Map]" ;
+    skos:definition "A map showing the horizontal and vertical locations of the natural and man-made features represented and the projected elevations of the surroundings." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Topographic Map" .
+
+EM-1110-1-1005:Transformation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Transformation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Transformation]" ;
+    skos:definition "Converting a position from one coordinate system to another." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Transformation" .
+
+EM-1110-1-1005:Transit a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Transit" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=496" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Transit]" ;
+    skos:definition "The apparent passage of a star or other celestial body across a defined line of the celestial sphere." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Transit" .
+
+EM-1110-1-1005:Transit_Rule a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Transit Rule" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Transit Rule]" ;
+    skos:definition "The correction to be applied to the departure (or latitude) of any course has the same ratio to the total misclosure in departure (or latitude) as the departure (latitude) of the course has to the arithmetical sum of all the departures (latitudes) in the traverse. The transit rule is often used when it is believed that the misclosure is caused less by errors in the measured angles than by errors in the measured distances." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Transit Rule" .
+
+EM-1110-1-1005:Transverse_Mercator_Projection a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Transverse Mercator Projection" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Transverse Mercator Projection]" ;
+    skos:definition "Mercator map projection calculated for a cylinder with axis in the equatorial plane." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Transverse Mercator Projection" .
+
+EM-1110-1-1005:Traverse a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Traverse" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Traverse]" ;
+    skos:definition "A sequence of points along which surveying measurements are made." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Traverse" .
+
+EM-1110-1-1005:Triangulation a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Triangulation" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Triangulation]" ;
+    skos:definition "Determination of positions in a network by the measurement of angles between stations." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Triangulation" .
+
+EM-1110-1-1005:Trigonometric_heighting a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Trigonometric heighting" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Trigonometric heighting]" ;
+    skos:definition "The trigonometric determination of differences of elevation from observed vertical angles and measured distances." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Trigonometric heighting" .
+
+EM-1110-1-1005:Trilateration a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Trilateration" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Trilateration]" ;
+    skos:definition "Determination of positions in a network by the measurement of distances between stations using the intersection of two or more distances to a point." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Trilateration" .
+
+EM-1110-1-1005:US_Coast_%26_Geodetic_Survey a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "US Coast & Geodetic Survey" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[US Coast & Geodetic Survey]" ;
+    skos:altLabel "NOS",
+        "National Ocean Service",
+        "USC&GS" ;
+    skos:definition "Now known as National Ocean Service (NOS)." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "US Coast & Geodetic Survey" .
+
+EM-1110-1-1005:US_Survey_Foot a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "US Survey Foot" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[US Survey Foot]" ;
+    skos:definition "The unit of length defined by 1200/3937 m" ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "US Survey Foot" .
+
+EM-1110-1-1005:Universal_Transverse_Mercator a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Universal Transverse Mercator" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Universal Transverse Mercator]" ;
+    skos:definition "A worldwide metric military coordinate system." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Universal Transverse Mercator" .
+
+EM-1110-1-1005:VERTCON a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "VERTCON" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[VERTCON]" ;
+    skos:altLabel "vertical datum conversion" ;
+    skos:definition "Acronym for vertical datum conversion. VERTCON is the computer software that converts orthometric heights between NGVD 29 to NAVD 88." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "VERTCON" .
+
+EM-1110-1-1005:Variance-Covariance_Matrix a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Variance-Covariance Matrix" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Variance-Covariance Matrix]" ;
+    skos:definition "A matrix whose elements along the main diagonal are called the variances of the corresponding variables; the elements off the main diagonal are called the covariances." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Variance-Covariance Matrix" .
+
+EM-1110-1-1005:Vernier a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Vernier" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Vernier]" ;
+    skos:definition "An auxiliary scale used in reading a primary scale. The total length of a given number of divisions on a vernier is equal to the total length of one more or one less than the same number of divisions on the primary scaled." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Vernier" .
+
+EM-1110-1-1005:Vertical_Angle a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Vertical Angle" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Vertical Angle]" ;
+    skos:definition "An angle in a vertical plane either in elevation or depression from the horizontal." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Vertical Angle" .
+
+EM-1110-1-1005:Vertical_Circle a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Vertical Circle" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=498" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Vertical Circle]" ;
+    skos:definition "A graduated scale mounted on an instrument used to measure vertical angles." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Vertical Circle" .
+
+EM-1110-1-1005:Vertical_Datum a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Vertical Datum" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=498" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Vertical Datum]" ;
+    skos:definition "Any level surface used as a reference for elevations. Although a level surface is not a plane, the vertical datum is frequently referred to as the datum plane." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Vertical Datum" .
+
+EM-1110-1-1005:World_Geodetic_System_of_1984 a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "World Geodetic System of 1984" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=498" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[World Geodetic System of 1984]" ;
+    skos:definition "Adopted as the standard geodetic datum for GPS positioning. Based on the World Geodetic System reference ellipsoid." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "World Geodetic System of 1984" .
+
+EM-1110-1-1005:Wye_Level a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Wye Level" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=498" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Wye Level]" ;
+    skos:definition "Having the telescope and attached spirit level supported in wyes (Y's) in which it can be rotated about its longitudinal axis (collimation axis) and from which it can be lifted and reversed, end for end. Also called a Y-level and wye-type leveling instrument." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Wye Level" .
+
+EM-1110-1-1005:Zenith a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Zenith" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=498" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Zenith]" ;
+    skos:definition "The point above the instrument where an extension of a plumb (vertical) line at the observer's position intersects the celestial sphere." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Zenith" .
+
+EM-1110-1-1005:Zenith_Angle a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Zenith Angle" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=498" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Zenith Angle]" ;
+    skos:definition "Measured in a positive direction downwards from the observer's zenith to the observed target." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Zenith Angle" .
+
+EM-1110-1-1005:Zenith_Distance a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "Zenith Distance" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=498" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[Zenith Distance]" ;
+    skos:definition "The complement of the altitude, the angular distance from the zenith of the celestial body measured along a vertical circle." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "Zenith Distance" .
+
+EM-1110-1-1005:tribrach a wov:GlossaryTerm,
+        skos:Concept ;
+    rdfs:label "tribrach" ;
+    dcterms:bibliographicCitation "https://www.publications.usace.army.mil/portals/76/publications/engineermanuals/em_1110-1-1005.pdf#page=497" ;
+    pav:wasDerivedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml#term[tribrach]" ;
+    skos:definition "The three-armed base, of a surveying instrument, in which the foot screws used in leveling the instrument are placed at the ends of the arms. Also called a leveling base or leveling head." ;
+    skos:inScheme EM-1110-1-1005: ;
+    skos:prefLabel "tribrach" .
+
+EM-1110-1-1005: a wov:Glossary,
+        owl:Ontology,
+        skos:ConceptScheme,
+        voaf:Vocabulary ;
+    rdfs:label "Engineering Manual 1110-1-1005 Control and Topographic Surveying" ;
+    dcterms:created "2024-07-16T04:26:11.489463+00:00"^^xsd:dateTime ;
+    dcterms:description "Engineering Manual 1110-1-1005, Control and Topographic Surveying, defines various acronyms and terms commonly used in this instruction to describe survey activities, including technical specifications, procedural guidance, and quality control criteria related to site plans as as-built facility mapping. These terms are defined in the glossary section of the manual." ;
+    dcterms:publisher "None" ;
+    dcterms:rights "MIT" ;
+    dcterms:title "Engineering Manual 1110-1-1005 Control and Topographic Surveying" ;
+    pav:ImportedFrom "glossaries/CivilWorks/EM-1110-1-1005.yaml" ;
+    pav:createdOn "2024-07-16T04:26:11.489463+00:00"^^xsd:dateTime ;
+    pav:createdWith "gloss" ;
+    pav:wasInfluencedBy "Engineering Manual 1110-1-1005 Control and Topographic Surveying" ;
+    vann:preferredNamespaceUri "https://usace-data.com/civil-works/glossary/EM-1110-1-1005#" ;
+    skos:hasTopConcept EM-1110-1-1005:Absolute_GPS,
+        EM-1110-1-1005:Accuracy,
+        EM-1110-1-1005:Adjustment,
+        EM-1110-1-1005:Altimeter,
+        EM-1110-1-1005:Altitude,
+        EM-1110-1-1005:Angle_of_Depression,
+        EM-1110-1-1005:Angle_of_Elevation,
+        EM-1110-1-1005:Angular_Misclosure,
+        EM-1110-1-1005:Archiving,
+        EM-1110-1-1005:Astronomical_Latitude,
+        EM-1110-1-1005:Astronomical_Longitude,
+        EM-1110-1-1005:Astronomical_Triangle,
+        EM-1110-1-1005:Atmospheric_Refraction,
+        EM-1110-1-1005:Autonomous_GPS,
+        EM-1110-1-1005:Azimuth,
+        EM-1110-1-1005:Azimuth_Angle,
+        EM-1110-1-1005:Azimuth_Closure,
+        EM-1110-1-1005:Backsight,
+        EM-1110-1-1005:Barometric_Leveling,
+        EM-1110-1-1005:Base_Control,
+        EM-1110-1-1005:Base_Points,
+        EM-1110-1-1005:Base_net,
+        EM-1110-1-1005:Baseline,
+        EM-1110-1-1005:Bearing,
+        EM-1110-1-1005:Benchmark,
+        EM-1110-1-1005:Best_Fit,
+        EM-1110-1-1005:Bipod,
+        EM-1110-1-1005:Bluebook,
+        EM-1110-1-1005:Blunder,
+        EM-1110-1-1005:Bureau_International_de_l%27Heure,
+        EM-1110-1-1005:CORPSCON,
+        EM-1110-1-1005:Cadastral_Survey,
+        EM-1110-1-1005:Calibration,
+        EM-1110-1-1005:Cartesian_Coordinates,
+        EM-1110-1-1005:Cartesian_System,
+        EM-1110-1-1005:Celestial_Equator,
+        EM-1110-1-1005:Celestial_pole,
+        EM-1110-1-1005:Celestial_sphere,
+        EM-1110-1-1005:Central_Meridian,
+        EM-1110-1-1005:Chain,
+        EM-1110-1-1005:Chained_Traverse,
+        EM-1110-1-1005:Chaining,
+        EM-1110-1-1005:Chart_Datum,
+        EM-1110-1-1005:Chi-square_Testing,
+        EM-1110-1-1005:Chronometer,
+        EM-1110-1-1005:Circle_Position,
+        EM-1110-1-1005:Circuit_Closure,
+        EM-1110-1-1005:Clarke_1866_Ellipsoid,
+        EM-1110-1-1005:Closed_Traverse,
+        EM-1110-1-1005:Collimation,
+        EM-1110-1-1005:Collimation_Error,
+        EM-1110-1-1005:Compass_Rule,
+        EM-1110-1-1005:Confidence_Level,
+        EM-1110-1-1005:Conformal,
+        EM-1110-1-1005:Contour,
+        EM-1110-1-1005:Control,
+        EM-1110-1-1005:Control_Densification,
+        EM-1110-1-1005:Control_Monuments,
+        EM-1110-1-1005:Control_Point,
+        EM-1110-1-1005:Control_Survey,
+        EM-1110-1-1005:Control_Traverse,
+        EM-1110-1-1005:Conventional_Terrestrial_Pole_%28CTP%29,
+        EM-1110-1-1005:Coordinate_Transformation,
+        EM-1110-1-1005:Crandall_Method,
+        EM-1110-1-1005:Cross_sections,
+        EM-1110-1-1005:Curvature,
+        EM-1110-1-1005:Datum,
+        EM-1110-1-1005:Declination,
+        EM-1110-1-1005:Deflection_Traverse,
+        EM-1110-1-1005:Deflection_of_the_Vertical,
+        EM-1110-1-1005:Deformation_Monitoring,
+        EM-1110-1-1005:Departure,
+        EM-1110-1-1005:Differential_GPS,
+        EM-1110-1-1005:Differential_Leveling,
+        EM-1110-1-1005:Direct_Leveling,
+        EM-1110-1-1005:Direction,
+        EM-1110-1-1005:Distance_Angle,
+        EM-1110-1-1005:Dumpy_Level,
+        EM-1110-1-1005:Earth-Centered_Ellipsoid,
+        EM-1110-1-1005:Easting,
+        EM-1110-1-1005:Eccentricity,
+        EM-1110-1-1005:Electronic_Distance_Measurement,
+        EM-1110-1-1005:Elevation,
+        EM-1110-1-1005:Ellipsoid,
+        EM-1110-1-1005:Ellipsoid_height,
+        EM-1110-1-1005:Error,
+        EM-1110-1-1005:Error_Ellipse,
+        EM-1110-1-1005:Error_of_Closure,
+        EM-1110-1-1005:Finite_Element_Method,
+        EM-1110-1-1005:Fixed_Elevation,
+        EM-1110-1-1005:Foresight,
+        EM-1110-1-1005:Frequency,
+        EM-1110-1-1005:Geodesic_Line,
+        EM-1110-1-1005:Geodesy,
+        EM-1110-1-1005:Geodetic_Control,
+        EM-1110-1-1005:Geodetic_Coordinates,
+        EM-1110-1-1005:Geodetic_Height,
+        EM-1110-1-1005:Geodetic_Latitude,
+        EM-1110-1-1005:Geodetic_Leveling,
+        EM-1110-1-1005:Geodetic_Longitude,
+        EM-1110-1-1005:Geodetic_North,
+        EM-1110-1-1005:Geodetic_Reference_System_of_1980,
+        EM-1110-1-1005:Geoid,
+        EM-1110-1-1005:Global_Positioning_System,
+        EM-1110-1-1005:Gravimeter,
+        EM-1110-1-1005:Gravity,
+        EM-1110-1-1005:Greenwich_Meridian,
+        EM-1110-1-1005:Grid_Azimuth,
+        EM-1110-1-1005:Grid_Inverse,
+        EM-1110-1-1005:Grid_Meridian,
+        EM-1110-1-1005:Gunter%27s_Chain,
+        EM-1110-1-1005:Gyrotheodolite,
+        EM-1110-1-1005:Histogram,
+        EM-1110-1-1005:Horizontal_Control,
+        EM-1110-1-1005:Hour_Circle,
+        EM-1110-1-1005:Index_Error,
+        EM-1110-1-1005:Indirect_Leveling,
+        EM-1110-1-1005:Interior_Angle,
+        EM-1110-1-1005:International_Foot,
+        EM-1110-1-1005:International_System_of_Units,
+        EM-1110-1-1005:Interpolation_Method,
+        EM-1110-1-1005:Intersection,
+        EM-1110-1-1005:Intervisibility,
+        EM-1110-1-1005:Invar,
+        EM-1110-1-1005:Isogonic_Chart,
+        EM-1110-1-1005:Isogonic_Line,
+        EM-1110-1-1005:Laplace_Azimuth,
+        EM-1110-1-1005:Laplace_Condition,
+        EM-1110-1-1005:Laplace_Equation,
+        EM-1110-1-1005:Laplace_Station,
+        EM-1110-1-1005:Least_Count,
+        EM-1110-1-1005:Least_Squares_Adjustment,
+        EM-1110-1-1005:Level,
+        EM-1110-1-1005:Level_Datum,
+        EM-1110-1-1005:Level_Net,
+        EM-1110-1-1005:Line_of_Sight,
+        EM-1110-1-1005:Local_Coordinate_System,
+        EM-1110-1-1005:Local_Datum,
+        EM-1110-1-1005:Loop_Traverse,
+        EM-1110-1-1005:Magnetic_Bearing,
+        EM-1110-1-1005:Magnetic_Meridian,
+        EM-1110-1-1005:Major_Semi-Axis,
+        EM-1110-1-1005:Map,
+        EM-1110-1-1005:Map_Accuracy,
+        EM-1110-1-1005:Map_Scale,
+        EM-1110-1-1005:Mean_Angle,
+        EM-1110-1-1005:Mean_Lower_Low_Water,
+        EM-1110-1-1005:Mean_Sea_Level_Datum,
+        EM-1110-1-1005:Metric_Unit,
+        EM-1110-1-1005:Micrometer,
+        EM-1110-1-1005:Minor_Semi-Axis,
+        EM-1110-1-1005:Misclosure,
+        EM-1110-1-1005:Monument,
+        EM-1110-1-1005:NADCON,
+        EM-1110-1-1005:Nadir,
+        EM-1110-1-1005:National_Geodetic_Vertical_Datum_1929,
+        EM-1110-1-1005:National_Map_Accuracy_Standards,
+        EM-1110-1-1005:National_Tidal_Datum_Epoch,
+        EM-1110-1-1005:Network,
+        EM-1110-1-1005:Non-SI_units,
+        EM-1110-1-1005:North_American_Datum_of_1927,
+        EM-1110-1-1005:North_American_Datum_of_1983,
+        EM-1110-1-1005:North_American_Vertical_Datum_of_1988,
+        EM-1110-1-1005:Northing,
+        EM-1110-1-1005:Open_Traverse,
+        EM-1110-1-1005:Optical_Micrometer,
+        EM-1110-1-1005:Optical_Plummet,
+        EM-1110-1-1005:Order_of_Accuracy,
+        EM-1110-1-1005:Origin,
+        EM-1110-1-1005:Orthometric_Height,
+        EM-1110-1-1005:Parallax,
+        EM-1110-1-1005:Philadelphia_Leveling_Rod,
+        EM-1110-1-1005:Photogrammetry,
+        EM-1110-1-1005:Picture_Point,
+        EM-1110-1-1005:Planetable,
+        EM-1110-1-1005:Planimetric_Feature,
+        EM-1110-1-1005:Plumb_Line,
+        EM-1110-1-1005:Positional_Error,
+        EM-1110-1-1005:Post-Processed_Real-Time_Kinematic_GPS,
+        EM-1110-1-1005:Precision,
+        EM-1110-1-1005:Prime_Meridian,
+        EM-1110-1-1005:Prime_Vertical,
+        EM-1110-1-1005:Project_Control,
+        EM-1110-1-1005:Project_Datum,
+        EM-1110-1-1005:Projection,
+        EM-1110-1-1005:Quadrangle,
+        EM-1110-1-1005:Random_Error,
+        EM-1110-1-1005:Range_Pole,
+        EM-1110-1-1005:Readings,
+        EM-1110-1-1005:Real-Time_Kinematic_GPS,
+        EM-1110-1-1005:Real-time,
+        EM-1110-1-1005:Reciprocal_Leveling,
+        EM-1110-1-1005:Rectangular_Coordinate_Systems,
+        EM-1110-1-1005:Redundant_Measurements,
+        <https://usace-data.com/civil-works/glossary/EM-1110-1-1005#Reference_Meridian,_Magnetic>,
+        <https://usace-data.com/civil-works/glossary/EM-1110-1-1005#Reference_Meridian,_True>,
+        EM-1110-1-1005:Reference_Point,
+        EM-1110-1-1005:Refraction,
+        EM-1110-1-1005:Relative_Accuracy,
+        EM-1110-1-1005:Repeating_Theodolite,
+        EM-1110-1-1005:Resection,
+        EM-1110-1-1005:Set-up,
+        EM-1110-1-1005:Sexagesimal_System,
+        EM-1110-1-1005:Spheroid,
+        EM-1110-1-1005:Spirit_Level,
+        EM-1110-1-1005:Stadia_Constant,
+        EM-1110-1-1005:Stadia_Traverse,
+        EM-1110-1-1005:Standard_Error,
+        EM-1110-1-1005:State_Plane_Coordinate_System,
+        EM-1110-1-1005:Strength_of_Figure,
+        EM-1110-1-1005:Subtense_Bar,
+        EM-1110-1-1005:Systematic_Error,
+        EM-1110-1-1005:Taping,
+        EM-1110-1-1005:Three-wire_Leveling,
+        EM-1110-1-1005:Topographic_Map,
+        EM-1110-1-1005:Transformation,
+        EM-1110-1-1005:Transit,
+        EM-1110-1-1005:Transit_Rule,
+        EM-1110-1-1005:Transverse_Mercator_Projection,
+        EM-1110-1-1005:Traverse,
+        EM-1110-1-1005:Triangulation,
+        EM-1110-1-1005:Trigonometric_heighting,
+        EM-1110-1-1005:Trilateration,
+        EM-1110-1-1005:US_Coast_%26_Geodetic_Survey,
+        EM-1110-1-1005:US_Survey_Foot,
+        EM-1110-1-1005:Universal_Transverse_Mercator,
+        EM-1110-1-1005:VERTCON,
+        EM-1110-1-1005:Variance-Covariance_Matrix,
+        EM-1110-1-1005:Vernier,
+        EM-1110-1-1005:Vertical_Angle,
+        EM-1110-1-1005:Vertical_Circle,
+        EM-1110-1-1005:Vertical_Datum,
+        EM-1110-1-1005:World_Geodetic_System_of_1984,
+        EM-1110-1-1005:Wye_Level,
+        EM-1110-1-1005:Zenith,
+        EM-1110-1-1005:Zenith_Angle,
+        EM-1110-1-1005:Zenith_Distance,
+        EM-1110-1-1005:tribrach .
+

@@ -1,0 +1,1868 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Ontospy > https://usace-data.com/civil-works/glossary/CFR-33-328-3#</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <style type="text/css" media="screen">
+
+
+  body {
+	  margin-left: 6em;
+	  margin-right: 12em;
+	  text-align: justify;
+    padding: 2em 1em 2em 70px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  :link { color: #00C; background: transparent }
+  :visited { color: #00C; background: transparent }
+  a:active { color: #C00; background: transparent }
+
+  a:link img, a:visited img { border-style: none } /* no border on img links */
+
+  a:hover {color: white; background: #00C; }
+  a.backlink:hover {color: white; background: grey; }
+  a.greylink:hover {color: white; background: grey; }
+
+  .margintop {
+  	 margin-top: 40px;
+  }
+
+
+  dt, dd { margin-top: 10px; margin-bottom: 0 } /* opera 3.50 */
+  dt { font-weight: bold }
+
+
+  h1, h2, h3, h4, h5, h6 { text-align: left }
+  /* background should be transparent, but WebTV has a bug */
+  h1, h2, h3, h4, h5 { color: #005A9C; background: white }
+  h1.title { font: 200% sans-serif }
+  h1 { font: 170% sans-serif }
+  h2 { font: 140% sans-serif }
+  h3 { font: 120% sans-serif }
+  h4 { font: bold 100% sans-serif }
+  h5 { font: italic 100% sans-serif }
+  h6 { font: small-caps 100% sans-serif }
+
+  .hide { display: none }
+
+
+  pre { margin-left: 2em }
+
+  pre, code { font-family: monospace } /* navigator 4 requires this */
+
+
+  .implementation {
+  	background: aliceblue;
+	padding: 10px;
+	margin-top: 5px;
+  }
+
+  fieldset {
+	  margin-top: 20px;
+	  padding: 13px;
+      text-align: left;
+  }
+
+  legend {
+	  text-transform: uppercase;
+  }
+
+  .entity-div {
+	  margin: 55px 10px 30px 10px;
+  }
+
+  .entity-section {
+	  margin-bottom: 0px;
+  }
+
+
+  a.backlink {
+	  font-size: 80%;
+	  color: grey;
+  }
+
+  a.greylink {
+	  color: grey;
+  }
+
+
+   .implementation_title {
+
+       font-weight: bold;
+       font-size: 100%;
+   }
+
+.section-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+        .tree-container {
+            width: 3000em;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+		.tree {margin: 10px 0px 30px -20px; padding: 0; display: inline-block;}
+
+		.tree ul {
+			padding-top: 20px; position: relative;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		.tree li {
+			float: left; text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*We will use ::before and ::after to draw the connectors*/
+
+		.tree li::before, .tree li::after{
+			content: '';
+			position: absolute; top: 0; right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%; height: 20px;
+		}
+		.tree li::after{
+			right: auto; left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		/*We need to remove left-right connectors from elements without
+		any siblings*/
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		/*Remove space from the top of single children*/
+		.tree li:only-child{ padding-top: 0;}
+
+		/*Remove left connector from first child and
+		right connector from last child*/
+		.tree li:first-child::before, .tree li:last-child::after{
+			border: 0 none;
+		}
+		/*Adding back the vertical connector to the last nodes*/
+		.tree li:last-child::before{
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+			-webkit-border-radius: 0 5px 0 0;
+			-moz-border-radius: 0 5px 0 0;
+		}
+		.tree li:first-child::after{
+			border-radius: 5px 0 0 0;
+			-webkit-border-radius: 5px 0 0 0;
+			-moz-border-radius: 5px 0 0 0;
+		}
+
+		/*Time to add downward connectors from parents*/
+		.tree ul ul::before{
+			content: '';
+			position: absolute; top: 0; left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0; height: 20px;
+		}
+
+		.tree li a{
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #666;
+			font-family: arial, verdana, tahoma;
+			font-size: 11px;
+			display: inline-block;
+
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*Time for some hover effects*/
+		/*We will apply the hover effect the the lineage of the element also*/
+		.tree li a:hover, .tree li a:hover+ul li a {
+			background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+		}
+		/*Connector styles on hover*/
+		.tree li a:hover+ul li::after,
+		.tree li a:hover+ul li::before,
+		.tree li a:hover+ul::before,
+		.tree li a:hover+ul ul::before{
+			border-color:  #94a0b4;
+		}
+
+		/*Thats all. I hope you enjoyed it.
+		Thanks :)*/
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+	
+	
+		
+			<h1 class="title"><a href="" target="_blank">https://usace-data.com/civil-works/glossary/CFR-33-328-3#</a></h1>
+			<h3><p>None</p></h3>
+		
+
+	
+		
+		
+
+
+	<p><small>Ontology documentation automatically generated by <a class="greylink" href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> on Tue, 16 Jul 2024 04:24:42</small></p>
+
+
+
+	
+
+
+	<hr class="margintop">
+
+	<h1><a name="toc">&nbsp;</a>Table of Content</h1>
+
+	<ul>
+		<li><a href="#ontologies">Ontologies</a></li>
+		<li><a href="#a-z">A-Z of Terms</a></li>
+		
+		
+		
+		
+		<li><a href="#skosconcepts">SKOS Concepts</a></li>
+		
+	</ul>
+
+
+
+	
+
+	
+
+	<hr class="margintop">
+
+	<h1><a name="ontologies"></a>Ontologies</h1>
+
+		
+
+
+			<fieldset> <legend><h3><a href="https://usace-data.com/civil-works/glossary/CFR-33-328-3#" target="_blank">https://usace-data.com/civil-works/glossary/CFR-33-328-3#</a></h3></legend>
+
+			<h4 style="margin-top: -20px;"><p>None</p></h4>
+
+			
+			
+				
+					<dt>dcterms:created</dt>
+				  
+			
+			<dd><p>2024-07-16T04:24:37.498512+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:description</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:publisher</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:rights</dt>
+				  
+			
+			<dd><p>MIT</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:title</dt>
+				  
+			
+			<dd><p>Code of Federal Regulations - Title 33, Chapter-II, Part 328, Section-328.3</p></dd>
+			
+			
+				</dl>
+					<dt>pav:ImportedFrom</dt>
+				  
+			
+			<dd><p>glossaries/CivilWorks/CFR-33-328-3.yaml</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdOn</dt>
+				  
+			
+			<dd><p>2024-07-16T04:24:37.498512+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdWith</dt>
+				  
+			
+			<dd><p>gloss</p></dd>
+			
+			
+				</dl>
+					<dt>pav:wasInfluencedBy</dt>
+				  
+			
+			<dd><p>33 CFR 328.3 Definitions</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.knowledgesmarts.com/ontologies/wov#Glossary</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2002/07/owl#Ontology</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2004/02/skos/core#ConceptScheme</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#Vocabulary</p></dd>
+			
+			
+				</dl>
+					<dt>rdfs:label</dt>
+				  
+			
+			<dd><p>Code of Federal Regulations - Title 33, Chapter-II, Part 328, Section-328.3</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Adjacent_wetlands</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Ditch</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Ephemeral</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#High_tide_line</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Intermittent</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Jurisdictional_waters</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Lakes_and_ponds,_and_impoundments_of_jurisdictional_waters</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Non-jurisdictional_waters</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Ordinary_high_water_mark</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Perennial</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Prior_converted_cropland</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Snowpack</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Tidal_waters</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Tributary</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Typical_year</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Upland</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Waste_treatment_system</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#Wetlands</p></dd>
+			
+			
+				</dl>
+					<dt>vann:preferredNamespaceUri</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/CFR-33-328-3#</p></dd>
+			
+
+			</fieldset>
+
+		
+
+	
+
+
+
+	
+
+	<hr class="margintop">
+	<h1><a  name="a-z">&nbsp;</a>A-Z of terms</h1>
+
+	<div id="azterms">
+
+	This is a complete alphabetical A-Z index of all terms, by main logical type.
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		<fieldset> <legend>SKOS Concepts (18)</legend>
+			&nbsp;<a href="#CFR-33-328-3:Adjacent_wetlands">CFR-33-328-3:Adjacent_wetlands</a>
+			|  <a href="#CFR-33-328-3:Ditch">CFR-33-328-3:Ditch</a>
+			|  <a href="#CFR-33-328-3:Ephemeral">CFR-33-328-3:Ephemeral</a>
+			|  <a href="#CFR-33-328-3:High_tide_line">CFR-33-328-3:High_tide_line</a>
+			|  <a href="#CFR-33-328-3:Intermittent">CFR-33-328-3:Intermittent</a>
+			|  <a href="#CFR-33-328-3:Jurisdictional_waters">CFR-33-328-3:Jurisdictional_waters</a>
+			|  <a href="#CFR-33-328-3:Lakes_and_ponds,_and_impoundments_of_jurisdictional_waters">CFR-33-328-3:Lakes_and_ponds,_and_impoundments_of_jurisdictional_waters</a>
+			|  <a href="#CFR-33-328-3:Non-jurisdictional_waters">CFR-33-328-3:Non-jurisdictional_waters</a>
+			|  <a href="#CFR-33-328-3:Ordinary_high_water_mark">CFR-33-328-3:Ordinary_high_water_mark</a>
+			|  <a href="#CFR-33-328-3:Perennial">CFR-33-328-3:Perennial</a>
+			|  <a href="#CFR-33-328-3:Prior_converted_cropland">CFR-33-328-3:Prior_converted_cropland</a>
+			|  <a href="#CFR-33-328-3:Snowpack">CFR-33-328-3:Snowpack</a>
+			|  <a href="#CFR-33-328-3:Tidal_waters">CFR-33-328-3:Tidal_waters</a>
+			|  <a href="#CFR-33-328-3:Tributary">CFR-33-328-3:Tributary</a>
+			|  <a href="#CFR-33-328-3:Typical_year">CFR-33-328-3:Typical_year</a>
+			|  <a href="#CFR-33-328-3:Upland">CFR-33-328-3:Upland</a>
+			|  <a href="#CFR-33-328-3:Waste_treatment_system">CFR-33-328-3:Waste_treatment_system</a>
+			|  <a href="#CFR-33-328-3:Wetlands">CFR-33-328-3:Wetlands</a>
+			  
+		</fieldset>
+
+	
+
+	
+
+	</div>
+
+
+
+	
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+	
+
+
+		<hr class="margintop">
+		<h1 class="margintop"><a  name="skosconcepts">&nbsp;</a>SKOS Concepts</h1>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Adjacent_wetlands" href="#CFR-33-328-3:Adjacent_wetlands">CFR-33-328-3:Adjacent_wetlands</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Adjacent_wetlands</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Adjacent_wetlands is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term adjacent wetlands means wetlands that: <br>
+(i) Abut, meaning to touch at least at one point or side of, a water identified in paragraph (a)(1), (2), or (3) of this section; <br>
+(ii) Are inundated by flooding from a water identified in paragraph (a)(1), (2), or (3) of this section in a typical year; <br>
+(iii) Are physically separated from a water identified in paragraph (a)(1), (2), or (3) of this section only by a natural berm, bank, dune, or similar natural feature; or <br>
+(iv) Are physically separated from a water identified in paragraph (a)(1), (2), or (3) of this section only by an artificial dike, barrier, or similar artificial structure so long as that structure allows for a direct hydrologic surface connection between the wetlands and the water identified in paragraph (a)(1), (2), or (3) of this section in a typical year, such as through a culvert, flood or tide gate, pump, or similar artificial feature. An adjacent wetland is jurisdictional in its entirety when a road or similar artificial structure divides the wetland, as long as the structure allows for a direct hydrologic surface connection through or over that structure in a typical year.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Adjacent_wetlands a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Adjacent wetlands&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Adjacent wetlands]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;The term adjacent wetlands means wetlands that: <br>
+(i) Abut, meaning to touch at least at one point or side of, a water identified in paragraph (a)(1), (2), or (3) of this section; <br>
+(ii) Are inundated by flooding from a water identified in paragraph (a)(1), (2), or (3) of this section in a typical year; <br>
+(iii) Are physically separated from a water identified in paragraph (a)(1), (2), or (3) of this section only by a natural berm, bank, dune, or similar natural feature; or <br>
+(iv) Are physically separated from a water identified in paragraph (a)(1), (2), or (3) of this section only by an artificial dike, barrier, or similar artificial structure so long as that structure allows for a direct hydrologic surface connection between the wetlands and the water identified in paragraph (a)(1), (2), or (3) of this section in a typical year, such as through a culvert, flood or tide gate, pump, or similar artificial feature. An adjacent wetland is jurisdictional in its entirety when a road or similar artificial structure divides the wetland, as long as the structure allows for a direct hydrologic surface connection through or over that structure in a typical year.&#34;&#34;&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Adjacent wetlands&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Ditch" href="#CFR-33-328-3:Ditch">CFR-33-328-3:Ditch</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Ditch</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Ditch is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term ditch means a constructed or excavated channel used to convey water.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Ditch a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Ditch&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Ditch]&#34; ;<br>
+    skos:definition &#34;The term ditch means a constructed or excavated channel used to convey water.&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Ditch&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Ephemeral" href="#CFR-33-328-3:Ephemeral">CFR-33-328-3:Ephemeral</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Ephemeral</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Ephemeral is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term ephemeral means surface water flowing or pooling only in direct response to precipitation (e.g.,rain or snow fall).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Ephemeral a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Ephemeral&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Ephemeral]&#34; ;<br>
+    skos:definition &#34;The term ephemeral means surface water flowing or pooling only in direct response to precipitation (e.g.,rain or snow fall).&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Ephemeral&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:High_tide_line" href="#CFR-33-328-3:High_tide_line">CFR-33-328-3:High_tide_line</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:High_tide_line</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:High_tide_line is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term high tide line means the line of intersection of the land with the water&#39;s surface at the maximum height reached by a rising tide. The high tide line may be determined, in the absence of actual data, by a line of oil or scum along shore objects, a more or less continuous deposit of fine shell or debris on the foreshore or berm, other physical markings or characteristics, vegetation lines, tidal gages, or other suitable means that delineate the general height reached by a rising tide. The line encompasses spring high tides and other high tides that occur with periodic frequency but does not include storm surges in which there is a departure from the normal or predicted reach of the tide due to the piling up of water against a coast by strong winds, such as those accompanying a hurricane or other intense storm.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:High_tide_line a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;High tide line&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[High tide line]&#34; ;<br>
+    skos:definition &#34;The term high tide line means the line of intersection of the land with the water&#39;s surface at the maximum height reached by a rising tide. The high tide line may be determined, in the absence of actual data, by a line of oil or scum along shore objects, a more or less continuous deposit of fine shell or debris on the foreshore or berm, other physical markings or characteristics, vegetation lines, tidal gages, or other suitable means that delineate the general height reached by a rising tide. The line encompasses spring high tides and other high tides that occur with periodic frequency but does not include storm surges in which there is a departure from the normal or predicted reach of the tide due to the piling up of water against a coast by strong winds, such as those accompanying a hurricane or other intense storm.&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;High tide line&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Intermittent" href="#CFR-33-328-3:Intermittent">CFR-33-328-3:Intermittent</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Intermittent</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Intermittent is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term intermittent means surface water flowing continuously during certain times of the year and more than in direct response to precipitation (e.g., seasonally when the groundwater table is elevated or when snowpack melts).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Intermittent a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Intermittent&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Intermittent]&#34; ;<br>
+    skos:definition &#34;The term intermittent means surface water flowing continuously during certain times of the year and more than in direct response to precipitation (e.g., seasonally when the groundwater table is elevated or when snowpack melts).&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Intermittent&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Jurisdictional_waters" href="#CFR-33-328-3:Jurisdictional_waters">CFR-33-328-3:Jurisdictional_waters</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Jurisdictional_waters</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Jurisdictional_waters is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>For purposes of the Clean Water Act, 33 U.S.C. 1251 et seq. and its implementing regulations, subject to the exclusions in paragraph (b) of this section, the term waters of the United States means: <br>
+(1) The territorial seas, and waters which are currently used, or were used in the past, or may be susceptible to use in interstate or foreign commerce, including waters which are subject to the ebb and flow of the tide; <br>
+(2) Tributaries; <br>
+(3) Lakes and ponds, and impoundments of jurisdictional waters; and <br>
+(4) Adjacent wetlands.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Jurisdictional_waters a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Jurisdictional waters&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Jurisdictional waters]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;For purposes of the Clean Water Act, 33 U.S.C. 1251 et seq. and its implementing regulations, subject to the exclusions in paragraph (b) of this section, the term waters of the United States means: <br>
+(1) The territorial seas, and waters which are currently used, or were used in the past, or may be susceptible to use in interstate or foreign commerce, including waters which are subject to the ebb and flow of the tide; <br>
+(2) Tributaries; <br>
+(3) Lakes and ponds, and impoundments of jurisdictional waters; and <br>
+(4) Adjacent wetlands.&#34;&#34;&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Jurisdictional waters&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Lakes_and_ponds,_and_impoundments_of_jurisdictional_waters" href="#CFR-33-328-3:Lakes_and_ponds,_and_impoundments_of_jurisdictional_waters">CFR-33-328-3:Lakes_and_ponds,_and_impoundments_of_jurisdictional_waters</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Lakes_and_ponds,_and_impoundments_of_jurisdictional_waters</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Lakes_and_ponds,_and_impoundments_of_jurisdictional_waters is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term lakes and ponds, and impoundments of jurisdictional waters means standing bodies of open water that contribute surface water flow to a water identified in paragraph (a)(1) of this section in a typical year either directly or through one or more waters identified in paragraph (a)(2), (3), or (4) of this section. A lake, pond, or impoundment of a jurisdictional water does not lose its jurisdictional status if it contributes surface water flow to a downstream jurisdictional water in a typical year through a channelized non-jurisdictional surface water feature, through a culvert, dike, spillway, or similar artificial feature, or through a debris pile, boulder field, or similar natural feature. A lake or pond, or impoundment of a jurisdictional water is also jurisdictional if it is inundated by flooding from a water identified in paragraph (a)(1), (2), or (3) of this section in a typical year.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>&lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#Lakes_and_ponds,_and_impoundments_of_jurisdictional_waters&gt; a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Lakes and ponds, and impoundments of jurisdictional waters&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Lakes and ponds, and impoundments of jurisdictional waters]&#34; ;<br>
+    skos:definition &#34;The term lakes and ponds, and impoundments of jurisdictional waters means standing bodies of open water that contribute surface water flow to a water identified in paragraph (a)(1) of this section in a typical year either directly or through one or more waters identified in paragraph (a)(2), (3), or (4) of this section. A lake, pond, or impoundment of a jurisdictional water does not lose its jurisdictional status if it contributes surface water flow to a downstream jurisdictional water in a typical year through a channelized non-jurisdictional surface water feature, through a culvert, dike, spillway, or similar artificial feature, or through a debris pile, boulder field, or similar natural feature. A lake or pond, or impoundment of a jurisdictional water is also jurisdictional if it is inundated by flooding from a water identified in paragraph (a)(1), (2), or (3) of this section in a typical year.&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Lakes and ponds, and impoundments of jurisdictional waters&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Non-jurisdictional_waters" href="#CFR-33-328-3:Non-jurisdictional_waters">CFR-33-328-3:Non-jurisdictional_waters</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Non-jurisdictional_waters</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Non-jurisdictional_waters is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The following are not waters of the United States: <br>
+(1) Waters or water features that are not identified in paragraph (a)(1), (2), (3), or (4) of this section; <br>
+(2) Groundwater, including groundwater drained through subsurface drainage systems; <br>
+(3) Ephemeral features, including ephemeral streams, swales, gullies, rills, and pools; <br>
+(4) Diffuse stormwater run-off and directional sheet flow over upland; <br>
+(5) Ditches that are not waters identified in paragraph (a)(1) or (2) of this section, and those portions of ditches constructed in waters identified in paragraph (a)(4) of this section that do not satisfy the conditions of paragraph (c)(1) of this section; <br>
+(6) Prior converted cropland; <br>
+(7) Artificially irrigated areas, including fields flooded for agricultural production, that would revert to upland should application of irrigation water to that area cease; <br>
+(8) Artificial lakes and ponds, including water storage reservoirs and farm, irrigation, stock watering, and log cleaning ponds, constructed or excavated in upland or in non-jurisdictional waters, so long as those artificial lakes and ponds are not impoundments of jurisdictional waters that meet the conditions of paragraph (c)(6) of this section;<br>
+(9) Water-filled depressions constructed or excavated in upland or in non-jurisdictional waters incidental to mining or construction activity, and pits excavated in upland or in non-jurisdictional waters for the purpose of obtaining fill, sand, or gravel; <br>
+(10) Stormwater control features constructed or excavated in upland or in non-jurisdictional waters to convey, treat, infiltrate, or store stormwater run-off; <br>
+(11) Groundwater recharge, water reuse, and wastewater recycling structures, including detention, retention, and infiltration basins and ponds, constructed or excavated in upland or in non-jurisdictional waters; and <br>
+(12) Waste treatment systems.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Non-jurisdictional_waters a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Non-jurisdictional waters&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Non-jurisdictional waters]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;The following are not waters of the United States: <br>
+(1) Waters or water features that are not identified in paragraph (a)(1), (2), (3), or (4) of this section; <br>
+(2) Groundwater, including groundwater drained through subsurface drainage systems; <br>
+(3) Ephemeral features, including ephemeral streams, swales, gullies, rills, and pools; <br>
+(4) Diffuse stormwater run-off and directional sheet flow over upland; <br>
+(5) Ditches that are not waters identified in paragraph (a)(1) or (2) of this section, and those portions of ditches constructed in waters identified in paragraph (a)(4) of this section that do not satisfy the conditions of paragraph (c)(1) of this section; <br>
+(6) Prior converted cropland; <br>
+(7) Artificially irrigated areas, including fields flooded for agricultural production, that would revert to upland should application of irrigation water to that area cease; <br>
+(8) Artificial lakes and ponds, including water storage reservoirs and farm, irrigation, stock watering, and log cleaning ponds, constructed or excavated in upland or in non-jurisdictional waters, so long as those artificial lakes and ponds are not impoundments of jurisdictional waters that meet the conditions of paragraph (c)(6) of this section;<br>
+(9) Water-filled depressions constructed or excavated in upland or in non-jurisdictional waters incidental to mining or construction activity, and pits excavated in upland or in non-jurisdictional waters for the purpose of obtaining fill, sand, or gravel; <br>
+(10) Stormwater control features constructed or excavated in upland or in non-jurisdictional waters to convey, treat, infiltrate, or store stormwater run-off; <br>
+(11) Groundwater recharge, water reuse, and wastewater recycling structures, including detention, retention, and infiltration basins and ponds, constructed or excavated in upland or in non-jurisdictional waters; and <br>
+(12) Waste treatment systems.&#34;&#34;&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Non-jurisdictional waters&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Ordinary_high_water_mark" href="#CFR-33-328-3:Ordinary_high_water_mark">CFR-33-328-3:Ordinary_high_water_mark</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Ordinary_high_water_mark</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Ordinary_high_water_mark is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term ordinary high water mark means that line on the shore established by the fluctuations of water and indicated by physical characteristics such as a clear, natural line impressed on the bank, shelving, changes in the character of soil, destruction of terrestrial vegetation, the presence of litter and debris, or other appropriate means that consider the characteristics of the surrounding areas.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Ordinary_high_water_mark a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Ordinary high water mark&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Ordinary high water mark]&#34; ;<br>
+    skos:definition &#34;The term ordinary high water mark means that line on the shore established by the fluctuations of water and indicated by physical characteristics such as a clear, natural line impressed on the bank, shelving, changes in the character of soil, destruction of terrestrial vegetation, the presence of litter and debris, or other appropriate means that consider the characteristics of the surrounding areas.&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Ordinary high water mark&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Perennial" href="#CFR-33-328-3:Perennial">CFR-33-328-3:Perennial</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Perennial</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Perennial is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term perennial means surface water flowing continuously year-round.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Perennial a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Perennial&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Perennial]&#34; ;<br>
+    skos:definition &#34;The term perennial means surface water flowing continuously year-round.&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Perennial&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Prior_converted_cropland" href="#CFR-33-328-3:Prior_converted_cropland">CFR-33-328-3:Prior_converted_cropland</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Prior_converted_cropland</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Prior_converted_cropland is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term prior converted cropland means any area that, prior to December 23, 1985, was drained or otherwise manipulated for the purpose, or having the effect, of making production of an agricultural product possible. EPA and the Corps will recognize designations of prior converted cropland made by the Secretary of Agriculture. An area is no longer considered prior converted cropland for purposes of the Clean Water Act when the area is abandoned and has reverted to wetlands, as defined in paragraph (c)(16) of this section. Abandonment occurs when prior converted cropland is not used for, or in support of, agricultural purposes at least once in the immediately preceding five years. For the purposes of the Clean Water Act, the EPA Administrator shall have the final authority to determine whether prior converted cropland has been abandoned.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Prior_converted_cropland a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Prior converted cropland&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Prior converted cropland]&#34; ;<br>
+    skos:definition &#34;The term prior converted cropland means any area that, prior to December 23, 1985, was drained or otherwise manipulated for the purpose, or having the effect, of making production of an agricultural product possible. EPA and the Corps will recognize designations of prior converted cropland made by the Secretary of Agriculture. An area is no longer considered prior converted cropland for purposes of the Clean Water Act when the area is abandoned and has reverted to wetlands, as defined in paragraph (c)(16) of this section. Abandonment occurs when prior converted cropland is not used for, or in support of, agricultural purposes at least once in the immediately preceding five years. For the purposes of the Clean Water Act, the EPA Administrator shall have the final authority to determine whether prior converted cropland has been abandoned.&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Prior converted cropland&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Snowpack" href="#CFR-33-328-3:Snowpack">CFR-33-328-3:Snowpack</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Snowpack</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Snowpack is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term snowpack means layers of snow that accumulate over extended periods of time in certain geographic regions or at high elevation (e.g., in northern climes or mountainous regions).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Snowpack a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Snowpack&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Snowpack]&#34; ;<br>
+    skos:definition &#34;The term snowpack means layers of snow that accumulate over extended periods of time in certain geographic regions or at high elevation (e.g., in northern climes or mountainous regions).&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Snowpack&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Tidal_waters" href="#CFR-33-328-3:Tidal_waters">CFR-33-328-3:Tidal_waters</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Tidal_waters</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Tidal_waters is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Tidal Waters and waters subject to the ebb and flow of the tide. The terms tidal waters and waters subject to the ebb and flow of the tide mean those waters that rise and fall in a predictable and measurable rhythm or cycle due to the gravitational pulls of the moon and sun. Tidal waters and waters subject to the ebb and flow of the tide end where the rise and fall of the water surface can no longer be practically measured in a predictable rhythm due to masking by hydrologic, wind, or other effects.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Tidal_waters a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Tidal waters&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Tidal waters]&#34; ;<br>
+    skos:definition &#34;Tidal Waters and waters subject to the ebb and flow of the tide. The terms tidal waters and waters subject to the ebb and flow of the tide mean those waters that rise and fall in a predictable and measurable rhythm or cycle due to the gravitational pulls of the moon and sun. Tidal waters and waters subject to the ebb and flow of the tide end where the rise and fall of the water surface can no longer be practically measured in a predictable rhythm due to masking by hydrologic, wind, or other effects.&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Tidal waters&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Tributary" href="#CFR-33-328-3:Tributary">CFR-33-328-3:Tributary</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Tributary</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Tributary is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term tributary means a river, stream, or similar naturally occurring surface water channel that contributes surface water flow to a water identified in paragraph (a)(1) of this section in a typical year either directly or through one or more waters identified in paragraph (a)(2), (3), or (4) of this section. A tributary must be perennial or intermittent in a typical year. The alteration or relocation of a tributary does not modify its jurisdictional status as long as it continues to satisfy the flow conditions of this definition. A tributary does not lose its jurisdictional status if it contributes surface water flow to a downstream jurisdictional water in a typical year through a channelized non-jurisdictional surface water feature, through a subterranean river, through a culvert, dam, tunnel, or similar artificial feature, or through a debris pile, boulder field, or similar natural feature. The term tributary includes a ditch that either relocates a tributary, is constructed in a tributary, or is constructed in an adjacent wetland as long as the ditch satisfies the flow conditions of this definition.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Tributary a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Tributary&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Tributary]&#34; ;<br>
+    skos:definition &#34;The term tributary means a river, stream, or similar naturally occurring surface water channel that contributes surface water flow to a water identified in paragraph (a)(1) of this section in a typical year either directly or through one or more waters identified in paragraph (a)(2), (3), or (4) of this section. A tributary must be perennial or intermittent in a typical year. The alteration or relocation of a tributary does not modify its jurisdictional status as long as it continues to satisfy the flow conditions of this definition. A tributary does not lose its jurisdictional status if it contributes surface water flow to a downstream jurisdictional water in a typical year through a channelized non-jurisdictional surface water feature, through a subterranean river, through a culvert, dam, tunnel, or similar artificial feature, or through a debris pile, boulder field, or similar natural feature. The term tributary includes a ditch that either relocates a tributary, is constructed in a tributary, or is constructed in an adjacent wetland as long as the ditch satisfies the flow conditions of this definition.&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Tributary&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Typical_year" href="#CFR-33-328-3:Typical_year">CFR-33-328-3:Typical_year</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Typical_year</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Typical_year is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term typical year means when precipitation and other climatic variables are within the normal periodic range (e.g., seasonally, annually) for the geographic area of the applicable aquatic resource based on a rolling thirty-year period.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Typical_year a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Typical year&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Typical year]&#34; ;<br>
+    skos:definition &#34;The term typical year means when precipitation and other climatic variables are within the normal periodic range (e.g., seasonally, annually) for the geographic area of the applicable aquatic resource based on a rolling thirty-year period.&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Typical year&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Upland" href="#CFR-33-328-3:Upland">CFR-33-328-3:Upland</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Upland</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Upland is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term upland means any land area that under normal circumstances does not satisfy all three wetland factors (i.e., hydrology, hydrophytic vegetation, hydric soils) identified in paragraph (c)(16) of this section, and does not lie below the ordinary high water mark or the high tide line of a jurisdictional water.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Upland a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Upland&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Upland]&#34; ;<br>
+    skos:definition &#34;The term upland means any land area that under normal circumstances does not satisfy all three wetland factors (i.e., hydrology, hydrophytic vegetation, hydric soils) identified in paragraph (c)(16) of this section, and does not lie below the ordinary high water mark or the high tide line of a jurisdictional water.&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Upland&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Waste_treatment_system" href="#CFR-33-328-3:Waste_treatment_system">CFR-33-328-3:Waste_treatment_system</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Waste_treatment_system</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Waste_treatment_system is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term waste treatment system includes all components, including lagoons and treatment ponds (such as settling or cooling ponds), designed to either convey or retain, concentrate, settle, reduce, or remove pollutants, either actively or passively, from wastewater prior to discharge (or eliminating any such discharge).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Waste_treatment_system a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Waste treatment system&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Waste treatment system]&#34; ;<br>
+    skos:definition &#34;The term waste treatment system includes all components, including lagoons and treatment ponds (such as settling or cooling ponds), designed to either convey or retain, concentrate, settle, reduce, or remove pollutants, either actively or passively, from wastewater prior to discharge (or eliminating any such discharge).&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Waste treatment system&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="CFR-33-328-3:Wetlands" href="#CFR-33-328-3:Wetlands">CFR-33-328-3:Wetlands</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">CFR-33-328-3:Wetlands</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> CFR-33-328-3:Wetlands is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The term wetlands means areas that are inundated or saturated by surface or ground water at a frequency and duration sufficient to support, and that under normal circumstances do support, a prevalence of vegetation typically adapted for life in saturated soil conditions. Wetlands generally include swamps, marshes, bogs, and similar areas.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix CFR-33-328-3: &lt;https://usace-data.com/civil-works/glossary/CFR-33-328-3#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>CFR-33-328-3:Wetlands a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Wetlands&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.ecfr.gov/current/title-33/chapter-II/part-328/section-328.3&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/CFR-33-328-3.yaml#term[Wetlands]&#34; ;<br>
+    skos:definition &#34;The term wetlands means areas that are inundated or saturated by surface or ground water at a frequency and duration sufficient to support, and that under normal circumstances do support, a prevalence of vegetation typically adapted for life in saturated soil conditions. Wetlands generally include swamps, marshes, bogs, and similar areas.&#34; ;<br>
+    skos:inScheme CFR-33-328-3: ;<br>
+    skos:prefLabel &#34;Wetlands&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	<hr>
+	<small>Ontology documentation automatically generated by <a class="greylink"  href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> v2.1.1 on Tue, 16 Jul 2024 04:24:43</small>
+
+
+</body>
+</html>

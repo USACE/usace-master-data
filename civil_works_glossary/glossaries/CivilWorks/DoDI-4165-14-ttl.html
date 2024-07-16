@@ -1,0 +1,2958 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Ontospy > https://usace-data.com/civil-works/glossary/DoDI-4165.14#</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+  <style type="text/css" media="screen">
+
+
+  body {
+	  margin-left: 6em;
+	  margin-right: 12em;
+	  text-align: justify;
+    padding: 2em 1em 2em 70px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  :link { color: #00C; background: transparent }
+  :visited { color: #00C; background: transparent }
+  a:active { color: #C00; background: transparent }
+
+  a:link img, a:visited img { border-style: none } /* no border on img links */
+
+  a:hover {color: white; background: #00C; }
+  a.backlink:hover {color: white; background: grey; }
+  a.greylink:hover {color: white; background: grey; }
+
+  .margintop {
+  	 margin-top: 40px;
+  }
+
+
+  dt, dd { margin-top: 10px; margin-bottom: 0 } /* opera 3.50 */
+  dt { font-weight: bold }
+
+
+  h1, h2, h3, h4, h5, h6 { text-align: left }
+  /* background should be transparent, but WebTV has a bug */
+  h1, h2, h3, h4, h5 { color: #005A9C; background: white }
+  h1.title { font: 200% sans-serif }
+  h1 { font: 170% sans-serif }
+  h2 { font: 140% sans-serif }
+  h3 { font: 120% sans-serif }
+  h4 { font: bold 100% sans-serif }
+  h5 { font: italic 100% sans-serif }
+  h6 { font: small-caps 100% sans-serif }
+
+  .hide { display: none }
+
+
+  pre { margin-left: 2em }
+
+  pre, code { font-family: monospace } /* navigator 4 requires this */
+
+
+  .implementation {
+  	background: aliceblue;
+	padding: 10px;
+	margin-top: 5px;
+  }
+
+  fieldset {
+	  margin-top: 20px;
+	  padding: 13px;
+      text-align: left;
+  }
+
+  legend {
+	  text-transform: uppercase;
+  }
+
+  .entity-div {
+	  margin: 55px 10px 30px 10px;
+  }
+
+  .entity-section {
+	  margin-bottom: 0px;
+  }
+
+
+  a.backlink {
+	  font-size: 80%;
+	  color: grey;
+  }
+
+  a.greylink {
+	  color: grey;
+  }
+
+
+   .implementation_title {
+
+       font-weight: bold;
+       font-size: 100%;
+   }
+
+.section-desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+        .tree-container {
+            width: 3000em;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+		.tree {margin: 10px 0px 30px -20px; padding: 0; display: inline-block;}
+
+		.tree ul {
+			padding-top: 20px; position: relative;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		.tree li {
+			float: left; text-align: center;
+			list-style-type: none;
+			position: relative;
+			padding: 20px 5px 0 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*We will use ::before and ::after to draw the connectors*/
+
+		.tree li::before, .tree li::after{
+			content: '';
+			position: absolute; top: 0; right: 50%;
+			border-top: 1px solid #ccc;
+			width: 50%; height: 20px;
+		}
+		.tree li::after{
+			right: auto; left: 50%;
+			border-left: 1px solid #ccc;
+		}
+
+		/*We need to remove left-right connectors from elements without
+		any siblings*/
+		.tree li:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
+		/*Remove space from the top of single children*/
+		.tree li:only-child{ padding-top: 0;}
+
+		/*Remove left connector from first child and
+		right connector from last child*/
+		.tree li:first-child::before, .tree li:last-child::after{
+			border: 0 none;
+		}
+		/*Adding back the vertical connector to the last nodes*/
+		.tree li:last-child::before{
+			border-right: 1px solid #ccc;
+			border-radius: 0 5px 0 0;
+			-webkit-border-radius: 0 5px 0 0;
+			-moz-border-radius: 0 5px 0 0;
+		}
+		.tree li:first-child::after{
+			border-radius: 5px 0 0 0;
+			-webkit-border-radius: 5px 0 0 0;
+			-moz-border-radius: 5px 0 0 0;
+		}
+
+		/*Time to add downward connectors from parents*/
+		.tree ul ul::before{
+			content: '';
+			position: absolute; top: 0; left: 50%;
+			border-left: 1px solid #ccc;
+			width: 0; height: 20px;
+		}
+
+		.tree li a{
+			border: 1px solid #ccc;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: #666;
+			font-family: arial, verdana, tahoma;
+			font-size: 11px;
+			display: inline-block;
+
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+		}
+
+		/*Time for some hover effects*/
+		/*We will apply the hover effect the the lineage of the element also*/
+		.tree li a:hover, .tree li a:hover+ul li a {
+			background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+		}
+		/*Connector styles on hover*/
+		.tree li a:hover+ul li::after,
+		.tree li a:hover+ul li::before,
+		.tree li a:hover+ul::before,
+		.tree li a:hover+ul ul::before{
+			border-color:  #94a0b4;
+		}
+
+		/*Thats all. I hope you enjoyed it.
+		Thanks :)*/
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+	
+	
+		
+			<h1 class="title"><a href="" target="_blank">https://usace-data.com/civil-works/glossary/DoDI-4165.14#</a></h1>
+			<h3><p>DoD Instruction 4165.14, Real Property Inventory and Reporting various acronyms and terms commonly used in this regulation to describe policy, responsibility assignments, and real property reporting procedures within the DoD. These terms are defined in the glossary section of the instruction.</p></h3>
+		
+
+	
+		
+		
+
+
+	<p><small>Ontology documentation automatically generated by <a class="greylink" href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> on Tue, 16 Jul 2024 04:25:47</small></p>
+
+
+
+	
+
+
+	<hr class="margintop">
+
+	<h1><a name="toc">&nbsp;</a>Table of Content</h1>
+
+	<ul>
+		<li><a href="#ontologies">Ontologies</a></li>
+		<li><a href="#a-z">A-Z of Terms</a></li>
+		
+		
+		
+		
+		<li><a href="#skosconcepts">SKOS Concepts</a></li>
+		
+	</ul>
+
+
+
+	
+
+	
+
+	<hr class="margintop">
+
+	<h1><a name="ontologies"></a>Ontologies</h1>
+
+		
+
+
+			<fieldset> <legend><h3><a href="https://usace-data.com/civil-works/glossary/DoDI-4165.14#" target="_blank">https://usace-data.com/civil-works/glossary/DoDI-4165.14#</a></h3></legend>
+
+			<h4 style="margin-top: -20px;"><p>DoD Instruction 4165.14, Real Property Inventory and Reporting various acronyms and terms commonly used in this regulation to describe policy, responsibility assignments, and real property reporting procedures within the DoD. These terms are defined in the glossary section of the instruction.</p></h4>
+
+			
+			
+				
+					<dt>dcterms:created</dt>
+				  
+			
+			<dd><p>2024-07-16T04:25:38.657576+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:description</dt>
+				  
+			
+			<dd><p>DoD Instruction 4165.14, Real Property Inventory and Reporting various acronyms and terms commonly used in this regulation to describe policy, responsibility assignments, and real property reporting procedures within the DoD. These terms are defined in the glossary section of the instruction.</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:publisher</dt>
+				  
+			
+			<dd><p>None</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:rights</dt>
+				  
+			
+			<dd><p>MIT</p></dd>
+			
+			
+				</dl>
+					<dt>dcterms:title</dt>
+				  
+			
+			<dd><p>DoDI 4165.14</p></dd>
+			
+			
+				</dl>
+					<dt>pav:ImportedFrom</dt>
+				  
+			
+			<dd><p>glossaries/CivilWorks/DoDI-4165-14.yaml</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdOn</dt>
+				  
+			
+			<dd><p>2024-07-16T04:25:38.657576+00:00</p></dd>
+			
+			
+				</dl>
+					<dt>pav:createdWith</dt>
+				  
+			
+			<dd><p>gloss</p></dd>
+			
+			
+				</dl>
+					<dt>pav:wasInfluencedBy</dt>
+				  
+			
+			<dd><p>DoDI 4165.14</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.knowledgesmarts.com/ontologies/wov#Glossary</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2002/07/owl#Ontology</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>http://www.w3.org/2004/02/skos/core#ConceptScheme</p></dd>
+			
+			
+				</dl>
+					<dt>rdf:type</dt>
+				  
+			
+			<dd><p>https://lov.linkeddata.es/vocommons/voaf/v2.0/voaf_v2.0.rdf#Vocabulary</p></dd>
+			
+			
+				</dl>
+					<dt>rdfs:label</dt>
+				  
+			
+			<dd><p>DoDI 4165.14</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Accountable_Property_System_of_Record</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Building</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Category_Code</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Civil_Works</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Data_Analytics_and_Integration_Support</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Disposal</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Enterprise</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Facilities_Sustainment_Model</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Facility</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Facility_Analysis_Category</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Forecast</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Future_Years_Defense_Program</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Geospatial_Feature</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Historic_Status</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Host_Installation</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Installation</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Interest</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Internal_Control</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#International_Organization_for_Standardization</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Land</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Land_Parcel</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Linear_Structure</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Predominant_Current_Use</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Real_Property</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Real_Property_Accountable_Officer</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Real_Property_Categorization_System</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Real_Property_Information_Model</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Real_Property_Installed_Equipment</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Real_Property_Inventory</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Real_Property_Site_Unique_Identifier</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Real_Property_Unique_Identifier</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Site</p></dd>
+			
+			
+				</dl>
+					<dt>skos:hasTopConcept</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#Structure</p></dd>
+			
+			
+				</dl>
+					<dt>vann:preferredNamespaceUri</dt>
+				  
+			
+			<dd><p>https://usace-data.com/civil-works/glossary/DoDI-4165.14#</p></dd>
+			
+
+			</fieldset>
+
+		
+
+	
+
+
+
+	
+
+	<hr class="margintop">
+	<h1><a  name="a-z">&nbsp;</a>A-Z of terms</h1>
+
+	<div id="azterms">
+
+	This is a complete alphabetical A-Z index of all terms, by main logical type.
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		<fieldset> <legend>SKOS Concepts (33)</legend>
+			&nbsp;<a href="#DoDI-4165.14:Accountable_Property_System_of_Record">DoDI-4165.14:Accountable_Property_System_of_Record</a>
+			|  <a href="#DoDI-4165.14:Building">DoDI-4165.14:Building</a>
+			|  <a href="#DoDI-4165.14:Category_Code">DoDI-4165.14:Category_Code</a>
+			|  <a href="#DoDI-4165.14:Civil_Works">DoDI-4165.14:Civil_Works</a>
+			|  <a href="#DoDI-4165.14:Data_Analytics_and_Integration_Support">DoDI-4165.14:Data_Analytics_and_Integration_Support</a>
+			|  <a href="#DoDI-4165.14:Disposal">DoDI-4165.14:Disposal</a>
+			|  <a href="#DoDI-4165.14:Enterprise">DoDI-4165.14:Enterprise</a>
+			|  <a href="#DoDI-4165.14:Facilities_Sustainment_Model">DoDI-4165.14:Facilities_Sustainment_Model</a>
+			|  <a href="#DoDI-4165.14:Facility">DoDI-4165.14:Facility</a>
+			|  <a href="#DoDI-4165.14:Facility_Analysis_Category">DoDI-4165.14:Facility_Analysis_Category</a>
+			|  <a href="#DoDI-4165.14:Forecast">DoDI-4165.14:Forecast</a>
+			|  <a href="#DoDI-4165.14:Future_Years_Defense_Program">DoDI-4165.14:Future_Years_Defense_Program</a>
+			|  <a href="#DoDI-4165.14:Geospatial_Feature">DoDI-4165.14:Geospatial_Feature</a>
+			|  <a href="#DoDI-4165.14:Historic_Status">DoDI-4165.14:Historic_Status</a>
+			|  <a href="#DoDI-4165.14:Host_Installation">DoDI-4165.14:Host_Installation</a>
+			|  <a href="#DoDI-4165.14:Installation">DoDI-4165.14:Installation</a>
+			|  <a href="#DoDI-4165.14:Interest">DoDI-4165.14:Interest</a>
+			|  <a href="#DoDI-4165.14:Internal_Control">DoDI-4165.14:Internal_Control</a>
+			|  <a href="#DoDI-4165.14:International_Organization_for_Standardization">DoDI-4165.14:International_Organization_for_Standardization</a>
+			|  <a href="#DoDI-4165.14:Land">DoDI-4165.14:Land</a>
+			|  <a href="#DoDI-4165.14:Land_Parcel">DoDI-4165.14:Land_Parcel</a>
+			|  <a href="#DoDI-4165.14:Linear_Structure">DoDI-4165.14:Linear_Structure</a>
+			|  <a href="#DoDI-4165.14:Predominant_Current_Use">DoDI-4165.14:Predominant_Current_Use</a>
+			|  <a href="#DoDI-4165.14:Real_Property">DoDI-4165.14:Real_Property</a>
+			|  <a href="#DoDI-4165.14:Real_Property_Accountable_Officer">DoDI-4165.14:Real_Property_Accountable_Officer</a>
+			|  <a href="#DoDI-4165.14:Real_Property_Categorization_System">DoDI-4165.14:Real_Property_Categorization_System</a>
+			|  <a href="#DoDI-4165.14:Real_Property_Information_Model">DoDI-4165.14:Real_Property_Information_Model</a>
+			|  <a href="#DoDI-4165.14:Real_Property_Installed_Equipment">DoDI-4165.14:Real_Property_Installed_Equipment</a>
+			|  <a href="#DoDI-4165.14:Real_Property_Inventory">DoDI-4165.14:Real_Property_Inventory</a>
+			|  <a href="#DoDI-4165.14:Real_Property_Site_Unique_Identifier">DoDI-4165.14:Real_Property_Site_Unique_Identifier</a>
+			|  <a href="#DoDI-4165.14:Real_Property_Unique_Identifier">DoDI-4165.14:Real_Property_Unique_Identifier</a>
+			|  <a href="#DoDI-4165.14:Site">DoDI-4165.14:Site</a>
+			|  <a href="#DoDI-4165.14:Structure">DoDI-4165.14:Structure</a>
+			  
+		</fieldset>
+
+	
+
+	
+
+	</div>
+
+
+
+	
+
+
+	
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+	
+
+
+	
+
+
+		<hr class="margintop">
+		<h1 class="margintop"><a  name="skosconcepts">&nbsp;</a>SKOS Concepts</h1>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Accountable_Property_System_of_Record" href="#DoDI-4165.14:Accountable_Property_System_of_Record">DoDI-4165.14:Accountable_Property_System_of_Record</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Accountable_Property_System_of_Record</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Accountable_Property_System_of_Record is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The business system or application used to account for and maintain accountability of DoD government property. Each MILDEP and WHS uses their own business system or application for this purpose. </p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Accountable_Property_System_of_Record a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Accountable Property System of Record&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Accountable Property System of Record]&#34; ;<br>
+    skos:altLabel &#34;APSR&#34; ;<br>
+    skos:definition &#34;The business system or application used to account for and maintain accountability of DoD government property. Each MILDEP and WHS uses their own business system or application for this purpose. &#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Accountable Property System of Record&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Building" href="#DoDI-4165.14:Building">DoDI-4165.14:Building</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Building</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Building is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A roofed and floored facility enclosed by exterior walls and consisting of one or more levels that is suitable for single or multiple functions and that protects human beings and their properties from direct harsh effects of weather such as rain, wind, sun, etc. </p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Building a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Building&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Building]&#34; ;<br>
+    skos:definition &#34;A roofed and floored facility enclosed by exterior walls and consisting of one or more levels that is suitable for single or multiple functions and that protects human beings and their properties from direct harsh effects of weather such as rain, wind, sun, etc. &#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Building&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Category_Code" href="#DoDI-4165.14:Category_Code">DoDI-4165.14:Category_Code</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Category_Code</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Category_Code is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The most detailed level of classification for real property. Denotes a specific real property type and function in accordance with the current version of the RPCS and each MILDEP’s specific documentation. </p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Category_Code a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Category Code&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Category Code]&#34; ;<br>
+    skos:altLabel &#34;CATCODE&#34; ;<br>
+    skos:definition &#34;The most detailed level of classification for real property. Denotes a specific real property type and function in accordance with the current version of the RPCS and each MILDEP’s specific documentation. &#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Category Code&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Civil_Works" href="#DoDI-4165.14:Civil_Works">DoDI-4165.14:Civil_Works</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Civil_Works</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Civil_Works is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Tasks undertaken by the Directorate of Civil Works, U.S. Army Corps of Engineers that include emergency response and water resource development activities including flood risk management, navigation, recreation, infrastructure, and environmental stewardship. </p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Civil_Works a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Civil Works&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Civil Works]&#34; ;<br>
+    skos:definition &#34;Tasks undertaken by the Directorate of Civil Works, U.S. Army Corps of Engineers that include emergency response and water resource development activities including flood risk management, navigation, recreation, infrastructure, and environmental stewardship. &#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Civil Works&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Data_Analytics_and_Integration_Support" href="#DoDI-4165.14:Data_Analytics_and_Integration_Support">DoDI-4165.14:Data_Analytics_and_Integration_Support</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Data_Analytics_and_Integration_Support</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Data_Analytics_and_Integration_Support is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Data warehouse for real property data provided by the DoD Component APSRs.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Data_Analytics_and_Integration_Support a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Data Analytics and Integration Support&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Data Analytics and Integration Support]&#34; ;<br>
+    skos:altLabel &#34;DAIS&#34; ;<br>
+    skos:definition &#34;Data warehouse for real property data provided by the DoD Component APSRs.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Data Analytics and Integration Support&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Disposal" href="#DoDI-4165.14:Disposal">DoDI-4165.14:Disposal</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Disposal</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Disposal is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Any authorized method (e.g., demolition, non-DoD transfer) of permanently divesting the DoD of accountability for, and control of, an RPA in which the United States holds a legal interest.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Disposal a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Disposal&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Disposal]&#34; ;<br>
+    skos:definition &#34;Any authorized method (e.g., demolition, non-DoD transfer) of permanently divesting the DoD of accountability for, and control of, an RPA in which the United States holds a legal interest.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Disposal&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Enterprise" href="#DoDI-4165.14:Enterprise">DoDI-4165.14:Enterprise</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Enterprise</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Enterprise is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Defined in DoDD 8115.01</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Enterprise a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Enterprise&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Enterprise]&#34; ;<br>
+    skos:definition &#34;Defined in DoDD 8115.01&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Enterprise&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Facilities_Sustainment_Model" href="#DoDI-4165.14:Facilities_Sustainment_Model">DoDI-4165.14:Facilities_Sustainment_Model</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Facilities_Sustainment_Model</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Facilities_Sustainment_Model is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A model used to determine aggregate funding levels for sustainment. Projects annual facility sustainment costs for the DoD facilities inventory. </p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Facilities_Sustainment_Model a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Facilities Sustainment Model&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Facilities Sustainment Model]&#34; ;<br>
+    skos:definition &#34;A model used to determine aggregate funding levels for sustainment. Projects annual facility sustainment costs for the DoD facilities inventory. &#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Facilities Sustainment Model&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Facility" href="#DoDI-4165.14:Facility">DoDI-4165.14:Facility</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Facility</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Facility is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A building, structure, or linear structure that is constructed on or in the land that includes in the basic record for the facility such things as landscaping, HVAC equipment, utility connections, stairs, ramps, passageways, and other RPIE that facilitates the use of and is inclusive/intrinsic to the facility itself.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Facility a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Facility&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Facility]&#34; ;<br>
+    skos:definition &#34;A building, structure, or linear structure that is constructed on or in the land that includes in the basic record for the facility such things as landscaping, HVAC equipment, utility connections, stairs, ramps, passageways, and other RPIE that facilitates the use of and is inclusive/intrinsic to the facility itself.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Facility&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Facility_Analysis_Category" href="#DoDI-4165.14:Facility_Analysis_Category">DoDI-4165.14:Facility_Analysis_Category</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Facility_Analysis_Category</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Facility_Analysis_Category is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A grouping of RPAs that have a common UM and equivalent cost based on the UM. Included in this equivalent cost are costs associated with real property construction, maintenance, sustainment, and repair. Within the DoD, a FAC is represented by a four- digit numerical code, as found in DoDI 4165.03 and the current version of the RPCS.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Facility_Analysis_Category a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Facility Analysis Category&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=15&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Facility Analysis Category]&#34; ;<br>
+    skos:altLabel &#34;FAC&#34; ;<br>
+    skos:definition &#34;A grouping of RPAs that have a common UM and equivalent cost based on the UM. Included in this equivalent cost are costs associated with real property construction, maintenance, sustainment, and repair. Within the DoD, a FAC is represented by a four- digit numerical code, as found in DoDI 4165.03 and the current version of the RPCS.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Facility Analysis Category&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Forecast" href="#DoDI-4165.14:Forecast">DoDI-4165.14:Forecast</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Forecast</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Forecast is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A prediction of future RPAs, including acquisitions, transfers, and disposals, to support the DoD mission.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Forecast a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Forecast&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Forecast]&#34; ;<br>
+    skos:definition &#34;A prediction of future RPAs, including acquisitions, transfers, and disposals, to support the DoD mission.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Forecast&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Future_Years_Defense_Program" href="#DoDI-4165.14:Future_Years_Defense_Program">DoDI-4165.14:Future_Years_Defense_Program</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Future_Years_Defense_Program</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Future_Years_Defense_Program is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Program and financial plan for the DoD, as approved by the Secretary of Defense.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Future_Years_Defense_Program a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Future Years Defense Program&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Future Years Defense Program]&#34; ;<br>
+    skos:altLabel &#34;FYDP&#34; ;<br>
+    skos:definition &#34;Program and financial plan for the DoD, as approved by the Secretary of Defense.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Future Years Defense Program&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Geospatial_Feature" href="#DoDI-4165.14:Geospatial_Feature">DoDI-4165.14:Geospatial_Feature</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Geospatial_Feature</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Geospatial_Feature is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A digital representation of the location and spatial extent of an RPA structured according to IGI&amp;S standards and intended for direct use in a geographic information system. Real property geospatial features have a point, line, or polygon geometry. The representation must include a coordinate reference system, as defined in the International Organization for Standardization 19111:2019.  </p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Geospatial_Feature a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Geospatial Feature&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Geospatial Feature]&#34; ;<br>
+    skos:definition &#34;A digital representation of the location and spatial extent of an RPA structured according to IGI&amp;S standards and intended for direct use in a geographic information system. Real property geospatial features have a point, line, or polygon geometry. The representation must include a coordinate reference system, as defined in the International Organization for Standardization 19111:2019.  &#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Geospatial Feature&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Historic_Status" href="#DoDI-4165.14:Historic_Status">DoDI-4165.14:Historic_Status</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Historic_Status</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Historic_Status is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The status of a facility with respect to the National Register of Historic Places or listed on the World Heritage List or the host nation equivalent of the U.S. National Register of Historic Places.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Historic_Status a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Historic Status&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Historic Status]&#34; ;<br>
+    skos:definition &#34;The status of a facility with respect to the National Register of Historic Places or listed on the World Heritage List or the host nation equivalent of the U.S. National Register of Historic Places.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Historic Status&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Host_Installation" href="#DoDI-4165.14:Host_Installation">DoDI-4165.14:Host_Installation</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Host_Installation</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Host_Installation is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The Military Service or WHS holding real property accountability for a defined location.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Host_Installation a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Host Installation&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Host Installation]&#34; ;<br>
+    skos:definition &#34;The Military Service or WHS holding real property accountability for a defined location.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Host Installation&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Installation" href="#DoDI-4165.14:Installation">DoDI-4165.14:Installation</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Installation</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Installation is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A base, camp, post, station, yard, center, homeport facility for any ship, or other activity under the jurisdiction of the DoD, including any leased facility, which is located within any of the States, the District of Columbia, the Commonwealth of Puerto Rico, American Samoa, the Virgin Islands, the Commonwealth of the Northern Mariana Islands, or Guam. This term does not include any facility used primarily for civil works, rivers and harbors projects, or flood control projects. In the case of an activity in a foreign country, an installation is any property under the operational control of the Secretary of a MILDEP or the Secretary of Defense, without regard to the duration of operational control. For real property accountability, an installation must consist of one or more real property sites.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Installation a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Installation&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Installation]&#34; ;<br>
+    skos:definition &#34;A base, camp, post, station, yard, center, homeport facility for any ship, or other activity under the jurisdiction of the DoD, including any leased facility, which is located within any of the States, the District of Columbia, the Commonwealth of Puerto Rico, American Samoa, the Virgin Islands, the Commonwealth of the Northern Mariana Islands, or Guam. This term does not include any facility used primarily for civil works, rivers and harbors projects, or flood control projects. In the case of an activity in a foreign country, an installation is any property under the operational control of the Secretary of a MILDEP or the Secretary of Defense, without regard to the duration of operational control. For real property accountability, an installation must consist of one or more real property sites.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Installation&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Interest" href="#DoDI-4165.14:Interest">DoDI-4165.14:Interest</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Interest</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Interest is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The type and extent of legally enforceable right to possess or use property, including an easement to pass over an adjacent parcel, mineral rights, outright title, or a possibility of acquiring title should a specified event occur. DoD real property interest types are defined in the RPIM.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Interest a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Interest&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=16&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Interest]&#34; ;<br>
+    skos:definition &#34;The type and extent of legally enforceable right to possess or use property, including an easement to pass over an adjacent parcel, mineral rights, outright title, or a possibility of acquiring title should a specified event occur. DoD real property interest types are defined in the RPIM.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Interest&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Internal_Control" href="#DoDI-4165.14:Internal_Control">DoDI-4165.14:Internal_Control</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Internal_Control</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Internal_Control is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An integral component of an organization’s management that provides reasonable assurance that the following objectives are being achieved:<br>
+Effectiveness and efficiency of operations.<br>
+Reliability of financial reporting.<br>
+Compliance with applicable laws and regulations. <br>
+Synonymous with management control, helps government program managers achieve desired results through effective stewardship of public resource.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Internal_Control a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Internal Control&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Internal Control]&#34; ;<br>
+    skos:definition &#34;&#34;&#34;An integral component of an organization’s management that provides reasonable assurance that the following objectives are being achieved:<br>
+Effectiveness and efficiency of operations.<br>
+Reliability of financial reporting.<br>
+Compliance with applicable laws and regulations. <br>
+Synonymous with management control, helps government program managers achieve desired results through effective stewardship of public resource.&#34;&#34;&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Internal Control&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:International_Organization_for_Standardization" href="#DoDI-4165.14:International_Organization_for_Standardization">DoDI-4165.14:International_Organization_for_Standardization</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:International_Organization_for_Standardization</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:International_Organization_for_Standardization is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An independent, non-governmental international organization with a membership of 167 national standards bodies that brings together experts to share knowledge and develop voluntary, consensus-based, market relevant international standards that support innovation and provide solutions to global challenges. </p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:International_Organization_for_Standardization a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;International Organization for Standardization&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[International Organization for Standardization]&#34; ;<br>
+    skos:definition &#34;An independent, non-governmental international organization with a membership of 167 national standards bodies that brings together experts to share knowledge and develop voluntary, consensus-based, market relevant international standards that support innovation and provide solutions to global challenges. &#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;International Organization for Standardization&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Land" href="#DoDI-4165.14:Land">DoDI-4165.14:Land</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Land</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Land is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A portion of the Earth’s surface distinguishable by boundaries. Land must be accountable by parcel.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Land a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Land&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Land]&#34; ;<br>
+    skos:definition &#34;A portion of the Earth’s surface distinguishable by boundaries. Land must be accountable by parcel.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Land&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Land_Parcel" href="#DoDI-4165.14:Land_Parcel">DoDI-4165.14:Land_Parcel</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Land_Parcel</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Land_Parcel is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An RPA identified as a specific area of land having a unique acquisition document and a legal description of its boundaries and whose perimeter is delineated by a cadastral survey, as recorded in the land records of the government entity having appropriate jurisdiction.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Land_Parcel a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Land Parcel&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Land Parcel]&#34; ;<br>
+    skos:definition &#34;An RPA identified as a specific area of land having a unique acquisition document and a legal description of its boundaries and whose perimeter is delineated by a cadastral survey, as recorded in the land records of the government entity having appropriate jurisdiction.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Land Parcel&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Linear_Structure" href="#DoDI-4165.14:Linear_Structure">DoDI-4165.14:Linear_Structure</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Linear_Structure</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Linear_Structure is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A facility whose function requires that it traverse land (e.g., runway, road, rail line, pipeline, fence, pavement, electrical distribution line) or is otherwise managed or reported by a linear UM at the CATCODE level.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Linear_Structure a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Linear Structure&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Linear Structure]&#34; ;<br>
+    skos:definition &#34;A facility whose function requires that it traverse land (e.g., runway, road, rail line, pipeline, fence, pavement, electrical distribution line) or is otherwise managed or reported by a linear UM at the CATCODE level.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Linear Structure&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Predominant_Current_Use" href="#DoDI-4165.14:Predominant_Current_Use">DoDI-4165.14:Predominant_Current_Use</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Predominant_Current_Use</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Predominant_Current_Use is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The primary use of an RPA based on the largest quantity of usage for an activity or function as described by the appropriate FAC or CATCODE.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Predominant_Current_Use a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Predominant Current Use&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Predominant Current Use]&#34; ;<br>
+    skos:definition &#34;The primary use of an RPA based on the largest quantity of usage for an activity or function as described by the appropriate FAC or CATCODE.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Predominant Current Use&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Real_Property" href="#DoDI-4165.14:Real_Property">DoDI-4165.14:Real_Property</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Real_Property</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Real_Property is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Land and improvements to land (e.g., buildings, structures, and linear structures (see facility)).</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Real_Property a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Real Property&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=17&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property]&#34; ;<br>
+    skos:definition &#34;Land and improvements to land (e.g., buildings, structures, and linear structures (see facility)).&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Real Property&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Real_Property_Accountable_Officer" href="#DoDI-4165.14:Real_Property_Accountable_Officer">DoDI-4165.14:Real_Property_Accountable_Officer</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Real_Property_Accountable_Officer</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Real_Property_Accountable_Officer is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An individual (government employee) who, based on their training, knowledge, and experience in real property management, accountability, and control procedures, is appointed by proper authority to be responsible for the establishment of records and maintenance of physical accountability for the real property charged to the accountable area or installation.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Real_Property_Accountable_Officer a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Real Property Accountable Officer&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Accountable Officer]&#34; ;<br>
+    skos:altLabel &#34;RPAO&#34; ;<br>
+    skos:definition &#34;An individual (government employee) who, based on their training, knowledge, and experience in real property management, accountability, and control procedures, is appointed by proper authority to be responsible for the establishment of records and maintenance of physical accountability for the real property charged to the accountable area or installation.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Real Property Accountable Officer&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Real_Property_Categorization_System" href="#DoDI-4165.14:Real_Property_Categorization_System">DoDI-4165.14:Real_Property_Categorization_System</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Real_Property_Categorization_System</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Real_Property_Categorization_System is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A hierarchical scheme of real property types and functions that serves as the framework for identifying, categorizing, and analyzing the DoD’s inventory of land and facilities around the world. An updated table of FAC and CATCODES is published at least annually in accordance with DoDI 4165.03. </p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Real_Property_Categorization_System a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Real Property Categorization System&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Categorization System]&#34; ;<br>
+    skos:altLabel &#34;RPCS&#34; ;<br>
+    skos:definition &#34;A hierarchical scheme of real property types and functions that serves as the framework for identifying, categorizing, and analyzing the DoD’s inventory of land and facilities around the world. An updated table of FAC and CATCODES is published at least annually in accordance with DoDI 4165.03. &#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Real Property Categorization System&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Real_Property_Information_Model" href="#DoDI-4165.14:Real_Property_Information_Model">DoDI-4165.14:Real_Property_Information_Model</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Real_Property_Information_Model</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Real_Property_Information_Model is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>The DoD information model that details enterprise data elements and associated information such as definitions, business rules, pick lists, and metadata to provide a standard set of data across DoD for RPAs. </p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Real_Property_Information_Model a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Real Property Information Model&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Information Model]&#34; ;<br>
+    skos:altLabel &#34;RPIM&#34; ;<br>
+    skos:definition &#34;The DoD information model that details enterprise data elements and associated information such as definitions, business rules, pick lists, and metadata to provide a standard set of data across DoD for RPAs. &#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Real Property Information Model&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Real_Property_Installed_Equipment" href="#DoDI-4165.14:Real_Property_Installed_Equipment">DoDI-4165.14:Real_Property_Installed_Equipment</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Real_Property_Installed_Equipment</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Real_Property_Installed_Equipment is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>An item of equipment that is affixed and built into a facility as an integral part of that facility. To qualify as RPIE, the equipment must be necessary to make the facility complete, and if removed, would destroy, or severely reduce the designed usefulness and operation of the facility. RPIE costs are included as a funded initial construction or renovation cost. RPIE may be accounted for as a real property equipment asset record, but not as a separate facility record in the RPI. RPIE includes such items as control systems, heating, cooling, electrical, and emergency lighting.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Real_Property_Installed_Equipment a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Real Property Installed Equipment&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Installed Equipment]&#34; ;<br>
+    skos:altLabel &#34;RPIE&#34; ;<br>
+    skos:definition &#34;An item of equipment that is affixed and built into a facility as an integral part of that facility. To qualify as RPIE, the equipment must be necessary to make the facility complete, and if removed, would destroy, or severely reduce the designed usefulness and operation of the facility. RPIE costs are included as a funded initial construction or renovation cost. RPIE may be accounted for as a real property equipment asset record, but not as a separate facility record in the RPI. RPIE includes such items as control systems, heating, cooling, electrical, and emergency lighting.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Real Property Installed Equipment&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Real_Property_Inventory" href="#DoDI-4165.14:Real_Property_Inventory">DoDI-4165.14:Real_Property_Inventory</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Real_Property_Inventory</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Real_Property_Inventory is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A detailed record (listing, system) of real property lands, buildings, structures, and linear structures to which DoD holds a legal interest on behalf of the United States.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Real_Property_Inventory a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Real Property Inventory&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Inventory]&#34; ;<br>
+    skos:altLabel &#34;RPI&#34; ;<br>
+    skos:definition &#34;A detailed record (listing, system) of real property lands, buildings, structures, and linear structures to which DoD holds a legal interest on behalf of the United States.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Real Property Inventory&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Real_Property_Site_Unique_Identifier" href="#DoDI-4165.14:Real_Property_Site_Unique_Identifier">DoDI-4165.14:Real_Property_Site_Unique_Identifier</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Real_Property_Site_Unique_Identifier</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Real_Property_Site_Unique_Identifier is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A unique non-intelligent code used to permanently identify real property sites. A real property site is a specific geographic location that has individual land parcels or facilities assigned to it.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Real_Property_Site_Unique_Identifier a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Real Property Site Unique Identifier&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Site Unique Identifier]&#34; ;<br>
+    skos:altLabel &#34;RPSUID&#34; ;<br>
+    skos:definition &#34;A unique non-intelligent code used to permanently identify real property sites. A real property site is a specific geographic location that has individual land parcels or facilities assigned to it.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Real Property Site Unique Identifier&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Real_Property_Unique_Identifier" href="#DoDI-4165.14:Real_Property_Unique_Identifier">DoDI-4165.14:Real_Property_Unique_Identifier</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Real_Property_Unique_Identifier</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Real_Property_Unique_Identifier is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A unique non-intelligent code used to permanently identify an RPA.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Real_Property_Unique_Identifier a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Real Property Unique Identifier&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=18&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Real Property Unique Identifier]&#34; ;<br>
+    skos:altLabel &#34;RPUID&#34; ;<br>
+    skos:definition &#34;A unique non-intelligent code used to permanently identify an RPA.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Real Property Unique Identifier&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Site" href="#DoDI-4165.14:Site">DoDI-4165.14:Site</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Site</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Site is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>Physical (geographic) location that contains RPAs in which a MILDEP or WHS, on behalf of the United States, has a legal interest and maintains physical, legal, and financial accountability. Each site is assigned to a single installation. A site may exist in one of three forms: Land only, where there are no facilities present and where the land consists of either a single land parcel or two or more contiguous land parcels. Facility or facilities only, where the underlying land is neither owned nor controlled by the government. A stand-alone facility can be a site. Land, and all the facilities thereon, where the land consists of either a single land parcel or two or more contiguous land parcels. </p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Site a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Site&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=19&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Site]&#34; ;<br>
+    skos:definition &#34;Physical (geographic) location that contains RPAs in which a MILDEP or WHS, on behalf of the United States, has a legal interest and maintains physical, legal, and financial accountability. Each site is assigned to a single installation. A site may exist in one of three forms: Land only, where there are no facilities present and where the land consists of either a single land parcel or two or more contiguous land parcels. Facility or facilities only, where the underlying land is neither owned nor controlled by the government. A stand-alone facility can be a site. Land, and all the facilities thereon, where the land consists of either a single land parcel or two or more contiguous land parcels. &#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Site&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+			<div class="entity-div">
+
+				<h3 class="entity-section">Concept: <a name="DoDI-4165.14:Structure" href="#DoDI-4165.14:Structure">DoDI-4165.14:Structure</a>
+					<small>&nbsp;&nbsp;<a href="#a-z" class="backlink">back to top</a></small>
+				</h3>
+				<hr>
+
+                <div class="tree">
+                    <ul>
+                        
+
+                            <li href="#"><a>skos:Concept</a>
+
+                            <ul>
+                              <li><a style="font-weight: bold;">DoDI-4165.14:Structure</a>
+
+                              
+                                </li>
+
+                            </ul>
+
+                            </li>
+                        
+
+                    </ul>
+                </div>
+
+
+                
+                <p class="section-desc">
+                    <small>NOTE</small> DoDI-4165.14:Structure is a leaf node.</p>
+                
+
+				<p class="section-desc"><b>Description</b>
+                    <br>
+                    <p>A facility, other than a building or linear structure, that is constructed on or in the land.</p>
+                </p>
+
+                
+
+
+                <small class="implementation_title">Implementation:</small>
+				<div class="implementation">
+					<code><p>@prefix DoDI-4165.14: &lt;https://usace-data.com/civil-works/glossary/DoDI-4165.14#&gt; .<br>
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .<br>
+@prefix pav: &lt;http://purl.org/pav#&gt; .<br>
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .<br>
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .<br>
+@prefix wov: &lt;http://www.knowledgesmarts.com/ontologies/wov#&gt; .</p>
+
+<p>DoDI-4165.14:Structure a wov:GlossaryTerm,<br>
+        skos:Concept ;<br>
+    rdfs:label &#34;Structure&#34; ;<br>
+    dcterms:bibliographicCitation &#34;https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/416514p.pdf#page=19&#34; ;<br>
+    pav:wasDerivedFrom &#34;glossaries/CivilWorks/DoDI-4165-14.yaml#term[Structure]&#34; ;<br>
+    skos:definition &#34;A facility, other than a building or linear structure, that is constructed on or in the land.&#34; ;<br>
+    skos:inScheme DoDI-4165.14: ;<br>
+    skos:prefLabel &#34;Structure&#34; .</p>
+
+<p></p></code>
+				</div>
+
+			</div>
+
+			
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+	<hr>
+	<small>Ontology documentation automatically generated by <a class="greylink"  href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> v2.1.1 on Tue, 16 Jul 2024 04:25:47</small>
+
+
+</body>
+</html>
