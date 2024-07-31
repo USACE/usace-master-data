@@ -35,6 +35,7 @@ INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALU
 INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('K0','South Atlantic Division','K5','Mobile District','CESAM');
 INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('K0','South Atlantic Division','K6','Savannah District','CESAS');
 INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('K0','South Atlantic Division','K7','Wilmington District','CESAW');
+INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('K0','South Atlantic Division','K8','Caribbean District','CESAA');
 INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('L0','South Pacific Division','L1','Los Angeles District','CESPL');
 INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('L0','South Pacific Division','L2','Sacramento District','CESPK');
 INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('L0','South Pacific Division','L3','San Francisco District','CESPN');
