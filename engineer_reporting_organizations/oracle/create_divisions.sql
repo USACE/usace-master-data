@@ -2,7 +2,7 @@ CREATE TABLE divisions (
 	eroc	              VARCHAR2(2)
 	,hq_eroc	          VARCHAR2(2)
 	,reports_to	          VARCHAR2(200)
-	,division	          VARCHAR2(30)
+	,division	          VARCHAR2(200)
 	,usace_division_code  VARCHAR2(5)
 );
 

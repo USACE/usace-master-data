@@ -2,7 +2,7 @@ CREATE TABLE districts (
 	eroc	              character varying(2)
 	,div_eroc	          character varying(2)
 	,division	          character varying(200)
-	,district	          character varying(30)
+	,district	          character varying(200)
 	,usace_district_code  character varying(5)
 );
 
