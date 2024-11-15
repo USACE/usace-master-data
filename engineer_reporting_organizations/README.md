@@ -1,3 +1,5 @@
+US Army Corps of Engineers - Engineer Reporting Organizations
+
 1 Problem Statement
 
 The US Army Corps of Engineers is undergoing continuous data modernization and improvement to increase understanding across the enterprise. The lack of enterprise guidance on the terminology and top-level organizational structure creates ambiguity for data system owners and data users to interpret the meaning behind the organizational data. This inconsistency in referencing organizations reduces the ability to have a data driven organization, clear definitions, and understanding of terminology for interrelated data. The benefits to solving this problem is that data integration is possible and becomes greatly simplified.
