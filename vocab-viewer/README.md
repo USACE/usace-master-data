@@ -41,7 +41,7 @@ The right panel shows:
 
 ```
 vocab-viewer/
-├── index.html          # Main application
+├── vocab.html          # Main application
 ├── styles.css          # Styling
 ├── app.js              # Application logic
 ├── data/
