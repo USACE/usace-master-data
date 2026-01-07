@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USACE Vocabulary Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Cytoscape.js for graph visualization -->
+  <script src="https://unpkg.com/cytoscape@3.28.1/dist/cytoscape.min.js"></script>
+  <!-- Layout extension for better graph layouts -->
+  <script src="https://unpkg.com/layout-base@2.0.1/layout-base.js"></script>
+  <script src="https://unpkg.com/cose-base@2.2.0/cose-base.js"></script>
+  <script src="https://unpkg.com/cytoscape-fcose@2.2.0/cytoscape-fcose.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <img src="https://www.usace.army.mil/Portals/_default/Skins/USACETheme/Assets/images/usace-logo-color.svg" alt="USACE Logo" class="header-logo">
+        <div class="header-text">
+          <h1>USACE Vocabulary Explorer</h1>
+          <p class="subtitle">Explore U.S. Army Corps of Engineers ontologies and vocabularies</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content area -->
+    <div class="main-content">
+      <!-- Left panel - Search and results -->
+      <aside class="left-panel">
+        <div class="search-container">
+          <div class="search-input-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <input
+              type="text"
+              id="search-input"
+              class="search-input"
+              placeholder="Search terms, definitions..."
+              autocomplete="off"
+            >
+            <button id="clear-search" class="clear-btn" style="display: none;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6 6 18M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div id="search-results" class="search-results"></div>
+        </div>
+
+        <!-- Domain filter -->
+        <div class="domain-filter">
+          <label for="domain-select">Filter by Micro-Theory:</label>
+          <select id="domain-select">
+            <option value="">Select a domain...</option>
+          </select>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats-panel" id="stats-panel">
+          <h3>Statistics</h3>
+          <div class="stat-item">
+            <span class="stat-label">Total Terms:</span>
+            <span class="stat-value" id="stat-terms">-</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Relationships:</span>
+            <span class="stat-value" id="stat-relations">-</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Domains:</span>
+            <span class="stat-value" id="stat-domains">-</span>
+          </div>
+        </div>
+
+        <!-- Current View Indicator -->
+        <div class="current-view-panel" id="current-view-panel" style="display: none;">
+          <h3>Current View</h3>
+          <div class="current-view-label" id="current-view-label"></div>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend">
+          <h3>Relationship Types</h3>
+          <div class="legend-item">
+            <span class="legend-line broader"></span>
+            <span>Broader / Narrower</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-line related"></span>
+            <span>Related</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-line subclass"></span>
+            <span>SubClass / SuperClass</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-line match"></span>
+            <span>Exact / Close Match</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Center - Graph visualization -->
+      <main class="graph-container">
+        <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+          <svg id="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+          <svg id="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span class="theme-label">Firefly Mode</span>
+        </button>
+        <div id="cy" class="graph-canvas"></div>
+        <div class="graph-controls">
+          <button id="btn-zoom-in" title="Zoom In">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35M11 8v6M8 11h6"></path>
+            </svg>
+          </button>
+          <button id="btn-zoom-out" title="Zoom Out">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35M8 11h6"></path>
+            </svg>
+          </button>
+          <button id="btn-fit" title="Fit to Screen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+            </svg>
+          </button>
+          <button id="btn-reset" title="Reset View">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+              <path d="M3 3v5h5"></path>
+            </svg>
+          </button>
+          <div class="control-divider"></div>
+          <button id="btn-expand" title="Expand All Connected">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M12 2v4m0 12v4m10-10h-4M6 12H2m15.5-6.5-2.8 2.8M9.3 14.7l-2.8 2.8m12-0-2.8-2.8M9.3 9.3 6.5 6.5"></path>
+            </svg>
+          </button>
+          <button id="btn-layout" title="Re-layout Graph">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          </button>
+        </div>
+        <div id="graph-tooltip" class="graph-tooltip"></div>
+        <div id="loading" class="loading">
+          <div class="spinner"></div>
+          <p>Loading vocabulary data...</p>
+        </div>
+        <div id="welcome-message" class="welcome-message" style="display: none;">
+          <div class="welcome-content">
+            <h2>Welcome to the TepaMet<br>Vocabulary Viewer</h2>
+            <p>Select a domain to explore from the micro-theory dropdown on the left.</p>
+          </div>
+        </div>
+      </main>
+
+      <!-- Right panel - Term details -->
+      <aside class="right-panel" id="detail-panel">
+        <div class="detail-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"></path>
+          </svg>
+          <p>Select a term to view details</p>
+          <p class="hint">Search or click a node in the graph</p>
+        </div>
+        <div class="detail-content" style="display: none;">
+          <div class="detail-header">
+            <span class="detail-type" id="detail-type">concept</span>
+            <h2 id="detail-label">Term Label</h2>
+            <p class="detail-uri" id="detail-uri"></p>
+          </div>
+
+          <div class="detail-section">
+            <h3>Definition</h3>
+            <p id="detail-definition">No definition available.</p>
+          </div>
+
+          <div class="source-callout" id="section-source" style="display: none;">
+            <span class="source-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <path d="M14 2v6h6"></path>
+                <path d="M16 13H8"></path>
+                <path d="M16 17H8"></path>
+                <path d="M10 9H8"></path>
+              </svg>
+            </span>
+            <div class="source-content">
+              <span class="source-label">Authority Reference</span>
+              <span class="source-value" id="detail-source"></span>
+            </div>
+          </div>
+
+          <div class="detail-section" id="section-scope" style="display: none;">
+            <h3>Scope Note</h3>
+            <p id="detail-scope"></p>
+          </div>
+
+          <div class="detail-section" id="section-example" style="display: none;">
+            <h3>Example</h3>
+            <p id="detail-example"></p>
+          </div>
+
+          <div class="detail-section" id="section-altlabels" style="display: none;">
+            <h3>Alternative Labels</h3>
+            <div id="detail-altlabels" class="tag-list"></div>
+          </div>
+
+          <div class="detail-section">
+            <h3>Related Terms</h3>
+            <div id="detail-relations" class="relations-list"></div>
+          </div>
+
+          <div class="detail-actions">
+            <button id="btn-focus" class="action-btn primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Focus in Graph
+            </button>
+            <button id="btn-explore" class="action-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v4m0 12v4m10-10h-4M6 12H2"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Explore Connections
+            </button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
