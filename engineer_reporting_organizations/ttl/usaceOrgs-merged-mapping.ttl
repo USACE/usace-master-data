@@ -7,7 +7,7 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix : <https://usace-data.com/data/usace-orgs#> .
-@prefix usace-orgs: <https://usace-data.com/ontology/usace-orgs#> .
+@prefix usace-org: <https://usace-data.com/ontology/usace-org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix usgov-body: <http://www.usa.gov/ont/bodies#> .
@@ -45,7 +45,7 @@
     rr:predicateObjectMap [
       rr:predicate owl:versionInfo;
       rr:objectMap [
-          rr:constant "v07.10.2023"
+          rr:constant "v08.22.2023"
       ]
   ];
 
@@ -66,7 +66,7 @@
     rr:predicateObjectMap [
       rr:predicate dct:created;
       rr:objectMap [
-          rr:constant "2023-07-10";
+          rr:constant "2023-08-22";
           rr:datatype xsd:date
       ]
   ];
@@ -113,14 +113,14 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:formalName;
+    rr:predicate usace-org:formalName;
     rr:objectMap [
       rml:reference "ERO_FormalName"
     ]
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:shortName;
+    rr:predicate usace-org:shortName;
     rr:objectMap [
       rml:reference "ERO_ShortName"
     ]
@@ -139,25 +139,25 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:eroCode ;
+    rr:predicate usace-org:eroCode ;
     rr:objectMap [
       rml:reference "EROC"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:agencyCode ;
+    rr:predicate usace-org:agencyCode ;
     rr:objectMap [
       rml:reference "Agency_Code"
     ]
   ];
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:agencySymbol ;
+    rr:predicate usace-org:agencySymbol ;
     rr:objectMap [
       rml:reference "Agency_Symbol"
     ]
   ];
   rr:predicateObjectMap [
-      rr:predicate usace-orgs:isOconus;
+      rr:predicate usace-org:isOconus;
       rr:objectMap [
           rml:reference "OCONUS (Outside_Continential_United_States)";
           rr:datatype xsd:boolean
@@ -189,7 +189,7 @@
   rr:predicateObjectMap [
     rr:predicate rdf:type;
     rr:objectMap [
-      rr:template "https://usace-data.com/ontology/usace-orgs#{ERO_Type}"
+      rr:template "https://usace-data.com/ontology/usace-org#{ERO_Type}"
     ]
   ];
 
@@ -201,7 +201,7 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:wikidataID;
+    rr:predicate usace-org:wikidataID;
     rr:objectMap [
           rml:reference "Wikidata_ID";
           rr:datatype xsd:string;
@@ -209,7 +209,7 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:wikidataURL;
+    rr:predicate usace-org:wikidataURL;
     rr:objectMap [
         rml:reference "Wikidata_URI";
         rr:datatype xsd:string;
@@ -262,7 +262,7 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission_2}_Mission";
-    rr:class usace-orgs:DistrictMission, usace-orgs:MilitaryMission
+    rr:class usace-org:DistrictMission, usace-org:MilitaryMission
   ];
 
   rr:predicateObjectMap [
@@ -274,14 +274,14 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasMilitaryAOR ;
+    rr:predicate usace-org:hasMilitaryAOR ;
     rr:objectMap [
       rml:reference "Military_Area_Of_Responsibility";
     ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:usaceDistrictCode ;
+    rr:predicate usace-org:usaceDistrictCode ;
     rr:objectMap [
       rml:reference "USACE_District_Code";
     ];
@@ -290,7 +290,7 @@
 
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:missionOf ;
+    rr:predicate usace-org:missionOf ;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}"
     ];
@@ -313,7 +313,7 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasMission;
+    rr:predicate usace-org:hasMission;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission_2}_Mission";
     ]
@@ -322,8 +322,8 @@
 
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasMissionType;
-    rr:object usace-orgs:MilitaryMissionType
+    rr:predicate usace-org:hasMissionType;
+    rr:object usace-org:MilitaryMissionType
   ];
 
 .
@@ -338,13 +338,13 @@
   ] ;
 
   rr:subjectMap [
-   rr:constant <https://usace-data.com/ontology/usace-orgs#MilitaryMissionType>
+   rr:constant <https://usace-data.com/ontology/usace-org#MilitaryMissionType>
 ];
 	
 
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:supportedBy;
+    rr:predicate usace-org:supportedBy;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
     ]
@@ -363,7 +363,7 @@
 
   rr:subjectMap [
     rml:reference "Military_Area_Of_Responsibility";
-    rr:class usace-orgs:MilitaryAOR
+    rr:class usace-org:MilitaryAOR
   ];
 
 
@@ -381,7 +381,7 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission_1}_Mission";
-    rr:class usace-orgs:CivilWorksMission, usace-orgs:DistrictMission
+    rr:class usace-org:CivilWorksMission, usace-org:DistrictMission
   ];
 
   rr:predicateObjectMap [
@@ -393,21 +393,21 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasRegulatoryAOR ;
+    rr:predicate usace-org:hasRegulatoryAOR ;
     rr:objectMap [
       rml:reference "Regulatory_Area_Of_Responsibility";
     ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasCivilWorksAOR ;
+    rr:predicate usace-org:hasCivilWorksAOR ;
     rr:objectMap [
       rml:reference "Civil_Works_Area_Of_Responsibility";
     ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:usaceDistrictCode ;
+    rr:predicate usace-org:usaceDistrictCode ;
     rr:objectMap [
       rml:reference "USACE_District_Code" ;
     ];
@@ -415,15 +415,15 @@
 
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:missionOf ;
+    rr:predicate usace-org:missionOf ;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}"
     ];
   ];
 
  rr:predicateObjectMap [
-   rr:predicate usace-orgs:hasMissionType;
-   rr:object usace-orgs:CivilWorksMissionType ;
+   rr:predicate usace-org:hasMissionType;
+   rr:object usace-org:CivilWorksMissionType ;
  ];
 
 .
@@ -441,15 +441,15 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasMission;
+    rr:predicate usace-org:hasMission;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission_1}_Mission";
     ]
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasMissionType;
-    rr:object usace-orgs:CivilWorksMissionType
+    rr:predicate usace-org:hasMissionType;
+    rr:object usace-org:CivilWorksMissionType
   ];
 
 
@@ -464,13 +464,13 @@
   ] ;
 
   rr:subjectMap [
-   rr:constant <https://usace-data.com/ontology/usace-orgs#CivilWorksMissionType>
+   rr:constant <https://usace-data.com/ontology/usace-org#CivilWorksMissionType>
 ];
 	
 
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:supportedBy;
+    rr:predicate usace-org:supportedBy;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
     ]
@@ -489,7 +489,7 @@
 
   rr:subjectMap [
     rml:reference "Regulatory_Area_Of_Responsibility";
-    rr:class usace-orgs:RegulatoryAOR
+    rr:class usace-org:RegulatoryAOR
   ];
 
 
@@ -506,7 +506,7 @@
 
   rr:subjectMap [
     rml:reference "Civil_Works_Area_Of_Responsibility";
-    rr:class usace-orgs:CivilWorksAOR
+    rr:class usace-org:CivilWorksAOR
   ];
 
 
@@ -524,7 +524,7 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission_3}_Mission";
-    rr:class usace-orgs:DistrictMission
+    rr:class usace-org:DistrictMission
   ];
 
   rr:predicateObjectMap [
@@ -536,14 +536,14 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasFudsAOR ;
+    rr:predicate usace-org:hasFudsAOR ;
     rr:objectMap [
       rml:reference "FUDS_Area_Of_Responsibility";
     ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:usaceDistrictCode ;
+    rr:predicate usace-org:usaceDistrictCode ;
     rr:objectMap [
       rml:reference "USACE_District_Code";
     ];
@@ -551,7 +551,7 @@
 
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:missionOf ;
+    rr:predicate usace-org:missionOf ;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}"
     ];
@@ -576,15 +576,15 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasMission;
+    rr:predicate usace-org:hasMission;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission_3}_Mission";
     ]
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasMissionType;
-      rr:object usace-orgs:EnvironmentalMissionType;
+    rr:predicate usace-org:hasMissionType;
+      rr:object usace-org:EnvironmentalMissionType;
   ];
 
 
@@ -599,12 +599,12 @@
   ] ;
 
   rr:subjectMap [
-   rr:constant <https://usace-data.com/ontology/usace-orgs#EnvironmentalMissionType>
+   rr:constant <https://usace-data.com/ontology/usace-org#EnvironmentalMissionType>
 ];
 	
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:fudsMission;
+    rr:predicate usace-org:fudsMission;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
     ]
@@ -624,7 +624,7 @@
 
   rr:subjectMap [
     rml:reference "FUDS_Area_Of_Responsibility";
-    rr:class usace-orgs:FudsAOR
+    rr:class usace-org:FudsAOR
   ];
 
 
@@ -642,7 +642,7 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission_3}_Mission";
-    rr:class usace-orgs:DistrictMission
+    rr:class usace-org:DistrictMission
   ];
 
   rr:predicateObjectMap [
@@ -654,14 +654,14 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasFusrapAOR ;
+    rr:predicate usace-org:hasFusrapAOR ;
     rr:objectMap [
       rml:reference "FUSRAP_Area_Of_Responsibility";
     ];
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:usaceDistrictCode ;
+    rr:predicate usace-org:usaceDistrictCode ;
     rr:objectMap [
       rml:reference "USACE_District_Code";
     ];
@@ -669,7 +669,7 @@
 
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:missionOf ;
+    rr:predicate usace-org:missionOf ;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}"
     ];
@@ -690,15 +690,15 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasMission;
+    rr:predicate usace-org:hasMission;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission_3}_Mission";
     ]
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasMissionType;
-      rr:object usace-orgs:EnvironmentalMissionType;
+    rr:predicate usace-org:hasMissionType;
+      rr:object usace-org:EnvironmentalMissionType;
   ];
 
 
@@ -714,13 +714,13 @@
   ] ;
 
   rr:subjectMap [
-   rr:constant <https://usace-data.com/ontology/usace-orgs#EnvironmentalMissionType>
+   rr:constant <https://usace-data.com/ontology/usace-org#EnvironmentalMissionType>
 ];
 	
 
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:fusrapMission;
+    rr:predicate usace-org:fusrapMission;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
     ]
@@ -739,7 +739,7 @@
 
   rr:subjectMap [
     rml:reference "FUSRAP_Area_Of_Responsibility";
-    rr:class usace-orgs:FusrapAOR
+    rr:class usace-org:FusrapAOR
   ];
 
 
@@ -757,7 +757,7 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}_Mission";
-    rr:class usace-orgs:DistrictMission
+    rr:class usace-org:DistrictMission
   ];
 
   rr:predicateObjectMap [
@@ -770,7 +770,7 @@
 
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:missionOf ;
+    rr:predicate usace-org:missionOf ;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}"
     ];
@@ -792,7 +792,7 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasMission;
+    rr:predicate usace-org:hasMission;
     rr:objectMap [
       rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission}_Mission";
     ]
@@ -812,11 +812,11 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
-    rr:class usace-orgs:Division
+    rr:class usace-org:Division
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:usaceDivisionCode;
+    rr:predicate usace-org:usaceDivisionCode;
     rr:objectMap [
 	rml:reference "USACE_Division_Code";
     ]
@@ -838,18 +838,18 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{HQ_EROC}";
-    rr:class usace-orgs:HQUSACE
+    rr:class usace-org:HQUSACE
   ];
 
   #rr:predicateObjectMap [
-    #rr:predicate usace-orgs:usaceDivisionCode;
+    #rr:predicate usace-org:usaceDivisionCode;
     #rr:objectMap [
 	#rml:reference "USACE_Division_Code";
     #]
   #];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasDivision;
+    rr:predicate usace-org:hasDivision;
     rr:objectMap [
 	rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
     ]
@@ -872,18 +872,18 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
-    rr:class usace-orgs:District, org:Organization
+    rr:class usace-org:District, org:Organization
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:usaceDistrictCode;
+    rr:predicate usace-org:usaceDistrictCode;
     rr:objectMap [
 	    rml:reference "USACE_District_Code"
     ]
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:districtOf;
+    rr:predicate usace-org:districtOf;
     rr:objectMap [
 	    rr:template "https://usace-data.com/data/usace-orgs#{Div_EROC}"
     ]
@@ -903,11 +903,11 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{Div_EROC}";
-    rr:class usace-orgs:Division, org:Organization
+    rr:class usace-org:Division, org:Organization
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasDistrict;
+    rr:predicate usace-org:hasDistrict;
     rr:objectMap [
 	rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
     ]
@@ -929,7 +929,7 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
-    rr:class usace-orgs:OtherERO, org:Organization
+    rr:class usace-org:OtherERO, org:Organization
   ];
 
   rr:predicateObjectMap [
@@ -941,7 +941,7 @@
   ];
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:eroCode;
+    rr:predicate usace-org:eroCode;
     rr:objectMap [
 	rml:reference "EROC";
     ]
@@ -968,12 +968,12 @@
 
   rr:subjectMap [
     rr:template "https://usace-data.com/data/usace-orgs#{HQ_EROC}";
-    rr:class usace-orgs:HQUSACE
+    rr:class usace-org:HQUSACE
   ];
 
 
   rr:predicateObjectMap [
-    rr:predicate usace-orgs:hasOtherERO;
+    rr:predicate usace-org:hasOtherERO;
     rr:objectMap [
 	    rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
     ]
@@ -991,12 +991,12 @@
 # 
 # rr:subjectMap [
 #   rr:template "https://usace-data.com/data/usace-orgs#{EROC}";
-#   rr:class usace-orgs:DistrictMission
+#   rr:class usace-org:DistrictMission
 # ];
 # 
 # 
 # rr:predicateObjectMap [
-#   rr:predicate usace-orgs:hasMission;
+#   rr:predicate usace-org:hasMission;
 #   rr:objectMap [
 # 	  rr:template "https://usace-data.com/data/usace-orgs#{EROC}_{District_Mission}_Mission";
 #   ]
