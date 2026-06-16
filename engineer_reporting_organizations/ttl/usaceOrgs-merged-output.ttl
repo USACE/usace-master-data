@@ -1,3 +1,5 @@
+# prefix: usace-orgs
+
 @prefix : <https://usace-data.com/data/usace-orgs#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix org: <http://www.w3.org/ns/org#> .
@@ -9,346 +11,346 @@
 @prefix rml: <http://semweb.mmlab.be/ns/rml#> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix usace-orgs: <https://usace-data.com/ontology/usace-orgs#> .
+@prefix usace-org: <https://usace-data.com/ontology/usace-org#> .
 @prefix usgov-body: <http://www.usa.gov/ont/bodies#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27LRL%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27NAB%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27NAE%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27NWK%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27NWO%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27POA%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27POH%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SAJ%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SAS%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SPK%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SPL%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SWF%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SWT%27&f=geojson>
-  a usace-orgs:FudsAOR .
+  a usace-org:FudsAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRB%27&f=geojson>
-  a usace-orgs:CivilWorksAOR, usace-orgs:FusrapAOR .
+  a usace-org:CivilWorksAOR, usace-org:FusrapAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRC%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRE%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRH%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRL%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRN%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRP%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVK%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVM%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVN%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVP%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVR%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVS%27&f=geojson>
-  a usace-orgs:CivilWorksAOR, usace-orgs:FusrapAOR .
+  a usace-org:CivilWorksAOR, usace-org:FusrapAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAB%27&f=geojson>
-  a usace-orgs:CivilWorksAOR, usace-orgs:FusrapAOR .
+  a usace-org:CivilWorksAOR, usace-org:FusrapAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAE%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAN%27&f=geojson>
-  a usace-orgs:CivilWorksAOR, usace-orgs:FusrapAOR .
+  a usace-org:CivilWorksAOR, usace-org:FusrapAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAO%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAP%27&f=geojson>
-  a usace-orgs:CivilWorksAOR, usace-orgs:FusrapAOR .
+  a usace-org:CivilWorksAOR, usace-org:FusrapAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWK%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWO%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWP%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWS%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWW%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27POA%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27POH%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAC%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAJ%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAM%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAS%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAW%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SPA%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SPK%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SPL%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SPN%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SWF%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SWG%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SWL%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SWT%27&f=geojson>
-  a usace-orgs:CivilWorksAOR .
+  a usace-org:CivilWorksAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27LRL%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAB%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAE%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAN%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAO%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAP%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAU%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NWK%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NWO%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NWS%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27POA%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27POF%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27POH%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27POJ%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SAM%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SAS%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SPA%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SPK%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SPL%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SWF%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SWL%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27TAD%27&f=geojson>
-  a usace-orgs:MilitaryAOR .
+  a usace-org:MilitaryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRB%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRC%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRE%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRH%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRL%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRN%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRP%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVK%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVM%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVN%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVP%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVR%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVS%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAB%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAE%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAN%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAO%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAP%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWK%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWO%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWP%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWS%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWW%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27POA%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27POH%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAC%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAJ%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAM%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAS%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAW%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SPA%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SPK%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SPL%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SPN%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SWF%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SWG%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SWL%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SWT%27&f=geojson>
-  a usace-orgs:RegulatoryAOR .
+  a usace-org:RegulatoryAOR .
 
 <https://usace-data.com/data/usace-orgs> a owl:Ontology;
-  dct:created "2023-07-10"^^xsd:date;
+  dct:created "2023-08-22"^^xsd:date;
   dct:description "The US Army Corps of Engineers (USACE)  Top Level Organizational Ontology was developed to consistently describe and represent USACE organizational structure using the terms field operating activity, engineer reporting organization, and office symbol in a consistent manner. Additionally, the ontology identifies the geographic area of responsibility for each USACE district and division for each mission area.  Adoption of this ontology by USACE information systems will facilitate system interoperability consistent with USACE data strategy.";
   dct:title "USACE Engineer Reporting Organization Ontology";
   pav:authoredBy "Joel Schlagel, USACE Civil Works";
@@ -356,25 +358,25 @@
   pav:createdBy "Sofiane Fellah, Image Matters LLC";
   vann:preferredNamespacePrefix "usace-orgs";
   vann:preferredNamespaceUri "https://usace-data.com/data/usace-orgs#";
-  owl:versionInfo "v07.10.2023" .
+  owl:versionInfo "v08.22.2023" .
 
-:A0 a org:Organization, usace-orgs:Division;
+:A0 a org:Organization, usace-org:Division;
   dct:identifier "A0";
   dct:title "Huntsville Engineering and Support Center";
   rdfs:label "Huntsville Engineering and Support Center";
   skos:prefLabel "Huntsville Engineering and Support Center";
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "HNC";
-  usace-orgs:agencySymbol "CEHNC";
-  usace-orgs:eroCode "A0";
-  usace-orgs:formalName "Huntsville Engineering and Support Center";
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Huntsville";
-  usace-orgs:wikidataID "None";
-  usace-orgs:wikidataURL "None" .
+  usace-org:agencyCode "HNC";
+  usace-org:agencySymbol "CEHNC";
+  usace-org:eroCode "A0";
+  usace-org:formalName "Huntsville Engineering and Support Center";
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Huntsville";
+  usace-org:wikidataID "None";
+  usace-org:wikidataURL "None" .
 
-:B0 a org:Organization, usace-orgs:Division;
+:B0 a org:Organization, usace-org:Division;
   dct:identifier "B0";
   dct:title "Mississippi Valley Division";
   rdfs:label "Mississippi Valley Division";
@@ -382,206 +384,206 @@
   org:hasSubOrganization :B1, :B2, :B3, :B4, :B5, :B6;
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "MVD";
-  usace-orgs:agencySymbol "CEMVD";
-  usace-orgs:eroCode "B0";
-  usace-orgs:formalName "Mississippi Valley Division";
-  usace-orgs:hasDistrict :B1, :B2, :B3, :B4, :B5, :B6;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Mississippi Valley";
-  usace-orgs:usaceDivisionCode "CEMVD";
-  usace-orgs:wikidataID "Q3316926";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q3316926" .
+  usace-org:agencyCode "MVD";
+  usace-org:agencySymbol "CEMVD";
+  usace-org:eroCode "B0";
+  usace-org:formalName "Mississippi Valley Division";
+  usace-org:hasDistrict :B1, :B2, :B3, :B4, :B5, :B6;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Mississippi Valley";
+  usace-org:usaceDivisionCode "CEMVD";
+  usace-org:wikidataID "Q3316926";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q3316926" .
 
-:B1 a org:Organization, usace-orgs:District;
+:B1 a org:Organization, usace-org:District;
   dct:identifier "B1";
   dct:title "Memphis District";
   rdfs:label "Memphis District";
   skos:prefLabel "Memphis District";
   org:reportsTo :B0;
   org:subOrganizationOf :B0;
-  usace-orgs:agencyCode "MVM";
-  usace-orgs:agencySymbol "CEMVM";
-  usace-orgs:districtOf :B0;
-  usace-orgs:eroCode "B1";
-  usace-orgs:formalName "US Army Engineer District, Memphis";
-  usace-orgs:hasMission :B1_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Memphis";
-  usace-orgs:usaceDistrictCode "CEMVM";
-  usace-orgs:wikidataID "Q116796045";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796045" .
+  usace-org:agencyCode "MVM";
+  usace-org:agencySymbol "CEMVM";
+  usace-org:districtOf :B0;
+  usace-org:eroCode "B1";
+  usace-org:formalName "US Army Engineer District, Memphis";
+  usace-org:hasMission :B1_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Memphis";
+  usace-org:usaceDistrictCode "CEMVM";
+  usace-org:wikidataID "Q116796045";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796045" .
 
-:B1_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:B1_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Memphis District Civil_Works Mission";
   rdfs:label "Memphis District Civil_Works Mission";
   skos:prefLabel "Memphis District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVM%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVM%27&f=geojson";
-  usace-orgs:missionOf :B1;
-  usace-orgs:usaceDistrictCode "CEMVM" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVM%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVM%27&f=geojson";
+  usace-org:missionOf :B1;
+  usace-org:usaceDistrictCode "CEMVM" .
 
-:B2 a org:Organization, usace-orgs:District;
+:B2 a org:Organization, usace-org:District;
   dct:identifier "B2";
   dct:title "New Orleans District";
   rdfs:label "New Orleans District";
   skos:prefLabel "New Orleans District";
   org:reportsTo :B0;
   org:subOrganizationOf :B0;
-  usace-orgs:agencyCode "MVN";
-  usace-orgs:agencySymbol "CEMVN";
-  usace-orgs:districtOf :B0;
-  usace-orgs:eroCode "B2";
-  usace-orgs:formalName "US Army Engineer District, New Orleans";
-  usace-orgs:hasMission :B2_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "New Orleans";
-  usace-orgs:usaceDistrictCode "CEMVN";
-  usace-orgs:wikidataID "Q116795996";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116795996" .
+  usace-org:agencyCode "MVN";
+  usace-org:agencySymbol "CEMVN";
+  usace-org:districtOf :B0;
+  usace-org:eroCode "B2";
+  usace-org:formalName "US Army Engineer District, New Orleans";
+  usace-org:hasMission :B2_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "New Orleans";
+  usace-org:usaceDistrictCode "CEMVN";
+  usace-org:wikidataID "Q116795996";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116795996" .
 
-:B2_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:B2_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "New Orleans District Civil_Works Mission";
   rdfs:label "New Orleans District Civil_Works Mission";
   skos:prefLabel "New Orleans District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVN%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVN%27&f=geojson";
-  usace-orgs:missionOf :B2;
-  usace-orgs:usaceDistrictCode "CEMVN" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVN%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVN%27&f=geojson";
+  usace-org:missionOf :B2;
+  usace-org:usaceDistrictCode "CEMVN" .
 
-:B3 a org:Organization, usace-orgs:District;
+:B3 a org:Organization, usace-org:District;
   dct:identifier "B3";
   dct:title "St. Louis District";
   rdfs:label "St. Louis District";
   skos:prefLabel "St. Louis District";
   org:reportsTo :B0;
   org:subOrganizationOf :B0;
-  usace-orgs:agencyCode "MVS";
-  usace-orgs:agencySymbol "CEMVS";
-  usace-orgs:districtOf :B0;
-  usace-orgs:eroCode "B3";
-  usace-orgs:formalName "US Army Engineer District, St. Louis";
-  usace-orgs:hasMission :B3_Civil_Works_Mission, :B3_Environmental_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "St. Louis";
-  usace-orgs:usaceDistrictCode "CEMVS";
-  usace-orgs:wikidataID "Q116783519";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116783519" .
+  usace-org:agencyCode "MVS";
+  usace-org:agencySymbol "CEMVS";
+  usace-org:districtOf :B0;
+  usace-org:eroCode "B3";
+  usace-org:formalName "US Army Engineer District, St. Louis";
+  usace-org:hasMission :B3_Civil_Works_Mission, :B3_Environmental_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "St. Louis";
+  usace-org:usaceDistrictCode "CEMVS";
+  usace-org:wikidataID "Q116783519";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116783519" .
 
-:B3_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:B3_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "St. Louis District Civil_Works Mission";
   rdfs:label "St. Louis District Civil_Works Mission";
   skos:prefLabel "St. Louis District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVS%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVS%27&f=geojson";
-  usace-orgs:missionOf :B3;
-  usace-orgs:usaceDistrictCode "CEMVS" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVS%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVS%27&f=geojson";
+  usace-org:missionOf :B3;
+  usace-org:usaceDistrictCode "CEMVS" .
 
-:B3_Environmental_Mission a usace-orgs:DistrictMission;
+:B3_Environmental_Mission a usace-org:DistrictMission;
   dct:title "St. Louis District Environmental Mission";
   rdfs:label "St. Louis District Environmental Mission";
   skos:prefLabel "St. Louis District Environmental Mission";
-  usace-orgs:hasFusrapAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVS%27&f=geojson";
-  usace-orgs:missionOf :B3;
-  usace-orgs:usaceDistrictCode "CEMVS" .
+  usace-org:hasFusrapAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVS%27&f=geojson";
+  usace-org:missionOf :B3;
+  usace-org:usaceDistrictCode "CEMVS" .
 
-:B4 a org:Organization, usace-orgs:District;
+:B4 a org:Organization, usace-org:District;
   dct:identifier "B4";
   dct:title "Vicksburg District";
   rdfs:label "Vicksburg District";
   skos:prefLabel "Vicksburg District";
   org:reportsTo :B0;
   org:subOrganizationOf :B0;
-  usace-orgs:agencyCode "MVK";
-  usace-orgs:agencySymbol "CEMVK";
-  usace-orgs:districtOf :B0;
-  usace-orgs:eroCode "B4";
-  usace-orgs:formalName "US Army Engineer District, Vicksburg";
-  usace-orgs:hasMission :B4_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Vicksburg";
-  usace-orgs:usaceDistrictCode "CEMVK";
-  usace-orgs:wikidataID "Q116796321";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796321" .
+  usace-org:agencyCode "MVK";
+  usace-org:agencySymbol "CEMVK";
+  usace-org:districtOf :B0;
+  usace-org:eroCode "B4";
+  usace-org:formalName "US Army Engineer District, Vicksburg";
+  usace-org:hasMission :B4_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Vicksburg";
+  usace-org:usaceDistrictCode "CEMVK";
+  usace-org:wikidataID "Q116796321";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796321" .
 
-:B4_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:B4_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Vicksburg District Civil_Works Mission";
   rdfs:label "Vicksburg District Civil_Works Mission";
   skos:prefLabel "Vicksburg District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVK%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVK%27&f=geojson";
-  usace-orgs:missionOf :B4;
-  usace-orgs:usaceDistrictCode "CEMVK" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVK%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVK%27&f=geojson";
+  usace-org:missionOf :B4;
+  usace-org:usaceDistrictCode "CEMVK" .
 
-:B5 a org:Organization, usace-orgs:District;
+:B5 a org:Organization, usace-org:District;
   dct:identifier "B5";
   dct:title "Rock Island District";
   rdfs:label "Rock Island District";
   skos:prefLabel "Rock Island District";
   org:reportsTo :B0;
   org:subOrganizationOf :B0;
-  usace-orgs:agencyCode "MVR";
-  usace-orgs:agencySymbol "CEMVR";
-  usace-orgs:districtOf :B0;
-  usace-orgs:eroCode "B5";
-  usace-orgs:formalName "US Army Engineer District, Rock Island";
-  usace-orgs:hasMission :B5_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Rock Island";
-  usace-orgs:usaceDistrictCode "CEMVR";
-  usace-orgs:wikidataID "Q116783505";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116783505" .
+  usace-org:agencyCode "MVR";
+  usace-org:agencySymbol "CEMVR";
+  usace-org:districtOf :B0;
+  usace-org:eroCode "B5";
+  usace-org:formalName "US Army Engineer District, Rock Island";
+  usace-org:hasMission :B5_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Rock Island";
+  usace-org:usaceDistrictCode "CEMVR";
+  usace-org:wikidataID "Q116783505";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116783505" .
 
-:B5_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:B5_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Rock Island District Civil_Works Mission";
   rdfs:label "Rock Island District Civil_Works Mission";
   skos:prefLabel "Rock Island District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVR%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVR%27&f=geojson";
-  usace-orgs:missionOf :B5;
-  usace-orgs:usaceDistrictCode "CEMVR" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVR%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVR%27&f=geojson";
+  usace-org:missionOf :B5;
+  usace-org:usaceDistrictCode "CEMVR" .
 
-:B6 a org:Organization, usace-orgs:District;
+:B6 a org:Organization, usace-org:District;
   dct:identifier "B6";
   dct:title "St. Paul District";
   rdfs:label "St. Paul District";
   skos:prefLabel "St. Paul District";
   org:reportsTo :B0;
   org:subOrganizationOf :B0;
-  usace-orgs:agencyCode "MVP";
-  usace-orgs:agencySymbol "CEMVP";
-  usace-orgs:districtOf :B0;
-  usace-orgs:eroCode "B6";
-  usace-orgs:formalName "US Army Engineer District, St. Paul";
-  usace-orgs:hasMission :B6_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "St. Paul";
-  usace-orgs:usaceDistrictCode "CEMVP";
-  usace-orgs:wikidataID "Q116796308";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796308" .
+  usace-org:agencyCode "MVP";
+  usace-org:agencySymbol "CEMVP";
+  usace-org:districtOf :B0;
+  usace-org:eroCode "B6";
+  usace-org:formalName "US Army Engineer District, St. Paul";
+  usace-org:hasMission :B6_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "St. Paul";
+  usace-org:usaceDistrictCode "CEMVP";
+  usace-org:wikidataID "Q116796308";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796308" .
 
-:B6_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:B6_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "St. Paul District Civil_Works Mission";
   rdfs:label "St. Paul District Civil_Works Mission";
   skos:prefLabel "St. Paul District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVP%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVP%27&f=geojson";
-  usace-orgs:missionOf :B6;
-  usace-orgs:usaceDistrictCode "CEMVP" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27MVP%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27MVP%27&f=geojson";
+  usace-org:missionOf :B6;
+  usace-org:usaceDistrictCode "CEMVP" .
 
-:E0 a org:Organization, usace-orgs:Division;
+:E0 a org:Organization, usace-org:Division;
   dct:identifier "E0";
   dct:title "North Atlantic Division";
   rdfs:label "North Atlantic Division";
@@ -589,18 +591,18 @@
   org:hasSubOrganization :E1, :E3, :E4, :E5, :E6, :E7;
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "NAD";
-  usace-orgs:agencySymbol "CENAD";
-  usace-orgs:eroCode "E0";
-  usace-orgs:formalName "North Atlantic Division";
-  usace-orgs:hasDistrict :E1, :E2, :E3, :E4, :E5, :E6, :E7;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "North Atlantic";
-  usace-orgs:usaceDivisionCode "CENAD";
-  usace-orgs:wikidataID "Q16821340";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q16821340" .
+  usace-org:agencyCode "NAD";
+  usace-org:agencySymbol "CENAD";
+  usace-org:eroCode "E0";
+  usace-org:formalName "North Atlantic Division";
+  usace-org:hasDistrict :E1, :E2, :E3, :E4, :E5, :E6, :E7;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "North Atlantic";
+  usace-org:usaceDivisionCode "CENAD";
+  usace-org:wikidataID "Q16821340";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q16821340" .
 
-:E1 a org:Organization, usace-orgs:District;
+:E1 a org:Organization, usace-org:District;
   dct:identifier "E1";
   dct:title "Baltimore District";
   rdfs:label "Baltimore District";
@@ -608,280 +610,280 @@
   org:hasSubOrganization :E2;
   org:reportsTo :E0;
   org:subOrganizationOf :E0;
-  usace-orgs:agencyCode "NAB";
-  usace-orgs:agencySymbol "CENAB";
-  usace-orgs:districtOf :E0;
-  usace-orgs:eroCode "E1";
-  usace-orgs:formalName "US Army Engineer District, Baltimore";
-  usace-orgs:hasMission :E1_Civil_Works_Mission, :E1_Environmental_Mission, :E1_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Baltimore";
-  usace-orgs:usaceDistrictCode "CENAB";
-  usace-orgs:wikidataID "Q116796281";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796281" .
+  usace-org:agencyCode "NAB";
+  usace-org:agencySymbol "CENAB";
+  usace-org:districtOf :E0;
+  usace-org:eroCode "E1";
+  usace-org:formalName "US Army Engineer District, Baltimore";
+  usace-org:hasMission :E1_Civil_Works_Mission, :E1_Environmental_Mission, :E1_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Baltimore";
+  usace-org:usaceDistrictCode "CENAB";
+  usace-org:wikidataID "Q116796281";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796281" .
 
-:E1_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:E1_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Baltimore District Civil_Works Mission";
   rdfs:label "Baltimore District Civil_Works Mission";
   skos:prefLabel "Baltimore District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAB%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAB%27&f=geojson";
-  usace-orgs:missionOf :E1;
-  usace-orgs:usaceDistrictCode "CENAB" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAB%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAB%27&f=geojson";
+  usace-org:missionOf :E1;
+  usace-org:usaceDistrictCode "CENAB" .
 
-:E1_Environmental_Mission a usace-orgs:DistrictMission;
+:E1_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Baltimore District Environmental Mission";
   rdfs:label "Baltimore District Environmental Mission";
   skos:prefLabel "Baltimore District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27NAB%27&f=geojson";
-  usace-orgs:hasFusrapAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAB%27&f=geojson";
-  usace-orgs:missionOf :E1;
-  usace-orgs:usaceDistrictCode "CENAB" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27NAB%27&f=geojson";
+  usace-org:hasFusrapAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAB%27&f=geojson";
+  usace-org:missionOf :E1;
+  usace-org:usaceDistrictCode "CENAB" .
 
-:E1_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:E1_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Baltimore District Military Mission";
   rdfs:label "Baltimore District Military Mission";
   skos:prefLabel "Baltimore District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAB%27&f=geojson";
-  usace-orgs:missionOf :E1;
-  usace-orgs:usaceDistrictCode "CENAB" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAB%27&f=geojson";
+  usace-org:missionOf :E1;
+  usace-org:usaceDistrictCode "CENAB" .
 
-:E2 a org:Organization, usace-orgs:District;
+:E2 a org:Organization, usace-org:District;
   dct:identifier "E2";
   dct:title "Washington Aqueduct";
   rdfs:label "Washington Aqueduct";
   skos:prefLabel "Washington Aqueduct";
   org:reportsTo :E1;
   org:subOrganizationOf :E1;
-  usace-orgs:agencyCode "WAD";
-  usace-orgs:agencySymbol "CEWAD";
-  usace-orgs:districtOf :E0;
-  usace-orgs:eroCode "E2";
-  usace-orgs:formalName "Washington Aqueduct";
-  usace-orgs:hasMission :E2_Washington_Aqueduct_Mission;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Washington Aqueduct";
-  usace-orgs:usaceDistrictCode "CEWAD";
-  usace-orgs:wikidataID "Q7971655";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q7971655" .
+  usace-org:agencyCode "WAD";
+  usace-org:agencySymbol "CEWAD";
+  usace-org:districtOf :E0;
+  usace-org:eroCode "E2";
+  usace-org:formalName "Washington Aqueduct";
+  usace-org:hasMission :E2_Washington_Aqueduct_Mission;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Washington Aqueduct";
+  usace-org:usaceDistrictCode "CEWAD";
+  usace-org:wikidataID "Q7971655";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q7971655" .
 
-:E2_Mission a usace-orgs:DistrictMission;
+:E2_Mission a usace-org:DistrictMission;
   dct:title "Washington Aqueduct Mission";
   rdfs:label "Washington Aqueduct Mission";
   skos:prefLabel "Washington Aqueduct Mission";
-  usace-orgs:missionOf :E2 .
+  usace-org:missionOf :E2 .
 
-:E3 a org:Organization, usace-orgs:District;
+:E3 a org:Organization, usace-org:District;
   dct:identifier "E3";
   dct:title "New York District";
   rdfs:label "New York District";
   skos:prefLabel "New York District";
   org:reportsTo :E0;
   org:subOrganizationOf :E0;
-  usace-orgs:agencyCode "NAN";
-  usace-orgs:agencySymbol "CENAN";
-  usace-orgs:districtOf :E0;
-  usace-orgs:eroCode "E3";
-  usace-orgs:formalName "US Army Engineer District, New York";
-  usace-orgs:hasMission :E3_Civil_Works_Mission, :E3_Environmental_Mission, :E3_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "New York";
-  usace-orgs:usaceDistrictCode "CENAN";
-  usace-orgs:wikidataID "Q116796256";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796256" .
+  usace-org:agencyCode "NAN";
+  usace-org:agencySymbol "CENAN";
+  usace-org:districtOf :E0;
+  usace-org:eroCode "E3";
+  usace-org:formalName "US Army Engineer District, New York";
+  usace-org:hasMission :E3_Civil_Works_Mission, :E3_Environmental_Mission, :E3_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "New York";
+  usace-org:usaceDistrictCode "CENAN";
+  usace-org:wikidataID "Q116796256";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796256" .
 
-:E3_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:E3_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "New York District Civil_Works Mission";
   rdfs:label "New York District Civil_Works Mission";
   skos:prefLabel "New York District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAN%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAN%27&f=geojson";
-  usace-orgs:missionOf :E3;
-  usace-orgs:usaceDistrictCode "CENAN" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAN%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAN%27&f=geojson";
+  usace-org:missionOf :E3;
+  usace-org:usaceDistrictCode "CENAN" .
 
-:E3_Environmental_Mission a usace-orgs:DistrictMission;
+:E3_Environmental_Mission a usace-org:DistrictMission;
   dct:title "New York District Environmental Mission";
   rdfs:label "New York District Environmental Mission";
   skos:prefLabel "New York District Environmental Mission";
-  usace-orgs:hasFusrapAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAN%27&f=geojson";
-  usace-orgs:missionOf :E3;
-  usace-orgs:usaceDistrictCode "CENAN" .
+  usace-org:hasFusrapAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAN%27&f=geojson";
+  usace-org:missionOf :E3;
+  usace-org:usaceDistrictCode "CENAN" .
 
-:E3_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:E3_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "New York District Military Mission";
   rdfs:label "New York District Military Mission";
   skos:prefLabel "New York District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAN%27&f=geojson";
-  usace-orgs:missionOf :E3;
-  usace-orgs:usaceDistrictCode "CENAN" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAN%27&f=geojson";
+  usace-org:missionOf :E3;
+  usace-org:usaceDistrictCode "CENAN" .
 
-:E4 a org:Organization, usace-orgs:District;
+:E4 a org:Organization, usace-org:District;
   dct:identifier "E4";
   dct:title "Norfolk District";
   rdfs:label "Norfolk District";
   skos:prefLabel "Norfolk District";
   org:reportsTo :E0;
   org:subOrganizationOf :E0;
-  usace-orgs:agencyCode "NAO";
-  usace-orgs:agencySymbol "CENAO";
-  usace-orgs:districtOf :E0;
-  usace-orgs:eroCode "E4";
-  usace-orgs:formalName "US Army Engineer District, Norfolk";
-  usace-orgs:hasMission :E4_Civil_Works_Mission, :E4_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Norfolk";
-  usace-orgs:usaceDistrictCode "CENAO";
-  usace-orgs:wikidataID "Q116796250";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796250" .
+  usace-org:agencyCode "NAO";
+  usace-org:agencySymbol "CENAO";
+  usace-org:districtOf :E0;
+  usace-org:eroCode "E4";
+  usace-org:formalName "US Army Engineer District, Norfolk";
+  usace-org:hasMission :E4_Civil_Works_Mission, :E4_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Norfolk";
+  usace-org:usaceDistrictCode "CENAO";
+  usace-org:wikidataID "Q116796250";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796250" .
 
-:E4_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:E4_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Norfolk District Civil_Works Mission";
   rdfs:label "Norfolk District Civil_Works Mission";
   skos:prefLabel "Norfolk District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAO%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAO%27&f=geojson";
-  usace-orgs:missionOf :E4;
-  usace-orgs:usaceDistrictCode "CENAO" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAO%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAO%27&f=geojson";
+  usace-org:missionOf :E4;
+  usace-org:usaceDistrictCode "CENAO" .
 
-:E4_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:E4_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Norfolk District Military Mission";
   rdfs:label "Norfolk District Military Mission";
   skos:prefLabel "Norfolk District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAO%27&f=geojson";
-  usace-orgs:missionOf :E4;
-  usace-orgs:usaceDistrictCode "CENAO" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAO%27&f=geojson";
+  usace-org:missionOf :E4;
+  usace-org:usaceDistrictCode "CENAO" .
 
-:E5 a org:Organization, usace-orgs:District;
+:E5 a org:Organization, usace-org:District;
   dct:identifier "E5";
   dct:title "Philadelphia District";
   rdfs:label "Philadelphia District";
   skos:prefLabel "Philadelphia District";
   org:reportsTo :E0;
   org:subOrganizationOf :E0;
-  usace-orgs:agencyCode "NAP";
-  usace-orgs:agencySymbol "CENAP";
-  usace-orgs:districtOf :E0;
-  usace-orgs:eroCode "E5";
-  usace-orgs:formalName "US Army Engineer District, Philadelphia";
-  usace-orgs:hasMission :E5_Civil_Works_Mission, :E5_Environmental_Mission, :E5_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Philadelphia";
-  usace-orgs:usaceDistrictCode "CENAP";
-  usace-orgs:wikidataID "Q116796052";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796052" .
+  usace-org:agencyCode "NAP";
+  usace-org:agencySymbol "CENAP";
+  usace-org:districtOf :E0;
+  usace-org:eroCode "E5";
+  usace-org:formalName "US Army Engineer District, Philadelphia";
+  usace-org:hasMission :E5_Civil_Works_Mission, :E5_Environmental_Mission, :E5_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Philadelphia";
+  usace-org:usaceDistrictCode "CENAP";
+  usace-org:wikidataID "Q116796052";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796052" .
 
-:E5_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:E5_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Philadelphia District Civil_Works Mission";
   rdfs:label "Philadelphia District Civil_Works Mission";
   skos:prefLabel "Philadelphia District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAP%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAP%27&f=geojson";
-  usace-orgs:missionOf :E5;
-  usace-orgs:usaceDistrictCode "CENAP" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAP%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAP%27&f=geojson";
+  usace-org:missionOf :E5;
+  usace-org:usaceDistrictCode "CENAP" .
 
-:E5_Environmental_Mission a usace-orgs:DistrictMission;
+:E5_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Philadelphia District Environmental Mission";
   rdfs:label "Philadelphia District Environmental Mission";
   skos:prefLabel "Philadelphia District Environmental Mission";
-  usace-orgs:hasFusrapAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAP%27&f=geojson";
-  usace-orgs:missionOf :E5;
-  usace-orgs:usaceDistrictCode "CENAP" .
+  usace-org:hasFusrapAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAP%27&f=geojson";
+  usace-org:missionOf :E5;
+  usace-org:usaceDistrictCode "CENAP" .
 
-:E5_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:E5_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Philadelphia District Military Mission";
   rdfs:label "Philadelphia District Military Mission";
   skos:prefLabel "Philadelphia District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAP%27&f=geojson";
-  usace-orgs:missionOf :E5;
-  usace-orgs:usaceDistrictCode "CENAP" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAP%27&f=geojson";
+  usace-org:missionOf :E5;
+  usace-org:usaceDistrictCode "CENAP" .
 
-:E6 a org:Organization, usace-orgs:District;
+:E6 a org:Organization, usace-org:District;
   dct:identifier "E6";
   dct:title "New England District";
   rdfs:label "New England District";
   skos:prefLabel "New England District";
   org:reportsTo :E0;
   org:subOrganizationOf :E0;
-  usace-orgs:agencyCode "NAE";
-  usace-orgs:agencySymbol "CENAE";
-  usace-orgs:districtOf :E0;
-  usace-orgs:eroCode "E6";
-  usace-orgs:formalName "US Army Engineer District, New England";
-  usace-orgs:hasMission :E6_Civil_Works_Mission, :E6_Environmental_Mission, :E6_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "New England";
-  usace-orgs:usaceDistrictCode "CENAE";
-  usace-orgs:wikidataID "Q116796261";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796261" .
+  usace-org:agencyCode "NAE";
+  usace-org:agencySymbol "CENAE";
+  usace-org:districtOf :E0;
+  usace-org:eroCode "E6";
+  usace-org:formalName "US Army Engineer District, New England";
+  usace-org:hasMission :E6_Civil_Works_Mission, :E6_Environmental_Mission, :E6_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "New England";
+  usace-org:usaceDistrictCode "CENAE";
+  usace-org:wikidataID "Q116796261";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796261" .
 
-:E6_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:E6_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "New England District Civil_Works Mission";
   rdfs:label "New England District Civil_Works Mission";
   skos:prefLabel "New England District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAE%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAE%27&f=geojson";
-  usace-orgs:missionOf :E6;
-  usace-orgs:usaceDistrictCode "CENAE" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NAE%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NAE%27&f=geojson";
+  usace-org:missionOf :E6;
+  usace-org:usaceDistrictCode "CENAE" .
 
-:E6_Environmental_Mission a usace-orgs:DistrictMission;
+:E6_Environmental_Mission a usace-org:DistrictMission;
   dct:title "New England District Environmental Mission";
   rdfs:label "New England District Environmental Mission";
   skos:prefLabel "New England District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27NAE%27&f=geojson";
-  usace-orgs:missionOf :E6;
-  usace-orgs:usaceDistrictCode "CENAE" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27NAE%27&f=geojson";
+  usace-org:missionOf :E6;
+  usace-org:usaceDistrictCode "CENAE" .
 
-:E6_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:E6_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "New England District Military Mission";
   rdfs:label "New England District Military Mission";
   skos:prefLabel "New England District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAE%27&f=geojson";
-  usace-orgs:missionOf :E6;
-  usace-orgs:usaceDistrictCode "CENAE" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAE%27&f=geojson";
+  usace-org:missionOf :E6;
+  usace-org:usaceDistrictCode "CENAE" .
 
-:E7 a org:Organization, usace-orgs:District;
+:E7 a org:Organization, usace-org:District;
   dct:identifier "E7";
   dct:title "Europe District";
   rdfs:label "Europe District";
   skos:prefLabel "Europe District";
   org:reportsTo :E0;
   org:subOrganizationOf :E0;
-  usace-orgs:agencyCode "NAU";
-  usace-orgs:agencySymbol "CENAU";
-  usace-orgs:districtOf :E0;
-  usace-orgs:eroCode "E7";
-  usace-orgs:formalName "US Army Engineer District, Europe";
-  usace-orgs:hasMission :E7_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "TRUE"^^xsd:boolean;
-  usace-orgs:shortName "Europe";
-  usace-orgs:usaceDistrictCode "CENAU";
-  usace-orgs:wikidataID "Q7863052";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q7863052" .
+  usace-org:agencyCode "NAU";
+  usace-org:agencySymbol "CENAU";
+  usace-org:districtOf :E0;
+  usace-org:eroCode "E7";
+  usace-org:formalName "US Army Engineer District, Europe";
+  usace-org:hasMission :E7_Military_Mission;
+  usace-org:hasMissionType usace-org:MilitaryMissionType;
+  usace-org:isOconus "TRUE"^^xsd:boolean;
+  usace-org:shortName "Europe";
+  usace-org:usaceDistrictCode "CENAU";
+  usace-org:wikidataID "Q7863052";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q7863052" .
 
-:E7_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:E7_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Europe District Military Mission";
   rdfs:label "Europe District Military Mission";
   skos:prefLabel "Europe District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAU%27&f=geojson";
-  usace-orgs:missionOf :E7;
-  usace-orgs:usaceDistrictCode "CENAU" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NAU%27&f=geojson";
+  usace-org:missionOf :E7;
+  usace-org:usaceDistrictCode "CENAU" .
 
-:G0 a org:Organization, usace-orgs:Division;
+:G0 a org:Organization, usace-org:Division;
   dct:identifier "G0";
   dct:title "Northwestern Division";
   rdfs:label "Northwestern Division";
@@ -889,210 +891,210 @@
   org:hasSubOrganization :G2, :G3, :G4, :G5, :G6;
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "NWD";
-  usace-orgs:agencySymbol "CENWD";
-  usace-orgs:eroCode "G0";
-  usace-orgs:formalName "Northwestern Division";
-  usace-orgs:hasDistrict :G2, :G3, :G4, :G5, :G6;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Northwestern";
-  usace-orgs:usaceDivisionCode "CENWD";
-  usace-orgs:wikidataID "Q7060302";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q7060302" .
+  usace-org:agencyCode "NWD";
+  usace-org:agencySymbol "CENWD";
+  usace-org:eroCode "G0";
+  usace-org:formalName "Northwestern Division";
+  usace-org:hasDistrict :G2, :G3, :G4, :G5, :G6;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Northwestern";
+  usace-org:usaceDivisionCode "CENWD";
+  usace-org:wikidataID "Q7060302";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q7060302" .
 
-:G2 a org:Organization, usace-orgs:District;
+:G2 a org:Organization, usace-org:District;
   dct:identifier "G2";
   dct:title "Portland District";
   rdfs:label "Portland District";
   skos:prefLabel "Portland District";
   org:reportsTo :G0;
   org:subOrganizationOf :G0;
-  usace-orgs:agencyCode "NWP";
-  usace-orgs:agencySymbol "CENWP";
-  usace-orgs:districtOf :G0;
-  usace-orgs:eroCode "G2";
-  usace-orgs:formalName "US Army Engineer District, Portland";
-  usace-orgs:hasMission :G2_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Portland";
-  usace-orgs:usaceDistrictCode "CENWP";
-  usace-orgs:wikidataID "Q7231913";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q7231913" .
+  usace-org:agencyCode "NWP";
+  usace-org:agencySymbol "CENWP";
+  usace-org:districtOf :G0;
+  usace-org:eroCode "G2";
+  usace-org:formalName "US Army Engineer District, Portland";
+  usace-org:hasMission :G2_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Portland";
+  usace-org:usaceDistrictCode "CENWP";
+  usace-org:wikidataID "Q7231913";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q7231913" .
 
-:G2_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:G2_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Portland District Civil_Works Mission";
   rdfs:label "Portland District Civil_Works Mission";
   skos:prefLabel "Portland District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWP%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWP%27&f=geojson";
-  usace-orgs:missionOf :G2;
-  usace-orgs:usaceDistrictCode "CENWP" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWP%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWP%27&f=geojson";
+  usace-org:missionOf :G2;
+  usace-org:usaceDistrictCode "CENWP" .
 
-:G3 a org:Organization, usace-orgs:District;
+:G3 a org:Organization, usace-org:District;
   dct:identifier "G3";
   dct:title "Seattle District";
   rdfs:label "Seattle District";
   skos:prefLabel "Seattle District";
   org:reportsTo :G0;
   org:subOrganizationOf :G0;
-  usace-orgs:agencyCode "NWS";
-  usace-orgs:agencySymbol "CENWS";
-  usace-orgs:districtOf :G0;
-  usace-orgs:eroCode "G3";
-  usace-orgs:formalName "US Army Engineer District, Seattle";
-  usace-orgs:hasMission :G3_Civil_Works_Mission, :G3_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Seattle";
-  usace-orgs:usaceDistrictCode "CENWS";
-  usace-orgs:wikidataID "Q116796285";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796285" .
+  usace-org:agencyCode "NWS";
+  usace-org:agencySymbol "CENWS";
+  usace-org:districtOf :G0;
+  usace-org:eroCode "G3";
+  usace-org:formalName "US Army Engineer District, Seattle";
+  usace-org:hasMission :G3_Civil_Works_Mission, :G3_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Seattle";
+  usace-org:usaceDistrictCode "CENWS";
+  usace-org:wikidataID "Q116796285";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796285" .
 
-:G3_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:G3_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Seattle District Civil_Works Mission";
   rdfs:label "Seattle District Civil_Works Mission";
   skos:prefLabel "Seattle District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWS%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWS%27&f=geojson";
-  usace-orgs:missionOf :G3;
-  usace-orgs:usaceDistrictCode "CENWS" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWS%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWS%27&f=geojson";
+  usace-org:missionOf :G3;
+  usace-org:usaceDistrictCode "CENWS" .
 
-:G3_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:G3_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Seattle District Military Mission";
   rdfs:label "Seattle District Military Mission";
   skos:prefLabel "Seattle District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NWS%27&f=geojson";
-  usace-orgs:missionOf :G3;
-  usace-orgs:usaceDistrictCode "CENWS" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NWS%27&f=geojson";
+  usace-org:missionOf :G3;
+  usace-org:usaceDistrictCode "CENWS" .
 
-:G4 a org:Organization, usace-orgs:District;
+:G4 a org:Organization, usace-org:District;
   dct:identifier "G4";
   dct:title "Walla Walla District";
   rdfs:label "Walla Walla District";
   skos:prefLabel "Walla Walla District";
   org:reportsTo :G0;
   org:subOrganizationOf :G0;
-  usace-orgs:agencyCode "NWW";
-  usace-orgs:agencySymbol "CENWW";
-  usace-orgs:districtOf :G0;
-  usace-orgs:eroCode "G4";
-  usace-orgs:formalName "US Army Engineer District, Walla Walla";
-  usace-orgs:hasMission :G4_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Walla Walla";
-  usace-orgs:usaceDistrictCode "CENWW";
-  usace-orgs:wikidataID "Q116796283";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796283" .
+  usace-org:agencyCode "NWW";
+  usace-org:agencySymbol "CENWW";
+  usace-org:districtOf :G0;
+  usace-org:eroCode "G4";
+  usace-org:formalName "US Army Engineer District, Walla Walla";
+  usace-org:hasMission :G4_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Walla Walla";
+  usace-org:usaceDistrictCode "CENWW";
+  usace-org:wikidataID "Q116796283";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796283" .
 
-:G4_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:G4_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Walla Walla District Civil_Works Mission";
   rdfs:label "Walla Walla District Civil_Works Mission";
   skos:prefLabel "Walla Walla District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWW%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWW%27&f=geojson";
-  usace-orgs:missionOf :G4;
-  usace-orgs:usaceDistrictCode "CENWW" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWW%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWW%27&f=geojson";
+  usace-org:missionOf :G4;
+  usace-org:usaceDistrictCode "CENWW" .
 
-:G5 a org:Organization, usace-orgs:District;
+:G5 a org:Organization, usace-org:District;
   dct:identifier "G5";
   dct:title "Kansas City District";
   rdfs:label "Kansas City District";
   skos:prefLabel "Kansas City District";
   org:reportsTo :G0;
   org:subOrganizationOf :G0;
-  usace-orgs:agencyCode "NWK";
-  usace-orgs:agencySymbol "CENWK";
-  usace-orgs:districtOf :G0;
-  usace-orgs:eroCode "G5";
-  usace-orgs:formalName "US Army Engineer District, Kansas City";
-  usace-orgs:hasMission :G5_Civil_Works_Mission, :G5_Environmental_Mission, :G5_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Kansas City";
-  usace-orgs:usaceDistrictCode "CENWK";
-  usace-orgs:wikidataID "Q116795992";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116795992" .
+  usace-org:agencyCode "NWK";
+  usace-org:agencySymbol "CENWK";
+  usace-org:districtOf :G0;
+  usace-org:eroCode "G5";
+  usace-org:formalName "US Army Engineer District, Kansas City";
+  usace-org:hasMission :G5_Civil_Works_Mission, :G5_Environmental_Mission, :G5_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Kansas City";
+  usace-org:usaceDistrictCode "CENWK";
+  usace-org:wikidataID "Q116795992";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116795992" .
 
-:G5_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:G5_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Kansas City District Civil_Works Mission";
   rdfs:label "Kansas City District Civil_Works Mission";
   skos:prefLabel "Kansas City District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWK%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWK%27&f=geojson";
-  usace-orgs:missionOf :G5;
-  usace-orgs:usaceDistrictCode "CENWK" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWK%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWK%27&f=geojson";
+  usace-org:missionOf :G5;
+  usace-org:usaceDistrictCode "CENWK" .
 
-:G5_Environmental_Mission a usace-orgs:DistrictMission;
+:G5_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Kansas City District Environmental Mission";
   rdfs:label "Kansas City District Environmental Mission";
   skos:prefLabel "Kansas City District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27NWK%27&f=geojson";
-  usace-orgs:missionOf :G5;
-  usace-orgs:usaceDistrictCode "CENWK" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27NWK%27&f=geojson";
+  usace-org:missionOf :G5;
+  usace-org:usaceDistrictCode "CENWK" .
 
-:G5_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:G5_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Kansas City District Military Mission";
   rdfs:label "Kansas City District Military Mission";
   skos:prefLabel "Kansas City District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NWK%27&f=geojson";
-  usace-orgs:missionOf :G5;
-  usace-orgs:usaceDistrictCode "CENWK" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NWK%27&f=geojson";
+  usace-org:missionOf :G5;
+  usace-org:usaceDistrictCode "CENWK" .
 
-:G6 a org:Organization, usace-orgs:District;
+:G6 a org:Organization, usace-org:District;
   dct:identifier "G6";
   dct:title "Omaha District";
   rdfs:label "Omaha District";
   skos:prefLabel "Omaha District";
   org:reportsTo :G0;
   org:subOrganizationOf :G0;
-  usace-orgs:agencyCode "NWO";
-  usace-orgs:agencySymbol "CENWO";
-  usace-orgs:districtOf :G0;
-  usace-orgs:eroCode "G6";
-  usace-orgs:formalName "US Army Engineer District, Omaha";
-  usace-orgs:hasMission :G6_Civil_Works_Mission, :G6_Environmental_Mission, :G6_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Omaha";
-  usace-orgs:usaceDistrictCode "CENWO";
-  usace-orgs:wikidataID "Q116796292";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796292" .
+  usace-org:agencyCode "NWO";
+  usace-org:agencySymbol "CENWO";
+  usace-org:districtOf :G0;
+  usace-org:eroCode "G6";
+  usace-org:formalName "US Army Engineer District, Omaha";
+  usace-org:hasMission :G6_Civil_Works_Mission, :G6_Environmental_Mission, :G6_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Omaha";
+  usace-org:usaceDistrictCode "CENWO";
+  usace-org:wikidataID "Q116796292";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796292" .
 
-:G6_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:G6_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Omaha District Civil_Works Mission";
   rdfs:label "Omaha District Civil_Works Mission";
   skos:prefLabel "Omaha District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWO%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWO%27&f=geojson";
-  usace-orgs:missionOf :G6;
-  usace-orgs:usaceDistrictCode "CENWO" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27NWO%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27NWO%27&f=geojson";
+  usace-org:missionOf :G6;
+  usace-org:usaceDistrictCode "CENWO" .
 
-:G6_Environmental_Mission a usace-orgs:DistrictMission;
+:G6_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Omaha District Environmental Mission";
   rdfs:label "Omaha District Environmental Mission";
   skos:prefLabel "Omaha District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27NWO%27&f=geojson";
-  usace-orgs:missionOf :G6;
-  usace-orgs:usaceDistrictCode "CENWO" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27NWO%27&f=geojson";
+  usace-org:missionOf :G6;
+  usace-org:usaceDistrictCode "CENWO" .
 
-:G6_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:G6_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Omaha District Military Mission";
   rdfs:label "Omaha District Military Mission";
   skos:prefLabel "Omaha District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NWO%27&f=geojson";
-  usace-orgs:missionOf :G6;
-  usace-orgs:usaceDistrictCode "CENWO" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27NWO%27&f=geojson";
+  usace-org:missionOf :G6;
+  usace-org:usaceDistrictCode "CENWO" .
 
-:H0 a org:Organization, usace-orgs:Division;
+:H0 a org:Organization, usace-org:Division;
   dct:identifier "H0";
   dct:title "Great Lakes and Ohio River Division";
   rdfs:label "Great Lakes and Ohio River Division";
@@ -1101,253 +1103,253 @@
   org:hasSubOrganization :H1, :H2, :H3, :H4, :H5, :H6, :H7;
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "LRD";
-  usace-orgs:agencySymbol "CELRD";
-  usace-orgs:eroCode "H0";
-  usace-orgs:formalName "Great Lakes and Ohio River Division";
-  usace-orgs:hasDistrict :H1, :H2, :H3, :H4, :H5, :H6, :H7;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Great Lakes and Ohio River";
-  usace-orgs:usaceDivisionCode "CELRDOR";
-  usace-orgs:wikidataID "Q5599495";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q5599495" .
+  usace-org:agencyCode "LRD";
+  usace-org:agencySymbol "CELRD";
+  usace-org:eroCode "H0";
+  usace-org:formalName "Great Lakes and Ohio River Division";
+  usace-org:hasDistrict :H1, :H2, :H3, :H4, :H5, :H6, :H7;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Great Lakes and Ohio River";
+  usace-org:usaceDivisionCode "CELRDOR";
+  usace-org:wikidataID "Q5599495";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q5599495" .
 
-:H1 a org:Organization, usace-orgs:District;
+:H1 a org:Organization, usace-org:District;
   dct:identifier "H1";
   dct:title "Huntington District";
   rdfs:label "Huntington District";
   skos:prefLabel "Huntington District";
   org:reportsTo :H0;
   org:subOrganizationOf :H0;
-  usace-orgs:agencyCode "LRH";
-  usace-orgs:agencySymbol "CELRH";
-  usace-orgs:districtOf :H0;
-  usace-orgs:eroCode "H1";
-  usace-orgs:formalName "US Army Engineer District, Huntington";
-  usace-orgs:hasMission :H1_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Huntington";
-  usace-orgs:usaceDistrictCode "CELRH";
-  usace-orgs:wikidataID "Q116787039";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116787039" .
+  usace-org:agencyCode "LRH";
+  usace-org:agencySymbol "CELRH";
+  usace-org:districtOf :H0;
+  usace-org:eroCode "H1";
+  usace-org:formalName "US Army Engineer District, Huntington";
+  usace-org:hasMission :H1_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Huntington";
+  usace-org:usaceDistrictCode "CELRH";
+  usace-org:wikidataID "Q116787039";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116787039" .
 
-:H1_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:H1_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Huntington District Civil_Works Mission";
   rdfs:label "Huntington District Civil_Works Mission";
   skos:prefLabel "Huntington District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRH%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRH%27&f=geojson";
-  usace-orgs:missionOf :H1;
-  usace-orgs:usaceDistrictCode "CELRH" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRH%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRH%27&f=geojson";
+  usace-org:missionOf :H1;
+  usace-org:usaceDistrictCode "CELRH" .
 
-:H2 a org:Organization, usace-orgs:District;
+:H2 a org:Organization, usace-org:District;
   dct:identifier "H2";
   dct:title "Louisville District";
   rdfs:label "Louisville District";
   skos:prefLabel "Louisville District";
   org:reportsTo :H0;
   org:subOrganizationOf :H0;
-  usace-orgs:agencyCode "LRL";
-  usace-orgs:agencySymbol "CELRL";
-  usace-orgs:districtOf :H0;
-  usace-orgs:eroCode "H2";
-  usace-orgs:formalName "US Army Engineer District, Louisville";
-  usace-orgs:hasMission :H2_Civil_Works_Mission, :H2_Environmental_Mission, :H2_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Louisville";
-  usace-orgs:usaceDistrictCode "CELRL";
-  usace-orgs:wikidataID "Q116787054";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116787054" .
+  usace-org:agencyCode "LRL";
+  usace-org:agencySymbol "CELRL";
+  usace-org:districtOf :H0;
+  usace-org:eroCode "H2";
+  usace-org:formalName "US Army Engineer District, Louisville";
+  usace-org:hasMission :H2_Civil_Works_Mission, :H2_Environmental_Mission, :H2_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Louisville";
+  usace-org:usaceDistrictCode "CELRL";
+  usace-org:wikidataID "Q116787054";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116787054" .
 
-:H2_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:H2_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Louisville District Civil_Works Mission";
   rdfs:label "Louisville District Civil_Works Mission";
   skos:prefLabel "Louisville District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRL%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRL%27&f=geojson";
-  usace-orgs:missionOf :H2;
-  usace-orgs:usaceDistrictCode "CELRL" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRL%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRL%27&f=geojson";
+  usace-org:missionOf :H2;
+  usace-org:usaceDistrictCode "CELRL" .
 
-:H2_Environmental_Mission a usace-orgs:DistrictMission;
+:H2_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Louisville District Environmental Mission";
   rdfs:label "Louisville District Environmental Mission";
   skos:prefLabel "Louisville District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27LRL%27&f=geojson";
-  usace-orgs:missionOf :H2;
-  usace-orgs:usaceDistrictCode "CELRL" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27LRL%27&f=geojson";
+  usace-org:missionOf :H2;
+  usace-org:usaceDistrictCode "CELRL" .
 
-:H2_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:H2_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Louisville District Military Mission";
   rdfs:label "Louisville District Military Mission";
   skos:prefLabel "Louisville District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27LRL%27&f=geojson";
-  usace-orgs:missionOf :H2;
-  usace-orgs:usaceDistrictCode "CELRL" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27LRL%27&f=geojson";
+  usace-org:missionOf :H2;
+  usace-org:usaceDistrictCode "CELRL" .
 
-:H3 a org:Organization, usace-orgs:District;
+:H3 a org:Organization, usace-org:District;
   dct:identifier "H3";
   dct:title "Nashville District";
   rdfs:label "Nashville District";
   skos:prefLabel "Nashville District";
   org:reportsTo :H0;
   org:subOrganizationOf :H0;
-  usace-orgs:agencyCode "LRN";
-  usace-orgs:agencySymbol "CELRN";
-  usace-orgs:districtOf :H0;
-  usace-orgs:eroCode "H3";
-  usace-orgs:formalName "US Army Engineer District, Nashville";
-  usace-orgs:hasMission :H3_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Nashville";
-  usace-orgs:usaceDistrictCode "CELRN";
-  usace-orgs:wikidataID "Q116787062";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116787062" .
+  usace-org:agencyCode "LRN";
+  usace-org:agencySymbol "CELRN";
+  usace-org:districtOf :H0;
+  usace-org:eroCode "H3";
+  usace-org:formalName "US Army Engineer District, Nashville";
+  usace-org:hasMission :H3_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Nashville";
+  usace-org:usaceDistrictCode "CELRN";
+  usace-org:wikidataID "Q116787062";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116787062" .
 
-:H3_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:H3_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Nashville District Civil_Works Mission";
   rdfs:label "Nashville District Civil_Works Mission";
   skos:prefLabel "Nashville District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRN%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRN%27&f=geojson";
-  usace-orgs:missionOf :H3;
-  usace-orgs:usaceDistrictCode "CELRN" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRN%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRN%27&f=geojson";
+  usace-org:missionOf :H3;
+  usace-org:usaceDistrictCode "CELRN" .
 
-:H4 a org:Organization, usace-orgs:District;
+:H4 a org:Organization, usace-org:District;
   dct:identifier "H4";
   dct:title "Pittsburgh District";
   rdfs:label "Pittsburgh District";
   skos:prefLabel "Pittsburgh District";
   org:reportsTo :H0;
   org:subOrganizationOf :H0;
-  usace-orgs:agencyCode "LRP";
-  usace-orgs:agencySymbol "CELRP";
-  usace-orgs:districtOf :H0;
-  usace-orgs:eroCode "H4";
-  usace-orgs:formalName "US Army Engineer District, Pittsburgh";
-  usace-orgs:hasMission :H4_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Pittsburgh";
-  usace-orgs:usaceDistrictCode "CELRP";
-  usace-orgs:wikidataID "Q116796329";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796329" .
+  usace-org:agencyCode "LRP";
+  usace-org:agencySymbol "CELRP";
+  usace-org:districtOf :H0;
+  usace-org:eroCode "H4";
+  usace-org:formalName "US Army Engineer District, Pittsburgh";
+  usace-org:hasMission :H4_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Pittsburgh";
+  usace-org:usaceDistrictCode "CELRP";
+  usace-org:wikidataID "Q116796329";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796329" .
 
-:H4_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:H4_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Pittsburgh District Civil_Works Mission";
   rdfs:label "Pittsburgh District Civil_Works Mission";
   skos:prefLabel "Pittsburgh District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRP%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRP%27&f=geojson";
-  usace-orgs:missionOf :H4;
-  usace-orgs:usaceDistrictCode "CELRP" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRP%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRP%27&f=geojson";
+  usace-org:missionOf :H4;
+  usace-org:usaceDistrictCode "CELRP" .
 
-:H5 a org:Organization, usace-orgs:District;
+:H5 a org:Organization, usace-org:District;
   dct:identifier "H5";
   dct:title "Buffalo District";
   rdfs:label "Buffalo District";
   skos:prefLabel "Buffalo District";
   org:reportsTo :H0;
   org:subOrganizationOf :H0;
-  usace-orgs:agencyCode "LRB";
-  usace-orgs:agencySymbol "CELRB";
-  usace-orgs:districtOf :H0;
-  usace-orgs:eroCode "H5";
-  usace-orgs:formalName "US Army Engineer District, Buffalo";
-  usace-orgs:hasMission :H5_Civil_Works_Mission, :H5_Environmental_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Buffalo";
-  usace-orgs:usaceDistrictCode "CELRB";
-  usace-orgs:wikidataID "Q116786963";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116786963" .
+  usace-org:agencyCode "LRB";
+  usace-org:agencySymbol "CELRB";
+  usace-org:districtOf :H0;
+  usace-org:eroCode "H5";
+  usace-org:formalName "US Army Engineer District, Buffalo";
+  usace-org:hasMission :H5_Civil_Works_Mission, :H5_Environmental_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Buffalo";
+  usace-org:usaceDistrictCode "CELRB";
+  usace-org:wikidataID "Q116786963";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116786963" .
 
-:H5_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:H5_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Buffalo District Civil_Works Mission";
   rdfs:label "Buffalo District Civil_Works Mission";
   skos:prefLabel "Buffalo District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRB%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRB%27&f=geojson";
-  usace-orgs:missionOf :H5;
-  usace-orgs:usaceDistrictCode "CELRB" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRB%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRB%27&f=geojson";
+  usace-org:missionOf :H5;
+  usace-org:usaceDistrictCode "CELRB" .
 
-:H5_Environmental_Mission a usace-orgs:DistrictMission;
+:H5_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Buffalo District Environmental Mission";
   rdfs:label "Buffalo District Environmental Mission";
   skos:prefLabel "Buffalo District Environmental Mission";
-  usace-orgs:hasFusrapAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRB%27&f=geojson";
-  usace-orgs:missionOf :H5;
-  usace-orgs:usaceDistrictCode "CELRB" .
+  usace-org:hasFusrapAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRB%27&f=geojson";
+  usace-org:missionOf :H5;
+  usace-org:usaceDistrictCode "CELRB" .
 
-:H6 a org:Organization, usace-orgs:District;
+:H6 a org:Organization, usace-org:District;
   dct:identifier "H6";
   dct:title "Chicago District";
   rdfs:label "Chicago District";
   skos:prefLabel "Chicago District";
   org:reportsTo :H0;
   org:subOrganizationOf :H0;
-  usace-orgs:agencyCode "LRC";
-  usace-orgs:agencySymbol "CELRC";
-  usace-orgs:districtOf :H0;
-  usace-orgs:eroCode "H6";
-  usace-orgs:formalName "US Army Engineer District, Chicago";
-  usace-orgs:hasMission :H6_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Chicago";
-  usace-orgs:usaceDistrictCode "CELRC";
-  usace-orgs:wikidataID "Q116786975";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116786975" .
+  usace-org:agencyCode "LRC";
+  usace-org:agencySymbol "CELRC";
+  usace-org:districtOf :H0;
+  usace-org:eroCode "H6";
+  usace-org:formalName "US Army Engineer District, Chicago";
+  usace-org:hasMission :H6_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Chicago";
+  usace-org:usaceDistrictCode "CELRC";
+  usace-org:wikidataID "Q116786975";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116786975" .
 
-:H6_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:H6_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Chicago District Civil_Works Mission";
   rdfs:label "Chicago District Civil_Works Mission";
   skos:prefLabel "Chicago District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRC%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRC%27&f=geojson";
-  usace-orgs:missionOf :H6;
-  usace-orgs:usaceDistrictCode "CELRC" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRC%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRC%27&f=geojson";
+  usace-org:missionOf :H6;
+  usace-org:usaceDistrictCode "CELRC" .
 
-:H7 a org:Organization, usace-orgs:District;
+:H7 a org:Organization, usace-org:District;
   dct:identifier "H7";
   dct:title "Detroit District";
   rdfs:label "Detroit District";
   skos:prefLabel "Detroit District";
   org:reportsTo :H0;
   org:subOrganizationOf :H0;
-  usace-orgs:agencyCode "LRE";
-  usace-orgs:agencySymbol "CELRE";
-  usace-orgs:districtOf :H0;
-  usace-orgs:eroCode "H7";
-  usace-orgs:formalName "US Army Engineer District, Detroit";
-  usace-orgs:hasMission :H7_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Detroit";
-  usace-orgs:usaceDistrictCode "CELRE";
-  usace-orgs:wikidataID "Q116787016";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116787016" .
+  usace-org:agencyCode "LRE";
+  usace-org:agencySymbol "CELRE";
+  usace-org:districtOf :H0;
+  usace-org:eroCode "H7";
+  usace-org:formalName "US Army Engineer District, Detroit";
+  usace-org:hasMission :H7_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Detroit";
+  usace-org:usaceDistrictCode "CELRE";
+  usace-org:wikidataID "Q116787016";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116787016" .
 
-:H7_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:H7_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Detroit District Civil_Works Mission";
   rdfs:label "Detroit District Civil_Works Mission";
   skos:prefLabel "Detroit District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRE%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRE%27&f=geojson";
-  usace-orgs:missionOf :H7;
-  usace-orgs:usaceDistrictCode "CELRE" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27LRE%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27LRE%27&f=geojson";
+  usace-org:missionOf :H7;
+  usace-org:usaceDistrictCode "CELRE" .
 
-:J0 a org:Organization, usace-orgs:Division;
+:J0 a org:Organization, usace-org:Division;
   dct:identifier "J0";
   dct:title "Pacific Ocean Division";
   rdfs:label "Pacific Ocean Division";
@@ -1355,168 +1357,168 @@
   org:hasSubOrganization :J1, :J2, :J3, :J4;
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "POD";
-  usace-orgs:agencySymbol "CEPOD";
-  usace-orgs:eroCode "J0";
-  usace-orgs:formalName "Pacific Ocean Division";
-  usace-orgs:hasDistrict :J1, :J2, :J3, :J4;
-  usace-orgs:isOconus "TRUE"^^xsd:boolean;
-  usace-orgs:shortName "Pacific Ocean";
-  usace-orgs:usaceDivisionCode "CEPOD";
-  usace-orgs:wikidataID "Q7122603";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q7122603" .
+  usace-org:agencyCode "POD";
+  usace-org:agencySymbol "CEPOD";
+  usace-org:eroCode "J0";
+  usace-org:formalName "Pacific Ocean Division";
+  usace-org:hasDistrict :J1, :J2, :J3, :J4;
+  usace-org:isOconus "TRUE"^^xsd:boolean;
+  usace-org:shortName "Pacific Ocean";
+  usace-org:usaceDivisionCode "CEPOD";
+  usace-org:wikidataID "Q7122603";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q7122603" .
 
-:J1 a org:Organization, usace-orgs:District;
+:J1 a org:Organization, usace-org:District;
   dct:identifier "J1";
   dct:title "Far East District";
   rdfs:label "Far East District";
   skos:prefLabel "Far East District";
   org:reportsTo :J0;
   org:subOrganizationOf :J0;
-  usace-orgs:agencyCode "POF";
-  usace-orgs:agencySymbol "CEPOF";
-  usace-orgs:districtOf :J0;
-  usace-orgs:eroCode "J1";
-  usace-orgs:formalName "US Army Engineer District, Far East";
-  usace-orgs:hasMission :J1_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "TRUE"^^xsd:boolean;
-  usace-orgs:shortName "Far East";
-  usace-orgs:usaceDistrictCode "CEPOF";
-  usace-orgs:wikidataID "Q116796335";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796335" .
+  usace-org:agencyCode "POF";
+  usace-org:agencySymbol "CEPOF";
+  usace-org:districtOf :J0;
+  usace-org:eroCode "J1";
+  usace-org:formalName "US Army Engineer District, Far East";
+  usace-org:hasMission :J1_Military_Mission;
+  usace-org:hasMissionType usace-org:MilitaryMissionType;
+  usace-org:isOconus "TRUE"^^xsd:boolean;
+  usace-org:shortName "Far East";
+  usace-org:usaceDistrictCode "CEPOF";
+  usace-org:wikidataID "Q116796335";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796335" .
 
-:J1_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:J1_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Korea District Military Mission";
   rdfs:label "Korea District Military Mission";
   skos:prefLabel "Korea District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27POF%27&f=geojson";
-  usace-orgs:missionOf :J1;
-  usace-orgs:usaceDistrictCode "CEPOF" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27POF%27&f=geojson";
+  usace-org:missionOf :J1;
+  usace-org:usaceDistrictCode "CEPOF" .
 
-:J2 a org:Organization, usace-orgs:District;
+:J2 a org:Organization, usace-org:District;
   dct:identifier "J2";
   dct:title "Japan District";
   rdfs:label "Japan District";
   skos:prefLabel "Japan District";
   org:reportsTo :J0;
   org:subOrganizationOf :J0;
-  usace-orgs:agencyCode "POJ";
-  usace-orgs:agencySymbol "CEPOJ";
-  usace-orgs:districtOf :J0;
-  usace-orgs:eroCode "J2";
-  usace-orgs:formalName "US Army Engineer District, Japan";
-  usace-orgs:hasMission :J2_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "TRUE"^^xsd:boolean;
-  usace-orgs:shortName "Japan";
-  usace-orgs:usaceDistrictCode "CEPOJ";
-  usace-orgs:wikidataID "Q116796338";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796338" .
+  usace-org:agencyCode "POJ";
+  usace-org:agencySymbol "CEPOJ";
+  usace-org:districtOf :J0;
+  usace-org:eroCode "J2";
+  usace-org:formalName "US Army Engineer District, Japan";
+  usace-org:hasMission :J2_Military_Mission;
+  usace-org:hasMissionType usace-org:MilitaryMissionType;
+  usace-org:isOconus "TRUE"^^xsd:boolean;
+  usace-org:shortName "Japan";
+  usace-org:usaceDistrictCode "CEPOJ";
+  usace-org:wikidataID "Q116796338";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796338" .
 
-:J2_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:J2_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Japan District Military Mission";
   rdfs:label "Japan District Military Mission";
   skos:prefLabel "Japan District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27POJ%27&f=geojson";
-  usace-orgs:missionOf :J2;
-  usace-orgs:usaceDistrictCode "CEPOJ" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27POJ%27&f=geojson";
+  usace-org:missionOf :J2;
+  usace-org:usaceDistrictCode "CEPOJ" .
 
-:J3 a org:Organization, usace-orgs:District;
+:J3 a org:Organization, usace-org:District;
   dct:identifier "J3";
   dct:title "Honolulu District";
   rdfs:label "Honolulu District";
   skos:prefLabel "Honolulu District";
   org:reportsTo :J0;
   org:subOrganizationOf :J0;
-  usace-orgs:agencyCode "POH";
-  usace-orgs:agencySymbol "CEPOH";
-  usace-orgs:districtOf :J0;
-  usace-orgs:eroCode "J3";
-  usace-orgs:formalName "US Army Engineer District, Honolulu";
-  usace-orgs:hasMission :J3_Civil_Works_Mission, :J3_Environmental_Mission, :J3_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "TRUE"^^xsd:boolean;
-  usace-orgs:shortName "Honolulu";
-  usace-orgs:usaceDistrictCode "CEPOH";
-  usace-orgs:wikidataID "Q116796337";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796337" .
+  usace-org:agencyCode "POH";
+  usace-org:agencySymbol "CEPOH";
+  usace-org:districtOf :J0;
+  usace-org:eroCode "J3";
+  usace-org:formalName "US Army Engineer District, Honolulu";
+  usace-org:hasMission :J3_Civil_Works_Mission, :J3_Environmental_Mission, :J3_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "TRUE"^^xsd:boolean;
+  usace-org:shortName "Honolulu";
+  usace-org:usaceDistrictCode "CEPOH";
+  usace-org:wikidataID "Q116796337";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796337" .
 
-:J3_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:J3_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Honolulu District Civil_Works Mission";
   rdfs:label "Honolulu District Civil_Works Mission";
   skos:prefLabel "Honolulu District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27POH%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27POH%27&f=geojson";
-  usace-orgs:missionOf :J3;
-  usace-orgs:usaceDistrictCode "CEPOH" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27POH%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27POH%27&f=geojson";
+  usace-org:missionOf :J3;
+  usace-org:usaceDistrictCode "CEPOH" .
 
-:J3_Environmental_Mission a usace-orgs:DistrictMission;
+:J3_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Honolulu District Environmental Mission";
   rdfs:label "Honolulu District Environmental Mission";
   skos:prefLabel "Honolulu District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27POH%27&f=geojson";
-  usace-orgs:missionOf :J3;
-  usace-orgs:usaceDistrictCode "CEPOH" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27POH%27&f=geojson";
+  usace-org:missionOf :J3;
+  usace-org:usaceDistrictCode "CEPOH" .
 
-:J3_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:J3_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Honolulu District Military Mission";
   rdfs:label "Honolulu District Military Mission";
   skos:prefLabel "Honolulu District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27POH%27&f=geojson";
-  usace-orgs:missionOf :J3;
-  usace-orgs:usaceDistrictCode "CEPOH" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27POH%27&f=geojson";
+  usace-org:missionOf :J3;
+  usace-org:usaceDistrictCode "CEPOH" .
 
-:J4 a org:Organization, usace-orgs:District;
+:J4 a org:Organization, usace-org:District;
   dct:identifier "J4";
   dct:title "Alaska District";
   rdfs:label "Alaska District";
   skos:prefLabel "Alaska District";
   org:reportsTo :J0;
   org:subOrganizationOf :J0;
-  usace-orgs:agencyCode "POA";
-  usace-orgs:agencySymbol "CEPOA";
-  usace-orgs:districtOf :J0;
-  usace-orgs:eroCode "J4";
-  usace-orgs:formalName "US Army Engineer District, Alaska";
-  usace-orgs:hasMission :J4_Civil_Works_Mission, :J4_Environmental_Mission, :J4_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Alaska";
-  usace-orgs:usaceDistrictCode "CEPOA";
-  usace-orgs:wikidataID "Q116796332";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116796332" .
+  usace-org:agencyCode "POA";
+  usace-org:agencySymbol "CEPOA";
+  usace-org:districtOf :J0;
+  usace-org:eroCode "J4";
+  usace-org:formalName "US Army Engineer District, Alaska";
+  usace-org:hasMission :J4_Civil_Works_Mission, :J4_Environmental_Mission, :J4_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Alaska";
+  usace-org:usaceDistrictCode "CEPOA";
+  usace-org:wikidataID "Q116796332";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116796332" .
 
-:J4_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:J4_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Alaska District Civil_Works Mission";
   rdfs:label "Alaska District Civil_Works Mission";
   skos:prefLabel "Alaska District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27POA%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27POA%27&f=geojson";
-  usace-orgs:missionOf :J4;
-  usace-orgs:usaceDistrictCode "CEPOA" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27POA%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27POA%27&f=geojson";
+  usace-org:missionOf :J4;
+  usace-org:usaceDistrictCode "CEPOA" .
 
-:J4_Environmental_Mission a usace-orgs:DistrictMission;
+:J4_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Alaska District Environmental Mission";
   rdfs:label "Alaska District Environmental Mission";
   skos:prefLabel "Alaska District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27POA%27&f=geojson";
-  usace-orgs:missionOf :J4;
-  usace-orgs:usaceDistrictCode "CEPOA" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27POA%27&f=geojson";
+  usace-org:missionOf :J4;
+  usace-org:usaceDistrictCode "CEPOA" .
 
-:J4_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:J4_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Alaska District Military Mission";
   rdfs:label "Alaska District Military Mission";
   skos:prefLabel "Alaska District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27POA%27&f=geojson";
-  usace-orgs:missionOf :J4;
-  usace-orgs:usaceDistrictCode "CEPOA" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27POA%27&f=geojson";
+  usace-org:missionOf :J4;
+  usace-org:usaceDistrictCode "CEPOA" .
 
-:K0 a org:Organization, usace-orgs:Division;
+:K0 a org:Organization, usace-org:Division;
   dct:identifier "K0";
   dct:title "South Atlantic Division";
   rdfs:label "South Atlantic Division";
@@ -1524,201 +1526,201 @@
   org:hasSubOrganization :K2, :K3, :K5, :K6, :K7;
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "SAD";
-  usace-orgs:agencySymbol "CESAD";
-  usace-orgs:eroCode "K0";
-  usace-orgs:formalName "South Atlantic Division";
-  usace-orgs:hasDistrict :K2, :K3, :K5, :K6, :K7;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "South Atlantic";
-  usace-orgs:usaceDivisionCode "CESAD";
-  usace-orgs:wikidataID "Q7566062";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q7566062" .
+  usace-org:agencyCode "SAD";
+  usace-org:agencySymbol "CESAD";
+  usace-org:eroCode "K0";
+  usace-org:formalName "South Atlantic Division";
+  usace-org:hasDistrict :K2, :K3, :K5, :K6, :K7;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "South Atlantic";
+  usace-org:usaceDivisionCode "CESAD";
+  usace-org:wikidataID "Q7566062";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q7566062" .
 
-:K2 a org:Organization, usace-orgs:District;
+:K2 a org:Organization, usace-org:District;
   dct:identifier "K2";
   dct:title "Charleston District";
   rdfs:label "Charleston District";
   skos:prefLabel "Charleston District";
   org:reportsTo :K0;
   org:subOrganizationOf :K0;
-  usace-orgs:agencyCode "SAC";
-  usace-orgs:agencySymbol "CESAC";
-  usace-orgs:districtOf :K0;
-  usace-orgs:eroCode "K2";
-  usace-orgs:formalName "US Army Engineer District, Charleston";
-  usace-orgs:hasMission :K2_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Charleston";
-  usace-orgs:usaceDistrictCode "CESAC";
-  usace-orgs:wikidataID "Q116790330";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116790330" .
+  usace-org:agencyCode "SAC";
+  usace-org:agencySymbol "CESAC";
+  usace-org:districtOf :K0;
+  usace-org:eroCode "K2";
+  usace-org:formalName "US Army Engineer District, Charleston";
+  usace-org:hasMission :K2_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Charleston";
+  usace-org:usaceDistrictCode "CESAC";
+  usace-org:wikidataID "Q116790330";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116790330" .
 
-:K2_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:K2_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Charleston District Civil_Works Mission";
   rdfs:label "Charleston District Civil_Works Mission";
   skos:prefLabel "Charleston District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAC%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAC%27&f=geojson";
-  usace-orgs:missionOf :K2;
-  usace-orgs:usaceDistrictCode "CESAC" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAC%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAC%27&f=geojson";
+  usace-org:missionOf :K2;
+  usace-org:usaceDistrictCode "CESAC" .
 
-:K3 a org:Organization, usace-orgs:District;
+:K3 a org:Organization, usace-org:District;
   dct:identifier "K3";
   dct:title "Jacksonville District";
   rdfs:label "Jacksonville District";
   skos:prefLabel "Jacksonville District";
   org:reportsTo :K0;
   org:subOrganizationOf :K0;
-  usace-orgs:agencyCode "SAJ";
-  usace-orgs:agencySymbol "CESAJ";
-  usace-orgs:districtOf :K0;
-  usace-orgs:eroCode "K3";
-  usace-orgs:formalName "US Army Engineer District, Jacksonville";
-  usace-orgs:hasMission :K3_Civil_Works_Mission, :K3_Environmental_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Jacksonville";
-  usace-orgs:usaceDistrictCode "CESAJ";
-  usace-orgs:wikidataID "Q116790337";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116790337" .
+  usace-org:agencyCode "SAJ";
+  usace-org:agencySymbol "CESAJ";
+  usace-org:districtOf :K0;
+  usace-org:eroCode "K3";
+  usace-org:formalName "US Army Engineer District, Jacksonville";
+  usace-org:hasMission :K3_Civil_Works_Mission, :K3_Environmental_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Jacksonville";
+  usace-org:usaceDistrictCode "CESAJ";
+  usace-org:wikidataID "Q116790337";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116790337" .
 
-:K3_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:K3_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Jacksonville District Civil_Works Mission";
   rdfs:label "Jacksonville District Civil_Works Mission";
   skos:prefLabel "Jacksonville District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAJ%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAJ%27&f=geojson";
-  usace-orgs:missionOf :K3;
-  usace-orgs:usaceDistrictCode "CESAJ" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAJ%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAJ%27&f=geojson";
+  usace-org:missionOf :K3;
+  usace-org:usaceDistrictCode "CESAJ" .
 
-:K3_Environmental_Mission a usace-orgs:DistrictMission;
+:K3_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Jacksonville District Environmental Mission";
   rdfs:label "Jacksonville District Environmental Mission";
   skos:prefLabel "Jacksonville District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SAJ%27&f=geojson";
-  usace-orgs:missionOf :K3;
-  usace-orgs:usaceDistrictCode "CESAJ" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SAJ%27&f=geojson";
+  usace-org:missionOf :K3;
+  usace-org:usaceDistrictCode "CESAJ" .
 
-:K5 a org:Organization, usace-orgs:District;
+:K5 a org:Organization, usace-org:District;
   dct:identifier "K5";
   dct:title "Mobile District";
   rdfs:label "Mobile District";
   skos:prefLabel "Mobile District";
   org:reportsTo :K0;
   org:subOrganizationOf :K0;
-  usace-orgs:agencyCode "SAM";
-  usace-orgs:agencySymbol "CESAM";
-  usace-orgs:districtOf :K0;
-  usace-orgs:eroCode "K5";
-  usace-orgs:formalName "US Army Engineer District, Mobile";
-  usace-orgs:hasMission :K5_Civil_Works_Mission, :K5_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Mobile";
-  usace-orgs:usaceDistrictCode "CESAM";
-  usace-orgs:wikidataID "Q116795920";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116795920" .
+  usace-org:agencyCode "SAM";
+  usace-org:agencySymbol "CESAM";
+  usace-org:districtOf :K0;
+  usace-org:eroCode "K5";
+  usace-org:formalName "US Army Engineer District, Mobile";
+  usace-org:hasMission :K5_Civil_Works_Mission, :K5_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Mobile";
+  usace-org:usaceDistrictCode "CESAM";
+  usace-org:wikidataID "Q116795920";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116795920" .
 
-:K5_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:K5_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Mobile District Civil_Works Mission";
   rdfs:label "Mobile District Civil_Works Mission";
   skos:prefLabel "Mobile District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAM%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAM%27&f=geojson";
-  usace-orgs:missionOf :K5;
-  usace-orgs:usaceDistrictCode "CESAM" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAM%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAM%27&f=geojson";
+  usace-org:missionOf :K5;
+  usace-org:usaceDistrictCode "CESAM" .
 
-:K5_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:K5_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Mobile District Military Mission";
   rdfs:label "Mobile District Military Mission";
   skos:prefLabel "Mobile District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SAM%27&f=geojson";
-  usace-orgs:missionOf :K5;
-  usace-orgs:usaceDistrictCode "CESAM" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SAM%27&f=geojson";
+  usace-org:missionOf :K5;
+  usace-org:usaceDistrictCode "CESAM" .
 
-:K6 a org:Organization, usace-orgs:District;
+:K6 a org:Organization, usace-org:District;
   dct:identifier "K6";
   dct:title "Savannah District";
   rdfs:label "Savannah District";
   skos:prefLabel "Savannah District";
   org:reportsTo :K0;
   org:subOrganizationOf :K0;
-  usace-orgs:agencyCode "SAS";
-  usace-orgs:agencySymbol "CESAS";
-  usace-orgs:districtOf :K0;
-  usace-orgs:eroCode "K6";
-  usace-orgs:formalName "US Army Engineer District, Savannah";
-  usace-orgs:hasMission :K6_Civil_Works_Mission, :K6_Environmental_Mission, :K6_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Savannah";
-  usace-orgs:usaceDistrictCode "CESAS";
-  usace-orgs:wikidataID "Q116795927";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116795927" .
+  usace-org:agencyCode "SAS";
+  usace-org:agencySymbol "CESAS";
+  usace-org:districtOf :K0;
+  usace-org:eroCode "K6";
+  usace-org:formalName "US Army Engineer District, Savannah";
+  usace-org:hasMission :K6_Civil_Works_Mission, :K6_Environmental_Mission, :K6_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Savannah";
+  usace-org:usaceDistrictCode "CESAS";
+  usace-org:wikidataID "Q116795927";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116795927" .
 
-:K6_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:K6_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Savannah District Civil_Works Mission";
   rdfs:label "Savannah District Civil_Works Mission";
   skos:prefLabel "Savannah District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAS%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAS%27&f=geojson";
-  usace-orgs:missionOf :K6;
-  usace-orgs:usaceDistrictCode "CESAS" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAS%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAS%27&f=geojson";
+  usace-org:missionOf :K6;
+  usace-org:usaceDistrictCode "CESAS" .
 
-:K6_Environmental_Mission a usace-orgs:DistrictMission;
+:K6_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Savannah District Environmental Mission";
   rdfs:label "Savannah District Environmental Mission";
   skos:prefLabel "Savannah District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SAS%27&f=geojson";
-  usace-orgs:missionOf :K6;
-  usace-orgs:usaceDistrictCode "CESAS" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SAS%27&f=geojson";
+  usace-org:missionOf :K6;
+  usace-org:usaceDistrictCode "CESAS" .
 
-:K6_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:K6_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Savannah District Military Mission";
   rdfs:label "Savannah District Military Mission";
   skos:prefLabel "Savannah District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SAS%27&f=geojson";
-  usace-orgs:missionOf :K6;
-  usace-orgs:usaceDistrictCode "CESAS" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SAS%27&f=geojson";
+  usace-org:missionOf :K6;
+  usace-org:usaceDistrictCode "CESAS" .
 
-:K7 a org:Organization, usace-orgs:District;
+:K7 a org:Organization, usace-org:District;
   dct:identifier "K7";
   dct:title "Wilmington District";
   rdfs:label "Wilmington District";
   skos:prefLabel "Wilmington District";
   org:reportsTo :K0;
   org:subOrganizationOf :K0;
-  usace-orgs:agencyCode "SAW";
-  usace-orgs:agencySymbol "CESAW";
-  usace-orgs:districtOf :K0;
-  usace-orgs:eroCode "K7";
-  usace-orgs:formalName "US Army Engineer District, Wilmington";
-  usace-orgs:hasMission :K7_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Wilmington";
-  usace-orgs:usaceDistrictCode "CESAW";
-  usace-orgs:wikidataID "Q116795933";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116795933" .
+  usace-org:agencyCode "SAW";
+  usace-org:agencySymbol "CESAW";
+  usace-org:districtOf :K0;
+  usace-org:eroCode "K7";
+  usace-org:formalName "US Army Engineer District, Wilmington";
+  usace-org:hasMission :K7_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Wilmington";
+  usace-org:usaceDistrictCode "CESAW";
+  usace-org:wikidataID "Q116795933";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116795933" .
 
-:K7_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:K7_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Wilmington District Civil_Works Mission";
   rdfs:label "Wilmington District Civil_Works Mission";
   skos:prefLabel "Wilmington District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAW%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAW%27&f=geojson";
-  usace-orgs:missionOf :K7;
-  usace-orgs:usaceDistrictCode "CESAW" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SAW%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SAW%27&f=geojson";
+  usace-org:missionOf :K7;
+  usace-org:usaceDistrictCode "CESAW" .
 
-:L0 a org:Organization, usace-orgs:Division;
+:L0 a org:Organization, usace-org:Division;
   dct:identifier "L0";
   dct:title "South Pacific Division";
   rdfs:label "South Pacific Division";
@@ -1726,180 +1728,180 @@
   org:hasSubOrganization :L1, :L2, :L3, :L4;
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "SPD";
-  usace-orgs:agencySymbol "CESPD";
-  usace-orgs:eroCode "L0";
-  usace-orgs:formalName "South Pacific Division";
-  usace-orgs:hasDistrict :L1, :L2, :L3, :L4;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "South Pacific";
-  usace-orgs:usaceDivisionCode "CESPD";
-  usace-orgs:wikidataID "Q7568112";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q7568112" .
+  usace-org:agencyCode "SPD";
+  usace-org:agencySymbol "CESPD";
+  usace-org:eroCode "L0";
+  usace-org:formalName "South Pacific Division";
+  usace-org:hasDistrict :L1, :L2, :L3, :L4;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "South Pacific";
+  usace-org:usaceDivisionCode "CESPD";
+  usace-org:wikidataID "Q7568112";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q7568112" .
 
-:L1 a org:Organization, usace-orgs:District;
+:L1 a org:Organization, usace-org:District;
   dct:identifier "L1";
   dct:title "Los Angeles District";
   rdfs:label "Los Angeles District";
   skos:prefLabel "Los Angeles District";
   org:reportsTo :L0;
   org:subOrganizationOf :L0;
-  usace-orgs:agencyCode "SPL";
-  usace-orgs:agencySymbol "CESPL";
-  usace-orgs:districtOf :L0;
-  usace-orgs:eroCode "L1";
-  usace-orgs:formalName "US Army Engineer District, Los Angeles";
-  usace-orgs:hasMission :L1_Civil_Works_Mission, :L1_Environmental_Mission, :L1_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Los Angeles";
-  usace-orgs:usaceDistrictCode "CESPL";
-  usace-orgs:wikidataID "Q116787859";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116787859" .
+  usace-org:agencyCode "SPL";
+  usace-org:agencySymbol "CESPL";
+  usace-org:districtOf :L0;
+  usace-org:eroCode "L1";
+  usace-org:formalName "US Army Engineer District, Los Angeles";
+  usace-org:hasMission :L1_Civil_Works_Mission, :L1_Environmental_Mission, :L1_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Los Angeles";
+  usace-org:usaceDistrictCode "CESPL";
+  usace-org:wikidataID "Q116787859";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116787859" .
 
-:L1_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:L1_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Los Angeles District Civil_Works Mission";
   rdfs:label "Los Angeles District Civil_Works Mission";
   skos:prefLabel "Los Angeles District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SPL%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SPL%27&f=geojson";
-  usace-orgs:missionOf :L1;
-  usace-orgs:usaceDistrictCode "CESPL" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SPL%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SPL%27&f=geojson";
+  usace-org:missionOf :L1;
+  usace-org:usaceDistrictCode "CESPL" .
 
-:L1_Environmental_Mission a usace-orgs:DistrictMission;
+:L1_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Los Angeles District Environmental Mission";
   rdfs:label "Los Angeles District Environmental Mission";
   skos:prefLabel "Los Angeles District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SPL%27&f=geojson";
-  usace-orgs:missionOf :L1;
-  usace-orgs:usaceDistrictCode "CESPL" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SPL%27&f=geojson";
+  usace-org:missionOf :L1;
+  usace-org:usaceDistrictCode "CESPL" .
 
-:L1_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:L1_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Los Angeles District Military Mission";
   rdfs:label "Los Angeles District Military Mission";
   skos:prefLabel "Los Angeles District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SPL%27&f=geojson";
-  usace-orgs:missionOf :L1;
-  usace-orgs:usaceDistrictCode "CESPL" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SPL%27&f=geojson";
+  usace-org:missionOf :L1;
+  usace-org:usaceDistrictCode "CESPL" .
 
-:L2 a org:Organization, usace-orgs:District;
+:L2 a org:Organization, usace-org:District;
   dct:identifier "L2";
   dct:title "Sacramento District";
   rdfs:label "Sacramento District";
   skos:prefLabel "Sacramento District";
   org:reportsTo :L0;
   org:subOrganizationOf :L0;
-  usace-orgs:agencyCode "SPK";
-  usace-orgs:agencySymbol "CESPK";
-  usace-orgs:districtOf :L0;
-  usace-orgs:eroCode "L2";
-  usace-orgs:formalName "US Army Engineer District, Sacremento";
-  usace-orgs:hasMission :L2_Civil_Works_Mission, :L2_Environmental_Mission, :L2_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Sacremento";
-  usace-orgs:usaceDistrictCode "CESPK";
-  usace-orgs:wikidataID "Q116787860";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116787860" .
+  usace-org:agencyCode "SPK";
+  usace-org:agencySymbol "CESPK";
+  usace-org:districtOf :L0;
+  usace-org:eroCode "L2";
+  usace-org:formalName "US Army Engineer District, Sacremento";
+  usace-org:hasMission :L2_Civil_Works_Mission, :L2_Environmental_Mission, :L2_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Sacremento";
+  usace-org:usaceDistrictCode "CESPK";
+  usace-org:wikidataID "Q116787860";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116787860" .
 
-:L2_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:L2_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Sacramento District Civil_Works Mission";
   rdfs:label "Sacramento District Civil_Works Mission";
   skos:prefLabel "Sacramento District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SPK%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SPK%27&f=geojson";
-  usace-orgs:missionOf :L2;
-  usace-orgs:usaceDistrictCode "CESPK" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SPK%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SPK%27&f=geojson";
+  usace-org:missionOf :L2;
+  usace-org:usaceDistrictCode "CESPK" .
 
-:L2_Environmental_Mission a usace-orgs:DistrictMission;
+:L2_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Sacramento District Environmental Mission";
   rdfs:label "Sacramento District Environmental Mission";
   skos:prefLabel "Sacramento District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SPK%27&f=geojson";
-  usace-orgs:missionOf :L2;
-  usace-orgs:usaceDistrictCode "CESPK" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SPK%27&f=geojson";
+  usace-org:missionOf :L2;
+  usace-org:usaceDistrictCode "CESPK" .
 
-:L2_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:L2_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Sacramento District Military Mission";
   rdfs:label "Sacramento District Military Mission";
   skos:prefLabel "Sacramento District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SPK%27&f=geojson";
-  usace-orgs:missionOf :L2;
-  usace-orgs:usaceDistrictCode "CESPK" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SPK%27&f=geojson";
+  usace-org:missionOf :L2;
+  usace-org:usaceDistrictCode "CESPK" .
 
-:L3 a org:Organization, usace-orgs:District;
+:L3 a org:Organization, usace-org:District;
   dct:identifier "L3";
   dct:title "San Francisco District";
   rdfs:label "San Francisco District";
   skos:prefLabel "San Francisco District";
   org:reportsTo :L0;
   org:subOrganizationOf :L0;
-  usace-orgs:agencyCode "SPN";
-  usace-orgs:agencySymbol "CESPN";
-  usace-orgs:districtOf :L0;
-  usace-orgs:eroCode "L3";
-  usace-orgs:formalName "US Army Engineer District, San Francisco";
-  usace-orgs:hasMission :L3_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "San Francisco";
-  usace-orgs:usaceDistrictCode "CESPN";
-  usace-orgs:wikidataID "Q70204374";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q70204374" .
+  usace-org:agencyCode "SPN";
+  usace-org:agencySymbol "CESPN";
+  usace-org:districtOf :L0;
+  usace-org:eroCode "L3";
+  usace-org:formalName "US Army Engineer District, San Francisco";
+  usace-org:hasMission :L3_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "San Francisco";
+  usace-org:usaceDistrictCode "CESPN";
+  usace-org:wikidataID "Q70204374";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q70204374" .
 
-:L3_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:L3_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "San Francisco District Civil_Works Mission";
   rdfs:label "San Francisco District Civil_Works Mission";
   skos:prefLabel "San Francisco District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SPN%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SPN%27&f=geojson";
-  usace-orgs:missionOf :L3;
-  usace-orgs:usaceDistrictCode "CESPN" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SPN%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SPN%27&f=geojson";
+  usace-org:missionOf :L3;
+  usace-org:usaceDistrictCode "CESPN" .
 
-:L4 a org:Organization, usace-orgs:District;
+:L4 a org:Organization, usace-org:District;
   dct:identifier "L4";
   dct:title "Albuquerque District";
   rdfs:label "Albuquerque District";
   skos:prefLabel "Albuquerque District";
   org:reportsTo :L0;
   org:subOrganizationOf :L0;
-  usace-orgs:agencyCode "SPA";
-  usace-orgs:agencySymbol "CESPA";
-  usace-orgs:districtOf :L0;
-  usace-orgs:eroCode "L4";
-  usace-orgs:formalName "US Army Engineer District, Albuquerque";
-  usace-orgs:hasMission :L4_Civil_Works_Mission, :L4_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Albuquerque";
-  usace-orgs:usaceDistrictCode "CESPA";
-  usace-orgs:wikidataID "Q116787841";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116787841" .
+  usace-org:agencyCode "SPA";
+  usace-org:agencySymbol "CESPA";
+  usace-org:districtOf :L0;
+  usace-org:eroCode "L4";
+  usace-org:formalName "US Army Engineer District, Albuquerque";
+  usace-org:hasMission :L4_Civil_Works_Mission, :L4_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Albuquerque";
+  usace-org:usaceDistrictCode "CESPA";
+  usace-org:wikidataID "Q116787841";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116787841" .
 
-:L4_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:L4_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Albuquerque District Civil_Works Mission";
   rdfs:label "Albuquerque District Civil_Works Mission";
   skos:prefLabel "Albuquerque District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SPA%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SPA%27&f=geojson";
-  usace-orgs:missionOf :L4;
-  usace-orgs:usaceDistrictCode "CESPA" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SPA%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SPA%27&f=geojson";
+  usace-org:missionOf :L4;
+  usace-org:usaceDistrictCode "CESPA" .
 
-:L4_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:L4_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Albuquerque District Military Mission";
   rdfs:label "Albuquerque District Military Mission";
   skos:prefLabel "Albuquerque District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SPA%27&f=geojson";
-  usace-orgs:missionOf :L4;
-  usace-orgs:usaceDistrictCode "CESPA" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SPA%27&f=geojson";
+  usace-org:missionOf :L4;
+  usace-org:usaceDistrictCode "CESPA" .
 
-:M0 a org:Organization, usace-orgs:Division;
+:M0 a org:Organization, usace-org:Division;
   dct:identifier "M0";
   dct:title "Southwestern Division";
   rdfs:label "Southwestern Division";
@@ -1907,171 +1909,171 @@
   org:hasSubOrganization :M2, :M3, :M4, :M5;
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "SWD";
-  usace-orgs:agencySymbol "CESWD";
-  usace-orgs:eroCode "M0";
-  usace-orgs:formalName "Southwestern Division";
-  usace-orgs:hasDistrict :M2, :M3, :M4, :M5;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Southwestern";
-  usace-orgs:usaceDivisionCode "CESWD";
-  usace-orgs:wikidataID "Q7571411";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q7571411" .
+  usace-org:agencyCode "SWD";
+  usace-org:agencySymbol "CESWD";
+  usace-org:eroCode "M0";
+  usace-org:formalName "Southwestern Division";
+  usace-org:hasDistrict :M2, :M3, :M4, :M5;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Southwestern";
+  usace-org:usaceDivisionCode "CESWD";
+  usace-org:wikidataID "Q7571411";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q7571411" .
 
-:M2 a org:Organization, usace-orgs:District;
+:M2 a org:Organization, usace-org:District;
   dct:identifier "M2";
   dct:title "Fort Worth District";
   rdfs:label "Fort Worth District";
   skos:prefLabel "Fort Worth District";
   org:reportsTo :M0;
   org:subOrganizationOf :M0;
-  usace-orgs:agencyCode "SWF";
-  usace-orgs:agencySymbol "CESWF";
-  usace-orgs:districtOf :M0;
-  usace-orgs:eroCode "M2";
-  usace-orgs:formalName "US Army Engineer District, Fort Worth";
-  usace-orgs:hasMission :M2_Civil_Works_Mission, :M2_Environmental_Mission, :M2_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType,
-    usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Fort Worth";
-  usace-orgs:usaceDistrictCode "CESWF";
-  usace-orgs:wikidataID "Q116787792";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116787792" .
+  usace-org:agencyCode "SWF";
+  usace-org:agencySymbol "CESWF";
+  usace-org:districtOf :M0;
+  usace-org:eroCode "M2";
+  usace-org:formalName "US Army Engineer District, Fort Worth";
+  usace-org:hasMission :M2_Civil_Works_Mission, :M2_Environmental_Mission, :M2_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType,
+    usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Fort Worth";
+  usace-org:usaceDistrictCode "CESWF";
+  usace-org:wikidataID "Q116787792";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116787792" .
 
-:M2_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:M2_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Fort Worth District Civil_Works Mission";
   rdfs:label "Fort Worth District Civil_Works Mission";
   skos:prefLabel "Fort Worth District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SWF%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SWF%27&f=geojson";
-  usace-orgs:missionOf :M2;
-  usace-orgs:usaceDistrictCode "CESWF" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SWF%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SWF%27&f=geojson";
+  usace-org:missionOf :M2;
+  usace-org:usaceDistrictCode "CESWF" .
 
-:M2_Environmental_Mission a usace-orgs:DistrictMission;
+:M2_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Fort Worth District Environmental Mission";
   rdfs:label "Fort Worth District Environmental Mission";
   skos:prefLabel "Fort Worth District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SWF%27&f=geojson";
-  usace-orgs:missionOf :M2;
-  usace-orgs:usaceDistrictCode "CESWF" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SWF%27&f=geojson";
+  usace-org:missionOf :M2;
+  usace-org:usaceDistrictCode "CESWF" .
 
-:M2_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:M2_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Fort Worth District Military Mission";
   rdfs:label "Fort Worth District Military Mission";
   skos:prefLabel "Fort Worth District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SWF%27&f=geojson";
-  usace-orgs:missionOf :M2;
-  usace-orgs:usaceDistrictCode "CESWF" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SWF%27&f=geojson";
+  usace-org:missionOf :M2;
+  usace-org:usaceDistrictCode "CESWF" .
 
-:M3 a org:Organization, usace-orgs:District;
+:M3 a org:Organization, usace-org:District;
   dct:identifier "M3";
   dct:title "Galveston District";
   rdfs:label "Galveston District";
   skos:prefLabel "Galveston District";
   org:reportsTo :M0;
   org:subOrganizationOf :M0;
-  usace-orgs:agencyCode "SWG";
-  usace-orgs:agencySymbol "CESWG";
-  usace-orgs:districtOf :M0;
-  usace-orgs:eroCode "M3";
-  usace-orgs:formalName "US Army Engineer District, Galveston";
-  usace-orgs:hasMission :M3_Civil_Works_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Galveston";
-  usace-orgs:usaceDistrictCode "CESWG";
-  usace-orgs:wikidataID "Q116787807";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116787807" .
+  usace-org:agencyCode "SWG";
+  usace-org:agencySymbol "CESWG";
+  usace-org:districtOf :M0;
+  usace-org:eroCode "M3";
+  usace-org:formalName "US Army Engineer District, Galveston";
+  usace-org:hasMission :M3_Civil_Works_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Galveston";
+  usace-org:usaceDistrictCode "CESWG";
+  usace-org:wikidataID "Q116787807";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116787807" .
 
-:M3_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:M3_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Galveston District Civil_Works Mission";
   rdfs:label "Galveston District Civil_Works Mission";
   skos:prefLabel "Galveston District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SWG%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SWG%27&f=geojson";
-  usace-orgs:missionOf :M3;
-  usace-orgs:usaceDistrictCode "CESWG" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SWG%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SWG%27&f=geojson";
+  usace-org:missionOf :M3;
+  usace-org:usaceDistrictCode "CESWG" .
 
-:M4 a org:Organization, usace-orgs:District;
+:M4 a org:Organization, usace-org:District;
   dct:identifier "M4";
   dct:title "Little Rock District";
   rdfs:label "Little Rock District";
   skos:prefLabel "Little Rock District";
   org:reportsTo :M0;
   org:subOrganizationOf :M0;
-  usace-orgs:agencyCode "SWL";
-  usace-orgs:agencySymbol "CESWL";
-  usace-orgs:districtOf :M0;
-  usace-orgs:eroCode "M4";
-  usace-orgs:formalName "US Army Engineer District, Little Rock";
-  usace-orgs:hasMission :M4_Civil_Works_Mission, :M4_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Little Rock";
-  usace-orgs:usaceDistrictCode "CESWL";
-  usace-orgs:wikidataID "Q116787820";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116787820" .
+  usace-org:agencyCode "SWL";
+  usace-org:agencySymbol "CESWL";
+  usace-org:districtOf :M0;
+  usace-org:eroCode "M4";
+  usace-org:formalName "US Army Engineer District, Little Rock";
+  usace-org:hasMission :M4_Civil_Works_Mission, :M4_Military_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:MilitaryMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Little Rock";
+  usace-org:usaceDistrictCode "CESWL";
+  usace-org:wikidataID "Q116787820";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116787820" .
 
-:M4_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:M4_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Little Rock District Civil_Works Mission";
   rdfs:label "Little Rock District Civil_Works Mission";
   skos:prefLabel "Little Rock District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SWL%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SWL%27&f=geojson";
-  usace-orgs:missionOf :M4;
-  usace-orgs:usaceDistrictCode "CESWL" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SWL%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SWL%27&f=geojson";
+  usace-org:missionOf :M4;
+  usace-org:usaceDistrictCode "CESWL" .
 
-:M4_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:M4_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Little Rock District Military Mission";
   rdfs:label "Little Rock District Military Mission";
   skos:prefLabel "Little Rock District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SWL%27&f=geojson";
-  usace-orgs:missionOf :M4;
-  usace-orgs:usaceDistrictCode "CESWL" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27SWL%27&f=geojson";
+  usace-org:missionOf :M4;
+  usace-org:usaceDistrictCode "CESWL" .
 
-:M5 a org:Organization, usace-orgs:District;
+:M5 a org:Organization, usace-org:District;
   dct:identifier "M5";
   dct:title "Tulsa District";
   rdfs:label "Tulsa District";
   skos:prefLabel "Tulsa District";
   org:reportsTo :M0;
   org:subOrganizationOf :M0;
-  usace-orgs:agencyCode "SWT";
-  usace-orgs:agencySymbol "CESWT";
-  usace-orgs:districtOf :M0;
-  usace-orgs:eroCode "M5";
-  usace-orgs:formalName "US Army Engineer District, Tulsa";
-  usace-orgs:hasMission :M5_Civil_Works_Mission, :M5_Environmental_Mission;
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType, usace-orgs:EnvironmentalMissionType;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Tulsa";
-  usace-orgs:usaceDistrictCode "CESWT";
-  usace-orgs:wikidataID "Q65066755";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q65066755" .
+  usace-org:agencyCode "SWT";
+  usace-org:agencySymbol "CESWT";
+  usace-org:districtOf :M0;
+  usace-org:eroCode "M5";
+  usace-org:formalName "US Army Engineer District, Tulsa";
+  usace-org:hasMission :M5_Civil_Works_Mission, :M5_Environmental_Mission;
+  usace-org:hasMissionType usace-org:CivilWorksMissionType, usace-org:EnvironmentalMissionType;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Tulsa";
+  usace-org:usaceDistrictCode "CESWT";
+  usace-org:wikidataID "Q65066755";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q65066755" .
 
-:M5_Civil_Works_Mission a usace-orgs:CivilWorksMission, usace-orgs:DistrictMission;
+:M5_Civil_Works_Mission a usace-org:CivilWorksMission, usace-org:DistrictMission;
   dct:title "Tulsa District Civil_Works Mission";
   rdfs:label "Tulsa District Civil_Works Mission";
   skos:prefLabel "Tulsa District Civil_Works Mission";
-  usace-orgs:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SWT%27&f=geojson";
-  usace-orgs:hasMissionType usace-orgs:CivilWorksMissionType;
-  usace-orgs:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SWT%27&f=geojson";
-  usace-orgs:missionOf :M5;
-  usace-orgs:usaceDistrictCode "CESWT" .
+  usace-org:hasCivilWorksAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_cw_districts/FeatureServer/0/query?outFields=*&where=SYMBOL%3D%27SWT%27&f=geojson";
+  usace-org:hasMissionType usace-org:CivilWorksMissionType;
+  usace-org:hasRegulatoryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_regulatory_boundary/FeatureServer/0/query?outFields=*&where=DIST_ABBR%3D%27SWT%27&f=geojson";
+  usace-org:missionOf :M5;
+  usace-org:usaceDistrictCode "CESWT" .
 
-:M5_Environmental_Mission a usace-orgs:DistrictMission;
+:M5_Environmental_Mission a usace-org:DistrictMission;
   dct:title "Tulsa District Environmental Mission";
   rdfs:label "Tulsa District Environmental Mission";
   skos:prefLabel "Tulsa District Environmental Mission";
-  usace-orgs:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SWT%27&f=geojson";
-  usace-orgs:missionOf :M5;
-  usace-orgs:usaceDistrictCode "CESWT" .
+  usace-org:hasFudsAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/fuds/FeatureServer/9/query?outFields=*&where=DIST%3D%27SWT%27&f=geojson";
+  usace-org:missionOf :M5;
+  usace-org:usaceDistrictCode "CESWT" .
 
-:N0 a org:Organization, usace-orgs:Division;
+:N0 a org:Organization, usace-org:Division;
   dct:identifier "N0";
   dct:title "Trans Atlantic Division";
   rdfs:label "Trans Atlantic Division";
@@ -2080,18 +2082,18 @@
   org:hasSubOrganization :N2, :P0;
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "TAD";
-  usace-orgs:agencySymbol "CETAD";
-  usace-orgs:eroCode "N0";
-  usace-orgs:formalName "Trans Atlantic Division";
-  usace-orgs:hasDistrict :N2, :P0;
-  usace-orgs:isOconus "TRUE"^^xsd:boolean;
-  usace-orgs:shortName "Trans Atlantic";
-  usace-orgs:usaceDivisionCode "CETAD";
-  usace-orgs:wikidataID "Q116795938";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116795938" .
+  usace-org:agencyCode "TAD";
+  usace-org:agencySymbol "CETAD";
+  usace-org:eroCode "N0";
+  usace-org:formalName "Trans Atlantic Division";
+  usace-org:hasDistrict :N2, :P0;
+  usace-org:isOconus "TRUE"^^xsd:boolean;
+  usace-org:shortName "Trans Atlantic";
+  usace-org:usaceDivisionCode "CETAD";
+  usace-org:wikidataID "Q116795938";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116795938" .
 
-:N2 a org:Organization, usace-orgs:District;
+:N2 a org:Organization, usace-org:District;
   dct:identifier "N2";
   dct:title "Transatlantic Expeditionary District";
   rdfs:label "Transatlantic Expeditionary District";
@@ -2099,78 +2101,78 @@
   skos:prefLabel "Transatlantic Expeditionary District";
   org:reportsTo :N0;
   org:subOrganizationOf :N0;
-  usace-orgs:agencyCode "TED";
-  usace-orgs:agencySymbol "CETED";
-  usace-orgs:districtOf :N0;
-  usace-orgs:eroCode "N2";
-  usace-orgs:formalName "Transatlantic Expeditionary District";
-  usace-orgs:hasMission :N2_Military_Mission;
-  usace-orgs:hasMissionType usace-orgs:MilitaryMissionType;
-  usace-orgs:isOconus "TRUE"^^xsd:boolean;
-  usace-orgs:shortName "Transatlantic Expeditionary District";
-  usace-orgs:usaceDistrictCode "CETED";
-  usace-orgs:wikidataID "Q116795952";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q116795952" .
+  usace-org:agencyCode "TED";
+  usace-org:agencySymbol "CETED";
+  usace-org:districtOf :N0;
+  usace-org:eroCode "N2";
+  usace-org:formalName "Transatlantic Expeditionary District";
+  usace-org:hasMission :N2_Military_Mission;
+  usace-org:hasMissionType usace-org:MilitaryMissionType;
+  usace-org:isOconus "TRUE"^^xsd:boolean;
+  usace-org:shortName "Transatlantic Expeditionary District";
+  usace-org:usaceDistrictCode "CETED";
+  usace-org:wikidataID "Q116795952";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q116795952" .
 
-:N2_Military_Mission a usace-orgs:DistrictMission, usace-orgs:MilitaryMission;
+:N2_Military_Mission a usace-org:DistrictMission, usace-org:MilitaryMission;
   dct:title "Transatlantic Expeditionary District Military Mission";
   rdfs:label "Transatlantic Expeditionary District Military Mission";
   skos:prefLabel "Transatlantic Expeditionary District Military Mission";
-  usace-orgs:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27TAD%27&f=geojson";
-  usace-orgs:missionOf :N2;
-  usace-orgs:usaceDistrictCode "CETED" .
+  usace-org:hasMilitaryAOR "https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_mil_dist/FeatureServer/0/query?outFields=*&where=DIST%3D%27TAD%27&f=geojson";
+  usace-org:missionOf :N2;
+  usace-org:usaceDistrictCode "CETED" .
 
-:P0 a org:Organization, usace-orgs:District;
+:P0 a org:Organization, usace-org:District;
   dct:identifier "P0";
   dct:title "Gulf Region District";
   rdfs:label "Gulf Region District";
   skos:prefLabel "Gulf Region District";
   org:reportsTo :N0;
   org:subOrganizationOf :N0;
-  usace-orgs:agencyCode "GRD";
-  usace-orgs:agencySymbol "CEGRD";
-  usace-orgs:districtOf :N0;
-  usace-orgs:eroCode "P0";
-  usace-orgs:formalName "US Army Engineer District, Gulf Region";
-  usace-orgs:isOconus "TRUE"^^xsd:boolean;
-  usace-orgs:shortName "Gulf Region District";
-  usace-orgs:usaceDistrictCode "CEGRD";
-  usace-orgs:wikidataID "None";
-  usace-orgs:wikidataURL "None" .
+  usace-org:agencyCode "GRD";
+  usace-org:agencySymbol "CEGRD";
+  usace-org:districtOf :N0;
+  usace-org:eroCode "P0";
+  usace-org:formalName "US Army Engineer District, Gulf Region";
+  usace-org:isOconus "TRUE"^^xsd:boolean;
+  usace-org:shortName "Gulf Region District";
+  usace-org:usaceDistrictCode "CEGRD";
+  usace-org:wikidataID "None";
+  usace-org:wikidataURL "None" .
 
-:Q0 a org:Organization, usace-orgs:OtherERO, usace-orgs:Other_EROC;
+:Q0 a org:Organization, usace-org:OtherERO, usace-org:Other_EROC;
   dct:identifier "Q0";
   dct:title "Institute For Water Resources";
   rdfs:label "Institute For Water Resources";
   skos:prefLabel "Institute For Water Resources";
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "IWR";
-  usace-orgs:agencySymbol "CEIWR";
-  usace-orgs:eroCode "Q0";
-  usace-orgs:formalName "US Army Engineer Institute For Water Resources";
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Institute For Water Resources";
-  usace-orgs:wikidataID "None";
-  usace-orgs:wikidataURL "None" .
+  usace-org:agencyCode "IWR";
+  usace-org:agencySymbol "CEIWR";
+  usace-org:eroCode "Q0";
+  usace-org:formalName "US Army Engineer Institute For Water Resources";
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Institute For Water Resources";
+  usace-org:wikidataID "None";
+  usace-org:wikidataURL "None" .
 
-:R1 a org:Organization, usace-orgs:OtherERO, usace-orgs:Other_EROC;
+:R1 a org:Organization, usace-org:OtherERO, usace-org:Other_EROC;
   dct:identifier "R1";
   dct:title "USACE, Information Technology";
   rdfs:label "USACE, Information Technology";
   skos:prefLabel "USACE, Information Technology";
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "ACEIT";
-  usace-orgs:agencySymbol "CEACEIT";
-  usace-orgs:eroCode "R1";
-  usace-orgs:formalName "US Army Corps of Engineers, Information Technology";
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "USACE, Information Technology";
-  usace-orgs:wikidataID "None";
-  usace-orgs:wikidataURL "None" .
+  usace-org:agencyCode "ACEIT";
+  usace-org:agencySymbol "CEACEIT";
+  usace-org:eroCode "R1";
+  usace-org:formalName "US Army Corps of Engineers, Information Technology";
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "USACE, Information Technology";
+  usace-org:wikidataID "None";
+  usace-org:wikidataURL "None" .
 
-:S0 a org:Organization, usace-orgs:HQUSACE;
+:S0 a org:Organization, usace-org:HQUSACE;
   dct:identifier "S0";
   dct:title "Headquarters";
   rdfs:label "Headquarters";
@@ -2178,104 +2180,104 @@
   org:hasSubOrganization :A0, :B0, :E0, :G0, :H0, :J0, :K0, :L0, :M0, :N0, :Q0, :R1,
     :T0, :U4, :V0, :W2, :W3;
   org:reportsTo usgov-body:USACE;
-  usace-orgs:agencyCode "HQ";
-  usace-orgs:agencySymbol "CE";
-  usace-orgs:eroCode "S0";
-  usace-orgs:formalName "Headquarters, US Army Corps of Engineers";
-  usace-orgs:hasDivision :A0, :B0, :E0, :G0, :H0, :J0, :K0, :L0, :M0, :N0;
-  usace-orgs:hasOtherERO :Q0, :R1, :T0, :U4, :V0, :W2, :W3;
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Headquarters";
-  usace-orgs:wikidataID "Q1049334";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q1049334" .
+  usace-org:agencyCode "HQ";
+  usace-org:agencySymbol "CE";
+  usace-org:eroCode "S0";
+  usace-org:formalName "Headquarters, US Army Corps of Engineers";
+  usace-org:hasDivision :A0, :B0, :E0, :G0, :H0, :J0, :K0, :L0, :M0, :N0;
+  usace-org:hasOtherERO :Q0, :R1, :T0, :U4, :V0, :W2, :W3;
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Headquarters";
+  usace-org:wikidataID "Q1049334";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q1049334" .
 
-:T0 a org:Organization, usace-orgs:OtherERO, usace-orgs:Other_EROC;
+:T0 a org:Organization, usace-org:OtherERO, usace-org:Other_EROC;
   dct:identifier "T0";
   dct:title "USACE Finance Center and Logistics Activity Center";
   rdfs:label "USACE Finance Center and Logistics Activity Center";
   skos:prefLabel "USACE Finance Center and Logistics Activity Center";
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "UFC";
-  usace-orgs:agencySymbol "CEUFC";
-  usace-orgs:eroCode "T0";
-  usace-orgs:formalName "USACE Finance Center and Logistics Activity Center";
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "USACE Finance Center and Logistics Activity Center";
-  usace-orgs:wikidataID "None";
-  usace-orgs:wikidataURL "None" .
+  usace-org:agencyCode "UFC";
+  usace-org:agencySymbol "CEUFC";
+  usace-org:eroCode "T0";
+  usace-org:formalName "USACE Finance Center and Logistics Activity Center";
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "USACE Finance Center and Logistics Activity Center";
+  usace-org:wikidataID "None";
+  usace-org:wikidataURL "None" .
 
-:U4 a org:Organization, usace-orgs:OtherERO, usace-orgs:Other_EROC;
+:U4 a org:Organization, usace-org:OtherERO, usace-org:Other_EROC;
   dct:identifier "U4";
   dct:title "Engineer Research and Development Center";
   rdfs:label "Engineer Research and Development Center";
   skos:prefLabel "Engineer Research and Development Center";
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "ERDC";
-  usace-orgs:agencySymbol "CEERDC";
-  usace-orgs:eroCode "U4";
-  usace-orgs:formalName "US Army Engineer Research and Development Center";
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Engineer Research and Development Center";
-  usace-orgs:wikidataID "Q5377777";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q5377777" .
+  usace-org:agencyCode "ERDC";
+  usace-org:agencySymbol "CEERDC";
+  usace-org:eroCode "U4";
+  usace-org:formalName "US Army Engineer Research and Development Center";
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Engineer Research and Development Center";
+  usace-org:wikidataID "Q5377777";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q5377777" .
 
-:V0 a org:Organization, usace-orgs:OtherERO, usace-orgs:Other_EROC;
+:V0 a org:Organization, usace-org:OtherERO, usace-org:Other_EROC;
   dct:identifier "V0";
   dct:title "US Army Geospatial Center";
   rdfs:label "US Army Geospatial Center";
   skos:prefLabel "US Army Geospatial Center";
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "AGC";
-  usace-orgs:agencySymbol "CEAGC";
-  usace-orgs:eroCode "V0";
-  usace-orgs:formalName "US Army Geospatial Center";
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "US Army Geospatial Center";
-  usace-orgs:wikidataID "Q4794142";
-  usace-orgs:wikidataURL "https://www.wikidata.org/wiki/Q4794142" .
+  usace-org:agencyCode "AGC";
+  usace-org:agencySymbol "CEAGC";
+  usace-org:eroCode "V0";
+  usace-org:formalName "US Army Geospatial Center";
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "US Army Geospatial Center";
+  usace-org:wikidataID "Q4794142";
+  usace-org:wikidataURL "https://www.wikidata.org/wiki/Q4794142" .
 
-:W2 a org:Organization, usace-orgs:OtherERO, usace-orgs:Other_EROC;
+:W2 a org:Organization, usace-org:OtherERO, usace-org:Other_EROC;
   dct:identifier "W2";
   dct:title "Humphreys Engineer Center Support Activity";
   rdfs:label "Humphreys Engineer Center Support Activity";
   skos:prefLabel "Humphreys Engineer Center Support Activity";
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "HECSA";
-  usace-orgs:agencySymbol "CEHECSA";
-  usace-orgs:eroCode "W2";
-  usace-orgs:formalName "Humphreys Engineer Center Support Activity";
-  usace-orgs:isOconus "FALSE"^^xsd:boolean;
-  usace-orgs:shortName "Humphreys Engineer Center Support Activity";
-  usace-orgs:wikidataID "None";
-  usace-orgs:wikidataURL "None" .
+  usace-org:agencyCode "HECSA";
+  usace-org:agencySymbol "CEHECSA";
+  usace-org:eroCode "W2";
+  usace-org:formalName "Humphreys Engineer Center Support Activity";
+  usace-org:isOconus "FALSE"^^xsd:boolean;
+  usace-org:shortName "Humphreys Engineer Center Support Activity";
+  usace-org:wikidataID "None";
+  usace-org:wikidataURL "None" .
 
-:W3 a org:Organization, usace-orgs:OtherERO, usace-orgs:Other_EROC;
+:W3 a org:Organization, usace-org:OtherERO, usace-org:Other_EROC;
   dct:identifier "W3";
   dct:title "249th Engineering Battalion";
   rdfs:label "249th Engineering Battalion";
   skos:prefLabel "249th Engineering Battalion";
   org:reportsTo :S0;
   org:subOrganizationOf :S0;
-  usace-orgs:agencyCode "249TH";
-  usace-orgs:agencySymbol "CE249TH";
-  usace-orgs:eroCode "W3";
-  usace-orgs:formalName "249Th Engineering Battalion";
-  usace-orgs:isOconus "TRUE"^^xsd:boolean;
-  usace-orgs:shortName "249th Engineering Battalion";
-  usace-orgs:wikidataID "None";
-  usace-orgs:wikidataURL "None" .
+  usace-org:agencyCode "249TH";
+  usace-org:agencySymbol "CE249TH";
+  usace-org:eroCode "W3";
+  usace-org:formalName "249Th Engineering Battalion";
+  usace-org:isOconus "TRUE"^^xsd:boolean;
+  usace-org:shortName "249th Engineering Battalion";
+  usace-org:wikidataID "None";
+  usace-org:wikidataURL "None" .
 
-usace-orgs:CivilWorksMissionType usace-orgs:supportedBy :B1, :B2, :B3, :B4, :B5, :B6,
+usace-org:CivilWorksMissionType usace-org:supportedBy :B1, :B2, :B3, :B4, :B5, :B6,
     :E1, :E3, :E4, :E5, :E6, :G2, :G3, :G4, :G5, :G6, :H1, :H2, :H3, :H4, :H5, :H6, :H7,
     :J3, :J4, :K2, :K3, :K5, :K6, :K7, :L1, :L2, :L3, :L4, :M2, :M3, :M4, :M5 .
 
-usace-orgs:EnvironmentalMissionType usace-orgs:fudsMission :E1, :E6, :G5, :G6, :H2,
+usace-org:EnvironmentalMissionType usace-org:fudsMission :E1, :E6, :G5, :G6, :H2,
     :J3, :J4, :K3, :K6, :L1, :L2, :M2, :M5;
-  usace-orgs:fusrapMission :B3, :E1, :E3, :E5, :H5 .
+  usace-org:fusrapMission :B3, :E1, :E3, :E5, :H5 .
 
-usace-orgs:MilitaryMissionType usace-orgs:supportedBy :E1, :E3, :E4, :E5, :E6, :E7,
+usace-org:MilitaryMissionType usace-org:supportedBy :E1, :E3, :E4, :E5, :E6, :E7,
     :G3, :G5, :G6, :H2, :J1, :J2, :J3, :J4, :K5, :K6, :L1, :L2, :L4, :M2, :M4, :N2 .
