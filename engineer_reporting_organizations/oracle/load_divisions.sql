@@ -10,6 +10,6 @@ INSERT INTO divisions (hq_eroc,reports_to,eroc,division,usace_division_code) VAL
 INSERT INTO divisions (hq_eroc,reports_to,eroc,division,usace_division_code) VALUES ('S0','Headquarters','K0','South Atlantic Division','CESAD');
 INSERT INTO divisions (hq_eroc,reports_to,eroc,division,usace_division_code) VALUES ('S0','Headquarters','L0','South Pacific Division','CESPD');
 INSERT INTO divisions (hq_eroc,reports_to,eroc,division,usace_division_code) VALUES ('S0','Headquarters','M0','Southwestern Division','CESWD');
-INSERT INTO divisions (hq_eroc,reports_to,eroc,division,usace_division_code) VALUES ('S0','Headquarters','N0','Trans Atlantic Division','CETAD');
+-- INSERT INTO divisions (hq_eroc,reports_to,eroc,division,usace_division_code) VALUES ('S0','Headquarters','N0','Trans Atlantic Division','CETAD');
 
 COMMIT;
