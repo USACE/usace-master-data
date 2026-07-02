@@ -44,7 +44,7 @@ INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALU
 INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('M0','Southwestern Division','M3','Galveston District','CESWG');
 INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('M0','Southwestern Division','M4','Little Rock District','CESWL');
 INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('M0','Southwestern Division','M5','Tulsa District','CESWT');
-INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('M0','Southwestern Division','N2','Transatlantic Expeditionary District','CETED');
-INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('M0','Southwestern Division','P0','Gulf Region District','CEGRD');
+INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('M0','Southwestern Division','N2','Transatlantic Expeditionary District','CESWE');
+INSERT INTO districts (div_eroc,division,eroc,district,usace_district_code) VALUES ('M0','Southwestern Division','N0','Middle East District','CESWM');
 
 COMMIT;
